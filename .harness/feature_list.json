@@ -183,6 +183,14 @@
         "83 Python scripts compiled; schema validation passed with 0 errors and 0 warnings; XCLI and YT Transcript CLI route checks passed; Node bridge syntax check passed.",
         "Issue #6 live trial and issue #7 final gate were intentionally not run."
       ]
+    },
+    {
+      "id": "F16",
+      "title": "Add prediction market source lane",
+      "state": "ready-for-agent",
+      "behavior": "Integrate Polymarket as a first-class local source lane using stateless API-native 24h ratio scoring, updating odds in news_queue.json.",
+      "verification": "python scripts/polymarket_collector.py, validate_schemas.py, and checking queue outcomes",
+      "evidence": []
     }
   ]
 }
