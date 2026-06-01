@@ -4,10 +4,12 @@ from __future__ import annotations
 
 import json
 import os
+import queue
 import re
 import subprocess
+from concurrent.futures import ThreadPoolExecutor
 from pathlib import Path
-from typing import Iterable
+from typing import Callable, Iterable
 
 from source_clis import xcli_command
 
@@ -150,3 +152,55 @@ def collect_timeline_tweets(
         output_path=path,
     )
     return filter_tweets_for_handle(tweets, handle)
+
+
+def release_read_only_slots() -> bool:
+    """Ask the pinned bridge to close tagged automation tabs only."""
+    result = subprocess.run(
+        xcli_command("twitter_release_slots"),
+        capture_output=True,
+        text=True,
+        encoding="utf-8",
+        errors="replace",
+        env=UTF8_ENV,
+        timeout=30,
+    )
+    return result.returncode == 0
+
+
+def collect_watchlist_timelines(
+    handles: Iterable[str],
+    *,
+    workers: int = 3,
+    days: float = 7.0,
+    output_path_for_handle: Callable[[str], str | Path | None] | None = None,
+) -> list[tuple[str, list[dict]]]:
+    """Collect independent watchlist timelines with bounded XCLI concurrency."""
+    normalized_handles = [normalize_handle(handle) for handle in handles]
+    normalized_handles = [handle for handle in normalized_handles if handle]
+    if not normalized_handles:
+        return []
+
+    worker_count = min(max(1, int(workers)), len(normalized_handles))
+    slots: queue.Queue[str] = queue.Queue()
+    for index in range(worker_count):
+        slots.put(f"watch-{index + 1}")
+
+    def collect(handle: str) -> list[dict]:
+        slot = slots.get()
+        output_path = output_path_for_handle(handle) if output_path_for_handle else None
+        try:
+            return collect_timeline_tweets(handle, days=days, output_path=output_path, slot=slot)
+        finally:
+            slots.put(slot)
+
+    results: list[tuple[str, list[dict]]] = []
+    with ThreadPoolExecutor(max_workers=worker_count) as executor:
+        futures = [(handle, executor.submit(collect, handle)) for handle in normalized_handles]
+        for handle, future in futures:
+            try:
+                results.append((handle, future.result()))
+            except Exception as exc:
+                print(f"  XCLI timeline collection failed for @{handle}; continuing: {exc}")
+                results.append((handle, []))
+    return results
