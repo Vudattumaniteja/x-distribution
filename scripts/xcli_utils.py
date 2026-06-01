@@ -42,10 +42,18 @@ def read_json_list(path: Path) -> list[dict]:
     return parsed if isinstance(parsed, list) else []
 
 
-def run_xcli_json(command: list[str], *, timeout: int = 180, output_path: Path | None = None) -> list[dict]:
+def run_xcli_json(
+    command: list[str],
+    *,
+    timeout: int = 180,
+    output_path: Path | None = None,
+    allow_cache_fallback: bool = True,
+    raise_on_error: bool = False,
+) -> list[dict]:
     """Run XCLI and return a JSON array from output file or stdout/stderr."""
     if output_path:
         output_path.parent.mkdir(parents=True, exist_ok=True)
+    previous_mtime_ns = output_path.stat().st_mtime_ns if output_path and output_path.exists() else None
 
     try:
         result = subprocess.run(
@@ -58,9 +66,11 @@ def run_xcli_json(command: list[str], *, timeout: int = 180, output_path: Path |
             timeout=timeout,
         )
     except subprocess.TimeoutExpired:
-        if output_path and output_path.exists():
+        if allow_cache_fallback and output_path and output_path.exists():
             print(f"  XCLI timed out; using cached output at {output_path}.")
             return read_json_list(output_path)
+        if raise_on_error:
+            raise RuntimeError("XCLI timed out")
         print("  XCLI timed out and no cached output is available.")
         return []
     if result.returncode != 0:
@@ -70,13 +80,20 @@ def run_xcli_json(command: list[str], *, timeout: int = 180, output_path: Path |
             if line.strip():
                 concise = line.strip()
                 break
-        if output_path and output_path.exists():
+        if allow_cache_fallback and output_path and output_path.exists():
             print(f"  XCLI failed ({concise[:180]}); using cached output at {output_path}.")
             return read_json_list(output_path)
+        if raise_on_error:
+            raise RuntimeError(f"XCLI failed: {concise[:180]}")
         print(f"  XCLI failed ({concise[:180]}); no cached output available.")
         return []
 
     if output_path:
+        if raise_on_error and (
+            not output_path.exists()
+            or (previous_mtime_ns is not None and output_path.stat().st_mtime_ns == previous_mtime_ns)
+        ):
+            raise RuntimeError(f"XCLI did not refresh expected output: {output_path}")
         return read_json_list(output_path)
 
     parsed = extract_json_array(result.stdout) or extract_json_array(result.stderr)
@@ -115,6 +132,8 @@ def collect_home_tweets(
     output_path: str | Path | None = None,
     *,
     slot: str | None = None,
+    allow_cache_fallback: bool = True,
+    raise_on_error: bool = False,
 ) -> list[dict]:
     path = Path(output_path) if output_path else None
     return run_xcli_json(
@@ -127,6 +146,8 @@ def collect_home_tweets(
         ),
         timeout=240,
         output_path=path,
+        allow_cache_fallback=allow_cache_fallback,
+        raise_on_error=raise_on_error,
     )
 
 
@@ -136,6 +157,8 @@ def collect_timeline_tweets(
     days: float = 7.0,
     output_path: str | Path | None = None,
     slot: str | None = None,
+    allow_cache_fallback: bool = True,
+    raise_on_error: bool = False,
 ) -> list[dict]:
     path = Path(output_path) if output_path else None
     tweets = run_xcli_json(
@@ -150,6 +173,8 @@ def collect_timeline_tweets(
         ),
         timeout=240,
         output_path=path,
+        allow_cache_fallback=allow_cache_fallback,
+        raise_on_error=raise_on_error,
     )
     return filter_tweets_for_handle(tweets, handle)
 

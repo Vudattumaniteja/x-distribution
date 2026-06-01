@@ -23,3 +23,9 @@
 - Reason: Editorial artifacts must never introduce unverified claims or imply automated publishing. The queue is an intelligence surface, not evidence that a claim is ready to publish.
 - Rejected alternative: Keep demo claims reachable through the master CLI.
 - Constraint: Post packets require `VERIFIED` or `LIKELY_TRUE` fact-check status and contain empty manual drafting fields.
+
+## 2026-06-01: Bound read-only X collection to three owned browser slots
+- Decision: Route read-only X collection through one coordinator: attempt the dedicated `home` tab first, collect watchlists through `watch-1` to `watch-3`, and degrade to a notified serialized retry path after three consecutive live failures.
+- Reason: Independent browser-backed XCLI subprocesses must not navigate the same user tab or hide browser instability behind stale cached output.
+- Rejected alternative: Parallelize existing timeline calls while letting each bridge subprocess navigate the first available Chrome page.
+- Constraint: Posting, reply, follow, and older bridge workflows retain their default behavior; cache policy and the X-only PID lock apply inside the shared read-only coordinator boundary.
