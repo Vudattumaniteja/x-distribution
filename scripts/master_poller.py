@@ -9,7 +9,8 @@ from source_clis import (
     yt_transcript_command,
     yt_transcript_python_script,
 )
-from xcli_utils import collect_home_tweets, collect_timeline_tweets
+from source_registry import collection_runtime_policy
+from x_collection_coordinator import collect_x_read_only
 
 # File Paths
 PROCESSED_URLS_PATH = 'data/processed_urls.log'
@@ -28,6 +29,7 @@ INVALID_TRANSCRIPT_MARKERS = (
     "<!doctype html",
     "<html",
 )
+LAST_X_COLLECTION = None
 
 def load_global_yt_cli():
     global_yt_transcript = yt_transcript_python_script()
@@ -96,38 +98,31 @@ def poller_1_x():
     Poller 1: Twitter / X through the pinned local XCLI.
     """
     print("Running Poller 1: X (Watchlist)...")
-    if not os.path.exists(CONFIG_X): return []
+    global LAST_X_COLLECTION
+    if not os.path.exists(CONFIG_X):
+        LAST_X_COLLECTION = {"status": "FAILED", "run_id": None, "tweets": []}
+        return []
     
     with open(CONFIG_X, 'r', encoding='utf-8') as f:
         config = json.load(f)
     
     handles = [acc['handle'] for acc in config['accounts'] if acc['tier'] == 'must_follow']
+    workers = max(1, int(collection_runtime_policy().get("x_workers", 3)))
+    LAST_X_COLLECTION = collect_x_read_only(handles, workers=workers, days=7, home_count=30)
     tweets = []
-
-    try:
-        home_tweets = collect_home_tweets(30, "cache/xcli_master_home.json")
-        for tweet in home_tweets:
+    per_account_counts = {}
+    for tweet in LAST_X_COLLECTION["tweets"]:
+        scope = tweet.get("_x_collection_scope", "")
+        if scope == "home":
             tweet.setdefault("source", "home")
-        tweets.extend(home_tweets)
-    except Exception as e:
-        print(f"  XCLI home error: {e}")
-
-    for handle in handles:
-        try:
-            handle_name = handle.lstrip("@")
-            extracted = collect_timeline_tweets(
-                handle_name,
-                days=7,
-                output_path=f"cache/xcli_master_{handle_name}.json",
-            )[:5]
-            if extracted:
-                for tweet in extracted:
-                    tweet.setdefault("source", handle)
-                tweets.extend(extracted)
-            else:
-                print(f"  XCLI returned no validated timeline items for {handle}.")
-        except Exception as e:
-            print(f"  XCLI error for {handle}: {e}")
+        else:
+            handle = scope.partition(":")[2]
+            count = per_account_counts.get(handle, 0)
+            if count >= 5:
+                continue
+            per_account_counts[handle] = count + 1
+            tweet.setdefault("source", f"@{handle}")
+        tweets.append(tweet)
     return tweets
 
 def poller_2_blogs():
@@ -259,7 +254,7 @@ def main():
     
     if not all_new_items:
         print("No new content discovered in this tick.")
-        return
+        return 1 if LAST_X_COLLECTION and LAST_X_COLLECTION["status"] == "FAILED" else 0
 
     # 3. Format "The Big Block"
     pool_text = "### RAW DISCOVERY POOL ###\n\n"
@@ -294,6 +289,7 @@ def main():
         json.dump(output, f, indent=2, ensure_ascii=False)
         
     print(f"Tick Complete. Pooled {len(all_new_items)} items into {OUTPUT_POOL}")
+    return 1 if LAST_X_COLLECTION and LAST_X_COLLECTION["status"] == "FAILED" else 0
 
 if __name__ == "__main__":
-    main()
+    raise SystemExit(main())

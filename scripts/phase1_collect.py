@@ -1,62 +1,53 @@
 import subprocess
 import json
 import os
+import sys
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from datetime import datetime, timezone
 from intelligence_queue import filter_recent_items, replace_queue
 from source_clis import python_script_command
 from source_registry import enabled_live_source_scripts, live_source_outputs, collection_runtime_policy
-from xcli_utils import collect_home_tweets, collect_timeline_tweets
+from x_collection_coordinator import collect_x_read_only
 
 UTF8_ENV = {**os.environ, "PYTHONIOENCODING": "utf-8", "PYTHONUTF8": "1"}
+PHASE1_LANE_HEALTH_PATH = "data/phase1_lane_health.json"
 
 def collect_x_data():
     print("--- Lane A: X Feed Collection (Breadth Priority) ---")
-    all_tweets = []
     runtime = collection_runtime_policy()
-    workers = max(1, int(runtime.get("x_workers", 4)))
+    workers = max(1, int(runtime.get("x_workers", 3)))
     timeline_days = float(runtime.get("x_timeline_days", 7))
     tweets_per_account = int(runtime.get("x_tweets_per_account", 3))
     
     with open('config/followed_accounts.json', 'r', encoding='utf-8') as f:
         config = json.load(f)
 
-    def collect_home_task():
-        tweets = collect_home_tweets(30, "cache/xcli_phase1_home.json")
-        for tweet in tweets:
-            tweet['signal_type'] = "Algorithm Trend"
-            tweet['discovered_by'] = 'X Home Feed'
-        return tweets
-
-    def collect_account_task(acc):
-        handle = acc['handle'].replace('@', '')
-        tweets = collect_timeline_tweets(
-            handle,
-            days=timeline_days,
-            output_path=f"cache/xcli_phase1_{handle}.json",
-        )[:tweets_per_account]
-        for tweet in tweets:
-            tweet['signal_type'] = "Verified" if acc.get('category') == "corporate" else "High-Impact Rumor"
-            tweet['discovered_by'] = f"X Watchlist ({acc.get('name', acc['handle'])})"
-        return tweets
-
-    tasks = []
-    with ThreadPoolExecutor(max_workers=workers) as executor:
-        tasks.append(("home", executor.submit(collect_home_task)))
-        for acc in config['accounts']:
-            handle = acc['handle']
-            tasks.append((handle, executor.submit(collect_account_task, acc)))
-
-        for label, future in tasks:
-            try:
-                tweets = future.result()
-            except Exception as exc:
-                print(f"  X collection failed for {label}; continuing: {exc}")
-                continue
-            all_tweets.extend(tweets)
+    accounts_by_handle = {
+        acc['handle'].replace('@', '').lower(): acc
+        for acc in config['accounts']
+    }
+    result = collect_x_read_only(
+        accounts_by_handle,
+        workers=workers,
+        days=timeline_days,
+    )
 
     normalized = []
-    for tweet in all_tweets:
+    per_account_counts = {}
+    for tweet in result["tweets"]:
+        scope = tweet.get("_x_collection_scope", "")
+        handle = scope.partition(":")[2] if scope.startswith("watchlist:") else ""
+        if handle:
+            count = per_account_counts.get(handle, 0)
+            if count >= tweets_per_account:
+                continue
+            per_account_counts[handle] = count + 1
+            acc = accounts_by_handle.get(handle, {})
+            signal_type = "Verified" if acc.get("category") == "corporate" else "High-Impact Rumor"
+            discovered_by = f"X Watchlist ({acc.get('name', acc.get('handle', handle))})"
+        else:
+            signal_type = "Algorithm Trend"
+            discovered_by = "X Home Feed"
         text = tweet.get("primary_text") or tweet.get("text") or tweet.get("quoted_text") or ""
         author = tweet.get("author") or tweet.get("source") or "X"
         headline = text.strip().replace("\n", " ")[:180] if text else f"X post from {author}"
@@ -66,12 +57,12 @@ def collect_x_data():
             "summary": text or tweet.get("quoted_text", ""),
             "source": author,
             "url": tweet.get("url", ""),
-            "signal_type": tweet.get("signal_type", "X Signal"),
-            "notes": tweet.get("discovered_by", "XCLI watchlist/home collection"),
+            "signal_type": signal_type,
+            "notes": discovered_by,
             "published_at": tweet.get("timestamp") or tweet.get("published_at"),
         })
 
-    return normalized
+    return normalized, result
 
 def collect_rss_data():
     print("--- Lane B: Corporate RSS (Ground Truth) ---")
@@ -326,13 +317,25 @@ def main():
     }
     lane_results = {name: [] for name in lanes}
     lane_health = []
+    x_collection = None
 
     with ThreadPoolExecutor(max_workers=min(lane_workers, len(lanes))) as executor:
         futures = {executor.submit(fn): name for name, fn in lanes.items()}
         for future in as_completed(futures):
             name = futures[future]
             try:
-                lane_results[name] = future.result() or []
+                value = future.result()
+                if name == "x":
+                    lane_results[name], x_collection = value
+                    lane_health.append({
+                        "lane": name,
+                        "status": x_collection["status"],
+                        "x_status": x_collection["status"],
+                        "x_run_id": x_collection["run_id"],
+                        "items": len(lane_results[name]),
+                    })
+                    continue
+                lane_results[name] = value or []
                 lane_health.append({
                     "lane": name,
                     "status": "OK",
@@ -340,9 +343,12 @@ def main():
                 })
             except Exception as exc:
                 lane_results[name] = []
+                if name == "x":
+                    x_collection = {"status": "FAILED", "run_id": None}
                 lane_health.append({
                     "lane": name,
-                    "status": "ERROR",
+                    "status": "FAILED" if name == "x" else "ERROR",
+                    **({"x_status": "FAILED", "x_run_id": None} if name == "x" else {}),
                     "error": str(exc),
                     "items": 0,
                 })
@@ -393,7 +399,7 @@ def main():
     # Weekly collection replaces the active queue through the protected queue seam.
     recent_items = filter_recent_items(all_raw_items, days=7)
     output_data, duplicate_count = replace_queue(recent_items)
-    with open('data/phase1_lane_health.json', 'w', encoding='utf-8') as f:
+    with open(PHASE1_LANE_HEALTH_PATH, 'w', encoding='utf-8') as f:
         json.dump({
             "last_updated": datetime.now(timezone.utc).isoformat(),
             "lane_workers": lane_workers,
@@ -405,6 +411,7 @@ def main():
         f"data/news_queue.json ({output_data['total_items']} active; "
         f"{duplicate_count} duplicate(s) merged)"
     )
+    return 1 if x_collection and x_collection["status"] == "FAILED" else 0
 
 if __name__ == "__main__":
-    main()
+    sys.exit(main())

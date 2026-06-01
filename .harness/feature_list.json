@@ -1,6 +1,6 @@
 {
   "project": "x-distribution",
-  "last_updated": "2026-05-28T00:00:00Z",
+  "last_updated": "2026-06-01T00:00:00Z",
   "features": [
     {
       "id": "F01",
@@ -168,6 +168,20 @@
         "generated_codegen.py prepares verified-only empty manual drafting packets and process_news.py fails closed.",
         "77 Python scripts compiled, 426 live JSON files parsed, 7 contract tests passed, schema validation returned 0 errors and 0 warnings, route checks passed, and intelligence reports regenerated.",
         "README.md, docs/ARCHITECTURE.md, docs/x-distribution-architecture.html, CONTEXT.md, and docs/adr/0001-protected-intelligence-queue-seam.md were created."
+      ]
+    },
+    {
+      "id": "F15",
+      "title": "Bounded three-worker read-only X watchlist collection",
+      "state": "done",
+      "behavior": "Use dedicated read-only XCLI tab slots and one shared X coordinator with three-worker happy path, notified serialized fallback, fresh-cache policy, rotating notifications, PID-aware locking, latest status, and entry-point status propagation.",
+      "verification": "external test_twitter_bridge_slots.py plus scripts/test_xcli_slot_routing.py, scripts/test_x_collection_coordinator.py, scripts/test_x_collection_integration.py, py_compile, validate_schemas.py, source_clis.py, and node --check",
+      "evidence": [
+        "External bridge tests passed for separate reusable slots, stale-slot recovery, duplicate tagged-slot cleanup, untagged user-tab preservation, tagged release, and unchanged post/reply/follow defaults.",
+        "Coordinator contracts passed for home-first ordering, three reusable watchlist slots, home retry, 24h/48h cache boundaries, failure-counter reset, failed-first bounded serialized recovery after drain, explicit statuses, JSONL rotation, and active/stale PID locks.",
+        "Integration contracts passed for Phase 1, targeted radar, compatibility timeline, master poller, unchanged weekly-sweep delegation, lane-health run ID/status propagation, fail-soft usable statuses, and FAILED non-zero behavior.",
+        "83 Python scripts compiled; schema validation passed with 0 errors and 0 warnings; XCLI and YT Transcript CLI route checks passed; Node bridge syntax check passed.",
+        "Issue #6 live trial and issue #7 final gate were intentionally not run."
       ]
     }
   ]

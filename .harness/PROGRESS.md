@@ -2,8 +2,8 @@
 
 ## Current State
 - Architecture hardening pass completed on 2026-05-31.
-- Current focus: keep protected queue persistence, editorial drafting safety, and operator documentation explicit and repeatable.
-- Verification status: passed after protected queue centralization, editorial safety remediation, and documentation generation.
+- Current focus: bounded three-worker read-only X collection is implemented; live trial #6 and final gate #7 remain intentionally deferred.
+- Verification status: deterministic implementation gates passed after shared X coordinator integration.
 
 ## Completed
 - [x] Centralized X/YT route policy through `scripts/source_clis.py`.
@@ -28,6 +28,7 @@
 - [x] Disabled the historical `process_news.py` prototype so it fails closed instead of writing fabricated example stories.
 - [x] Added root README, dense Markdown architecture documentation, an ADR, domain context, and interactive HTML documentation.
 - [x] Completed post-improvement review: 77 Python scripts compile, 426 live JSON files parse, schema validation passes with 0 errors and 0 warnings, route checks pass, 7 contract tests pass, report regeneration succeeds, and direct queue-write audit finds 0 bypass writers.
+- [x] Added opt-in external XCLI read-only tab slots, shared three-worker X coordination, notified serialized fallback, 24h/48h cache policy, rotating JSONL notifications, PID-aware locking, latest-state output, and canonical entry-point integration.
 
 ## In Progress
 - [x] F01 full collection test
@@ -44,15 +45,16 @@
 - [x] F12 XCLI watchlist collection verification
 - [x] F13 Regional AI/startup coverage expansion
 - [x] F14 protected queue architecture, editorial safety, and documentation
+- [x] F15 bounded three-worker read-only X watchlist collection
 
 ## Known Issues
 - `graphify` is not available on PATH in this shell.
-- The project has no git repository metadata in this folder.
+- `make` is not installed in this PowerShell shell; run the Python commands from `Makefile` directly.
 - Full live collection can be slow because it touches X, YouTube, Reddit, HN, GitHub, arXiv, finance/RSS, SEC, startup funding/product feeds, and corporate sites.
 - Direct Reddit JSON endpoints returned 403 from this environment for both `www.reddit.com` and `old.reddit.com`; RSS returned 200 and is now the practical fallback.
 - The browser plugin blocks local `file://` navigation, so the interactive documentation was statically verified rather than visually inspected inside the in-app browser.
 
 ## Next Steps
-1. Continue the incremental storage migration toward `data/raw/`, `data/normalized/`, `data/verified/`, and `data/content/` with compatibility shims.
-2. Add durable verified-claims storage and report/CLI integration tests.
-3. Run a full live collection when rate limits and time allow to refresh the active intelligence queue.
+1. Run issue #6 bounded X-only live trial when explicitly authorized.
+2. Run issue #7 final gate after converting any live-trial findings into deterministic regressions.
+3. Continue the incremental storage migration toward `data/raw/`, `data/normalized/`, `data/verified/`, and `data/content/` with compatibility shims.

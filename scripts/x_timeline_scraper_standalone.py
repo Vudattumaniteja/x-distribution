@@ -2,44 +2,56 @@
 
 import json
 import os
+import sys
 from datetime import datetime, timezone
 
-from xcli_utils import collect_timeline_tweets
+from source_registry import collection_runtime_policy
+from x_collection_coordinator import collect_x_read_only
 
-
-def scrape_x_timeline(handle, count=5):
-    safe_handle = handle.replace("@", "")
-    return collect_timeline_tweets(
-        safe_handle,
-        days=7,
-        output_path=f"cache/xcli_standalone_{safe_handle}.json",
-    )[:count]
-
+CONFIG_PATH = "config/followed_accounts.json"
+OUTPUT_PATH = "data/x_raw_standalone.json"
 
 def main():
-    config_path = "config/followed_accounts.json"
-    output_path = "data/x_raw_standalone.json"
-    if not os.path.exists(config_path):
+    if not os.path.exists(CONFIG_PATH):
         print("Config not found.")
-        return
+        return 1
 
-    with open(config_path, "r", encoding="utf-8") as file_handle:
+    with open(CONFIG_PATH, "r", encoding="utf-8") as file_handle:
         config = json.load(file_handle)
 
     all_tweets = []
     handles = [acc["handle"] for acc in config["accounts"] if acc["tier"] == "must_follow"][:10]
-    for handle in handles:
-        print(f"Collecting {handle} through XCLI...")
-        all_tweets.extend(scrape_x_timeline(handle))
+    workers = max(1, int(collection_runtime_policy().get("x_workers", 3)))
+    print(f"Collecting compatibility watchlist timelines through {workers} coordinator worker(s)...")
+    result = collect_x_read_only(
+        handles,
+        workers=workers,
+        days=7,
+        skip_home=True,
+    )
+    per_account_counts = {}
+    for tweet in result["tweets"]:
+        handle = tweet.get("_x_collection_scope", "").partition(":")[2]
+        count = per_account_counts.get(handle, 0)
+        if count >= 5:
+            continue
+        per_account_counts[handle] = count + 1
+        all_tweets.append(tweet)
 
-    with open(output_path, "w", encoding="utf-8") as file_handle:
+    with open(OUTPUT_PATH, "w", encoding="utf-8") as file_handle:
         json.dump(
-            {"last_updated": datetime.now(timezone.utc).isoformat(), "tweets": all_tweets},
+            {
+                "last_updated": datetime.now(timezone.utc).isoformat(),
+                "run_id": result["run_id"],
+                "status": result["status"],
+                "tweets": all_tweets,
+            },
             file_handle,
             indent=2,
         )
-    print(f"Done. Saved {len(all_tweets)} tweets to {output_path}")
+    print(f"Done. Saved {len(all_tweets)} tweets to {OUTPUT_PATH}")
+    return 1 if result["status"] == "FAILED" else 0
 
 
 if __name__ == "__main__":
-    main()
+    sys.exit(main())

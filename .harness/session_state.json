@@ -2,10 +2,10 @@
   "session_id": "2026-05-28-xdist-hardening",
   "started_at": "2026-05-28T00:00:00Z",
   "project_path": "C:\\Users\\Manit\\.gemini\\x-distribution",
-  "active_feature": "F14",
+  "active_feature": "F15",
   "context_usage": 0,
   "handoff_ready": true,
-  "last_verification": "Architecture hardening verified on 2026-05-31: 77 Python scripts compile; 426 live JSON files parse; protected queue and editorial contract suites pass with 7 tests; schema validation passes with 0 errors and 0 warnings; XCLI and YT Transcript CLI routes are ready; report regeneration succeeds; direct queue-write audit finds 0 scripts opening data/news_queue.json for write.",
+  "last_verification": "Bounded read-only X implementation verified on 2026-06-01 without live collection: external slot tests pass; repo XCLI, coordinator, and integration contracts pass; 83 Python scripts compile; schema validation passes with 0 errors and 0 warnings; XCLI and YT Transcript CLI routes are ready; Node bridge syntax check passes. Issue #6 live trial and issue #7 final gate remain deferred.",
   "decisions_made": [
     "Initialize harness around existing script workspace",
     "Treat source registry as the source-of-truth for live source lanes",
@@ -18,7 +18,8 @@
     "Treat XCLI watchlist timeline collection as the reliable X route for now; the algorithmic home-feed route can fail with Page.goto net::ERR_ABORTED",
     "Treat regional coverage as a layered source strategy: RSS for regional media, Reddit for community context, Hugging Face/GitHub for model artifacts, and startup feeds for funding/product signals",
     "Route canonical and compatibility queue persistence through scripts/intelligence_queue.py so protected state uses atomic writes and one URL identity policy",
-    "Prepare post drafting packets only for VERIFIED or LIKELY_TRUE items and keep publishing manual-copy only"
+    "Prepare post drafting packets only for VERIFIED or LIKELY_TRUE items and keep publishing manual-copy only",
+    "Route read-only X collection through dedicated home/watch slots and one shared coordinator with notified bounded fallback, fresh-cache policy, rotating JSONL notifications, and PID-aware single-run locking"
   ],
   "files_modified": [
     "C:\\Users\\Manit\\Desktop\\x pipline version 2.0\\scripts\\yt_transcript_cli.py",
