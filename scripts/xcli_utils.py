@@ -108,10 +108,21 @@ def filter_tweets_for_handle(tweets: Iterable[dict], handle: str) -> list[dict]:
     return filtered
 
 
-def collect_home_tweets(count: int = 30, output_path: str | Path | None = None) -> list[dict]:
+def collect_home_tweets(
+    count: int = 30,
+    output_path: str | Path | None = None,
+    *,
+    slot: str | None = None,
+) -> list[dict]:
     path = Path(output_path) if output_path else None
     return run_xcli_json(
-        xcli_command("twitter_home", "--count", str(count), *(("--output", str(path)) if path else ())),
+        xcli_command(
+            "twitter_home",
+            "--count",
+            str(count),
+            *(("--output", str(path)) if path else ()),
+            *(("--slot", slot) if slot else ()),
+        ),
         timeout=240,
         output_path=path,
     )
@@ -122,6 +133,7 @@ def collect_timeline_tweets(
     *,
     days: float = 7.0,
     output_path: str | Path | None = None,
+    slot: str | None = None,
 ) -> list[dict]:
     path = Path(output_path) if output_path else None
     tweets = run_xcli_json(
@@ -132,6 +144,7 @@ def collect_timeline_tweets(
             "--days",
             str(days),
             *(("--output", str(path)) if path else ()),
+            *(("--slot", slot) if slot else ()),
         ),
         timeout=240,
         output_path=path,
