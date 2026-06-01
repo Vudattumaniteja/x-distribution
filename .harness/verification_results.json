@@ -748,6 +748,67 @@
         "routes": 0,
         "schemas": 0
       }
+    },
+    {
+      "name": "collect-verify-only",
+      "timestamp": "2026-06-01T14:50:42.152866+00:00",
+      "status": "passed",
+      "live_source_scripts": [
+        "reddit_mcp_buddy_collect.py",
+        "finance_market_collector.py",
+        "startup_funding_collector.py",
+        "github_monitor_standalone.py",
+        "github_releases_discovery.py",
+        "arxiv_sentinel_standalone.py",
+        "hf_tracker_standalone.py",
+        "model_market_collector.py",
+        "startup_collections_collector.py",
+        "science_breakthrough_collector.py",
+        "developer_sentiment_collector.py"
+      ],
+      "live_source_outputs": [
+        "data/reddit_raw_standalone.json",
+        "data/finance_raw_standalone.json",
+        "data/finance_signals.json",
+        "data/startup_funding_raw.json",
+        "data/startup_funding_signals.json",
+        "data/github_discoveries.json",
+        "data/release_discoveries.json",
+        "data/arxiv_raw_standalone.json",
+        "data/hf_discoveries.json",
+        "data/model_market_raw.json",
+        "data/model_market_signals.json",
+        "data/startup_collections_raw.json",
+        "data/startup_collections_signals.json",
+        "data/science_breakthrough_raw.json",
+        "data/science_breakthrough_signals.json",
+        "data/developer_sentiment_raw.json",
+        "data/developer_sentiment_signals.json"
+      ],
+      "collector_outputs": [
+        "data/sitemap_discoveries.json",
+        "data/hf_discoveries.json",
+        "data/github_discoveries.json",
+        "data/release_discoveries.json",
+        "data/corporate_announcements.json",
+        "data/hn_raw_standalone.json",
+        "data/arxiv_raw_standalone.json",
+        "data/finance_raw_standalone.json",
+        "data/finance_signals.json",
+        "data/startup_funding_raw.json",
+        "data/startup_funding_signals.json",
+        "data/x_radar_standalone.json",
+        "data/reddit_raw_standalone.json",
+        "data/new_videos_queue.json",
+        "data/model_market_raw.json",
+        "data/model_market_signals.json",
+        "data/startup_collections_raw.json",
+        "data/startup_collections_signals.json",
+        "data/science_breakthrough_raw.json",
+        "data/science_breakthrough_signals.json",
+        "data/developer_sentiment_raw.json",
+        "data/developer_sentiment_signals.json"
+      ]
     }
   ]
 }

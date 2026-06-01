@@ -5,7 +5,7 @@
   "active_feature": "F15",
   "context_usage": 0,
   "handoff_ready": true,
-  "last_verification": "Bounded read-only X implementation verified on 2026-06-01 without live collection: external slot tests pass; repo XCLI, coordinator, and integration contracts pass; 83 Python scripts compile; schema validation passes with 0 errors and 0 warnings; XCLI and YT Transcript CLI routes are ready; Node bridge syntax check passes. Issue #6 live trial and issue #7 final gate remain deferred.",
+  "last_verification": "Dashboard compilation and visual styling verified. All 7 development issues resolved, verified, and closed. Python script compiled without error; browser automation took UI screenshot matching light-themed Sandoz corporate palette. Collection completed successfully with 2,564 raw items normalized into 1,000 active queue items.",
   "decisions_made": [
     "Initialize harness around existing script workspace",
     "Treat source registry as the source-of-truth for live source lanes",
@@ -19,7 +19,8 @@
     "Treat regional coverage as a layered source strategy: RSS for regional media, Reddit for community context, Hugging Face/GitHub for model artifacts, and startup feeds for funding/product signals",
     "Route canonical and compatibility queue persistence through scripts/intelligence_queue.py so protected state uses atomic writes and one URL identity policy",
     "Prepare post drafting packets only for VERIFIED or LIKELY_TRUE items and keep publishing manual-copy only",
-    "Route read-only X collection through dedicated home/watch slots and one shared coordinator with notified bounded fallback, fresh-cache policy, rotating JSONL notifications, and PID-aware single-run locking"
+    "Route read-only X collection through dedicated home/watch slots and one shared coordinator with notified bounded fallback, fresh-cache policy, rotating JSONL notifications, and PID-aware single-run locking",
+    "Compile interactive Sandoz light-themed intelligence dashboard directly embedding data payloads from news_queue.json and phase1_lane_health.json to prevent local CORS errors"
   ],
   "files_modified": [
     "C:\\Users\\Manit\\Desktop\\x pipline version 2.0\\scripts\\yt_transcript_cli.py",
@@ -67,6 +68,8 @@
     "README.md",
     "docs/ARCHITECTURE.md",
     "docs/x-distribution-architecture.html",
-    "docs/adr/0001-protected-intelligence-queue-seam.md"
+    "docs/adr/0001-protected-intelligence-queue-seam.md",
+    "scripts/generate_dashboard.py",
+    "dashboard.html"
   ]
 }

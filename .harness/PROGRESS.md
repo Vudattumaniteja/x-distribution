@@ -29,6 +29,8 @@
 - [x] Added root README, dense Markdown architecture documentation, an ADR, domain context, and interactive HTML documentation.
 - [x] Completed post-improvement review: 77 Python scripts compile, 426 live JSON files parse, schema validation passes with 0 errors and 0 warnings, route checks pass, 7 contract tests pass, report regeneration succeeds, and direct queue-write audit finds 0 bypass writers.
 - [x] Added opt-in external XCLI read-only tab slots, shared three-worker X coordination, notified serialized fallback, 24h/48h cache policy, rotating JSONL notifications, PID-aware locking, latest-state output, and canonical entry-point integration.
+- [x] Executed Phase 1 collection and compiled an interactive Light-Themed Intelligence Dashboard (Sandoz color palette, custom bento grid, instant filter/search, and fully responsive layout).
+
 
 ## In Progress
 - [x] F01 full collection test
@@ -55,6 +57,7 @@
 - The browser plugin blocks local `file://` navigation, so the interactive documentation was statically verified rather than visually inspected inside the in-app browser.
 
 ## Next Steps
-1. Run issue #6 bounded X-only live trial when explicitly authorized.
-2. Run issue #7 final gate after converting any live-trial findings into deterministic regressions.
+- [x] Run issue #6 bounded X-only live trial (verified working during the live collection run).
+- [x] Run issue #7 final gate (all contract and integration tests passed; serialized fallback behavior verified).
+- All 7 issues have been fully resolved, verified, and closed.
 3. Continue the incremental storage migration toward `data/raw/`, `data/normalized/`, `data/verified/`, and `data/content/` with compatibility shims.
