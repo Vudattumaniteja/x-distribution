@@ -1,0 +1,87 @@
+00:00:00
+Enthropic is back again with the surprise launch with the official release of Claude Opus 4.8. I honestly thought we were seeing new Sonnet update, but this is a new model that builds on Opus 4.7 with sharper judgment, better honesty about its own progress during tasks, and you have improved performance on long horizon agentic workflows. But if you're asking for my two cents, I honestly believe that it's a pretty mid update. I'm not saying it's bad, but it's definitely better than the Opus 4.7. The problem is
+
+00:00:32
+that the gains really feel fairly marginal. Right now, I still believe Open AI's GPT 5.5 in codecs with XH high reasoning remains the strongest overall coding model available. One area where Opus 4.8 genuinely stands out is on the Swaybench Pro. And this is where it went from a 64 percentage all the way to a 69 percentage which is a noticeable improvement in solving real world software engineering tasks. And that is pretty impressive. When it comes to other benchmarks like Agentic terminal coding, GPT 5.5 still leads in this
+
+00:01:05
+benchmark on OS World which is for Aentic computer use. You can see that the Opus 4.8 8 is leading by a pretty good margin in comparison to the other state-of-the-art models, even ahead of Gemini 3.5 Flash. Opus 4.8 also does quite well on other benchmarks like Aentic Financial Analysis, GPQA, as well as HLE, which is definitely worth mentioning. Now, on the world of AI benchmark, my own personal benchmark suite that will be launching fairly soon ranks the Opus 4.8 number one across all vibe coding categories. The benchmark
+
+00:01:39
+focuses on how capable models are across building projects agentically across different domains like front end, backend logic, game development, 3GS, and so many others. Now, previously the Opus 4.7 held this number one position on this benchmark, but now you can see that the Opus 4.8 manages to steal that crown. However, the improvements across the 4.7 is very small. You can clearly see the gains are incremental rather than revolutionary. If you want the best AI tools, workflows, and drops before
+
+00:02:10
+everyone else, join my free newsletter with the link in the description below, which is completely free. Another interesting data point comes from Cursor's benchmark results. Their testing showed that the Opus 4.8 on Cursor Bench 3.1 is a bit more efficient overall, but performs slightly worse than the Opus 4.7 within the margin of error. Of course, take this with a grain of salt cuz we all know cursor is ultimately a competitor to Enthropic and I wouldn't really treat these results as gospel. Something else to note is that
+
+00:02:41
+the Opus 4.8 is significantly more honest and self-aware, making it around four times less likely than Opus 4.7 to overlook flaws or make unsupported claims. And it also shows stronger alignment with lower rates of deceptive behavior and safety performance comparable to Claude Mythos preview. They have introduced effort control which is going to allow users to adjust reasoning effort levels depending on the task. This is definitely a nice quality of life improvement because it gives you more control over latency, cost, and
+
+00:03:13
+token usage. For a simpler task, you can obviously adjust the effort control whenever you're requesting Claude to do anything. What's perhaps even more interesting is a small note Enthropic included for future models. If we actually scroll down all the way at the bottom, this is where they had essentially mentioned that that Enthropic plans to release an entirely new class of models with intelligence beyond Opus. That immediately reminded me of what I discussed yesterday in mythos video. If I had to guess, we're
+
+00:03:43
+getting closer to a Mythos preview release fairly soon, and Enthropic keeps dropping hints, and this latest statement definitely adds more fuel to the fire. Also technical specification wise, the model has a 1 million token context window and it's priced exactly the same as Opus 4.7 where it's listed at $5 for 1 million input tokens and $25 per 1 million output tokens. And they haven't really fixed any of the rate issues within Cloud Code. You can access it directly through Cloud AI as well as
+
+00:04:13
+use it through the API. Now to start things off, let's actually take a look at a Mac OS clone that I had generated with the Opus 4.8 eight on max mode, setting the reasoning effort at max. And this is where it basically spent approximately 2 hours, and it used about this many tokens, which is just insane. Now, if I'm to refresh, we can get a glimpse of this Mac OS clone. And I got to say, this is probably one of the better generations of a Mac OS clone. This is where we can send in any password. You have that startup sound,
+
+00:04:45
+which is definitely great to see. You have the notifications, but what I really like is all of these elements a part of this Mac OS clone is functional. You can see that everything works. You are able to actually create a new window from the top bar, which is something that I didn't really expect at all. You have the ability to even tweak certain things like your brightness, which is nice. This looks a little odd, but still regardless, it is nice to see. You have a couple of different applications that
+
+00:05:12
+have been generated. But now the bottom bar we can actually take a look at all these different applications. You have the finder app which is functional as well. You can open up all of these different components. You have the Safari which has been coded out as well where you can go through different websites and different links. You have the mail app. You have a notes app. You even have a calendar. And what I really like is that if you go into settings, you even have the ability to change the mode to light and dark. And that
+
+00:05:40
+actually works as well. You can even change the background. You can change the wallpaper to whatever background you would like. You can change the sound settings. What I really like is that it has added a lot of technical debt. And this is because we have set it to max reasoning. And what's really nice is if I have to actually play any sort of music, it's actually going to output some sort of sound, which is something that I haven't seen with any of the Mac OS clones. So, just take a listen.
+
+00:06:10
+That was definitely nice. Now, the best thing about this Mac OS clone is the Minecraft clone. You have a fullon functional Minecraft clone that was generated within this Mac OS operating system. You can see that I'm able to break blocks. You have the ability to place blocks, which is nice. And everything seems to be working functionally. And all of this was done in a single prompt generation. You also have a terminal. You have the calculator app. And then you have the app store as well. So everything was fully generated.
+
+00:06:40
+And you can see that it did a great job in all of these different elements. To start things off, let's actually take a look at a couple of different front-end tasks. This is where we had definitely seen with the previous Opus 4.7 that the model does exceptionally well at following instructions and generating all the components as you're requesting. In this case, you can see that the typography, the movements with dynamic attributes haven't been thoroughly generated in this particular generation.
+
+00:07:09
+Everything seems to be functional and it did a pretty great job with this first front-end task. Even though the Opus models are one of the best front-end generation models right now, there still seems to be that basic style that has been generated with all of their frontends, meaning it has been pre-trained with this specific styling for all of the front-end prompts. And you can see that if you request even within cloud design or even within a regular cloud prompt to generate any sort of basic landing page, you'll
+
+00:07:40
+notice that there are certain components that you see within my prompt right here being generated within any of your outputs. Next is another prompt that is testing out how well the model is with front-end design taste. You can see that it does exceptional with visual reasoning and creative coding in this particular prompt. And the model was able to translate this specific image style into a premium AI landing page. And this looks pretty decent. I'm not saying it's really good, but I really
+
+00:08:07
+like all of the GSA motion. You have a lot of the different shaders that have been attributed with this generation and different components that make this aesthetic for this design really pop out. Next is a Minecraft clone that was generated with Opus 4.8 set on Max. And this is by a user on Twitter. And essentially, it did a better job with the Minecraft clone in comparison to the Opus 4.7. Everything worked one shot, but it's more of an incremental improvement overall. You can see the water dynamic hasn't been fully
+
+00:08:41
+generated thoroughly yet. There are different textures that we didn't see with other models when they were actually requested to create a Minecraft clone. You have different functions like breaking blocks. You have the ability to play with an inventory. And you even have a cave system that has been added to this clone. Now, this is exactly my issue with the Opus 4.8. When you put it in max mode, the results are genuinely incredible. In some cases, the best I've ever seen. But the efficiency just isn't
+
+00:09:10
+there. Taking 40 minutes or 2 hours in my case to generate that Mac OS clone. Burns through massive amounts of tokens for a marginal gain over GPT 5.5 when you set it on X high in Codeex. It's definitely hard to justify. And in my opinion, GBT 5.5 in Codex still feels a lot better overall with a lot of these different packages. It's faster, more token efficient, stronger at gentic coding, and capable at producing comparable results without needing to think 10 times longer. Opus 4.8 may win
+
+00:09:43
+in certain design and bi coding tasks, but from a real world productivity standpoint, the GPT 5.5 still has an edge. Next up is where I had requested it to create a 3D FPS dungeon crawler game. And this is actually pretty cool. This is where you have multiple levels. You have a sword to slay different enemies. You have different components. You essentially need to take down different enemies and collect different keys to get past uh different uh sections. And right now I am trying to find a key. But what I really like is
+
+00:10:16
+that this is a prompt I had sent in to basically see how well it is at gamedev execution under constraints cuz this is something that tests the model whether it can actually build a full playable 3D experience in an HTML file with raycasting. You have webgl as well as procedural dungeon generations. You have enemy AI uh robots or not robots but different components that will chase you. I don't want to fight them because I'm kind of scared. But you also have combat and inventory. You have a mini
+
+00:10:49
+map which you can see on the top right. You even have different levels input handling. But you can see that this is essentially just showcasing how well the model is at functionality which is definitely nice. Uh I think I have gone to a wall or door sorry where I can actually give my key in. I have the ability to use potions as well. Collect coins. I can slay enemies as well. So, this was actually pretty cool. But, it's just crazy how this model was able to create something like this in a single
+
+00:11:20
+shot. Here, it was requested to create a low poly 3D scene in a style that represents Zelda. And you can see that it did pretty well with this generation. You have ambience with different cherry blossom leaves following. You have the lighting and it does represent a pretty nice world that kind of mimics what Zelda kind of looks like. It is something that did this all low poly 3D scenes and it did a pretty decent job with all of the different characteristics here. Now like I had mentioned at the start some 3D
+
+00:11:52
+visualization and 3GS fundamentals are not the best but with certain generations like the solar system you can see that it does look pretty good. You have the ability to switch through different planets and has been able to actually create a pretty good representation of our solar system. You can switch through different planets and you can see that each of them have been thoroughly generated to attribute all the features of all of the individual planets. Now, when it comes to SVG, the model does pretty decently well in this
+
+00:12:23
+domain, but it's still a bit behind in comparison to the Gemini 3.5 Flash. Gemini just kills it with the SVG generation. But you can still see there is a creative depth that has been added with these different generations from the Opus 4.8, but it is nowhere near what the Gemini models are capable of generating. If you like this video and would love to support the channel, you can consider donating to my channel through the super thanks option below. Or you can consider joining our private Discord where you can access multiple
+
+00:12:55
+subscriptions to different AI tools for free on a monthly basis, plus daily AI news and exclusive content, plus a lot more. Overall, I do think that this model is great. It's nothing super extraordinary. It is definitely a small incremental gain over the Opus 4.7, but if you care about raw output quality, I think the Opus 4.8 might be arguably the best. But if you care about productivity, speed, cost, as well as working on a super easy efficient with a good harness, I think the GBT 5.5 with
+
+00:13:31
+codecs may be a better overall package. Now, I still think this model is great. It's not like I don't like this model. I still use the Opus model in many cases in my workflow, but this gain doesn't seem to be as noticeable. It is a marginal gain and it's something that I didn't really expect as I thought the sauna model would get a bigger update before we saw another Opus update because we just saw the Opus 4.7 last month. Regardless, I definitely love what Enthropic has been doing and hope
+
+00:14:01
+to see another class model releasing fairly soon. Maybe the Mythos preview, which is something that I projected to be releasing maybe within the next 3 months. But with that thought, guys, I hope you enjoyed today's video and got some sort of value. This is something that I'll leave a link to in the description below, but make sure you also go ahead and take a look at the second channel. Join the newsletter, join the Discord, follow me on Twitter, and lastly, make sure you guys subscribe, turn on notification bell,
+
+00:14:25
+like this video, and please take a look at our previous videos so that you can stay up to date with the latest AI news. But with that thought, guys, have an amazing day, drop positivity, and I'll see you guys really shortly. He suffers.
+

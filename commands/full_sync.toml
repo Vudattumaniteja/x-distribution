@@ -1,0 +1,24 @@
+description = "Synchronized Data Collection: Three Pollers, One Pool (X + RSS + YouTube Transcripts)"
+
+[tools]
+run_shell_command = true
+
+prompt = """Run the 'Three Pollers, One Pool' synchronized collection workflow.
+
+### PHASE 1: Poller 1 (Twitter/X Home + Watchlist) ###
+1. Use only the pinned XCLI route in `scripts/source_clis.py`; never scrape X with browser tools.
+2. Run the master poller script below. Its X lane calls `twitter_home` for the feed and validated `twitter_timeline` for must-follow watchlist handles.
+
+### PHASE 2: Poller 2 & 3 (RSS & YouTube Transcripts) ###
+1. Run: `C:/Users/Manit/AppData/Local/Programs/Python/Python311/python.exe scripts/master_poller.py`
+2. This script polls Corporate RSS feeds, discovers latest YouTube videos through `scripts/source_clis.py` -> `yt_transcript_python_script()` -> global `get_latest_videos(channel_url, count=None, days=<window>, max_scan=<guard>)`, and retrieves any YouTube transcript only through `source_clis.yt_transcript_command("get", ...)`.
+3. Do not call `scripts/yt_transcript_cli.py` directly and do not use RSS-only `scripts/youtube_channel_fetcher.py` unless explicitly running a legacy RSS check.
+
+### PHASE 3: The Unified Pool ###
+1. After the script finishes, read the combined content in `data/raw_context_pool.json`.
+2. Present a summary of the "One Big Block" pool:
+   - Total items collected from X.
+   - Total new blog posts found.
+   - Total YouTube transcripts ingested.
+3. Confirm that all processed URLs have been added to the log to prevent future duplication.
+"""

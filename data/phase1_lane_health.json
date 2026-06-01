@@ -1,0 +1,61 @@
+{
+  "last_updated": "2026-05-30T11:07:56.835686+00:00",
+  "lane_workers": 5,
+  "lanes": [
+    {
+      "lane": "artifact_research",
+      "status": "OK",
+      "items": 106
+    },
+    {
+      "lane": "community",
+      "status": "OK",
+      "items": 426
+    },
+    {
+      "lane": "developer_sentiment",
+      "status": "OK",
+      "items": 33
+    },
+    {
+      "lane": "finance",
+      "status": "OK",
+      "items": 126
+    },
+    {
+      "lane": "model_market",
+      "status": "OK",
+      "items": 614
+    },
+    {
+      "lane": "rss",
+      "status": "OK",
+      "items": 0
+    },
+    {
+      "lane": "science",
+      "status": "OK",
+      "items": 98
+    },
+    {
+      "lane": "startup_collections",
+      "status": "OK",
+      "items": 343
+    },
+    {
+      "lane": "startup_funding",
+      "status": "OK",
+      "items": 29
+    },
+    {
+      "lane": "x",
+      "status": "OK",
+      "items": 111
+    },
+    {
+      "lane": "youtube",
+      "status": "OK",
+      "items": 0
+    }
+  ]
+}

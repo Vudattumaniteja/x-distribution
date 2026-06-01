@@ -1,0 +1,93 @@
+00:00:00
+The way you use AI agents is about to change forever because up until now you've been steering these agents prompt by prompt. But with goal, this new feature on both Codeex and Cloud Code, your agent can now run on autopilot for hours, sometimes days, until it hits the goal you set. People are already running 14-hour overnight sessions with this with the longest I've seen having run for 5 days straight. In this video, I'll break down what goal really is, how you actually use it, and how Codeex compares
+
+00:00:28
+to Claude Code head-to-head. This is a glimpse into where longunning AI agents may be heading to next. So, let's dive into it. So, Claude Code now officially has this goal future built into their harness. In my view, it's a really powerful feature because what it does is basically just keep cloud code working until a specific definition of done is achieved. We'll dive deeper later into how exactly this works under the hood, but just on a broader sense, essentially what you do is when you type in /goal, you set a
+
+00:01:00
+completion condition. Cloud just basically keeps working until that condition is met. And if you are aware of the Ralph loop, which got popular a few months ago, then that is basically what they're referencing here, but built straight into cloud code. Now, as some of you may know, this feature was actually introduced by Codex just 2 weeks ago. It got really popular over at X and now the Entropic team pretty much just copied it from Codeex and I think that's fine because that just gives us
+
+00:01:25
+more optionality as consumers of these tools. And the reason why this got really popular over at X in the first place is because you have all these users who are sharing how they're using codecs. The goal featuring codeex to have really long running sessions like this one is like 45 hours at a time. This is a session where the goal was achieved in 5 days. So pretty insane numbers in here and obviously hard to verify everything but that is where it got people's attention. So later we'll
+
+00:01:50
+do a more complex task comparing codeex with cloud code's goal but for now I'll just show you a very simple demo of how to use it from within cloud code. And usually I use cloud code here in the VS code extension in my IDE but right now in order to use Google you do need to use the terminal. So right from within your IDE, you can actually access your terminal in here or you can just launch the terminal app over at your device and you can just type in cloud there to launch cloud code for you. So when you
+
+00:02:17
+have cloud code loaded in here, you just type in go and I just pasted in this prompt to build me a Chrome extension that does Slack style emoji shortcuts. And basically what that's referring to is this nice feature over Slack where if you type in colon and then like a word like smile that actually gives you a shortcut to paste in that emoji which is not present right now at Chrome but is actually pretty useful. So that's actually something that I want to build myself. And then what I just did in here
+
+00:02:42
+is to provide a definition of done. Now if you're using or want to use goal the right way, you actually should provide an opinion here on what your definition of done is. So for this one, you can see I just said that it should load on Chrome extensions with no manifest errors and that the shortcuts work. So if we fire that off, basically what Cloud Code will do is try to complete that task and then check itself at the end of that turn at the end of that particular loop if it satisfied this definition of done that you gave it. If
+
+00:03:12
+it didn't, then it will continue to resume and rework whatever it is that it is doing up until it reaches this definition of done. And so with that, you can see with this type of feature and behavior, you can have really long running sessions depending on the task that you gave it, right? So you can see for this one, since it's a relatively simple task, the only benefit that goal was able to give to us for this demo is that it checked its output to see if the definition of done has been met. And so
+
+00:03:37
+I loaded that Chrome extension. And now if I type an emoji shortcut in here, you can see that it is rendering pretty well. Now, how that actually works for Cloud Code, in case you're interested, is that when you send in a prompt and it does one loop or turn, at the end of that turn, it actually invokes the haiku model, which is their lightest model in order to assess if your definition of done for that particular task has been completed or not. And if it's not, then it just goes into this loop again up
+
+00:04:04
+until it completes it. I think another way that I'll be starting to use this goal future that Cloud Code and Codeex has introduced is let's say you're almost at the end of your week. So you can see here that mine says that it resets in 3 days. Let's say that will reset in like a few hours and you still have this amount of tokens that you haven't spent yet. So you can see at least for this account I still have 92% of my tokens still unused and when my weekly rate limits reset then that 92%
+
+00:04:29
+will be unutilized. So what you can do is if you have a task that you know is token intensive that you know you will be anyway doing the following week you can actually frontload that now and just use goal in order to batch create let's say articles or content or other regular automations that you need to be running the following week and just do it today before your weekly rate limits reset using the goal feature. to give one example for me. Usually with these videos that we publish on YouTube, I
+
+00:04:55
+actually repurpose them to be sent over at Substack and this is semi-automated. Basically, Claude code reads the transcript of my video in here and uses a skill that I gave it in order to write this in my tone of voice and then it just presents it to me for my review before I go ahead and send it. And so what I did is to ask Claude Code to give me a plan for the goal future where I ask it to create four weekly newsletter drafts that basically repurpose one of my four recent YouTube videos via this
+
+00:05:22
+master newsletter skill which is that skill that I custom fit for my setup. I invoked this other skill that I made which I'll show you guys later how to use that and I'll also link that down below for you to use it. But what that basically gave me is this nice markdown file with a nice long plan for the brief for this particular task. What is the stack? What's in scope? what's out of scope, what is the definition of done, acceptance criteria and key references like that master newsletter skill that I
+
+00:05:46
+was talking about. Point being that this is a nice solid plan to use the goal future against and then from that I just invoked the goal feature and I said to execute this plan pointing to that markdown file and you can see it ran for around 8 minutes in total in here and it gave me these four HTML files which are now ready for my review. So it allows me to choose the subject for that newsletter. It allows me to review and edit the body of these. And then it did the same thing for three other videos.
+
+00:06:14
+And you can see in that scenario earlier where you still have a lot of tokens remaining and you don't know where to use that. You can probably use the goal feature in order to batch create stuff that you know you will anyway need in a few days and just ask cloud code to not stop until your token budget is fully consumed. And at least for this example, you can see I generated just four of these newsletters. But let's say you want to create 30 or 40, then you can just declare that in your plan for the
+
+00:06:39
+goal feature and cloud code will do that until it's done. And that way when this weekly rate limits reset, you won't have any regrets with this huge portion of your tokens being unutilized. But now, let's actually use gold for a more complex task. And what we'll do is do that for both Codeex and Claude Code so that we can compare these two. And by the way, if you're interested in going from just using AI to getting paid for it, then check out the Robo Nuggets community down in the description. We've
+
+00:07:02
+got founders in there who landed their first client in weeks, live build sessions where we create this stuff together, and the actual templates behind what I just showed in this video. The community is also the reason these lessons get made. So see that below if that's for you. So now the task that I'll give to them is this. Build me a single file Settlers of Katan clone, which if you don't know what that is, that's a very popular board game. But here I'm saying that I wanted Game of
+
+00:07:22
+Thrones themed with a style being 32-bit pixel art, but replace the four different players or houses to be reskinned as the AI labs. So, Entropic, Google, OpenAI, and X. And I want it to be single player versus three AI bots. And so, if I fire that off for both Codeex as well as cloud code, which by the way, I have this set to GPD 5.5 and I have this set to ous 4.7 just so that we give it their most intelligent models respectively. And when both of those are done, you can see that's called plan for
+
+00:07:51
+goal. That again just gives us a nice plan to work with that has these standard headings for the overall brief. What is the stack or the text stack to be using? What is in scope, what is out of scope, what are the constraints, what is the definition of done, the acceptance criteria so that the model is guided on when to stop or not, a recommendation on how to verify that. It also has this turn budget which goal as a future can also actually follow. So right now it says to stop after 60 turns. I'll actually just change this
+
+00:08:18
+and just say unlimited turn budget so that we can see how far we can take it. And then it lists down some reference in here as well as a few risks and open questions. So that should be fine. And then same thing for codeex. So you can review the plan that they gave in here if you want to have like a good output for this long running session that you're about to execute. And you can see because we gave it that skill. It also followed that same structure. So to keep this as fair as possible, the only thing
+
+00:08:44
+that I'll change in here is the turn budget. I will just give it an unlimited turn budget as well. And there you go. We can now launch these plans simultaneously. And I'll just say to both of these platforms to execute the plan in their respective markdown plans. So let's fire that off for codeex and let's send that same thing to cloud code. All right. So those two are now done. And you can see the cloud code in here. It achieved its goal in 13 minutes. 13 minutes 5 seconds to be
+
+00:09:12
+exact. But with codeex it achieved that in 33 minutes. And we'll inspect the results of these in just a few. But I think the reason why Codex took much longer is because remember Codex is actually connected to OpenAI's GPD image too. So it also rendered and linked these assets within that game. So we'll check that later. But now let's see what Claude Code gave us. So let's look at Claude Code's output first. And you can see the design is quite basic, right? At least it was able to give us a bit of
+
+00:09:39
+visuals or the materials here, the bricks, the sheep, as well as the wheat. But because it doesn't really have any image generation capabilities, there is a lot to be desired when it comes to the design and the visuals of this. And interestingly, Claude code when it described the different AI labs in here, it described entropic as honest, helpful, and harmless. Google as index all things open AAI, AGI robust, and XAI maximally curious. Let's just test out the functionality of this. So, right now
+
+00:10:05
+we are at a setup round where we are placing our settlements. So, I'm just putting a house in there. And then this is a road. And again, if you don't know how to play Settlers of Katan, this is probably not a good way for you to get introduced to the game. And you can see the three AI opponents that I have there just place theirs. And then I'll place my last one in here. And then now it's telling me to roll the dice. So let me just do that. It tells me I rolled an eight. Let me just shift that so you can
+
+00:10:29
+see. And because of that, I was able to get some materials. So I think the core functionality is in here. So if I end my turn, the AI opponents will now take their turns. And just with one shot and a couple of minutes, it was able to generate a working Settlers of Katan game, which is quite impressive. And then from here, you can just use this as a draft in order to build up the visuals in order to make it a bit more interactive. But because cloud code and entropic don't really have any image
+
+00:10:56
+generation models then if this is the type of project you are building then you will need to call on external APIs from open AAI with their image model or even Google with nano banana in order to improve and even generate assets for this which would cost a separate amount of budget. All right. So now let's check what Codex was able to give us. So I'll just open this website here and just right off the bat this looks much better. Let me just go into full screen. So, it gave us a nice menu here of which
+
+00:11:23
+house to pick. So, let's say we want to play as entropic. And there you go. It has much nizer visuals because of that GPT image 2 capability. And let me just zoom out here so we can see the full board. And it's telling us here to place a settlement. So, let's just go ahead and do that. And then a road. So, that's interesting. Even though it generated those assets for the settlements or the houses for us, which I presume is this one, it didn't really get the idea to use that as the assets for this world.
+
+00:11:49
+But let's just finish the setup in here. And then the next step is first to roll the dice. Doesn't really show me, maybe I'm missing it, where the dice is, but it does tell me how much materials I have in here. And if I, let's say, click on roll, which I don't think I can afford, it doesn't let me do that. Although the more ideal user experience would have been these ones that I can't afford, are already darkened out. But, uh, that's fine. So, if I end turn, those AI opponents have now taken their
+
+00:12:18
+turns. I rolled the dice again. I think I got a six. I think this is a dice roll. Anyway, so surprisingly the functionality, I actually would prefer the Entropic one. But the visuals is definitely an upgrade here because of that GPT image 2 capability. But yeah, if we were to refine this, we should have probably have forced it or amended that plan to make sure that whatever sprites or assets that it creates, it would make sure to use that in the final HTML game that it generated for us. And the great thing about a future-like goal
+
+00:12:49
+is that you can actually clearly define that in the acceptance criteria which is the plan that you have in here. So if you are serious about running goal in order to oneshot as much as possible a project like this then what I would do is take a lot of time to just refine this definition of done and this acceptance criteria because that is what the model will look for to see if it has achieved its objective its goal or not. But there you go. Very interesting approach. And finally, there is sort of
+
+00:13:16
+a Ralph loop that is built into these coding harnesses from both OpenAI and Entropic. I hope that was useful. And if it is, then consider subscribing because that helps me a lot to put out more educational content like this. And if you want to learn more about the skills I personally use to run our business on the day-to-day, then you can watch this video next. I'll see you guys next time. Thank you.
+

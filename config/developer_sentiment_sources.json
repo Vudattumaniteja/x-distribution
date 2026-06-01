@@ -1,0 +1,78 @@
+{
+  "metadata": {
+    "description": "Developer pain, outage, status, and adoption signals across model providers and community surfaces.",
+    "last_updated": "2026-05-29T00:00:00Z"
+  },
+  "lookback_hours": 168,
+  "request_timeout_seconds": 25,
+  "max_items_per_source": 30,
+  "pain_keywords": [
+    "incident",
+    "degraded",
+    "outage",
+    "latency",
+    "error",
+    "rate limit",
+    "api",
+    "tools",
+    "function calling",
+    "pricing",
+    "expensive",
+    "broken",
+    "regression",
+    "timeout",
+    "unavailable"
+  ],
+  "status_sources": [
+    {
+      "name": "OpenAI Status",
+      "mode": "rss",
+      "url": "https://status.openai.com/",
+      "rss_url": "https://status.openai.com/history.rss",
+      "source_region": "global",
+      "tier": "tier_1",
+      "source_type": "status_page"
+    },
+    {
+      "name": "Anthropic Status",
+      "mode": "rss",
+      "url": "https://status.anthropic.com/",
+      "rss_url": "https://status.anthropic.com/history.rss",
+      "source_region": "global",
+      "tier": "tier_1",
+      "source_type": "status_page"
+    },
+    {
+      "name": "OpenRouter Status",
+      "mode": "html_index",
+      "url": "https://status.openrouter.ai/",
+      "source_region": "global",
+      "tier": "tier_1",
+      "source_type": "status_page"
+    },
+    {
+      "name": "Groq Status",
+      "mode": "html_index",
+      "url": "https://status.groq.com/",
+      "source_region": "global",
+      "tier": "tier_2",
+      "source_type": "status_page"
+    },
+    {
+      "name": "Together Status",
+      "mode": "html_index",
+      "url": "https://status.together.ai/",
+      "source_region": "global",
+      "tier": "tier_2",
+      "source_type": "status_page"
+    },
+    {
+      "name": "Fireworks Status",
+      "mode": "html_index",
+      "url": "https://status.fireworks.ai/",
+      "source_region": "global",
+      "tier": "tier_2",
+      "source_type": "status_page"
+    }
+  ]
+}

@@ -1,0 +1,93 @@
+00:00:00
+So, it's Anthropic's lawyers who just put out a notice to everybody who's been buying these shady secondary shares that they are now voided. All right, so there's so much to talk about including my own personal experience trying to buy secondary Anthropic shares. And I want to talk about all of it. And by the way, if you like me breaking down stories just like this, hit the like button, subscribe to the channel. It really does help spread the word. Thank you in advance. So, Anthropic is one of, if not
+
+00:00:27
+the fastest growing private company of all time, soon potentially to be the biggest monopoly of all time, but I'll save that for another video. Look at this growth simply from February of this year. They went from a $300 valuation all the way up to above 1 trillion. And here's the thing, back when it was about 300 billion, I actually had the opportunity to purchase these secondary shares that I just told you about, but I didn't. And I was really regretful for a while until today. So, this is the letter that
+
+00:01:02
+the lawyers just published. "Unauthorized Anthropic stock sales and investment scams. We are sharing important information about investments in Anthropic to help protect individuals from potentially invalid transfers or investment fraud." And while I read this, I want you to keep in mind that you as an individual, me as an individual, do not get to participate like big investment companies in one of the biggest value creation events in the history of humanity with the AI boom. And I'm going to talk more about that
+
+00:01:36
+later because it seems so backwards and unfair. So, transfer restrictions. "Both our preferred stock and common stock are subject to transfer restrictions contained in our bylaws. Any sale or transfer of Anthropic stock or any interest in Anthropic stock that has not been approved by our board of directors is void and will not be recognized on our books and records. So, what is going on? Anthropic is a private company and that is the opposite of a public company like Nvidia or Apple or Microsoft and
+
+00:02:12
+Google where you can go to whatever brokerage firm you use and buy shares of those public companies. And because Anthropic is a private company, it is very difficult for individual investors to purchase shares in the company. But occasionally, there are certain events in which early employees want to sell some of their shares while the company still public. And during those events, that's when individuals or large venture capitalist firms are able to buy up some of those shares. And with all of the
+
+00:02:45
+hype around artificial intelligence and specifically the growth rate of Anthropic's revenue over the last 6 months, there has been such demand to try to get some of these Anthropic shares. And that is what caused their private market valuation to absolutely skyrocket over the last few months. Dario just said that their revenue had grown 80 times this year alone, 80X. That is absolutely unheard of. And so what we've seen is this black market of picking up Anthropic shares. Basically, an employee will want to sell some of
+
+00:03:20
+their shares, somebody else will get them, and then attempt to resell them because the demand is skyrocketing. So, there's an arbitrage opportunity there. But because there's so much money, because there's such a big arbitrage opportunity, more and more middlemen have gotten in the game. So, we have Anthropic shares on one side and then multiple layers of people just charging fees to get those shares. And it's not only extremely expensive to try to purchase some of these shares, but it's also
+
+00:03:51
+completely opaque. You won't actually know what you're purchasing because there's so many layers between you and the actual shares. And by the way, you know what's also incredibly valuable? The sponsor of today's video. I use Greptile every single day. It reviews all of the code I commit using AI, and it has caught some serious bugs before I deployed it to production. But most people don't realize that Greptile actually gets more personalized over time. It learns how you like to code,
+
+00:04:17
+your best practices, the syntax you like to use, and will actually store these as memories and get better and give you better recommendations as it learns about you and your coding team. And I want to actually talk about the three learning modes that it has. First, giving it complete access to your code base. It indexes your code base when you sign up. This leads to high-quality reviews right out of the box. And it's not just reviewing the PR that you're looking at. It kind of sees around
+
+00:04:45
+corners. For example, it can detect a change in one file that might break another file three steps away from it. And then last, signals from PRs. Greptile acts like another member of your team, not some completely automated isolated tool. And the combination of these three tools mimics how a human engineer would operate on your team. It gets better with experience. So, check out Greptile. I use them. They're a great partner to the channel. I'm going to drop a 14-day free trial link down in
+
+00:05:17
+the description. Go check them out. Let them know I sent you. And now, back to the video. So, let me show you what this actually looks like. Over here, you have a very happy Anthropic employee who has a ton of shares of Anthropic stock. They are now multimillionaires, and they are looking to de-risk. They are looking to sell some of their shares because they want to go buy a house. And so, they sell their shares to a buyer. The buyer is actually able to buy from a bunch of different employees. And then what that person does or that
+
+00:05:50
+company is they wrap it all up and then they put it all into something called an SPV, a special purpose vehicle. Now this SPV houses all of these shares and what do they do? Well, they try to resell it. They allow investment into the special purpose vehicle. So you have all these other people on the outside trying to purchase shares of this SPV, but that's not free. So of course they want to make money beyond just selling the shares and the increase in value, they want to make fees. And the normal fee to invest in a
+
+00:06:25
+vehicle like this is usually 2%, but because Anthropic shares are in such high demand, these SPVs charge a lot more. They are charging upwards of 10% if not more. And then we have a bunch of people buying SPVs. And then what does this enterprising person do? Well, they think, "Hey, why can't I broker more of these shares out?" And they do that. So you have this original SPV which is, let's say, 2% fees, and then you have a wrapper around it for another SPV, which, let's say, that's 5% fees,
+
+00:07:00
+and then potentially another one. And then all of a sudden you're seeing 10% fees. And so by the time the end investor gets it, they are paying so much in fees and they have very little visibility into what all the terms are along the way. So we have this investor on the outside who, actually, I should probably make them sad. And they're buying this SPV through that SPV through this one all the way trying to get those shares. But they're just paying immense fees and almost zero visibility. And it turns out
+
+00:07:32
+it was actually incredibly risky because often times they were never allowed to purchase the shares to begin with. So now back to the post by Anthropic's lawyers. Here they're basically saying, "Be warned. Be careful. If we have not directly approved the sale of shares from one of our employees, they are void." And that's the problem. It is almost impossible to see through the layers of SPVs to actually purchase the shares. So, let's continue. This means that if someone purports to sell
+
+00:08:03
+Anthropic shares without proper board approval, that transaction is invalid. The purported buyer would not be recognized as a stockholder of Anthropic, and you would have no stockholder rights. So, layers of SPVs, null and void. And that doesn't mean all secondary sales are invalid or illegal or shady. Some of them are legitimate, but then some of those get wrapped up in illegitimate SPVs, and then the entire thing becomes void. And look what they say right here. "We do not permit special purpose vehicles to acquire
+
+00:08:35
+Anthropic stock, and any transfer of shares to an SPV are void under our transfer restrictions." Right there. This is why we're seeing such a massive decline in the valuation of Anthropic on the private market. Not because the demand isn't there, but because they've basically cut off demand. Because that demand has no valid way to get the shares. I definitely would like to, but it's almost impossible to do so legitimately. "Offers to invest in Anthropic's past or future financing
+
+00:09:09
+rounds through an SPV are prohibited." And they continue, "We are also aware of investment funds that claim to offer indirect access to Anthropic stock. These funds often market themselves by saying something like, 'You can't invest in Anthropic directly, but invest with us, and we'll get access for you.'" And in fact, they specifically called out a bunch of firms that do exactly this. I'll get to that in a moment. These funds are most likely relying on mechanisms that attempt to circumvent
+
+00:09:38
+our transfer restrictions. Any third-party claiming to sell Anthropic shares to the general public, whether through direct sales, forward contracts, tokenized securities, or other mechanisms is likely either engaged in fraud or offering an investment that may have no value due to our transfer restrictions. So, basically, if you bought some of these, you're kind of out of luck. Okay, so, they specifically said, "Here's what to watch out for." If someone contacts you unsolicited via
+
+00:10:07
+email, social media, or messaging apps offering Anthropic shares, claims to have exclusive or limited-time access to Anthropic stock, requests payment via cryptocurrency, wire transfer, or other hard-to-trace methods, pressures you to invest quickly. I've never seen this with Anthropic shares. We have people dying to buy these Anthropic shares. So, them saying people are using these high-pressure techniques seems surprising to me. Claims to have structured a transaction to avoid company restrictions, cannot
+
+00:10:37
+provide documentation of board approval for the transfer. This last one is the one I'd be most worried about. The SPVs that I've come across purporting to have Anthropic shares to invest in basically give zero visibility into the actual board approval. And specifically, here are the unauthorized firms: OpenDoor Partners, Unicorns Exchange, Pachamama, I've never even heard of that, Lionheart Ventures, Hive, Forge, Sidecar, and UpMarket. And some of these companies are actually legit. They sell secondary
+
+00:11:08
+shares. That is what they do. There needs to be a liquid market for private companies, and that's what some of these companies do. But again, unless you have explicit authorization by the board of directors of Anthropic, you cannot do that. You cannot buy it, and if you buy it, they're void. You're wasting your money. You're basically just losing your money. And it has gotten so chaotic that there are even people posting publicly on Twitter about selling shares that first of all, they shouldn't be selling,
+
+00:11:37
+but also because they're not a registered broker, is completely illegal. And that's what we're seeing here with Ash Arora. She posted this and then quickly deleted it. Simply brokering an Anthropic secondary deal made me more money than my entire net worth from working in my 20s. This is insane. Now, of course, I saw this and I contacted her. I DM'd her. I said, "Hey, I'd like some shares." And it didn't go anywhere, but the point is she deleted it because she's not a
+
+00:12:04
+registered broker and people were saying, "Hey, people are going to contact FINRA. This is completely illegal. You cannot do this. You will go to jail if you do this." And one funny thing I just want to point out, she's a VC and she got Forbes 30 under 30, but she said she's not arrested. And if you're not familiar with Forbes 30 under 30, there is this ongoing joke that people on the Forbes 30 under 30 keep going to jail. And here's a few examples. Sam Bankman-Fried, Caroline Ellison, Charlie
+
+00:12:34
+Javice, Martin Shkreli, Joanna Smith Griffin, and the list goes on and on. So, Ash herself was making fun of the joke because she's on the Forbes 30 under 30 and is not arrested, but she is definitely tempting fate here. And so, the real problem is that average people don't have access to Anthropic shares, OpenAI shares, xAI shares. These are generational companies that will have some of the biggest value creation in human history. And only the top-tier venture capitalists and uber-wealthy are
+
+00:13:10
+able to acquire shares and participate in this private market. Now, I understand there are reasons why private unsophisticated investors have a higher chance of getting screwed. They have a higher chance of falling for fraud than sophisticated accredited investors. But at the same time, this is very much the rich get richer, and it would be so much better if we just loosened the rules and allowed more people to participate in these private market sales. Here's an example of what happens when a private
+
+00:13:44
+company sells shares. It was just reported today that Anthropic let 600 employees sell a total of $6.6 billion in shares for an average of $11 million per employee. That is great. They want some liquidity for their years of hard work. And then, really, the only people who can buy up these shares are people who are already on the inside. They are venture capital firms or very wealthy individuals. And so, then what happens? Well, we have a whole swath of new millionaires, multi-millionaires on the
+
+00:14:20
+market driving up the price of San Francisco real estate, making it even harder for the average person to have residence here. Just in the last couple months, this is what we've seen. San Francisco home sale in the Sunset District at $900,000 over list price. That is nearly 90% more than the list price. And this is not the only example of this. I've seen a dozen examples of houses in the last few months in the San Francisco Bay Area go for sale so absurdly above the list price. This is because there's just so much new money
+
+00:14:56
+sloshing around, and again, only a few people are really able to capture the value. And all of these secondary sales are just a reaction to the fact that private companies are staying private longer. Anthropic is valued at a trillion dollars. OpenAI, similarly, xAI, same thing. Even Stripe, a non-AI company, has been private way longer than anybody would have anticipated. And that means the employees cannot sell the shares. That also means that average people can't just go to the public market and purchase those shares. And
+
+00:15:29
+so, where does that leave us? Well, that leaves us with insanely valuable private companies that the average retail investor cannot get their hands on, cannot participate in one of the biggest value creations, one of the biggest generational wealth creations in human history. And of course, so many people are pointing at artificial intelligence as a vehicle to increase the disparity of wealth in the United States and worldwide, and it just furthers that case. So, you're either on the inside
+
+00:16:01
+and you are one of the biggest venture capital firms in the world, and then you have access to it, or you're one of the wealthiest individuals in the world and you're on the inside and you can get these deals because you're just friends with everybody, or you're on the outside looking in. And by the way, I really do wish I had Anthropic shares right now after the story from last week. Details right here.
+

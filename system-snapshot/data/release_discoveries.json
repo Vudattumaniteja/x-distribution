@@ -1,0 +1,45 @@
+{
+  "last_run": "2026-05-06T09:35:49.001502+00:00",
+  "new_discoveries": [
+    {
+      "source": "GitHub Release",
+      "org": "openai",
+      "repo": "openai-python",
+      "tag": "v2.34.0",
+      "url": "https://github.com/openai/openai-python/releases/tag/v2.34.0",
+      "published_at": "2026-05-04T17:33:53Z",
+      "discovered_at": "2026-05-06T09:35:47.238791+00:00",
+      "summary": "## 2.34.0 (2026-05-04)\n\nFull Changelog: [v2.33.0...v2.34.0](https://github.com/openai/openai-python/compare/v2.33.0...v2.34.0)\n\n### Features\n\n* **api:** add external_key_id to projects, email/metadata params to users, update types ([2d232ee](https://github.com/openai/openai-python/commit/2d232eebb2f"
+    },
+    {
+      "source": "GitHub Release",
+      "org": "google-deepmind",
+      "repo": "gemma",
+      "tag": "v3.3.0",
+      "url": "https://github.com/google-deepmind/gemma/releases/tag/v3.3.0",
+      "published_at": "2025-11-18T10:46:35Z",
+      "discovered_at": "2026-05-06T09:35:48.133551+00:00",
+      "summary": "* Initial release"
+    },
+    {
+      "source": "GitHub Release",
+      "org": "mistralai",
+      "repo": "mistral-common",
+      "tag": "v1.11.1",
+      "url": "https://github.com/mistralai/mistral-common/releases/tag/v1.11.1",
+      "published_at": "2026-04-29T07:24:42Z",
+      "discovered_at": "2026-05-06T09:35:48.560467+00:00",
+      "summary": "## What's Changed\r\n\r\nThis Patch allows usage of user message after tool message. It also makes `from_openai` less strict to make mistral-common integrations in other frameworks smoother.\r\n\r\n* Fix docs by @juliendenize in https://github.com/mistralai/mistral-common/pull/216\r\n* Allow user message afte"
+    },
+    {
+      "source": "GitHub Release",
+      "org": "meta-llama",
+      "repo": "llama-models",
+      "tag": "v0.2.0",
+      "url": "https://github.com/meta-llama/llama-models/releases/tag/v0.2.0",
+      "published_at": "2025-04-05T19:02:56Z",
+      "discovered_at": "2026-05-06T09:35:48.999463+00:00",
+      "summary": "Llama 4 Support ( https://www.llama.com ) \r\n\r\n"
+    }
+  ]
+}

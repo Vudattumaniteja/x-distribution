@@ -1,0 +1,53 @@
+{
+  "blogs": [
+    {
+      "name": "OpenAI News",
+      "url": "https://openai.com/news/",
+      "rss_url": "https://openai.com/news/rss.xml",
+      "tier": "tier_1"
+    },
+    {
+      "name": "Anthropic News (Community)",
+      "url": "https://www.anthropic.com/news",
+      "rss_url": "https://raw.githubusercontent.com/Olshansk/rss-feeds/main/feeds/feed_anthropic_news.xml",
+      "tier": "tier_1"
+    },
+    {
+      "name": "Google DeepMind Blog",
+      "url": "https://deepmind.google/blog/",
+      "rss_url": "https://deepmind.com/blog/feed/basic/",
+      "tier": "tier_1"
+    },
+    {
+      "name": "Meta AI Blog (Community)",
+      "url": "https://ai.meta.com/blog/",
+      "rss_url": "https://raw.githubusercontent.com/leontloveless/ai-rss-feeds/main/feeds/meta-ai-blog.xml",
+      "tier": "tier_1"
+    },
+    {
+      "name": "Mistral AI News (Community)",
+      "url": "https://mistral.ai/news/",
+      "rss_url": "https://raw.githubusercontent.com/0xSMW/rss-feeds/main/feeds/feed_mistral_news.xml",
+      "tier": "tier_1"
+    },
+    {
+      "name": "xAI News (Community)",
+      "url": "https://x.ai/blog",
+      "rss_url": "https://raw.githubusercontent.com/Olshansk/rss-feeds/main/feeds/feed_xai_news.xml",
+      "tier": "tier_1"
+    },
+    {
+      "name": "Google AI Blog",
+      "url": "https://blog.google/technology/ai/",
+      "rss_url": "https://blog.google/technology/ai/rss/",
+      "tier": "tier_2"
+    },
+    {
+      "name": "NVIDIA Blog",
+      "url": "https://blogs.nvidia.com/blog/category/deep-learning/",
+      "rss_url": "https://blogs.nvidia.com/feed/",
+      "tier": "tier_2"
+    }
+  ],
+  "last_check_timestamp": null
+}

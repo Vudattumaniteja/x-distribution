@@ -1,0 +1,271 @@
+{
+  "reddit": {
+    "lookback": "day",
+    "limit_per_listing": 25,
+    "comment_limit": 8,
+    "rss_timeout_seconds": 20,
+    "rss_delay_seconds": 0.8,
+    "rss_search_queries_per_subreddit": 2,
+    "mcp_buddy": {
+      "enabled": true,
+      "command": ["npx.cmd", "-y", "reddit-mcp-buddy"],
+      "startup_timeout_seconds": 45,
+      "request_timeout_seconds": 60,
+      "search_queries_per_subreddit": 0,
+      "max_subreddits_per_run": 1,
+      "max_detail_fetch_items": 0,
+      "fallback_script": "reddit_scraper_standalone.py"
+    },
+    "subreddits": [
+      {
+        "name": "LocalLLaMA",
+        "role": "local_model_practitioners",
+        "queries": ["llm", "model", "inference", "agent", "coding"]
+      },
+      {
+        "name": "MachineLearning",
+        "role": "research_practitioners",
+        "queries": ["paper", "benchmark", "sota", "llm", "agent"]
+      },
+      {
+        "name": "OpenAI",
+        "role": "openai_users",
+        "queries": ["model", "api", "codex", "agent", "pricing"]
+      },
+      {
+        "name": "ClaudeAI",
+        "role": "claude_users",
+        "queries": ["claude code", "opus", "sonnet", "agent", "mcp"]
+      },
+      {
+        "name": "OpenRouter",
+        "role": "openrouter_users",
+        "queries": ["OpenRouter", "model", "provider", "API", "pricing"]
+      },
+      {
+        "name": "ChatGPTCoding",
+        "role": "coding_agent_users",
+        "queries": ["codex", "cursor", "claude code", "agent", "workflow"]
+      },
+      {
+        "name": "AI_Agents",
+        "role": "agent_product_watch",
+        "queries": ["launch", "coding agent", "workflow", "automation", "open source"]
+      },
+      {
+        "name": "AutoGPT",
+        "role": "agent_framework_watch",
+        "queries": ["agent", "tool", "workflow", "open source", "release"]
+      },
+      {
+        "name": "SaaS",
+        "role": "startup_product_watch",
+        "queries": ["AI", "launch", "startup", "product", "founder"]
+      },
+      {
+        "name": "SideProject",
+        "role": "indie_product_launches",
+        "queries": ["AI", "launch", "built", "tool", "MVP"]
+      },
+      {
+        "name": "startups",
+        "role": "startup_operator_discussion",
+        "queries": ["AI", "funding", "launch", "product", "growth"]
+      },
+      {
+        "name": "biotech",
+        "role": "biotech_research_startup_discussion",
+        "queries": ["AI", "startup", "drug discovery", "protein", "funding"]
+      },
+      {
+        "name": "Entrepreneur",
+        "role": "operator_product_discussion",
+        "queries": ["AI", "automation", "SaaS", "launch", "tool"]
+      },
+      {
+        "name": "ArtificialInteligence",
+        "role": "general_ai_product_watch",
+        "queries": ["tool", "agent", "model", "startup", "release"]
+      },
+      {
+        "name": "China",
+        "role": "china_tech_context",
+        "queries": ["AI", "model", "ByteDance", "Alibaba", "DeepSeek"]
+      },
+      {
+        "name": "Sino",
+        "role": "china_tech_context_secondary",
+        "queries": ["AI", "model", "China tech", "Alibaba", "ByteDance"]
+      },
+      {
+        "name": "StartUpIndia",
+        "role": "india_startup_operator_discussion",
+        "queries": ["AI", "startup", "funding", "SaaS", "product"]
+      },
+      {
+        "name": "AllIndiaStartups",
+        "role": "india_startup_source_discovery",
+        "queries": ["AI", "startup", "newsletter", "funding", "founder"]
+      },
+      {
+        "name": "developersIndia",
+        "role": "india_developer_reality_check",
+        "queries": ["AI", "LLM", "coding assistant", "agent", "startup"]
+      },
+      {
+        "name": "IndiaTech",
+        "role": "india_tech_context",
+        "queries": ["AI", "startup", "Google", "OpenAI", "Indian AI"]
+      },
+      {
+        "name": "opensource",
+        "role": "open_source_product_watch",
+        "queries": ["AI", "LLM", "agent", "release", "tool"]
+      },
+      {
+        "name": "github",
+        "role": "github_social_watch",
+        "queries": ["AI", "LLM", "agent", "trending", "release"]
+      },
+      {
+        "name": "programming",
+        "role": "general_developers",
+        "queries": ["AI", "LLM", "OpenAI", "Claude", "coding assistant"]
+      },
+      {
+        "name": "selfhosted",
+        "role": "self_hosting_developers",
+        "queries": ["LLM", "Ollama", "local AI", "agent", "model"]
+      },
+      {
+        "name": "devops",
+        "role": "infra_developers",
+        "queries": ["AI", "LLM", "agent", "automation", "observability"]
+      },
+      {
+        "name": "ExperiencedDevs",
+        "role": "senior_developer_opinions",
+        "queries": ["AI", "LLM", "coding assistant", "productivity", "agent"]
+      },
+      {
+        "name": "singularity",
+        "role": "frontier_ai_watchers",
+        "queries": ["model", "OpenAI", "Anthropic", "Gemini", "xAI"]
+      }
+    ]
+  },
+  "hacker_news": {
+    "lookback_hours": 72,
+    "min_points": 20,
+    "comment_limit": 10,
+    "max_comment_fetch_items": 40,
+    "queries": [
+      "LLM",
+      "Claude Code",
+      "Codex",
+      "Cursor",
+      "MCP",
+      "agent",
+      "AI coding",
+      "local model",
+      "inference",
+      "embeddings",
+      "vector database",
+      "CUDA",
+      "GPU",
+      "open source model",
+      "evals",
+      "OpenAI API",
+      "Anthropic API",
+      "Gemini API"
+    ]
+  },
+  "discussion_keywords": [
+    "broken",
+    "bug",
+    "latency",
+    "cost",
+    "pricing",
+    "benchmark",
+    "eval",
+    "production",
+    "workflow",
+    "self-host",
+    "local",
+    "privacy",
+    "context",
+    "hallucination",
+    "reliability",
+    "regression",
+    "api",
+    "rate limit",
+    "token",
+    "memory",
+    "mcp",
+    "agent",
+    "cursor",
+    "codex",
+    "claude code",
+    "product launch",
+    "show hn",
+    "launch",
+    "startup",
+    "founder",
+    "chinese ai",
+    "china ai",
+    "bytedance",
+    "alibaba",
+    "moonshot",
+    "kimi",
+    "qwen",
+    "deepseek",
+    "india ai",
+    "indian ai",
+    "sarvam",
+    "krutrim",
+    "bhashini",
+    "southeast asia ai",
+    "europe ai startup",
+    "regional ai startup"
+  ],
+  "topic_keywords": [
+    "ai",
+    "artificial intelligence",
+    "llm",
+    "large language model",
+    "language model",
+    "openai",
+    "anthropic",
+    "claude",
+    "gemini",
+    "gpt",
+    "codex",
+    "cursor",
+    "copilot",
+    "mcp",
+    "ai agent",
+    "coding agent",
+    "agentic",
+    "inference",
+    "embedding",
+    "embeddings",
+    "vector database",
+    "rag",
+    "ollama",
+    "llama",
+    "qwen",
+    "mistral",
+    "deepseek",
+    "sarvam",
+    "krutrim",
+    "bhashini",
+    "minimax",
+    "moonshot",
+    "grok",
+    "transformer",
+    "cuda",
+    "gpu",
+    "open weights",
+    "local model"
+  ]
+}

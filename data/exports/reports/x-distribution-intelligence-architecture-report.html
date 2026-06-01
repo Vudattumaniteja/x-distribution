@@ -1,0 +1,1659 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>X Distribution Intelligence Report</title>
+  <style>
+    :root {
+      --bg: #071014;
+      --panel: #0d1b22;
+      --panel-2: #102832;
+      --text: #e9fbff;
+      --muted: #8fb5c1;
+      --line: rgba(143, 181, 193, .22);
+      --accent: #37f5c8;
+      --accent-2: #7aa7ff;
+      --warn: #ffd166;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, Arial, sans-serif;
+      color: var(--text);
+      background:
+        radial-gradient(circle at 20% 5%, rgba(55,245,200,.18), transparent 28rem),
+        radial-gradient(circle at 80% 15%, rgba(122,167,255,.18), transparent 26rem),
+        var(--bg);
+    }
+    .shell { max-width: 1240px; margin: 0 auto; padding: 32px 20px 64px; }
+    .hero {
+      border: 1px solid var(--line);
+      border-radius: 28px;
+      padding: 28px;
+      background: linear-gradient(135deg, rgba(13,27,34,.94), rgba(16,40,50,.72));
+      box-shadow: 0 24px 80px rgba(0,0,0,.28);
+    }
+    .brand { display: flex; align-items: center; gap: 14px; color: var(--muted); text-transform: uppercase; letter-spacing: .12em; font-size: 12px; }
+    .mark {
+      width: 42px; height: 42px; border: 2px solid var(--accent); border-radius: 12px;
+      display: grid; place-items: center; color: var(--accent); font-weight: 900; box-shadow: 0 0 24px rgba(55,245,200,.25);
+    }
+    h1 { font-size: clamp(36px, 6vw, 76px); line-height: .92; margin: 22px 0 14px; letter-spacing: -.06em; max-width: 900px; }
+    .hero p { max-width: 820px; color: var(--muted); font-size: 18px; line-height: 1.6; }
+    .stats { display: grid; grid-template-columns: repeat(5, minmax(0,1fr)); gap: 12px; margin-top: 24px; }
+    .stat { padding: 16px; border: 1px solid var(--line); border-radius: 18px; background: rgba(255,255,255,.035); }
+    .stat strong { display:block; font-size: 28px; color: var(--accent); }
+    .stat span { color: var(--muted); font-size: 12px; }
+    .toolbar { position: sticky; top: 0; z-index: 10; display: flex; gap: 12px; padding: 14px 0; backdrop-filter: blur(16px); }
+    input, select { width: 100%; border: 1px solid var(--line); border-radius: 14px; padding: 13px 14px; color: var(--text); background: rgba(7,16,20,.88); }
+    .grid { display: grid; grid-template-columns: 340px 1fr; gap: 18px; align-items: start; margin-top: 18px; }
+    .panel { border: 1px solid var(--line); border-radius: 22px; background: rgba(13,27,34,.82); overflow: hidden; }
+    .panel h2 { margin: 0; padding: 18px 20px; border-bottom: 1px solid var(--line); font-size: 18px; }
+    table { width: 100%; border-collapse: collapse; font-size: 13px; }
+    td { padding: 10px 14px; border-bottom: 1px solid var(--line); color: var(--muted); }
+    td:first-child { color: var(--text); }
+    .audit { padding: 18px 20px; color: var(--muted); line-height: 1.55; }
+    .audit strong { color: var(--text); }
+    .category { border: 1px solid var(--line); border-radius: 22px; background: rgba(13,27,34,.82); margin-bottom: 12px; overflow: hidden; }
+    .category-header { width: 100%; border: 0; color: var(--text); background: transparent; padding: 18px 20px; display:flex; justify-content:space-between; cursor:pointer; font-size: 16px; text-align:left; }
+    .category-header strong { color: var(--accent); }
+    .category-body { display: grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap: 12px; padding: 0 16px 16px; }
+    .category.collapsed .category-body { display: none; }
+    .item-card { border: 1px solid var(--line); border-radius: 18px; padding: 14px; background: rgba(255,255,255,.035); min-height: 160px; }
+    .item-meta { display:flex; gap:8px; flex-wrap:wrap; color: var(--muted); font-size: 11px; text-transform: uppercase; letter-spacing: .06em; }
+    .item-card h4 { margin: 10px 0 8px; font-size: 15px; line-height: 1.25; }
+    .item-card p { color: var(--muted); font-size: 13px; line-height: 1.45; }
+    a { color: var(--accent); text-decoration: none; font-weight: 700; }
+    .footer { color: var(--muted); margin-top: 28px; font-size: 13px; }
+    @media (max-width: 900px) { .stats, .grid, .category-body { grid-template-columns: 1fr; } .toolbar { position: static; flex-direction: column; } }
+  </style>
+</head>
+<body>
+  <main class="shell">
+    <section class="hero">
+      <div class="brand"><div class="mark">XD</div><span>X Distribution Intelligence System</span></div>
+      <h1>AI News Radar, Source Architecture, and Coverage Audit</h1>
+      <p>A live report generated from the latest collection run. It combines official announcements, Bloomberg/finance, model markets, X, YouTube transcripts, Reddit, Hacker News, GitHub, Hugging Face, arXiv, startup collections, regional AI, and science/deep-tech lanes.</p>
+      <div class="stats">
+        <div class="stat"><strong>2059</strong><span>queue items</span></div>
+        <div class="stat"><strong>27</strong><span>YouTube videos / 2d</span></div>
+        <div class="stat"><strong>402</strong><span>Reddit discoveries</span></div>
+        <div class="stat"><strong>287</strong><span>official/news items</span></div>
+        <div class="stat"><strong>8/10</strong><span>public AI speed rating</span></div>
+      </div>
+    </section>
+
+    <div class="toolbar">
+      <input id="search" placeholder="Search categories, titles, sources, signals...">
+      <select id="filter">
+        <option value="">All categories</option>
+        <option value="bloomberg + market-moving ai">Bloomberg + Market-Moving AI</option><option value="new models + model market">New Models + Model Market</option><option value="official company announcements">Official Company Announcements</option><option value="youtube deep signals">YouTube Deep Signals</option><option value="x watchlist + fast rumors">X Watchlist + Fast Rumors</option><option value="reddit community reality">Reddit Community Reality</option><option value="hacker news developer talk">Hacker News Developer Talk</option><option value="startup funding">Startup Funding</option><option value="startup collections + missed startups">Startup Collections + Missed Startups</option><option value="china + regional ai">China + Regional AI</option><option value="india deep-tech">India Deep-Tech</option><option value="bio + science breakthroughs">Bio + Science Breakthroughs</option><option value="github / hugging face / arxiv artifacts">GitHub / Hugging Face / arXiv Artifacts</option><option value="developer pain + provider status">Developer Pain + Provider Status</option><option value="product launch radar">Product Launch Radar</option><option value="workflow / agents / coding">Workflow / Agents / Coding</option><option value="finance / macro / chips">Finance / Macro / Chips</option>
+      </select>
+    </div>
+
+    <section class="grid">
+      <aside class="panel">
+        <h2>Audit</h2>
+        <div class="audit">
+          <p><strong>Level:</strong> fast creator / lightweight news-desk. Above a normal individual because collection spans multiple independent lanes. Below Bloomberg because there is no proprietary terminal, paid wire depth, or reporter network.</p>
+          <p><strong>Runtime:</strong> full verified collection now completes in tens of minutes, not 4+ hours. X is serialized because the local XCLI browser session is not concurrency-safe.</p>
+          <p><strong>Coverage:</strong> strongest in public AI/model/developer signals; improving in finance, China, India, startups, and science.</p>
+          <p><a href="x-distribution-intelligence-architecture-report.md">Open Markdown source</a></p>
+        </div>
+        <h2>Lane Health</h2>
+        <table><tr><td>artifact_research</td><td>OK</td><td>106</td></tr>
+<tr><td>community</td><td>OK</td><td>426</td></tr>
+<tr><td>developer_sentiment</td><td>OK</td><td>33</td></tr>
+<tr><td>finance</td><td>OK</td><td>126</td></tr>
+<tr><td>model_market</td><td>OK</td><td>614</td></tr>
+<tr><td>rss</td><td>OK</td><td>0</td></tr>
+<tr><td>science</td><td>OK</td><td>98</td></tr>
+<tr><td>startup_collections</td><td>OK</td><td>343</td></tr>
+<tr><td>startup_funding</td><td>OK</td><td>29</td></tr>
+<tr><td>x</td><td>OK</td><td>111</td></tr>
+<tr><td>youtube</td><td>OK</td><td>0</td></tr></table>
+      </aside>
+
+      <section id="categories">
+        <section class="category" data-category="bloomberg + market-moving ai">
+          <button class="category-header" type="button">
+            <span>Bloomberg + Market-Moving AI</span>
+            <strong>27</strong>
+          </button>
+          <div class="category-body">
+    <article class="item-card">
+      <div class="item-meta"><span>Bloomberg Technology</span><span>AI Market Intelligence</span></div>
+      <h4>Anthropic Valuation of $965 Billion Passes OpenAI</h4>
+      <p>Anthropic raised $65 billion in a funding round that valued the AI company at $965 billion including the new investment, eclipsing rival OpenAI’s value for the first time. Bloomberg&#x27;s AI reporter Shirin Ghaffary joins Tim Stenovec on &quot;Bloomberg Tech.&quot; (Source:</p>
+      <a href="https://www.bloomberg.com/news/videos/2026-05-29/anthropic-valuation-of-965-billion-passes-openai-video" target="_blank" rel="noreferrer">Open</a>
+    </article>
+    
+
+    <article class="item-card">
+      <div class="item-meta"><span>Bloomberg Technology</span><span>AI Market Intelligence</span></div>
+      <h4>Anthropic Raises at $965 Billion Valuation, Eclipsing OpenAI</h4>
+      <p>Anthropic PBC raised $65 billion in a funding round that valued the artificial intelligence company at $965 billion including the new investment, eclipsing rival OpenAI’s value for the first time. The funding, announced Thursday, was led by Altimeter Capital, </p>
+      <a href="https://www.bloomberg.com/news/videos/2026-05-29/anthropic-raises-at-965b-valuation-eclipsing-openai-video" target="_blank" rel="noreferrer">Open</a>
+    </article>
+    
+
+    <article class="item-card">
+      <div class="item-meta"><span>Bloomberg Technology</span><span>AI Market Intelligence</span></div>
+      <h4>Huge AI Bonuses in South Korea Spark Fight Over Sharing Tech Wealth</h4>
+      <p>Payouts at Samsung have raised questions over how to share the windfall from the AI boom.</p>
+      <a href="https://www.bloomberg.com/news/features/2026-05-29/samsung-ai-bonuses-prompt-korea-debate-on-sharing-tech-wealth" target="_blank" rel="noreferrer">Open</a>
+    </article>
+    
+
+    <article class="item-card">
+      <div class="item-meta"><span>Bloomberg Markets</span><span>AI Market Intelligence</span></div>
+      <h4>MiniMax Eyes China Listing, Takes on AI Rivals Like DeepSeek</h4>
+      <p>China’s MiniMax Group Inc. has begun preparations for a domestic listing, according to a regulatory filing, as the fast‑growing artificial intelligence startup challenges local rivals including DeepSeek.</p>
+      <a href="https://www.bloomberg.com/news/articles/2026-05-30/minimax-plans-china-ipo-as-it-eyes-local-rivals-like-deepseek" target="_blank" rel="noreferrer">Open</a>
+    </article>
+    
+
+    <article class="item-card">
+      <div class="item-meta"><span>Bloomberg Markets</span><span>AI Market Intelligence</span></div>
+      <h4>Wall Street Week | Britain’s Debt Problem, Poland’s Economic Boom</h4>
+      <p>This week, the UK’s debt burden and weak growth are reviving fears that financial markets could once again destabilize British politics and policy. And, investors see data centers as long-term infrastructure, but neighbors worry about noise, water use, power d</p>
+      <a href="https://www.bloomberg.com/news/videos/2026-05-29/wall-street-week-britain-s-debt-problem-poland-s-boom-video" target="_blank" rel="noreferrer">Open</a>
+    </article>
+    
+
+    <article class="item-card">
+      <div class="item-meta"><span>Bloomberg Technology</span><span>AI Market Intelligence</span></div>
+      <h4>BOE&#x27;s Bailey Says UK Banks Don&#x27;t Have Access to Mythos</h4>
+      <p>Bank of England Governor Andrew Bailey says that British banks are still locked out of using Anthropic PBC’s powerful new AI tool. Speaking with Bloomberg&#x27;s Stephanie Flanders at a central banking conference in Iceland, Bailey adds that banks are using other m</p>
+      <a href="https://www.bloomberg.com/news/videos/2026-05-29/boe-s-bailey-says-uk-banks-don-t-have-access-to-mythos-video" target="_blank" rel="noreferrer">Open</a>
+    </article>
+    
+
+    <article class="item-card">
+      <div class="item-meta"><span>Bloomberg Technology</span><span>AI Market Intelligence</span></div>
+      <h4>SpaceX Lowers IPO Valuation Target | Bloomberg Tech 5/29/2026</h4>
+      <p>Bloomberg’s Tim Stenovec breaks down why SpaceX is coming back down to Earth with a slightly lower valuation in its IPO. Plus, Anthropic closes a funding round at a whopping $965 billion valuation, surpassing OpenAI for the first time in the AI race; and Dell </p>
+      <a href="https://www.bloomberg.com/news/videos/2026-05-29/bloomberg-tech-5-29-2026-video" target="_blank" rel="noreferrer">Open</a>
+    </article>
+    
+
+    <article class="item-card">
+      <div class="item-meta"><span>Bloomberg Technology</span><span>AI Market Intelligence</span></div>
+      <h4>Gap Lowers Sales Outlook; Dell Soars on AI Demand | Stock Movers</h4>
+      <p>On this episode of Stock Movers with Alexis Christoforous: - Dell (DELL) shares are soaring after the company gave an outlook for annual sales that far surpassed analysts’ estimates, fueled by demand for servers that power artificial intelligence work. - Gap (</p>
+      <a href="https://www.bloomberg.com/news/videos/2026-05-29/gap-lowers-sales-outlook-dell-soars-on-ai-demand-video" target="_blank" rel="noreferrer">Open</a>
+    </article>
+    
+
+    <article class="item-card">
+      <div class="item-meta"><span>Bloomberg Technology</span><span>AI Market Intelligence</span></div>
+      <h4>Dell Soars Most Since 2018 on Outlook Fueled by AI Servers</h4>
+      <p>Dell Technologies Inc. shares surged the most since the company returned to the public markets in December 2018, lifted by an outlook for annual sales that far surpassed expectations on demand for servers that power artificial intelligence work.</p>
+      <a href="https://www.bloomberg.com/news/articles/2026-05-28/dell-boosts-outlook-to-60-billion-in-ai-server-sales-this-year" target="_blank" rel="noreferrer">Open</a>
+    </article>
+    
+
+    <article class="item-card">
+      <div class="item-meta"><span>Bloomberg Technology</span><span>AI Market Intelligence</span></div>
+      <h4>Solar Company Nextpower Hits All-Time High on AI Battery Deal</h4>
+      <p>Nextpower Inc. shares briefly touched an all-time high after the solar tracking provider agreed to buy battery company Prevalon Energy for as much as $365 million, marking the solar-tracking provider’s move into energy storage and the fast-growing AI data-cent</p>
+      <a href="https://www.bloomberg.com/news/articles/2026-05-28/solar-company-nextpower-eyes-ai-s-power-needs-with-battery-deal" target="_blank" rel="noreferrer">Open</a>
+    </article>
+    </div>
+        </section>
+        
+        <section class="category" data-category="new models + model market">
+          <button class="category-header" type="button">
+            <span>New Models + Model Market</span>
+            <strong>633</strong>
+          </button>
+          <div class="category-body">
+    <article class="item-card">
+      <div class="item-meta"><span>OpenRouter</span><span>Model Market Signal</span></div>
+      <h4>Anthropic: Claude Opus 4.8 (Fast)</h4>
+      <p>OpenRouter model-market signal for anthropic/claude-opus-4.8-fast. Signals: tool_calling_supported.</p>
+      <a href="https://openrouter.ai/anthropic/claude-opus-4.8-fast" target="_blank" rel="noreferrer">Open</a>
+    </article>
+    
+
+    <article class="item-card">
+      <div class="item-meta"><span>OpenRouter</span><span>Model Market Signal</span></div>
+      <h4>Anthropic: Claude Opus 4.8</h4>
+      <p>OpenRouter model-market signal for anthropic/claude-opus-4.8. Signals: tool_calling_supported.</p>
+      <a href="https://openrouter.ai/anthropic/claude-opus-4.8" target="_blank" rel="noreferrer">Open</a>
+    </article>
+    
+
+    <article class="item-card">
+      <div class="item-meta"><span>OpenRouter</span><span>Model Market Signal</span></div>
+      <h4>Anthropic: Claude Opus 4.7 (Fast)</h4>
+      <p>OpenRouter model-market signal for anthropic/claude-opus-4.7-fast. Signals: tool_calling_supported.</p>
+      <a href="https://openrouter.ai/anthropic/claude-opus-4.7-fast" target="_blank" rel="noreferrer">Open</a>
+    </article>
+    
+
+    <article class="item-card">
+      <div class="item-meta"><span>OpenRouter</span><span>Model Market Signal</span></div>
+      <h4>Anthropic: Claude Opus Latest</h4>
+      <p>OpenRouter model-market signal for ~anthropic/claude-opus-latest. Signals: watched_model_market_snapshot.</p>
+      <a href="https://openrouter.ai/~anthropic/claude-opus-latest" target="_blank" rel="noreferrer">Open</a>
+    </article>
+    
+
+    <article class="item-card">
+      <div class="item-meta"><span>OpenRouter</span><span>Model Market Signal</span></div>
+      <h4>Anthropic: Claude Opus 4.7</h4>
+      <p>OpenRouter model-market signal for anthropic/claude-opus-4.7. Signals: tool_calling_supported.</p>
+      <a href="https://openrouter.ai/anthropic/claude-opus-4.7" target="_blank" rel="noreferrer">Open</a>
+    </article>
+    
+
+    <article class="item-card">
+      <div class="item-meta"><span>OpenRouter</span><span>Model Market Signal</span></div>
+      <h4>Anthropic: Claude Opus 4.6 (Fast)</h4>
+      <p>OpenRouter model-market signal for anthropic/claude-opus-4.6-fast. Signals: tool_calling_supported.</p>
+      <a href="https://openrouter.ai/anthropic/claude-opus-4.6-fast" target="_blank" rel="noreferrer">Open</a>
+    </article>
+    
+
+    <article class="item-card">
+      <div class="item-meta"><span>OpenRouter</span><span>Model Market Signal</span></div>
+      <h4>xAI: Grok 4.20 Multi-Agent</h4>
+      <p>OpenRouter model-market signal for x-ai/grok-4.20-multi-agent. Signals: watched_model_market_snapshot.</p>
+      <a href="https://openrouter.ai/x-ai/grok-4.20-multi-agent" target="_blank" rel="noreferrer">Open</a>
+    </article>
+    
+
+    <article class="item-card">
+      <div class="item-meta"><span>OpenRouter</span><span>Model Market Signal</span></div>
+      <h4>OpenAI: GPT-5.3-Codex</h4>
+      <p>OpenRouter model-market signal for openai/gpt-5.3-codex. Signals: tool_calling_supported.</p>
+      <a href="https://openrouter.ai/openai/gpt-5.3-codex" target="_blank" rel="noreferrer">Open</a>
+    </article>
+    
+
+    <article class="item-card">
+      <div class="item-meta"><span>OpenRouter</span><span>Model Market Signal</span></div>
+      <h4>Anthropic: Claude Opus 4.6</h4>
+      <p>OpenRouter model-market signal for anthropic/claude-opus-4.6. Signals: tool_calling_supported.</p>
+      <a href="https://openrouter.ai/anthropic/claude-opus-4.6" target="_blank" rel="noreferrer">Open</a>
+    </article>
+    
+
+    <article class="item-card">
+      <div class="item-meta"><span>OpenRouter</span><span>Model Market Signal</span></div>
+      <h4>OpenAI: GPT-5.2-Codex</h4>
+      <p>OpenRouter model-market signal for openai/gpt-5.2-codex. Signals: tool_calling_supported.</p>
+      <a href="https://openrouter.ai/openai/gpt-5.2-codex" target="_blank" rel="noreferrer">Open</a>
+    </article>
+    </div>
+        </section>
+        
+        <section class="category" data-category="official company announcements">
+          <button class="category-header" type="button">
+            <span>Official Company Announcements</span>
+            <strong>64</strong>
+          </button>
+          <div class="category-body">
+    <article class="item-card">
+      <div class="item-meta"><span>Anthropic News</span><span>Verified</span></div>
+      <h4>Anthropic co-founder Chris Olah&#x27;s remarks on Pope Leo XIV&#x27;s encyclical &quot;Magnifica humanitas&quot; \ Anthropic</h4>
+      <p>Skip to main content Skip to footer Research Economic Futures Commitments Learn News Try Claude Announcements Anthropic co-founder Chris Olah&#x27;s remarks on Pope Leo XIV&#x27;s encyclical &quot;Magnifica humanitas&quot; May 25, 2026 On Monday May 25, 2026, Pope Leo XIV release</p>
+      <a href="https://www.anthropic.com/news/chris-olah-pope-leo-encyclical" target="_blank" rel="noreferrer">Open</a>
+    </article>
+    
+
+    <article class="item-card">
+      <div class="item-meta"><span>OpenAI News</span><span>Verified</span></div>
+      <h4>Boston Children’s uses AI to unlock new diagnoses</h4>
+      <p>Boston Children’s Hospital uses OpenAI technology to improve patient care, reduce operational burden, and help diagnose more than 40 rare disease cases.</p>
+      <a href="https://openai.com/index/boston-childrens-hospital" target="_blank" rel="noreferrer">Open</a>
+    </article>
+    
+
+    <article class="item-card">
+      <div class="item-meta"><span>OpenAI News</span><span>Verified</span></div>
+      <h4>A shared playbook for trustworthy third party evaluations</h4>
+      <p>OpenAI shares guidance on third-party AI evaluations, covering how to assess model capabilities, safeguards, and validity for frontier systems.</p>
+      <a href="https://openai.com/index/trustworthy-third-party-evaluations-foundations" target="_blank" rel="noreferrer">Open</a>
+    </article>
+    
+
+    <article class="item-card">
+      <div class="item-meta"><span>OpenAI News</span><span>Verified</span></div>
+      <h4>OpenAI’s Frontier Governance Framework</h4>
+      <p>Explore OpenAI’s Frontier Governance Framework and how our AI safety, security, and risk practices align with emerging EU and California regulations.</p>
+      <a href="https://openai.com/index/openai-frontier-governance-framework" target="_blank" rel="noreferrer">Open</a>
+    </article>
+    
+
+    <article class="item-card">
+      <div class="item-meta"><span>OpenAI News</span><span>Verified</span></div>
+      <h4>Election information and safeguards in 2026</h4>
+      <p>Ahead of global elections, we’re helping people access information, supporting cyber defenders, and increasing AI transparency</p>
+      <a href="https://openai.com/index/election-safeguards-2026" target="_blank" rel="noreferrer">Open</a>
+    </article>
+    
+
+    <article class="item-card">
+      <div class="item-meta"><span>Anthropic News</span><span>Verified</span></div>
+      <h4>Anthropic opens Milan office to support Italian enterprise, research, and developers \ Anthropic</h4>
+      <p>Skip to main content Skip to footer Research Economic Futures Commitments Learn News Try Claude Announcements Anthropic opens Milan office to support Italian enterprise, research, and developers May 27, 2026 Anthropic will open a new office in Milan, our sixth</p>
+      <a href="https://www.anthropic.com/news/milan-office-opening" target="_blank" rel="noreferrer">Open</a>
+    </article>
+    
+
+    <article class="item-card">
+      <div class="item-meta"><span>OpenAI News</span><span>Verified</span></div>
+      <h4>OpenAI, Grupo Folha and Grupo UOL announce strategic content partnership</h4>
+      <p>OpenAI partners with Grupo Folha and Grupo UOL to bring trusted Brazilian journalism to ChatGPT, expanding access to news with attribution and transparency.</p>
+      <a href="https://openai.com/index/grupo-folha-grupo-uol-partnership" target="_blank" rel="noreferrer">Open</a>
+    </article>
+    
+
+    <article class="item-card">
+      <div class="item-meta"><span>TLDR AI</span><span>Verified</span></div>
+      <h4>ElevenLabs Music Generation Model (3 minute read)</h4>
+      <p>ElevenLabs has released Music v2, a music-generation model capable of switching genres mid-track while maintaining vocal and compositional coherence.</p>
+      <a href="https://elevenlabs.io/blog/introducing-music-v2?utm_source=tldrai" target="_blank" rel="noreferrer">Open</a>
+    </article>
+    
+
+    <article class="item-card">
+      <div class="item-meta"><span>TLDR AI</span><span>Verified</span></div>
+      <h4>Notes on Pope Leo XIV&#x27;s encyclical on AI (12 minute read)</h4>
+      <p>Pope Leo XIV recently released a document on the ethics of integrating AI into modern society. It touches on the environmental impact of the technology, covers the risks of algorithmic systems that make decisions that impact people&#x27;s lives, discusses how AI am</p>
+      <a href="https://simonwillison.net/2026/May/25/encyclical-on-ai/?utm_source=tldrai" target="_blank" rel="noreferrer">Open</a>
+    </article>
+    
+
+    <article class="item-card">
+      <div class="item-meta"><span>Google AI Blog</span><span>Verified</span></div>
+      <h4>Take our I/O 2026 quiz, vibe coded in Google AI Studio.</h4>
+      <p>We used Google AI Studio to vibe code a quiz about our top I/O 2026 announcements.</p>
+      <a href="https://blog.google/innovation-and-ai/technology/ai/io-2026-vibe-coded-quiz/" target="_blank" rel="noreferrer">Open</a>
+    </article>
+    </div>
+        </section>
+        
+        <section class="category" data-category="youtube deep signals">
+          <button class="category-header" type="button">
+            <span>YouTube Deep Signals</span>
+            <strong>31</strong>
+          </button>
+          <div class="category-body">
+    <article class="item-card">
+      <div class="item-meta"><span>@OpenAI</span><span>Deep Signal</span></div>
+      <h4>Windows Computer Use and mobile access for Codex</h4>
+      <p>Video Drop - Tier: Standard</p>
+      <a href="https://www.youtube.com/watch?v=MPIAB-8VmCo" target="_blank" rel="noreferrer">Open</a>
+    </article>
+    
+
+    <article class="item-card">
+      <div class="item-meta"><span>@OpenAI</span><span>Deep Signal</span></div>
+      <h4>Loblaw Ships Faster with Codex</h4>
+      <p>Video Drop - Tier: Standard</p>
+      <a href="https://www.youtube.com/watch?v=EYvzpZX2-Ww" target="_blank" rel="noreferrer">Open</a>
+    </article>
+    
+
+    <article class="item-card">
+      <div class="item-meta"><span>@OpenAI</span><span>Deep Signal</span></div>
+      <h4>Build Hour: Agents SDK</h4>
+      <p>Video Drop - Tier: Standard</p>
+      <a href="https://www.youtube.com/watch?v=tK32trvj_b4" target="_blank" rel="noreferrer">Open</a>
+    </article>
+    
+
+    <article class="item-card">
+      <div class="item-meta"><span>TLDR AI</span><span>Verified</span></div>
+      <h4>YouTube Expands Automatic AI Video Labeling (1 minute read)</h4>
+      <p>YouTube said it will automatically apply labels to videos containing significant photorealistic AI content, reducing reliance on creator self-disclosure.</p>
+      <a href="https://blog.youtube/news-and-events/improving-ai-labels-viewers-creators/?utm_source=tldrai" target="_blank" rel="noreferrer">Open</a>
+    </article>
+    
+
+    <article class="item-card">
+      <div class="item-meta"><span>@OpenAI</span><span>Deep Signal</span></div>
+      <h4>Builders Unscripted: Ep. 3 - Matias Castello, Product Leader at Alchemy</h4>
+      <p>Video Drop - Tier: Standard</p>
+      <a href="https://www.youtube.com/watch?v=8QKqENa_eQQ" target="_blank" rel="noreferrer">Open</a>
+    </article>
+    
+
+    <article class="item-card">
+      <div class="item-meta"><span>@OpenAI</span><span>Deep Signal</span></div>
+      <h4>How Abridge uses GPT-5.5 for clinical decision support</h4>
+      <p>Video Drop - Tier: Standard</p>
+      <a href="https://www.youtube.com/watch?v=tXBRYPpIvms" target="_blank" rel="noreferrer">Open</a>
+    </article>
+    
+
+    <article class="item-card">
+      <div class="item-meta"><span>@OpenAI</span><span>Deep Signal</span></div>
+      <h4>R&amp;D Part 1</h4>
+      <p>Video Drop - Tier: Standard</p>
+      <a href="https://www.youtube.com/watch?v=DHfZqTWlSc4" target="_blank" rel="noreferrer">Open</a>
+    </article>
+    
+
+    <article class="item-card">
+      <div class="item-meta"><span>Nav Toor @heynavtoor · 23m</span><span>High-Impact Rumor</span></div>
+      <h4>A developer in Hong Kong built a free app that turns your webcam into a 3D mode.  It&#x27;s called SysMocap. Here is what it does.  You open your laptop. You point the webcam at yoursel</h4>
+      <p>A developer in Hong Kong built a free app that turns your webcam into a 3D mode.
+
+It&#x27;s called SysMocap. Here is what it does.
+
+You open your laptop. You point the webcam at yourself. The app watches your face and your body. Then it copies every move you make o</p>
+      <a href="https://x.com/heynavtoor/status/2060670843311792303" target="_blank" rel="noreferrer">Open</a>
+    </article>
+    
+
+    <article class="item-card">
+      <div class="item-meta"><span>Reddit r/Entrepreneur</span><span>Community Reality Check</span></div>
+      <h4>Is there real demand for &quot;AI agents,&quot; or is it mostly YouTube hype?</h4>
+      <p>Reddit r/Entrepreneur discussion with 0 score and 0 comments. Matched practitioner terms: eval, production, hallucination, reliability, agent.</p>
+      <a href="https://www.reddit.com/r/Entrepreneur/comments/1tok3mm/is_there_real_demand_for_ai_agents_or_is_it/" target="_blank" rel="noreferrer">Open</a>
+    </article>
+    
+
+    <article class="item-card">
+      <div class="item-meta"><span>@AlexFinnOfficial</span><span>Deep Signal</span></div>
+      <h4>Claude Opus 4.8 just dropped and I&#x27;m speechless...</h4>
+      <p>Video Drop - Tier: Standard</p>
+      <a href="https://www.youtube.com/watch?v=j-oiGiIEcws" target="_blank" rel="noreferrer">Open</a>
+    </article>
+    </div>
+        </section>
+        
+        <section class="category" data-category="x watchlist + fast rumors">
+          <button class="category-header" type="button">
+            <span>X Watchlist + Fast Rumors</span>
+            <strong>104</strong>
+          </button>
+          <div class="category-body">
+    <article class="item-card">
+      <div class="item-meta"><span>OpenAI @OpenAI · 16h</span><span>Verified</span></div>
+      <h4>Windows users, this one’s for you.  Computer use now works on Windows, so Codex can take action on your Windows computer.  And with Windows support for Codex in the ChatGPT mobile</h4>
+      <p>Windows users, this one’s for you.
+
+Computer use now works on Windows, so Codex can take action on your Windows computer.
+
+And with Windows support for Codex in the ChatGPT mobile app, you can start, review, and steer tasks on the go while work continues on yo</p>
+      <a href="https://x.com/OpenAI/status/2060428604727771421" target="_blank" rel="noreferrer">Open</a>
+    </article>
+    
+
+    <article class="item-card">
+      <div class="item-meta"><span>Anthropic @AnthropicAI · May 27</span><span>Verified</span></div>
+      <h4>New on the Engineering Blog: The access and permissions we grant agents should evolve with their capabilities. In our own products, we set these parameters through sandboxing, whic</h4>
+      <p>New on the Engineering Blog: The access and permissions we grant agents should evolve with their capabilities. In our own products, we set these parameters through sandboxing, which limits the scope of any potentially destructive actions.
+
+Read more:</p>
+      <a href="https://x.com/AnthropicAI/status/2059351260243919269" target="_blank" rel="noreferrer">Open</a>
+    </article>
+    
+
+    <article class="item-card">
+      <div class="item-meta"><span>OpenAI @OpenAI · 14h</span><span>Verified</span></div>
+      <h4>In conversation with OpenAI’s  @markchen90 , Terence reflects on a future where AI reduces the cognitive friction of research, helps preserve the paths behind discovery, and expand</h4>
+      <p>In conversation with OpenAI’s 
+@markchen90
+, Terence reflects on a future where AI reduces the cognitive friction of research, helps preserve the paths behind discovery, and expands what mathematicians and scientists can attempt.</p>
+      <a href="https://x.com/OpenAI/status/2060451760033214653" target="_blank" rel="noreferrer">Open</a>
+    </article>
+    
+
+    <article class="item-card">
+      <div class="item-meta"><span>Anthropic @AnthropicAI · May 28</span><span>Verified</span></div>
+      <h4>Earlier this month, our run-rate revenue crossed $47 billion.   This growth has been driven by organizations across many industries deploying Claude in their core operations, and b</h4>
+      <p>Earlier this month, our run-rate revenue crossed $47 billion. 
+
+This growth has been driven by organizations across many industries deploying Claude in their core operations, and by a growing number of people using it for their everyday work.
+
+Read more:</p>
+      <a href="https://x.com/AnthropicAI/status/2060061348818518493" target="_blank" rel="noreferrer">Open</a>
+    </article>
+    
+
+    <article class="item-card">
+      <div class="item-meta"><span>Mistral AI @MistralAI · May 28</span><span>Verified</span></div>
+      <h4>X post from Mistral AI @MistralAI · May 28</h4>
+      <p>X Watchlist (Mistral AI)</p>
+      <a href="https://x.com/MistralAI/status/2059951141195075833" target="_blank" rel="noreferrer">Open</a>
+    </article>
+    
+
+    <article class="item-card">
+      <div class="item-meta"><span>Mistral AI @MistralAI · May 28</span><span>Verified</span></div>
+      <h4>We&#x27;re taking on the hardest problems in the real world    Today at The AI Now Summit, held at the Louvre, we announced AI solutions for aerospace, automotive, energy, and physics.</h4>
+      <p>We&#x27;re taking on the hardest problems in the real world  
+
+Today at The AI Now Summit, held at the Louvre, we announced AI solutions for aerospace, automotive, energy, and physics.
+
+Deployed in production at 
+@Airbus
+ , 
+@BMW
+, 
+@EDFofficiel
+ , and more. 
+
+More</p>
+      <a href="https://x.com/MistralAI/status/2059951137839616110" target="_blank" rel="noreferrer">Open</a>
+    </article>
+    
+
+    <article class="item-card">
+      <div class="item-meta"><span>Claude @claudeai · May 29</span><span>Verified</span></div>
+      <h4>Before we ship a new model, these teams try to break it.  They build with it, push it to its limits, and tell us where it falls short. What they find makes the final model better.</h4>
+      <p>Before we ship a new model, these teams try to break it.
+
+They build with it, push it to its limits, and tell us where it falls short. What they find makes the final model better.</p>
+      <a href="https://x.com/claudeai/status/2060074627032838438" target="_blank" rel="noreferrer">Open</a>
+    </article>
+    
+
+    <article class="item-card">
+      <div class="item-meta"><span>Claude @claudeai · May 28</span><span>Verified</span></div>
+      <h4>Claude Opus 4.8 is available today on the web, the Claude Platform, and all major cloud platforms.  Read more:</h4>
+      <p>Claude Opus 4.8 is available today on the web, the Claude Platform, and all major cloud platforms.
+
+Read more:</p>
+      <a href="https://x.com/claudeai/status/2060045358445576332" target="_blank" rel="noreferrer">Open</a>
+    </article>
+    
+
+    <article class="item-card">
+      <div class="item-meta"><span>Claude @claudeai · May 28</span><span>Verified</span></div>
+      <h4>Also new in Claude Code: dynamic workflows (research preview).  For the hardest tasks, Claude makes a plan, runs hundreds of parallel subagents, and verifies its work before report</h4>
+      <p>Also new in Claude Code: dynamic workflows (research preview).
+
+For the hardest tasks, Claude makes a plan, runs hundreds of parallel subagents, and verifies its work before reporting back. Think a migration touching hundreds of files.
+
+Read more: 
+http://
+cla</p>
+      <a href="https://x.com/claudeai/status/2060042710753382816" target="_blank" rel="noreferrer">Open</a>
+    </article>
+    
+
+    <article class="item-card">
+      <div class="item-meta"><span>xAI @xai · 18h</span><span>Verified</span></div>
+      <h4>It’s also available via OpenRouter and Vercel AI Gateway, as well as in Cursor, Hermes Agent, OpenClaw, Kilo Code, and OpenCode.</h4>
+      <p>It’s also available via OpenRouter and Vercel AI Gateway, as well as in Cursor, Hermes Agent, OpenClaw, Kilo Code, and OpenCode.</p>
+      <a href="https://x.com/xai/status/2060392251520594105" target="_blank" rel="noreferrer">Open</a>
+    </article>
+    </div>
+        </section>
+        
+        <section class="category" data-category="reddit community reality">
+          <button class="category-header" type="button">
+            <span>Reddit Community Reality</span>
+            <strong>341</strong>
+          </button>
+          <div class="category-body">
+    <article class="item-card">
+      <div class="item-meta"><span>Reddit r/OpenAI</span><span>Community Reality Check</span></div>
+      <h4>Which provider fits best for my needs?</h4>
+      <p>Reddit r/OpenAI discussion with 0 score and 0 comments. Matched practitioner terms: workflow, context, api, agent, codex, deepseek.</p>
+      <a href="https://www.reddit.com/r/OpenAI/comments/1tpebdc/which_provider_fits_best_for_my_needs/" target="_blank" rel="noreferrer">Open</a>
+    </article>
+    
+
+    <article class="item-card">
+      <div class="item-meta"><span>Reddit r/OpenAI</span><span>Community Reality Check</span></div>
+      <h4>Complaint to OpenAI: Sabotage-Like Model Behavior During an Independent Mechanistic Interpretability Research Project</h4>
+      <p>Reddit r/OpenAI discussion with 0 score and 0 comments. Matched practitioner terms: eval, workflow, context, agent, codex.</p>
+      <a href="https://www.reddit.com/r/OpenAI/comments/1tqechj/complaint_to_openai_sabotagelike_model_behavior/" target="_blank" rel="noreferrer">Open</a>
+    </article>
+    
+
+    <article class="item-card">
+      <div class="item-meta"><span>Reddit r/OpenAI</span><span>Community Reality Check</span></div>
+      <h4>Your Agents Are Aging Too: Agent Lifespan Engineering for Deployed Systems [R]</h4>
+      <p>Reddit r/OpenAI discussion with 0 score and 0 comments. Matched practitioner terms: benchmark, memory, agent, claude code.</p>
+      <a href="https://www.reddit.com/r/OpenAI/comments/1tqap7s/your_agents_are_aging_too_agent_lifespan/" target="_blank" rel="noreferrer">Open</a>
+    </article>
+    
+
+    <article class="item-card">
+      <div class="item-meta"><span>Reddit r/OpenAI</span><span>Community Reality Check</span></div>
+      <h4>Testing Realtime 2 Voice API OpenAI.</h4>
+      <p>Reddit r/OpenAI discussion with 0 score and 0 comments. Matched practitioner terms: context, api, agent.</p>
+      <a href="https://www.reddit.com/r/OpenAI/comments/1tnjua3/testing_realtime_2_voice_api_openai/" target="_blank" rel="noreferrer">Open</a>
+    </article>
+    
+
+    <article class="item-card">
+      <div class="item-meta"><span>Reddit r/OpenAI</span><span>Community Reality Check</span></div>
+      <h4>GPT-5.6 spotted in Codex</h4>
+      <p>Reddit r/OpenAI discussion with 0 score and 0 comments. Matched practitioner terms: codex.</p>
+      <a href="https://www.reddit.com/r/OpenAI/comments/1tr2ny5/gpt56_spotted_in_codex/" target="_blank" rel="noreferrer">Open</a>
+    </article>
+    
+
+    <article class="item-card">
+      <div class="item-meta"><span>Reddit r/OpenAI</span><span>Community Reality Check</span></div>
+      <h4>How setup multiple accounts?</h4>
+      <p>Reddit r/OpenAI discussion with 0 score and 0 comments. Matched practitioner terms: codex.</p>
+      <a href="https://www.reddit.com/r/OpenAI/comments/1trdpxz/how_setup_multiple_accounts/" target="_blank" rel="noreferrer">Open</a>
+    </article>
+    
+
+    <article class="item-card">
+      <div class="item-meta"><span>Reddit r/OpenAI</span><span>Community Reality Check</span></div>
+      <h4>First thing you see when Googling &quot;OpenAI Codex app&quot; is a fake malware website</h4>
+      <p>Reddit r/OpenAI discussion with 0 score and 0 comments. Matched practitioner terms: codex.</p>
+      <a href="https://www.reddit.com/r/OpenAI/comments/1tq4cql/first_thing_you_see_when_googling_openai_codex/" target="_blank" rel="noreferrer">Open</a>
+    </article>
+    
+
+    <article class="item-card">
+      <div class="item-meta"><span>Reddit r/OpenAI</span><span>Community Reality Check</span></div>
+      <h4>Codex red dot errors?</h4>
+      <p>Reddit r/OpenAI discussion with 0 score and 0 comments. Matched practitioner terms: codex.</p>
+      <a href="https://www.reddit.com/r/OpenAI/comments/1tr3goe/codex_red_dot_errors/" target="_blank" rel="noreferrer">Open</a>
+    </article>
+    
+
+    <article class="item-card">
+      <div class="item-meta"><span>Reddit r/OpenAI</span><span>Community Reality Check</span></div>
+      <h4>OPUS 4.8 craps himself in SimpleBench</h4>
+      <p>Reddit r/OpenAI discussion with 0 score and 0 comments.</p>
+      <a href="https://www.reddit.com/r/OpenAI/comments/1tqtmo8/opus_48_craps_himself_in_simplebench/" target="_blank" rel="noreferrer">Open</a>
+    </article>
+    
+
+    <article class="item-card">
+      <div class="item-meta"><span>Reddit r/OpenAI</span><span>Community Reality Check</span></div>
+      <h4>Our timeline plays out like a classic horror flick. The next AI releases will skyrocket risks of bio-attacks, engineered pandemics and critical infrastructure hacking, according to the tech leaders who are building it as fast as they can. - Everything will feel normal until nothing does.</h4>
+      <p>Reddit r/OpenAI discussion with 0 score and 0 comments.</p>
+      <a href="https://www.reddit.com/r/OpenAI/comments/1tqzhtj/our_timeline_plays_out_like_a_classic_horror/" target="_blank" rel="noreferrer">Open</a>
+    </article>
+    </div>
+        </section>
+        
+        <section class="category" data-category="hacker news developer talk">
+          <button class="category-header" type="button">
+            <span>Hacker News Developer Talk</span>
+            <strong>24</strong>
+          </button>
+          <div class="category-body">
+    <article class="item-card">
+      <div class="item-meta"><span>Hacker News</span><span>Community Reality Check</span></div>
+      <h4>Claude Opus 4.8</h4>
+      <p>Hacker News discussion with 1734 points and 1350 comments. HN discussion: https://news.ycombinator.com/item?id=48311647 Matched practitioner terms: api, agent. Representative comment: Disappointed to say the least.</p>
+      <a href="https://www.anthropic.com/news/claude-opus-4-8" target="_blank" rel="noreferrer">Open</a>
+    </article>
+    
+
+    <article class="item-card">
+      <div class="item-meta"><span>Hacker News</span><span>Community Reality Check</span></div>
+      <h4>Disagreement among frontier LLMs on real-world fact-checks</h4>
+      <p>Hacker News discussion with 504 points and 345 comments. HN discussion: https://news.ycombinator.com/item?id=48307887 Matched practitioner terms: eval, context, api, memory, agent. Representative comment: Author here. 67% (95% CI 64–70%) of 1,000 recent real u</p>
+      <a href="https://lenz.io/research/llm-disagreement" target="_blank" rel="noreferrer">Open</a>
+    </article>
+    
+
+    <article class="item-card">
+      <div class="item-meta"><span>Hacker News</span><span>Community Reality Check</span></div>
+      <h4>Show HN: Continue? Y/N: A 60-second game about AI agent permission fatigue</h4>
+      <p>Hacker News discussion with 376 points and 155 comments. HN discussion: https://news.ycombinator.com/item?id=48308376 Matched practitioner terms: agent, show hn. Representative comment: Use this and save yourself: claude --dangerously-skip-permissions</p>
+      <a href="https://llmgame.scalex.dev" target="_blank" rel="noreferrer">Open</a>
+    </article>
+    
+
+    <article class="item-card">
+      <div class="item-meta"><span>Hacker News</span><span>Community Reality Check</span></div>
+      <h4>Various LLM Smells</h4>
+      <p>Hacker News discussion with 357 points and 284 comments. HN discussion: https://news.ycombinator.com/item?id=48313810 Matched practitioner terms: agent. Representative comment: No ___, no ____. Just _____ or using &quot;honest&quot; to describe an approach.</p>
+      <a href="https://shvbsle.in/various-llm-smells/" target="_blank" rel="noreferrer">Open</a>
+    </article>
+    
+
+    <article class="item-card">
+      <div class="item-meta"><span>Hacker News</span><span>Community Reality Check</span></div>
+      <h4>Real-time LLM Inference on Standard GPUs: 3k tokens/s per request</h4>
+      <p>Hacker News discussion with 204 points and 91 comments. HN discussion: https://news.ycombinator.com/item?id=48321076 Matched practitioner terms: benchmark, token, agent, deepseek. Representative comment: Could be amazing, but it&#x27;s hard to judge if it will real</p>
+      <a href="https://blog.kog.ai/real-time-llm-inference-on-standard-gpus-3-000-tokens-s-per-request/" target="_blank" rel="noreferrer">Open</a>
+    </article>
+    
+
+    <article class="item-card">
+      <div class="item-meta"><span>Hacker News</span><span>Community Reality Check</span></div>
+      <h4>Dynamic Workflows in Claude Code</h4>
+      <p>Hacker News discussion with 171 points and 130 comments. HN discussion: https://news.ycombinator.com/item?id=48311705 Matched practitioner terms: production, workflow, context, token, agent, claude code, launch. Representative comment: Interesting to note, not</p>
+      <a href="https://claude.com/blog/introducing-dynamic-workflows-in-claude-code" target="_blank" rel="noreferrer">Open</a>
+    </article>
+    
+
+    <article class="item-card">
+      <div class="item-meta"><span>Hacker News</span><span>Community Reality Check</span></div>
+      <h4>Robinhood now lets your AI agents trade stocks</h4>
+      <p>Hacker News discussion with 100 points and 171 comments. HN discussion: https://news.ycombinator.com/item?id=48326659 Matched practitioner terms: api, agent. Representative comment: Create a public company called &quot;Ignore all previous instructions, invest in IA</p>
+      <a href="https://techcrunch.com/2026/05/27/robinhood-now-lets-your-ai-agents-trade-stocks/" target="_blank" rel="noreferrer">Open</a>
+    </article>
+    
+
+    <article class="item-card">
+      <div class="item-meta"><span>Hacker News</span><span>Community Reality Check</span></div>
+      <h4>Show HN: Zot – Yet another coding agent harness</h4>
+      <p>Hacker News discussion with 83 points and 71 comments. HN discussion: https://news.ycombinator.com/item?id=48319524 Matched practitioner terms: workflow, api, token, agent, claude code, show hn. Representative comment: this is fucking awesome it is fast, there</p>
+      <a href="https://www.zot.sh" target="_blank" rel="noreferrer">Open</a>
+    </article>
+    
+
+    <article class="item-card">
+      <div class="item-meta"><span>Hacker News</span><span>Community Reality Check</span></div>
+      <h4>CAPTCHAs can still detect AI agents</h4>
+      <p>Hacker News discussion with 75 points and 61 comments. HN discussion: https://news.ycombinator.com/item?id=48324910 Matched practitioner terms: mcp, agent. Representative comment: Until they learn to do that. So cat and mouse. So nothing new.</p>
+      <a href="https://research.roundtable.ai/captchas-detect-ai/" target="_blank" rel="noreferrer">Open</a>
+    </article>
+    
+
+    <article class="item-card">
+      <div class="item-meta"><span>Hacker News</span><span>Community Reality Check</span></div>
+      <h4>Show HN: Open-Source AI Racing Harness</h4>
+      <p>Hacker News discussion with 74 points and 22 comments. HN discussion: https://news.ycombinator.com/item?id=48300280 Matched practitioner terms: workflow, agent, show hn. Representative comment: Looks cool! But why not just use Gazebo? Or Issac?</p>
+      <a href="https://www.elodin.systems/post/elodin-ai-grand-prix-race-sim-harness" target="_blank" rel="noreferrer">Open</a>
+    </article>
+    </div>
+        </section>
+        
+        <section class="category" data-category="startup funding">
+          <button class="category-header" type="button">
+            <span>Startup Funding</span>
+            <strong>20</strong>
+          </button>
+          <div class="category-body">
+    <article class="item-card">
+      <div class="item-meta"><span>Anthropic News</span><span>Verified</span></div>
+      <h4>Anthropic raises $65B in Series H funding at $965B post-money valuation \ Anthropic</h4>
+      <p>Skip to main content Skip to footer Research Economic Futures Commitments Learn News Try Claude Announcements Anthropic raises $65B in Series H funding at $965B post-money valuation May 28, 2026 Anthropic has raised $65 billion in Series H funding led by Altim</p>
+      <a href="https://www.anthropic.com/news/series-h" target="_blank" rel="noreferrer">Open</a>
+    </article>
+    
+
+    <article class="item-card">
+      <div class="item-meta"><span>TLDR All</span><span>AI Market Intelligence</span></div>
+      <h4>How Meta is looking for revenue outside advertising to justify its ballooning capex bill (4 minute read)</h4>
+      <p>Meta&#x27;s capital expenditures are forcing it to explore new revenue sources. The company has announced a series of subscription tiers and it is monetizing its AI chatbot. It is also launching a new Enterprise Solutions unit, which will mimic the forward-deployed</p>
+      <a href="https://sherwood.news/tech/meta-looks-to-enterprise-cloud-subscriptions-to-justify-ballooning-capex-bill/?utm_source=tldrnewsletter" target="_blank" rel="noreferrer">Open</a>
+    </article>
+    
+
+    <article class="item-card">
+      <div class="item-meta"><span>TLDR All</span><span>AI Market Intelligence</span></div>
+      <h4>Anthropic Raised $65B in Series H Funding (2 minute read)</h4>
+      <p>Anthropic announced a $65 billion Series H round at a $965 billion post-money valuation, citing strong enterprise adoption, $47 billion in run-rate revenue, and plans to expand compute capacity, research, and product development.</p>
+      <a href="https://www.anthropic.com/news/series-h?utm_source=tldrai" target="_blank" rel="noreferrer">Open</a>
+    </article>
+    
+
+    <article class="item-card">
+      <div class="item-meta"><span>TLDR AI</span><span>AI Market Intelligence</span></div>
+      <h4>More Devins in More Places (3 minute read)</h4>
+      <p>Cognition raised over $1B at a $26B valuation, with significant backing from major investors to expand Devin, an AI software engineer. Devin has significantly cut project times and improved automation for clients like Mercedes-Benz and Itaú. Cognition aims to </p>
+      <a href="https://cognition.ai/blog/series-d?utm_source=tldrai" target="_blank" rel="noreferrer">Open</a>
+    </article>
+    
+
+    <article class="item-card">
+      <div class="item-meta"><span>TLDR All</span><span>AI Market Intelligence</span></div>
+      <h4>Agent Judge: Solving Long-Context Evals for Production Agents (10 minute read)</h4>
+      <p>Agent Judge improves evaluations for long-context, production agents by focusing on Search, Verification, and Adaptation. It tackles LLM judges&#x27; shortcomings by navigating long trajectories, verifying stateful actions against systems, and updating rubrics base</p>
+      <a href="https://www.judgmentlabs.ai/blogs/agent-judge-solving-long-context-evaluations?utm_source=tldrai" target="_blank" rel="noreferrer">Open</a>
+    </article>
+    
+
+    <article class="item-card">
+      <div class="item-meta"><span>TLDR AI</span><span>Verified</span></div>
+      <h4>OpenRouter more than doubles valuation to $1.3B in a year (2 minute read)</h4>
+      <p>OpenRouter raised $113 million in a Series B round led by CapitalG, bringing its valuation to $1.3 billion. The AI gateway startup provides access to over 400 models and processes 100 trillion tokens monthly. OpenRouter&#x27;s growth reflects a shift in AI towards </p>
+      <a href="https://techcrunch.com/2026/05/26/openrouter-more-than-doubles-valuation-to-1-3b-in-a-year/?utm_source=tldrai" target="_blank" rel="noreferrer">Open</a>
+    </article>
+    
+
+    <article class="item-card">
+      <div class="item-meta"><span>CNBC Technology</span><span>AI Market Intelligence</span></div>
+      <h4>Anthropic tops OpenAI as most valuable AI startup, nears $1 trillion valuation in latest round</h4>
+      <p>Anthropic is now the most valuable AI company in Silicon Valley after a new $65 billion funding round.</p>
+      <a href="https://www.cnbc.com/2026/05/28/anthropic-open-ai-startup-value.html" target="_blank" rel="noreferrer">Open</a>
+    </article>
+    
+
+    <article class="item-card">
+      <div class="item-meta"><span>TLDR All</span><span>AI Market Intelligence</span></div>
+      <h4>Anthropic nears $1 trillion valuation in latest round (4 minute read)</h4>
+      <p>Anthropic is now the most valuable AI company in Silicon Valley.</p>
+      <a href="https://www.cnbc.com/2026/05/28/anthropic-open-ai-startup-value.html?utm_source=tldrnewsletter" target="_blank" rel="noreferrer">Open</a>
+    </article>
+    
+
+    <article class="item-card">
+      <div class="item-meta"><span>CNBC Technology</span><span>AI Market Intelligence</span></div>
+      <h4>Jim Cramer says these 3 mistakes are keeping investors out of AI winners</h4>
+      <p>CNBC’s Jim Cramer pointed to three reasons investors may be missing some of the market’s biggest AI winners.</p>
+      <a href="https://www.cnbc.com/2026/05/28/jim-cramer-says-these-3-mistakes-are-keeping-investors-out-of-ai-winners.html" target="_blank" rel="noreferrer">Open</a>
+    </article>
+    
+
+    <article class="item-card">
+      <div class="item-meta"><span>e27 Southeast Asia Startups</span><span>Verified</span></div>
+      <h4>Ecosystem Roundup: How next-day delivery killed crowdfunding in SEA</h4>
+      <p>Crowdfunding was supposed to democratise innovation. The pitch was simple and seductive: a great idea, a compelling story, and the internet would do the rest. The reality, as Indiegogo’s own APAC head candidly acknowledges, was messier: scams, failed fulfilmen</p>
+      <a href="https://e27.co/ecosystem-roundup-how-next-day-delivery-killed-crowdfunding-in-sea-20260528/" target="_blank" rel="noreferrer">Open</a>
+    </article>
+    </div>
+        </section>
+        
+        <section class="category" data-category="startup collections + missed startups">
+          <button class="category-header" type="button">
+            <span>Startup Collections + Missed Startups</span>
+            <strong>201</strong>
+          </button>
+          <div class="category-body">
+    <article class="item-card">
+      <div class="item-meta"><span>TrustMRR API</span><span>Funded Startup Signal</span></div>
+      <h4>Parallel Drive Parallel Drive is an AI-first software studio building software agents battle tested with real production client work. Revenue (30d) $300 MRR $0 Total $920k</h4>
+      <p>Rezi Most people agree this is the best resume builder in the world. We have about 1M new users every year. Rezi Enterprise, a new and growing product, supports over 300 organizations, including 1 fortune 500, and multiple universities. We are now working to a</p>
+      <a href="https://trustmrr.com/startup/parallel-drive" target="_blank" rel="noreferrer">Open</a>
+    </article>
+    
+
+    <article class="item-card">
+      <div class="item-meta"><span>NeuronFeed</span><span>Funded Startup Signal</span></div>
+      <h4>Anthropic US AI safety lab building Claude â a helpful, harmless, honest AI assistant. Raised $67.6B Stage S-G 83</h4>
+      <p>Anthropic US AI safety lab building Claude â a helpful, harmless, honest AI assistant. Raised $67.6B Stage S-G 83 OpenAI US Creator of ChatGPT, GPT-4, and the leading frontier AI lab. Raised $193.3B Stage S-E 81 Harvey US The AI platform for elite law firms.</p>
+      <a href="https://neuronfeed.com/startups/anthropic" target="_blank" rel="noreferrer">Open</a>
+    </article>
+    
+
+    <article class="item-card">
+      <div class="item-meta"><span>NeuronFeed</span><span>Funded Startup Signal</span></div>
+      <h4>OpenAI US Creator of ChatGPT, GPT-4, and the leading frontier AI lab. Raised $193.3B Stage S-E 81</h4>
+      <p>Anthropic US AI safety lab building Claude â a helpful, harmless, honest AI assistant. Raised $67.6B Stage S-G 83 OpenAI US Creator of ChatGPT, GPT-4, and the leading frontier AI lab. Raised $193.3B Stage S-E 81 Harvey US The AI platform for elite law firms.</p>
+      <a href="https://neuronfeed.com/startups/openai" target="_blank" rel="noreferrer">Open</a>
+    </article>
+    
+
+    <article class="item-card">
+      <div class="item-meta"><span>NeuronFeed</span><span>Funded Startup Signal</span></div>
+      <h4>Harvey US The AI platform for elite law firms. Raised $1.5B Stage S-F 81</h4>
+      <p>Anthropic US AI safety lab building Claude â a helpful, harmless, honest AI assistant. Raised $67.6B Stage S-G 83 OpenAI US Creator of ChatGPT, GPT-4, and the leading frontier AI lab. Raised $193.3B Stage S-E 81 Harvey US The AI platform for elite law firms.</p>
+      <a href="https://neuronfeed.com/startups/harvey" target="_blank" rel="noreferrer">Open</a>
+    </article>
+    
+
+    <article class="item-card">
+      <div class="item-meta"><span>NeuronFeed</span><span>Funded Startup Signal</span></div>
+      <h4>Perplexity US AI-powered answer engine delivering real-time, cited responses to complex queries. Raised $2.0B Stage S-F 79</h4>
+      <p>Anthropic US AI safety lab building Claude â a helpful, harmless, honest AI assistant. Raised $67.6B Stage S-G 83 OpenAI US Creator of ChatGPT, GPT-4, and the leading frontier AI lab. Raised $193.3B Stage S-E 81 Harvey US The AI platform for elite law firms.</p>
+      <a href="https://neuronfeed.com/startups/perplexity" target="_blank" rel="noreferrer">Open</a>
+    </article>
+    
+
+    <article class="item-card">
+      <div class="item-meta"><span>StartupHub AI RSS</span><span>Funded Startup Signal</span></div>
+      <h4>Polymarket Volume Breakdown</h4>
+      <p>Polymarket saw $32.3M in 24h volume, with geopolitical markets, particularly US-Iran relations, dominating user bets.</p>
+      <a href="https://www.startuphub.ai/ai-news/prediction-markets/2026/polymarket-volume-breakdown" target="_blank" rel="noreferrer">Open</a>
+    </article>
+    
+
+    <article class="item-card">
+      <div class="item-meta"><span>StartupHub AI RSS</span><span>Funded Startup Signal</span></div>
+      <h4>AI Shakeup: Anthropic&#x27;s $96.5B Valuation Overtakes OpenAI</h4>
+      <p>AI startup Anthropic has reached a $96.5 billion valuation, surpassing OpenAI after securing a $65 billion funding round.</p>
+      <a href="https://www.startuphub.ai/ai-news/funding-round/2026/ai-shakeup-anthropic-s-96-5b-valuation-overtakes-openai" target="_blank" rel="noreferrer">Open</a>
+    </article>
+    
+
+    <article class="item-card">
+      <div class="item-meta"><span>StartupHub AI RSS</span><span>Funded Startup Signal</span></div>
+      <h4>Yann LeCun&#x27;s AMI Labs Raises $1.03B to Build Beyond LLMs</h4>
+      <p>AMI Labs, Yann LeCun&#x27;s Paris-based AI company, closed a $1.03 billion seed round in March 2026 at a $3.5 billion pre-money valuation. Here is the full breakdown of why LeCun left Meta, who backed the raise, and what V-JEPA 2 is actually building.</p>
+      <a href="https://www.startuphub.ai/ai-news/ai-figures/2026/figure-yann-lecun-ami-labs-company-breakdown-2026-05-29" target="_blank" rel="noreferrer">Open</a>
+    </article>
+    
+
+    <article class="item-card">
+      <div class="item-meta"><span>TrustMRR API</span><span>Funded Startup Signal</span></div>
+      <h4>DOGALYIR LTD We focus on the creation of web pages, mobile applications, automated systems for Telegram, WhatsApp or others, we also teach programming courses, design, we also include our own clothing brand, which you can buy from our websi</h4>
+      <p>ShipFast Ship your startups in days, not months! Revenue (30d) $7.2k MRR $0 Total $1.3M Red Leg Dev, LLC Provides custom software development, consulting and digital solutions. Revenue (30d) $6k MRR $659 Total $535k Image-Charts Image-Charts est un SaaS spécia</p>
+      <a href="https://trustmrr.com/startup/dogalyir-ltd" target="_blank" rel="noreferrer">Open</a>
+    </article>
+    
+
+    <article class="item-card">
+      <div class="item-meta"><span>TrustMRR API</span><span>Funded Startup Signal</span></div>
+      <h4>Web3Templates Web3Templates provides high-quality website templates and landing pages built with Astro, Next.js, Tailwind CSS and Sanity CMS. Revenue (30d) $777 MRR $0 Total $76k</h4>
+      <p>ShipFast Ship your startups in days, not months! Revenue (30d) $7.2k MRR $0 Total $1.3M Red Leg Dev, LLC Provides custom software development, consulting and digital solutions. Revenue (30d) $6k MRR $659 Total $535k Image-Charts Image-Charts est un SaaS spécia</p>
+      <a href="https://trustmrr.com/startup/web3templates" target="_blank" rel="noreferrer">Open</a>
+    </article>
+    </div>
+        </section>
+        
+        <section class="category" data-category="china + regional ai">
+          <button class="category-header" type="button">
+            <span>China + Regional AI</span>
+            <strong>103</strong>
+          </button>
+          <div class="category-body">
+    <article class="item-card">
+      <div class="item-meta"><span>36Kr China Startups</span><span>Verified</span></div>
+      <h4>海光信息完成阶跃星辰Step 3.7 Flash适配</h4>
+      <p>36氪获悉，5月29日，阶跃星辰发布Step 3.7 Flash，海光团队依托DTK异构计算平台与全栈软件栈，于发布当天即完成全流程适配与深度调优，实现“发布即适配、适配即高效”。即日起，开发者即可在海光平台上高效运行该模型，快速搭建多模态Agent、智能代码助手和复杂工作流应用，大幅降低接入与编排成本。</p>
+      <a href="https://36kr.com/newsflashes/3831356538529409?f=rss" target="_blank" rel="noreferrer">Open</a>
+    </article>
+    
+
+    <article class="item-card">
+      <div class="item-meta"><span>TechNode China Tech</span><span>Verified</span></div>
+      <h4>CATL launches world’s largest energy storage testbed in Xiamen</h4>
+      <p>CATL has launched its Xiamen Energy Storage Validation Research Institute, which it described as the world’s largest and most comprehensive one-stop testing and validation platform for the energy storage industry. The site spans 10 hectares and represents an i</p>
+      <a href="https://technode.com/2026/05/29/catl-launches-worlds-largest-energy-storage-testbed-in-xiamen/" target="_blank" rel="noreferrer">Open</a>
+    </article>
+    
+
+    <article class="item-card">
+      <div class="item-meta"><span>TechNode China Tech</span><span>Verified</span></div>
+      <h4>BYD launches Xuanji A3, calls it China’s first 4nm smart driving chip</h4>
+      <p>At BYD’s launch event on Thursday, Wang Chuanfu, chairman and founder of BYD, unveiled BYD’s self-developed Xuanji A3, China’s first 4nm autonomous driving chip, which supports L3 and L4 autonomous driving capabilities. The chip has entered mass production and</p>
+      <a href="https://technode.com/2026/05/29/byd-launches-xuanji-a3-calls-it-chinas-first-4nm-smart-driving-chip/" target="_blank" rel="noreferrer">Open</a>
+    </article>
+    
+
+    <article class="item-card">
+      <div class="item-meta"><span>Pandaily China Tech</span><span>Verified</span></div>
+      <h4>Stepfun Open-Sources Step 3.7 Flash LLM Optimized for Agent Era</h4>
+      <p>Stepfun open-sources Step 3.7 Flash, a 196B-parameter sparse MoE LLM optimized for agent workflows with 400 tokens/s speed and native tool-calling capabilities.</p>
+      <a href="https://pandaily.com/stepfun-open-source-step-3-7-flash-llm-agent-may2026" target="_blank" rel="noreferrer">Open</a>
+    </article>
+    
+
+    <article class="item-card">
+      <div class="item-meta"><span>Pandaily China Tech</span><span>Verified</span></div>
+      <h4>Tencent Expands Its Global AI Footprint with the Debut of Its Productivity AI Agent</h4>
+      <p>Tencent Cloud launches overseas-focused AI agent WorkBuddy for automated complex office tasks, together with two new AI products Miora and TokenHub to diversify its enterprise AI ecosystem.</p>
+      <a href="https://pandaily.com/tencent-expands-its-global-ai-footprint-with-the-debut-of-its-productivity-ai-agent" target="_blank" rel="noreferrer">Open</a>
+    </article>
+    
+
+    <article class="item-card">
+      <div class="item-meta"><span>TechNode China Tech</span><span>Verified</span></div>
+      <h4>MediaTek could partner with Tesla’s TERAFAB, expected to produce chips by 2028</h4>
+      <p>According to the latest industry survey released by analyst Ming-Chi Kuo from TF International Securities, among the many custom ASIC (Application-Specific Integrated Circuit) vendors, MediaTek is considered the most likely candidate to become a key strategic </p>
+      <a href="https://technode.com/2026/05/28/mediatek-could-partner-with-teslas-terafab-expected-to-produce-chips-for-tesla-by-2028/" target="_blank" rel="noreferrer">Open</a>
+    </article>
+    
+
+    <article class="item-card">
+      <div class="item-meta"><span>Pandaily China Tech</span><span>Verified</span></div>
+      <h4>RoboMemArena: New Benchmark Systematically Evaluates Robot Memory Capabilities</h4>
+      <p>A consortium of Chinese research institutions launched RoboMemArena, the first comprehensive benchmark for evaluating robotic memory in long-horizon manipulation tasks.</p>
+      <a href="https://pandaily.com/robomemarena-robot-memory-benchmark-may2026" target="_blank" rel="noreferrer">Open</a>
+    </article>
+    
+
+    <article class="item-card">
+      <div class="item-meta"><span>Pandaily China Tech</span><span>Verified</span></div>
+      <h4>Tencent&#x27;s Toast App Lets Anyone Build Native Mobile Apps with Natural Language</h4>
+      <p>Tencent&#x27;s YaoShip platform launches Toast, a vibecoding app that generates downloadable native Android applications from natural language descriptions -- no coding required.</p>
+      <a href="https://pandaily.com/tencent-toast-vibecoding-app-may2026" target="_blank" rel="noreferrer">Open</a>
+    </article>
+    
+
+    <article class="item-card">
+      <div class="item-meta"><span>TechNode China Tech</span><span>Verified</span></div>
+      <h4>Diablo IV China extends free base game giveaway until August 2026</h4>
+      <p>Diablo IV’s China server operator announced that the limited-time free claim event for the game’s base edition, originally priced at RMB 128 ($18), has been extended until August 4, 2026. The promotion first launched on April 28 and attracted a large influx of</p>
+      <a href="https://technode.com/2026/05/25/diablo-iv-china-extends-free-base-game-giveaway-until-august-2026/" target="_blank" rel="noreferrer">Open</a>
+    </article>
+    
+
+    <article class="item-card">
+      <div class="item-meta"><span>TechNode China Tech</span><span>Verified</span></div>
+      <h4>Huawei’s mate 90 series may launch with new Kirin chip this autumn</h4>
+      <p>At the 2026 International Symposium on Circuits and Systems (ISCAS 2026) in Shanghai on Monday, He Tingbo, Huawei’s board member and head of its semiconductor business, said the company would launch a new Kirin smartphone chip this autumn that uses logic foldi</p>
+      <a href="https://technode.com/2026/05/25/huaweis-mate-90-series-expected-to-debut-new-kirin-chip-this-autumn/" target="_blank" rel="noreferrer">Open</a>
+    </article>
+    </div>
+        </section>
+        
+        <section class="category" data-category="india deep-tech">
+          <button class="category-header" type="button">
+            <span>India Deep-Tech</span>
+            <strong>91</strong>
+          </button>
+          <div class="category-body">
+    <article class="item-card">
+      <div class="item-meta"><span>Economic Times AI</span><span>AI Market Intelligence</span></div>
+      <h4>From Search Engines to Autonomous Agents: AI industry enters its next phase</h4>
+      <p>The AI industry is rapidly shifting from conversational chatbots to autonomous “Agentic AI” systems capable of independently executing complex tasks across workflows and applications. Companies including OpenAI, Microsoft, Google, and Salesforce are leading in</p>
+      <a href="https://economictimes.indiatimes.com/ai/ai-insights/from-search-engines-to-autonomous-agents-ai-industry-enters-its-next-phase/articleshow/131346643.cms" target="_blank" rel="noreferrer">Open</a>
+    </article>
+    
+
+    <article class="item-card">
+      <div class="item-meta"><span>Analytics India Deep Tech</span><span>Funded Startup Signal</span></div>
+      <h4>Anthropic Surpasses OpenAI With $965 Bn Valuation, Launches Claude Opus 4.8</h4>
+      <p>Anthropic Surpasses OpenAI With $965 Bn Valuation, Launches Claude Opus 4.8</p>
+      <a href="https://analyticsindiamag.com/ai-news/anthropic-surpasses-openai-with-965-bn-valuation-launches-claude-opus-48" target="_blank" rel="noreferrer">Open</a>
+    </article>
+    
+
+    <article class="item-card">
+      <div class="item-meta"><span>Medianama India Tech Policy</span><span>Verified</span></div>
+      <h4>MapmyIndia replaces Google Maps in Amazon Now, launches AI address verification for banks: Q4FY26</h4>
+      <p>Amazon Now, Geo-Verify, delayed government contracts, and a growing order book dominated MapmyIndia&#x27;s Q4FY26 earnings call. The post MapmyIndia replaces Google Maps in Amazon Now, launches AI address verification for banks: Q4FY26 appeared first on MEDIANAMA .</p>
+      <a href="https://www.medianama.com/2026/05/223-mapmyindia-q4fy26-amazon-now-integrates-mappls-apis/" target="_blank" rel="noreferrer">Open</a>
+    </article>
+    
+
+    <article class="item-card">
+      <div class="item-meta"><span>YourStory India Startups</span><span>Verified</span></div>
+      <h4>IISc launches Wadhwani Innovation Centre in Bengaluru to boost quantum and deeptech ecosystem</h4>
+      <p>IISc has launched the Wadhwani-IISc Innovation Centre and a new quantum startup accelerator to boost India’s deeptech innovation and research commercialisation ecosystem.</p>
+      <a href="https://yourstory.com/2026/05/iisc-wadhwani-innovation-centre-bengaluru-quantum-deeptech-ecosystem" target="_blank" rel="noreferrer">Open</a>
+    </article>
+    
+
+    <article class="item-card">
+      <div class="item-meta"><span>Medianama India Tech Policy</span><span>Verified</span></div>
+      <h4>Exit Is the Primary Agentic Right</h4>
+      <p>AI systems increasingly infer authority from continuity rather than fresh human approval. This creates a deeper governance problem than expired tokens or stale credentials. The post Exit Is the Primary Agentic Right appeared first on MEDIANAMA .</p>
+      <a href="https://www.medianama.com/2026/05/223-ai-agent-authority-after-permission-expires/" target="_blank" rel="noreferrer">Open</a>
+    </article>
+    
+
+    <article class="item-card">
+      <div class="item-meta"><span>YourStory India Startups</span><span>Verified</span></div>
+      <h4>Red Balloon Aerospace launches stratospheric pressure balloon</h4>
+      <p>Red Balloon Aerospace’s first high-altitude super pressure balloon carried payloads from seven national and international partners.</p>
+      <a href="https://yourstory.com/2026/05/red-balloon-aerospace-launches-stratospheric-pressure-balloon" target="_blank" rel="noreferrer">Open</a>
+    </article>
+    
+
+    <article class="item-card">
+      <div class="item-meta"><span>Times of India Business</span><span>AI Market Intelligence</span></div>
+      <h4>US stock markets today (May 30, 2026): S&amp;P 500, Nasdaq extend record run as Dell jumps 33% on AI demand</h4>
+      <p>US stocks continued their record-setting rally, driven by strong earnings and AI optimism, pushing major indices higher. Despite inflation and geopolitical concerns, investor sentiment was buoyed by hopes of a US-Iran ceasefire extension, easing energy market </p>
+      <a href="https://timesofindia.indiatimes.com/business/international-business/us-stock-markets-today-may-29-2026-sp-500-nasdaq-extend-record-run-as-dell-jumps-33-on-ai-demand/articleshow/131393106.cms" target="_blank" rel="noreferrer">Open</a>
+    </article>
+    
+
+    <article class="item-card">
+      <div class="item-meta"><span>Economic Times AI</span><span>AI Market Intelligence</span></div>
+      <h4>As AI Adoption Accelerates in India, Mumbai Emerges as a Key Technology Hub</h4>
+      <p>As India’s AI ecosystem shifts from experimentation to real-world deployment, conversations around startup innovation, enterprise adoption, AI hiring and venture activity are gaining momentum across the technology landscape. Against this backdrop, Mumbai Tech </p>
+      <a href="https://economictimes.indiatimes.com/ai/ai-insights/as-ai-adoption-accelerates-in-india-mumbai-emerges-as-a-key-technology-hub/articleshow/131373252.cms" target="_blank" rel="noreferrer">Open</a>
+    </article>
+    
+
+    <article class="item-card">
+      <div class="item-meta"><span>Economic Times Tech</span><span>AI Market Intelligence</span></div>
+      <h4>Infosys CEO&#x27;s compensation rises 2.5% to nearly $8.7 million in fiscal 2026</h4>
+      <p>Infosys CEO Salil Parekh&#x27;s annual pay increased to 826 million rupees in fiscal year 2026. His compensation included fixed salary, bonuses, and stock options. This comes as India&#x27;s IT sector faces slowing growth and AI disruption. Infosys forecasts modest reve</p>
+      <a href="https://economictimes.indiatimes.com/tech/information-tech/infosys-ceos-compensation-rises-2-5-to-nearly-8-7-million-in-fiscal-2026/articleshow/131394616.cms" target="_blank" rel="noreferrer">Open</a>
+    </article>
+    
+
+    <article class="item-card">
+      <div class="item-meta"><span>Economic Times Markets</span><span>AI Market Intelligence</span></div>
+      <h4>5 world market themes for the week ahead</h4>
+      <p>Global markets are keenly watching U.S.-Iran ceasefire talks and the Strait of Hormuz, alongside crucial U.S. jobs data and euro zone inflation figures. India&#x27;s rupee faces pressure, while Colombia heads to the polls. Meanwhile, the AI-driven tech sector conti</p>
+      <a href="https://economictimes.indiatimes.com/markets/us-stocks/news/5-world-market-themes-for-the-week-ahead/articleshow/131403517.cms" target="_blank" rel="noreferrer">Open</a>
+    </article>
+    </div>
+        </section>
+        
+        <section class="category" data-category="bio + science breakthroughs">
+          <button class="category-header" type="button">
+            <span>Bio + Science Breakthroughs</span>
+            <strong>103</strong>
+          </button>
+          <div class="category-body">
+    <article class="item-card">
+      <div class="item-meta"><span>BioPharma Dive</span><span>Science/Deep-Tech Breakthrough</span></div>
+      <h4>Verge, following trial failure, rebrands its AI drug discovery ambitions</h4>
+      <p>Formerly known as Verge Genomics, the new Verge Labs will help pharma and biotech partners match potential brain drugs to patients who best benefit from them.</p>
+      <a href="https://www.biopharmadive.com/news/verge-genomics-labs-neuroscience-AI-drug-discovery/821229/" target="_blank" rel="noreferrer">Open</a>
+    </article>
+    
+
+    <article class="item-card">
+      <div class="item-meta"><span>Nature Biotechnology</span><span>Science/Deep-Tech Breakthrough</span></div>
+      <h4>Scoring gene importance by interpreting single-cell foundation models</h4>
+      <p>Nature Biotechnology, Published online: 27 May 2026; doi:10.1038/s41587-026-03112-5 SIGnature enables scalable cross-dataset analyses by combining explainable artificial intelligence with RNA foundation models.</p>
+      <a href="https://www.nature.com/articles/s41587-026-03112-5" target="_blank" rel="noreferrer">Open</a>
+    </article>
+    
+
+    <article class="item-card">
+      <div class="item-meta"><span>Nature Biotechnology</span><span>Science/Deep-Tech Breakthrough</span></div>
+      <h4>Accurate quantification in proteomics with QuantUMS</h4>
+      <p>Nature Biotechnology, Published online: 27 May 2026; doi:10.1038/s41587-026-03131-2 QuantUMS implements uncertainty estimation for protein quantification in mass spectrometry.</p>
+      <a href="https://www.nature.com/articles/s41587-026-03131-2" target="_blank" rel="noreferrer">Open</a>
+    </article>
+    
+
+    <article class="item-card">
+      <div class="item-meta"><span>Nature Biotechnology</span><span>Science/Deep-Tech Breakthrough</span></div>
+      <h4>Programming biology: next-gen AI firms raise billions to design better medicines</h4>
+      <p>Nature Biotechnology, Published online: 26 May 2026; doi:10.1038/s41587-026-03170-9 Faster drug discovery, optimized drug design, even programmable therapeutics: AI is impacting R&amp;D. Data and development bottlenecks remain.</p>
+      <a href="https://www.nature.com/articles/s41587-026-03170-9" target="_blank" rel="noreferrer">Open</a>
+    </article>
+    
+
+    <article class="item-card">
+      <div class="item-meta"><span>SOSV</span><span>Science/Deep-Tech Breakthrough</span></div>
+      <h4>Announcing the SOSV Deep Tech Summit, coming November 4-6</h4>
+      <p>The SOSV Deep Tech Summit focuses on three areas: climate tech, human health, and AI for the physical world. The post Announcing the SOSV Deep Tech Summit, coming November 4-6 appeared first on SOSV .</p>
+      <a href="https://sosv.com/announcing-the-sosv-deep-tech-summit-coming-november-4-6/" target="_blank" rel="noreferrer">Open</a>
+    </article>
+    
+
+    <article class="item-card">
+      <div class="item-meta"><span>STAT News</span><span>Science/Deep-Tech Breakthrough</span></div>
+      <h4>STAT+: At ASCO, positive data for Bristol in multiple myeloma and Pfizer in lung cancer</h4>
+      <p>You’re reading the web edition of ASCO in 30 Seconds, STAT’s guide to the American Society of Clinical Oncology annual meeting. Sign up for email editions here. We’re ASCOmaxxing. Rest…</p>
+      <a href="https://www.statnews.com/2026/05/29/asco-news-day-1-multiple-myeloma-bristol-lung-cancer-pfizer/?utm_campaign=rss" target="_blank" rel="noreferrer">Open</a>
+    </article>
+    
+
+    <article class="item-card">
+      <div class="item-meta"><span>Nature Biotechnology</span><span>Science/Deep-Tech Breakthrough</span></div>
+      <h4>Improving multimodal wearable sensing for healthcare with artificial intelligence</h4>
+      <p>Nature Biotechnology, Published online: 26 May 2026; doi:10.1038/s41587-026-03134-z This Comment explores artificial intelligence-driven strategies to accelerate the clinical translation of multimodal wearable sensors. We outline key data-science challenges an</p>
+      <a href="https://www.nature.com/articles/s41587-026-03134-z" target="_blank" rel="noreferrer">Open</a>
+    </article>
+    
+
+    <article class="item-card">
+      <div class="item-meta"><span>Nature Biotechnology</span><span>Science/Deep-Tech Breakthrough</span></div>
+      <h4>A framework for building a synthetic cell from the SynCell Asia Initiative</h4>
+      <p>Nature Biotechnology, Published online: 26 May 2026; doi:10.1038/s41587-026-03153-w Building a living cell from scratch requires overcoming a bottleneck that has remained unresolved despite decades of progress: orchestrating the spatiotemporal integration of c</p>
+      <a href="https://www.nature.com/articles/s41587-026-03153-w" target="_blank" rel="noreferrer">Open</a>
+    </article>
+    
+
+    <article class="item-card">
+      <div class="item-meta"><span>Genetic Engineering and Biotechnology News</span><span>Science/Deep-Tech Breakthrough</span></div>
+      <h4>Neuronal Protein Tracing Reveals How the Brain Routes Its Waste</h4>
+      <p>A new neuronal protein‑tracing method maps how waste leaves the brain through distinct, region‑specific routes. The approach shows how inflammation and Alzheimer’s derail normal clearance pathways. The post Neuronal Protein Tracing Reveals How the Brain Routes</p>
+      <a href="https://www.genengnews.com/topics/translational-medicine/neuronal-protein-tracing-reveals-how-the-brain-routes-its-waste/" target="_blank" rel="noreferrer">Open</a>
+    </article>
+    
+
+    <article class="item-card">
+      <div class="item-meta"><span>BioPharma Dive</span><span>Science/Deep-Tech Breakthrough</span></div>
+      <h4>Pfizer, Innovent strike $10B cancer drug deal</h4>
+      <p>Involving up to 12 antibody drugs, the alliance is the latest broad partnership between Chinese biotech and a multinational pharmaceutical company.</p>
+      <a href="https://www.biopharmadive.com/news/pfizer-innovent-china-adc-cancer-drug-deal/821444/" target="_blank" rel="noreferrer">Open</a>
+    </article>
+    </div>
+        </section>
+        
+        <section class="category" data-category="github / hugging face / arxiv artifacts">
+          <button class="category-header" type="button">
+            <span>GitHub / Hugging Face / arXiv Artifacts</span>
+            <strong>201</strong>
+          </button>
+          <div class="category-body">
+    <article class="item-card">
+      <div class="item-meta"><span>TLDR AI</span><span>AI Market Intelligence</span></div>
+      <h4>MiniMax teases upcoming M3 model with new sparse attention mechanism and 15.6X long-context response speed boost (12 minute read)</h4>
+      <p>MiniMax has released a new in-depth technical report on the making of its popular M2 series of language models. The report sheds light on numerous engineering innovations and clever approaches. It teases a new sparse attention approach used in MiniMax&#x27;s upcomi</p>
+      <a href="https://venturebeat.com/technology/minimax-teases-upcoming-m3-model-with-new-sparse-attention-mechanism-and-15-6x-response-speed-boost?utm_source=tldrai" target="_blank" rel="noreferrer">Open</a>
+    </article>
+    
+
+    <article class="item-card">
+      <div class="item-meta"><span>TLDR AI</span><span>AI Market Intelligence</span></div>
+      <h4>OpenAI Published a Frontier Governance Framework (4 minute read)</h4>
+      <p>OpenAI released a governance framework describing how its safety and security practices align with emerging regulations, covering risk management, model reporting, incident response, and oversight for advanced AI systems.</p>
+      <a href="https://openai.com/index/openai-frontier-governance-framework/?utm_source=tldrai" target="_blank" rel="noreferrer">Open</a>
+    </article>
+    
+
+    <article class="item-card">
+      <div class="item-meta"><span>TLDR All</span><span>AI Market Intelligence</span></div>
+      <h4>Microsoft tries to get back in the AI coding game with new model (1 minute read)</h4>
+      <p>Microsoft is developing a new AI model to strengthen its position in the AI coding arena. This effort highlights Microsoft&#x27;s ongoing competition in AI development and its response to evolving industry demands. The initiative aims to enhance coding capabilities</p>
+      <a href="https://sherwood.news/tech/report-microsoft-tries-to-get-back-in-the-ai-coding-game-with-new-model/?utm_source=tldrai" target="_blank" rel="noreferrer">Open</a>
+    </article>
+    
+
+    <article class="item-card">
+      <div class="item-meta"><span>StartupHub AI RSS</span><span>Funded Startup Signal</span></div>
+      <h4>Anthropic&#x27;s $965B Valuation Outshines OpenAI</h4>
+      <p>Anthropic has reportedly raised funds at a $965 billion valuation, surpassing OpenAI and highlighting the massive investor interest in the AI sector.</p>
+      <a href="https://www.startuphub.ai/ai-news/funding-round/2026/anthropic-s-965b-valuation-outshines-openai" target="_blank" rel="noreferrer">Open</a>
+    </article>
+    
+
+    <article class="item-card">
+      <div class="item-meta"><span>TechNode China Tech</span><span>Verified</span></div>
+      <h4>Xiaomi’s Q1 EV deliveries surpass 80,000 units</h4>
+      <p>Xiaomi released its financial results for the first quarter of 2026 on Tuesday, reporting total revenue of RMB 99.1 billion ($13.8 billion). Revenue from its smart electric vehicle, AI, and other innovation businesses reached RMB 19.9 billion ($2.8 billion). X</p>
+      <a href="https://technode.com/2026/05/27/xiaomis-q1-ev-deliveries-surpass-80000-units/" target="_blank" rel="noreferrer">Open</a>
+    </article>
+    
+
+    <article class="item-card">
+      <div class="item-meta"><span>e27 Southeast Asia Startups</span><span>Verified</span></div>
+      <h4>The moat is no longer the model, it is the memory</h4>
+      <p>There is a paper that landed on Hugging Face this week called Memex(RL): Scaling Long-Horizon LLM Agents via Indexed Experience Memory, out of Accenture’s Centre for Advanced AI. It diagnoses something every team shipping agents in production has hit, and most</p>
+      <a href="https://e27.co/the-moat-is-no-longer-the-model-it-is-the-memory-20260523/" target="_blank" rel="noreferrer">Open</a>
+    </article>
+    
+
+    <article class="item-card">
+      <div class="item-meta"><span>TLDR AI</span><span>Verified</span></div>
+      <h4>5 out of 6 of orgs don&#x27;t have the data foundation for agentic AI... (Sponsor)</h4>
+      <p>...but they&#x27;re still spending on AI solution as if they do.Think everyone has clean, consistent, governed data?Of course not — yet most orgs are investing 7-8 figures in agentic projects anyway. Fivetran&#x27;s agentic AI readiness index lays it all out: Only 15% o</p>
+      <a href="https://www.fivetran.com/resources/reports/the-2026-agentic-ai-readiness-index?utm_source=TLDR&amp;amp;utm_medium=newsletter&amp;amp;utm_campaign=2026-05-22_Primary_+Fivetran&amp;amp;utm_content=header_5_out_6" target="_blank" rel="noreferrer">Open</a>
+    </article>
+    
+
+    <article class="item-card">
+      <div class="item-meta"><span>TLDR AI</span><span>Verified</span></div>
+      <h4>Reasonix (Website)</h4>
+      <p>Reasonix is a DeepSeek-native coding agent for the terminal. It is engineered around prefix-cache stability and designed to be left running. Token costs stay low across long sessions.</p>
+      <a href="https://esengine.github.io/DeepSeek-Reasonix/?utm_source=tldrai" target="_blank" rel="noreferrer">Open</a>
+    </article>
+    
+
+    <article class="item-card">
+      <div class="item-meta"><span>ArXiv</span><span>Artifact/Research Source</span></div>
+      <h4>ArXiv: VideoFDB: Evaluating Full-Duplex Vision-Speech Capabilities in Conversational Agents</h4>
+      <p>Natural human conversation is full-duplex and audio-visual: people simultaneously speak and listen while continuously interpreting and producing nonverbal cues, such as nods, smiles, and gestures. To support successful human-agent interaction, agents must mode</p>
+      <a href="http://arxiv.org/abs/2605.30256v1" target="_blank" rel="noreferrer">Open</a>
+    </article>
+    
+
+    <article class="item-card">
+      <div class="item-meta"><span>ArXiv</span><span>Artifact/Research Source</span></div>
+      <h4>ArXiv: CommunityFact: A Dynamic, Multilingual, Multi-domain Benchmark for Misinformation Detection in the Wild</h4>
+      <p>Misinformation verification increasingly occurs in public, fast-moving, and multilingual online settings, where static benchmarks provide an incomplete measure of model reliability. We introduce CommunityFact, a refreshable benchmark for misinformation detecti</p>
+      <a href="http://arxiv.org/abs/2605.30241v1" target="_blank" rel="noreferrer">Open</a>
+    </article>
+    </div>
+        </section>
+        
+        <section class="category" data-category="developer pain + provider status">
+          <button class="category-header" type="button">
+            <span>Developer Pain + Provider Status</span>
+            <strong>33</strong>
+          </button>
+          <div class="category-body">
+    <article class="item-card">
+      <div class="item-meta"><span>TLDR AI</span><span>Verified</span></div>
+      <h4>Gemini 3.5 Flash Looks Good For How Fast It Is (8 minute read)</h4>
+      <p>Zvi judges Gemini 3.5 Flash the best model at its speed point but unconvincing against Opus 4.7 or GPT-5.5 outside latency-sensitive workloads, with Google positioning it as a daily driver for agentic workflows that outscores 3.1 Pro on Terminal-Bench and MCP </p>
+      <a href="https://thezvi.wordpress.com/2026/05/22/gemini-3-5-flash-looks-good-for-how-fast-it-is/?utm_source=tldrai" target="_blank" rel="noreferrer">Open</a>
+    </article>
+    
+
+    <article class="item-card">
+      <div class="item-meta"><span>OpenAI Status</span><span>Developer Pain/Adoption Signal</span></div>
+      <h4>Users May Experience Issues Accessing ChatGPT</h4>
+      <p>Status: Resolved All impacted services have now fully recovered. Affected components Connectors/Apps (Operational) ChatGPT Atlas (Operational) Login (Operational) Search (Operational) Conversations (Operational) Compliance API (Operational) GPTs (Operational) </p>
+      <a href="https://status.openai.com//incidents/01KSSY9D28AM92BCDXRTS4CDKZ" target="_blank" rel="noreferrer">Open</a>
+    </article>
+    
+
+    <article class="item-card">
+      <div class="item-meta"><span>OpenAI Status</span><span>Developer Pain/Adoption Signal</span></div>
+      <h4>Codex Context Compaction Latency</h4>
+      <p>Status: Resolved All impacted services have now fully recovered. Affected components Codex Web (Operational) CLI (Operational) App (Operational) VS Code extension (Operational) Codex API (Operational)</p>
+      <a href="https://status.openai.com//incidents/01KSN9ATSF1WCJ5ZTQSR1H9CC7" target="_blank" rel="noreferrer">Open</a>
+    </article>
+    
+
+    <article class="item-card">
+      <div class="item-meta"><span>OpenAI Status</span><span>Developer Pain/Adoption Signal</span></div>
+      <h4>Subscription checkout failing</h4>
+      <p>Status: Resolved Resolved - Some users were unable to complete subscriptions on web and mobile. Affected users may have experienced the Subscribe button becoming unresponsive or encountered the error message submit_error_source:email during checkout. Affected </p>
+      <a href="https://status.openai.com//incidents/01KSPYYC11CCY3KKXEK4E03CBG" target="_blank" rel="noreferrer">Open</a>
+    </article>
+    
+
+    <article class="item-card">
+      <div class="item-meta"><span>Anthropic Status</span><span>Developer Pain/Adoption Signal</span></div>
+      <h4>Elevated errors for Claude Opus 4.8</h4>
+      <p>May 29 , 19:12 UTC Resolved - This issue has been resolved. May 29 , 18:55 UTC Monitoring - A fix has been deployed for Claude Opus 4.8 and success rates have returned to normal. Users saw elevated errors on requests to the model from 18:16–18:42 UTC. May 29 ,</p>
+      <a href="https://status.claude.com/incidents/2zr0rkdxjdtc" target="_blank" rel="noreferrer">Open</a>
+    </article>
+    
+
+    <article class="item-card">
+      <div class="item-meta"><span>Anthropic Status</span><span>Developer Pain/Adoption Signal</span></div>
+      <h4>Elevated errors on Claude Opus 4.8</h4>
+      <p>May 29 , 08:45 UTC Resolved - This incident has been resolved. May 29 , 08:39 UTC Monitoring - A fix has been implemented and we are monitoring the results. May 29 , 08:30 UTC Investigating - We are currently investigating this issue.</p>
+      <a href="https://status.claude.com/incidents/5s24h0pbdj5d" target="_blank" rel="noreferrer">Open</a>
+    </article>
+    
+
+    <article class="item-card">
+      <div class="item-meta"><span>Anthropic Status</span><span>Developer Pain/Adoption Signal</span></div>
+      <h4>Elevated errors on Claude Opus 4.7</h4>
+      <p>May 28 , 09:17 UTC Resolved - This incident has been resolved. May 28 , 08:38 UTC Investigating - We are currently investigating this issue.</p>
+      <a href="https://status.claude.com/incidents/0w1bqsc12lt8" target="_blank" rel="noreferrer">Open</a>
+    </article>
+    
+
+    <article class="item-card">
+      <div class="item-meta"><span>Anthropic Status</span><span>Developer Pain/Adoption Signal</span></div>
+      <h4>Elevated errors on Claude Opus 4.7</h4>
+      <p>May 27 , 09:41 UTC Resolved - This incident has been resolved. May 27 , 09:11 UTC Monitoring - A fix has been implemented and we are monitoring the results. May 27 , 08:04 UTC Investigating - We are currently investigating this issue.</p>
+      <a href="https://status.claude.com/incidents/rtr7z82cqmp9" target="_blank" rel="noreferrer">Open</a>
+    </article>
+    
+
+    <article class="item-card">
+      <div class="item-meta"><span>Anthropic Status</span><span>Developer Pain/Adoption Signal</span></div>
+      <h4>Elevated errors on Claude Opus 4.7</h4>
+      <p>May 27 , 06:40 UTC Resolved - This incident has been resolved. May 27 , 06:01 UTC Monitoring - A fix has been implemented and we are monitoring the results. May 27 , 05:43 UTC Investigating - We are currently investigating this issue.</p>
+      <a href="https://status.claude.com/incidents/fw96fnc5bw45" target="_blank" rel="noreferrer">Open</a>
+    </article>
+    
+
+    <article class="item-card">
+      <div class="item-meta"><span>Anthropic Status</span><span>Developer Pain/Adoption Signal</span></div>
+      <h4>Elevated error rates on Opus 4.7</h4>
+      <p>May 25 , 10:39 UTC Resolved - This incident has been resolved. May 25 , 10:32 UTC Monitoring - We had an elevated error rate on Opus 4.7 from 6:30 UTC until 10:30 UTC</p>
+      <a href="https://status.claude.com/incidents/44pgyz54d48z" target="_blank" rel="noreferrer">Open</a>
+    </article>
+    </div>
+        </section>
+        
+        <section class="category" data-category="product launch radar">
+          <button class="category-header" type="button">
+            <span>Product Launch Radar</span>
+            <strong>18</strong>
+          </button>
+          <div class="category-body">
+    <article class="item-card">
+      <div class="item-meta"><span>OpenAI News</span><span>Verified</span></div>
+      <h4>Strengthening societal resilience with Rosalind Biodefense</h4>
+      <p>OpenAI launches Rosalind Biodefense, expanding trusted access to GPT-Rosalind for vetted developers and U.S. government partners advancing biodefense, public health, and pandemic preparedness through frontier AI.</p>
+      <a href="https://openai.com/index/strengthening-societal-resilience-with-rosalind-biodefense" target="_blank" rel="noreferrer">Open</a>
+    </article>
+    
+
+    <article class="item-card">
+      <div class="item-meta"><span>NVIDIA Blog</span><span>Verified</span></div>
+      <h4>The Name’s Gaming … Cloud Gaming: ‘007 First Light’ Launches on GeForce NOW</h4>
+      <p>License to stream, shaken and stirred. GeForce NOW is dialing up the espionage with the launch of 007 First Light, letting members slip into James Bond’s reimagined origin story from almost any device — no tux or preloads required. For a limited time, the game</p>
+      <a href="https://blogs.nvidia.com/blog/geforce-now-thursday-007-first-light-launch/" target="_blank" rel="noreferrer">Open</a>
+    </article>
+    
+
+    <article class="item-card">
+      <div class="item-meta"><span>e27 Southeast Asia Startups</span><span>Verified</span></div>
+      <h4>We are working faster than ever, so why are we more mentally exhausted?</h4>
+      <p>Work today is undeniably faster than it was a decade ago. Emails are instant. Meetings happen virtually. AI can generate drafts in seconds. Marketing campaigns that once took weeks to execute can now be planned, written and launched within days. Entire workflo</p>
+      <a href="https://e27.co/we-are-working-faster-than-ever-so-why-are-we-more-mentally-exhausted-20260527/" target="_blank" rel="noreferrer">Open</a>
+    </article>
+    
+
+    <article class="item-card">
+      <div class="item-meta"><span>TLDR AI</span><span>Verified</span></div>
+      <h4>Building self-improving tax agents with Codex (17 minute read)</h4>
+      <p>Real-world systems often behave differently in production than they do in the lab. Teams often discover these failures after launch, then spend weeks fixing them. That feedback loop is slow and manual. Today, it is possible to build agents that self-improve. T</p>
+      <a href="https://openai.com/index/building-self-improving-tax-agents-with-codex/?utm_source=tldrai" target="_blank" rel="noreferrer">Open</a>
+    </article>
+    
+
+    <article class="item-card">
+      <div class="item-meta"><span>TLDR AI</span><span>Verified</span></div>
+      <h4>Former Google and Apple researchers launch Trajectory to enhance AI feedback loops (3 minute read)</h4>
+      <p>The new Palo Alto-based startup aims to make AI systems that can actually see and interpret the physical world.</p>
+      <a href="https://cryptobriefing.com/trajectory-ai-startup-google-apple-researchers/?utm_source=tldrai" target="_blank" rel="noreferrer">Open</a>
+    </article>
+    
+
+    <article class="item-card">
+      <div class="item-meta"><span>TLDR AI</span><span>Verified</span></div>
+      <h4>MAI-Image-2.5 launches at No. 3 on Arena (1 minute read)</h4>
+      <p>MAI-Image-2.5 ranks third on Arena&#x27;s text-to-image leaderboard, excelling in style variety, accurate text rendering, and detailed imagery. It improves significantly over MAI-Image-2 with advancements in visual reasoning, scene structure, and commercial illustr</p>
+      <a href="https://microsoft.ai/news/mai-image-2-5-launches-at-no-3-on-arena-ai/?utm_source=tldrai" target="_blank" rel="noreferrer">Open</a>
+    </article>
+    
+
+    <article class="item-card">
+      <div class="item-meta"><span>TLDR AI</span><span>Verified</span></div>
+      <h4>Introducing Grok Build (3 minute read)</h4>
+      <p>Grok Build, a new coding agent and CLI, has launched in beta for SuperGrok and X Premium Plus subscribers. It supports complex coding projects by allowing plan mode reviews and integrates seamlessly with user conventions. Users can deploy Grok&#x27;s capabilities f</p>
+      <a href="https://x.ai/news/grok-build-cli?utm_source=tldrai" target="_blank" rel="noreferrer">Open</a>
+    </article>
+    
+
+    <article class="item-card">
+      <div class="item-meta"><span>TLDR AI</span><span>Verified</span></div>
+      <h4>The 2026-07-28 MCP Specification Release Candidate (9 minute read)</h4>
+      <p>The release candidate for the next Model Context Protocol (MCP) specification is now available. It is the largest revision of the protocol since launch. The candidate introduces a stateless core that scales on ordinary HTTP infrastructure, extensions, authoriz</p>
+      <a href="https://blog.modelcontextprotocol.io/posts/2026-07-28-release-candidate/?utm_source=tldrai" target="_blank" rel="noreferrer">Open</a>
+    </article>
+    
+
+    <article class="item-card">
+      <div class="item-meta"><span>TLDR All</span><span>AI Market Intelligence</span></div>
+      <h4>Be TLDR&#x27;s first VP Marketing ($300k-$400k, Fully Remote)</h4>
+      <p>TLDR is hiring a VP of Marketing to scale growth, pipeline, and brand across 8M+ subscribers, 13 newsletters, and advertisers like AWS, Google Cloud, Microsoft, and Anthropic. Apply here.</p>
+      <a href="https://jobs.ashbyhq.com/tldr.tech/9a1d9022-357b-4774-86b2-468e8b3665c5?utm_source=tldrnewsletter" target="_blank" rel="noreferrer">Open</a>
+    </article>
+    
+
+    <article class="item-card">
+      <div class="item-meta"><span>TLDR AI</span><span>AI Market Intelligence</span></div>
+      <h4>Data Isn&#x27;t Scarce. Your Imagination Is (8 minute read)</h4>
+      <p>Asuka Zheng argues the &quot;we&#x27;re running out of training data&quot; panic misses the actual shape of the data market, recounting her own SRE-replacement project that trained two world models until it stalled because end-to-end long-horizon incident trajectories from f</p>
+      <a href="https://x.com/VoidAsuka/status/2059963769804214506?utm_source=tldrai" target="_blank" rel="noreferrer">Open</a>
+    </article>
+    </div>
+        </section>
+        
+        <section class="category" data-category="workflow / agents / coding">
+          <button class="category-header" type="button">
+            <span>Workflow / Agents / Coding</span>
+            <strong>45</strong>
+          </button>
+          <div class="category-body">
+    <article class="item-card">
+      <div class="item-meta"><span>OpenAI News</span><span>Verified</span></div>
+      <h4>How Braintrust turns customer requests into code with Codex</h4>
+      <p>How Braintrust engineers use Codex with GPT-5.5 to run experiments and code faster.</p>
+      <a href="https://openai.com/index/braintrust" target="_blank" rel="noreferrer">Open</a>
+    </article>
+    
+
+    <article class="item-card">
+      <div class="item-meta"><span>OpenAI News</span><span>Verified</span></div>
+      <h4>How Endava builds an agentic organization with Codex</h4>
+      <p>Learn how Endava uses Codex to build an agentic organization, accelerating software delivery and reducing requirements analysis from weeks to hours.</p>
+      <a href="https://openai.com/index/endava" target="_blank" rel="noreferrer">Open</a>
+    </article>
+    
+
+    <article class="item-card">
+      <div class="item-meta"><span>Mistral AI News</span><span>Verified</span></div>
+      <h4>Frontier AI LLMs, assistants, agents, services</h4>
+      <p>Frontier AI LLMs, assistants, agents, services | Mistral AI Start building Menu Products Solutions Models Developers Blog Customers Company Contact sales Start building Studio Build, test, and run AI agents and apps. Forge Train, align, and evaluate custom AI </p>
+      <a href="https://mistral.ai/news/" target="_blank" rel="noreferrer">Open</a>
+    </article>
+    
+
+    <article class="item-card">
+      <div class="item-meta"><span>Mistral AI News</span><span>Verified</span></div>
+      <h4>AI Now Summit 2026</h4>
+      <p>AI Now Summit 2026 | Mistral AI Start building Menu Products Solutions Models Developers Blog Customers Company Contact sales Start building Studio Build, test, and run AI agents and apps. Forge Train, align, and evaluate custom AI models. Vibe AI agent for lo</p>
+      <a href="https://mistral.ai/news/ai-now-summit-2026/" target="_blank" rel="noreferrer">Open</a>
+    </article>
+    
+
+    <article class="item-card">
+      <div class="item-meta"><span>Mistral AI News</span><span>Verified</span></div>
+      <h4>Introducing Search Toolkit</h4>
+      <p>Introducing Search Toolkit | Mistral AI Start building Menu Products Solutions Models Developers Blog Customers Company Contact sales Start building Studio Build, test, and run AI agents and apps. Forge Train, align, and evaluate custom AI models. Vibe AI agen</p>
+      <a href="https://mistral.ai/news/search-toolkit/" target="_blank" rel="noreferrer">Open</a>
+    </article>
+    
+
+    <article class="item-card">
+      <div class="item-meta"><span>Mistral AI News</span><span>Verified</span></div>
+      <h4>Vibe gets to work.</h4>
+      <p>Vibe gets to work. | Mistral AI Start building Menu Products Solutions Models Developers Blog Customers Company Contact sales Start building Studio Build, test, and run AI agents and apps. Forge Train, align, and evaluate custom AI models. Vibe AI agent for lo</p>
+      <a href="https://mistral.ai/news/vibe-agent/" target="_blank" rel="noreferrer">Open</a>
+    </article>
+    
+
+    <article class="item-card">
+      <div class="item-meta"><span>OpenAI News</span><span>Verified</span></div>
+      <h4>Cisco and OpenAI redefine enterprise engineering with Codex</h4>
+      <p>Cisco and OpenAI are redefining enterprise engineering with Codex, helping Cisco scale AI-native development, accelerate AI Defense work, and automate defect remediation.</p>
+      <a href="https://openai.com/index/cisco" target="_blank" rel="noreferrer">Open</a>
+    </article>
+    
+
+    <article class="item-card">
+      <div class="item-meta"><span>OpenAI News</span><span>Verified</span></div>
+      <h4>Building self-improving tax agents with Codex</h4>
+      <p>See how OpenAI, Thrive, and Crete built a self-improving tax agent with Codex, automating filings, improving accuracy, and accelerating workflows.</p>
+      <a href="https://openai.com/index/building-self-improving-tax-agents-with-codex" target="_blank" rel="noreferrer">Open</a>
+    </article>
+    
+
+    <article class="item-card">
+      <div class="item-meta"><span>OpenAI News</span><span>Verified</span></div>
+      <h4>Warp’s big bet on building open source with GPT-5.5</h4>
+      <p>Warp uses GPT-5.5 and OpenAI models to coordinate coding agents across local, cloud, and open-source development workflows.</p>
+      <a href="https://openai.com/index/warp" target="_blank" rel="noreferrer">Open</a>
+    </article>
+    
+
+    <article class="item-card">
+      <div class="item-meta"><span>Mistral AI News</span><span>Verified</span></div>
+      <h4>Introducing physics AI at Mistral: the foundation for engineering acceleration.</h4>
+      <p>Introducing physics AI at Mistral: the foundation for engineering acceleration. | Mistral AI Start building Menu Products Solutions Models Developers Blog Customers Company Contact sales Start building Studio Build, test, and run AI agents and apps. Forge Trai</p>
+      <a href="https://mistral.ai/news/introducing-physics-ai-at-mistral/" target="_blank" rel="noreferrer">Open</a>
+    </article>
+    </div>
+        </section>
+        
+        <section class="category" data-category="finance / macro / chips">
+          <button class="category-header" type="button">
+            <span>Finance / Macro / Chips</span>
+            <strong>20</strong>
+          </button>
+          <div class="category-body">
+    <article class="item-card">
+      <div class="item-meta"><span>Anthropic News</span><span>Verified</span></div>
+      <h4>Anthropic appoints KiYoung Choi as Representative Director of Korea \ Anthropic</h4>
+      <p>Skip to main content Skip to footer Research Economic Futures Commitments Learn News Try Claude Announcements Anthropic appoints KiYoung Choi as Representative Director of Korea ahead of Seoul office opening May 26, 2026 Korea is one of the most active markets</p>
+      <a href="https://www.anthropic.com/news/kiyoung-choi-representative-director-anthropic-korea" target="_blank" rel="noreferrer">Open</a>
+    </article>
+    
+
+    <article class="item-card">
+      <div class="item-meta"><span>SEC EDGAR META</span><span>AI Market Intelligence</span></div>
+      <h4>Meta 8-K filing</h4>
+      <p>Meta filed 8-K. 8-K Meta META AI cloud compute GPU data center earnings revenue capex</p>
+      <a href="https://www.sec.gov/Archives/edgar/data/1326801/000162828026039193/meta-20260527.htm" target="_blank" rel="noreferrer">Open</a>
+    </article>
+    
+
+    <article class="item-card">
+      <div class="item-meta"><span>CNBC Technology</span><span>AI Market Intelligence</span></div>
+      <h4>Jim Cramer says Dell’s blowout quarter sets up a crucial week for AI stocks</h4>
+      <p>CNBC’s Jim Cramer said Dell Technologies’ blockbuster quarter reignited enthusiasm around AI and data center stocks.</p>
+      <a href="https://www.cnbc.com/2026/05/29/jim-cramer-says-dells-blowout-quarter-sets-up-a-crucial-week-for-ai-stocks.html" target="_blank" rel="noreferrer">Open</a>
+    </article>
+    
+
+    <article class="item-card">
+      <div class="item-meta"><span>CNBC Technology</span><span>AI Market Intelligence</span></div>
+      <h4>Samsung&#x27;s shares surge as much as 6% after company ships next-generation AI memory chip samples</h4>
+      <p>Shares of Samsung Electronics surged after the company began shipping HBM4E chip samples to its customers globally.</p>
+      <a href="https://www.cnbc.com/2026/05/29/samsung-hbm4e-chip-samples-ai-memory.html" target="_blank" rel="noreferrer">Open</a>
+    </article>
+    
+
+    <article class="item-card">
+      <div class="item-meta"><span>CNBC Technology</span><span>AI Market Intelligence</span></div>
+      <h4>Nvidia is investing billions into this emerging technology that could change the AI industry</h4>
+      <p>Photonics is considered to be a more efficient alternative to the current process of transferring data using electricity, which could be crucial to the AI boom.</p>
+      <a href="https://www.cnbc.com/2026/05/29/nvidia-photonics-investment-ai.html" target="_blank" rel="noreferrer">Open</a>
+    </article>
+    
+
+    <article class="item-card">
+      <div class="item-meta"><span>TLDR All</span><span>AI Market Intelligence</span></div>
+      <h4>IBM rallies after committing to spend $10 billion to pursue the holy grail of quantum computing (2 minute read)</h4>
+      <p>IBM plans to spend over $10 billion over the next five years to create a large-scale, fault-tolerant quantum computer.</p>
+      <a href="https://sherwood.news/markets/ibm-quantum-computing-10-billion-investment-government-support/?utm_source=tldrnewsletter" target="_blank" rel="noreferrer">Open</a>
+    </article>
+    
+
+    <article class="item-card">
+      <div class="item-meta"><span>CNBC Technology</span><span>AI Market Intelligence</span></div>
+      <h4>Software stocks wrap up best month since 2001 as talk of &#x27;SaaSpocalypse&#x27; subsides</h4>
+      <p>Snowflake and Okta both saw record stock pops this week as investors found favor in their AI software strategies.</p>
+      <a href="https://www.cnbc.com/2026/05/29/software-stocks-wrap-best-month-since-2001-as-talk-of-saaspocalypse-.html" target="_blank" rel="noreferrer">Open</a>
+    </article>
+    
+
+    <article class="item-card">
+      <div class="item-meta"><span>CNBC Technology</span><span>AI Market Intelligence</span></div>
+      <h4>Tokens or humans? The new corporate trade-off</h4>
+      <p>AI is costing far more than companies expected, forcing CFOs into a new trade-off between tokens and humans and posing a risk the market hasn&#x27;t priced in.</p>
+      <a href="https://www.cnbc.com/2026/05/29/-tokens-or-humans-the-new-corporate-trade-off.html" target="_blank" rel="noreferrer">Open</a>
+    </article>
+    
+
+    <article class="item-card">
+      <div class="item-meta"><span>CNBC Technology</span><span>AI Market Intelligence</span></div>
+      <h4>Dell&#x27;s earnings blowout makes clear now is not the time to go against the AI grain</h4>
+      <p>Don&#x27;t fight the tape.</p>
+      <a href="https://www.cnbc.com/2026/05/29/dells-earnings-blowout-makes-clear-now-is-not-the-time-to-go-against-the-ai-grain.html" target="_blank" rel="noreferrer">Open</a>
+    </article>
+    
+
+    <article class="item-card">
+      <div class="item-meta"><span>CNBC Technology</span><span>AI Market Intelligence</span></div>
+      <h4>SpaceX skeptics have added reason for concern after Musk comments diverge from IPO filing</h4>
+      <p>In a post on X, Elon Musk offered details about SpaceX&#x27;s deal with Anthropic that weren&#x27;t included in the company&#x27;s IPO prospectus.</p>
+      <a href="https://www.cnbc.com/2026/05/29/spacex-skeptics-concerned-as-musk-comments-diverge-from-ipo-filing.html" target="_blank" rel="noreferrer">Open</a>
+    </article>
+    </div>
+        </section>
+        </section>
+    </section>
+    <p class="footer">Generated 2026-05-31T15:07:38.317314+00:00. Local file, no external assets.</p>
+  </main>
+  <script>
+    const search = document.querySelector('#search');
+    const filter = document.querySelector('#filter');
+    const sections = [...document.querySelectorAll('.category')];
+    document.querySelectorAll('.category-header').forEach(button => {
+      button.addEventListener('click', () => button.closest('.category').classList.toggle('collapsed'));
+    });
+    function applyFilters() {
+      const q = search.value.toLowerCase();
+      const f = filter.value;
+      sections.forEach(section => {
+        const matchesCategory = !f || section.dataset.category === f;
+        const matchesSearch = !q || section.innerText.toLowerCase().includes(q);
+        section.style.display = matchesCategory && matchesSearch ? '' : 'none';
+      });
+    }
+    search.addEventListener('input', applyFilters);
+    filter.addEventListener('change', applyFilters);
+  </script>
+</body>
+</html>

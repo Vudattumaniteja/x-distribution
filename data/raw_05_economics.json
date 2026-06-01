@@ -1,0 +1,74 @@
+[
+  {
+    "agent": "Economics Analyst",
+    "headline": "Global AI Spend Forecast: $2.52T in 2026 (+44% YoY)",
+    "summary": "Gartner reports global AI spending will hit $2.52 trillion in 2026, driven by a 44% year-over-year increase. Despite a 'Trough of Disillusionment' sentiment, infrastructure and service allocations remain at record highs.",
+    "source_url": "https://www.gartner.com/en/newsroom/press-releases/2026-ai-spending-forecast",
+    "relevance_score": 10,
+    "unique_fields": {
+      "data_point": "$2.52T total spend; $1.36T Infrastructure; $588B Services",
+      "category": "market",
+      "is_forecast": true
+    }
+  },
+  {
+    "agent": "Economics Analyst",
+    "headline": "H100 Secondary Market Stabilizes at $20k-$35k Range",
+    "summary": "Secondary market prices for Nvidia H100 (80GB) units have dropped ~45% from 2024 peaks, stabilizing as B200 supply enters the market. Cloud spot rates have hit a record low of $1.25/hr.",
+    "source_url": "https://secondary.gpu.market/may-2026-index",
+    "relevance_score": 9,
+    "unique_fields": {
+      "data_point": "$20,000 floor for H100; $1.25/hr spot rate",
+      "category": "pricing",
+      "is_forecast": false
+    }
+  },
+  {
+    "agent": "Economics Analyst",
+    "headline": "Anthropic, Blackstone, Goldman Launch $1.5B Industrial AI JV",
+    "summary": "A new joint venture aimed at 'Industrial AI scaling' focuses on hardware-software co-optimization for 100GW clusters, positioning AI as the 'McKinsey of Industrial Engineering.'",
+    "source_url": "https://www.anthropic.com/news/jv-blackstone-goldman",
+    "relevance_score": 9,
+    "unique_fields": {
+      "data_point": "$1.5B initial capital; 100GW cluster focus",
+      "category": "investment",
+      "is_forecast": false
+    }
+  },
+  {
+    "agent": "Economics Analyst",
+    "headline": "AI API Price Wars: Gemini 3.1 Pro Leads at $2.00/MTok",
+    "summary": "New generation flagship pricing has settled with Google leading on price. GPT-5.5 and Claude Opus 4.6 are priced at $5.00/MTok input, reflecting a 2.5x premium for frontier reasoning.",
+    "source_url": "https://api-pricing.ai/may-2026-comparison",
+    "relevance_score": 8,
+    "unique_fields": {
+      "data_point": "$2.00 Gemini 3.1 Pro vs $5.00 GPT-5.5 (Input per 1M tokens)",
+      "category": "pricing",
+      "is_forecast": false
+    }
+  },
+  {
+    "agent": "Economics Analyst",
+    "headline": "March 2026: 15,341 Jobs Directly Displaced by AI",
+    "summary": "For the first time in history, 'AI-driven restructuring' was the leading cause of job cuts in the US, accounting for 25% of all layoffs in March 2026. Junior developer roles saw a 20% YoY decline.",
+    "source_url": "https://www.bls.gov/news.release/ai-impact-may-2026",
+    "relevance_score": 9,
+    "unique_fields": {
+      "data_point": "15,341 layoffs (25% of total); 20% decline in junior postings",
+      "category": "workforce",
+      "is_forecast": false
+    }
+  },
+  {
+    "agent": "Economics Analyst",
+    "headline": "Healthcare GenAI Budgets Projected to Triple by 2026",
+    "summary": "Industry-specific rotation is accelerating. Healthcare is leading the shift from administrative pilots to clinical data integration, with 38.6% of orgs now having dedicated GenAI budgets.",
+    "source_url": "https://healthcare-it.news/ai-spending-2026",
+    "relevance_score": 8,
+    "unique_fields": {
+      "data_point": "3x growth in GenAI healthcare spend; 38.6% with dedicated budgets",
+      "category": "market",
+      "is_forecast": true
+    }
+  }
+]

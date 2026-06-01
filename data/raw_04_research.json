@@ -1,0 +1,75 @@
+[
+  {
+    "agent": "Research Tracker",
+    "headline": "OpenSeeker-v2: New SFT-Only SOTA for Deep Search Agents",
+    "summary": "SJTU researchers released OpenSeeker-v2, a 30B search agent that hits 46.0% on BrowseComp using only 10.6k high-difficulty SFT samples. It outperforms complex RL-based industrial models, proving data quality over pipeline complexity.",
+    "source_url": "https://arxiv.org/abs/2605.04036",
+    "relevance_score": 9,
+    "unique_fields": {
+      "paper_title": "OpenSeeker-v2: Pushing the Limits of Search Agents with Informative and High-Difficulty Trajectories",
+      "benchmark_improvement": "46.0% on BrowseComp (New SOTA), 78.0% on xbench",
+      "code_available": true,
+      "code_url": "https://github.com/rui-ye/OpenSeeker"
+    }
+  },
+  {
+    "agent": "Research Tracker",
+    "headline": "Kimi-Dev-72B Sets New Open-Source Record on SWE-bench Verified",
+    "summary": "Moonshot AI released Kimi-Dev-72B, hitting 60.4% on SWE-bench Verified. The model uses large-scale RL with rewards based on passing Docker-contained test suites, enabling autonomous software engineering at frontier-levels.",
+    "source_url": "https://github.com/MoonshotAI/Kimi-Dev",
+    "relevance_score": 10,
+    "unique_fields": {
+      "paper_title": "Kimi-Dev: Large-Scale RL for Software Engineering",
+      "benchmark_improvement": "60.4% on SWE-bench Verified (Open-Source SOTA)",
+      "code_available": true
+    }
+  },
+  {
+    "agent": "Research Tracker",
+    "headline": "MiniMax-M1: 456B MoE Model Using 'Lightning Attention' Slashes Inference Costs",
+    "summary": "MiniMax's new M1 model utilizes a hybrid-attention architecture to achieve SOTA reasoning (86% AIME 2024) with only 25% of the FLOPs required by DeepSeek R1 at 100K context. Features 1M native context window.",
+    "source_url": "https://arxiv.org/abs/2506.16",
+    "relevance_score": 9,
+    "unique_fields": {
+      "paper_title": "MiniMax-M1: 456B Hybrid-Attention Model Redefines Inference Efficiency",
+      "benchmark_improvement": "86% AIME 2024, 75% FLOP savings at 100K context",
+      "code_available": true
+    }
+  },
+  {
+    "agent": "Research Tracker",
+    "headline": "Agentic Red Teaming: Dreadnode Compresses Security Probing to Hours",
+    "summary": "New research (arXiv:2605.04019) introduces an agentic framework that automates 45+ adversarial attacks and 450+ transforms. Achieved an 85% success rate on Llama Scout with zero human-written code.",
+    "source_url": "https://arxiv.org/abs/2605.04019",
+    "relevance_score": 8,
+    "unique_fields": {
+      "paper_title": "Redefining AI Red Teaming: An Agentic Framework",
+      "benchmark_improvement": "85% success rate on Llama Scout; timelines reduced from weeks to hours",
+      "code_available": true
+    }
+  },
+  {
+    "agent": "Research Tracker",
+    "headline": "'To Call or Not to Call' Optimizes LLM Tool Use via Hidden-State Estimation",
+    "summary": "This framework (arXiv:2605.00737) improves LLM tool-calling decisions by analyzing necessity, utility, and affordability. It corrects the common 'over-calling' bias, significantly boosting agent performance across 6 major models.",
+    "source_url": "https://arxiv.org/abs/2605.00737",
+    "relevance_score": 8,
+    "unique_fields": {
+      "paper_title": "To Call or Not to Call: Optimizing LLM Tool-Use Decisions",
+      "benchmark_improvement": "Improved decision quality across 6 major frontier models",
+      "code_available": false
+    }
+  },
+  {
+    "agent": "Research Tracker",
+    "headline": "AgentFloor: 8B Models Match GPT-4o in Tool-Use via AEM",
+    "summary": "Adaptive Entropy Modulation (AEM) allows sub-8B models to handle complex multi-turn API orchestrations previously reserved for frontier models like GPT-4o. Significant win for edge-deployed agents.",
+    "source_url": "https://arxiv.org/abs/2605.00334",
+    "relevance_score": 8,
+    "unique_fields": {
+      "paper_title": "AgentFloor: Scaling Tool-Use to Small Language Models",
+      "benchmark_improvement": "8B models matching GPT-4o on complex API tasks",
+      "code_available": true
+    }
+  }
+]

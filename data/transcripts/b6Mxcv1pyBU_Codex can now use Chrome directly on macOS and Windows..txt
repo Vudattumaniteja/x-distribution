@@ -1,0 +1,18 @@
+00:00:00
+Cortex can now help with almost everything. But only if it can work where actual work happens. And for many of us, that place is Chrome. To help with that, we just launched the Chrome extension for Cortex. It works with the Cortex app in both Windows and Mac OS. Let me show you what you can actually do with it and how it works with plugins and other ways that you can connect Cortex to the tools that you already use. If there's a plugin for the app that I need, I normally start there. Connectors are
+
+00:00:27
+structured and fast and Cortex does not have to click through all the UI just to read a doc or check a message or create a file. Sometimes, however, there is no plugin or there is one, but the thing you need is only available in the full web app. And sometimes the context is actually the existing logged-in Chrome session. This is what the Chrome extension is for. It lets Cortex work in your real browser. Same profile, same session, same cookies, same tabs, same logged-in apps. While the in-app browser is great for
+
+00:00:57
+local development tasks and giving detailed feedback to Cortex using annotations, the Chrome extension can work across multiple tabs in parallel and use many of the features of the real browser. For example, I can have Cortex do some research on the user sentiment of our latest launches, identify new use cases, highlight pain points, and then take all of that and output it into an actual spreadsheet. Compared to regular computer use, Cortex also won't take over my whole browser. It creates its own Chrome tab group,
+
+00:01:27
+will work from there, and it can open multiple tabs, scroll through pages, and find content, and then reason along the way to see if it has the correct course. All in the background, so I can keep working undisturbed in my own tabs. Cortex can also combine it with other plugins. For example, to handle my expense reports, it can check my emails using a plugin, search for emails related to my latest trip, extract all the relevant information, and then fill out the expense forms. It can even upload the
+
+00:01:55
+missing receipts directly from my computer. And because the extension can leverage code execution, Codex can control Chrome without the usual screenshot, reason, move the mouse loop. It can script repetitive work and even work in multiple tabs in parallel. For example, I've been working on this multiplayer drawing game and I can have Codex spin up individual sub agents that play the game together. In this case, each agent has their own browser tab to play in so they can play in parallel and
+
+00:02:23
+collaborate on the game. The Chrome extension lets you do more by connecting Codex to the tools and apps that you're already using. Give it a try.
+

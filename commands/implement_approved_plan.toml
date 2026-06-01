@@ -1,0 +1,30 @@
+description = "Deploy a 10-20 implementation subagent fleet for a user-approved plan"
+
+[tools]
+file_read = true
+file_write = true
+subagents = true
+
+prompt = """Run Mode 4: Approved Implementation Pipeline as defined in references/self-evolution.md.
+
+Only run this command after the user has explicitly approved an implementation plan and write scope.
+
+Execution:
+1. Restate the approved plan, write scope, validation plan, and risks.
+2. If approval is ambiguous, stop and ask for explicit approval.
+3. Choose a fleet size from 10 to 20 based on the number of independent work packages.
+4. Assign disjoint ownership to implementation agents before launch.
+5. Tell every worker: "You are not alone in the codebase. Do not revert unrelated changes. Own only your assigned files. Return changed files."
+6. Run implementation agents in parallel if subagents are available. If not, implement sequentially by role.
+7. Integrate worker outputs.
+8. Run validation checks.
+9. Update data/evolution_state.json and data/evolution_backlog.json.
+10. Append a log to logs/agent_runs/implement_approved_plan_TIMESTAMP.json.
+11. Present changed files, validation results, and remaining risks.
+
+Hard constraints:
+- Never implement unapproved scope.
+- Never delete user data.
+- Never launch a second implementation cycle automatically.
+- If validation fails, do not mark the plan fully implemented.
+"""

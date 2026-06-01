@@ -1,0 +1,17 @@
+description = "Run a low-latency, high-impact news hunt across core RSS feeds for breaking AI technical breakthroughs"
+
+[tools]
+run_shell_command = true
+
+prompt = """Execute the Flash Hunt script to discover breaking technical AI news from core feeds.
+
+1. Run the command: `C:/Users/Manit/AppData/Local/Programs/Python/Python311/python.exe scripts/flash_hunt.py`
+2. After the script completes, read `data/news_queue.json` to identify new items added by 'Flash Hunt'.
+3. Present any newly discovered technical breakthroughs in a table format:
+   - Rank (based on Combined Score)
+   - Breakthrough Trigger (e.g. GPT-5, Humanity's Last Exam)
+   - Source
+   - Headline
+4. If no new items were found, state: 'No new high-impact technical updates found in the last 6 hours.'
+5. Remind the user that these items have been pre-ranked for 'Headline Stories' in the next Post Generation cycle.
+"""

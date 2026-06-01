@@ -1,0 +1,50 @@
+{
+  "openai": [
+    "openai/privacy-filter",
+    "openai/gpt-oss-safeguard-20b",
+    "openai/circuit-sparsity",
+    "openai/gpt-oss-safeguard-120b",
+    "openai/gpt-oss-20b",
+    "openai/gpt-oss-120b",
+    "openai/whisper-large-v3-turbo",
+    "openai/whisper-large-v3",
+    "openai/whisper-large-v2",
+    "openai/whisper-large"
+  ],
+  "meta-llama": [
+    "meta-llama/Prompt-Guard-86M",
+    "meta-llama/Meta-Llama-3-8B-Instruct",
+    "meta-llama/Meta-Llama-3-70B-Instruct",
+    "meta-llama/Llama-4-Maverick-17B-128E-Instruct",
+    "meta-llama/Llama-4-Maverick-17B-128E-Instruct-FP8",
+    "meta-llama/Llama-4-Scout-17B-16E-Instruct",
+    "meta-llama/Llama-4-Maverick-17B-128E-Instruct-Original",
+    "meta-llama/Llama-Guard-4-12B",
+    "meta-llama/Llama-Prompt-Guard-2-86M",
+    "meta-llama/Llama-Prompt-Guard-2-22M"
+  ],
+  "mistralai": [
+    "mistralai/Mistral-Medium-3.5-128B",
+    "mistralai/Mistral-Medium-3.5-128B-EAGLE",
+    "mistralai/Mistral-Small-4-119B-2603-eagle",
+    "mistralai/Mistral-Small-4-119B-2603",
+    "mistralai/Leanstral-2603",
+    "mistralai/Voxtral-4B-TTS-2603",
+    "mistralai/Mistral-Small-4-119B-2603-NVFP4",
+    "mistralai/Voxtral-Mini-4B-Realtime-2602",
+    "mistralai/Devstral-Small-2-24B-Instruct-2512",
+    "mistralai/Devstral-2-123B-Instruct-2512"
+  ],
+  "google": [
+    "google/gemma-4-26B-A4B-it-assistant",
+    "google/gemma-4-31B-it-assistant",
+    "google/gemma-4-E4B-it-assistant",
+    "google/gemma-4-E2B-it-assistant",
+    "google/medasr",
+    "google/gemma-4-31B-it",
+    "google/gemma-4-26B-A4B-it",
+    "google/gemma-4-E4B-it",
+    "google/gemma-4-E2B-it",
+    "google/tipsv2-g14-dpt"
+  ]
+}

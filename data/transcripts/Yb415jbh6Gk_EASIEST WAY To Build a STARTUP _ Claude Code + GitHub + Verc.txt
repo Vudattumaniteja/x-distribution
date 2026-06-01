@@ -1,0 +1,60 @@
+00:00:00
+Every week there's a new ultimate AI tools list or our usual plot kill these many startups narrative. >> [music] >> That really means that we have enough tools but no guidance on how to use them. You see all these reels, scroll through, bookmark a few, and then never open them again. Because the question was never what tools exist. The actual question is what do we use right now at this stage to actually ship and eventually make money out of it. So today let's do something different.
+
+00:00:25
+Let's not build another list. >> Yeah, we are not building a list. We're building a map. What do I mean by that? We're building a toolkit for builders structured around the journey from idea to your first dollar on the internet. And here's our plan. We'll walk through each stage and I'm going to be covering the tech and the tools that [music] actually build the thing and I'll cover validation and distribution. What do I mean by that? How do you know if anyone actually wants it? How do you get it in
+
+00:00:48
+front of them? That's what I'll talk about. By the end you will have a clear stack for whatever [music] you're building next. So let's start where every project starts, with an idea that you're not exactly sure about yet. The first stage isn't coding. It's finding a problem worth solving. And I think a lot of builders skip this. They jump straight into building something cool [music] and then wonder why no one cares. So where do real ideas come from? Here are three places that I keep going
+
+00:01:16
+back to. The first is complaints and you see these everywhere, especially comment sections of product feature releases, launches, tech reviewers, [music] educators, and my favorite source of all of this is Reddit. It's an absolute goldmine. People are complaining about tools that they're already using. [music] Things like why doesn't X do Y and I wish Z had this feature. So we saw this, holy Codex is awful at UI UX. And if you think about it, if you know design and you know how to make skills,
+
+00:01:41
+you could just make the UI UX design skill for Codex, ship it, reply in that [music] thread, and have your first customer. That's your cue. You're basically eavesdropping on unmet demand. And another great example is Twitter but faster and with real profiles. Product launches, feature announcements, the comment section is where people tell you what's missing. Here's an underrated keyword that I've been using as well. It's called steal this idea. And all you have to do is an advanced search on X
+
+00:02:05
+for the keyword steal this idea and you get so many ideas. Guys like Greg Eisenberg, Paras Chopra, and random startup [music] people that all sharing these ideas. You can literally pick and choose based on likes, comments, and engagement. It's awesome. And then there's Ideas Browser. This is also by Greg Eisenberg. It's very expensive, I know, but [music] they do give you one free idea per day and you can browse through some initial ideas as cards and if you're smart you might be able to
+
+00:02:29
+jump the paywalls. We're not recommending that but as a smart engineer you can try figuring it out. You can see ideas, market trends, market insights, and everything in one place. This is basically window shopping for ideas. You just pick [music] and choose. Now here is where the shift in mindset happens. You're not looking for your idea. You're looking for someone else's frustration to solve. And ideas don't always have to be original. >> [music] >> They have to be useful. Okay. So now
+
+00:02:53
+you've got a problem. Now you need to see what it could look like. Design used to be the bottleneck. Actually, not just a bottleneck, it used to be an afterthought. Design was never the main thing, coding was. But when coding becomes this cheap, the only things left are distribution and the user experience, the look and feel, how the tool actually works. And for that, earlier you would spend hours and hours with Figma or some designer to come up with something. But now you describe what you want and tools like Stitch by
+
+00:03:22
+Google actually build the UI for you. Brand guidelines taken care, color palettes taken care, everything taken care. Mind you, two years back this was a few thousand dollars gig at some design agency. Now it's free and anyone can do it. You just give it a prompt, dashboard for a habit tracker, and it generates a working layout. Yes, not perfect but enough for you to see if the concept actually makes sense. [music] You may ask, "Hmm, what about Variant UI?" Variant is excellent. It actually
+
+00:03:52
+makes production level design. You just drop in a concept and the tool gives you three, four, five, multiple layouts. Great for you when you're not sure what is the vibe you actually want. And then comes the mother of all design tools, Figma MCP setup. You connect Figma to Claude Code via MCP. Now Claude can read all your Figma files so you can just say, "Turn this design into React." And just like that, Figma will convert it into the way you want. And when you use great Claude empty files agent
+
+00:04:20
+instructions, you can describe your personal taste as well to these tools. So design to code done very well. All right, development. This is the most saturated category of all. These are like 30 coding assistants now. So let me break it down by how much control you want. On one end, the simplest stuff, Google AI Studio. You describe an app, [music] it builds it, and you deploy it. Great for prototypes, one-shot experiments, and Replit is very similar to. And then there's also Bolt, all good
+
+00:04:48
+for getting something up fast. Okay, but now the other end, [music] full control. This is where I want to spend most of my time. Cursor is the IDE I live in. Tab completion, chat, agent mode for bigger tasks. You can use the default model that never really hits any limits [music] instead of open source or whatever. And it basically does the same job. And now you might be thinking, and then you need other tools on top, and you're exactly [music] right. Another favorite of mine is Claude Code. It's
+
+00:05:11
+the CLI I use for agentic workflows. It reads your code base, makes multi-file [music] changes, runs tests, and runs locally on your machine. Here's a fun fact, my favorite non-coding task is just organizing my Mac with it. Building a second brain, removing useless files, making my machine faster. All of it is too mundane to do manually but ask Claude Code and [music] see the magic. And of course there are alternatives now. You have Codex, you have Open Code, Forge Code, Kimiko. They all do
+
+00:05:36
+variations of the same thing, agentic coding in the terminal. [music] So the stack is basically Cursor as the IDE, Claude Code or one of its cousins for bigger tasks, [music] and the browser tools like Bolt or AI Studio for quick prototypes. So that's my setup and if any of y'all want to build the same thing, let me know in the comments. You know what scares developers the most? Validation. Yeah, because now you have to show your baby to people. What if they don't like it? What if they
+
+00:06:02
+laugh at you? What if they say no to you? What's your move here? Please don't launch. Just show up. Post a screen recording on Twitter. Hey, I built this over the weekend. Here is what it does. No need of a pitch. No need of a CTA. Here is the thing. Here is the week one, two, three, four updates. And then you watch the replies. If people ask, "Hey, where can I use this?" you're onto something. If they scroll past, you learn something too. Put it in Reddit. Use Reddit as extensive as possible.
+
+00:06:30
+Post it in r/sideproject or r/indiehackers. [music] You get tons of feedback. Be honest. I built X to solve this problem Y, looking for feedback. And see how people respond. And also waitlists are good to judge your demand before you finish. Put a simple landing page, a simple line of copy, one email field, and if 50, 100 people sign up, congrats, you have 50 reasons to finish what you're building. If nobody signs up, maybe think through, pivot to something deeper. This feels like the step most people skip. You know
+
+00:07:02
+why? Because it's uncomfortable. But let's do it because it saves you months of efforts. Okay, once you have validated, people want it. Now how do you actually get users? How do you take your product to the users? You usually just post again. Build in public. Document what you're doing. Share progress. Share blockers. Share wins. People love following the journey. So in today's world, marketing is just building and shipping publicly. Yes, you don't need ads. You just need consistency. A hundred small posts will
+
+00:07:34
+do more for you than one big product hunt launch. You may ask, "What about YouTube?" Well, if you're watching this video you already know YouTube really works. But it's a longer play. For quick validation, Twitter and Reddit are faster feedback loops. All right, final stage, getting paid. Now this is simpler than most people think and you have two options. If you're in India then Dodo Payments is the way to go. They handle UPI, cards, and international payment. And it's
+
+00:08:01
+built for Indian founders. And what about if you're outside India? Well, then you have Stripe and this is the default for a reason. Easy setup, works everywhere, and good docs. And what about the pricing? Well, start simple, one price, one plan. First you need to see if those 50, 100, [music] 1,000 sign-ups that you got are even ready to pay you a nominal five to ten dollar amount. You can always add tiers later. The goal at launch isn't to optimize revenue. [music] It's to see if anyone will pay. And even if one person
+
+00:08:27
+pays, you still have a business. If you want to go deeper on any of these tools, drop it in the comments. We can do full walk-throughs, deep dives, whatever you need. And if you build something with this stack, make sure you tag us. We want to see it. So see you in the next one and as always, keep building, keep experimenting.
+

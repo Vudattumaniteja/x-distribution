@@ -1,0 +1,132 @@
+00:00:00
+We are building for like small businesses today, right? Small businesses globally account for 70% of employment, accounts for like 50% of GDP of the world, right? But they've never had the tools to sort of really express themselves because like there are million niches in small businesses. But for the first time with AI, you can actually serve all of these million niches at zero marginal cost. And that's what we're trying to enable. >> Hi, my name is Karly and I'm on the applied AI team here at Anthropics,
+
+00:00:25
+specifically working with startups. Today, Makund has joined me. He is the CEO and co-founder of Emergent. So, Makun, let's bring it back to the beginning. Emergent's growth has been one of the standout stories of this year. Why don't you walk me through your journey with YC, some of your pivots, and how you landed on the product that you have today? >> Thank you for having me here. Super excited to be here. So, I'm doing this startup with my twin brother, Madav, and I actually started programming at age
+
+00:00:48
+12. >> Love it. We love We love sibling founders here. >> Totally. Then we actually like have been obsessed with this problem of automating software engineering from the beginning. Before this I was running a startup called Danzo where I had a 500 people engineering team. And when we entered YC our first sort of insight was to automate software testing because I had seen in in at Danzo that how software testing was the bottleneck for shipping software fast. And we started with this problem of like how hey how do we
+
+00:01:14
+automate all of the software testing including mobile apps, web apps. And when we sort of started building that out, we realized that to automate testing, we had to build, you know, our own container technology, our own coding agents. And we stumbled upon this insight that if you can actually solve for the verification loop, you can actually make agents run longer. On the day one, we told our YC partners that, hey, like testing is great, but you know, we want to now build general coding agents. We were like almost like
+
+00:01:38
+a applied research lab working just building, you know, high production grade quality agents. invented a bunch of things like test time compute. How do we sort of scale the memory across agents? How do we solve for agent to agent communication? We were one of the first team to productionize multi- aent systems. When we launched our first approach was to go to enterprise. We had an enterprise customer started working with them but realized that the adoption in enterprise is going to be slow. At the same time we started using these
+
+00:02:03
+internal coding agents to build everything internally. In fact like there were like few nontechnical people in the team who were using it more than developers were at that point. And we truly realized that the power is actually to democratize software engineering for everyone. And that's when we in June >> launched this almost like a research preview. And that time agentic coding was not that popular. And when we launched it just took off and you know we were actually surprised you know
+
+00:02:25
+everybody else at that time was building for front-end heavy applications. They were building for more demo kind of things. And B fundamentally approached the problem thinking that what would it take for actually anybody to ship production ready software that will actually have real use cases we'll have business critical apps running and our insight was to sort of automate all of this testing linting deployment security how do you solve for like code reviews and that actually like really really
+
+00:02:52
+resonated with users because most of the users that who are coming to emergion today are serious builders these are small businesses entrepreneurs who actually want to see an economic value from these software getting built. >> Yeah, that's awesome. So, it's like basically democratizing. It's taking natural language. It's for non-s software engineers, but it's also building durable products. It's not just for prototyping. It's really cool. So, you've been building on Claude since the
+
+00:03:15
+really early days. We met about a year ago. What made that the default choice and what's kept that all the way through? Why have you stayed on cloud? Yeah, I mean I think we were almost lucky to get started when Sonnet came out and um and I think in AI I think every everybody needs to sort of imagine the world six months ahead and build for that versus building for what's available today. Imagine the world from the lens of what is available and what what's going to come next, right? So
+
+00:03:38
+people who would have started with the previous generation of models would be solving a different problem versus us because for the first time like I think set instruction following so that you could actually really imagine what longunning agents would look like. It was really good at programming. it was really good at front end as well. Um, and so that actually like really gave us, you know, a little bit of futuristic view of what the world of programming could look like and what could agentic programming look
+
+00:04:00
+like and our users are actually like comparing us against a dev shop, right? So they're not comparing us against like an ID or a tool and to them outcome matters a lot, right? And so we are really really focused on what would give us the highest quality, what would give us the highest probability of getting to the right outcome versus a speed. Most of the other players who are focused on front end or design to them speed matters a lot but for us and our users what is important is that that are they
+
+00:04:24
+able to reach the outcome that they want and that's why like opus has been sort of you know our our workhorse and and it's really great at instruction following and if you have the right tight feedback loops that we have been able to build using our multi- aent systems you can actually keep them running for a much longer time. Today our agents can run for hours trying to build the software and we we run like very tight valves internally and and of course like you've been really helpful
+
+00:04:46
+in helping us. >> I know about your emails. For sure. >> Yeah. And I remember like, you know, when we were about to launch, we had this like 2 a.m. meeting just to get started on things. >> Totally. Well, I mean, so so a lot of your engineers are in India. So, one day when I was like, it was like Friday at 2 p.m. for for us and it was the middle of the night for you guys. And I was like, "Oh, of course they're going to answer the next day." And then one of your engineers was like, "Oh, yeah. Let's
+
+00:05:05
+like let's get on a call in 15." And I was like, "Is it not the middle of the night?" >> So, your team during YC built this internal coding agent. Maybe you didn't know what it would become. What did you learn from that? and like what shows up today in the product and then maybe what are learnings that like you really scrapped. Yeah, I think our first insight was to, you know, to really really build an automated software engineering platform, you will have to own every layer of the stack, right? And
+
+00:05:28
+you have to almost co- build the infrastructure to support your agent and an agent to sort of support the infrastructure. >> And at that time, everybody took the shortcut, you know, hey, what is the third party that is available? Let's use that. Uh when we started like there were no good container technologies. We had to actually invent and build sort of our own container technology on top of Kubernetes which does disc snapshotting, memory snapshotting. So you could actually save the states and run
+
+00:05:49
+parallel agents. And for us what's been sort of really really insightful has been that agent is the product right in many ways and and like the harness quality really really matters and we sort of build this multi- aent system. We were one of the first teams to productionize it and many learnings including like how do you sort of save for memory? How do you do agent to agent communication? How do you do better context management? How do you effectively use caching to keep the cost down? Um, and tightening all the
+
+00:06:14
+feedback loops from the container and all of the infrastructure that you have built like is really important. The other thing that really was important to us from day one was to own the entire stack because the last mile is where like most solutions trip. We spend a lot of time just to make sure that our production quality is really high and what you can see in the development environment is something that replicates in the production and today I think I think we're probably one of the deepest
+
+00:06:35
+logs in app building space and that allows us to sort of compound our learning. for example, like a lot of the errors actually don't show up in the dev side. Like they'll only show when your app is live and real users are using it. We're able to pipe all of that back to our development environment and allow our agents to learn. We also have built this um what we internally call long-term memory where an agent is not just learning from within the user session, but is learning across all of
+
+00:06:56
+the apps that are getting built. So first time it sees an error, a new error or a new library upgrade, it's able to learn that and and sort of, you know, do that in the next iteration in much less tokens with much more accuracy. So I think like building this co-agent and instructor together like has been really really helpful for us >> and I guess because you own the whole stack like up to the hosting as well that gives you kind of all this proprietary data that you can feed into the next parts of the agent and the
+
+00:07:19
+future of the agent. >> How do you think about model selection especially when your users can't debug the output? I mean a lot of the burden lies on us today right like to make our users successful and we take that very very seriously and and that's what we are sort of like extremely obsessed about like how do we get users success couple months back our like you know deployment rates were 84% now it's it's closer to 98%. So 98% people on the platform were able to build something
+
+00:07:40
+are able to deploy to production. That's that's been amazing and that that's just tightening all of these feedback loops making sure that you know your agents are extremely reliable and self-learning. In terms of model like the way we think about it, we are getting compared to a dev shop, right? So when a user comes to us they're comparing us to like a $250,000 price point uh that they would have paid if they had gone and and hired a dev shop. So they're not price sensitive. They're
+
+00:08:02
+also not like latency sensitive that much because they're comparing us to a 3 months project that would have been executed outside. Uh so we are very very obsessed on the quality of the product and not so much about the cost as much. And so for us like being on the frontier the the highest reasoning possible is is something that we sort of index a lot on internally. We index a lot on like just highest quality output versus you know the fastest output. >> And we're not not trying to oneshot a
+
+00:08:23
+solution. We're trying to you know build really really reliable production ready system that can be iterated upon. instruction following should be really good because the error sort of compounds and even small sort of errors as you run 10,000 steps like they they compound very quickly. Totally >> and because the outcome matters the most, right? So we sort of you know rely on the best possible models for reasoning and coding abilities. >> Yeah. Yeah. I think that's been a through line that I've observed with you
+
+00:08:45
+guys where it's like you really put accuracy top and like that's why you've had so much success. So this is a question we ask our founders often. The AI builder space has gotten a bit crowded. So curious to hear from you. What has Emergent built that's genuinely hard to replicate? >> Yeah, I mean I think first of all like I I think we're beginning of a very very large market that's opening up, right? I think the market is actually growing faster than all of us can serve right
+
+00:09:09
+now, right? And >> pie is getting bigger, >> way bigger, way faster than all of us can serve right now. So we are actually not so so much worried about like hey what is competition doing? You know what are labs doing? I we just generally think that the market is so big and it it's growing so fast that us being able to serve the customer that we want to serve is is generally sort of you know really really important for us on the technical side. I think like you know our approach has always been to sort of
+
+00:09:30
+really really build very closely with the customer. So we understand our customer really really well you know what their needs are. For example they really don't care about you know demos front end prototypes. They care about like real production use cases. They care about third party integrations working. They care about payments getting through. They care about like you know authentication working. A lot of our users you know early on started uploading like really large files. So we had to sort of think about like hey how
+
+00:09:51
+do we support large file systems on our production systems. They care about scalability. So when we write code we make sure that these code are written in a horizontally scalable manner. So as traffic grows the infrastructure sort of grows with them right for us like I think the technical motives one our sort of agent quality the harness quality is really really strong and it's continuously evolving. Second is all of the provided data that we are collecting right now, right? I think all of that
+
+00:10:12
+feeds into our long-term memory, feeds into, you know, like our self-learning agents, feeds into our RL systems and because we are solving only for one stack, we are almost like a vertical agent for coding because our users don't really care about what technical choices is being made. So they leave that onus on us and we make the right choice for them and we are solving for just one kind of tech stack. So that allows us to sort of really really accelerate our sort of learnings on that tech stack.
+
+00:10:36
+And lastly, I think the code generation is only 20% of the problem, right? Like the the 80% of the problem is actually how do you take it to the uh deployment? How do you make sure it's maintained in production? How do you make sure that security is really really high? And we are solving for all of those deep infrastructure problem where you know not only your code is written but does it work in the dev environment when it works in dev? Does it replicate in the production? Do you have the feedback
+
+00:10:56
+loop? And solving for the full stack is like really really important for us. >> Yeah. Really cool. Yeah. Yeah, I think one of the like early differentiators I saw from you guys is kind of that third point, building durable, reliable apps that can be built on later. It's for actual like business owners and not necessarily just people prototyping. And so I remember in one of our early calls you were talking about you have your agent that initially builds the prototype or or the product, but then
+
+00:11:19
+you later have another agent that comes back and cleans up the code and makes it such that people can build on it later. >> I mean we we take like code quality very seriously. So we have like refactoring agent that'll come and refactor your app. We have a post- deployment agent and a pre-eployment agent that'll check for all security flaws. They'll sort of make sure that there are no key leakages bunch of those things and sort of approaching the problem from you know the outcome first perspective right like
+
+00:11:41
+allows us to sort of really design the system for that. What do you think are most defensible mode how like you know what what are you seeing you guys? >> Yeah this has always been true for startups. It's like deeply understanding your users and deeply like building a product that you can iterate on quickly that really captures your users's needs and problems. And then kind of related to that is like building a brand and a go to market strategy and a user experience like around those people that
+
+00:12:04
+you understand so well. The second thing is like moes that intelligence alone can't overcome. And so that's like proprietary data or infrastructure building in a highly regulated space. That's like something that like AI is not going to automate you know compliance regulation fully soon. The final one is like human trust and so like this is also in regulated spaces but anywhere like human trust is not something that's going to be automated soon. So kind of these moes that model intelligence can't bridge that gap yet.
+
+00:12:33
+And then the final thing which I see you guys doing it's the most exciting for me to see a customer do is build a beautiful product right now but then also build a product that's looking towards the future. We are seeing models consistently get better at longer horizon tasks, more autonomous tasks and you know a year and a half ago someone probably didn't think emergence product could exist. you know text to app builder truly democratizing software and then continuing to push that forward of
+
+00:12:58
+like okay today we know a product like emergent can exist what's the next thing ahead of the frontier for the models >> right I mean internally we have actually rewritten our systems like four times over 9 months right and we almost feel that with every new model launch we have to sort of delete everything that we've learned so far reimagine the world >> and I work with you on it >> yeah I mean for example opus like really feels like a different class of model and much more capable of longer horizon
+
+00:13:21
+task especially like now we can multiple agents coordinating on the same task. >> Totally. >> My belief has always been that okay, every time like a new class model shows up, let's delete everything we have done. Let's reimagine the world from this lens of the new model. So, I think I think that's been really really helpful. >> I'm curious to transition into like your users. So, we've talked about how most of them have never written code. Who are these people and like what are they
+
+00:13:40
+building? I'd love to hear some like user stories too. >> Yeah, I mean when we started like you know like I we thought that we were building um for mostly like semi-technical users, right? It's going to be mostly program managers, you know, product managers, designers who are going to use us initially. But we were surprised to see when we launched that like a lot of our users were actually business operators who were using us to build serious applications. And essentially we're actually built for
+
+00:14:02
+like domain experts. People who really really understand their domain really well and but never had the tools to express themselves can now just come in and describe the problem in depth and like agents will go and build the application for them. the gap between communication has been reduced and build out and and have the site feedback loop to sort of you know iterate on the software themselves and we have users across the globe 190 countries almost 7 million users my favorite example is uh this user Christy she's in Alaska and
+
+00:14:28
+she is a clinical psychologist and also an equestrian coach and she had been waiting for 10 years to sort of marry these two fields and she had gone to you know a dev shop in Nova Scotia and got a code of $50,000 to build this app and tried it with them but it didn't sort of work out discovered emergent started building on it has her app live on the app store today it's called equ for the first time she was able to marry these two fields of psychology and her sports coaching has hundreds of us are using it
+
+00:14:55
+right now and she was telling me that like you know like I've been waiting for 10 years for this opportunity to sort of really really build something so we are building for like small businesses today right small businesses globally account for 70% of employment accounts for like 50% of GDP of the world right but they've never had the tools to sort of really express themselves because like there are million niches in small businesses right and tradition Traditionally when you had SAS world
+
+00:15:14
+they were forced to move up market for economic reason but for the first time with AI actually you can actually serve all of these million niches at zero marginal cost >> and that's what we're trying to enable like you know really empower these small businesses to sort of accelerate their businesses. >> What do you think emergent looks like a year from now? What are you most excited to build next? >> Yeah I think a year is a long time >> in this world. >> Yeah. Yeah. I think all of us have seen
+
+00:15:36
+that meter chart where you know the long horizon agents are going to be for us the market segment is like really clear. We want to serve these small medium businesses. We want to serve new entrepreneurs. So we are very very focused on making them successful. We're coming out with a new agent which we think is significantly better than existing ones. One of the other things that we are really really excited about is with especially long horizon agents coming online. We especially think that there's a way for us to automate all of
+
+00:15:59
+the businesses operations for small businesses. We want to move from software to sort of actually automating their entire business and allow for this autonomous businesses to happen on the platform. So we are very soon launching a new product. We're very excited about it. It's called Wingman. It's kind of agents for businesses >> and it's going to automate all of your business processes including finances, including operations, sales, marketing. 2026 is going to be year where people
+
+00:16:21
+start automating large part of their businesses and emergent wants to be the platform for businesses to come and automate all of their businesses on top of us. >> Well, thank you for being here today, Makund. It's been such a pleasure having you. >> Thanks for having me. It's been a great chat. Thank you so much.
+

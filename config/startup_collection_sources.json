@@ -1,0 +1,187 @@
+{
+  "metadata": {
+    "description": "Collection-style startup sources for finding missed funded/revenue startups in AI, tech, biotech, deep tech, and science.",
+    "last_updated": "2026-05-29T00:00:00Z"
+  },
+  "lookback_hours": 168,
+  "request_timeout_seconds": 25,
+  "max_items_per_source": 40,
+  "minimum_amount_usd": 1000000,
+  "topic_keywords": [
+    "ai",
+    "artificial intelligence",
+    "llm",
+    "agent",
+    "automation",
+    "developer",
+    "devtool",
+    "biotech",
+    "bio",
+    "drug discovery",
+    "protein",
+    "science",
+    "robotics",
+    "chip",
+    "semiconductor",
+    "deep tech",
+    "healthtech",
+    "climate",
+    "quantum"
+  ],
+  "funding_keywords": [
+    "raised",
+    "raises",
+    "funding",
+    "seed",
+    "series a",
+    "series b",
+    "series c",
+    "pre-seed",
+    "venture",
+    "valuation",
+    "investment"
+  ],
+  "sources": [
+    {
+      "name": "TrustMRR API",
+      "mode": "api_or_html",
+      "url": "https://trustmrr.com/api/v1/startups",
+      "fallback_urls": [
+        "https://trustmrr.com/acquire",
+        "https://trustmrr.com/category/ai",
+        "https://trustmrr.com/category/developer-tools",
+        "https://trustmrr.com/category/saas",
+        "https://trustmrr.com/category/health-fitness"
+      ],
+      "api_key_env": "TRUSTMRR_API_KEY",
+      "source_region": "global",
+      "tier": "collection_tier_1",
+      "source_type": "verified_revenue_startup_marketplace"
+    },
+    {
+      "name": "StartupHub AI RSS",
+      "mode": "rss",
+      "url": "https://www.startuphub.ai/",
+      "rss_url": "https://www.startuphub.ai/feed",
+      "source_region": "global",
+      "tier": "collection_tier_2",
+      "source_type": "ai_startup_collection"
+    },
+    {
+      "name": "FundBat Companies",
+      "mode": "html_index",
+      "url": "https://fundbat.com/companies/",
+      "source_region": "global",
+      "tier": "collection_tier_2",
+      "source_type": "funding_database"
+    },
+    {
+      "name": "The Watchlist Alerts",
+      "mode": "html_index",
+      "url": "https://www.thewatchlist.ai/alerts",
+      "source_region": "global",
+      "tier": "collection_tier_2",
+      "source_type": "funding_watchlist"
+    },
+    {
+      "name": "Dealroom News",
+      "mode": "html_index",
+      "url": "https://dealroom.co/news",
+      "source_region": "global",
+      "tier": "collection_tier_2",
+      "source_type": "startup_ecosystem_collection"
+    },
+    {
+      "name": "Dealroom Reports",
+      "mode": "html_index",
+      "url": "https://dealroom.co/reports",
+      "source_region": "global",
+      "tier": "collection_tier_2",
+      "source_type": "startup_ecosystem_reports"
+    },
+    {
+      "name": "PitchBook News",
+      "mode": "html_index",
+      "url": "https://pitchbook.com/news",
+      "source_region": "global",
+      "tier": "collection_tier_1",
+      "source_type": "private_market_news"
+    },
+    {
+      "name": "CB Insights Research",
+      "mode": "rss",
+      "url": "https://www.cbinsights.com/research/",
+      "rss_url": "https://www.cbinsights.com/research/feed/",
+      "source_region": "global",
+      "tier": "collection_tier_1",
+      "source_type": "market_research_collection"
+    },
+    {
+      "name": "YC Companies",
+      "mode": "html_index",
+      "url": "https://www.ycombinator.com/companies",
+      "source_region": "global",
+      "tier": "collection_tier_1",
+      "source_type": "accelerator_company_directory"
+    },
+    {
+      "name": "YC Launches",
+      "mode": "html_index",
+      "url": "https://www.ycombinator.com/launches",
+      "source_region": "global",
+      "tier": "collection_tier_1",
+      "source_type": "accelerator_launches"
+    },
+    {
+      "name": "YC Blog",
+      "mode": "rss",
+      "url": "https://www.ycombinator.com/blog",
+      "rss_url": "https://www.ycombinator.com/blog/feed",
+      "source_region": "global",
+      "tier": "collection_tier_1",
+      "source_type": "accelerator_news"
+    },
+    {
+      "name": "Analytics India Deep Tech",
+      "mode": "sitemap",
+      "url": "https://analyticsindiamag.com/deep-tech",
+      "sitemap_url": "https://analyticsindiamag.com/news-sitemap.xml",
+      "include_url_terms": ["ai-news", "ai-features", "ai-startups", "deep-tech"],
+      "source_region": "india",
+      "tier": "collection_tier_2",
+      "source_type": "india_deep_tech_collection"
+    },
+    {
+      "name": "Entrackr",
+      "mode": "html_index",
+      "url": "https://entrackr.com/",
+      "source_region": "india",
+      "tier": "collection_tier_2",
+      "source_type": "india_startup_funding_news"
+    },
+    {
+      "name": "Jiqizhixin",
+      "mode": "html_index",
+      "url": "https://www.jiqizhixin.com/",
+      "source_region": "china",
+      "tier": "collection_tier_2",
+      "source_type": "china_ai_collection"
+    },
+    {
+      "name": "LatePost",
+      "mode": "html_index",
+      "url": "https://www.latepost.com/",
+      "source_region": "china",
+      "tier": "collection_tier_1",
+      "source_type": "china_business_tech_collection"
+    },
+    {
+      "name": "NeuronFeed",
+      "mode": "html_index",
+      "url": "https://neuronfeed.com/",
+      "source_region": "global",
+      "tier": "collection_tier_3",
+      "source_type": "ai_startup_directory"
+    }
+  ]
+}

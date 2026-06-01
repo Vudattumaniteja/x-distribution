@@ -1,0 +1,130 @@
+{
+  "metadata": {"description": "Scoring formulas, weights, and thresholds for all grading systems"},
+  "post_grading": {
+    "max_score": 100,
+    "dimensions": {
+      "hook_strength": {
+        "max_points": 15,
+        "sub_dimensions": {
+          "pattern_interruption": {"max": 5, "criteria": "Does first line break scroll pattern?"},
+          "specificity": {"max": 5, "criteria": "Leads with number, name, or concrete claim?"},
+          "curiosity_gap": {"max": 5, "criteria": "Creates information gap reader needs filled?"}
+        }
+      },
+      "algorithm_signal_potential": {
+        "max_points": 20,
+        "sub_dimensions": {
+          "bookmark_worthiness": {"max": 8, "criteria": "Would someone save for future reference?"},
+          "repost_worthiness": {"max": 7, "criteria": "Would someone share with their network?"},
+          "reply_trigger": {"max": 5, "criteria": "Will this generate meaningful conversation?"}
+        }
+      },
+      "phoenix_potential": {
+        "max_points": 15,
+        "sub_dimensions": {
+          "out_of_network_appeal": {"max": 8, "criteria": "Would non-follower engage?"},
+          "topic_alignment": {"max": 7, "criteria": "Fits current trending conversations?"}
+        }
+      },
+      "voice_compliance": {
+        "max_points": 20,
+        "sub_dimensions": {
+          "calm_authority": {"max": 5, "criteria": "No hype words, confident measured tone. -1 per hype word."},
+          "concrete_first": {"max": 5, "criteria": "Leads with specific claim. -1 per vague opener."},
+          "numbers_everywhere": {"max": 5, "criteria": "At least one quantifiable metric. 0=no numbers, 5=3+ specific."},
+          "anti_fluff": {"max": 5, "criteria": "Every word earns place. -1 per filler phrase."}
+        }
+      },
+      "dark_social_potential": {
+        "max_points": 15,
+        "sub_dimensions": {
+          "screenshot_worthiness": {"max": 5, "criteria": "Would someone screenshot this?"},
+          "dm_shareability": {"max": 5, "criteria": "Would someone send in group chat?"},
+          "self_contained": {"max": 5, "criteria": "Makes complete sense without context?"}
+        }
+      },
+      "risk_penalties": {
+        "max_points": 0, "min_points": -15,
+        "sub_dimensions": {
+          "ratio_risk": {"max": 0, "min": -5, "criteria": "Could this get ratioed?"},
+          "engagement_bait": {"max": 0, "min": -5, "criteria": "Feels like engagement bait?"},
+          "saturation_check": {"max": 0, "min": -5, "criteria": "Topic already overcovered?"}
+        }
+      }
+    },
+    "thresholds": {"excellent": 85, "good": 70, "acceptable": 55, "needs_work": 40, "skip": 25}
+  },
+  "reply_grading": {
+    "max_score": 12,
+    "dimensions": {
+      "recency": {"max_points": 2, "criteria": {"2": "<1 hour", "1": "<6 hours", "0": ">6 hours"}},
+      "performance": {"max_points": 2, "criteria": {"2": ">100 likes + >20 replies", "1": "20-100 likes", "0": "<20 likes"}},
+      "velocity": {"max_points": 2, "criteria": {"2": ">20%/hour growth", "1": "<20%/hour growth", "0": "declining"}},
+      "relevance": {"max_points": 4, "criteria": {"4": "perfect AI niche", "2": "adjacent", "1": "tangential", "0": "unrelated"}},
+      "authority": {"max_points": 2, "criteria": {"2": "10K+ followers", "1": "1K-10K", "0": "<1K"}},
+      "saturation_penalty": {"points": -1, "criteria": "Apply if 50+ replies AND velocity not accelerating"}
+    },
+    "thresholds": {"must_reply": 9, "high_priority": 7, "worth_considering": 5, "skip": 4}
+  },
+  "news_ranking": {
+    "max_score": 25,
+    "dimensions": {
+      "relevance_score": {
+        "max_points": 10,
+        "criteria": "Standard agent relevance score (0-10)"
+      },
+      "timeliness_bonus": {
+        "max_points": 5,
+        "criteria": {
+          "5": "< 2 hours old (High-Velocity)",
+          "3": "< 6 hours old",
+          "1": "< 24 hours old",
+          "0": "> 24 hours old"
+        }
+      },
+      "impact_bonus": {
+        "max_points": 5,
+        "criteria": {
+          "5": "Major Model Drop / Frontier SOTA / 'Craziest Week' Trigger",
+          "3": "Significant new feature / Capability breakthrough",
+          "1": "Standard incremental update",
+          "0": "Minor/Fluff news"
+        }
+      },
+      "audience_match_bonus": {
+        "max_points": 3,
+        "criteria": {
+          "3": "Targets AI developers/practitioners",
+          "1": "General tech audience",
+          "0": "Niche/Academic only"
+        }
+      },
+      "cross_agent_bonus": {
+        "max_points": 2,
+        "criteria": {
+          "2": "3+ agents independently found this",
+          "1": "2 agents found this",
+          "0": "Single discovery"
+        }
+      }
+    },
+    "thresholds": {
+      "headline_story": 18,
+      "high_priority": 12,
+      "standard": 8,
+      "low_priority": 5,
+      "discard": 4
+    }
+  },
+  "credibility_scoring": {
+    "scale": {"min": 0, "max": 100, "starting_score": 70},
+    "adjustments": {
+      "verified_claim": "+2", "debunked_claim": "-15", "retracted_article": "-10",
+      "called_out_by_peers": "-5", "consistent_quality_30_days": "+3",
+      "deleted_controversial_post": "-8", "ratioed_post": "-5",
+      "correction_issued": "+1", "multiple_independent_sources": "+3",
+      "single_source_only": "-2", "anonymous_source": "-5", "conflict_of_interest": "-10"
+    },
+    "tiers": {"trusted": "80-100", "reliable": "60-79", "caution": "40-59", "unreliable": "20-39", "blacklist": "0-19"}
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "tiers": {
+    "T1": {
+      "weight": 1.0,
+      "description": "Official company channels and primary source PR wires",
+      "domains": ["openai.com", "anthropic.com", "deepmind.google", "nvidianews.nvidia.com", "microsoft.com", "meta.com", "mistral.ai", "x.ai", "arxiv.org", "nature.com", "businesswire.com", "prnewswire.com", "globenewswire.com"]
+    },
+    "T2": {
+      "weight": 0.8,
+      "description": "Frontier technical press and major financial news",
+      "domains": ["reuters.com", "bloomberg.com", "techcrunch.com", "cnbc.com", "theverge.com", "wired.com", "wsj.com", "nytimes.com", "ft.com", "gartner.com", "weforum.org", "theinformation.com", "9to5mac.com", "macrumors.com"]
+    },
+    "T3": {
+      "weight": 0.5,
+      "description": "Named-byline analyst blogs and technical aggregators with commentary",
+      "domains": ["artificialanalysis.ai", "lmsys.org", "importai.substack.com", "the-decoder.com", "siliconangle.com", "venturebeat.com"]
+    },
+    "T4": {
+      "weight": 0.1,
+      "description": "General aggregators and SEO content farms",
+      "domains": ["medium.com", "hackernoon.com", "dev.to", "substack.com"]
+    }
+  },
+  "quarantine": [
+    "skywork.ai", "aibase.com", "1950.ai", "rswebsols.com", "bnnbreaking.com", "mspoweruser.com", "geeky-gadgets.com"
+  ]
+}

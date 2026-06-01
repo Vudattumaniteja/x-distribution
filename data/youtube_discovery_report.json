@@ -1,0 +1,178 @@
+{
+  "started_at": "2026-05-30T10:45:18.943014+00:00",
+  "lookback_days": 2,
+  "max_scan_per_channel": 500,
+  "workers": 4,
+  "channels": [
+    {
+      "channel": "@JulianGoldieSEO",
+      "priority": "P0",
+      "channel_id": "UCc-FovAyBAQDw2Y7PQ_v0Zw",
+      "status": "SKIPPED_DISABLED",
+      "items": 0
+    },
+    {
+      "channel": "AndrejKarpathy",
+      "priority": "P-2",
+      "channel_id": "UCYO_jab_esuFRV4b17AJtAw",
+      "status": "OK",
+      "items": 0
+    },
+    {
+      "channel": "@AlexFinnOfficial",
+      "priority": "P0",
+      "channel_id": "UCfQNB91qRP_5ILeu_S_bSkg",
+      "status": "OK",
+      "items": 1
+    },
+    {
+      "channel": "@anthropic-ai",
+      "priority": "P0",
+      "channel_id": "UCrDwWp7EBBv4NwvScIpBDOA",
+      "status": "OK",
+      "items": 0
+    },
+    {
+      "channel": "TBPNLive",
+      "priority": "P-1",
+      "channel_id": "UC-DRzaGnL_vtBUpCFH5M0tg",
+      "status": "OK",
+      "items": 2
+    },
+    {
+      "channel": "@claude",
+      "priority": "P0",
+      "channel_id": "UCV03SRZXJEz-hchIAogeJOg",
+      "status": "OK",
+      "items": 2
+    },
+    {
+      "channel": "@vaibhavsisinty",
+      "priority": "P0",
+      "channel_id": "UClXAalunTPaX1YV185DWUeg",
+      "status": "OK",
+      "items": 1
+    },
+    {
+      "channel": "LexFridman",
+      "priority": "P-1",
+      "channel_id": "UCJIfeSCssxSC_Dhc5s7woww",
+      "status": "OK",
+      "items": 6
+    },
+    {
+      "channel": "@intheworldofai",
+      "priority": "P0",
+      "channel_id": "UC2WmuBuFq6gL08QYG-JjXKw",
+      "status": "OK",
+      "items": 2
+    },
+    {
+      "channel": "airevolutionx",
+      "priority": "P0",
+      "channel_id": "UC5LTm52VaiV-5Q3C-txWVGQ",
+      "status": "OK",
+      "items": 0
+    },
+    {
+      "channel": "Google",
+      "priority": "P0",
+      "channel_id": "UCK8sQmJBp8GCxrOtXWBpyEA",
+      "status": "OK",
+      "items": 0
+    },
+    {
+      "channel": "@OpenAI",
+      "priority": "P0",
+      "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
+      "status": "OK",
+      "items": 6
+    },
+    {
+      "channel": "JayE-RoboNuggets",
+      "priority": "P0",
+      "channel_id": "UCgscS8mBsQZ5sFRkJIFWD7Q",
+      "status": "OK",
+      "items": 1
+    },
+    {
+      "channel": "KimiMoonshot",
+      "priority": "P0",
+      "channel_id": "UC7JnPttpEOzDE_pxQRX_20Q",
+      "status": "OK",
+      "items": 0
+    },
+    {
+      "channel": "AICodeKing",
+      "priority": "P0",
+      "channel_id": "UC0m81bQuthaQZmFbXEY9QSw",
+      "status": "OK",
+      "items": 3
+    },
+    {
+      "channel": "PeterDiamandis",
+      "priority": "P0",
+      "channel_id": "UCCpNQKYvrnWQNjZprabMJlw",
+      "status": "OK",
+      "items": 0
+    },
+    {
+      "channel": "@100xEngineers",
+      "priority": "P2",
+      "channel_id": "UCoch_d78Aosmp14ey1HgGSQ",
+      "status": "OK",
+      "items": 0
+    },
+    {
+      "channel": "@BuildersCentral",
+      "priority": "P2",
+      "channel_id": "UCevFnhyD9Ut5TwYdCLBh5UQ",
+      "status": "OK",
+      "items": 0
+    },
+    {
+      "channel": "@n8n-io",
+      "priority": "P1",
+      "channel_id": "UCiHVTkJtWSdc9N3h0nUGWLg",
+      "status": "OK",
+      "items": 1
+    },
+    {
+      "channel": "@IshanSharma7390",
+      "priority": "P2",
+      "channel_id": "UCxjs1n-C7rjXQ9KhgDng-6A",
+      "status": "OK",
+      "items": 0
+    },
+    {
+      "channel": "MatthewBerman",
+      "priority": "P0",
+      "channel_id": "UCawZsQWqfGSbCI5yjkdVkTA",
+      "status": "OK",
+      "items": 2
+    },
+    {
+      "channel": "AndroidAuthority",
+      "priority": "P3",
+      "channel_id": "UCKisVvy9vIminfbj0Pbw_hQ",
+      "status": "OK",
+      "items": 0
+    },
+    {
+      "channel": "@nicksaraev",
+      "priority": "P2",
+      "channel_id": "UCbo-KbSjJDG6JWQ_MTZ_rNA",
+      "status": "OK",
+      "items": 0
+    },
+    {
+      "channel": "@VarunMayya",
+      "priority": "P2",
+      "channel_id": "UCsQoiOrh7jzKmE8NBofhTnQ",
+      "status": "OK",
+      "items": 0
+    }
+  ],
+  "finished_at": "2026-05-30T10:46:09.005460+00:00",
+  "total_videos": 27
+}

@@ -1,0 +1,9 @@
+{
+  "python_exe_env": "X_DISTRIBUTION_PYTHON",
+  "xcli_script_env": "XCLI_SCRIPT",
+  "yt_transcript_cli_env": "YT_TRANSCRIPT_CLI",
+  "yt_transcript_py_script_env": "YT_TRANSCRIPT_PY_SCRIPT",
+  "default_xcli_script": "C:\\Users\\Manit\\Desktop\\Twitter automation\\cli.py",
+  "default_yt_transcript_cli": "C:\\Users\\Manit\\bin\\yt-transcript.cmd",
+  "default_yt_transcript_py_script": "scripts/yt_transcript_cli.py"
+}

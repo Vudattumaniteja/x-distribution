@@ -1,0 +1,318 @@
+00:00:00
+the TCG design Theory podcast is part of the booster pack Network for more TCG related content visit the boosterpack network.com [Music] hey everybody Welcome to the TCG design Theory podcast my name is Jay and today we're talking to Max fev who is the art director for equinox and the alter TCG and today we're going to be talking about just art Direction in general and kind of some of the questions around there so max thank you for joining me today thank you very much Jay as well and uh yeah I'm glad to be with you
+
+00:00:43
+today and uh PR happy to be able to talk about Ed and the job I did uh while working at EO so yeah all right so uh before we get started into the art Direction questions um how did you kind of get involved in uh the tablet toop game space and and trading card games in general so um I have not I don't have actually a background in the board game industry I was working as a concept artist before when uh Reis the founder of Equinox uh reached out to me in order to ask me if I wanted to to work as the ad director
+
+00:01:24
+for equinox and um while I like both games I play some with uh with my friends from time to time I'm really not a hardcore gamer an hardcore board game gamer and also I didn't play much of theages I played a little bit of Pokemon uh when I was at school as a kid I played Yu-Gi-Oh from time to time because I was super fan of the anime and I had a friend who brought some cards when we were on holidays but apart from that I almost knew nothing about uh that specific type of game and how it was
+
+00:02:04
+made and how to make it uh and actually I think it was good because we have in the team a lot of people who are super hardcore fans of dcgs and it's important in the team to have the balance between people who are super fans of something and people who have kind of the um the the new look and that that you have to explain the specific intricacies of that type of game too and they will bring like something different to the table um so yeah didn't have really a background in in board games but I learned a lot
+
+00:02:43
+with my passionate colleagues here of course yeah and that makes sense you know and it kind of leads me to my next question which um is kind of with with your experience with your limited experience in the tabletop game industry I'm you know I know that's that's one area but you know again you being being the art director you probably have a lot more experience with art Direction and things like that so can you kind of give us a little bit of background um in terms of that yeah so as I said I used
+
+00:03:11
+to work in the video game industry so um while I was working there I worked mainly as an illustrator and a concept artist so very quickly concept art is for usually for video games or Cinema when you don't have visual references that you can find from photos and from any documents you will uh create those references and the concept artist is the designer that will just make lots of drawings in order to convey ideas uh to the team and those ideas and Concepts will be references used by the team like
+
+00:03:53
+to make the the 3D to make the environments Etc um so as a concept idea L I learned how to uh make what we call World building so how will you think an environment and a character and uh everything that uh that are parts of the world that you are creating in order to make something that actually makes sense in the end and I think this is this was mostly the the like the main skill that uh that was very useful for me as an idea director afterwards and also when I was working as a freelancer uh I tend to to felt that it
+
+00:04:41
+was sometimes as a francer you you're not really part of a company so you can feel a little bit set aside from the project and uh your connection with your coworker is always a little bit distant and so I knew that for the illustrators I was going to work with that was a parameter to take into account also when I was working as a concept arist I was super super interested in art Direction and uh when I worked before with art director I studied a lot the way they worked how they gave feedback and the
+
+00:05:20
+fact that their world was not to uh make the illustration or the concept but just to give you hints that would make uh your art better and take your work to the next level was something that actually fascinated me and I think that what laid the basis of my interest for art Direction and I was uh deeply considering going from con to our Direction when uh I received the email from regist offering the position so it it did not directly offer me the position but I could enter the like the recruitment process and I think it was
+
+00:06:03
+just good timing there uh I was super interested and prepared for that and the timing was right so well you know if I must say I think you're nailing it so far I think I think it's a natural calling um for anybody who has seen the uh artwork for altered and and honestly just any of the marketing materials anything having to do with the game um it's so just spoton um um and and I think a lot of people kind of sleep on you know the the importance of of our Direction and things like that so as you said you know
+
+00:06:38
+you were a concept artist and an illustrator and then making that jump to Art directors you know uh that distinction of okay I was doing you know most of the concept art illustrations and things and now I'm I'm taking the work from other people and making sure it's all cohesive because you can have a 100 pieces of brilliant amazing art but if they're all different styles your your product that uses all those is not uh is going to take is is going to look bad um the art can be beautiful but you mean it's at the end
+
+00:07:11
+of the day it's going to look um you know amateur so um yeah so that you know that being the the role of art Direction and and you know you kind of filling in that role um understanding why it's so important just in general is there anything that makes it more important to to really get right when it comes to a collectible card game um I don't know if it's really specific to collectible card games but uh when you were talking you mentioned something that was uh very important is
+
+00:07:46
+that sometimes people tend to to have trouble making the difference between just a skill level for an illustration to the fact that it's well made and what is our Direction which are all those little details that would make actually the illustration fit into a game and make all the illustrations uh and visual elements made by different person cohesive and work together to actually make a game and I think it's the same for for Cinema for uh for for video games and other uh other Productions like this when you are
+
+00:08:29
+making something you need every part of the game for example to actually go into the same direction and the more links you will have between the game play the art Direction the LW and every little bits and parts of the game the more they talk to each other and are creaive together uh the better the game will be and also the easier it will be to understand the game for the player a good example of this is that if I have a spell it's a card that will summon two s years for example if I have an
+
+00:09:07
+illustration with two characters on the illustration it creates a direct connection between the effects and the illustration and this is something that is very very important um so that's is that is one thing and when we started to work on aled uh our first like our first chenge was to actually find the direction that we wanted to make and so I was not alone in that task I was recruted as at the same time as uh my associate tun was working on the Direction with me from the very beginning uh of the game and uh
+
+00:09:51
+so our first mission yeah was to to lay down the basis and found uh what would be the rules that would link the work of all the illustrators together um since we were a a new team we didn't have like a super big uh set of resources that we could use to look for a lot of stuff and uh create a lot of Concepts to try out things we had to actually uh just Benchmark find good references and from there just project ourselves to what would be the final result but we could not try it up front and so that's where I think the
+
+00:10:39
+the the essence of the work of night director is is that you will have to make people understand uh the different rules that would make their Arts uh look alike or at least work uh with each other and so you will have to convert abstract ideas of design to very specific roles that anyone can understand and follow and this is important because we we knew we were going to work with artists that would be from different Origins um from different cultures and if when I work with someone I am going to say to that person I want an image
+
+00:11:27
+that is more colorful the world colorful actually means nothing uh it could be that I want my images to have a different Hues inside of the image uh it could mean that I want my illustration to be more saturated and depending on the the sensitivities and the different cultures it can be very difficult actually to to talk about what you want without being able to show it up front because we didn't have like 100 different concepts uh to show our artists and so that's when we started to work on our graphic Bible with which
+
+00:12:08
+would be the like the first reference document to give to our artists to guide their work and um what we knew in the beginning was that we wanted our game to be different from the others but reges told us immediately that while it would be it would need to be different the game was super different already in terms of gameplay in terms of features we wanted to create we didn't yet have the all the the specific design for The Unique cards for the C Code system Etc but we already had a lot of the basis of that those ideas and his
+
+00:12:49
+guideline was to say that since the game is going to be very disruptive on a lot of different topics the our Direction has to be something for people to um to to gather upon and to be kind of an anchor point where everyone would like it and it would be accessible and easy to easy to love um and me and tun since we were from we had illustrators background we wanted to do some super nuty illustrator stuff with complicated shoes and a kind of ay ay experimentation and he told us that maybe it was cool for people um who are
+
+00:13:39
+working in that field but for 90% of the people that uh would just stumble on the game it would just look weird with weird features for the game with uh weird digital features on top of it and it yet the game just look weird so had to do something uh more simple and uh to really focus on making something with a lot of quality that would still feel a little bit more than refreshing and different and so the main elements that we that we took as our guidelines what to make the game accessible for everyone
+
+00:14:18
+to understand easily what is represented on an illustration so you don't have a lot of different little details elements that would distract you from the subject like sometime in um very rare Pokemon cards you have lots of effects uh the card is foiled you have a thousand different elements on top of each other and it becomes difficult to like to read the card so we wanted to avoid that we wanted to have something that was positive um this is something that we try to do in all the different aspects
+
+00:14:56
+of the game so it had to reflect also in the Direction and that's why we decided to make the game also more colorful and making the game colorful was something that was also a strategy to to be different from Magic the Gathering or flesh and blood or this type of game were very inspired by the Aesthetics of the of the 90s and early 20s with a lot of of black shadows and uh and dark uh dark C around the the characters um we wanted to avoid that and come closer to something like Legends of rra or more mod athetics that
+
+00:15:39
+are inspired by video games and maybe that's why also having a background myself from video games maybe um influenced me a little bit and the last thing was that we wanted to bring in more emotions into the game that's what we had in a tcgs um usually tcgs are a representation of a battle uh you are a warrior or a wizard and you summon creatures in order to kill your opponents so the very theme of the game um makes you represent characters and scenes that are a little bit violent uh you will barriers Fireballs monster Etc
+
+00:16:28
+and on thisp Ty of illustration while those are super cool and half the games are play are like this you will miss on a lot of scenes and representation that are really cool as well and that could be softer and you miss the different sense of Life uh the tenderness the emotions that can exist between two characters and we believe that there were much more stories that we could tell if we just took a step backward took a step back and keep a little bit of fighting and opposition in some places but just not represented
+
+00:17:10
+only that but a wider range of um and emotions so um we really wanted to to to be able to open up the scope and um and represent more more different uh since on the on the cards yeah and so one of the things that I you know I caught you saying with um in terms of like getting you know all your illustrators and stuff to kind of uh come together and and produce things that are cohesive to the project and that match your vision um you know coming up with something that's like here you know here's some initial
+
+00:17:57
+artwork this is the direction we want you guys to go this is kind of what we want you guys to imitate um and I'm sure you know professional illustrators are fantastic at at you know trying to match the style as close as possible but I I I kind of wonder how much if any uh work on the after you receive the artwork um is there with kind of just touching up some of those Hues uh the lights and the shadows and everything just to kind of make everything cohesive um it really depends on the uh on the of course on the illustrator
+
+00:18:32
+you're working with but also on the specific card you're working on um so related to what I was saying before from the the different main guidelines that we had in our our direction we translated do to very specific um rules that the illustrators had to follow and those uh things we explained them very well at the beginning of the work with an illustrator and on top of that when we prepare our briefs we give a lot of insight and references to the illustrator to kind of nourish their brain and give them lots of ideas to
+
+00:19:17
+start on the illustration and on top of that uh what we do is that for every illustration before the illustrator starts working on it we do a kickoff meeting U with the illustrator so we reread the brief together uh he or she can ask any questions there are and uh we talk a little bit together about the character the scene will brainstorm together it's not a very long time it's like 5 10 minutes but it allows for the illustrator to ask anything and to have a much more precise idea than just
+
+00:19:58
+having two lines written in an email with description um and that little part actually saves a lot of times because otherwise you will just spend maybe one or two days because the illustrator will start to work on something send you the first sketches and when you receive them it's not what you had imagin and he or she has to start over so this is the the first thing that make made us uh win a little bit of time and after that usually we have three phases of going back and forth with the illustrators with
+
+00:20:37
+feedback the first one is that the illustrator sends us sketches so usually between two and four different compositions the sketches are usually in black and white some illustrators go with colors already but usually black and white and that's the moment when we try to correct the maximum uh the biggest amount of things as we can because when your drawing is only still just lines uh black and white lines it's very easy to just correct the anatomy the design give feedback completely change the
+
+00:21:21
+composition um because to repent it it will only take like 20 to 30 minutes so we try to give a lot of information at this stage then theator will come back to us with a color block so just a basic bling no details no rendering just the basic uh colors and usually light and Shadow that way we can validate with the illustrator that from the sketch the color Sheen is actually good and as well it's much more easy to balance the colors and contrast when you don't have to to think about rendering on top of it
+
+00:22:01
+so you're not afraid to break anything because there isn't anything to break yet and you can play on Photoshop with the different sliders of a paint very roughly on the image to suggest the light and I think for us it's very important to be able to to cut an image that is like a Fel ill ation is something that is very complex and you have to solve the problems one by one and doing so helps us uh to achieve that because when we do the sketches we will uh get rid of the design and the
+
+00:22:49
+composition uh of the of the image during the color block we get rid of the of the color palette light uh and Shadow sources and after that all the illustrator has to do is just refine the details and that's when the illustrator will put like 80% of uh his work in his time but everything is already settled and so usually from there we will trick little things give little hints on on how you can improve the rendering of that leave there of um uh of the jacket of the character with some reflection
+
+00:23:29
+stuff like this but those are tiny details and usually the illustration is already done after the the color block so yeah it's really 80% of the informations are blocked between the first 20% of time working on it and after that it's just going forward adding detail and putting in the time to actually achieve the illustration I don't know if it answers your question oh no yeah it absolutely does um it's yeah it's just it's it's the whole process right because you know
+
+00:24:04
+um you you talked about you know you can tweak things on the back end and stuff but you know most of it is just that that organic work that's done with the illustrator and you know kind of going through those phases um and I think that's really interesting to um think about especially in regard to in regards to um the alra TCG because your Rarities are you know are just changes in color changes in scene changes in in in poses and things just from the the cards that I've seen um so you're you know you're kind of
+
+00:24:38
+taking a step further and saying okay well we we like this illustration um now this is how we want it for this Rarity this is the background that we want for this Rarity this is the faction that this character happens to be with for you know on the two versions of like the rare uh Rarity and things like that um so I imagine the process is is roughly the same for those types of things well the the the question of the alteration so the different the variations of the artwork depending on the different
+
+00:25:10
+Rarities of an illustration um is something that has evolved a lot uh during the course of the the development of ALDS uh way back in the beginning we thought we would have four different rarity levels so for each illustrations there were three variations to make and we realized that the the two in the middles were always disappointing because actually making differences on four levels is way more difficult to uh to make them each of them interesting than doing it on three different levels and it was difficult in the
+
+00:25:52
+beginning because we were asking uh the illustrators to do one illustration then kind of to to to make two more and the ideal U the ideal fantasm that we had for alteration would be to have one different illustration for each stage it would be super awesome but um what we realized uh as we went by were two thing first it would cost uh it would be way too expensive sa to like make three illustration per card we didn't couldn't afford it and also hopefully we williz that for a TCG being able to recognize
+
+00:26:39
+the card by the illustration is also very important and if the different illustration for same cards on different riority levels were to be too different from a collector uh perspective it would be kind of cool because you have different cool illustration for the same card but from a player perspective it could be disturbing and it could make the the game especially for Beginnings actually harder because you don't know what is this new card oh it's the same but not exactly and it would have been difficult
+
+00:27:15
+so um what we did was that with the illustrators um when they start working on the sketches we try to begin thinking about a little story that we could tell uh for the alterations and so from Once the sketch is validated uh we try to to think with them what could be a good way to make alterations that will have values for the player without forcing the illustrator to rep repaint completely the the image and finding some tricks to make something quick that tells a story and that has Val for the customer um and this is something that
+
+00:28:01
+sometime we do super well sometime we struggled and I think uh with time going by we actually both us as our director and our Artist as well as illustrator learned how to manage this and it is now going very much more smoothly as in the beginning of the game and the illustrators often have super cool ideas of things to change and little details that could bring the illustration to the next level and when it's not the case we are here to actually help them and t t and I will spend a lot of time trying to find those DET details
+
+00:28:44
+and nice ideas that would make the alteration uh worth something for the different rities of the C yeah yeah definitely make it something that's um I like I like that you said easily recognizable um I know that most people don't you know play with 50 $60 like Pokemon cards like the alternate art cards and things like that but um you know it it can get confusing with uh the different like variations and the different Rarities and things and obviously that that is you know leaning towards the more collector side but I
+
+00:29:19
+think you guys have found a good balance with um you know the playability of it and the collectibility of it um because you know putting those three illustrations side by side and some of the displays that you guys have you know on your Kickstarter page and your website um you know it it it's not like you're making these you know pointless variations just to call it a different Rarity like there it is like a progression you can see a progression you can see um that you know real changes were made but it's kept
+
+00:29:53
+recognizable um and and I think that's an interesting thing to have to juggle while you're doing our Direction um now with just the the this is something that at at equinox actually the the expectation level of the different members of the team are pretty high and uh it's funny because uh it's the case for the game designers toward the the direction from the direction towards the game deser to the developers Etc and actually in the team we have a lot of of expectations between each other and we don't want to
+
+00:30:38
+disappoint uh the game designer as our director they don't want to disappoint us as well and that goes for every part of the company and so when we started to work on the alterations we uh tried some stuff and of course we tried to do uh color variations we tried to find some processes that could that we could kind of make Auto automatization to ease the process of making variation we thought about separating every character from its background to be able to switch the backgrounds randomly for different uh
+
+00:31:18
+different scenes and actually all of those tricks they felt a little bit cheap and we just didn't wanted to give some f chip as to our team and after that to the to the customer and I think that just having the the the Habit to look at yourself and really ask yourself is this something I as a customer would think is cheap or not is really important and doing that every step of the of the way uh brings us to to something that is that is pretty cool in the end but I have to say that we also see all
+
+00:32:00
+the Flows In what we are doing and we really want to improve um furthermore the the rendering and the odds and we have actually a lot of ideas to do so that will develop for the next expansions but yeah while we are proud of what we did there is still a lot of stuff that we can improve and that's cool actually that's what makes uh makes it interesting otherwise we would be but yeah yeah and so we we you know you talk about processes right you talk about uh kind of making things better as
+
+00:32:38
+everybody is used to working on this project and and kind of does these things and you talked about your relationship with uh your illustrators a lot um but how how often or I guess I should say how much of a part uh of art direction is graphic design and and what and when does that kind of come into play um you know with everything else that's kind of art related um so you mean everything that is not the illustrations what yeah so like the uh like whoever's designing like the cards or boards or
+
+00:33:11
+things like that you know um you know the the readability of cards and and things like that so where does that come in the process and how involved are you as the art director with the graphic design as I said we are a pretty small team uh yet like we big for Bo games but really small for for tcgs and so in the art Direction department for almost two years there was only U and I so all the the first um prototypes and tests for the frames and the different graphic designs of the of the logos and stuff
+
+00:33:50
+like this it was made by us and uh at some point we had the help of uh graphic deid that joined the team for uh about six months before living was an expert in uh uh in graphic design for board games so he's the one who designed the logo for aled uh we work together on the frames a lot and uh as for the illustration the the way we worked on every uh of those elements was that we went on Discord he and I and we would uh draw together uh with the the screen shared in order to get inspired by what the
+
+00:34:43
+other was doing because um if he worked on his own he tend to tended to just get stuck at some point and uh could not grasp entirely all the specific Det details that we had to solve uh I on my own didn't have enough good graphic design skills to actually make a super beautiful frames or logo and working together was the the nice match actually to achieve something that was that was really cool um and usually when he finished his work after that I would just clean the file and make something
+
+00:35:24
+that was um usable by everyone in the company uh for the A and at some point uh this graphic designer uh Stefan he left us because uh he wanted to work on the project and he cre the company and he was actually the the one that was the expert also in uh Printing and so he was the one who knew all the specific details about uh how you make uh print document for the factories what are all the different types of paper ink how to use in design to to create an industrial process for exporting the cards Etc and so he took a
+
+00:36:15
+month roughly a month to teach me everything and so after that um I took back the this part of the work aside from my art Direction um tasks and a few months later another graphic designer came in the team and he was he is someone who is tied to the marketing so he is the graphic designer that will Design everything for the marketing and the kickstarter his name is Fabian so he's the one who's done every every visual for the kst which are really good and uh the nice thing is that he is someone who is very
+
+00:36:58
+independent and he has good taste also so I really don't have to be behind his back to check anything and everything that he produces actually is super super cool um and also I teach a lot from him uh because he is uh well as well a very much better designer than I am and on my own uh on my side I'm teaching him all the specs for the pr files for him to be able to become the like the next graphic designer for ENT so in the future like for the coret it was kind of a a mixed process between because we had to with a
+
+00:37:44
+limited timeline find the solution with not always the the perfect assets to to to deal with every problem and for the next expansion uh uh Fabian will probably design every element uh for the the packaging so the booster the St the display stuff like this and I will probably keep on working on the different frames uh yeah I think this will be it so since we are a little team uh we are all forced to do a lot of things different things and so usually in our Direction team I tend to take care of to a part of the
+
+00:38:33
+illustrators the graphic design for the frames and um the the organization of the artam tun manages uh the illustrators and she helps also retaking some of the illustrations when something has to be uh redone because she's a very very talented illustrator much more than I am and uh we have also um a young graphic designer that helps us making the the different white plates and helps faia in the marketing when there is like a little need she's someone that is just here to help whenever we need something
+
+00:39:15
+and Fabian who does everything for the marketing and will be handling the the packaging MH yeah and and that's and that's really when you think about it there's just a lot of as ects when it comes to the design and you know graphic design because then it kind of gets into product design as well um you you're talking about marketing materials the game pieces but also what it looks like on a shelf or you know when someone walks into a local game shop and sees that among a thousand different things
+
+00:39:46
+you need to think about like okay how is this going to be how's this going to catch someone's attention but also um convey the feeling and the message that we want and um and that's why we actually um for our product in the cback which is a very important aspect uh element for TCG that's why we went a little bit in a different direction that was what was the standard at the time which was to have usually a cardback with black black BS and also the kind of the the trend for the past two or three years was to have
+
+00:40:25
+a dark background with uh golden text over it or white text over it and we kind of revers this and went with a light background and light um light graphical elements also on the packaging uh this was definitely a strategy also to make the the product a bit different from the others and that was an idea of stepan uh when we were working on the cutback I think for the cutback we made maybe 30 to 50 different uh tries and the fact that the cutback of a TCG will never change kind of makes everyone go
+
+00:41:07
+crazy about it and really the fact that this is something that you will never be able to change uh in the future um makes the decision very heavy to take and so we we were redesigning it over and over and over until we found something that would uh please everyone in the company and the illustrator that helped us achieve the final uh result is n n who is one of the illustrator we we are working with from the beginning and yeah I think he did something really really cool for the cutback from super cool yeah um I like what you said
+
+00:41:54
+about the cardback I've had that thought myself a lot is you know once you make that decision you're you're stuck in that decision I mean uh you can tell like over you know the years of magic for instance if you look at the card backs they're all the same but you can tell you know you know when they use different printers or um you know materials or things like that there's just slight differences but if you completely change it um like you know Yu-Gi-Oh for instance it's just like the
+
+00:42:19
+black spiral and the brown and then little you know Yu-Gi-Oh at the bottom um you know that that can't change so even if they wanted to to add another element it would it would stand out um you know and be really obvious um so yeah that I can't imagine the pressure of that decision but I'm glad you guys got it you know it's yeah and and that's why for for example for Magic Gathering you still have the little um pencil Marc at the back I don't know if you ever noticed but this is something that that
+
+00:42:52
+that remains it was like an error on the on the first file of the cutback and um there is also in the in the upper left corner a little white dot that was caused by um a little piece of dust that was taken inside the file when it was made and this is something that is still here today so we knew that everything that we would miss or forget on that cutback would stay forever and yeah I hope we didn't miss anything maybe I mean it looks great um yeah it's you know it is probably one of the
+
+00:43:35
+most iconic things about a trading card game is is it's cardback so um yeah a lot of pressure there but uh just from seeing it I think you guys think you guys got it right um and I think um you know with you know a team of illustrators and illustrators coming in at different points uh of the project um you know you're going to have obviously a lot of you know pieces of art that you're keeping for a set pushing or just not using at all uh you know things coming in and out and all that so what
+
+00:44:08
+are the you know as an artist if or as an illustrator if I were to submit something to uh a project and obviously you know I'm getting paid for it and everything like that what what ownership do I have of that um after the fact you know can I can I promote it display it um you know you know what what are are there any specific details with like you know how an artist is represented on a card specifically is there any process to that well um the way we defined it is that in the beginning of the project we
+
+00:44:43
+asked the illustrators what seemed fair to them um and the contracts were edited a few times if because um on the course of producing the first illustration um we started working with new illustrators uh over time and some of them pointed some some of the specific details of the of the contract out and wanted some changes uh that we made and so basically we're not very um we don't really care that much about our property and the image of equin like we don't want to put an next stamp on everything that goes between
+
+00:45:30
+our ends um the deal we have with the illustrators is that uh when they make an illustration for us they have the right to uh sell copies of it sell posters um stuff like this they kind of they kind of kind of can do anything they want with the illustration they can't just put um uh like have change it and uh and display something for I don't know something obsene and make a t-shirt out of it for example um but otherwise they can make uh pretty much anything they want with their illustrations and us on our side
+
+00:46:14
+uh we have some time to make some slight changes to the illustration like just to make it fit a card composition a little bit better or to adjust an element that Chang it that changed in the low for example there is an illustration where a character has a crown um at some point we changed it its color so we it we did it directly uh we did not ask the illustration the illustrator to do it because it would just take time cost more money why we can spend 10 minut doing it but whenever we do a change we
+
+00:46:48
+ask the illustrator if it's okay with them um and the illustrator has the right to say that they don't agree with this did and if they don't we would remove the change this is to protect them from um like to to take an VI example uh it would protect the illustrator from cases where for example they create a character and will retake the illustration put a a Nazi uh BR to the character and we publish it like this like and then their name is on the bottom of the card and it's like misrepresented right yeah so
+
+00:47:29
+we always ask the illustrator if they're okay with any changes we make um we didn't have any complaint or trouble so far usually those are very obvious uh things um but yeah and theator remains um able to sell copies and do whatever they want with the art on their own so and what we do is just we ask them not to publish the art before we reveal the card um just because sometimes we have illustration that were made for the cets that will be published later on because the coret size changed or just
+
+00:48:11
+production um issues like this and so yeah they can't publish a card ntion before the card is revealed but I think that is something that is very common in the industry and everyone kind of agrees with it it's like in video games when you can't show your concept before the games comes out because it would spoil a little bit too too many things um but yeah basically that's all it's it's very straightforward yeah and that makes sense um kind of like a like an NDA like a non-disclosure agreement of hey you
+
+00:48:46
+know after we show it off you know you're free to you know post on your socials and things like that um I I think yeah was saying I think also that allowing the illustrator to sell copies of the artwork or poster or this kind of these kind of goodies it's also a way to I think it's fair because it's also a way to share the success of the game if there is a success because if the game works well it's also partially because of the work of the illustrator it plays a great deal in the love that we have as a that we as
+
+00:49:24
+player have for a game and I think it would be unfair if the game is a super super good success for the illustrator to have nothing in and so being able to sell afterwards um Things based on your odds is a way for you as anator to get a little bit more money out of the fame that came from the from the game from your work yeah and you know talking about how uh illustrations and art can can kind of benefit the illustrator um because you know a game successful and things like that um you know it kind
+
+00:50:01
+of gets me thinking about uh just just the amount of time that goes into creating illustrations and things like that and it's hard for me like obviously in a digital age where everything is done like on an iPad or a waycom tablet or something like that um or vector art that can be infinitely scaled and and things like that um just to just to try to understand how big you know some of the these file sizes are and how much time they take you know on average um and does it vary a lot I know there's
+
+00:50:34
+like more simple illustrations and more complex illustrations so is there a general amount of time that you guys expect that illustrations are going to take um when when you commission those types of things well I think the the average amount of time inator puts in uh like Personal Image is two weeks but they usually don't work only on that illustration during those two weeks it's just that they take two week to make the illustration but they oftenly have other customers they are working on different
+
+00:51:12
+projects at the same time as fences um but this is something uh also that was part of our um strategy to actually create a team of Illustrator um I talked a little bit about that in the AMA that we made a few months back we were a company that is known by no one we don't have any art to share to actually show that we're doing quality work and we had together a team of Illustrator to create uh initially we wanted to make 300 illustrations uh in one year and we we had to find a way to actually attract
+
+00:51:57
+people because when we started to reach famous artists from different countries who worked on different tcgs they would not even answer our email because we would be maybe in their email box the hundreds Studio of the day asking for them for a new station or something and they couldn't tell if we were serious or not and actually in their position it was impossible to to to know so what we did is that we contacted lots lots and lots of illustrators and uh every time what we said what we decided to do was that the
+
+00:52:36
+illustrator would chose the time that it puts in an image and we on our side would manage the different time zone and different um workload of the different people that allowed for young students or beginner illustrators to actually take for example two months to make an illustration but have regular feedback from a professional team uh and a lot of advices to progress along the way and for very skilled and talented artists it would take maybe a one wiek to make an illustration when they actually on their
+
+00:53:16
+on their own time take maybe two days to do it and so they have 1,3 wordss for that illustration in two days which is worth it uh also it went along the fact that we pay everyone the same price we don't make differences based on uh the fame or the experience and we think that this system allows us to actually balance the the different skill levels and the the different profiles of the illustrators so the average amount of time that is put in an illustration is two weeks but if you are talking about
+
+00:53:56
+hours I would say maybe between 15 to 30 hours of work in an image and regarding the size pH the the the file size and the how big it is actually when you are working on digital media so 99% of the illustrator use Photoshop to make the illustrations it's it's not that different from working on paper the thing is that you have different layers you can erase everything so it gives you more freedom um and a lot of little tools that helps you make your illustration but in the end you just have your blond page and
+
+00:54:44
+you paint Strokes of colors to make your illustration and this is the part that takes that takes a lot of time but um yeah should usually the file size are maybe two or three G gigabytes something like this it's not that heavy um and this is something that we will reduce and process afterward in order to make the the the right files for the the printing and so with with from so the process from you know uh concept art so you know providing know I guess figuring out right the uh the art Direction you
+
+00:55:28
+want to go um getting those images together um making sure illustrators understand it working with graphic designers um and also you know kind of keeping in mind all the different things that we talked about like that go with it like how the illustrators can use that art um the different levels that the illustrators are at finding illustrators reaching out to them letting them know about the project is there anything else that an art director does that um you know kind of fits within that realm
+
+00:56:03
+um when you mean fits within that Tri you mean that just the like the work of a night director of the work on of the art director dedicated to the the illustration and things that we see yeah aside from the things we talked about basically is there anything else that an art director does um towards the project that you know may be outside the realm of uh illustration or graphic design or things like that yeah definitely and I think uh that is something that is U sometime difficult for illustrators who become our
+
+00:56:41
+directors actually as an art director you don't paint very much or you don't sometime paint at all because the only times when you actually get yourself on Photoshop to gr something is when you make feedbacks to an illustration an illustrator and you usually have between 5 to 15 minutes to do this and to figure out very quickly how to correct the the pose composition colors Etc before sending your feedback to the illustrator and actually a very big part of the work of a of a night director is
+
+00:57:19
+management and you have to organize yourself in order to uh deliver all the the specific files products and contents to the different parts of your company in time and for example right now when we are working the different expansions of the game these are uh times where we are working on four expansions four different expansions at the same time and so as a n director you have to be very well organized to be able to um manage the different sets that are incoming so you will be working on the up Direction and conception of uh for
+
+00:58:06
+example the set three while you are actually booking the illustrator for your set two while you are doing the feedback uh to the illustrator for the set one at the same time while also managing all the request and uh things that the marketing needs for the current launch of the game uh nowadays it's the the kickstarter um while also having time to uh speak with the game designers and the other part of your company to actually keep on understanding the game you are making and being able to produce uh quality
+
+00:58:51
+work uh so yeah there is a lot of management actually a lot of staying tuned and researched in order to to keep a Keen Eye and being able to make feedback that are relevant um I think that's Trends and Trends in game is something that evolves really really fast and it's important to keep on playing a lot being curious and talking with a lot of uh different artists to understand what they are doing how they are doing both on the on the visual aspect and on the technical aspect um and you have to find at some point a
+
+00:59:36
+little bit of time to keep on improving on your own because the artists who are making feedbacks to are usually like super talented way above your skill level as n director and so you have also to to keep on being um relevant when you do feedback to them so you have to practice oftenly on the side a little bit and for us since we are a small team there is also the fact that uh we and also the all the files uh the export and um the proofs and so we make sure also that everything that is produced uh is
+
+01:00:20
+in the right format so um yeah that makes a lot of U I don't know if which yeah and all those things you talked about culminate into you know what a lot of people take for granted which is um the way something looks you know people are really quick to point out like errors and things like that but um yeah when you when it's all said and done um you know all of that stuff has to be managed um and and coordinated for something to look as good as uh a lot of things do especially altered you know so
+
+01:00:54
+a lot of that effort and things have clearly paid off um like I said the the game looks great um is there do you want to kind of go through um I asked this with Justin in the previous episode you know kind of for him to describe altered and things like that but in your words uh what makes alterd special and why should people care about um this game so yeah I think what makes ald special uh apart from all the all the different ideas that we brought to the table and the fact that we wanted to make a game that was very
+
+01:01:28
+different from the others and that was more modern is the super high standards that everyone in the team has at uh in every aspect of the game and something that actually amazed me and makes me proud is that uh the game that we imagined three years ago and the game that we have today uh it didn't changed a bit like everything that we wanted to put in the game every idea we had every ambition we actually managed to bring into life and to make it happen but you have to understand that for everyone of those
+
+01:02:11
+things it was difficult and uh it demanded from the team a tremendous amount of work and of dedication and um like people in the team tend to work uh very late every day and they actually can't stop until everything is perfect um and I think it's just that dedication into making a game that is U of the highest quality in every aspect is what drives everyone uh of the people here in the K and this is something that is super super rare in the team and it's also possibly that it's um it's made
+
+01:02:54
+possible but the fact that we don't have major acar uh in in the for the game we are not working for another company uh we are working with ASI but they have only 40% of the of the company and so actually no one is telling us what we have to do um no one is telling us to cut Corners because we have to start the game a little bit earlier to to be there for Christmas or something like this and we actually took the time to build something that would be super super cool and uh now we have to to to deliver it
+
+01:03:35
+and to bring this to an end because we have to work on the expansions and and start to make a living of the game because we didn't apart from the kickstarter get any money out of it so far but yeah the quality standard of everyone in the team I think is something is what makes the official and and you can definitely tell um and if you can't look again CU it's uh I mean the the last time I saw a Kickstarter page and it's not like I've looked at every project or anything but last time I saw a kickstar a page that
+
+01:04:11
+looked um as good as y'alls did was um tital blades which was years ago um it it was just it's just so well put together you can tell without knowing a single person on the Equinox team that it's that a lot of passion and dedication has gone into it um the ideas and the things that we've seen from this are truly um something that you know I think people can look at and get excited about and um and you can see that in the results I mean you guys have almost 10,000 backers um you know and and maybe
+
+01:04:45
+you reach it maybe you don't I know there's like a big push at the end but um it you know to even get that close is incredible um and and you know I just do I do want to mention like with uh the time this episode's going to come out it's going to come out uh I think two days before the campaign ends um so if you're hearing this it's going to be the final 48 Hours definitely look at it and you know decide for yourself of course but um I I really do think it's one of those special projects that comes along
+
+01:05:14
+every few years that um you can tell just has a lot of passion um so max is there any any way that um people can contact you or uh any any way that would suggest that people kind of um you know try to learn more about the game or anything like that well I think that when it comes to learning more about the game you can just um Google it go on our website and just look for um look for videos and and tutorials for the game during the kickstarter campaign it's still possible to trade for free on BJ
+
+01:05:50
+um and also we have a Discord server uh that people can join with uh that is starting to gr pretty big and you will have there a lot of different informations so um yeah I think it would be pretty cool to check it out and for the different illustrators or people that want to that are interested in working with us we actually read and answer to everyone uh and every illustrator that comes to us uh lots of them and I think it's it's part of the like of the of the game uh are sometimes not skilled enough or just a little too
+
+01:06:32
+young in their career but still I will always take the time to answer everyone give a little bit of advices on how you can progress and um and yeah it's actually difficult to work as an illustrator in this industry because when you are a student you don't have the the the level to work professionally so you don't find any job and at some point everything magically unbox and you can work everywhere and everywhere everyone wants to work with you so yeah to all the illustrator that are stilling
+
+01:07:12
+outside you just have to keep working at it and at some point uh if you if you keep on working and growing a little bit every day you will get there so yeah all right sounds good well Max uh once again I want to thank you for your time and all the uh information you've given us about art Direction and things like that um all the different you know facets that go into uh just the ins and outs of everything um want to wish you the best of luck like I said when this episode airs you're going to have about 48 hours
+
+01:07:43
+left to back the project uh no late pledges as soon as it's over it's done so definitely need to get on uh get on the uh train and and you know be be a part of something so um yeah anything else Max that you can think of no thank you very much J for having me um also cheers to Fabian the graphic designer I talked to earlier that made all the assets for the kickstarter alone in two months so that was a tremendous amount of work and uh yeah I really hope that people will like the game that we are
+
+01:08:22
+making uh we did put a lot of uh time effort and love into it and uh and I just wish that the game will work well so that we can keep on working on the next expansions and so that I that I can keep my colleagues so yeah I hope everyone will like it and it's a good game go and try it all right all right Max well thank you for your time and uh talk to you some some other time see you soon thank you all right so that was Max VI the art director for equinox who is the publisher of the altered TCG uh that's
+
+01:08:59
+going to come out um relatively soon their Kickstarter like we said earlier is um currently in its last 48 hours as of the time of this video being posted so if you want to back it um now's the time to do that so uh but in this episode we talked about you know the importance of art Direction the importance of having uh not just cohesive visual elements for your game and your game pieces but also your uh Market materials and just kind of everything that revolves around your product so um you know having that
+
+01:09:30
+consistent art having that consistent look goes a long way not not just in terms of the aesthetic of the game but in terms of the um accessibility of the game as well you know for people who um are maybe new to trading card games and things like that having an an easily a card that easily flows in terms of being able to recognize the different visual elements uh can go a long way and help helping new players come into your game and also stay so uh if you like the content uh please you know consider
+
+01:10:01
+subscribing and following um if you need to email me with any ideas about future shows or just anything in general my email is jthe boosterpack network.com and you can also visit us at the boosterpack network.com and our social media handles which is at tvpn content and uh like I said if you guys have any other questions or ideas for future episodes or if you just want to talk trading card games let me know and I'm here all right thanks for tuning in we'll see you next [Music] time
+

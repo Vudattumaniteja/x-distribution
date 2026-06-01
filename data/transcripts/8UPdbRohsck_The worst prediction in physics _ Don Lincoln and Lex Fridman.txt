@@ -1,0 +1,36 @@
+00:00:03
+But there is the what you call the worst prediction in physics, which is a nice >> That's another one. >> a nice little insight about the complicated nature of dark energy. So, the observations, as you described, say that empty space has a tiny energy density that accelerates expansion of the universe. But, quantum field theory's prediction for what vacuum energy should be when coupled with gravity is much larger. Mhm. Uh so, this is what makes for the quote, you have a video on this,
+
+00:00:39
+worst prediction in physics. Can you Can you explain this crisis? Well, there's a measurement, and you can measure how fast the universe is expanding, and from that you get a measurement of dark energy. However, if you then say, "Well, suppose the dark energy is due to fields in space." So, that's quantum field theory. Hey, I know a lot about quantum field theory. And so, we can take the quantum field theory, and we can calculate what the density of energy is due to quantum field theory.
+
+00:01:13
+And basically, what you do is you take within a volume the uh all of the wavelengths, the the longer wavelengths, the shorter wavelengths, the shorter shorter and shorter, and you can add them all up. And each wavelength adds a certain amount of energy. And if you add that all up, then you get a number, and that number is the rather embarrassing 10 to the 120th power times, that's a one with 120 zeros after it, bigger than the measurement of dark energy. >> Yeah. So, you go, "Yuck. That is not fun
+
+00:01:55
+at all." And that is because the equation comes to the highest energy or the smallest wavelength particle that you can imagine to the fourth power. Since anything to the fourth power is a big deal. >> [gasps] >> So, that's where you get that awful number. Now, if it turns out that there is some new physics that's just about at the energy scale we can measure using our biggest particle accelerators. Remember I told you that that was a factor the maximum energy scale Planck scale is 10
+
+00:02:29
+to the 15 times bigger than what we can measure now. So, let's say that we don't have to calculate up to the Planck scale because something happens, something changes at the energy that we know right now. Well, then that means we don't have to integrate to Planck scale, we integrate to 10 to the 15th less than the Planck scale, and this thing is to the fourth power, so 10 to the 15th to the fourth power is 60. So, now, even if we say, you know, Don, he's brilliant, he's going to find something at the LHC
+
+00:03:01
+tomorrow, he's going to solve all this problem. Now, we've solved it, it's much better. It's only different by 10 to the 60 power. Which is still pretty bleeding big. So, the short answer is there is very clearly something going on, something wrong, very badly wrong in the quantum field theory. You know, we have to have maybe there's another field that balances out the energy that cancels it down. And even that, you know, that that's not so so outrageous. You know, you could imagine that there's
+
+00:03:34
+another, you know, like we have matter and antimatter, they balance pretty well. Okay, maybe there's something going on, you could cancel that out, that'd be perfect. I Canceling something to zero is easy. Cuz, you know, plus one and minus one, zero. Plus two minus two, zero. But we still have dark energy. Dark energy is a little bit. So if it cancels, it doesn't cancel exactly cuz it left over that little bit of dark energy. So that is its own curiosity. Perfect cancellation, pretty easy.
+
+00:04:05
+Theorists do that, you know, eight times before breakfast. Imperfect cancellation, much harder. Just to elaborate that a little bit. What what do you think solving, in quotes, solving dark energy would look like? >> Well, you could what you would do is you would hypothesize that there existed some other field that had the the the reverse effect of existing quantum fields. But not to zero. But not to zero. So but if you had it to go to zero, you know, uh sure, maybe there's a field that that exists at really high energies
+
+00:04:36
+that we haven't seen yet. I don't know, but we cancel things out and we're cool. How would we then demonstrate the existence of that field? Uh well, that would depend on the the prediction. >> How do you even come up with a new field? Like all theorists do. Well, let's add something to my equation and see what happens. I mean, and and that's okay. I mean, I I I I'm being glib about that, but that is precisely what you do. You say, "What change? We we have this thing that
+
+00:05:01
+works quite beautifully, except it fails here. What is the addition that we need to make that changes very little in the realm that we measured and yet fixes this hard thing?" And so you literally just go da da da, "Okay, what do I need? Plus six or something." And as long as it makes no changes where it would hurt our measurements and fixes the big thing, then that is at least a candidate theory. Now, it doesn't mean it's right, but it at least gives you an understanding
+
+00:05:37
+of what the right answer should look like. And so [clears throat] that's the first step is what should the real answer look like or what is a possible real answer. And then once you kind of know that, then other people can look and say, "Well, let me think about a theory that kind of has the required properties to do what we need it to do." So, it's a multi-step process, but the first step is how do we tame this problem without coming up with really terrible predictions that we've already ruled
+
+00:06:12
+out. And and so that's what you do. And then you know, that that is literally a a sensible, viable, theoretical thing, you know, cuz you have to explore cool ideas.
+

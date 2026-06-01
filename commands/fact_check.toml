@@ -1,0 +1,41 @@
+description = "Fact-check specific news items, claims, or news_queue entries"
+
+[tools]
+web_fetch = true
+google_search = true
+mcp = ["notebooklm-mcp"]
+
+prompt = """Run the Fact-Checking pipeline as defined in references/fact-checking.md.
+
+The user may provide:
+- A specific claim to verify
+- An index number from the news_queue
+- "check all" to verify the top 5 news_queue items
+- A URL to verify
+
+For each item, execute ALL 5 verification checks:
+1. SOURCE VERIFICATION: Domain authority, editorial history, author credentials, editorial independence
+2. CLAIM VERIFICATION: 2+ independent sources required, cross-reference numbers, check for primary data
+3. RECENCY CHECK: Original publication date, superseding info, recirculation detection
+4. CONTEXT CHECK: Read FULL article, check for omitted caveats, verify headline matches content
+5. CONFLICT OF INTEREST: Financial relationships, competitive dynamics, disclosure checks
+
+Use google_search with structured queries per check type.
+Use web_fetch to read full source articles (not just headlines).
+
+Calculate confidence score: Base 50 + bonuses (confirming sources, top-tier source, specific numbers, official statements) - penalties (contradicting evidence, single source, bias, context gaps, corrections, ambiguous dating).
+
+Assign verdict: VERIFIED (80-100%) / LIKELY_TRUE (60-79%) / UNVERIFIED (40-59%) / LIKELY_FALSE (20-39%) / DEBUNKED (0-19%)
+Assign recommendation: PROCEED / PROCEED_WITH_CAUTION / INVESTIGATE_FURTHER / SKIP
+
+Edge case handling:
+- Predictions/forecasts: mark as UNVERIFIABLE_PREDICTION with source's prediction track record
+- Anonymous leaks: reduce confidence by 20, check for corroboration
+- Multiple sources disagree: present ALL versions, default to highest-credibility source
+- Non-English source: translate and verify from original, note translation caveats
+- Source previously debunked: check credibility_scores.json, auto-set LIKELY_FALSE if score < 40
+
+Save results to logs/fact_checks/fact_check_TIMESTAMP.json
+Update news_queue.json with fact_check_status for each item
+Present results with clear GO/NO-GO indicators and confidence percentages
+"""

@@ -1,0 +1,81 @@
+00:00:00
+Claude Opus 4.8 just dropped and Anthropic also just dropped Ultra Code and it's the biggest AI agent upgrade I've seen all year. Imagine giving one instruction and watching hundreds of AI agents automate the work and coordinate everything for you on autopilot all at the same time, all checking each other, all managing each other. That's exactly what Claude's new Ultra Code update just made possible. This is basically an agent swarm and in this video I want to show you how to run one so the big jobs
+
+00:00:29
+that used to take you all day get done before you finish your next coffee. A developer actually just used this to rewrite 750,000 lines of code in 11 days and later in this video I'll show you one thing that makes coordinating all these agents, managing them together, 10 times easier but also 10 times more powerful. So, this is using the new update called dynamic workflows in Claude Code and basically what Claude is going to do when we assign it a task with Ultra Code is it's going to dynamically write
+
+00:00:56
+orchestration scripts that run tens to hundreds of parallel sub-agents in a single session checking its work before anything reaches you. What does that mean in practice? Well, essentially we've built out this way that you can watch your agent swarms work. You can assign a task and it will start assigning sub-agents to the task and you can see an example right here. So, you have Claude as the orchestrator and then multiple sub-agents working together to build out whatever you want. So, for example, if we have a look here, we've
+
+00:01:21
+got the four website ready to go and that was built with our team of sub-agents like so. And so, this is something I call the Goldie swarm stack where you can run hundreds of AI agents at once. So, Claude Opus 4.8 just landed and it came with two things which is Ultra Code and dynamic workflows. In plain words, you can give one instruction and Claude Code spins up hundreds of helpers working at the same time, then checks their work before it shows you. I've actually wired it into our agent operating system so you can
+
+00:01:50
+actually watch the swarm work, see it argue with itself and keep everything it builds. And this is you, basically you give a command and hundreds of agents work together as a swarm. So, basically, if Opus 4.8 dropped, and it is a better model, genuinely, but the headline isn't the model, it's what shipped with it, which is a new ability called dynamic workflows, switched on by a setting called ultra code. Very simple version is like, in a normal AI chat, you've got one helper doing one thing at a time.
+
+00:02:18
+With dynamic workflows, you can let Claude break a big job into pieces, hand each piece to its own helper, and run hundreds of those helpers at the same time, then have other helpers double-check the work before you ever see it. And you can see an example of this running over here, but if you want to hear about a really big project where it's worked in real time, a developer actually used this to rebuild a huge software project from one programming language into another, around 750,000 lines of code, hundreds of agents
+
+00:02:45
+working in parallel, two reviewers on every file, and that was done in 11 days. So, it's really powerful for long-horizon tasks that take a lot of time. And this was work that would normally take a human team months. That's the power of it. And so, like, before, you know, you'd have big agent jobs, you'd give your AI one task, and it would just kind of plod through it alone, one step, then the next, then the next. So, if a job that has, for example, hundreds of files, could take
+
+00:03:08
+all day. Now, you can give one instruction to Claude Ultra Code, and a swarm of helpers take the job apart. Then hundreds of them can work at the same time, if required. You have other sub-agents that try to poke holes in the work before it ever actually reaches me. And the cool thing about this system that we've set up is that we can actually see how long the task took, how many sub-agents we used, what they actually worked on, and then, if you've built out an agent operating system like
+
+00:03:32
+this, for example, you can preview the work, and everything stays in one place, super powerful. Plus, you've got the normal version of Claude inside the chat here. And so, if you're watching this, commit to transitioning today, not tomorrow, because you've seen what's coming, right? One person commanding hundreds of AI agents once. The next few minutes show you exactly how I've done this, but promise yourself one thing, you know, you'll finish this guide, you'll turn on one piece of it
+
+00:03:56
+today because the moment you transition, the way you work changes for good now and you can start commanding a team of AI agents who save you a lot of time. Now, when you're using Claude code normally, as you can see right here, you can toggle on ultra code or non-ultra code. If you're using the terminal, then you just type in ultra code, but I prefer to just have a nice UI like you can see. And then, I think what's even more powerful is being able to see what's actually happening in real time,
+
+00:04:21
+right? So, if you can visualize all the agents you're creating, if you can just type in a mission here. So, for example, I could say, "Okay, come up with a team of sub-agents to build an SEO strategy plus blog for a website about Hermes AI agent." Right? I can launch that now. We can hit launch and that'll actually create a new mission with a team of new sub-agents working together. And then, you can see the sub-agents spawn in real time. And so, it just saves you a lot of time, right? Before, the old way was
+
+00:04:48
+that you would give your AI one big job. It if it works on it alone, it's one step at a time. You sit and watch a wall of text scroll by. A job touching 100 files eats your whole day. You've no idea if the work's actually good. You kind of trust and hope it works and the result is slow work and no proof it's actually right. The new way is basically a coffee break because you can give one instruction to the AI agents using ultra code. It splits the job and runs hundreds of helpers at once. You watch
+
+00:05:13
+your whole swarm on a live map like you see here. Other helpers try to break down the work before you see it. You get a clear what we found in check section. Everything is built and saved in one place. And the result is fast work, double-checked, and all kept in one place because you've got the workspace over here, right? Now, some people say this sounds like it's only for coders. Actually isn't because you just type what you want in plain words. You give a nice little mission, as you can see, and
+
+00:05:36
+then the swarm actually does the heavy lifting. So, you just read the result. And here's the full stack for using ultra code. I call it the Goldie swarm stack. So, first up is command. See, give one plain word instruction. Like, for example, audit my project, or migrate this, or find every bug. And you're basically the conductor, so you don't play every instrument. Then from that, there's going to be a swarm crisis. So, the job gets split into pieces, and hundreds of helpers, not
+
+00:06:00
+normally, but hundreds of helpers can take each piece, right? Usually, if it's a small task, it's not going to spawn that much, because obviously that would use a lot of tokens. But either way, all of your sub-agents can work at the same time. So, hours of work actually happens in minutes. Now, there's section three, which is verify. So, other helpers act like judges, and they try to poke holes in the work and prove it wrong. So, only what survives gets through, and you get checked work, not guesses, and that
+
+00:06:26
+saves you a lot of time on quality control, as well. Then, depending on what system you're using, I'm using this agent operating system. We actually got it inside the app profitable, and if you want it. Or you can just try and build this out yourself. But if you want the zip file ready to go for me, you've got it out there. You can watch this on a live map, as you can see. And so, for example, if we have a look here, we can see that multiple agents are being spawned in real time, and we're getting
+
+00:06:46
+a team of agents working together. And as more tasks are required and broken down, more sub-agents will be spawned. So, if we have a look here, two different web searches are happening at the same time from Claude the orchestrator. So, you watch the whole thing happen on a live map. Every helper is a glowing dot, lighting up as it works. The magic stops being invisible, and you can show people. And then, layer number five is keep, right? So, everything the swarm builds lands in one tidy workspace. So, nothing gets lost.
+
+00:07:13
+You can open it, you can show it off, you can use it, whatever. Right? So, for example, if we go to the workspace here, we can see everything that we've built, everything that we've created with ultra code inside the workspace, which is perfect. And we can preview it. And then, if we want to open up in a new tab, we can like so. The other cool thing that you can do here is you can have a little toggle here for ultra code, and that toggle wakes the swarm. So, you can just use this ultra code
+
+00:07:34
+switch, flip it on, and Claude can spin up a whole swarm when a job is big enough to need one. Now, some people say, like, "Won't this take up a lot of tokens and stuff like that. So, when you're using a swarm, you want to just use it for big tasks, right? Big tasks where it's like there's one goal at the top and then you need to split that down into sub agents and sub tasks. So, if it's something big, use ultra code. If it's something small, just use the normal code. Also, the cool thing about
+
+00:07:59
+this is you've got this review process in place where the agents argue with themselves and check the work again, right? And so, one thing that I always hear is like AI sounds confident even when it's wrong, which is true. And that's exactly why this sort of system works so well. So, Opus 4.8 is actually already far more honest about flagging its own mistakes and the swarm doubles down on that so that nothing reaches you until other agents have tried to break it first. The other cool thing that I
+
+00:08:26
+think is very useful is just being able to track this. So, that's why I've added it to our mission control because you want to track how many tokens it's used, how long it took. As you can see, you can build that in real time. So, my honest take is like turn ultra code on for the big jobs, for reviews, giant cleanups, a plan you want stress tested, etc. But, leave it off for the little quick chats. Now, what I will say is that the people who learn how to run an AI agent swarm now, whilst this is brand
+
+00:08:51
+new, are going to be miles ahead when everyone else catches up. Every big job you hand to a swarm today, you learn how to command a team. It all compounds, right? So, most people will read Opus 4.8 and think, "Oh, neat. That's useful." And carry on doing everything by hand with just one agent or one chat. Don't be most people, right? Because with this, you stop being the worker and now you're the conductor and you've got hundreds of helpers. Also, one thing to note is when you kick off a new task, it
+
+00:09:15
+will start planning the workflow first and that might just take a couple of minutes to run first of all. And if you compare this side by side, it's always better to have a mission control, I think, because number one, you can customize it as much as you want and number two, it's much easier to visualize, right? So, you could do this inside Claude code directly and ask it to build out a dynamic workflow, but it's much easier to have your own custom dashboard. You can even get Claude code
+
+00:09:36
+to do this for you inside a Claude code dynamic workflows setup. And then you can see the full plan here. It's done the research for us. The other cool thing is he's attached to the web, of course, so he can go out on the web and research for us with the sub agent team. And then once that's completed, you'll still be able to see the plan underneath. But now you can see the agents being set up as well. This If you're using the terminal directly, there's two ways. You can turn on the
+
+00:10:00
+Claude code specific setting ultra code to get started, or you can just ask Claude to create a workflow that's dynamic and it will go from there. And if you want to get this set up for you, if you want to get my dashboard, the mission control with the full sub agent process, the workspace where you can see everything you've built, the chat directly, and also all of your other agents built into a beautiful mission control with your goals and a video agent, SEO tools, Kanban board, etc., then you can get that all inside the AI
+
+00:10:28
+Profit Bot. The link is in the comments and description, or go to the AIProfitBot.com. And if you want hundreds of AI agents working for you, not just a back and forth chat, grab the agent operating system inside the AI Profit Bot. It turns Claude, Open Claude, and Hermes into one dashboard with shared memory and one place you can control. And every new update like Opus 4.8 and ultra code makes the whole system more powerful on its own. You also get weekly coaching calls where we set up together, a 30-day road map,
+
+00:10:54
+daily tutorials, and a member map where you can find people locally near you in your city who are building automations, too. Plus, you can ask questions inside the community. I personally help everyone in there. You can get access to all of my new trainings. The zip file for the agent OS is here. And then we drop new daily tutorials, like you can see. So, feel free to get that. Hope to see you inside there. Cheers to watching. Bye-bye.
+

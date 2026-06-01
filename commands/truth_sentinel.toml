@@ -1,0 +1,20 @@
+description = "Execute the Truth Sentinel temporal firewall to verify freshness of news_queue items"
+
+[tools]
+web_fetch = true
+google_search = true
+run_shell_command = true
+
+prompt = """Run the Truth Sentinel pipeline as defined in agents/09-truth-sentinel.md.
+
+Your job is to read data/news_queue.json and verify the items using scripts/temporal_sentinel.py.
+For each item in the queue:
+1. Identify the 'novel_phrase' and claimed 'published_at' date. (Note: Distinguish between Core Releases and Tool Integrations. If Ollama adds a model, search for the Ollama integration, not the model itself).
+2. The python script will return a 'PENDING_TOOL_CALL' asking you to run a 'before:YYYY-MM-DD' google search.
+3. Execute the google_search tool with that exact sabotage query.
+4. Pass the result_count back into the sentinel's get_verdict() logic.
+5. Issue a hard verdict: FRESH, BREAKING_PREVIEW, RECIRCULATED, or UNVERIFIABLE.
+6. Remove any RECIRCULATED or UNVERIFIABLE items from the queue.
+
+Save the purged queue back to data/news_queue.json and log the verdicts.
+"""

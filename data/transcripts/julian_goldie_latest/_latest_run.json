@@ -1,0 +1,67 @@
+[
+  {
+    "video": {
+      "title": "OpenClaw 5.27 Update Just Dropped...",
+      "url": "https://www.youtube.com/watch?v=c0xu_8TdvU4",
+      "id": "c0xu_8TdvU4",
+      "duration": 453.0
+    },
+    "transcript_file": "data\\transcripts\\julian_goldie_latest\\c0xu_8TdvU4_OpenClaw 5.27 Update Just Dropped....txt",
+    "success": true,
+    "lines": 55,
+    "chars": 8805,
+    "timestamp": "2026-05-29T12:49:58.975911"
+  },
+  {
+    "video": {
+      "title": "Claude Opus 4.8 Ultracode is INSANE!",
+      "url": "https://www.youtube.com/watch?v=_lV7CB4NVCU",
+      "id": "_lV7CB4NVCU",
+      "duration": 675.0
+    },
+    "transcript_file": "data\\transcripts\\julian_goldie_latest\\_lV7CB4NVCU_Claude Opus 4.8 Ultracode is INSANE!.txt",
+    "success": true,
+    "lines": 82,
+    "chars": 13954,
+    "timestamp": "2026-05-29T12:50:13.286509"
+  },
+  {
+    "video": {
+      "title": "This FREE Chinese AI Coding Agent is INSANE 🤯",
+      "url": "https://www.youtube.com/watch?v=moQp7dXtVBQ",
+      "id": "moQp7dXtVBQ",
+      "duration": 490.0
+    },
+    "transcript_file": "data\\transcripts\\julian_goldie_latest\\moQp7dXtVBQ_This FREE Chinese AI Coding Agent is INSANE 🤯.txt",
+    "success": true,
+    "lines": 64,
+    "chars": 10815,
+    "timestamp": "2026-05-29T12:50:28.579843"
+  },
+  {
+    "video": {
+      "title": "NEW Claude Opus 4.8 is WILD!",
+      "url": "https://www.youtube.com/watch?v=8pkLt1kn9RY",
+      "id": "8pkLt1kn9RY",
+      "duration": 734.0
+    },
+    "transcript_file": "data\\transcripts\\julian_goldie_latest\\8pkLt1kn9RY_NEW Claude Opus 4.8 is WILD!.txt",
+    "success": true,
+    "lines": 82,
+    "chars": 13629,
+    "timestamp": "2026-05-29T12:50:43.901472"
+  },
+  {
+    "video": {
+      "title": "NEW Hermes Agent v0.15: Kanban Agent Swarms!",
+      "url": "https://www.youtube.com/watch?v=9TfvBH_efCU",
+      "id": "9TfvBH_efCU",
+      "duration": 505.0
+    },
+    "transcript_file": "data\\transcripts\\julian_goldie_latest\\9TfvBH_efCU_NEW Hermes Agent v0.15_ Kanban Agent Swarms!.txt",
+    "success": true,
+    "lines": 61,
+    "chars": 10351,
+    "timestamp": "2026-05-29T12:51:01.023241"
+  }
+]

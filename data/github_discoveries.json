@@ -1,0 +1,15 @@
+{
+  "last_run": "2026-05-23T19:37:41.710394+00:00",
+  "new_discoveries": [
+    {
+      "source": "GitHub",
+      "org": "MoonshotAI",
+      "type": "new_repo",
+      "repo_name": "MoonshotAI/kimi-code",
+      "url": "https://github.com/MoonshotAI/kimi-code",
+      "description": "The Starting Point for Next-Gen Agents",
+      "discovered_at": "2026-05-23T19:37:39.828809+00:00",
+      "created_at": "2026-05-22T08:02:03Z"
+    }
+  ]
+}

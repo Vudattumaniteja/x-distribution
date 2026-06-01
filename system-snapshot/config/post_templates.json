@@ -1,0 +1,28 @@
+{
+  "metadata": {"description": "Post variant templates, reply angle templates, and hard rules"},
+  "post_variants": [
+    {"id": 1, "name": "Hook-Accuracy", "strategy": "Pattern-interruption hook + precise factual claim", "structure": ["[Hook under 80 chars]", "[Precise claim with number]", "[Why it matters]", "[Source]"], "example": "$47M for a 2-person AI startup.\n\nAnthropic led a Series B for a tool that writes 73% of its own features.\n\n500-person dev teams building simple apps: era ending.\n\nSource: TechCrunch", "best_for": ["Announcements", "Fundraising", "Launches"], "avoid_for": ["Opinion", "Tutorials"], "char_budget": "under 260"},
+    {"id": 2, "name": "Value-Driven", "strategy": "Lead with reader benefit — framework, insight, takeaway", "structure": ["[Value proposition]", "[Context from news]", "[Specific takeaway]", "[Optional source]"], "example": "3 things GPT-5's benchmark reveals for your workflow:\n\n1. Multimodal reasoning is production-ready\n2. 1M token context changes RAG architecture\n3. Code generation = mid-level engineer quality\n\nAdapt now or spend Q4 catching up.", "best_for": ["Tool updates", "Research", "Trends"], "avoid_for": ["Breaking news", "Controversial"], "char_budget": "under 270"},
+    {"id": 3, "name": "Data Bomb", "strategy": "Standalone surprising number + context + implication", "structure": ["[Surprising number — standalone]", "[Context]", "[Implication]", "[Source]"], "example": "89.7%.\n\nGPT-5's accuracy on medical diagnosis — outperforming the average doctor.\n\nNot replacing doctors. Giving every clinic a second opinion that never sleeps.\n\nSource: OpenAI technical report", "best_for": ["Benchmarks", "Research findings", "Market data"], "avoid_for": ["Qualitative", "Opinion"], "char_budget": "under 270"},
+    {"id": 4, "name": "Founder-Focused", "strategy": "Center narrative on founder/company decision", "structure": ["[Founder/Company + bold action]", "[What they did]", "[Industry signal]", "[Optional take]"], "example": "Dario Amodei bet Anthropic's future on safety as a moat.\n\nClaude self-corrects harmful outputs 94% of the time without human oversight.\n\nIf safety becomes a competitive advantage, the careful companies win.", "best_for": ["Company news", "Strategy shifts", "Founder statements"], "avoid_for": ["Technical deep", "Pure data"], "char_budget": "under 270"},
+    {"id": 5, "name": "Technical Deep", "strategy": "One specific technical detail most coverage misses", "structure": ["[Technical detail]", "[Plain language explanation]", "[What it enables]", "[Source/Paper link]"], "example": "GPT-5 uses MoE with 128 experts, activates only 12 per token.\n\nResult: 10x cheaper than dense model of equivalent capability.\n\nA router learned which expert handles which concept.\n\nPaper: arxiv.org/xxxx", "best_for": ["Research papers", "Architecture", "Technical blogs"], "avoid_for": ["Mainstream news", "General audience"], "char_budget": "under 270"}
+  ],
+  "reply_angles": [
+    {"id": 1, "name": "Add Insight", "strategy": "Share data/experience the original missed", "risk_level": "low", "trigger_when": "Original makes claim you can strengthen with data"},
+    {"id": 2, "name": "Respectful Counter", "strategy": "Disagree with ONE point using evidence", "risk_level": "medium-high", "trigger_when": "Original makes claim you know is inaccurate AND you have evidence"},
+    {"id": 3, "name": "Build On Idea", "strategy": "Extend with logical next step", "risk_level": "low", "trigger_when": "Original identifies trend but doesn't explore implications"},
+    {"id": 4, "name": "Ask Clarifying", "strategy": "Ask specific thought-provoking question", "risk_level": "very_low", "trigger_when": "Original presents data/claims that raise follow-up questions"},
+    {"id": 5, "name": "Share Experience", "strategy": "Firsthand experience or case study", "risk_level": "low-medium", "trigger_when": "You have direct personal experience with the topic"}
+  ],
+  "hard_rules": {
+    "max_tweet_length": 280,
+    "max_emoji_per_tweet": 1,
+    "emoji_placement": "end_only",
+    "required_elements": ["source_attribution", "at_least_one_number", "no_hype_words"],
+    "forbidden_words": ["insane", "mind-blowing", "game-changing", "revolutionary", "unprecedented", "literally shaking", "I can't even", "this is everything", "need this rn", "just wow", "absolutely massive", "literally unreal", "bruh"],
+    "forbidden_openers": ["Thread", "Hot take:", "Just in:", "Unpopular opinion:", "OK so", "Not gonna lie", "I just found out", "You won't believe"],
+    "required_for_news_posts": ["specific_number", "source_url_or_attribution"],
+    "required_for_replies": ["acknowledge_original", "add_net_new_value", "no_just_agreeing"],
+    "reply_timing": {"ideal_position": "3rd to 10th", "max_age_hours": 6, "avoid_if_replies_over": 50}
+  }
+}

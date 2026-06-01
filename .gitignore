@@ -1,0 +1,28 @@
+# Python runtime artifacts
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+
+# Local credentials and environment overrides
+.env
+.env.*
+*.pem
+*.key
+*.p12
+*.pfx
+
+# Generated runtime artifacts
+cache/
+logs/**
+!logs/**/
+!logs/**/.gitkeep
+scratch/
+tmp_hyper/
+
+# OS and editor artifacts
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/

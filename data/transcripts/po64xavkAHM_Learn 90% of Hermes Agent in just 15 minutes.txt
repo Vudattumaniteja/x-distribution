@@ -1,0 +1,108 @@
+00:00:00
+Here's a nononsense guide to the Hermes agent. Picture a spectrum. On one end are chatbots. You ask, they answer, then they forget you. In the middle are coding agents like Claude Code. They do the work, but only inside one session, then it resets. And all the way over in a league of its own is Hermes, an agent that remembers everything and keeps running on its own even when your laptop is shut. And here's what's interesting. is already overtaken openclaw thanks to its killer feature which is that the
+
+00:00:29
+more you use it the better that it gets. So in the next few minutes I'll show you exactly what Hermes is, how to install it and how to get started using it so that by the end of this video you walk away with your first agent hire. And if you're new here, my name is Jay. I spent over a decade working with brands you probably know, have been in AI since my masters in data science and now I run our AI solutions practice in one of the largest AI communities globally. Let's get started. So what is Hermes? Well, if you go to
+
+00:00:56
+their website, the headline that they say here is that Hermes is the agent that grows with you. So if we were to dissect that a bit, it is an AI agent. So not only does it have immense knowledge about a myriad of things, but apart from that, it can also use tools that you use like your calendar, your email, or even create files, presentations, build applications, or websites on your behalf. And just like other AI agents like OpenClaw, it's available 24/7 and you can talk to your Hermes agents via different messaging
+
+00:01:24
+platforms like Telegram, Discord, Slack, WhatsApp and so on. And recently interest for learning Hermes has eclipsed that of OpenClaw simply because of that latter half of the headline that they have in their website which is this part that it says that is the agent that grows with you because in its core it has this beautifully designed self-evolving system for skills and memory which we'll dive into more in a bit. Now, let's actually unpack this further because yes, this tells you what
+
+00:01:52
+Hermes can do, but I find that it's always better to understand how it can do it. And the best way to explain it is to go back to this mental model that we've talked about previously, which is that any AI agent, whether it is cloud code, openclaw, or even Hermes, is always just composed of three specific elements. You have the model, which acts as the brain of your AI agent, your new hire. You have the harness which gives it the tools that it needs in order to interact with your workspace and your
+
+00:02:21
+context which is your workspace itself. And just to understand this better, let's actually compare clawed code versus openclaw versus Hermes for these three elements. And if we start with the model, remember this is sort of the engine that is powering the agentic machine. Right? So with claw code is very simple. What you can use are the entropic models like opus, you have sonnet or haiku. Now, one key advantage that OpenClaw as well as Hermes has is that they are actually model agnostic, which means that you can pretty much use
+
+00:02:50
+any model that you want, even open- source ones, which contributes a lot to their flexibility and also better cost management. But if you go to the harness, that actually contributes the most with regard to the user experience that people have with regard to these AI agents. And with something like cloud code, there's many ways to use it. There is the entropic desktop application. There is the IDE or the VS code extension or the terminal user interface. But with these two, the way that we primarily use them is very
+
+00:03:19
+different, right? It is usually through tools like Telegram or WhatsApp or Discord and all these messaging channels where we do our work natively and that contributes a lot to the personified experience that these agents have. Now when it comes to the context which is basically the workspace that your agents are working against. If you've used cloud code before you may be familiar with claw.mds which is sort of the employee handbook that your agent starts with every time it starts a session or
+
+00:03:47
+does some work. You also have skills as well as memory. Now with open claw it is pretty much the same structure. The only sort of difference is that it has a bit of a different naming convention where it calls its claw.md as agent.m MD and it also has extra system instructions in here. The most popular one is probably the soul.md which gives openclaw its personality but it also has skills and it also has memory. Now, what is unique about Hermes is that yes, it also has that agent.m MD and it also has that
+
+00:04:18
+soul.md, but the way that it uses its skills as well as its memory is definitely a step up versus the normal open claw architecture. And you'll see this more in action later, but basically what Hermes does is that automatically after every few messages or so, it actually self-updates its memory of you. And whenever it detects that you are repeatedly asking it to do a task over and over again that it actually suggests and builds a skill for that so that the next time it does it, it already knows
+
+00:04:46
+your preferences in how to do it. And so that seemingly small improvement to how it handles context with your skills in memory is actually why it's become so popular. Because even if it looks like a minor change versus openclaw, it actually matters a lot with your experience with this agent, which becomes more and more evident the longer that you use it. And by the way, if you're interested in going from just using AI to getting paid for it, then check out the Robo Nuggets community down in the description. We've got
+
+00:05:11
+founders in there who landed their first client in weeks, live build sessions where we create this stuff together and the actual templates behind what I just showed in this video. The community is also the reason these lessons get made. So see that below if that's for you. So how do you install it? Well, it's actually simpler than you think cuz if you go to their website here, you can see there's this install command which you can just copy. And if you go and find the terminal app in the device that
+
+00:05:32
+you want to install it in, I would just paste that command, click on enter, and that will run through the instructions of the installer for Hermes. That said, it is quite simple to install it. But there is a bigger question on where you should install it. Because with these types of agents like OpenClaw as well as Hermes, you probably don't want to install it on your device because of two reasons. The first one is if you want that 24/7 365 benefit of these agents then you wouldn't want to install it on
+
+00:05:58
+your own primary device because if your device is off then your agent is also off. So that defeats the purpose of having it being 24/7. The second thing which is more important probably is that remember that these agents have access to your files and can freely edit your files if you give them the permission to. And so there is a more heightened risk of file deletions and file edits that you probably would not want these agents to do. And so let's say if you have an old computer lying around that
+
+00:06:25
+is one option for you to do. Another option is obviously Mac minis because of their very small form factor. So if that's something that you have access to then feel free to install Hermes there. Now, for most people, you may not have any spare laptops or Mac minis lying around. So, one of the more popular ways by which people are installing this is what's called a VPS, a virtual private server, which is basically something you can think of as like a computer in the cloud that you can rent for a few bucks
+
+00:06:49
+a month. And there's many providers to this, but personally, after looking around, I think the one with Hostinger is quite good because they have one of the easiest ways to get Hermes up and running in just a few minutes, which I'll walk with you through today. So, if you go to this link, which I'll also put down below, you can just choose the most basic plan in here. This KVM2 is what you would want to get. And once you're in here, do note that the period by default is set to 2 years, and you
+
+00:07:11
+probably wouldn't want to do that. So, just make sure to switch that to 1 month if in case you're just trying this out. And once you are in, you can now see that you have your virtual private server available here. So, you can either click setup in here or you can also go to the VPS tab here at the left. And that will be the same thing. And you just need to click setup in here. You can choose your server location, basically where that computer will be located. So, whatever is closest to your
+
+00:07:34
+region is probably best. And when you're on this page, there's actually many ways to install Hermes. If you are just beginning in this journey and you're not as technical, I do suggest that you just find the Hermes agent option in here. So, if you just click that, click select, choose an appropriate username and a password you can remember. And once you click deploy, that would now set up your VPS and the Hermes agent. And there you go. Now, we are set up. So if you go to your VPS now and go under
+
+00:08:00
+docker manager under projects you can see Hermes in here. But at least for us to get started in here what you would want to do is to open this Hermes agent under this access column in here. Give it the username and password that you set earlier. And there we go. We now have this setup page where Hermes will guide us on how to install it. So just click quick setup in here. And in this next option, you remember our framework from earlier. This is now where you can find all of the models that Hermes can
+
+00:08:26
+work with. And there's a lot here. And if you're a bit more advanced, you can explore them. But if I were to give a recommendation, I would go with OpenAI Codeex. And the core reason why relates to the concept of API keys versus OOTS when it comes to connecting your model to this agent to Hermes. If you're connecting Hermes or even OpenClaw via an API key, that is actually quite risky for you costwise because you'll be paying per token per usage and there's actually no ceiling on how much you will
+
+00:08:56
+pay per month. But if you're connecting Hermes through open authorization or OOTH, that is a flat monthly charge of something like $20 a month depending on your subscription. And just to be very clear, OOTH that just refers to you remember when you sign up to Chad GPT and their plus subscriptions or their pro subscriptions. that subscription at least for our intent would be your OOTH connection. And core reason why OpenAI is probably the most popular to be connected to these tools is because they
+
+00:09:23
+allow open authorization. Basically connecting your chat GBD subscription, which a lot of people already have anyway, to tools like Hermes or OpenClaw. This whole slide actually needs updating because Entropic pretty much just banned OpenClaw and other thirdparty tools from using their OOTH connection. And so for both Antropic and Google, if you need to use their models for tools, third party tools like Hermes, then you'll need to be forced to use the API key method. So long story short, go ahead and just select OpenAI
+
+00:09:51
+codeex in here. And from here, all you need to do is to follow this link and give it the code that it will give you. The page will look like this. And just go ahead and type in that nine character code that they have provided. Then after that, you'll be given a choice on where you would want to install it. Again, you can take a screenshot of this if you want to understand all of these different technical terms, but for us in this specific method in Hostinger, just go ahead and keep it as the current
+
+00:10:13
+local. And now here at the tail end, we will be setting up our messaging platforms. So yes, we want to set up messaging now. And from here, you can see a couple different options and you can set up Discord or Slack separately. Those are a bit more complex, but for this one, we'll just click spacebar on the Telegram option. Click on enter and you can see here that it is asking for a telegram bot token and you can create that via this user called botfod. So if we go to telegram and just search for
+
+00:10:41
+the bot foder in there we can click open and it will give us this nice interface to just create a new bot. So let's just name our bot hero and choose a username for it. Let's say hermones 2 and it just needs to end with bot. And there you go. You now have your telegram bot and you can just copy this bot token. Paste that in here. So, I'll just do a right click and paste because that's much easier. But once you've pasted it there, just note that it's not really going to show
+
+00:11:06
+you like those couple of asterisks here in this terminal view. But just go ahead and click enter. And you can see that the Telegram token has been saved. And now it is asking for allowed user IDs. So back to Telegram. Now if you just search for user infobot and send any message in there, what it should now give you is your user ID from within Telegram. So just click on that to copy it. We will once again paste it here. It says Telegram allow list configured. And lastly, we want to use our ID as the
+
+00:11:34
+home channel. And there you go. It says ready to go. So let's just press enter to reconnect. Now once you see a screen like this, what you can do now actually is to just go back to your hosting or dashboard and go ahead and click restart for this Docker project. And with that, your Hermes agent should now be live. So if you send it a message, it should now see it typing. And there you go. Once it replies back, you now have your own Hermes 24/7 personal assistant. So, at this point, what should you now do?
+
+00:12:02
+Well, that really entirely depends to you because with these agents, there's so many possibilities. But to get you started, I do suggest for you to send a Bootstrap prompt similar to what I have in here. And I'll link this resource down below. But essentially, there's three parts to this that I generally recommend people to start with. The first part is basically for it to get to know you better. And you can see from my side, I just gave it some initial information. And you can go as deep or
+
+00:12:27
+as light as you want in here. But going back to Hermes' advantage from earlier that we were talking about. You can see here that when I said confirm, not only did it self update on the user.md, which is sort of the information that your agent has about you, but it also updated its memory. The second part that I recommend is this daily questions cron or schedule. So in this prompt, you can see that the task is that each morning you'll have your agent ask you three questions so that you can continuously
+
+00:12:55
+feed it with information about yourself. And so back to Hermes, I just ask it to do part two, just to demo what it will do. And then on every single day, it will just ask you a couple of questions, stuff like what you'd like Hermes to start remembering about the way that you work. And this can be as general or specific as you want. Like you can literally just ask Hermes to dial in these questions on a particular project or a particular part of your business or work. But I just find that if you have
+
+00:13:20
+this cadence with your agent where it knows more about you and your goals, then it is going to be a better operative relationship with Hermes. And now the third part of this prompt that I recommend for you to start with is to have Hermes always recommend and be more proactive with suggesting things that it can do for you. to give an actual example of how I was using it. You can see my main Hermes setup that I have in here, which I set up a few days ago. I pretty much used it to create the B-roll, the starting B-roll for this
+
+00:13:48
+same video earlier. So, what I did is to just give it a blurb of what I was about to say in the video and also asked it to get the logos of these tools that I know would be good to feature in that B-roll. Then, after that, what I wanted is for it to generate a few starting frame options using Nano Banana. And you can do this as well, by the way. You can just tell your Hermes agent to find the best way to connect to the nano banana image model. And then once I have these images, I just ask it to animate these
+
+00:14:12
+ones that I liked to generate that final B-roll that you saw earlier. To give another example, every night in the evening, I actually ask Hermo to suggest me three books that we can read together because in that way it gives me not only a good summary of the book, but also some insights as it relates to my own personal business and life. So you can see here that it's just a couple of books. And then what I wanted to illustrate here is when I chose a book to read, it gave me a pretty good but
+
+00:14:38
+long summary. But at the bottom in here, I gave it some feedback where what I actually want is just numbered insights whenever we do this. And so what you can see it did here is it added that to its memory and also self-improve and added a skill so that the next time we do this same exercise and this same scheduled cron it knows to invoke this skill so that it is much more attuned to what it is that I actually want it to do. And from those two examples you can see how this sort of snowballs into something
+
+00:15:07
+that is really useful to you as a personal assistant. Right? And simply because of just those two tweaks, this AI agent, this Hermes AI agent actually does grow with you. So there you go. I hope that helped you get started and also peel back any complexity with this technology because honestly under the hood, it is not as complex as you think. And if that was useful, then consider subscribing because that helps me a lot to put out more educational content like this. Again, I appreciate you guys for
+
+00:15:32
+making it till the end and I'll see you all next time. Thank you.
+

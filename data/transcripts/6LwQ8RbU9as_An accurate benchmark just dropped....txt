@@ -1,0 +1,93 @@
+00:00:00
+GPT 5.5 or Opus 4.7, which one is best? The way that the AI industry measures how good a model is is called a benchmark. But most benchmarks don't reflect realworld usage of the models, especially when it comes to coding. And it just seems like every single week there's a new best model across the board of benchmarks. And it never quite lines up with reality. People wait for the vibe check and that seems to be much more in line with what Deep Suite is measuring. And if you like videos like
+
+00:00:36
+this where I talk about the AI industry and the more technical side of things, like this video, subscribe to the channel. It really does help. Thank you in advance. So, Deep Suite is a long horizon software engineering benchmark that delivers four major advances over today's public benchmarks. And this is by a company I've actually never heard of them, data curve.ai. Now, you're definitely going to hear about them cuz this benchmark is going viral. So, number one is contaminationfree tasks are written from
+
+00:01:06
+scratch, not adapted from existing commits or PRs. So, no model has seen the solution during pre-training. This is an important one because a lot of benchmarks will just take either commits from GitHub, public commits, or they're going to take public issues from GitHub. And in both cases, since all of it is public, there is a high likelihood that the models are trained on those specific issues and specific commits. So they kind of already know the answer. But in this case, they handcrafted every single
+
+00:01:40
+one of the questions and it is not shared publicly as far as I can tell. Next high diversity takes span of broadpool of 91 repositories across five languages. So it is not just about Python. It is not just about a handful of the biggest repositories on the planet. This is actually a wide range of different languages and different code types, code architectures. Then next, real world complexity. Prompts are half the length of SWEBench pros. Yet solutions require 5.5 times more code and two times more output tokens. Now,
+
+00:02:16
+this is super important because if you're like me, you're not giving your model, your coding model, extensive prompts explaining exactly where to find something, what the problem is, tests that you've already run against it, failure cases you know about. If you're anything like me, you're typing fix it and that's it. So, not only are the prompts much shorter than Swebench, the solutions require more code and more output tokens. And that's really important. So it's a much better test of
+
+00:02:47
+what the model is actually doing. It is a much better test of if the model is writing good code or not, not how well you can explain the problem to the model. And then next, reliable verification. This was stunning. They were able to reduce the false positives and the false negatives substantially, and I'll show you that later in the video. They specifically call out SweetBench Pro, which is kind of the gold standard of benchmarks for coding right now. existing benchmarks fall short. Sweetbench Pro, the leading
+
+00:03:16
+agentic coding benchmark, has tasks averaging just 120 lines of code to solve. And our audit found its verifier misgrades agent outputs at rates of 8% false positives and 24% false negatives. Which means the verifier to verify whether the solution presented by the model is right. It thought it got it right and it was actually wrong or it got it wrong and thought it was right. And obviously that's quite bad. Okay, but here's what matters. This is the actual leaderboard and as you can see
+
+00:03:49
+GPT 5.5 extra high is absolutely dominating. Okay, this is different from everything else that we've seen all the other benchmarks which show Opus 47 and GPT 5.5 effectively around the same score. Here we are seeing a 15 plus point difference between GPT 5.5 and Opus 4.7. That is substantial. And all the engineers that I've been speaking to praise GPT 5.5 as this massive improvement over previous models and even a massive improvement over Opus 4.7. Now, I'm a big Opus fan. As much as
+
+00:04:28
+I give Anthropic a tough time about their actions as a company, I actually think Opus is a fantastic model. So, this doesn't necessarily reflect my opinions of these models, but kind of finger in the air what I'm hearing people talk about, this is actually quite accurate. So, we see GBT 5.5, then GBT 5.4, then Opus 47, then way down Sonnet 46. So, here's Gemini 3.5 Flash. Okay, 28%. And we see Kimmy, Mimo, GLM, and so on all the way down the board. And I kind of wish there was an AI video
+
+00:05:06
+benchmark as good as this because they would probably show that Hey Genen is at the top. Also, the sponsor of today's video. Hey is an AI video generator with tools like digital twin avatars, video translation, dubbing, voice cloning, and lips sync. And there's this tool that they have called hyperframes for storytelling and motion graphics. And here's the problem it solves. AI video generators can be very powerful, but also very difficult to get consistent and to predict the output. And sometimes
+
+00:05:35
+you don't need a realistic scene. You're looking for something more stylized or a clean product explainer, an animated chart or title sequence. That kind of video is often better when it's built like a web page with text and animations, shapes, colors, and with hyperframes, it's actually an agent that can write code and build that for you. So instead of asking AI to guess a whole video that you want created, I can say make this shorter, remove the legend, change the labels, or animate the chart
+
+00:06:06
+differently, and it just does it. You can easily just give it to your agent and start describing the video that you want. So, if you want to try it out, go to hyperframes.hen.com/quickstart. I'm going to drop a link down below so you can go check it out. They've been a great partner. So, please check them out. Let me know what you think. And now, back to the video. So, let's go back to how this benchmark actually prompts the model because I think this is a really important innovation that
+
+00:06:31
+they had here. Deep suite prompts are aligned with the way developers talk to their agents. Behavior focused, short, and free of large interface definition blocks. So basically, hey, this thing isn't working like I think it should. It should be working like this other way. Go fix it. Rather than overly verbose and prescriptive. So rather than saying, hey, this code block isn't right. It should actually be this other way of writing the code, it's describing the overall behavior of the application or
+
+00:07:02
+the front end, whatever it is, instead of the very prescriptive way that benchmarks have been testing. agents must discover where and how to implement the change. So a substantial share of the capabilities being evaluated involve end-to-end exploration instead of just the execution of an oversp specified engineering task. And that is how engineers are using aentic coders today. They are not oversp specifying anymore. In fact, quite a lot of the recommendations that I've been hearing is don't specify. Don't tell the agent
+
+00:07:34
+how to solve the problem. Tell the agent what you want solved. Tell them the behavior you're looking for and let the model solve it any which way it likes. Here we can also see it has broad repository coverage. 113 task man 91 active open source repositories across five languages. TypeScript, Go, Python, JavaScript, and Rust. Sampling at this scale makes Deep Suite a much stronger proxy for the real world utilities of coding agents. In next since the benchmark isn't specifically testing
+
+00:08:05
+against public commits and public issues, public GitHub issues. It is testing problem solving not recall. Every Deep Suite task is original. The reference solution is written from scratch rather than copied or adapted from an existing pull request, commit or public patch. Some tasks are obviously motivated by unresolved GitHub issues, but the fix itself is new. Next, the verifiers reward correctness across many valid implementations. So, if you're not familiar with a verifier, it is exactly
+
+00:08:36
+like what it sounds like. It basically tests if the solution that the model gave is correct. It doesn't need to be syntactically identical and it doesn't need to be identical at all, but it needs to be able to be verified that it fixes the solution proposed by the specific problem. So, the verifier should approximate the task behavioral specification. It should determine whether the submitted code implements the requested change while remaining agnostic to the particular implementation strategy. Which also
+
+00:09:06
+means it has a much lower false positive and false negative rate. In fact, quite substantially lower. Here we go. Deep Sweet verifiers align more closely with real task success. Here's SweetBench Pro. 8.5% false positive rate, which means verifier accepted a wrong implementation versus a.3% for Deep Suite. Same with false negative 24% on SweetBench Pro versus 1.1% false negative rate for deep suite. That is verifier rejected a correct implementation. I can't believe that happens 24% of the time for SweetBench
+
+00:09:46
+Pro. All right. So, how did they actually choose the repos? So, they must be public, actively maintained, and hold at least 500 GitHub stars, and be released under a permissive open source license. They focused on a handful of languages, including TypeScript, JavaScript, Python Go, and Rust. And for the task construction, each task ships with three artifacts, the prompt, an executable verifier that grades the result, and a reference solution used during review. Now they use a custom harness called miniuite agent which is
+
+00:10:20
+the harness that the SWE bench authors built. So we hold it fixed across every model. So the leaderboard reflects model capability not the scaffolding around it which is obviously very important. But there is an argument to be made that models and scaffolding need to be optimized together. So, the fact that Opus 47 isn't being tested against Claude code could actually be a detriment to its score. But maybe that's actually a strong signal about the power of the model and less so the power of
+
+00:10:54
+the harness. But for me, I think my intuition says it's good to test the model and the harness together. Now, here is what is crazy. Claude models. So, Opus 47 is not only more expensive than GPT 5.5, kind of from a cost per million output tokens, but also the amount of tokens used to solve the problem seems to be multiple times higher for Opus 47. Look at this. So, here's clot opus 4.7 and the median output tokens for a solution is 60,000 with minu agent. Now compare that to GBT 5.5 at 16,000.
+
+00:11:38
+Now actually what's interesting is within the harness of claude code the opus 4.7 output tokens median output tokens goes down by about 10,000 and then in codeex as compared to mini suite agent with GBT 5.5 it actually goes up by 10,000. So codeex uses more tokens. Very interesting. Now here's where it gets even more interesting and why I think this benchmark is so compelling. If all of the models kind of congregate around a similar score, it's not very helpful. We want to see big disparities
+
+00:12:12
+between scores because then that tells us which model is actually better and which ones are not. And so here's Sweeten Pro and you can see that they're, you know, relatively close in score all within about 30 points. Whereas for Deep Suite, we have a top score of 70% for GPT 5.5. And look at this. A score of 0% for Claude Haiku 4.5. You can just see kind of looking from the left side to how it looks on the right side. There's a much bigger spread of scores with Deep Suite. There's a few more graphs I want to show
+
+00:12:45
+off. One is score versus output tokens. So the y-axis is the score. That is the pass rate. And then on the x-axis we see the number of tokens. Now, what's surprising is Gemini 3.5 Flash uses a tremendous amount of tokens. I mean, it's all the way up here at 150,000 tokens per trial. Here's Opus 47 at 97,000 and GPT 5.5 at 47,000. So, not only the highest, but also the cheapest of those three models that I mentioned. Really, the perfect place you want to be. You want to be as high and
+
+00:13:22
+as right on this chart. Then we have wall clock. So again, higher and to the right is better. It means less time and higher score. And we can see GPT 5.5 still sitting at a high score. Same as the last chart, but the wall clock duration per trial is 20 minutes. We could see Gemini 3.5 Flash coming in at 15 minutes, which I would have expected it to be a lot lower given that it's a Flash family of models and it's supposed to be really fast. Here we can see Claude Opus 4.7 coming in at 37 minutes.
+
+00:13:54
+So, it's not only not as high of a score, but it also takes more time per trial. And then cost. This is where it really becomes embarrassing for Anthropic. Here we have GBT 5.5. again 70% but a cost per trial of $5.80. Look at this. Claude Opus 4.7 coming in at nearly three times as expensive on a cost per trial basis at $16. Here Gemini 3.5 Flash coming in right about the same price but less than half of the overall score. So GBT 5.5 is really looking good on Deep Suite kind of endto end. is looking like the best
+
+00:14:35
+model by far. And what they also test for is how the models are actually failing the tests. And this is quite interesting, although I'm not going to get too deep into it. And by the way, if you want to explore this chart, I'll drop the link down below. All right, so a few behavioral things that they learned about models through this benchmark. Number one, Claude is forgetful with multi-art prompts. Quad configurations missed requirements more than any other family and there is a recurring shape behind
+
+00:15:03
+it. Deep sweep prompts frequently enumerate parallel behaviors like support both sync and async or support both line comments and block comments. Often Claude implements the obvious branch and forgets to mirror its changes. Very interesting. Claude is attentive to its environment. So when the prompt and the state of the repository don't match, Opus 4.7 often explores recent changes with git log and recovers the gold solution from the git history. GPT implements exactly what is asked. GPT 5.5 has the lowest rate of
+
+00:15:37
+missing stated behaviors of any configuration in the chart and it reads the prompt and the visible repository contracts literally and produces a patch that honors both. Stronger models test their own work until the prompt tells them not to. We used a LLM based judge agent to tag every trial with self-verification behaviors the agent exhibited. And we can see in this chart they say Swebench Pros prompt discourages agents from writing their own tests. But why would you? That's part of giving a valid solution. And we
+
+00:16:09
+could see the models are much more likely to write tests for themselves if they're not explicitly told not to, obviously. And it just seems like this benchmark is really a good reflection of what we're seeing from, you know, coding Twitter. We have Theo saying this is the first code bench that actually aligns with how it feels to use these models coding. And a lot of people, again, a lot of people I talked to are saying GBD 5.5 is the best model. I haven't found that to be true for myself, for my own
+
+00:16:37
+code, but that is what I'm hearing. And so it's nice to have a new benchmark that reflects at least what we're hearing in the Twitter sphere. And the one thing missing from this benchmark and all the charts is Composer 2.5, which I just made a video about that it happens to probably be the best model on the planet in terms of price to performance. Here's a full breakdown video of that right here. Go watch it.
+

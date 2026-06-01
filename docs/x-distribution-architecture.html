@@ -1,0 +1,309 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>X Distribution | Intelligence Desk Architecture</title>
+  <style>
+    :root {
+      --bg: #101312; --bg-2: #171b19; --panel: rgba(27,32,29,.94);
+      --panel-2: #222824; --ink: #f4f0e6; --muted: #a8b0a6;
+      --line: rgba(218,230,211,.15); --acid: #d8ff4f; --signal: #69e6d1;
+      --orange: #ff8a4d; --red: #ff6b6b; --shadow: 0 24px 70px rgba(0,0,0,.32);
+    }
+    html[data-theme="light"] {
+      --bg:#eeeadd; --bg-2:#e2ddcf; --panel:rgba(250,248,240,.94); --panel-2:#f2eee4;
+      --ink:#18201d; --muted:#5f6b65; --line:rgba(24,32,29,.16); --acid:#789500;
+      --signal:#007e75; --orange:#bc4e1c; --red:#b23838; --shadow:0 24px 60px rgba(70,62,42,.14);
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0; color: var(--ink); background: var(--bg);
+      font-family: "Aptos", "Segoe UI", sans-serif; line-height: 1.55;
+    }
+    body::before {
+      content:""; position:fixed; inset:0; pointer-events:none; opacity:.42;
+      background-image: linear-gradient(var(--line) 1px, transparent 1px), linear-gradient(90deg, var(--line) 1px, transparent 1px);
+      background-size:48px 48px; mask-image:linear-gradient(to bottom, #000, transparent 72%);
+    }
+    a { color:var(--signal); }
+    code, pre, .mono { font-family:"Cascadia Code","Consolas",monospace; }
+    .shell { display:grid; grid-template-columns:280px minmax(0,1fr); min-height:100vh; }
+    .sidebar {
+      position:sticky; top:0; height:100vh; padding:22px 18px;
+      border-right:1px solid var(--line); background:rgba(14,17,16,.9); backdrop-filter:blur(16px);
+      overflow:auto; z-index:20;
+    }
+    html[data-theme="light"] .sidebar { background:rgba(238,234,221,.88); }
+    .brand { display:flex; gap:12px; align-items:center; margin-bottom:20px; }
+    .mark {
+      width:44px; height:44px; display:grid; place-items:center; border:1px solid var(--acid);
+      color:var(--acid); font:800 16px/1 "Cascadia Code",monospace; transform:rotate(-6deg);
+      box-shadow:0 0 0 5px rgba(216,255,79,.06);
+    }
+    .brand strong { display:block; font:700 15px/1.15 Georgia,serif; letter-spacing:.02em; }
+    .brand small { color:var(--muted); font:10px/1.3 "Cascadia Code",monospace; text-transform:uppercase; letter-spacing:.1em; }
+    .search { width:100%; padding:11px 12px; border:1px solid var(--line); border-radius:8px; color:var(--ink); background:var(--panel); }
+    .shortcut { display:block; margin:7px 0 16px; color:var(--muted); font-size:11px; }
+    nav a {
+      display:block; padding:8px 10px; border-left:2px solid transparent;
+      color:var(--muted); text-decoration:none; font-size:13px; transition:.2s ease;
+    }
+    nav a:hover, nav a.active { color:var(--acid); border-left-color:var(--acid); background:rgba(216,255,79,.06); }
+    .side-actions { display:flex; gap:8px; margin-top:18px; }
+    button {
+      border:1px solid var(--line); border-radius:7px; padding:9px 10px; color:var(--ink);
+      background:var(--panel); cursor:pointer; transition:.2s ease; font:600 12px/1 "Aptos","Segoe UI",sans-serif;
+    }
+    button:hover { border-color:var(--acid); color:var(--acid); transform:translateY(-1px); }
+    main { width:min(1220px,100%); margin:0 auto; padding:32px 40px 80px; }
+    .hero {
+      min-height:560px; display:grid; grid-template-columns:minmax(0,1.35fr) minmax(300px,.65fr);
+      gap:28px; align-items:end; padding:38px; border:1px solid var(--line); border-radius:18px;
+      background:linear-gradient(135deg,rgba(34,40,36,.98),rgba(18,22,20,.88));
+      box-shadow:var(--shadow); overflow:hidden; position:relative;
+    }
+    html[data-theme="light"] .hero { background:linear-gradient(135deg,#f8f4e8,#e4e0d3); }
+    .hero::after {
+      content:"INTELLIGENCE DESK"; position:absolute; top:30px; right:-44px; color:rgba(216,255,79,.08);
+      font:900 68px/1 Georgia,serif; letter-spacing:-.08em; transform:rotate(90deg);
+    }
+    .kicker { color:var(--acid); font:700 12px/1 "Cascadia Code",monospace; letter-spacing:.14em; text-transform:uppercase; }
+    h1,h2,h3 { font-family:Georgia,"Times New Roman",serif; letter-spacing:-.045em; }
+    h1 { margin:14px 0 16px; font-size:clamp(54px,7vw,102px); line-height:.88; max-width:820px; }
+    .lede { color:var(--muted); max-width:760px; font-size:18px; }
+    .hero-note { border-top:1px solid var(--line); padding-top:18px; color:var(--muted); font-size:13px; }
+    .hero-note strong { display:block; color:var(--signal); font:700 28px/1 Georgia,serif; margin-bottom:8px; }
+    .stats { display:grid; grid-template-columns:repeat(4,1fr); gap:10px; margin:18px 0 0; }
+    .stat { padding:14px; border:1px solid var(--line); border-radius:10px; background:rgba(255,255,255,.025); }
+    .stat b { display:block; color:var(--acid); font:700 24px/1 Georgia,serif; }
+    .stat span { color:var(--muted); font-size:11px; text-transform:uppercase; letter-spacing:.06em; }
+    section { scroll-margin-top:24px; margin-top:38px; padding:24px; border:1px solid var(--line); border-radius:14px; background:var(--panel); box-shadow:0 12px 40px rgba(0,0,0,.08); }
+    section.hidden-section { display:none; }
+    .section-head { display:flex; justify-content:space-between; gap:18px; align-items:start; margin-bottom:18px; }
+    h2 { margin:0; font-size:38px; line-height:1; }
+    h3 { font-size:23px; margin:24px 0 10px; }
+    p { color:var(--muted); }
+    .eyebrow,.badge { color:var(--acid); font:700 10px/1 "Cascadia Code",monospace; letter-spacing:.1em; text-transform:uppercase; }
+    .badge { display:inline-flex; padding:6px 7px; border:1px solid currentColor; border-radius:999px; }
+    .badge.signal { color:var(--signal); }.badge.orange{color:var(--orange)}.badge.red{color:var(--red)}
+    .grid-2 { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:12px; }
+    .grid-3 { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:12px; }
+    .card { padding:15px; border:1px solid var(--line); border-radius:10px; background:rgba(255,255,255,.025); }
+    .card h3 { margin:6px 0 5px; font-size:19px; letter-spacing:-.025em; }
+    .card p { margin:0; font-size:13px; }
+    .flow { display:grid; grid-template-columns:repeat(5,minmax(0,1fr)); gap:10px; align-items:stretch; }
+    .flow-card { padding:14px; border:1px solid var(--line); background:var(--panel-2); border-radius:9px; position:relative; min-height:132px; }
+    .flow-card:not(:last-child)::after { content:"→"; position:absolute; right:-18px; top:48%; color:var(--acid); z-index:2; font-weight:800; }
+    .flow-card b { display:block; color:var(--acid); margin:5px 0; }
+    .flow-card small { color:var(--muted); }
+    table { width:100%; border-collapse:collapse; font-size:13px; }
+    th,td { padding:11px 10px; border-bottom:1px solid var(--line); text-align:left; vertical-align:top; }
+    th { color:var(--acid); font:700 11px/1.2 "Cascadia Code",monospace; text-transform:uppercase; letter-spacing:.06em; }
+    td { color:var(--muted); } td:first-child { color:var(--ink); }
+    pre { padding:15px; overflow:auto; border:1px solid var(--line); border-radius:8px; background:#0c0f0e; color:#dce9dd; font-size:12px; }
+    html[data-theme="light"] pre { background:#242923; color:#edf3e9; }
+    .command { position:relative; }.command button { position:absolute; right:9px; top:9px; }
+    details { border-top:1px solid var(--line); padding:13px 0; }
+    summary { cursor:pointer; color:var(--ink); font-weight:700; }
+    .lane-map { width:100%; min-height:390px; border:1px solid var(--line); border-radius:10px; background:var(--panel-2); }
+    .lane-map text { fill:var(--ink); font-family:"Cascadia Code",monospace; font-size:11px; }
+    .lane-map .muted { fill:var(--muted); font-size:9px; }.lane-map .line { stroke:var(--line); stroke-width:2; }
+    .lane-map .acid { fill:rgba(216,255,79,.09); stroke:var(--acid); }.lane-map .signal { fill:rgba(105,230,209,.08); stroke:var(--signal); }
+    .lane-map .orange { fill:rgba(255,138,77,.08); stroke:var(--orange); }
+    .callout { padding:15px; border-left:3px solid var(--acid); background:rgba(216,255,79,.045); color:var(--muted); }
+    .warning { border-left-color:var(--orange); background:rgba(255,138,77,.05); }
+    footer { padding:34px 0 0; color:var(--muted); font-size:12px; }
+    @media (max-width:980px) {
+      .shell{grid-template-columns:1fr}.sidebar{position:static;height:auto;border-right:0;border-bottom:1px solid var(--line)}
+      nav{display:flex;gap:4px;overflow:auto}nav a{white-space:nowrap}.hero{grid-template-columns:1fr;min-height:auto}
+      .stats,.grid-3{grid-template-columns:repeat(2,1fr)}main{padding:20px}.flow{grid-template-columns:1fr}.flow-card:not(:last-child)::after{content:"↓";right:16px;top:auto;bottom:-20px}
+    }
+    @media (max-width:620px){.grid-2,.grid-3,.stats{grid-template-columns:1fr}h1{font-size:62px}section{padding:17px}}
+  </style>
+</head>
+<body>
+  <div class="shell">
+    <aside class="sidebar">
+      <div class="brand"><div class="mark">XD</div><div><strong>X Distribution</strong><small>architecture field guide</small></div></div>
+      <input id="search" class="search" type="search" placeholder="Search this guide..." aria-label="Search documentation">
+      <span class="shortcut">Press <span class="mono">/</span> to search</span>
+      <nav id="nav">
+        <a href="#overview">01 Overview</a><a href="#flow">02 Runtime flow</a><a href="#lanes">03 Source lanes</a>
+        <a href="#queue">04 Protected queue</a><a href="#storage">05 Storage</a><a href="#cli">06 Operator CLI</a>
+        <a href="#editorial">07 Editorial safety</a><a href="#verify">08 Verification</a><a href="#limits">09 Limitations</a>
+      </nav>
+      <div class="side-actions"><button id="theme">Toggle theme</button><button id="expand">Expand all</button></div>
+      <span id="status" class="shortcut" aria-live="polite"></span>
+    </aside>
+    <main>
+      <header class="hero">
+        <div>
+          <div class="kicker">Local public-signal intelligence desk / Windows</div>
+          <h1>Signals in.<br>Evidence kept.<br>Judgment out.</h1>
+          <p class="lede">X Distribution collects heterogeneous AI and technology signals, preserves source evidence, builds a protected active queue, and prepares manual editorial work without automated posting.</p>
+          <div class="stats">
+            <div class="stat"><b>11</b><span>source lanes</span></div><div class="stat"><b>1</b><span>protected queue seam</span></div>
+            <div class="stat"><b>0</b><span>auto-post routes</span></div><div class="stat"><b>2</b><span>contract suites</span></div>
+          </div>
+        </div>
+        <aside class="hero-note"><strong>Control room, not content mill.</strong>The architecture separates discovery, evidence, queue state, reports, verification, and manual drafting. That separation is the core safety property.</aside>
+      </header>
+
+      <section id="overview" data-search="overview purpose intelligence desk architecture">
+        <div class="section-head"><div><div class="eyebrow">01 / system identity</div><h2>What this repo is</h2></div><span class="badge">canonical</span></div>
+        <p>X Distribution is a local AI and technology intelligence desk. Its purpose is to turn a wide public source landscape into a reviewable editorial queue while preserving the evidence needed to understand where each signal came from.</p>
+        <div class="grid-3">
+          <article class="card"><span class="badge signal">Collect</span><h3>Broad discovery</h3><p>Independent source lanes gather official, social, artifact, market, startup, science, and developer signals.</p></article>
+          <article class="card"><span class="badge">Preserve</span><h3>Evidence first</h3><p>Collector outputs remain visible. Reports are derived views. Protected state is not casually overwritten.</p></article>
+          <article class="card"><span class="badge orange">Prepare</span><h3>Manual editorial work</h3><p>Verified-only drafting packets support a human workflow. Nothing publishes automatically.</p></article>
+        </div>
+      </section>
+
+      <section id="flow" data-search="runtime flow source registry collection queue reports verification drafting">
+        <div class="section-head"><div><div class="eyebrow">02 / runtime flow</div><h2>Five layers, one direction</h2></div><span class="badge signal">deep modules</span></div>
+        <div class="flow">
+          <div class="flow-card"><small>Layer A</small><b>Configuration</b><small><span class="mono">config/*.json</span><br>Source lists, lane policy, runtime paths.</small></div>
+          <div class="flow-card"><small>Layer B</small><b>Collection</b><small><span class="mono">phase1_collect.py</span><br>Parallel lane orchestration.</small></div>
+          <div class="flow-card"><small>Layer C</small><b>Evidence</b><small><span class="mono">data/*.json</span><br>Source-specific collector outputs.</small></div>
+          <div class="flow-card"><small>Layer D</small><b>Protected queue</b><small><span class="mono">intelligence_queue.py</span><br>Atomic shared state.</small></div>
+          <div class="flow-card"><small>Layer E</small><b>Views + judgment</b><small>Reports, verification, manual drafting packets.</small></div>
+        </div>
+        <h3>Architecture map</h3>
+        <svg class="lane-map" viewBox="0 0 1040 390" role="img" aria-label="X Distribution architecture diagram">
+          <rect class="acid" x="24" y="150" width="160" height="84" rx="10"/><text x="42" y="180">CONFIGURATION</text><text class="muted" x="42" y="202">config/*.json</text>
+          <rect class="signal" x="240" y="46" width="190" height="76" rx="10"/><text x="258" y="76">SOURCE REGISTRY</text><text class="muted" x="258" y="98">source_registry.py</text>
+          <rect class="signal" x="240" y="255" width="190" height="76" rx="10"/><text x="258" y="285">PINNED ROUTES</text><text class="muted" x="258" y="307">source_clis.py</text>
+          <rect class="orange" x="492" y="150" width="190" height="84" rx="10"/><text x="510" y="180">COLLECTION</text><text class="muted" x="510" y="202">phase1_collect.py</text>
+          <rect class="signal" x="744" y="48" width="260" height="76" rx="10"/><text x="762" y="78">COLLECTOR OUTPUTS</text><text class="muted" x="762" y="100">source-specific evidence JSON</text>
+          <rect class="acid" x="744" y="157" width="260" height="76" rx="10"/><text x="762" y="187">PROTECTED QUEUE SEAM</text><text class="muted" x="762" y="209">intelligence_queue.py</text>
+          <rect class="signal" x="744" y="267" width="260" height="76" rx="10"/><text x="762" y="297">REPORTS + EDITORIAL</text><text class="muted" x="762" y="319">derived views and manual packets</text>
+          <path class="line" d="M184 174 L240 94"/><path class="line" d="M184 210 L240 292"/><path class="line" d="M430 84 L492 174"/><path class="line" d="M430 292 L492 210"/>
+          <path class="line" d="M682 174 L744 88"/><path class="line" d="M874 124 L874 157"/><path class="line" d="M874 233 L874 267"/>
+        </svg>
+      </section>
+
+      <section id="lanes" data-search="lanes x youtube reddit hacker news finance startup openrouter github hugging face arxiv science sentiment rss">
+        <div class="section-head"><div><div class="eyebrow">03 / source landscape</div><h2>Independent evidence lanes</h2></div><span class="badge">11 lanes</span></div>
+        <table><thead><tr><th>Lane</th><th>Purpose</th><th>Important outputs</th></tr></thead><tbody>
+          <tr><td>X</td><td>Watched timelines and home-feed signals through the pinned local XCLI.</td><td><code>x_raw_standalone.json</code>, <code>x_radar_standalone.json</code></td></tr>
+          <tr><td>Official + regional RSS</td><td>Company announcements, sitemaps, TLDR, China, India, Southeast Asia, and emerging-market sources.</td><td><code>corporate_announcements.json</code></td></tr>
+          <tr><td>YouTube</td><td>Priority-aware recent-video discovery and transcript queue through the pinned transcript route.</td><td><code>new_videos_queue.json</code>, <code>transcripts/</code></td></tr>
+          <tr><td>Community</td><td>Reddit MCP probe with RSS fallback and Hacker News discussion evidence.</td><td><code>reddit_raw_standalone.json</code>, <code>hn_raw_standalone.json</code></td></tr>
+          <tr><td>Artifacts + research</td><td>GitHub organizations, releases, Hugging Face model artifacts, and arXiv papers.</td><td><code>github_discoveries.json</code>, <code>hf_discoveries.json</code>, <code>arxiv_raw_standalone.json</code></td></tr>
+          <tr><td>Finance</td><td>AI-linked markets, macro, newsletters, and SEC surfaces.</td><td><code>finance_signals.json</code></td></tr>
+          <tr><td>Startup funding</td><td>Funding rounds, investors, and product launches.</td><td><code>startup_funding_signals.json</code></td></tr>
+          <tr><td>Model market</td><td>OpenRouter model listings, pricing, capability, and tool-calling radar.</td><td><code>model_market_signals.json</code></td></tr>
+          <tr><td>Startup collections</td><td>Directory-style and fallback missed-startup discovery.</td><td><code>startup_collections_signals.json</code></td></tr>
+          <tr><td>Science</td><td>Bio, science, and commercial deep-tech breakthroughs.</td><td><code>science_breakthrough_signals.json</code></td></tr>
+          <tr><td>Developer sentiment</td><td>Provider status, outages, latency, pricing, and adoption pain.</td><td><code>developer_sentiment_signals.json</code></td></tr>
+        </tbody></table>
+      </section>
+
+      <section id="queue" data-search="protected queue intelligence_queue atomic url canonical dedupe provenance metadata recency legacy">
+        <div class="section-head"><div><div class="eyebrow">04 / protected state</div><h2>The active queue seam</h2></div><span class="badge red">high value</span></div>
+        <p><code>scripts/intelligence_queue.py</code> is the authoritative module for <code>data/news_queue.json</code>. Queue behavior now has locality: URL identity, historical shape handling, duplicate provenance, recent-item filtering, metadata, and atomic persistence live behind one interface.</p>
+        <div class="grid-2">
+          <article class="card"><h3>Why atomic writes matter</h3><p>Canonical writers persist a complete temporary JSON file and replace the destination only after flushing it. Interrupted writes preserve the prior queue.</p></article>
+          <article class="card"><h3>Why URL identity matters</h3><p>Collectors use different URL fields. The queue seam canonicalizes host, path, query, and fragments consistently before deduplicating.</p></article>
+        </div>
+        <details open><summary>Queue document contract</summary><pre>{
+  "metadata": {
+    "description": "Active intelligence queue aggregated from configured source registry outputs",
+    "max_items_kept": 1000,
+    "dedupe": "canonical_url"
+  },
+  "last_updated": "ISO timestamp",
+  "total_items": 0,
+  "items": []
+}</pre></details>
+        <details><summary>Canonical writers routed through the seam</summary><p><code>phase1_collect.py</code>, <code>queue_maintenance.py</code>, <code>aggregate_deep_discovery.py</code>, <code>aggregate_news.py</code>, <code>final_hybrid_aggregator.py</code>, <code>flash_hunt.py</code>, and <code>merge_breadth.py</code>.</p></details>
+      </section>
+
+      <section id="storage" data-search="storage protected state raw normalized verified content cache ledger archive cleanup history transcripts">
+        <div class="section-head"><div><div class="eyebrow">05 / storage discipline</div><h2>Evidence is not scratch</h2></div><span class="badge orange">preserve</span></div>
+        <table><thead><tr><th>Class</th><th>Meaning</th><th>Rule</th></tr></thead><tbody>
+          <tr><td>Canonical data</td><td>Current source of truth, including the active queue.</td><td>Do not delete.</td></tr>
+          <tr><td>Raw collector output</td><td>Latest source-specific evidence.</td><td>Preserve or archive after replacement.</td></tr>
+          <tr><td>Cache + ledger</td><td>Dedupe, timestamp, and verification memory.</td><td>Preserve unless intentionally resetting state.</td></tr>
+          <tr><td>Generated scratch</td><td>Temporary diagnostics and old generated artifacts.</td><td>Archive first.</td></tr>
+        </tbody></table>
+        <div class="callout warning"><strong>Archive policy:</strong> use <code>scripts/archive_stale_files.py</code>. Review the dry-run manifest before applying moves. Preserve <code>system-snapshot/</code>.</div>
+      </section>
+
+      <section id="cli" data-search="operator cli routes validate collect normalize storage check verify generate posts cleanup commands powershell">
+        <div class="section-head"><div><div class="eyebrow">06 / operator interface</div><h2>Commands with intent</h2></div><span class="badge signal">copy-ready</span></div>
+        <div class="command"><button data-copy="health">Copy</button><pre id="health">$py = "C:\Users\Manit\AppData\Local\Programs\Python\Python311\python.exe"
+&amp; $py scripts\x_distribution.py routes
+&amp; $py scripts\x_distribution.py validate
+&amp; $py scripts\x_distribution.py collect --verify-only</pre></div>
+        <div class="command"><button data-copy="collect">Copy</button><pre id="collect">$py = "C:\Users\Manit\AppData\Local\Programs\Python\Python311\python.exe"
+&amp; $py scripts\x_distribution.py collect
+&amp; $py scripts\x_distribution.py normalize
+&amp; $py scripts\build_intelligence_report.py</pre></div>
+        <details><summary>Command reference</summary>
+          <table><thead><tr><th>Command</th><th>Behavior</th><th>Protected-state impact</th></tr></thead><tbody>
+            <tr><td><code>routes</code></td><td>Check pinned XCLI and transcript paths.</td><td>Read-only</td></tr>
+            <tr><td><code>validate</code></td><td>Validate critical JSON schemas.</td><td>Read-only</td></tr>
+            <tr><td><code>collect --verify-only</code></td><td>Print configured collectors and outputs.</td><td>Harness evidence only</td></tr>
+            <tr><td><code>collect</code></td><td>Run full Phase 1 collection.</td><td>Atomic queue replacement</td></tr>
+            <tr><td><code>normalize</code></td><td>Canonical URL dedupe and queue cap.</td><td>Atomic queue replacement</td></tr>
+            <tr><td><code>generate-posts</code></td><td>Prepare verified-only empty drafting packets.</td><td>Writes approved-post packet file</td></tr>
+            <tr><td><code>cleanup --apply</code></td><td>Archive configured stale candidates.</td><td>Moves reviewed stale files</td></tr>
+          </tbody></table>
+        </details>
+      </section>
+
+      <section id="editorial" data-search="editorial safety verified likely true manual drafting packet publish auto post generated codegen process news">
+        <div class="section-head"><div><div class="eyebrow">07 / editorial safety</div><h2>Discovery is not permission to publish</h2></div><span class="badge red">manual only</span></div>
+        <p>The active queue contains signals, not publishable truth. The editorial route now prepares packets only when a queue item carries <code>VERIFIED</code> or <code>LIKELY_TRUE</code>. Draft fields remain empty for human judgment.</p>
+        <div class="grid-2">
+          <article class="card"><h3>Reachable safe path</h3><p><code>x_distribution.py generate-posts</code> calls <code>generated_codegen.py</code>, which emits verified-only manual packets.</p></article>
+          <article class="card"><h3>Disabled unsafe path</h3><p><code>process_news.py</code> fails closed because its historical prototype embedded example stories and could replace protected queue state.</p></article>
+        </div>
+      </section>
+
+      <section id="verify" data-search="verification tests compile schema routes contracts make check review">
+        <div class="section-head"><div><div class="eyebrow">08 / verification surface</div><h2>Test through interfaces</h2></div><span class="badge">repeatable</span></div>
+        <table><thead><tr><th>Check</th><th>What it proves</th></tr></thead><tbody>
+          <tr><td><code>test_intelligence_queue.py</code></td><td>URL identity, provenance merge, historical reads, merge preservation, and recency filtering.</td></tr>
+          <tr><td><code>test_post_generation.py</code></td><td>Verified-only editorial eligibility and empty manual drafts.</td></tr>
+          <tr><td><code>validate_schemas.py</code></td><td>Critical JSON config and state shape checks.</td></tr>
+          <tr><td><code>source_clis.py</code></td><td>Pinned local X and transcript routes are executable.</td></tr>
+          <tr><td><code>x_distribution.py collect --verify-only</code></td><td>The registry exposes configured collectors and outputs.</td></tr>
+          <tr><td><code>make check</code></td><td>Core compile, contract, schema, and route checks.</td></tr>
+        </tbody></table>
+      </section>
+
+      <section id="limits" data-search="limitations next architecture priorities legacy compatibility migration health clustering verified claims">
+        <div class="section-head"><div><div class="eyebrow">09 / honest edges</div><h2>What remains unfinished</h2></div><span class="badge orange">next</span></div>
+        <details open><summary>Current limitations</summary><ol>
+          <li>Raw, normalized, and generated artifacts still coexist under <code>data/</code>.</li><li>Full collection is network-dependent and can be slow.</li>
+          <li>XCLI remains browser-backed and internally serialized.</li><li>Reddit direct JSON can return <code>403</code>; RSS fallback remains practical.</li>
+          <li>Report classification is heuristic.</li><li>Verification documentation is deeper than current automation.</li>
+        </ol></details>
+        <details><summary>Next architecture priorities</summary><ol>
+          <li>Dual-write migration shims for <code>data/raw/</code>, <code>data/normalized/</code>, <code>data/verified/</code>, and <code>data/content/</code>.</li>
+          <li>Historical source-health trends.</li><li>Cross-source story clustering with evidence confidence.</li>
+          <li>A durable verified-claims ledger.</li><li>Report and CLI integration tests.</li>
+        </ol></details>
+      </section>
+
+      <footer>Generated for the local X Distribution workspace on 2026-05-31. Canonical Markdown: <a href="ARCHITECTURE.md">docs/ARCHITECTURE.md</a>. Root guide: <a href="../README.md">README.md</a>.</footer>
+    </main>
+  </div>
+  <script>
+    const root=document.documentElement, search=document.querySelector('#search'), sections=[...document.querySelectorAll('main section')];
+    document.querySelector('#theme').addEventListener('click',()=>root.dataset.theme=root.dataset.theme==='dark'?'light':'dark');
+    document.querySelector('#expand').addEventListener('click',e=>{const all=[...document.querySelectorAll('details')],open=all.some(x=>!x.open);all.forEach(x=>x.open=open);e.currentTarget.textContent=open?'Collapse all':'Expand all';});
+    const status=document.querySelector('#status');
+    document.querySelectorAll('[data-copy]').forEach(btn=>btn.addEventListener('click',async()=>{const text=document.querySelector('#'+btn.dataset.copy).innerText,old=btn.textContent;try{await navigator.clipboard.writeText(text);btn.textContent='Copied';status.textContent='Command copied to clipboard.';}catch{btn.textContent='Select command';status.textContent='Clipboard access is unavailable for this local file. Select the command block manually.';}setTimeout(()=>btn.textContent=old,1500);}));
+    search.addEventListener('input',()=>{const q=search.value.trim().toLowerCase();sections.forEach(s=>s.classList.toggle('hidden-section',q&&!s.innerText.toLowerCase().includes(q)&&!s.dataset.search.includes(q)));});
+    document.addEventListener('keydown',e=>{if(e.key==='/'&&document.activeElement!==search){e.preventDefault();search.focus();}});
+    const links=[...document.querySelectorAll('nav a')], byId=new Map(links.map(a=>[a.getAttribute('href').slice(1),a]));
+    const observer=new IntersectionObserver(entries=>entries.forEach(entry=>{if(entry.isIntersecting){links.forEach(a=>a.classList.remove('active'));byId.get(entry.target.id)?.classList.add('active');}}),{rootMargin:'-20% 0px -70%'});
+    sections.forEach(s=>observer.observe(s));
+  </script>
+</body>
+</html>

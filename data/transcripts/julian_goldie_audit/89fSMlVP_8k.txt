@@ -1,0 +1,63 @@
+00:00:00
+anti-gravity 2.0 update, the game, just got 10 times better? What if the coding tool you rely on every day just got killed overnight? What if Google quietly replaced it with something 10 times better? And what if you have a hard deadline to switch before everything stops working? Most people have no clue this even happened. By the end of this video, you'll know exactly what changed and what to do next. Hey, I'm the digital avatar of Julian Goldie. Help people actually use AI tools without
+
+00:00:22
+wasting weeks figuring it out. And what Google just dropped is wild. They flipped the entire script on how we work with AI agents. Stick with me. going to break down what got killed, what got launched, the new features that feel like science fiction, and one tip near the end most people will miss. So, here's what happened. May 19th, 2026 at Google IO, Google announced two big things. First, Gemini CLI is officially being shut down. Second, they replaced it with anti-gravity 2.0. And this isn't
+
+00:00:47
+just a name change. The whole thing got rebuilt from the ground up. If you've ever used Gemini CLI in your terminal, this matters to you because on June 18th, 2026, Gemini CLI stops working. On that date, Gemini CLI and the Gemini Code Assist IDE extensions will stop serving requests for Google AI Pro users, Google AI Ultra users, and free individual users. If you fall into any of those buckets, your tool is going dark. The only people who get a pass are enterprise customers. If your company
+
+00:01:13
+pays for a Gemini Code Assist, standard, or enterprise license, you're fine. For everyone else, you need to migrate before June 18th. Mark that deadline down. Now, here's the exciting part. Placement isn't worse. So much better, it almost feels unfair. Original Anti-gravity launched in November 2025 as a single app, basically an AI powered code editor. Anti-gravity 2.0 is a completely different beast. It's no longer one app. It's a whole platform. You get a new standalone desktop app, a
+
+00:01:38
+new command line tool called anti-gravity CLI, an SDK for building custom agents, managed agents inside the Gemini API, and an enterprise version. Five services instead of one. Desktop app is the headline piece. It's built agent first. Instead of you writing code and asking AI for help, you tell agents what to do and they go off and do it. You become the manager. The agents do the work. Feature number one is dynamic sub aents. You give the main agent a goal like build me this whole app. The
+
+00:02:02
+main agent breaks it into smaller pieces and spawn specialized sub aents for each piece. One does the front end. Another handles the back end. Another runs tests. They all run in parallel and report back. Google tested this by asking anti-gravity 2.0 to build a brand new operating system from scratch. Automatically spun up 93 sub aents and processed 2.6 6 billion tokens all on one project. This could be used to build out an entire content engine for the AI profit boardroom. You could feed it topic briefs and let agents handle
+
+00:02:28
+research, draft writing, and formatting all running in parallel in the background. You'd set the parameters once and then the agents handle the production pipeline while you focus on strategy inside the AI profit boardroom. That kind of output at that speed is what pulls the right audience into the AI profit boardroom at scale. Feature number two is scheduled tasks. This one is huge if you hate doing the same thing every morning. Anti-gravity 2.0 0 has built-in chron style scheduling. You can
+
+00:02:51
+tell an agent to run a task every day at a certain time, every hour, every Monday. You use a slash command called / schedule and the agent keeps running on the schedule you set. The agent becomes a digital employee that actually shows up to work. Feature number three is the new project structure. The old anti-gravity was repository based. Everything was tied to one code folder. The new version is project- based. Project can span multiple folders, multiple tools, multiple tasks. It has its own permission scopes. So you can
+
+00:03:16
+have an agent that touches your front-end folder and your backend folder and your docs folder all at once with clear rules about what it can and can't do. This could be used to map out a full member on boarding system for the AI profit boardroom. You could spin up a project with separate folders for welcome content, walkthrough prompts, and road map templates and let the agents handle each piece on a schedule. New AI profit boardroom members would land inside and instantly know what to do next without you having to set it up
+
+00:03:38
+manually each time. Feature number four is the new anti-gravity CLI. This replaces Gemini CLI and it's a serious upgrade. The old one was Typescript. The new one is built in Go, which makes it much faster in your terminal. Supports asynchronous workflows. Kick off a big task, it runs in the background, and you don't get locked out. It also shares the same engine as the desktop app. Any improvement to one shows up in the other automatically. Feature number five is voice input. There's a microphone icon
+
+00:04:02
+next to the text input boxes. It's not just recording audio. Does live transcription as you talk. You watch your words appear in real time. That makes it way faster to get a complex prompt out of your head and into the agent. Feature number six is slashcomands /go tells it to finish the whole job without bugging you / grillme tells the agent to ask you clarifying questions before it starts slash schedule sets up automation / browser tells the agent is allowed to use the browser small commands way more control.
+
+00:04:27
+And then there's the model behind all of this. It's called Gemini 3.5 Flash. Google launched it the same day. Runs roughly four times faster than other top tier Frontier models. Scored 76.2% on Terminal Bench 2.1, a benchmark for real coding work in a terminal. and it actually outperforms the bigger Gemini 3.1 Pro on coding and agent tasks even though it's the faster, cheaper option. Plus a 1 million token context window for massive amounts of code or documents. Now, real quick, let me talk
+
+00:04:51
+about something a lot of people watching this are probably thinking. You're seeing all this and wondering, how am I supposed to actually keep up? Google just changed everything in one day and every other AI company is doing the same thing every other week. This is exactly why we built the AI profit boardroom. Inside, we run live coaching calls where you can ask questions about your exact setup, including the new anti-gravity 2.0 O and anti-gravity CLI migration. Building out fresh walkthroughs on these
+
+00:05:13
+new tools as they drop. Step-by-step road maps inside the AI profit boardroom that show you how to take new tools like this and plug them into a real workflow without wasting weeks experimenting. And we have a prompt library that members can pull from instantly. So when something like this launches, you don't sit there staring at the screen wondering where to start. You log into the AI profit boardroom, find the walkthrough, and you're up and running the same day. Okay, back to the script.
+
+00:05:34
+Let me talk about who actually needs this. If you're a developer who uses Gemini CLI right now, you need to migrate. June 18th is your cutoff. Grab the new anti-gravity CLI. It's already available. Just install it and switch over. Google has migration docs on their developer site that walk you through it. If you've been using anti-gravity 1 as your code editor, here's what you need to know. Google pushed an automatic update on May 19th that caused a lot of confusion. A bunch of developers opened
+
+00:05:57
+their machines and found their editor and terminal tools missing. Google heard the feedback and patched it. There's now a clear open IDE button in the new dashboard. If you still want the classic editor, you can install anti-gravity IDE separately as a different download. You can have both side by side. If you're new to all of this, just start with anti-gravity 2.0. Download it from the official anti-gravity site. Try the /go command first. Give it a small task and watch what happens. Now, here are some
+
+00:06:21
+tips before I wrap up. Let's tip. It's a / grill me command when you're doing something complicated. Most people throw a prompt at the agent and get a halfbaked result. / grillme forces it to interview you first. By the time it starts working, it actually understands what you want. This alone will save you hours of fixing bad outputs. Second tip, try to use the old anti-gravity IDE and the new anti-gravity 2.0 the exact same way. The IDE is for hands-on coding with AI help. The 2.0 app is for handing off
+
+00:06:46
+bigger jobs to agents and letting them run in parallel. Use both, but for different things. Third tip, set up at least one scheduled task in the first week. Pick something boring you do every day. Let the agent run it on a schedule. Once you see it work once, you'll start thinking of 10 more things to automate. Fourth tip, if you're on an enterprise plan, you don't have to migrate right away. Gemini CL, I keeps working for you. Still recommend trying anti-gravity CLI. Now, the new features only land in
+
+00:07:09
+the new tool. And here's the tip most people will miss. The dynamic sub aent system isn't just for coding. You can use it for anything that splits into parallel tasks. Search projects, content production to analysis. Anytime you have a job that can be broken into pieces, this thing can chew through it way faster than any single agent could. Start thinking beyond just code. If you want the full process, SOPs, and 100 plus AI use cases like this one, join the AI success lab. Links in the comments and description. You'll get all
+
+00:07:35
+the video notes from there, plus access to our community of 58,000 members who are crushing it with AI. And if you want to actually use anti-gravity 2.0 properly without spending a week figuring it out, come join us inside the AI Profit Boardroom. You're about to install a brand new tool, hit a migration deadline, and figure out sub agents, schedule tasks, and slash commands all at once. That's a lot to take on alone. Profit Boardroom. The live coaching calls, walkthroughs, and road maps are all built around exactly
+
+00:07:58
+this kind of launch. So, you skip the trial and error and just copy what works. Go to aripit boardroom.com and I'll see you
+

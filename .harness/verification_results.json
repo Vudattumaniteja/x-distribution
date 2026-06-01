@@ -1,0 +1,753 @@
+{
+  "runs": [
+    {
+      "name": "collect-verify-only",
+      "timestamp": "2026-05-28T22:06:36.523669+00:00",
+      "status": "passed",
+      "live_source_scripts": [
+        "github_monitor_standalone.py",
+        "github_releases_discovery.py",
+        "arxiv_sentinel_standalone.py"
+      ],
+      "live_source_outputs": [
+        "data/github_discoveries.json",
+        "data/release_discoveries.json",
+        "data/arxiv_raw_standalone.json"
+      ],
+      "collector_outputs": [
+        "data/sitemap_discoveries.json",
+        "data/hf_discoveries.json",
+        "data/github_discoveries.json",
+        "data/release_discoveries.json",
+        "data/corporate_announcements.json",
+        "data/hn_raw_standalone.json",
+        "data/arxiv_raw_standalone.json",
+        "data/x_radar_standalone.json",
+        "data/reddit_raw_standalone.json",
+        "data/new_videos_queue.json"
+      ]
+    },
+    {
+      "name": "verify",
+      "timestamp": "2026-05-28T22:06:45.262295+00:00",
+      "status": "passed",
+      "checks": {
+        "routes": 0,
+        "schemas": 0
+      }
+    },
+    {
+      "name": "collect-verify-only",
+      "timestamp": "2026-05-28T23:30:15.768896+00:00",
+      "status": "passed",
+      "live_source_scripts": [
+        "reddit_mcp_buddy_collect.py",
+        "github_monitor_standalone.py",
+        "github_releases_discovery.py",
+        "arxiv_sentinel_standalone.py"
+      ],
+      "live_source_outputs": [
+        "data/reddit_raw_standalone.json",
+        "data/github_discoveries.json",
+        "data/release_discoveries.json",
+        "data/arxiv_raw_standalone.json"
+      ],
+      "collector_outputs": [
+        "data/sitemap_discoveries.json",
+        "data/hf_discoveries.json",
+        "data/github_discoveries.json",
+        "data/release_discoveries.json",
+        "data/corporate_announcements.json",
+        "data/hn_raw_standalone.json",
+        "data/arxiv_raw_standalone.json",
+        "data/x_radar_standalone.json",
+        "data/reddit_raw_standalone.json",
+        "data/new_videos_queue.json"
+      ]
+    },
+    {
+      "name": "verify",
+      "timestamp": "2026-05-28T23:30:16.269153+00:00",
+      "status": "passed",
+      "checks": {
+        "routes": 0,
+        "schemas": 0
+      }
+    },
+    {
+      "name": "verify",
+      "timestamp": "2026-05-28T23:33:58.807887+00:00",
+      "status": "passed",
+      "checks": {
+        "routes": 0,
+        "schemas": 0
+      }
+    },
+    {
+      "name": "collect-verify-only",
+      "timestamp": "2026-05-29T00:11:15.451461+00:00",
+      "status": "passed",
+      "live_source_scripts": [
+        "reddit_mcp_buddy_collect.py",
+        "finance_market_collector.py",
+        "github_monitor_standalone.py",
+        "github_releases_discovery.py",
+        "arxiv_sentinel_standalone.py"
+      ],
+      "live_source_outputs": [
+        "data/reddit_raw_standalone.json",
+        "data/finance_raw_standalone.json",
+        "data/finance_signals.json",
+        "data/github_discoveries.json",
+        "data/release_discoveries.json",
+        "data/arxiv_raw_standalone.json"
+      ],
+      "collector_outputs": [
+        "data/sitemap_discoveries.json",
+        "data/hf_discoveries.json",
+        "data/github_discoveries.json",
+        "data/release_discoveries.json",
+        "data/corporate_announcements.json",
+        "data/hn_raw_standalone.json",
+        "data/arxiv_raw_standalone.json",
+        "data/finance_raw_standalone.json",
+        "data/finance_signals.json",
+        "data/x_radar_standalone.json",
+        "data/reddit_raw_standalone.json",
+        "data/new_videos_queue.json"
+      ]
+    },
+    {
+      "name": "collect-verify-only",
+      "timestamp": "2026-05-29T00:13:15.135895+00:00",
+      "status": "passed",
+      "live_source_scripts": [
+        "reddit_mcp_buddy_collect.py",
+        "finance_market_collector.py",
+        "github_monitor_standalone.py",
+        "github_releases_discovery.py",
+        "arxiv_sentinel_standalone.py"
+      ],
+      "live_source_outputs": [
+        "data/reddit_raw_standalone.json",
+        "data/finance_raw_standalone.json",
+        "data/finance_signals.json",
+        "data/github_discoveries.json",
+        "data/release_discoveries.json",
+        "data/arxiv_raw_standalone.json"
+      ],
+      "collector_outputs": [
+        "data/sitemap_discoveries.json",
+        "data/hf_discoveries.json",
+        "data/github_discoveries.json",
+        "data/release_discoveries.json",
+        "data/corporate_announcements.json",
+        "data/hn_raw_standalone.json",
+        "data/arxiv_raw_standalone.json",
+        "data/finance_raw_standalone.json",
+        "data/finance_signals.json",
+        "data/x_radar_standalone.json",
+        "data/reddit_raw_standalone.json",
+        "data/new_videos_queue.json"
+      ]
+    },
+    {
+      "name": "verify",
+      "timestamp": "2026-05-29T00:13:15.593139+00:00",
+      "status": "passed",
+      "checks": {
+        "routes": 0,
+        "schemas": 0
+      }
+    },
+    {
+      "name": "collect-verify-only",
+      "timestamp": "2026-05-29T00:23:30.966083+00:00",
+      "status": "passed",
+      "live_source_scripts": [
+        "reddit_mcp_buddy_collect.py",
+        "finance_market_collector.py",
+        "startup_funding_collector.py",
+        "github_monitor_standalone.py",
+        "github_releases_discovery.py",
+        "arxiv_sentinel_standalone.py"
+      ],
+      "live_source_outputs": [
+        "data/reddit_raw_standalone.json",
+        "data/finance_raw_standalone.json",
+        "data/finance_signals.json",
+        "data/startup_funding_raw.json",
+        "data/startup_funding_signals.json",
+        "data/github_discoveries.json",
+        "data/release_discoveries.json",
+        "data/arxiv_raw_standalone.json"
+      ],
+      "collector_outputs": [
+        "data/sitemap_discoveries.json",
+        "data/hf_discoveries.json",
+        "data/github_discoveries.json",
+        "data/release_discoveries.json",
+        "data/corporate_announcements.json",
+        "data/hn_raw_standalone.json",
+        "data/arxiv_raw_standalone.json",
+        "data/finance_raw_standalone.json",
+        "data/finance_signals.json",
+        "data/startup_funding_raw.json",
+        "data/startup_funding_signals.json",
+        "data/x_radar_standalone.json",
+        "data/reddit_raw_standalone.json",
+        "data/new_videos_queue.json"
+      ]
+    },
+    {
+      "name": "verify",
+      "timestamp": "2026-05-29T00:23:31.421026+00:00",
+      "status": "passed",
+      "checks": {
+        "routes": 0,
+        "schemas": 0
+      }
+    },
+    {
+      "name": "collect-verify-only",
+      "timestamp": "2026-05-29T00:24:32.873896+00:00",
+      "status": "passed",
+      "live_source_scripts": [
+        "reddit_mcp_buddy_collect.py",
+        "finance_market_collector.py",
+        "startup_funding_collector.py",
+        "github_monitor_standalone.py",
+        "github_releases_discovery.py",
+        "arxiv_sentinel_standalone.py"
+      ],
+      "live_source_outputs": [
+        "data/reddit_raw_standalone.json",
+        "data/finance_raw_standalone.json",
+        "data/finance_signals.json",
+        "data/startup_funding_raw.json",
+        "data/startup_funding_signals.json",
+        "data/github_discoveries.json",
+        "data/release_discoveries.json",
+        "data/arxiv_raw_standalone.json"
+      ],
+      "collector_outputs": [
+        "data/sitemap_discoveries.json",
+        "data/hf_discoveries.json",
+        "data/github_discoveries.json",
+        "data/release_discoveries.json",
+        "data/corporate_announcements.json",
+        "data/hn_raw_standalone.json",
+        "data/arxiv_raw_standalone.json",
+        "data/finance_raw_standalone.json",
+        "data/finance_signals.json",
+        "data/startup_funding_raw.json",
+        "data/startup_funding_signals.json",
+        "data/x_radar_standalone.json",
+        "data/reddit_raw_standalone.json",
+        "data/new_videos_queue.json"
+      ]
+    },
+    {
+      "name": "verify",
+      "timestamp": "2026-05-29T00:24:33.346396+00:00",
+      "status": "passed",
+      "checks": {
+        "routes": 0,
+        "schemas": 0
+      }
+    },
+    {
+      "name": "collect-verify-only",
+      "timestamp": "2026-05-29T00:26:05.124901+00:00",
+      "status": "passed",
+      "live_source_scripts": [
+        "reddit_mcp_buddy_collect.py",
+        "finance_market_collector.py",
+        "startup_funding_collector.py",
+        "github_monitor_standalone.py",
+        "github_releases_discovery.py",
+        "arxiv_sentinel_standalone.py"
+      ],
+      "live_source_outputs": [
+        "data/reddit_raw_standalone.json",
+        "data/finance_raw_standalone.json",
+        "data/finance_signals.json",
+        "data/startup_funding_raw.json",
+        "data/startup_funding_signals.json",
+        "data/github_discoveries.json",
+        "data/release_discoveries.json",
+        "data/arxiv_raw_standalone.json"
+      ],
+      "collector_outputs": [
+        "data/sitemap_discoveries.json",
+        "data/hf_discoveries.json",
+        "data/github_discoveries.json",
+        "data/release_discoveries.json",
+        "data/corporate_announcements.json",
+        "data/hn_raw_standalone.json",
+        "data/arxiv_raw_standalone.json",
+        "data/finance_raw_standalone.json",
+        "data/finance_signals.json",
+        "data/startup_funding_raw.json",
+        "data/startup_funding_signals.json",
+        "data/x_radar_standalone.json",
+        "data/reddit_raw_standalone.json",
+        "data/new_videos_queue.json"
+      ]
+    },
+    {
+      "name": "verify",
+      "timestamp": "2026-05-29T00:26:05.565419+00:00",
+      "status": "passed",
+      "checks": {
+        "routes": 0,
+        "schemas": 0
+      }
+    },
+    {
+      "name": "verify",
+      "timestamp": "2026-05-29T01:25:41.848572+00:00",
+      "status": "passed",
+      "checks": {
+        "routes": 0,
+        "schemas": 0
+      }
+    },
+    {
+      "name": "collect-verify-only",
+      "timestamp": "2026-05-29T07:28:23.013906+00:00",
+      "status": "passed",
+      "live_source_scripts": [
+        "reddit_mcp_buddy_collect.py",
+        "finance_market_collector.py",
+        "startup_funding_collector.py",
+        "github_monitor_standalone.py",
+        "github_releases_discovery.py",
+        "arxiv_sentinel_standalone.py"
+      ],
+      "live_source_outputs": [
+        "data/reddit_raw_standalone.json",
+        "data/finance_raw_standalone.json",
+        "data/finance_signals.json",
+        "data/startup_funding_raw.json",
+        "data/startup_funding_signals.json",
+        "data/github_discoveries.json",
+        "data/release_discoveries.json",
+        "data/arxiv_raw_standalone.json"
+      ],
+      "collector_outputs": [
+        "data/sitemap_discoveries.json",
+        "data/hf_discoveries.json",
+        "data/github_discoveries.json",
+        "data/release_discoveries.json",
+        "data/corporate_announcements.json",
+        "data/hn_raw_standalone.json",
+        "data/arxiv_raw_standalone.json",
+        "data/finance_raw_standalone.json",
+        "data/finance_signals.json",
+        "data/startup_funding_raw.json",
+        "data/startup_funding_signals.json",
+        "data/x_radar_standalone.json",
+        "data/reddit_raw_standalone.json",
+        "data/new_videos_queue.json"
+      ]
+    },
+    {
+      "name": "verify",
+      "timestamp": "2026-05-29T07:28:23.507126+00:00",
+      "status": "passed",
+      "checks": {
+        "routes": 0,
+        "schemas": 0
+      }
+    },
+    {
+      "name": "verify",
+      "timestamp": "2026-05-29T07:28:52.010958+00:00",
+      "status": "passed",
+      "checks": {
+        "routes": 0,
+        "schemas": 0
+      }
+    },
+    {
+      "name": "verify",
+      "timestamp": "2026-05-29T07:36:44.445437+00:00",
+      "status": "passed",
+      "checks": {
+        "routes": 0,
+        "schemas": 0
+      }
+    },
+    {
+      "name": "verify",
+      "timestamp": "2026-05-29T07:46:09.920341+00:00",
+      "status": "passed",
+      "checks": {
+        "routes": 0,
+        "schemas": 0
+      }
+    },
+    {
+      "name": "verify",
+      "timestamp": "2026-05-29T07:48:07.343853+00:00",
+      "status": "passed",
+      "checks": {
+        "routes": 0,
+        "schemas": 0
+      }
+    },
+    {
+      "name": "verify",
+      "timestamp": "2026-05-29T08:07:08.644449+00:00",
+      "status": "passed",
+      "checks": {
+        "routes": 0,
+        "schemas": 0
+      }
+    },
+    {
+      "name": "collect-verify-only",
+      "timestamp": "2026-05-29T08:22:37.850974+00:00",
+      "status": "passed",
+      "live_source_scripts": [
+        "reddit_mcp_buddy_collect.py",
+        "finance_market_collector.py",
+        "startup_funding_collector.py",
+        "github_monitor_standalone.py",
+        "github_releases_discovery.py",
+        "arxiv_sentinel_standalone.py",
+        "hf_tracker_standalone.py"
+      ],
+      "live_source_outputs": [
+        "data/reddit_raw_standalone.json",
+        "data/finance_raw_standalone.json",
+        "data/finance_signals.json",
+        "data/startup_funding_raw.json",
+        "data/startup_funding_signals.json",
+        "data/github_discoveries.json",
+        "data/release_discoveries.json",
+        "data/arxiv_raw_standalone.json",
+        "data/hf_discoveries.json"
+      ],
+      "collector_outputs": [
+        "data/sitemap_discoveries.json",
+        "data/hf_discoveries.json",
+        "data/github_discoveries.json",
+        "data/release_discoveries.json",
+        "data/corporate_announcements.json",
+        "data/hn_raw_standalone.json",
+        "data/arxiv_raw_standalone.json",
+        "data/finance_raw_standalone.json",
+        "data/finance_signals.json",
+        "data/startup_funding_raw.json",
+        "data/startup_funding_signals.json",
+        "data/x_radar_standalone.json",
+        "data/reddit_raw_standalone.json",
+        "data/new_videos_queue.json"
+      ]
+    },
+    {
+      "name": "verify",
+      "timestamp": "2026-05-29T08:25:05.534890+00:00",
+      "status": "passed",
+      "checks": {
+        "routes": 0,
+        "schemas": 0
+      }
+    },
+    {
+      "name": "collect-verify-only",
+      "timestamp": "2026-05-29T08:56:55.570349+00:00",
+      "status": "passed",
+      "live_source_scripts": [
+        "reddit_mcp_buddy_collect.py",
+        "finance_market_collector.py",
+        "startup_funding_collector.py",
+        "github_monitor_standalone.py",
+        "github_releases_discovery.py",
+        "arxiv_sentinel_standalone.py",
+        "hf_tracker_standalone.py",
+        "model_market_collector.py",
+        "startup_collections_collector.py",
+        "science_breakthrough_collector.py"
+      ],
+      "live_source_outputs": [
+        "data/reddit_raw_standalone.json",
+        "data/finance_raw_standalone.json",
+        "data/finance_signals.json",
+        "data/startup_funding_raw.json",
+        "data/startup_funding_signals.json",
+        "data/github_discoveries.json",
+        "data/release_discoveries.json",
+        "data/arxiv_raw_standalone.json",
+        "data/hf_discoveries.json",
+        "data/model_market_raw.json",
+        "data/model_market_signals.json",
+        "data/startup_collections_raw.json",
+        "data/startup_collections_signals.json",
+        "data/science_breakthrough_raw.json",
+        "data/science_breakthrough_signals.json"
+      ],
+      "collector_outputs": [
+        "data/sitemap_discoveries.json",
+        "data/hf_discoveries.json",
+        "data/github_discoveries.json",
+        "data/release_discoveries.json",
+        "data/corporate_announcements.json",
+        "data/hn_raw_standalone.json",
+        "data/arxiv_raw_standalone.json",
+        "data/finance_raw_standalone.json",
+        "data/finance_signals.json",
+        "data/startup_funding_raw.json",
+        "data/startup_funding_signals.json",
+        "data/x_radar_standalone.json",
+        "data/reddit_raw_standalone.json",
+        "data/new_videos_queue.json",
+        "data/model_market_raw.json",
+        "data/model_market_signals.json",
+        "data/startup_collections_raw.json",
+        "data/startup_collections_signals.json",
+        "data/science_breakthrough_raw.json",
+        "data/science_breakthrough_signals.json"
+      ]
+    },
+    {
+      "name": "collect-verify-only",
+      "timestamp": "2026-05-29T09:47:36.714755+00:00",
+      "status": "passed",
+      "live_source_scripts": [
+        "reddit_mcp_buddy_collect.py",
+        "finance_market_collector.py",
+        "startup_funding_collector.py",
+        "github_monitor_standalone.py",
+        "github_releases_discovery.py",
+        "arxiv_sentinel_standalone.py",
+        "hf_tracker_standalone.py",
+        "model_market_collector.py",
+        "startup_collections_collector.py",
+        "science_breakthrough_collector.py",
+        "developer_sentiment_collector.py"
+      ],
+      "live_source_outputs": [
+        "data/reddit_raw_standalone.json",
+        "data/finance_raw_standalone.json",
+        "data/finance_signals.json",
+        "data/startup_funding_raw.json",
+        "data/startup_funding_signals.json",
+        "data/github_discoveries.json",
+        "data/release_discoveries.json",
+        "data/arxiv_raw_standalone.json",
+        "data/hf_discoveries.json",
+        "data/model_market_raw.json",
+        "data/model_market_signals.json",
+        "data/startup_collections_raw.json",
+        "data/startup_collections_signals.json",
+        "data/science_breakthrough_raw.json",
+        "data/science_breakthrough_signals.json",
+        "data/developer_sentiment_raw.json",
+        "data/developer_sentiment_signals.json"
+      ],
+      "collector_outputs": [
+        "data/sitemap_discoveries.json",
+        "data/hf_discoveries.json",
+        "data/github_discoveries.json",
+        "data/release_discoveries.json",
+        "data/corporate_announcements.json",
+        "data/hn_raw_standalone.json",
+        "data/arxiv_raw_standalone.json",
+        "data/finance_raw_standalone.json",
+        "data/finance_signals.json",
+        "data/startup_funding_raw.json",
+        "data/startup_funding_signals.json",
+        "data/x_radar_standalone.json",
+        "data/reddit_raw_standalone.json",
+        "data/new_videos_queue.json",
+        "data/model_market_raw.json",
+        "data/model_market_signals.json",
+        "data/startup_collections_raw.json",
+        "data/startup_collections_signals.json",
+        "data/science_breakthrough_raw.json",
+        "data/science_breakthrough_signals.json",
+        "data/developer_sentiment_raw.json",
+        "data/developer_sentiment_signals.json"
+      ]
+    },
+    {
+      "name": "verify",
+      "timestamp": "2026-05-29T09:48:12.259746+00:00",
+      "status": "passed",
+      "checks": {
+        "routes": 0,
+        "schemas": 0
+      }
+    },
+    {
+      "name": "verify",
+      "timestamp": "2026-05-30T10:44:53.586957+00:00",
+      "status": "passed",
+      "checks": {
+        "routes": 0,
+        "schemas": 0
+      }
+    },
+    {
+      "name": "verify",
+      "timestamp": "2026-05-30T11:07:57.619017+00:00",
+      "status": "passed",
+      "checks": {
+        "routes": 0,
+        "schemas": 0
+      }
+    },
+    {
+      "name": "collect-verify-only",
+      "timestamp": "2026-05-31T14:59:25.614519+00:00",
+      "status": "passed",
+      "live_source_scripts": [
+        "reddit_mcp_buddy_collect.py",
+        "finance_market_collector.py",
+        "startup_funding_collector.py",
+        "github_monitor_standalone.py",
+        "github_releases_discovery.py",
+        "arxiv_sentinel_standalone.py",
+        "hf_tracker_standalone.py",
+        "model_market_collector.py",
+        "startup_collections_collector.py",
+        "science_breakthrough_collector.py",
+        "developer_sentiment_collector.py"
+      ],
+      "live_source_outputs": [
+        "data/reddit_raw_standalone.json",
+        "data/finance_raw_standalone.json",
+        "data/finance_signals.json",
+        "data/startup_funding_raw.json",
+        "data/startup_funding_signals.json",
+        "data/github_discoveries.json",
+        "data/release_discoveries.json",
+        "data/arxiv_raw_standalone.json",
+        "data/hf_discoveries.json",
+        "data/model_market_raw.json",
+        "data/model_market_signals.json",
+        "data/startup_collections_raw.json",
+        "data/startup_collections_signals.json",
+        "data/science_breakthrough_raw.json",
+        "data/science_breakthrough_signals.json",
+        "data/developer_sentiment_raw.json",
+        "data/developer_sentiment_signals.json"
+      ],
+      "collector_outputs": [
+        "data/sitemap_discoveries.json",
+        "data/hf_discoveries.json",
+        "data/github_discoveries.json",
+        "data/release_discoveries.json",
+        "data/corporate_announcements.json",
+        "data/hn_raw_standalone.json",
+        "data/arxiv_raw_standalone.json",
+        "data/finance_raw_standalone.json",
+        "data/finance_signals.json",
+        "data/startup_funding_raw.json",
+        "data/startup_funding_signals.json",
+        "data/x_radar_standalone.json",
+        "data/reddit_raw_standalone.json",
+        "data/new_videos_queue.json",
+        "data/model_market_raw.json",
+        "data/model_market_signals.json",
+        "data/startup_collections_raw.json",
+        "data/startup_collections_signals.json",
+        "data/science_breakthrough_raw.json",
+        "data/science_breakthrough_signals.json",
+        "data/developer_sentiment_raw.json",
+        "data/developer_sentiment_signals.json"
+      ]
+    },
+    {
+      "name": "verify",
+      "timestamp": "2026-05-31T15:07:38.157905+00:00",
+      "status": "passed",
+      "checks": {
+        "routes": 0,
+        "schemas": 0
+      }
+    },
+    {
+      "name": "verify",
+      "timestamp": "2026-05-31T15:09:29.866842+00:00",
+      "status": "passed",
+      "checks": {
+        "routes": 0,
+        "schemas": 0
+      }
+    },
+    {
+      "name": "collect-verify-only",
+      "timestamp": "2026-05-31T15:09:29.955176+00:00",
+      "status": "passed",
+      "live_source_scripts": [
+        "reddit_mcp_buddy_collect.py",
+        "finance_market_collector.py",
+        "startup_funding_collector.py",
+        "github_monitor_standalone.py",
+        "github_releases_discovery.py",
+        "arxiv_sentinel_standalone.py",
+        "hf_tracker_standalone.py",
+        "model_market_collector.py",
+        "startup_collections_collector.py",
+        "science_breakthrough_collector.py",
+        "developer_sentiment_collector.py"
+      ],
+      "live_source_outputs": [
+        "data/reddit_raw_standalone.json",
+        "data/finance_raw_standalone.json",
+        "data/finance_signals.json",
+        "data/startup_funding_raw.json",
+        "data/startup_funding_signals.json",
+        "data/github_discoveries.json",
+        "data/release_discoveries.json",
+        "data/arxiv_raw_standalone.json",
+        "data/hf_discoveries.json",
+        "data/model_market_raw.json",
+        "data/model_market_signals.json",
+        "data/startup_collections_raw.json",
+        "data/startup_collections_signals.json",
+        "data/science_breakthrough_raw.json",
+        "data/science_breakthrough_signals.json",
+        "data/developer_sentiment_raw.json",
+        "data/developer_sentiment_signals.json"
+      ],
+      "collector_outputs": [
+        "data/sitemap_discoveries.json",
+        "data/hf_discoveries.json",
+        "data/github_discoveries.json",
+        "data/release_discoveries.json",
+        "data/corporate_announcements.json",
+        "data/hn_raw_standalone.json",
+        "data/arxiv_raw_standalone.json",
+        "data/finance_raw_standalone.json",
+        "data/finance_signals.json",
+        "data/startup_funding_raw.json",
+        "data/startup_funding_signals.json",
+        "data/x_radar_standalone.json",
+        "data/reddit_raw_standalone.json",
+        "data/new_videos_queue.json",
+        "data/model_market_raw.json",
+        "data/model_market_signals.json",
+        "data/startup_collections_raw.json",
+        "data/startup_collections_signals.json",
+        "data/science_breakthrough_raw.json",
+        "data/science_breakthrough_signals.json",
+        "data/developer_sentiment_raw.json",
+        "data/developer_sentiment_signals.json"
+      ]
+    },
+    {
+      "name": "verify",
+      "timestamp": "2026-05-31T17:02:24.250120+00:00",
+      "status": "passed",
+      "checks": {
+        "routes": 0,
+        "schemas": 0
+      }
+    }
+  ]
+}

@@ -1,0 +1,194 @@
+{
+  "metadata": {
+    "description": "Finance, market, and macro sources scoped to AI market intelligence.",
+    "last_updated": "2026-05-29T00:00:00Z"
+  },
+  "lookback_hours": 96,
+  "request_timeout_seconds": 20,
+  "max_items_per_source": 25,
+  "min_relevance_score": 4,
+  "ai_keywords": [
+    "ai",
+    "artificial intelligence",
+    "agent",
+    "agentic",
+    "llm",
+    "model",
+    "openai",
+    "anthropic",
+    "claude",
+    "chatgpt",
+    "gemini",
+    "grok",
+    "xai",
+    "mistral",
+    "qwen",
+    "kimi",
+    "deepseek",
+    "nvidia",
+    "gpu",
+    "h100",
+    "h200",
+    "b200",
+    "blackwell",
+    "tsmc",
+    "semiconductor",
+    "chip",
+    "data center",
+    "datacenter",
+    "cloud",
+    "compute"
+  ],
+  "finance_keywords": [
+    "funding",
+    "valuation",
+    "raises",
+    "raised",
+    "series",
+    "ipo",
+    "earnings",
+    "revenue",
+    "profit",
+    "capex",
+    "capital expenditure",
+    "investment",
+    "acquisition",
+    "merger",
+    "m&a",
+    "stake",
+    "shares",
+    "stock",
+    "market",
+    "forecast",
+    "guidance",
+    "tariff",
+    "export control",
+    "regulation",
+    "layoffs",
+    "hiring",
+    "power",
+    "energy",
+    "supply",
+    "demand"
+  ],
+  "signal_rules": {
+    "funding_signal": ["funding", "raises", "raised", "series", "valuation", "stake"],
+    "earnings_signal": ["earnings", "revenue", "profit", "guidance", "forecast"],
+    "capex_signal": ["capex", "capital expenditure", "data center", "datacenter", "power", "energy"],
+    "chip_supply_signal": ["nvidia", "gpu", "h100", "h200", "b200", "blackwell", "tsmc", "semiconductor", "chip"],
+    "market_sentiment_signal": ["stock", "shares", "market", "investors", "ipo"],
+    "regulatory_signal": ["tariff", "export control", "regulation", "antitrust", "sec"],
+    "labor_signal": ["layoffs", "hiring", "jobs", "workforce"]
+  },
+  "rss_sources": [
+    {
+      "name": "Bloomberg Markets",
+      "url": "https://www.bloomberg.com/markets",
+      "rss_url": "https://feeds.bloomberg.com/markets/news.rss",
+      "source_region": "global",
+      "tier": "tier_1",
+      "source_type": "market_news"
+    },
+    {
+      "name": "Bloomberg Technology",
+      "url": "https://www.bloomberg.com/technology",
+      "rss_url": "https://feeds.bloomberg.com/technology/news.rss",
+      "source_region": "global",
+      "tier": "tier_1",
+      "source_type": "market_news"
+    },
+    {
+      "name": "Bloomberg Economics",
+      "url": "https://www.bloomberg.com/economics",
+      "rss_url": "https://feeds.bloomberg.com/economics/news.rss",
+      "source_region": "global",
+      "tier": "tier_1",
+      "source_type": "macro_news"
+    },
+    {
+      "name": "Bloomberg Wealth",
+      "url": "https://www.bloomberg.com/wealth",
+      "rss_url": "https://feeds.bloomberg.com/wealth/news.rss",
+      "source_region": "global",
+      "tier": "tier_1",
+      "source_type": "wealth_market_news"
+    },
+    {
+      "name": "CNBC Technology",
+      "url": "https://www.cnbc.com/technology/",
+      "rss_url": "https://www.cnbc.com/id/19854910/device/rss/rss.html",
+      "source_region": "global",
+      "tier": "tier_2",
+      "source_type": "market_news"
+    },
+    {
+      "name": "CNBC Investing",
+      "url": "https://www.cnbc.com/investing/",
+      "rss_url": "https://www.cnbc.com/id/100003114/device/rss/rss.html",
+      "source_region": "global",
+      "tier": "tier_2",
+      "source_type": "market_news"
+    },
+    {
+      "name": "Times of India Business",
+      "url": "https://timesofindia.indiatimes.com/business",
+      "rss_url": "https://timesofindia.indiatimes.com/rssfeeds/1898055.cms",
+      "source_region": "india",
+      "tier": "tier_2",
+      "source_type": "business_news"
+    },
+    {
+      "name": "Economic Times AI",
+      "url": "https://economictimes.indiatimes.com/tech/artificial-intelligence",
+      "rss_url": "https://economictimes.indiatimes.com/ai/rssfeeds/119215726.cms",
+      "source_region": "india",
+      "tier": "tier_2",
+      "source_type": "business_news"
+    },
+    {
+      "name": "Economic Times Markets",
+      "url": "https://economictimes.indiatimes.com/markets",
+      "rss_url": "https://economictimes.indiatimes.com/markets/rssfeeds/1977021501.cms",
+      "source_region": "india",
+      "tier": "tier_2",
+      "source_type": "market_news"
+    },
+    {
+      "name": "Economic Times Tech",
+      "url": "https://economictimes.indiatimes.com/tech",
+      "rss_url": "https://economictimes.indiatimes.com/tech/rssfeeds/13357270.cms",
+      "source_region": "india",
+      "tier": "tier_2",
+      "source_type": "business_news"
+    },
+    {
+      "name": "TLDR All",
+      "url": "https://tldr.tech",
+      "rss_url": "https://bullrich.dev/tldr-rss/feed.rss",
+      "source_region": "global",
+      "tier": "tier_2",
+      "source_type": "newsletter"
+    },
+    {
+      "name": "TLDR AI",
+      "url": "https://tldr.tech/ai",
+      "rss_url": "https://bullrich.dev/tldr-rss/ai.rss",
+      "source_region": "global",
+      "tier": "tier_2",
+      "source_type": "newsletter"
+    }
+  ],
+  "sec_companies": [
+    {"name": "NVIDIA", "ticker": "NVDA", "cik": "0001045810"},
+    {"name": "Microsoft", "ticker": "MSFT", "cik": "0000789019"},
+    {"name": "Alphabet", "ticker": "GOOGL", "cik": "0001652044"},
+    {"name": "Amazon", "ticker": "AMZN", "cik": "0001018724"},
+    {"name": "Meta", "ticker": "META", "cik": "0001326801"},
+    {"name": "AMD", "ticker": "AMD", "cik": "0000002488"},
+    {"name": "Oracle", "ticker": "ORCL", "cik": "0001341439"},
+    {"name": "TSMC", "ticker": "TSM", "cik": "0001046179"},
+    {"name": "Broadcom", "ticker": "AVGO", "cik": "0001730168"},
+    {"name": "CoreWeave", "ticker": "CRWV", "cik": "0001769628"}
+  ],
+  "sec_forms": ["8-K", "10-Q", "10-K", "S-1", "424B4"]
+}

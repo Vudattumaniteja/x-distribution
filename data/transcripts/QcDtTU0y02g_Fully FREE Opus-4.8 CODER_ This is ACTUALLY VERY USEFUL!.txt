@@ -1,0 +1,54 @@
+00:00:05
+Hi, welcome to another video. So, Claude Opus 4.8 is out now and in my testing, this is probably the strongest coding model available right now. But the problem is obvious. Opus is expensive. If you use it directly through the API, it costs $5 per million input tokens and $25 per million output tokens. And if you are using it for real coding work, especially with large repositories, long context, planning, tool calls, and verification, those tokens can disappear very fast. So in this video, I want to
+
+00:00:38
+show you a couple of places where you can try Opus 4.8 without paying upfront. And the first one is Verdant. Now, I have already covered Verdant multiple times on the channel, and I still think it is one of the most interesting AI coding tools right now because it is not just another chat box inside VS Code. Verdant is more like an agentic coding workspace. The important part for this video is that Verdant currently gives new users a 7-day free trial with free credits. And from what I have seen, you
+
+00:01:04
+do not need to put in a card first. You just download it, sign in, and it works. So, this is the easiest place I would start if you just want to test a powerful coding agent without doing the whole API key setup, billing setup, and token anxiety thing. Just go to Verdant, download the desktop app, or use the VS Code extension, sign in, and you should get the free trial credits. Then inside the model selector, choose Claude Opus 4.8 if it is available on your account. If it is still rolling out, just update
+
+00:01:30
+the app or check again because these model launches usually appear in stages. And the reason I like Verdant for this is not only because of the free trial, it is because the workflow around the model is actually good. Like I said in my previous Verdant videos, Verdant feels less like a vibe coding toy and more like a professional multi. So instead of giving one giant task to one agent and waiting forever, you can split the work. One agent can work on the back end, another one can work on the front
+
+00:01:54
+end, another one can write tests, and another one can review the changes. And these agents can work in isolated git work trees, which is very important. Because if you have used coding agents before, you know how quickly things can go wrong when two agents edit the same files or when an agent destroys something that was already working. With Verdant, each task can run in its own workspace, almost like its own branch. So the main repo does not get cooked immediately. You can inspect the diff, review the changes, and then merge it
+
+00:02:19
+back when it actually looks good. That is one of the biggest reasons I like Verdant. It gives you the feeling of managing a small dev team, but without every agent stepping on each other. Another feature I really like is the plan first workflow. You can switch to plan mode, describe what you want, and Verdant does not just start editing files instantly. It discusses the approach, asks clarifying questions, and then gives you a plan. Once you approve it, then it starts making changes. This is especially useful with Opus 4.8
+
+00:02:46
+because Opus 4.8 is very good at long horizon tasks and agentic work. But even a good model still needs structure. If you just tell it build my whole SAS, it might do something, but if you make it plan first, break the task into steps and verify each part, then you get much better results. Verdant also has a good diff review experience. You can see exactly what changed, inspect the files, and decide what to accept. This matters a lot because with these Frontier coding models, the output can look very
+
+00:03:13
+convincing even when something subtle is wrong. So I would not use the free trial by just asking random questions. If you want to actually test Opus 4.8 properly, give Verdant a real coding task. For example, open one of your existing projects and ask it to implement a feature you have been delaying. Ask it to refactor a messy component. Ask it to add tests. Ask it to fix a real bug. Ask it to make a UI more polished. That is where you will actually feel whether Opus 4.8 is worth it because Opus 4.8 is
+
+00:03:43
+not interesting because it can write a Toto app. Every model can write a Toto app now. It is interesting because it is better at staying on task for longer, using tools more efficiently, catching its own mistakes and working through complicated code changes and Verdant is a good wrapper around that because it gives you the agentic workflow, isolated workspaces, planning, review and multitasking. So that is the first option. You can basically download Verdant, use the 7-day free trial, and test Opus 4.8 there without paying
+
+00:04:12
+upfront. Now, the second place is Kuro. Kuro has also added Claude Opus 4.8, and this one is also very interesting because Kira is giving people a way to try their paid plan without paying upfront. Their power plan is normally $200 per month, and it gives you 10,000 credits per month. That is the plan you would use if you want to seriously test the high-end models like Opus. And right now, the checkout can show zero due today for the trial. So basically, you get a chance to try Kir Power and Opus
+
+00:04:37
+4.8 before paying the full $200. That is quite a big deal because normally when people hear $200 plan, they instantly ignore it. And I get that $200 per month is a lot of money for most people. But if the trial lets you test it first, then at least you can see whether the workflow is actually useful for your projects before committing. In Kuro, Opus 4.8 is available in the IDE, CLI, and web. It comes with a 1 million token context window, a 128k max output limit, and it has the same 2.2x credit
+
+00:05:07
+multiplier as Opus 4.7. That means it is not a cheap model inside Kira's credit system, but it is very powerful. So, if you are testing it, do not waste the credits on tiny prompts like explain this function. Use sonnet or cheaper models for that. Use Opus 4.8 for the hard stuff, for example. Use it when you want to understand a large codebase, plan a complex migration, fix a bug that spans multiple files, build a feature from a spec, review a difficult PR, or do something that needs long context and
+
+00:05:38
+careful reasoning. That is where Opus actually makes sense. And this is also where Kuro's specdriven workflow can be useful. You can describe the feature, let it build a spec, refine that spec, and then make it implement the change. That is much better than just throwing a vague prompt at the model and hoping it figures everything out. I would also recommend using Kuro CLI if you like terminal workflows. With the latest Kirro CLI version, you can select Opus 4.8 from the model selector and use it
+
+00:06:03
+for agentic coding tasks directly from the command line. So if you prefer not to live inside an IDE, that is a good option as well. Now, a quick warning here. These free trials are great, but do not forget that they are still trials for paid products. So, check the billing screen, check the renewal date, and cancel before the trial ends if you do not want to pay. I know this sounds obvious, but people forget this and then blame the tool later. Also, these offers can change by the time you watch this.
+
+00:06:32
+Verdant might change the free trial credits. Kira might change the checkout flow or Opus 4.8 might have different availability depending on region or account type. So, always check the pricing page before signing up. But as of now, these are two very good ways to try Opus 4.8 without paying upfront. Verdant is the one I would recommend first if you want a full agentic workspace with parallel agents, work trees, planning, and a really nice review flow. Kira is the one I would recommend if you want to test Opus 4.8
+
+00:07:01
+inside Kira's IDE CLI and web workflow, especially with the power plan trial and the large credit pool. And honestly, this is the best way to evaluate these models. Do not just listen to benchmarks. Do not just listen to people saying this model is cracked or this model is bad. Open your own project, give it a real task and see what happens. Ask it to build something useful. Ask it to fix something annoying. Ask it to review something you actually care about. That is how you will know whether Opus 4.8 is worth
+
+00:07:30
+using for your workflow. For me, Opus 4.8 is genuinely very impressive. It is expensive, but if you can access it through these trials, then you should absolutely test it. So, start with Verdant because the 7-day trial is very easy to try. Then, if you want more Opus 4.8 usage, check out Kira's power trial as well. Overall, this is pretty cool. Anyway, let me know your thoughts in the comments. If you like this video, consider donating through the super thanks option or becoming a member by
+
+00:07:59
+clicking the join button. Also, give this video a thumbs up and subscribe to my channel. I'll see you in the next one. Until then, bye.
+

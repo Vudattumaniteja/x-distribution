@@ -1,0 +1,200 @@
+{
+  "metadata": {
+    "description": "Central registry for live source collectors and queue policy.",
+    "version": 1,
+    "last_updated": "2026-05-28T00:00:00Z"
+  },
+  "queue_policy": {
+    "active_queue_max_items": 1000,
+    "dedupe_url_fields": ["source_url", "url", "resolved_url", "hn_discussion_url"],
+    "prefer_categories": ["deep-discovery", "community-discussion", "video-discovery"]
+  },
+  "runtime_paths": {
+    "python_exe_env": "X_DISTRIBUTION_PYTHON",
+    "xcli_script_env": "XCLI_SCRIPT",
+    "yt_transcript_cli_env": "YT_TRANSCRIPT_CLI",
+    "yt_transcript_py_script_env": "YT_TRANSCRIPT_PY_SCRIPT",
+    "default_xcli_script": "scripts/xcli_utils.py",
+    "default_yt_transcript_cli": "scripts/yt_transcript_cli.py",
+    "default_yt_transcript_py_script": "scripts/yt_transcript_cli.py"
+  },
+  "youtube_discovery": {
+    "method": "yt-transcript-latest",
+    "lookback_days": 2,
+    "max_scan_per_channel": 500,
+    "discovery_workers": 4,
+    "disabled_channels": ["@JulianGoldieSEO"],
+    "transcript_count_per_channel": null,
+    "transcript_workers": 2,
+    "transcript_per_video_timeout_seconds": 360,
+    "transcript_timeout_seconds": 7200,
+    "rss_fallback": false
+  },
+  "collection_runtime": {
+    "lane_workers": 5,
+    "x_workers": 1,
+    "x_timeline_days": 7,
+    "x_tweets_per_account": 3
+  },
+  "artifact_sources": {
+    "hugging_face_orgs": [
+      "openai",
+      "anthropic",
+      "meta-llama",
+      "mistralai",
+      "google",
+      "xai",
+      "moonshotai",
+      "MiniMaxAI",
+      "Qwen",
+      "ZhipuAI",
+      "deepseek-ai",
+      "ByteDance-Seed",
+      "BAAI",
+      "THUDM",
+      "internlm",
+      "01-ai",
+      "modelscope"
+    ],
+    "github_orgs": [
+      "openai",
+      "anthropic-ai",
+      "google-deepmind",
+      "mistralai",
+      "xai-org",
+      "MoonshotAI",
+      "MiniMax-AI",
+      "QwenLM",
+      "THUDM",
+      "deepseek-ai",
+      "InternLM",
+      "OpenBMB",
+      "modelscope",
+      "PaddlePaddle"
+    ],
+    "github_release_repos": [
+      {"org": "openai", "repo": "openai-python"},
+      {"org": "anthropic-ai", "repo": "anthropic-sdk-python"},
+      {"org": "google-deepmind", "repo": "gemma"},
+            {"org": "mistralai", "repo": "mistral-common"},
+            {"org": "meta-llama", "repo": "llama-models"},
+            {"org": "QwenLM", "repo": "Qwen3"},
+            {"org": "deepseek-ai", "repo": "DeepSeek-V3"},
+            {"org": "InternLM", "repo": "InternLM"},
+            {"org": "OpenBMB", "repo": "MiniCPM"}
+        ]
+    },
+  "live_sources": {
+    "reddit": {
+      "enabled": true,
+      "description": "Reddit developer/community discussion collection through reddit-mcp-buddy with the legacy JSON scraper as fallback.",
+      "scripts": ["reddit_mcp_buddy_collect.py"],
+      "outputs": ["data/reddit_raw_standalone.json"]
+    },
+    "finance": {
+      "enabled": true,
+      "description": "Finance, market, macro, newsletter, and SEC signals scoped to AI market intelligence.",
+      "scripts": ["finance_market_collector.py"],
+      "outputs": ["data/finance_raw_standalone.json", "data/finance_signals.json"]
+    },
+    "startup_funding": {
+      "enabled": true,
+      "description": "AI startup fundraising and product-launch signals, with Series A/B/C extraction.",
+      "scripts": ["startup_funding_collector.py"],
+      "outputs": ["data/startup_funding_raw.json", "data/startup_funding_signals.json"]
+    },
+    "github": {
+      "enabled": true,
+      "description": "GitHub organization and repository release monitoring for AI/agent/model/tool artifacts.",
+      "scripts": ["github_monitor_standalone.py", "github_releases_discovery.py"],
+      "outputs": ["data/github_discoveries.json", "data/release_discoveries.json"]
+    },
+        "arxiv": {
+            "enabled": true,
+            "description": "arXiv research feed monitoring for AI, ML, language, vision, robotics, and technical benchmark papers.",
+            "scripts": ["arxiv_sentinel_standalone.py"],
+            "outputs": ["data/arxiv_raw_standalone.json"]
+        },
+        "huggingface": {
+            "enabled": true,
+            "description": "Hugging Face organization monitoring for global and Chinese model artifacts.",
+            "scripts": ["hf_tracker_standalone.py"],
+            "outputs": ["data/hf_discoveries.json"]
+        },
+        "model_market": {
+            "enabled": true,
+            "description": "OpenRouter model-market radar for new model listings, capability/pricing changes, free models, and tool-calling support.",
+            "scripts": ["model_market_collector.py"],
+            "outputs": ["data/model_market_raw.json", "data/model_market_signals.json"]
+        },
+        "startup_collections": {
+            "enabled": true,
+            "description": "Collection-style startup discovery with API/RSS/HTML fallback for TrustMRR, StartupHub, FundBat, Analytics India Deep Tech, Jiqizhixin, and related directories.",
+            "scripts": ["startup_collections_collector.py"],
+            "outputs": ["data/startup_collections_raw.json", "data/startup_collections_signals.json"]
+        },
+        "science_breakthroughs": {
+            "enabled": true,
+            "description": "Bio, biotech, science, and deep-tech breakthrough collection filtered for AI/tech/science commercialization signals.",
+            "scripts": ["science_breakthrough_collector.py"],
+            "outputs": ["data/science_breakthrough_raw.json", "data/science_breakthrough_signals.json"]
+        },
+        "developer_sentiment": {
+            "enabled": true,
+            "description": "Provider status, outage, latency, pricing, and developer pain/adoption signals for model platforms.",
+            "scripts": ["developer_sentiment_collector.py"],
+            "outputs": ["data/developer_sentiment_raw.json", "data/developer_sentiment_signals.json"]
+        }
+    },
+  "collector_outputs": [
+    "data/sitemap_discoveries.json",
+    "data/hf_discoveries.json",
+    "data/github_discoveries.json",
+    "data/release_discoveries.json",
+    "data/corporate_announcements.json",
+    "data/hn_raw_standalone.json",
+    "data/arxiv_raw_standalone.json",
+    "data/finance_raw_standalone.json",
+    "data/finance_signals.json",
+    "data/startup_funding_raw.json",
+    "data/startup_funding_signals.json",
+    "data/x_radar_standalone.json",
+    "data/reddit_raw_standalone.json",
+    "data/new_videos_queue.json",
+    "data/model_market_raw.json",
+    "data/model_market_signals.json",
+    "data/startup_collections_raw.json",
+    "data/startup_collections_signals.json",
+    "data/science_breakthrough_raw.json",
+    "data/science_breakthrough_signals.json",
+    "data/developer_sentiment_raw.json",
+    "data/developer_sentiment_signals.json"
+  ],
+  "stale_file_policy": {
+    "archive_root": "cache/stale_archive",
+    "archive_patterns": [
+      "tmp_*.json",
+      "tmp_*.md",
+      "tmp_x_automation.json",
+      "all_raw_tweets.json",
+      "raw_recent_tweets.json",
+      "x_output.txt",
+      "formatted_transcript.txt",
+      "read_chunks.py",
+      "audit_transcript.py",
+      "audit_transcript_v2.py",
+      "scan.py",
+      "scan2.py",
+      "scan3.py",
+      "__pycache__",
+      "scripts/__pycache__"
+    ],
+    "review_only_patterns": [
+      "tmp_hyper",
+      "system-snapshot",
+      "logs",
+      "data/transcript_*.txt",
+      "data/transcripts/*.txt"
+    ]
+  }
+}

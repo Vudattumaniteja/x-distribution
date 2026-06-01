@@ -1,0 +1,55 @@
+{
+  "metadata": {
+    "description": "30-account X watchlist for monitoring",
+    "total_slots": 30,
+    "populated": 30,
+    "last_updated": "2026-05-06T12:00:00Z"
+  },
+  "accounts": [
+    {"id": 1, "handle": "@OpenAI", "name": "OpenAI", "category": "corporate", "tier": "must_follow", "tweepcred_estimate": "very_high", "notes": "GPT, DALL-E, product launches", "reply_priority": "high"},
+    {"id": 2, "handle": "@AnthropicAI", "name": "Anthropic", "category": "corporate", "tier": "must_follow", "tweepcred_estimate": "very_high", "notes": "Claude, safety research", "reply_priority": "high"},
+    {"id": 3, "handle": "@GoogleDeepMind", "name": "Google DeepMind", "category": "corporate", "tier": "must_follow", "tweepcred_estimate": "very_high", "notes": "Gemini, AlphaFold, research", "reply_priority": "high"},
+    {"id": 4, "handle": "@MetaAI", "name": "Meta AI", "category": "corporate", "tier": "must_follow", "tweepcred_estimate": "very_high", "notes": "Llama, PyTorch, open research", "reply_priority": "high"},
+    {"id": 5, "handle": "@sama", "name": "Sam Altman", "category": "founder_researcher", "tier": "must_follow", "tweepcred_estimate": "very_high", "notes": "OpenAI CEO", "reply_priority": "high"},
+    {"id": 6, "handle": "@darioamodei", "name": "Dario Amodei", "category": "founder_researcher", "tier": "must_follow", "tweepcred_estimate": "very_high", "notes": "Anthropic CEO", "reply_priority": "high"},
+    {"id": 7, "handle": "@demishassabis", "name": "Demis Hassabis", "category": "founder_researcher", "tier": "must_follow", "tweepcred_estimate": "very_high", "notes": "DeepMind CEO", "reply_priority": "high"},
+    {"id": 8, "handle": "@ylecun", "name": "Yann LeCun", "category": "founder_researcher", "tier": "must_follow", "tweepcred_estimate": "very_high", "notes": "Meta AI Chief, contrarian takes", "reply_priority": "medium"},
+    {"id": 9, "handle": "@karpathy", "name": "Andrej Karpathy", "category": "founder_researcher", "tier": "must_follow", "tweepcred_estimate": "very_high", "notes": "AI Educator, Tesla/OpenAI alum", "reply_priority": "high"},
+    {"id": 10, "handle": "@gdb", "name": "Greg Brockman", "category": "founder_researcher", "tier": "must_follow", "tweepcred_estimate": "very_high", "notes": "OpenAI President", "reply_priority": "high"},
+    {"id": 11, "handle": "@ilyasut", "name": "Ilya Sutskever", "category": "founder_researcher", "tier": "must_follow", "tweepcred_estimate": "very_high", "notes": "OpenAI Chief Scientist", "reply_priority": "high"},
+    {"id": 12, "handle": "@Aravind", "name": "Aravind Srinivas", "category": "founder_researcher", "tier": "must_follow", "tweepcred_estimate": "very_high", "notes": "Perplexity CEO", "reply_priority": "high"},
+    {"id": 13, "handle": "@mustafasuleyman", "name": "Mustafa Suleyman", "category": "founder_researcher", "tier": "must_follow", "tweepcred_estimate": "very_high", "notes": "Microsoft AI CEO, DeepMind co-founder", "reply_priority": "medium"},
+    {"id": 14, "handle": "@shaneleg", "name": "Shane Legg", "category": "founder_researcher", "tier": "high_priority", "tweepcred_estimate": "high", "notes": "DeepMind Chief Scientist", "reply_priority": "medium"},
+    {"id": 15, "handle": "@AidanGomez", "name": "Aidan Gomez", "category": "founder_researcher", "tier": "high_priority", "tweepcred_estimate": "high", "notes": "Cohere CEO, Transformer co-author", "reply_priority": "medium"},
+    {"id": 16, "handle": "@arthurmensch", "name": "Arthur Mensch", "category": "founder_researcher", "tier": "high_priority", "tweepcred_estimate": "high", "notes": "Mistral AI CEO", "reply_priority": "medium"},
+    {"id": 17, "handle": "@huggingface", "name": "Hugging Face", "category": "corporate", "tier": "must_follow", "tweepcred_estimate": "very_high", "notes": "AI community hub, open source", "reply_priority": "medium"},
+    {"id": 18, "handle": "@MistralAI", "name": "Mistral AI", "category": "corporate", "tier": "must_follow", "tweepcred_estimate": "very_high", "notes": "European AI leader, open weights", "reply_priority": "high"},
+    {"id": 19, "handle": "@xai", "name": "xAI", "category": "corporate", "tier": "must_follow", "tweepcred_estimate": "very_high", "notes": "Elon Musk's AI company", "reply_priority": "high"},
+    {"id": 20, "handle": "@stabilityai", "name": "Stability AI", "category": "corporate", "tier": "must_follow", "tweepcred_estimate": "very_high", "notes": "Stable Diffusion, open generative AI", "reply_priority": "medium"},
+    {"id": 21, "handle": "@NVIDIA", "name": "NVIDIA", "category": "corporate", "tier": "must_follow", "tweepcred_estimate": "very_high", "notes": "AI hardware and research", "reply_priority": "medium"},
+    {"id": 22, "handle": "@rowancheung", "name": "Rowan Cheung", "category": "analyst", "tier": "high_priority", "tweepcred_estimate": "high", "notes": "The Rundown AI founder", "reply_priority": "medium"},
+    {"id": 23, "handle": "@bindureddy", "name": "Bindu Reddy", "category": "founder_researcher", "tier": "high_priority", "tweepcred_estimate": "high", "notes": "Abacus.ai CEO", "reply_priority": "medium"},
+    {"id": 24, "handle": "@drjimfan", "name": "Jim Fan", "category": "founder_researcher", "tier": "high_priority", "tweepcred_estimate": "high", "notes": "NVIDIA Senior Scientist, AI agents", "reply_priority": "high"},
+    {"id": 25, "handle": "@fchollet", "name": "Francois Chollet", "category": "founder_researcher", "tier": "high_priority", "tweepcred_estimate": "high", "notes": "Keras creator, Google AI", "reply_priority": "medium"},
+    {"id": 26, "handle": "@AndrewYNg", "name": "Andrew Ng", "category": "founder_researcher", "tier": "must_follow", "tweepcred_estimate": "very_high", "notes": "AI pioneer, Landing AI, Coursera", "reply_priority": "medium"},
+    {"id": 27, "handle": "@george_hotz", "name": "George Hotz", "category": "founder_researcher", "tier": "high_priority", "tweepcred_estimate": "high", "notes": "comma.ai, tinygrad", "reply_priority": "medium"},
+    {"id": 28, "handle": "@lexfridman", "name": "Lex Fridman", "category": "analyst", "tier": "high_priority", "tweepcred_estimate": "high", "notes": "Podcaster, AI researcher at MIT", "reply_priority": "low"},
+    {"id": 29, "handle": "@JeffDean", "name": "Jeff Dean", "category": "founder_researcher", "tier": "must_follow", "tweepcred_estimate": "very_high", "notes": "Google Chief Scientist", "reply_priority": "medium"},
+    {"id": 30, "handle": "@reidhoffman", "name": "Reid Hoffman", "category": "vc_investor", "tier": "high_priority", "tweepcred_estimate": "high", "notes": "Inflection AI, Greylock, LinkedIn co-founder", "reply_priority": "low"}
+  ],
+  "categories": {
+    "corporate": "Official company accounts (OpenAI, Anthropic, Google, Meta, etc.)",
+    "founder_researcher": "Individual founders, CTOs, lead researchers",
+    "journalist": "Tech journalists who break AI news",
+    "analyst": "Industry analysts and commentators",
+    "builder": "Developers building AI tools and products",
+    "vc_investor": "VCs and investors tracking AI market",
+    "community": "AI community builders and aggregators"
+  },
+  "tiers": {
+    "must_follow": "Check every run, highest priority",
+    "high_priority": "Check most runs",
+    "standard": "Check every other run",
+    "low_priority": "Check weekly only"
+  }
+}

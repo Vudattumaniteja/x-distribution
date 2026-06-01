@@ -1,0 +1,46 @@
+description = "Generate 5 reply drafts for graded reply opportunities"
+
+[tools]
+web_fetch = true
+google_search = true
+mcp = ["notebooklm-mcp"]
+
+prompt = """Run the Reply Generation pipeline as defined in references/reply-generation.md.
+
+Load graded opportunities from data/reply_opportunities.json (items scoring 6+).
+If user specifies opportunity index, focus on that one.
+
+For each opportunity, generate ALL 5 reply angles:
+1. ADD INSIGHT — New data point/experience the original missed
+2. RESPECTFUL COUNTER — Disagree with ONE specific point, evidence-based, constructive
+3. BUILD ON IDEA — Logical next step or implication the author didn't explore
+4. ASK CLARIFYING — Specific thought-provoking question
+5. SHARE EXPERIENCE — Firsthand experience or case study
+
+Before writing, query NotebookLM for current reply optimization strategies.
+
+Apply ALL voice rules from SKILL.md. Each reply draft must include:
+- Full text (under 280 characters)
+- Which angle it uses
+- Expected outcome (bookmark/RT/conversation/follow/visibility)
+- Risk assessment (low/medium/high)
+
+Special reply rules:
+- NEVER be the first reply (aim for 3rd-10th position)
+- Quote the specific part of the original you're responding to
+- Disagreeing: acknowledge valid point first, then counter
+- ALWAYS add net-new value — never just "This!" or "Great point"
+- Tag accounts only if genuinely relevant
+- Don't reply to the same author more than once per day
+
+Edge case handling:
+- Original post is a long thread: focus on ONE specific point
+- Original is in language you don't understand: skip (don't use MT for replies)
+- Already replied to this author recently (check history): skip
+- Reply would be better as original post (>200 chars, standalone): flag for user
+- Original post deleted while drafting: discard draft, log event
+- Multiple opportunities from same author: choose highest-graded, skip others
+
+Save drafts to data/reply_opportunities.json under each opportunity.
+Present in clean format with risk assessment per draft.
+"""

@@ -1,0 +1,25 @@
+## THE /goal MASTER PROMPT
+Drop into Claude Code or Codex - zero hand-holding
+------------------------------
+THE FULL PROMPT
+/goal [THE FINAL OUTCOME — what "done" looks like in one line]
+
+— CONTEXT —
+* Project: [what you’re building]
+* Stack: [languages, frameworks, infra]
+* Constraints: [budget, time, off-limits items]
+
+— SUCCESS CRITERIA (ALL MUST BE TRUE) —
+1. [Specific measurable outcome A]
+2. [Specific measurable outcome B]
+3. Final deliverable runs without errors
+4. You can show proof (screenshot • test output • URL)
+
+— OPERATING RULES — NON-NEGOTIABLE —
+1. PLAN FIRST. Output a numbered task list before writing any code.
+2. WORK AUTONOMOUSLY. Don't ask clarifying Qs unless genuinely blocked.
+3. SELF-VERIFY. After every step: run tests, inspect output, confirm it worked.
+4. DEBUG YOURSELF. If it fails, diagnose + fix. Don't hand it back.
+5. NO PLACEHOLDERS. No TODOs • no stubs • real components only.
+
+Begin by outputting your plan. Then execute end-to-end without checking in until done.

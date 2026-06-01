@@ -1,0 +1,33 @@
+description = "Run the 7-agent self-evolution audit fleet and produce a ranked improvement backlog"
+
+[tools]
+file_read = true
+file_write = true
+subagents = true
+
+prompt = """Run Mode 3: Evolution Pipeline as defined in references/self-evolution.md.
+
+Goal: audit and improve the X Distribution System pipeline without making unapproved implementation changes.
+
+Execution:
+1. Load SKILL.md, commands/*.toml, config/*.json, data/*.json, evals/evals.json, and relevant references/*.md.
+2. Run the 7 specialized evolution auditors in parallel if subagents are available:
+   - Architecture Mapper
+   - Data Contract Auditor
+   - Command Routing Auditor
+   - Research and Verification Auditor
+   - Scoring and Eval Auditor
+   - Automation Engineer
+   - Safety and Governance Auditor
+3. If subagents are unavailable, emulate the same 7 roles sequentially.
+4. Synthesize all findings into a ranked backlog using the priority formula in references/self-evolution.md.
+5. Prepare proposed updates for data/evolution_backlog.json and data/evolution_state.json.
+6. If the user explicitly asked to save/persist the audit, write the approved state/backlog/log files. Otherwise run dry: present the proposed updates without writing.
+7. Present the top findings and an implementation plan for user approval.
+
+Hard constraints:
+- Do not implement fixes during the audit.
+- Do not write evolution state/backlog/log outputs unless the user explicitly approved persistence.
+- Include file/line evidence when available.
+- If a finding requires destructive action, propose a non-destructive alternative first.
+"""

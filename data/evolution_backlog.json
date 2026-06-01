@@ -1,0 +1,8 @@
+{
+  "metadata": {
+    "description": "Ranked backlog of pipeline evolution opportunities",
+    "priority_formula": "impact + confidence + unblock_value - implementation_risk - complexity"
+  },
+  "last_updated": null,
+  "items": []
+}

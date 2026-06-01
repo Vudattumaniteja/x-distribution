@@ -1,0 +1,271 @@
+{
+  "metadata": {
+    "description": "Startup fundraising and product-launch sources scoped to AI and developer tooling.",
+    "last_updated": "2026-05-29T00:00:00Z"
+  },
+  "lookback_hours": 168,
+  "request_timeout_seconds": 20,
+  "max_items_per_source": 30,
+  "min_relevance_score": 5,
+  "ai_keywords": [
+    "ai",
+    "artificial intelligence",
+    "agent",
+    "agentic",
+    "llm",
+    "model",
+    "machine learning",
+    "automation",
+    "developer tool",
+    "devtools",
+    "coding",
+    "data",
+    "inference",
+    "gpu",
+    "compute",
+    "robotics"
+  ],
+  "startup_keywords": [
+    "startup",
+    "founder",
+    "founded",
+    "yc",
+    "y combinator",
+    "backed",
+    "venture",
+    "company",
+    "platform",
+    "app",
+    "tool"
+  ],
+  "funding_keywords": [
+    "raises",
+    "raised",
+    "raise",
+    "funding",
+    "fundraise",
+    "round",
+    "series a",
+    "series b",
+    "series c",
+    "valuation",
+    "led by",
+    "investment",
+    "investors",
+    "capital"
+  ],
+  "product_keywords": [
+    "launch",
+    "launches",
+    "launched",
+    "unveils",
+    "introduces",
+    "debuts",
+    "ships",
+    "product",
+    "platform",
+    "api",
+    "beta",
+    "tool",
+    "app"
+  ],
+  "round_patterns": {
+    "series_a": "\\bseries\\s+a\\b",
+    "series_b": "\\bseries\\s+b\\b",
+    "series_c": "\\bseries\\s+c\\b"
+  },
+  "rss_sources": [
+    {
+      "name": "TechCrunch Fundraising",
+      "url": "https://techcrunch.com/category/startups/fundraising/",
+      "rss_url": "https://techcrunch.com/category/startups/fundraising/feed/",
+      "source_region": "global",
+      "tier": "tier_1",
+      "source_type": "startup_funding"
+    },
+    {
+      "name": "TechCrunch Startups",
+      "url": "https://techcrunch.com/category/startups/",
+      "rss_url": "https://techcrunch.com/category/startups/feed/",
+      "source_region": "global",
+      "tier": "tier_1",
+      "source_type": "startup_news"
+    },
+    {
+      "name": "TechCrunch Series A",
+      "url": "https://techcrunch.com/tag/series-a/",
+      "rss_url": "https://techcrunch.com/tag/series-a/feed/",
+      "source_region": "global",
+      "tier": "tier_1",
+      "source_type": "series_a"
+    },
+    {
+      "name": "TechCrunch Series B",
+      "url": "https://techcrunch.com/tag/series-b/",
+      "rss_url": "https://techcrunch.com/tag/series-b/feed/",
+      "source_region": "global",
+      "tier": "tier_1",
+      "source_type": "series_b"
+    },
+    {
+      "name": "TechCrunch Series C",
+      "url": "https://techcrunch.com/tag/series-c/",
+      "rss_url": "https://techcrunch.com/tag/series-c/feed/",
+      "source_region": "global",
+      "tier": "tier_1",
+      "source_type": "series_c"
+    },
+    {
+      "name": "TechCrunch Biotech",
+      "url": "https://techcrunch.com/tag/biotech/",
+      "rss_url": "https://techcrunch.com/tag/biotech/feed/",
+      "source_region": "global",
+      "tier": "tier_1",
+      "source_type": "biotech_startup_news"
+    },
+    {
+      "name": "Crunchbase AI",
+      "url": "https://news.crunchbase.com/sections/ai/",
+      "rss_url": "https://news.crunchbase.com/sections/ai/feed/",
+      "source_region": "global",
+      "tier": "tier_1",
+      "source_type": "startup_funding"
+    },
+    {
+      "name": "Crunchbase Venture",
+      "url": "https://news.crunchbase.com/sections/venture/",
+      "rss_url": "https://news.crunchbase.com/sections/venture/feed/",
+      "source_region": "global",
+      "tier": "tier_1",
+      "source_type": "startup_funding"
+    },
+    {
+      "name": "VentureBeat AI",
+      "url": "https://venturebeat.com/category/ai/",
+      "rss_url": "https://venturebeat.com/category/ai/feed/",
+      "source_region": "global",
+      "tier": "tier_2",
+      "source_type": "ai_startup_news"
+    },
+    {
+      "name": "SiliconANGLE AI",
+      "url": "https://siliconangle.com/category/ai/",
+      "rss_url": "https://siliconangle.com/category/ai/feed/",
+      "source_region": "global",
+      "tier": "tier_2",
+      "source_type": "ai_startup_news"
+    },
+    {
+      "name": "EU-Startups AI",
+      "url": "https://www.eu-startups.com/tag/artificial-intelligence/",
+      "rss_url": "https://www.eu-startups.com/tag/artificial-intelligence/feed/",
+      "source_region": "europe",
+      "tier": "tier_2",
+      "source_type": "startup_news"
+    },
+    {
+      "name": "TechNode",
+      "url": "https://technode.com/",
+      "rss_url": "https://technode.com/feed/",
+      "source_region": "china",
+      "tier": "tier_2",
+      "source_type": "china_startup_tech"
+    },
+    {
+      "name": "Pandaily",
+      "url": "https://pandaily.com/",
+      "rss_url": "https://pandaily.com/feed/",
+      "source_region": "china",
+      "tier": "tier_2",
+      "source_type": "china_startup_tech"
+    },
+    {
+      "name": "QbitAI",
+      "url": "https://www.qbitai.com/",
+      "rss_url": "https://www.qbitai.com/feed",
+      "source_region": "china",
+      "tier": "tier_2",
+      "source_type": "china_ai_news"
+    },
+    {
+      "name": "36Kr",
+      "url": "https://36kr.com/",
+      "rss_url": "https://36kr.com/feed",
+      "source_region": "china",
+      "tier": "tier_2",
+      "source_type": "china_startup_business"
+    },
+    {
+      "name": "Synced Review",
+      "url": "https://syncedreview.com/",
+      "rss_url": "https://syncedreview.com/feed/",
+      "source_region": "china_global_ai",
+      "tier": "tier_2",
+      "source_type": "ai_research_startup_news"
+    },
+    {
+      "name": "Inc42 AI",
+      "url": "https://inc42.com/industry/ai/",
+      "rss_url": "https://inc42.com/industry/ai/feed/",
+      "source_region": "india",
+      "tier": "tier_1",
+      "source_type": "india_ai_startup_news"
+    },
+    {
+      "name": "Inc42",
+      "url": "https://inc42.com/",
+      "rss_url": "https://inc42.com/feed/",
+      "source_region": "india",
+      "tier": "tier_1",
+      "source_type": "india_startup_news"
+    },
+    {
+      "name": "YourStory",
+      "url": "https://yourstory.com/",
+      "rss_url": "https://yourstory.com/feed",
+      "source_region": "india",
+      "tier": "tier_2",
+      "source_type": "india_startup_news"
+    },
+    {
+      "name": "Medianama",
+      "url": "https://www.medianama.com/",
+      "rss_url": "https://www.medianama.com/feed/",
+      "source_region": "india",
+      "tier": "tier_2",
+      "source_type": "india_tech_policy"
+    },
+    {
+      "name": "e27",
+      "url": "https://e27.co/",
+      "rss_url": "https://e27.co/feed/",
+      "source_region": "southeast_asia",
+      "tier": "tier_2",
+      "source_type": "asia_startup_news"
+    },
+    {
+      "name": "Rest of World",
+      "url": "https://restofworld.org/",
+      "rss_url": "https://restofworld.org/feed/latest/",
+      "source_region": "emerging_markets",
+      "tier": "tier_2",
+      "source_type": "global_regional_tech"
+    },
+    {
+      "name": "Sifted",
+      "url": "https://sifted.eu/",
+      "rss_url": "https://sifted.eu/feed",
+      "source_region": "europe",
+      "tier": "tier_2",
+      "source_type": "europe_startup_news"
+    },
+    {
+      "name": "Product Hunt",
+      "url": "https://www.producthunt.com/",
+      "rss_url": "https://www.producthunt.com/feed",
+      "source_region": "global",
+      "tier": "tier_3",
+      "source_type": "product_launch"
+    }
+  ]
+}

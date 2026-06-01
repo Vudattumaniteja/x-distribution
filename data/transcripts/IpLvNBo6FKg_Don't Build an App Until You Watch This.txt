@@ -1,0 +1,63 @@
+00:00:14
+[music] >> Most products don't get replaced because they're broken. They get replaced because something new makes the old workflow feel emotionally obsolete. Google Docs was not bad. In fact, it was probably too good at solving yesterday's problem. Let's be honest for a second. Google Doc, with all its powerful capabilities, should have won this entire category. [music] Think about what it did. Before Google Docs, collaboration meant emailing a Word file back and forth. Version 3 final final
+
+00:00:48
+version 2.doc. Google Doc killed that entire ritual. You opened a link and you were in. Everyone was in. Real-time cursors, comments in the margin, suggestions and review mode. It was genuinely revolutionary when it showed up. And for a long time, it was more than enough. And yeah, it wasn't just the product. Google had the distribution, the brand, the infrastructure. Gmail was everywhere [music] already. And Drive was also already everywhere. Docs came pre-installed in every school, every [music] startup, every company that ran
+
+00:01:14
+on Google's workspace. If the product had the right to own collaborator forever, >> [music] >> it was Google Docs. And yet, here we are. Over 100 million people are using Notion. Startups, small teams, >> [music] >> large teams, entire companies running their work in a tool that didn't even exist when Google Docs was a dominant market player. So, what happened? And the answer is not Google Docs got worse. It didn't. [music] The answer is that said, work changed and Google Docs was
+
+00:01:37
+built for a version of work that already was becoming the old version. Here's a shift that most people miss. Google Docs solved a very specific problem beautifully, but the problem was how do we let multiple people edit the same text at the same time? Yes, and it nailed that. But somewhere around 2015, 2016, 17, the nature of work itself started changing underneath it. Teams got more cross-functional. A single project involved designers, engineers, product managers, marketers, ops people, and multiple folks. And these people did
+
+00:02:08
+not just need to write together, they needed to plan together, track together, build together. The document was no longer a system of work. It was not the unit of work, >> [music] >> the workspace was. And this is where Google Docs started feeling small, not broken, but small. You write a doc, but then you need a spreadsheet [music] to track tasks related to that doc. Then a separate sheet for the timeline, then a folder to organize [music] everything, and then on top of that a slide deck to
+
+00:02:30
+present the summary. Four tools, one project, zero connection between them. The whole model, text, cursor, paragraph, page, Google Docs treated a document as a piece of text that multiple people could edit. And if your work fits inside that shape, uh well and good. But modern work no longer fits inside that shape. People didn't just need documents, they needed a databases that felt like docs, and docs that could behave like tools. And no amount of adding features to Google Docs was going to fix this, because the limitation was
+
+00:02:58
+not just a missing feature, the primitive itself was wrong. So the real gap was not we need a better Google Docs, the real gap was we need a different kind of object. And that is exactly what Notion built. [music] In Notion, everything is a block. And I know, I know, this sounds like startup language, but here it's actually very literal. A paragraph is a block, a heading is a block, a to-do is a block, an image is a block, a page is a block, and a database row can be represented through blocks. So when you look at a
+
+00:03:24
+Notion page, you are not looking [music] at one giant slab of text, you're looking at a bunch of smaller units sitting in a structure. And that single decision changed everything downstream. Because once a document is made of blocks rather than a stream of text, it can become anything, right? A paragraph can become a bullet, a bullet can become a toggle, a block can be dragged, nested, reused, [music] embedded, turned into a part of the system. You get the drift. That flexibility is the reason
+
+00:03:48
+Notion could become Docs plus Wiki plus Project Manager plus weird little any internal tool energy all inside a single product. And here's the part that isn't obvious. This [music] didn't just change the product. It changed the collaboration problem, too. Because in plain text editor, the system treats everything as a single [music] continuous stream of characters. So, if I type something in the middle of a sentence and what I delete something before a few words, the system now has a
+
+00:04:11
+coordination problem. The text moved while both of us were editing it. But in Notion, when two people are on the same page, they're often not editing the same block. One person is changing a paragraph. Someone else is changing a check box. Someone else is dragging another block, maybe somewhere higher. So, it is same page in the human sense, not always the same object in the system sense. So, Notion didn't look at collaboration and say, "Let's build a better traffic control." It said, "Let's
+
+00:04:33
+build more roads so that be [music] less traffic in the first place." Google Docs is like one big highway. Everyone is driving on the same surface, so the [music] system has to get insanely good at handling traffic on that one road. Notion, on the other hand, is more like a city with [music] lots of smaller streets. Still only one city, still shared, still lots of movement, but fewer people are slamming into the exact same lane every second. And this is why Notion never really felt like Google
+
+00:04:55
+Docs but prettier. Underneath, it was thinking about content differently. Also, this did not come from nowhere. Notion nearly died. The earlier version did not work. Ivan Zhao and Simon Last basically tore it down, moved the company to Kyoto in Japan to cut the cost, and then rebuilt it in survival mode. And honestly, [music] that's when a lot of important product tools start showing up. Because when you're building something from scratch, >> [music] >> you can't keep everything. You're forced
+
+00:05:20
+to ask what the thing really is. For Notion, the answer became pretty clear. Not pages first, blocks first. Not fixed documents, but composed objects. >> [music] >> And when the primitive is right that early, it keeps paying off later in ways you don't even fully see at first, which brings us to the architecture. >> [music] >> Okay. So, now we get into how this actually works under the hood. Because the block model is not just a product idea, it's an engineering decision that
+
+00:05:45
+shapes everything. Sync, [music] storage, scale, and offline. So, when people talk about Google Docs and similar tools, one term you'll hear is operational transformation, or OT. Very simple version. OT is a way to rewrite edits [music] so that they still make sense after other edits have already changed the text. That's it. If you type at one position and I delete the text before that position, OT helps adjust things so your edit does not land in the wrong place. [music] It's basically
+
+00:06:10
+traffic control for moving text. And that sounds clean when he says it, but it is not clean to build. Not at all. It is one of those things that looks obvious from the outside and then [music] steals years of engineering life on the inside, which is why Notion's move was so clever. >> [music] >> Not because they made OT irrelevant. They didn't. But because they made fewer user actions turn into the exact kind of problem. And that is a very important founder lesson, by the way. The lesson
+
+00:06:33
+is not solve the hardest technical problem first, but it is design the product in such a way that the hardest technical problem never shows up. These are two different ways to build. Okay, let's stop sounding clever and actually take a look at it. Let's give it a spin. Because in things like this, a toy simulator is much more meaningful and powerful than a lot of talking. And with that being said, [music] thanks to Anthropic, building becomes easier than ever. You can open Claude code and
+
+00:07:00
+with a single prompt, build version one of anything with proper planning. You can use open code and MiniMax if you [music] don't want to pay. You can choose your preferred tool and type this prompt. Prompt to build an alternative version of Notion. All right. So, now Claude [music] code is planning and now it's building. It's going to take some time to build, but what it's building is a Notion clone, or You- Ocean, >> [music] >> with blocks. You know, the reason the block model helps here is that the clear
+
+00:07:23
+objects make later scaling much more legible. Not easy, just legible. Which matters a lot. Also, legible is a very underrated engineering compliment. What does it mean? It means the future you won't hate your current you as much. Now, the You- Ocean is built. >> [music] >> Now, I'd also suggest don't stop with the version one. Go through the features, make it usable, share it with your friends and family, and share it with us, too, and drop them in the comments. So, what is the actual
+
+00:07:49
+takeaway here? Not everyone should use blocks. Not copy Notion. That's not the takeaway. The real takeaway is this. The best startups do not always beat incumbents by solving [music] the same hard problem better. Sometimes, they win by changing the shape of the problem. That is what Notion did. It looked at the document, this thing we've been writing in for decades, and said, "What if the document isn't the one thing? What if it's made things? That made the product more flexible. It made many
+
+00:08:15
+edits less collision prone. It gave the company a clear primitive or a fundamental to build on when scale and offline became unavoidable. And on the business side, the lesson [music] is just as clear. Architecture is positioning. People say branding, and sure branding matters, but [music] if the product underneath cannot behave differently, the branding is just expensive lying. Now, Google Docs solved let's write together, and Notion solved let's build together. Same word, together. Very different problems
+
+00:08:41
+underneath, though. Exactly. Same page does not mean same object. That is the line. If you take one thing from this video, let [music] it be that. Same page does not mean same object. And with that being said, ladies and gentlemen, that is the end of this video. So, if you like this video, make sure you comment, make sure you subscribe, and stay [music] tuned for the next one. And until then, keep building and keep experimenting.
+

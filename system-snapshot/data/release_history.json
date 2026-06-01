@@ -1,0 +1,6 @@
+{
+  "openai/openai-python": "317336764",
+  "google-deepmind/gemma": "263246666",
+  "mistralai/mistral-common": "315044601",
+  "meta-llama/llama-models": "210567831"
+}

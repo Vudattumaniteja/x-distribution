@@ -1,0 +1,113 @@
+{
+  "last_run": "2026-05-06T09:36:51.546229+00:00",
+  "new_discoveries": [
+    {
+      "source": "GitHub",
+      "org": "openai",
+      "type": "new_repo",
+      "repo_name": "openai/plugins",
+      "url": "https://github.com/openai/plugins",
+      "description": "OpenAI Plugins",
+      "discovered_at": "2026-05-06T09:36:49.307999+00:00"
+    },
+    {
+      "source": "GitHub",
+      "org": "openai",
+      "type": "new_repo",
+      "repo_name": "openai/swarm",
+      "url": "https://github.com/openai/swarm",
+      "description": "Educational framework exploring ergonomic, lightweight multi-agent orchestration. Managed by OpenAI Solution team.",
+      "discovered_at": "2026-05-06T09:36:49.307999+00:00"
+    },
+    {
+      "source": "GitHub",
+      "org": "openai",
+      "type": "new_repo",
+      "repo_name": "openai/evals",
+      "url": "https://github.com/openai/evals",
+      "description": "Evals is a framework for evaluating LLMs and LLM systems, and an open-source registry of benchmarks.",
+      "discovered_at": "2026-05-06T09:36:49.307999+00:00"
+    },
+    {
+      "source": "GitHub",
+      "org": "openai",
+      "type": "new_repo",
+      "repo_name": "openai/gpt-oss",
+      "url": "https://github.com/openai/gpt-oss",
+      "description": "gpt-oss-120b and gpt-oss-20b are two open-weight language models by OpenAI",
+      "discovered_at": "2026-05-06T09:36:49.307999+00:00"
+    },
+    {
+      "source": "GitHub",
+      "org": "google-deepmind",
+      "type": "new_repo",
+      "repo_name": "google-deepmind/mujoco_mpc",
+      "url": "https://github.com/google-deepmind/mujoco_mpc",
+      "description": "Real-time behaviour synthesis with MuJoCo, using Predictive Control",
+      "discovered_at": "2026-05-06T09:36:50.380341+00:00"
+    },
+    {
+      "source": "GitHub",
+      "org": "google-deepmind",
+      "type": "new_repo",
+      "repo_name": "google-deepmind/mujoco",
+      "url": "https://github.com/google-deepmind/mujoco",
+      "description": "Multi-Joint dynamics with Contact. A general purpose physics simulator.",
+      "discovered_at": "2026-05-06T09:36:50.380341+00:00"
+    },
+    {
+      "source": "GitHub",
+      "org": "google-deepmind",
+      "type": "new_repo",
+      "repo_name": "google-deepmind/opro",
+      "url": "https://github.com/google-deepmind/opro",
+      "description": "official code for \"Large Language Models as Optimizers\"",
+      "discovered_at": "2026-05-06T09:36:50.380341+00:00"
+    },
+    {
+      "source": "GitHub",
+      "org": "google-deepmind",
+      "type": "new_repo",
+      "repo_name": "google-deepmind/gemma",
+      "url": "https://github.com/google-deepmind/gemma",
+      "description": "Gemma open-weight LLM library, from Google DeepMind",
+      "discovered_at": "2026-05-06T09:36:50.380341+00:00"
+    },
+    {
+      "source": "GitHub",
+      "org": "google-deepmind",
+      "type": "new_repo",
+      "repo_name": "google-deepmind/synthid-text",
+      "url": "https://github.com/google-deepmind/synthid-text",
+      "description": null,
+      "discovered_at": "2026-05-06T09:36:50.380341+00:00"
+    },
+    {
+      "source": "GitHub",
+      "org": "google-deepmind",
+      "type": "new_repo",
+      "repo_name": "google-deepmind/bsuite",
+      "url": "https://github.com/google-deepmind/bsuite",
+      "description": "bsuite is a collection of carefully-designed experiments that investigate core capabilities of a reinforcement learning (RL) agent",
+      "discovered_at": "2026-05-06T09:36:50.380341+00:00"
+    },
+    {
+      "source": "GitHub",
+      "org": "google-deepmind",
+      "type": "new_repo",
+      "repo_name": "google-deepmind/alphagenome",
+      "url": "https://github.com/google-deepmind/alphagenome",
+      "description": "This API provides programmatic access to the AlphaGenome model developed by Google DeepMind.",
+      "discovered_at": "2026-05-06T09:36:50.380341+00:00"
+    },
+    {
+      "source": "GitHub",
+      "org": "google-deepmind",
+      "type": "new_repo",
+      "repo_name": "google-deepmind/alphagenome_research",
+      "url": "https://github.com/google-deepmind/alphagenome_research",
+      "description": "Research code accompanying AlphaGenome ",
+      "discovered_at": "2026-05-06T09:36:50.380341+00:00"
+    }
+  ]
+}

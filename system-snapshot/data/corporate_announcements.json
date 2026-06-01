@@ -1,0 +1,141 @@
+{
+  "last_updated": "2026-05-06T09:39:05.811782+00:00",
+  "announcements": [
+    {
+      "title": "NVIDIA and ServiceNow Partner on New Autonomous AI Agents for Enterprises",
+      "url": "https://blogs.nvidia.com/blog/servicenow-autonomous-ai-agents-enterprises/",
+      "published_at": "2026-05-05T17:00:40+00:00",
+      "source": "NVIDIA Blog",
+      "tier": "tier_2",
+      "summary": "Enterprise AI has learned to generate. It has learned to reason. Now companies are asking the next question: How should AI act? Early agent systems have shown what\u2019s possible, moving beyond simple prompts to take on more complex tasks. The next step is bringing those capabilities into enterprise env"
+    },
+    {
+      "title": "Google is partnering with XPRIZE and Range Media Partners on the $3.5 million Future Vision film competition.",
+      "url": "https://blog.google/innovation-and-ai/technology/ai/future-vision-film-competition-xprize/",
+      "published_at": "2026-05-05T16:00:00+00:00",
+      "source": "Google AI Blog",
+      "tier": "tier_2",
+      "summary": "<img src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/futurevisionxprize_social.max-600x600.format-webp.webp\" />Google is partnering with XPRIZE and Range Media Partners on the $3.5 million Future Vision film competition."
+    },
+    {
+      "title": "GPT-5.5 Instant: smarter, clearer, and more personalized",
+      "url": "https://openai.com/index/gpt-5-5-instant",
+      "published_at": "2026-05-05T10:00:00+00:00",
+      "source": "OpenAI News",
+      "tier": "tier_1",
+      "summary": "GPT-5.5 Instant updates ChatGPT\u2019s default model with smarter, more accurate answers, reduced hallucinations, and improved personalization controls."
+    },
+    {
+      "title": "GPT-5.5 Instant System Card",
+      "url": "https://openai.com/index/gpt-5-5-instant-system-card",
+      "published_at": "2026-05-05T10:00:00+00:00",
+      "source": "OpenAI News",
+      "tier": "tier_1",
+      "summary": ""
+    },
+    {
+      "title": "New ways to buy ChatGPT ads",
+      "url": "https://openai.com/index/new-ways-to-buy-chatgpt-ads",
+      "published_at": "2026-05-05T00:00:00+00:00",
+      "source": "OpenAI News",
+      "tier": "tier_1",
+      "summary": "OpenAI expands ChatGPT ads with a beta self-serve Ads Manager, CPC bidding, and enhanced measurement tools\u2014built to protect privacy and keep conversations separate from ads."
+    },
+    {
+      "title": "Agents for financial services",
+      "url": "https://www.anthropic.com/news/finance-agents",
+      "published_at": "2026-05-05T00:00:00+00:00",
+      "source": "Anthropic News (Community)",
+      "tier": "tier_1",
+      "summary": "Agents for financial services"
+    },
+    {
+      "title": "OpenAI and PwC collaborate to reimagine the office of the CFO",
+      "url": "https://openai.com/index/openai-pwc-finance-collaboration",
+      "published_at": "2026-05-04T21:00:00+00:00",
+      "source": "OpenAI News",
+      "tier": "tier_1",
+      "summary": "OpenAI and PwC are partnering to help enterprises use AI agents to automate finance workflows, improve forecasting, strengthen controls, and modernize the CFO function."
+    },
+    {
+      "title": "The latest AI news we announced in April 2026",
+      "url": "https://blog.google/innovation-and-ai/technology/ai/google-ai-updates-april-2026/",
+      "published_at": "2026-05-04T17:00:00+00:00",
+      "source": "Google AI Blog",
+      "tier": "tier_2",
+      "summary": "mp4 featuring an underwater video and a mobile AI video mockup."
+    },
+    {
+      "title": "Reduce friction and latency for long-running jobs with Webhooks in Gemini API",
+      "url": "https://blog.google/innovation-and-ai/technology/developers-tools/event-driven-webhooks/",
+      "published_at": "2026-05-04T15:30:00+00:00",
+      "source": "Google AI Blog",
+      "tier": "tier_2",
+      "summary": "Gemini API"
+    },
+    {
+      "title": "How OpenAI delivers low-latency voice AI at scale",
+      "url": "https://openai.com/index/delivering-low-latency-voice-ai-at-scale",
+      "published_at": "2026-05-04T00:00:00+00:00",
+      "source": "OpenAI News",
+      "tier": "tier_1",
+      "summary": "How OpenAI rebuilt its WebRTC stack to power real-time Voice AI with low latency, global scale, and seamless conversational turn-taking."
+    },
+    {
+      "title": "Building a new enterprise AI services company with Blackstone, Hellman & Friedman, and Goldman Sachs",
+      "url": "https://www.anthropic.com/news/enterprise-ai-services-company",
+      "published_at": "2026-05-04T00:00:00+00:00",
+      "source": "Anthropic News (Community)",
+      "tier": "tier_1",
+      "summary": "Building a new enterprise AI services company with Blackstone, Hellman & Friedman, and Goldman Sachs"
+    },
+    {
+      "title": "Nemotron Labs: What OpenClaw Agents Mean for Every Organization",
+      "url": "https://blogs.nvidia.com/blog/what-openclaw-agents-mean-for-every-organization/",
+      "published_at": "2026-04-30T20:00:39+00:00",
+      "source": "NVIDIA Blog",
+      "tier": "tier_2",
+      "summary": "By early 2026, the open source project OpenClaw had become a phenomenon. In January, its GitHub star count crossed 100,000 as developer interest surged."
+    },
+    {
+      "title": "It\u2019s Gonna Be May: 16 Games Hit the Cloud This Month, With More NVIDIA GeForce RTX 5080 Power",
+      "url": "https://blogs.nvidia.com/blog/geforce-now-thursday-may-2026-games-list/",
+      "published_at": "2026-04-30T13:00:47+00:00",
+      "source": "NVIDIA Blog",
+      "tier": "tier_2",
+      "summary": "[Editor&#8217;s note] The blog has been updated to note that GeForce RTX 5080-power expansion also extends to the Install-to-Play library. It\u2019s gonna be May \u2014 and the cloud\u2019s in full festival mode.\u00a0 16 games are joining GeForce NOW this month, including new AAA titles arriving on launch day from Ste"
+    },
+    {
+      "title": "Enabling a new model for healthcare with AI co-clinician",
+      "url": "https://deepmind.google/blog/ai-co-clinician/",
+      "published_at": "2026-04-30T12:14:15+00:00",
+      "source": "Google DeepMind Blog",
+      "tier": "tier_1",
+      "summary": "Researching the path to AI-augmented care and development of an AI co-clinician."
+    },
+    {
+      "title": "Introducing Advanced Account Security",
+      "url": "https://openai.com/index/advanced-account-security",
+      "published_at": "2026-04-30T00:00:00+00:00",
+      "source": "OpenAI News",
+      "tier": "tier_1",
+      "summary": "Introducing Advanced Account Security: phishing-resistant login, stronger recovery, and enhanced protections to safeguard sensitive data and prevent account takeover."
+    },
+    {
+      "title": "Where the goblins came from",
+      "url": "https://openai.com/index/where-the-goblins-came-from",
+      "published_at": "2026-04-29T20:00:00+00:00",
+      "source": "OpenAI News",
+      "tier": "tier_1",
+      "summary": "How goblin outputs spread in AI models: timeline, root cause, and fixes behind personality-driven quirks in GPT-5 behavior."
+    },
+    {
+      "title": "Building the compute infrastructure for the Intelligence Age",
+      "url": "https://openai.com/index/building-the-compute-infrastructure-for-the-intelligence-age",
+      "published_at": "2026-04-29T15:00:00+00:00",
+      "source": "OpenAI News",
+      "tier": "tier_1",
+      "summary": "OpenAI scales Stargate to build the compute infrastructure powering AGI, adding new data center capacity to meet growing AI demand."
+    }
+  ]
+}

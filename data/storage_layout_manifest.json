@@ -1,0 +1,27 @@
+{
+  "timestamp": "2026-05-29T00:26:05.101863+00:00",
+  "created": [],
+  "existing": [
+    "data/raw/youtube",
+    "data/raw/x",
+    "data/raw/reddit",
+    "data/raw/hacker_news",
+    "data/raw/rss",
+    "data/raw/github",
+    "data/raw/huggingface",
+    "data/raw/arxiv",
+    "data/raw/finance",
+    "data/raw/startups",
+    "data/normalized",
+    "data/verified",
+    "data/content",
+    "data/state",
+    "data/exports/reports"
+  ],
+  "legacy_paths_preserved": [
+    "data/news_queue.json",
+    "data/new_videos_queue.json",
+    "data/mass_transcript_pool.json",
+    "data/transcripts"
+  ]
+}

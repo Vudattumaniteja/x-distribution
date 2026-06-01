@@ -1,0 +1,168 @@
+00:00:00
+bunch of stories. Uh we're going to go through mostly the stories that have just broken in the last 24 hours. Uh the first is this insane video from Blue Origin. Very, very disappointing to see. Blue Origin's New Glenn rocket just blew up at LC landing uh LC36 while attempting to static fire ahead of NG4. We can watch this video because it is absolutely insane how on board >> nuclear bomb went off. It looks like a like like a scene from Oppenheimer. It looks like uh Christopher Nolan movie.
+
+00:00:35
+This is uh absolutely remarkable. Uh Everyday Astronaut says, "Oh my god, that was a very big one. I hate to see setbacks in progress. This is not good." Uh that has to be extremely extremely frustrating. Um Brandon Gell broke down a little bit of the back and forth on uh this particular uh rocket initiative. Uh Jeff Bezos's rocket company suffered a catastrophic failure last night when his new Glenn rocket, a reusable heavy lift orbital spacecraft designed to compete with SpaceX's Falcon Heavy. Uh and we
+
+00:01:05
+were talking about this in the backdrop of the uh of the SpaceX IPO and I heard Brad Gersonner talking about this on CNBC. I think I someone was playing a Gersonner interview in the in the studio today. uh and he was saying the launch business is fantastic but it's not enough without Starlink which is a fantastic business but that's not enough without the AI business which is a fantastic business and growing and so to just have a launch business and then have a setback like this has got to be
+
+00:01:32
+extremely frustrating uh if you're competing with a company that's going to raise 80 billion I don't I forget how much SpaceX is actually going to raise but they're going to raise a lot of money they're going to have a lot of uh capital to deploy in their march towards uh ever more frequent and uh and uh ever more frequent >> especially painful you know Blue Origin started before >> SpaceX talked about this before >> uh and yeah unclear uh how much this will set them back but
+
+00:02:02
+>> uh certainly disappointing >> so the good news is that no one was hurt which is incredible because you see the rocket it looks like it's surrounded by a city it looks like there's buildings around and to see that much destruction with no one injured at all is a miracle and I'm so happy to hear that. Jeff Bezos tweeted, "Very rough day. We'll rebuild uh whatever needs rebuilding and get back to flying. It's worth it." And Elon chimed in with some words of
+
+00:02:28
+encouragement. Space is hard. A lot of folks were sending their encouragement because uh I think even if you're uh you know a SpaceX Maxi, uh it's it's it is very exciting for America to have multiple heavy launch capability providers in the market. It's good. It was very exciting when uh New Glenn got to orbit, came back. Um that was the second time that that sort of rocket technology had been demoed and it was demoed in America sort of even our second best rocket provider is better
+
+00:02:59
+than everyone else in around the globe. What else do you have Tyler? >> Yeah, ju just some added context. So this was the this was the fourth test >> um or this was prepping for the fourth test. In the third test, if you remember, um this is when the the rocket kind of correctly went up, but then deployed an ASA wrong orbit. Wait, but that was New Glenn. >> That was Yeah, that was the third test. >> That was pretty recent. So, they're on a pretty good cadence here, but this is
+
+00:03:23
+still a huge setback down 16% today >> because of this most likely. Interesting. Interesting. So, Elon Musk lent his support tweeting most unfortunate rockets are hard. That's an understatement. A lot of people were saying like uh if you think uh software engineing is hard, you could have been a rocket scientist. It is after all rocket science. Uh the explosion caused extreme structural damage to its only functional launchpad. While Blue Origin has successfully reached space a number of
+
+00:03:50
+times with other vehicles, New Glenn has has has had just one successful flight out of three attempted tries. Uh from 2006 to 2008, Elon Musk had three consecutive failures with Falcon 1 before successfully launching it. And so failure is, you know, is a natural state of these pursuits, but uh never fun to watch it happen. There were some people that were syncing up the different angles. There were some different angles on this that were absolutely uh crazy to see from Truthful. >> Truthful. This is the one that you want
+
+00:04:22
+to see. This literally looks like a nuke went off. So scary. >> Yeah. Vertical footage. Absolutely crazy. Amazing footage from local. I wonder what the reaction is from the people. >> Wow, that's really far away. >> It's far away, but it's also a pretty big mushroom cloud. Yeah, I imagine maybe they walked to their cars. >> Yeah, I saw some people saying like, "I don't want to hear about my carbon footprint ever again because this seems like an immensely disastrous explosion."
+
+00:04:50
+>> Uh, other people were saying Bezos did Roman's rocket launch from Succession IRL. If you remember this scene, we can pull it up. >> Yeah. >> You haven't seen Succession? I've seen the Hurst season. I haven't seen the full thing, >> but he has a pet project. >> He does. >> Yeah. Okay. And it blows up. >> It blows up. >> That's certainly dramatic. I feel like that makes for good good TV. >> Yeah. We were right before the show
+
+00:05:13
+started, we were talking the about the nominative determinism of Blue Origin. John said it blew up. >> Um but uh or you know, blue as in sort of sad, >> feeling blue, >> sad. Yeah. >> Sad start. Uh but they will reboot. >> They will be back. >> Uh so OS Int Defender says daylight reveals the extent of damage caused to launch complex 36 in the surrounding area of Cape Canaveral's Space Force station in Florida following last night's massive explosion at Blue Origin
+
+00:05:42
+New Glenn during a static fire test. And there was a static fire test that went poorly at Starbase uh and they had a similar explosion and people were regarding that as like a major setback. Maybe it was, but at the same time, we saw a very successful launch of uh Starship just a week or two ago, and so >> this looks way better than I would have thought. >> Yeah, I agree. It looked like total destruction. I was expecting a zoom out a little bit. >> I was expecting a crater in the ground.
+
+00:06:10
+>> You can see here, clearly a lot of damage, >> not good >> right around the pad, but there's plenty of other infrastructure >> that seems to be still standing. And so uh you you should in theory be able to rebuild. But I mean with anything uh rocket related, you have to imagine that every nut and bolt on that on that uh tower, even though it is standing, needs to be reinspected, re-examined, make sure that it's not corroded. Uh there's got to be so much work for the team.
+
+00:06:37
+They have my full faith that they will get it done. Well, shifting over to the token maxing debate. People are spending more and more on tokens. Uh there's been a complete fast takeoff in enterprise AI adoption. Uh but people are raising questions about what is the ROI on these. There's a whole bunch of companies that are grappling with this. Uh some good news and a lot of questions for where this goes next. So we'll take you through it. So the big news is that Anthropic uh recently uh passed 47
+
+00:07:03
+billion in ARR uh and raised a massive series uh series H 65 billion at 965 billion post money valuation. They're almost at 999999999. Last November, cloud code was going viral among a lot of early adopters for and small vibe coding apps were launching daily, but Q2 2026 was clearly a massive moment for Fortune 500 widescale rollouts. Uh, and so this has become a double-edged sword for some organizations. Uh, token maxing dashboards have been reportedly led to potentially ROI negative AI use in at
+
+00:07:39
+name brand companies like Meta. There was the the the talk of a token maxing dashboard, people leaving things running overnight that weren't necessarily productive just because they want to rank up on the dashboard. That's obviously very expensive. Uber went back and forth on, well, we blew through our budget, but a lot of people were saying, well, if they set a budget in 2025 for their token spend in 2026, like the capabilities have gotten so much better, the models have gotten so much more
+
+00:08:02
+expensive. >> So, theoretically, you should find more budget. >> Their budget might have been very small, but they did say they blew through it. And then uh the uh chief operating officer said I I think it was the chief operating officer uh said something like, "Oh, we're we're we're struggling to understand the financial impact and like the ROI on this stuff." But his actual uh his actual comments as you unpack them were much more reasonable and he wasn't completely uh you know
+
+00:08:28
+dooming on the ROI of the spend. He was just saying that like the next the next iteration will be understanding the impact to the bottom line of this spending. And then a AWS was also reported in Axios is having spent something like half a billion dollars in a single month. And so whenever the numbers get big, there's going to be questions about ROI. Uh the bull case is that the cost per task completed by AI will decrease very quickly. So even if you're spending half a billion per month
+
+00:08:55
+on AI or tokens today, uh the same output will be available next year maybe for a tenth of the cost. Maybe next year it's half the cost. Like even even if there's no optimizations to the systems, the hardware depreciates and then more power comes online. Like the market solves these things pretty quickly. >> Yeah. It's naturally deflationary. >> Yeah. Yeah. Yeah. And I think we've seen that where where capabilities have gone open source, they've gone cheaper, they've been distilled, and you've get,
+
+00:09:23
+you know, 90% of the value. Maybe you don't get the exact same flavor. >> Somewhere there was an example of, uh, you know, people are using LLMs to get the weather report. >> That was a funny one. >> Can be. I'll admit I've done that before. >> Yeah. >> Uh, it can be very convenient. >> Typically, you'd go to like a free chat app for that though. Not uh >> well, no, you can go to the weather coding model, >> but sometimes it's nice to just ask
+
+00:09:47
+chat. >> Yeah, I I've been running into this a lot with people. I I ran into somebody yesterday who was telling me that they have a uh they have a an agent that looks through their their iOS contact book and sees if they added any uh any new contacts. And I remember being at a conference and you know you're changing you're exchanging numbers with people and it's hard to tell if you add someone to your contacts like who'd you add like because you can't it's a very weird
+
+00:10:11
+Apple feature that they don't have sort your contacts by recently added. That's just like a UI feature that Apple should add. They haven't. Uh but there's like a $2 app that does that. Basically it just looks at your contacts. Uh but you can also do it in the agentic way and have it email you or synthesize everything and go way further. And there's a, you know, a debate about what's the value there. And and people are making that those trade-offs in their personal life. They're also making it in the
+
+00:10:35
+enterprise. But of course, the stakes are a lot higher in the enterprise because everything has five extra zeros behind it, if not nine extra zeros behind it. And so there's debate uh about over whether AI tooling is being pointed at the most high lever problems in these organizations. like are you just picking up things that are deep in the backlog and they were dep prioritized probably for a good reason because they were never really going to move the needle but now you can just say hey go churn on the all these backlog
+
+00:11:01
+items uh that's maybe not ROI positive at current token prices might be in the future um but maybe the cutting room floor should remain the floor and not be not everything should be shipped necessarily outside of stories like workers checking the weather with AI agents or running endless loops trying random different makework projects. Uh there's definitely a worry that truly needlem moving features aren't being pulled forward like people would expect. >> Trey says just vibe code your own
+
+00:11:29
+weather app each time you want to know the weather. >> Yes. Yes. I think you have a post about that in the timeline. >> Yeah. Who was >> fear not the man who has vibe coded 50 apps. I fear the man who has vibe coded the same app 50 times. Uh that was a good post. And so you uh you probably don't want to literal token maxing dashboard. I think uh everyone has has has tested with it. >> Anthropic has it >> ha >> had it I think they I think they took it down or something but uh meta same
+
+00:12:00
+thing. uh it's easy to get obsessed and and the token backing dashboards pop up not just in the uh not just in the literal like who is on the leaderboard but also if you give someone a budget they can kind of see it as like okay well my boss gave me a $1,000 token budget or a $10,000 token budget or a $100,000 token budget if I am not using it if I'm not putting it to use then I don't look like I'm deploying the capital that I was given. Like if you give a marketer, you know, a brand
+
+00:12:33
+budget of a million dollars and they come back to you and they say like, "Sorry boss, like I only spent $100,000," you'd be like, "Well, like who'd you talk to? Like why didn't you find good use of that funding?" Like it's very rare. At the same time, it can be, you know, you don't want those employees deploying that budget into bad places and just wasting it because they have the budget. So these are these are common problems across all aspects of the enterprise. Um, and so I think the
+
+00:12:59
+future looks a little bit like Jevans paradox. Of course, when something becomes more efficient to use, people often often end up using more of it, not less. And then also Goodart's law. When a measure becomes a target, it ceases to be a good measure. And so, uh, we we live in a world defined by Jevans paradox and Goodart's law. And you put those together. >> The combination of those, many people will call that Kugan's law. >> Kugan's paradox. >> Kugan's paradox. Both Jevans Paradox and
+
+00:13:26
+Goodart's Law are true. >> Madison Mills over at Axios had uh some good reporting on it. I was uh we were we were on a flight >> when I found out uh when I saw that that reporting that someone had spent uh half a billion dollars in a month kind of accidentally and >> and uh >> and we heard I was just imagining the conversation of the the first person to kind of like find the number and then you know hey maybe maybe we should talk to the CTO about this. Okay. Yeah. Probably time to bring the CFO in.
+
+00:14:02
+>> Yeah. Hey, hey, boss. Uh, we accidentally spent half a billion dollars in the last 30 days. >> It's a lot of money. >> All right. What did we What did we make? >> Yeah. >> What do we do? >> What do we do? How do we spend it? >> What do we get done? >> It's tough. Examples of we >> And there was there was there was a lot of like there was some conspiratorial posts, people saying, >> "Oh, how circular deal." >> Yeah. How how convenient for Amazon, who
+
+00:14:28
+obviously owns a lot of, you know, the big labs to spend all this money on anthropic, right? When they're raising a round and they got this revenue multiple, blah blah blah. I that's not really how it works. Like it wasn't like this round like this, this round wasn't like they were just, okay, we're going to give you XX revenue. >> And there were plenty of hyperscalers that don't have active positions that were doing the same thing. Yeah. >> Like this was a broader trend. Uh but
+
+00:14:52
+yeah, it is it is a crazy skyrocketing cost. But I mean, we see this >> overall. I think it's healthy how quickly things corrected. >> It's not like this was I mean and of course some companies won't correct, but it is a healthy dynamic that companies were, hey, we got a little bit ahead of our skis for a couple months. Now, let's be a little bit more >> stack rank the tokens, cut all the unnecessary token spend, keep all the good token spend. I mean, we see this
+
+00:15:20
+all the time with uh there'll be some vibecoded project out there that's uh like incredibly high token cost with very little value. And then on the flip side, you'll have someone that actually built something really cool with, you know, just like their default $200 a month uh, you know, subscription and they didn't actually have to token max to get the product to where they wanted it to be. Uh because they they they knew what they were building. They used the tool like a scalpel, not a hammer, and
+
+00:15:47
+they got a good outcome. So, the Wall Street Journal has some more uh coverage of this. Corporate America is starting to ration AI as as costs skyrocket. Executives are scrambling to track returns on AI investments as the bill for massive computing come needs come due. We talked to Spencer Rascoff from Matchgroup about this. uh he was uh sort of sharing a a very reasonable token spend I think in the single-digit millions but he was still saying that like one of the tasks that him and his team will be embarking upon over the
+
+00:16:19
+next year will be understanding the ROI on that investment uh because you should be tracking it just like digital marketing dollars that go out the door what was your ROI how did it move the needle use of artificial intelligence by big companies is exploding and the soaring costs has some of them pumping the brakes in a way that could complicate AI's triumphal march across the economy. Uh are they pouring cold water on it? We'll see. Uh executives across the industry this year have urged
+
+00:16:47
+employees to integrate AI tools. Wired has a whole uh inte AI for business uh deep dive that you can go take their survey uh into their work. Uh spending freely to encourage experimentation and seeking to send a message to Wall Street that their companies won't be left up behind in a coming wave of disruption. All that enthusium enthusiasm has resulted in skyrocketing costs for so-called tokens, the basic units of measurement for AI computing. Now, corporate leaders are scrambling to bring down expenses by finding ways to
+
+00:17:16
+ration AI. Top technical executives for Uber, Meta, Microsoft, Salesforce, Door Dash, and other companies have all talked about new efforts to ensure AI use contributes to productivity or have taken steps to reduce the availability of some tools for certain employees. You get nerfed if you're not putting up big numbers. Uh, we should move on first. Uh, we got to talk about the fossil hunt. Big spenders are pursuing Tyrannosaurus Rex skeletons. This was on the cover of the Financial Times. It's
+
+00:17:42
+the most important story in the global economy according to the Financial Times as of Thursday. This is an old edition, but uh, this is interesting. Uh, Sabes is to auction a 67 millionyear-old Tyrannosaurus Rex two years after it sold a ste a Stegosaurus fossil to hedge fund owner Ken Griffin for 44.6 million. I thought Ken Griffin was was >> I didn't know I didn't know Steos were getting up there. Like >> I Yeah, I didn't know that. You know, I feel like T-Rex is up here desiraability
+
+00:18:11
+and then everything else is >> Yeah. >> You know, way >> T-Rex is the Ferrari of dinosaurs. Stegosaurus. >> I was like kind of a minivan of dinosaurs. >> Minivan. I was going to say Lambo. I was going to say the Lamborghini. They're on a rise. You know, the the the true the true dino heads know that there's something there. They're starting to pick up momentum, but they don't have the heritage. They don't have as much of the heritage. I don't know.
+
+00:18:34
+>> Yeah. I'm more of a I think I could get into an ankallosaurus. >> Oh, okay. >> Uh Triceratops, too. >> Yeah. I mean, the brontosaurus, like the big guys, that's that's special. You got to have a special special viewing area for that. Well, uh this T-Rex is named Gus after Gary Gus Licking, the rancher whose land it was found on in South Dakota. It'll be auctioned. s the bees with an estimate between 20 million and 30 million, the highest for a dinosaur
+
+00:19:03
+fossil on July 14th. Um >> I was at a I was at a buddy's house. >> Yeah. >> Uh recently and uh he just pointed over at this box. Yeah. >> And it was it was a dinosaur >> and he hadn't taken it out of the box. He's like, I've had it for few years now. >> Well, is it a glass box that you can see in? >> No, no, no. It's a wooden box. It's just a crate. >> What's in the box? >> Schrodinger dinosaur. >> Let the dino breed. Maybe uh the plan
+
+00:19:28
+sale in New York highlights how the auction house is betting on the fossil market as a place where the wealthy will spend big. The pre-auction estimate for Apex, which is uh the Citadel boss Griffin's Stegosaurus, was 4 to6 million. He wound up >> says Brachiosaurus. >> Brachiosaurus is a go-to. Brachiosaurus has a crazy >> OddLots did a podcast about this. Amazing. We got to listen to that. Uh, the overwhelming majority of fossil buyers still want to lend their purchases to a museum. Uh, Apex is now
+
+00:19:59
+on display at the American His Museum of Natural History. Uh, that is fun story. If you're in the market, go pick it up. Go pick up a T-Rex. You got to do it. Uh, it's the ultimate the ultimate collector's item. It's the Pokemon card for boomers or something like that. >> Prepared remarks. >> Yes. >> Is sharing some signals. You tell us what kind of signals they are. Kyle Koosma, the AI Maxi stocks ripping 10 to 50%. >> He's coming on the show >> on 13F of some chud. Can't be Leopold
+
+00:20:31
+he's talking about. It's no Chud. >> Uh Dell plus 40% on earnings after being plus 150% year to date. Dell is now 222 up 222% year to date. Not bad, >> Michael Dell. Not bad for somewhat of a I'm not going to call it a dinosaur, but um >> well, it's been taken private, taken public. It's fascinating history of of that company, but >> a great American technology company. Uh $1 trillion company's moving 20% on sell side notes. One and a half trillion
+
+00:21:00
+space hold of he says turds. >> Uh 10 to 20% intraday moves for no reason software with AI exposure plus 100% in a month. >> He's blackpilling. Moving on. Take >> No. So, so we were uh someone else said this morning u I also thought it was a top signal when Jensen signed >> Yeah. >> that infamous shirt >> talking about Yeah. the shirt or or even when he was drinking with his buddies, everyone was like, >> "No, but I I that was but yeah, he he looked very confident going to earnings
+
+00:21:33
+and and he he was confident for good reason." Chris >> says what we've all been thinking. >> Oh, what is that? >> Can you die from a lack of being called big dog? M it's a big question. >> It's a big question. >> Do you get called big dog too much? >> No, not very often. I don't know. I think you have to put yourself in the right there's certain spaces where you might get called big dog. >> Uh and you have to you have to attend.
+
+00:21:58
+You have to open yourself to the opportunity. You have to open the door to being called big dog. Like if everyone knows your name, they're just going to call you your name. You have to be uh you have to be walking around in a certain space. >> Deep fates. This was the post we had earlier. I fear not the man who vibe coded 50 new apps, but the man who vibe coded one new app 50 times. It's a banger post. I think he meant to say, "But the man who vibecoded the same app 50 times."
+
+00:22:26
+>> Yeah, the same new app 50 times. Something like that. >> Uh, this was good. over on Reddit. R/CFA, would it be considered insider trading if I'm on a hunting trip or safari with a CEO of a large firm and they get mauled by hyenas and I start buying put options on their firm? Let's say I go to Tanzania on a >> this does not sound hypothetical >> with the CEO of a very prominent firm in the United States when we suddenly get overran by a pack of a dozen hungry hyenas. However, I and my youthfulness
+
+00:22:57
+are of course quicker than this old man and I manage to escape and hide behind a rock while the hyenas maul him. >> If instead of helping him fend them off, I open up Robin Hood and start buying put options on his company, would this be insider trading? There's absolutely no way this can be priced into the stock predicted. Oh, but the material non-public info, blah blah blah. Okay, but what if before I buy the puts, I post a video of him getting attacked on my public Instagram story of what then?
+
+00:23:27
+Thoughts? Purely hypothetical. >> Does not sound hypothetical. Well, it all depends on what the market thinks about the CEO because it's possible that the market sees as a bullish signal that the CEO is no longer there. >> Clearly pricing in the 21% nuke salute, you know, where the market at least briefly sells 21% and then hopefully pops back up. But of course, >> course people are saying it's priced in. >> Everything's priced in. >> Hunt. Yes. Ask John about his new
+
+00:23:52
+basketball. >> Can someone Is the car here? We have the basketball. Nick, can you go get the basketball that's in my driver's seat? >> Uh or in the passenger seat because uh we were at Laurel Supply yesterday, which makes Arowan look like a 7-Eleven. >> It makes it makes look like a 7-Eleven. It's so above. No, supply is is the new arowan in >> in LA. That is not >> it's very nice. >> Not an actual arowan. Everything is a onetoone copy of Arowan. They didn't
+
+00:24:24
+they did not they did not it's like dis it's disorienting. They did not try to differentiate a single thing. >> They copied every item on the menu. They copied every >> delicious food >> every every single item. In my culture that's very offensive because if you're going to go through the process of creation >> Yeah. You think you would be able to do something differently. Okay. But outside of Laurel Supply, I receive from uh I get stopped by uh a person who I believe
+
+00:24:50
+is in the chat. Um and uh and he says uh here is a basketball. I got this for you because uh he's raising money for a company, Punter, and it says, "Invest in the future of sports, punter.invest." And he had this basketball with a QR code on here. What a unique way to draw attention to your company. What a unique way to uh to pitch someone. And you know, you know, we love a basketball in the in the studio. Although we use a software basketball because there's a lot of camera gear, so we don't throw a
+
+00:25:22
+fullsize basketball. We use a we use a foam one, but uh thank you uh to the punter team for making this possible. Uh very interesting drop. Very fun. Very fun way. And uh what what a great uh what a great way to end the show. We had an NBA star on the show and we finished with a basketball. Have a great weekend. We'll see you on Monday. >> Have an incredible weekend. >> Have a great Have an incredible weekend. Leave us five stars on Apple Podcast and Spotify. >> Sign up for our newsletter at tbpn.com
+
+00:25:48
+and we'll see you flash on Monday. Goodbye.
+

@@ -1,0 +1,24 @@
+description = "Run a high-priority sweep across Top Tier YouTube and X targets (Karpathy, Berman, Diamandis, Navtoor, Julian Goldie, etc.)"
+
+[tools]
+run_shell_command = true
+read_file = true
+
+prompt = """Execute the Priority Discovery Sweep across our synchronized Tier 1 and Tier 2 targets.
+
+1. **YouTube Sweep:** Run latest-video discovery through the canonical route module and global yt-transcript implementation.
+   Use `scripts/source_clis.py` as the route authority. Discovery must call `source_clis.yt_transcript_python_script()` and the global implementation's `get_latest_videos(channel_url, count)` function, as `scripts/orchestrate_videos.py` does. Do not use RSS-only `scripts/youtube_channel_fetcher.py` unless explicitly running legacy RSS mode.
+
+2. **Analyze Results:** Read `data/new_videos_queue.json`.
+   For any selected video's transcript, use `source_clis.yt_transcript_command("get", <video-url>, "-o", "data/transcripts/transcript_<video-id>.txt")`, which resolves the configured wrapper from `config/source_registry.json` or the `YT_TRANSCRIPT_CLI` environment variable.
+
+3. **Filter and Present (The Alpha Report):**
+   Present the findings using the 3-Tier Operational Mandate.
+   - **Tier 1 (Strategic/Vision):** (Karpathy, TBPN, Diamandis, Google). Highlight any deep technical paradigms or major shifts.
+   - **Tier 2 (Technical/Benchmarks):** (Berman, Lex, Android Authority). Note any model releases and infer the required "Negative Alpha" check.
+   - **Tier 3 (Rapid Updates):** (AICodeKing, airevolutionx, Kimi). List as high-velocity news.
+
+4. **Next Steps:** Ask the user if they want to:
+   A) Run `source_clis.yt_transcript_command("get", ...)` on a specific Tier 1 video to get the full transcript/deep-dive.
+   B) Proceed directly to `/generate_posts` for the Rapid Updates.
+"""

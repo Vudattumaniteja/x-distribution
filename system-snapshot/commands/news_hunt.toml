@@ -1,0 +1,37 @@
+description = "Run all 7 news hunting sub-agents to discover AI news across the web"
+
+[tools]
+web_fetch = true
+google_search = true
+mcp = ["notebooklm-mcp"]
+
+prompt = """Run the Hybrid News Hunting pipeline (Search + Deep Discovery).
+
+PHASE 1: Deep Discovery (Real-Time Infrastructure Monitoring)
+1. Run full discovery sweep via run_shell_command: python scripts/hybrid_sweep.py
+2. Invoke the x-automation subagent with prompt: "Perform a real-time news scan of the Top 10 Tier-1 accounts in followed_accounts.json. Identify any major updates from the last 12 hours."
+
+PHASE 2: Core Search (Breadth Scanning)
+Execute the 7 sub-agents in sequence using google_search and web_fetch:
+1. Automation Scout
+2. Corporate Watcher
+3. Leak Hunter
+4. Research Tracker
+5. Economics Analyst
+6. Founder Insights
+7. Tool Spotlight
+
+For each agent:
+- Follow references/news-hunting-agents.md protocols
+- Grade relevance (0-10)
+
+PHASE 3: Strategic Aggregation
+1. Merge findings from Phase 1 and Phase 2 into data/news_queue.json.
+2. Deduplicate and apply ranking (Relevance + Bonuses).
+3. Save complete results and append run log to logs/agent_runs/.
+4. Present the top findings in a table, explicitly highlighting any Phase 1 "Deep Discovery" wins.
+
+Rules:
+- Total Transparency: List all tool/script timeouts or failures first.
+- Deep Signal Priority: If a sitemap/HF discovery exists, it must be featured.
+"""

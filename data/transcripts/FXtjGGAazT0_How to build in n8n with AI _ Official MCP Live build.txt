@@ -1,0 +1,120 @@
+00:00:00
+Programming is changing. It already has and flow programming is changing with it. In this video, I'm going through the full process of vibe coding in NADN to create a real productionready system using Claw Desktop with the NAND MCP and NADN skills. I'll be showing the easy parts, the hard parts, and sharing some tips and resources on how to find success beyond the demo. It will give you some good info to take into your next project. Technical planning and implementation take less effort than
+
+00:00:30
+ever, but specking out the high-level overview is more important than it has ever been because we can't figure it out as we're building it if we aren't the one building it. So, we need to very clearly define what our desired output will be upfront, especially if you want to be a manager for your agents rather than a babysitter. So, what I'm building is a Slackbased workflow reviewer. And when I'm finished, I will post it to the template library so that you can use it, too. The
+
+00:01:01
+idea being you send the Slackbot a link to your NAND workflow. And it uses the skills repo to do a deep and actionable review. When specking something like this out, I like starting from what the enduser experience is like and then working backwards from there. So, I want to tag or DM a Slackbot with a workflow URL and have it reply with a detailed report in the thread. The review should cover both the top level workflow as well as any subworkflows that are used inside of it. It should include an
+
+00:01:30
+overall grade, a short overview of the review, then a breakdown of each finding organized by mustfix, should fix, and nice to have. It should be styled nicely in Slack's block kit. And to keep it simple enough to cover in one short video right here, I'll say that follow-up questions are just out of scope. The same skill that we are using to build this workflow will also be the source for the agent to do the review. The skill even has a review checklist in it that we can use here. And since the
+
+00:01:59
+whole skill is public on GitHub, the agent can just fetch it from there without even needing any credentials, which will make the template much easier to set up for you if you want to use it. And it currently doesn't natively support skills, but I know there's a good template showing how to make it work. So, we'll share the link uh to that template with the agent to give it a little nudge in the right direction. In order to see the workflows, I could give the review agent access to the NAN
+
+00:02:24
+MCP and then it could even apply fixes for us as well. But I wanted to keep this really like deterministic and only be able to do the review and nothing else. So, we'll let the agent know that I prefer just using the built-in NAN node for getting the workflow JSON. and then we'll be sure it never unexpectedly edits or deletes anything without us, you know, knowing about it. The only other high-level detail I can think of right now is that I want to use Opus 4.7, but I like trying out other models
+
+00:02:52
+when they become available. So, I'm thinking we'll use the open router model node instead of the anthropic one. I'm thinking that all the planning we need to do right now is done. And so, you don't have to watch me just explain all this to Claude again. I've actually been recording this whole time uh with a transcript and we'll just copy and paste that into Claude. But before we start throwing prompts in, we need to get Claude set up. Now, bear with me. I know you want to see stuff built, but
+
+00:03:16
+remember what I said. It's all about the prep. We'll be using Claude desktop in the code tab. We need to set up five small things before starting. We need a folder to work out of. Next is connecting the NAD MCP. Make sure you're on the latest NAN version since we're improving it all the time. Then go to the settings and get the OOTH URL. Then there is an official connector. So just put the URL there. Now we'll want the NAN skills plugin. And note that the plugin has more functionality than just the skills on
+
+00:03:48
+their own. If using Claude Code CLI, follow the steps in the GitHub repo. But in desktop, we can do it from the customize screen. Under plugins, say create plugin, then add marketplace. put in exactly n-- io/skills. This is the GitHub path where it lives. So, it goes and gets it from there. That only installs the marketplace. So, if the actual plugin doesn't show up right away, then just quit and restart the app. And that should reload it. Then, it will be under add plugins, browse plugins, code, then scroll over to
+
+00:04:20
+naden. And finally, there is the plugin that we want. So, there's one more plugin that I want, which is the superpowers plugin. This is a gamecher for Claude planning everything up front and creating the plan files that it can follow. And finally, number five, we need to write a good claude.md file. This really shouldn't be skipped and you can put in your own preferences here and fix behaviors that you don't like. In my own personal testing, I found that to get really reliable results on the first
+
+00:04:47
+try, you need to really overstate the importance of using the NAD skill. Most of the time I've had an issue, it's only because a skill wasn't loaded when it should have been. After starting a new session to ensure the new claude.md is loaded, I'll paste in this transcript from when I was explaining it to you earlier and tell Claude to ask enough questions so it has enough context to work uninterrupted until it's finished. I'll also change the mode to bypass permissions, which you need to enable in
+
+00:05:14
+the settings to have available here. This is the setting that lets it do whatever it wants without any permissions. So, please be careful if you use it. We can see here now that it's uh using the brainstorming skill. That's what gives it the framework for all of the questions and planning documents it's going to make. Now, I'm going to go through and answer all these questions it has. So, sometimes when you give it a really kind of small task like this, it will downplay the importance of all the
+
+00:05:43
+planning and stuff. So, you really have to even even more than normal emphasize how important the planning and looking at all the resources are cuz it sometimes just goes like, "Oh, this is small and easy." and then doesn't look at the resources it needs when it, you know, needs it either way. So, it seems like it's doing a uh a lot of digging right now. So, that's good. And hopefully it will, you know, give us a one shot here. All right, plan is finally back. Let's see what it looks like.
+
+00:06:17
+Uh we'll read the overview, then I'll read the plan itself. Okay. So, it can be tempting to read this. I read this and say that looks good. You know, let's go for it. But it's always worth the effort to read the plan. I've done it so many times where I just read the summary, said looks good to me. Let's ship it. And there were mistakes that if I read the plan, I would have caught. So, always click in, read the actual plan, and you know, make sure you know what it's building. If
+
+00:06:46
+you're uh just getting into this and you don't really understand what it's talking about, I would recommend, you know, kind of chat with it for a while and ask why it took the approaches that it did. And then you'll be surprised about how much you intuitively know about the different approaches because you it might say, "Oh, I picked for this approach because of this reason." And you might say, "Oh, well actually my implementation has a different, you know, path." With something pretty
+
+00:07:08
+simple like this, there's not really that many places that can deviate, but um with a bigger project, you'll run into that all the time. So, I recommend chatting for a while and really getting the plan nailed down. I'm going to go through and read this now. See, this is the kind of thing that uh if you miss, you get really embarrassed. I I happen to know this from embarrassing myself in the past. Instead of a DM, it's just all it's just any channel it's invited in. So, if you invite the bot to another
+
+00:07:34
+channel and any message will trigger it and it'll just start responding to everybody and then you get made fun of. So, it's good that it drops the uh uh the channels uh that it's not actually specifically DM'd in. So, while reading the system prompt, I notice it's telling it to actually fetch the review checklist when it's going to need the review checklist every single time. So, I feel like it might be better if just getting the review checklist is part of the workflow leading up to the agent and
+
+00:08:04
+where it's passed into it instead of having to have the agent use a tool itself to go and get it. So, I think that's the only push back I'll have here. And this is a bit of a nitpick. this, you know, would work fine without this change, but this is kind of also just giving an example of it's you can just conversationally ask for the plan to change. And if you're unsure or the agent is unsure, you can talk back and forth about it. So, this is just a small example. Yes, I agree. That's cleaner.
+
+00:08:33
+Updating plan now. All right. Now, it's asking for an approval and we'll give it to it and it should start working away and not really need anything from us until it's done. So, approved. Now that it's off working in the background, we can work on some other things that we'll need at the same time. We need to make a Slack app to get this connected. A really nice thing about Slack is they let you upload a configuration file instead of having to do it in the UI. So, we can actually
+
+00:09:02
+just have Claude set that up as well in a new session. We'll ask Claude to research how to make a valid Slack app manifest that will work for our app. It should have all the context it needs from the plan file that the other session created. And also, while we're here, we'll ask for naming ideas since I haven't thought about that yet. Okay, let's see. I don't really like any of these so far. I I like skill issues since it's using the skill. I really don't like any of these though. Mid
+
+00:09:30
+detector. Sometimes you just need some human creativity. I'm going to name it workflow whisperer because I really didn't like any of Claude's suggestions. Hey, great. Now that we have the manifest, we can just copy this at api.slack. slack.com/apps. Click create new app. From manifest, paste your manifest, then create app. If you've ever made a Slack app before, you'll know that's much easier than having to do it manually, but we still have some stuff to do by hand, like
+
+00:10:00
+adding a profile picture just for fun, and also installing the app into your organization. And then in OOTH and permissions, we need to copy the bot token. We'll get this to start setting up the credentials in NAD. We'll make a new Slack API credential. Give it a name. Then paste in the bot token. We need to copy the signing secret from basic information in Slack and paste it back into the credential. Now we need to get an NAND API key so that our workflow is able to fetch other workflow JSON. We get that from the
+
+00:10:38
+settings. then naden API. Always give your keys descriptive names if your plan allows it. The workflow should only need the read workflow scopes. So I'll limit it just to that. Save and copy. Now we can add an NADN credential type and paste that key in. It also needs the base URL which is just the NAD URL with the path of API/V1. and it's still generating, which gives me a chance to address a few things. I've heard a couple times, why are you still using an MCP when skills exist? So, I want to explain what each piece of
+
+00:11:15
+this equation is actually contributing. Claude Code is a coding agent that runs on your own computer. It can do things like call tools, use MCPs, and create files. NAD is an automation and orchestration platform. NAD is where logic lives and runs on a server at any time, not tied to your computer. It's batteries included, meaning everything is already set up and works out of the box. The security is already there. Credential management, remote access, it all just works. The MCP makes the connection between tools like Claude
+
+00:11:48
+Code and NADN. So, Claude Code can directly interact with NADN like it's a user right in the UI. Without the MCP, Claude can't actually change or see anything in your NAND instance. The NAND skills and all skills are just extra prompts that help the model do a specific task. So there is no connection being made by skills. It's just teaching the model how to do things better by providing extra details. So think of NADN as the hands and skills kind of like the brain or more like a manual I
+
+00:12:19
+guess and the model is the brain. I also want to talk about speed. When using the NADN and the NAND skills, it's a bit slower than generating code, though it is getting faster as the team keeps optimizing it. The skill really helps Claude with making really, you know, really good workflows, but it slows down since it's essentially researching before it generates anything. If you're feeling impatient, just remember that the riskiest, most manual, and hardest part of using code, the deployment in
+
+00:12:47
+any takes no effort at all. And with the tips I showed with the upfront planning, parallel sub aents, and setting it up to work in the background, it really hasn't been a problem for me. And look at that, perfect timing. It looks like Claude is finishing up. It has all the setup for everything that we need to do manually, which we already did the credentials, but then we'll read through the rest and we'll go and I'm really curious to see the workflow. So, we'll go and take a
+
+00:13:11
+look. Check that out. I think that's kind of a pretty workflow. So, one thing I noticed right off the bat is that all of the sticky notes are all stacked on top of each other. Since I'm on an unreleased version, I'm not sure if that's expected or not. There's also not that many. So, we'll ask Cloud to add some more and uh try to have it reposition them. It looks like all the nodes with errors are the ones that are expected, the ones that were waiting for credentials. As I look
+
+00:13:38
+through, I don't really see anything that stands out as an issue. I really love all the error handling. You hardly ever see all of the error cases covered like this because really there's nothing worse than a silent failure. So, it's good the skill is enforcing this. Oh, and I forgot the open router credentials. We didn't set that up yet. So, I'll just add that really quickly on the canvas. One of the great things about NAD, a mistake or you forget about something, you can just fix it right in the canvas.
+
+00:14:05
+And now we'll ask Claude to add the Slack and NAND credentials in for us as well as fix and uh add some more stickies to make sure this is well documented. While it works on that, we'll see what Claude asked us to do. The credentials are already done, so we just uh asked it to do the binding. So that's done as well. Okay, let's go figure out what our bots's ID is. Oh, and it looks like the manifest wasn't right. Uh this should let us send messages here. Luckily, I know what the
+
+00:14:32
+issue is and how to fix it. We just need to go into the Slack app home and enable messaging and then reinstall after a refresh. And nice, now it accepts messages. So, we can grab the ID from the app details screen. And we can add in the bot ID just like it asks. And oh, it already finished editing the workflow. Uh, so it's already in here. First, I'll put the Slack ID so I don't forget. And at least it moved the stickies around, but they still look a little funny. So, I'll clean them up a little
+
+00:15:07
+bit. That definitely isn't perfect, but it's a little better. But let's just move on to registering the web hook with Slack. We need to publish the workflow. Then copy the production URL from the Slack trigger. And in the event subscriptions tab, there's a URL field for it. And then we can just save. I never know when I have to reinstall with Slack, so I just do it after every change. And now we should be ready to fully test. So we'll test it on itself. So I'll send a message.
+
+00:15:41
+And look at that. We got a review back on the very first try. Uh let's go in and read it. Let's go to the execution and see what's happening here. Everything looks green right away. One of the amazing parts of using NADN is how easy it is to trace through and find errors. It's literally like a diagram pointing out to you where an issue is, but you can still have logical mistakes that don't show up as an error, and they are the hardest to find, and it looks like that might be what we're dealing
+
+00:16:13
+with right now. I've already spotted that the get skill tool hasn't even been used, which is definitely a problem. A workflow this big should have loaded at least five or six skills to do a thorough review, which is what it's prompted to do. So, it not being used even once is 100% a bug. To be completely honest, I can't find what the issue is. I'm not sure why it isn't working. So, I'll ask Claw to look into it with the execution ID. Oh my gosh, I feel pretty stupid and I
+
+00:16:44
+completely missed that. The skills files like the paths should have been listed in the agent prompt so that it actually knows what skills are available and how to call them because right now the get skills tool only return skills by the exact path being passed in. So if the agent's never told what's available, it's never able to grab anything. So Claude has two suggested fixes, which is loading in the skills directly and giving it into the agent and then also making the rule much more strict in
+
+00:17:14
+terms of only using the skills for the review. I did think that that was in the original plan and I know that's in the template that I asked it to emulate. Um, but it was lost in translation somewhere. So at least we caught it now so we can get it added. Okay, so the fix is apparently done. Uh, I'm being told there's a quirk to address where something landed the wrong way. So, one manual step. It's asking us to enable continue on error output. Let's go see what it's talking about here. I'm a
+
+00:17:44
+little nervous now. Okay, so it messed up some of my organization and I don't really know what's Let's see. That is a weird place for a connector to come out. Open this up. Continue using error output. Okay. And it did wire it right up. So I guess it just forgot to put it in the correct place. I don't I don't really know. But anyway, works now. So I'm happy. That should be that, I guess. Let's publish this and give it another test. Copy this again. We'll say. Okay. And we got a reply. Fetch skills
+
+00:18:24
+index does not have index really. Oh, it doesn't have a retry on fail. It just has an error branch. Okay, fair. Fair fair play. So, this seems more real. Let's check the execution. Yes, look at that. We got six tool calls now. It got six skills files instead of that. And let's take a look in here and see what this prompt looks like. Okay, so look, this is the available skills files. Every markdown path inside of the public nad repo fetch any of these via that. So now it knows exactly
+
+00:19:06
+what it has available to it. That's amazing. That's that's what we were missing before and why it wasn't working. So this works. Let me test one other thing which is giving it a bad URL. Let's just give it the ID. Nice. So, we got the SAD path 2 is working and that is a really nice uh user experience at that point too. I hope this video gave you a realistic idea of what building for NAD with AI looks like and prepared you to try it for yourself. If you haven't tried the official version of the MCP yet, which
+
+00:19:42
+you likely haven't since it's only been out for a few weeks, then please go try it because it's truly a gamecher, especially when paired with the official skills like I showed in this video. The link to both are the first two links down in the description.
+

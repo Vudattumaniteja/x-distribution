@@ -1,0 +1,91 @@
+{
+  "metadata": {
+    "description": "Model marketplace and routing sources for detecting new LLM drops, pricing/capability changes, and developer adoption signals.",
+    "last_updated": "2026-05-29T00:00:00Z"
+  },
+  "request_timeout_seconds": 30,
+  "max_models": 800,
+  "openrouter": {
+    "enabled": true,
+    "models_url": "https://openrouter.ai/api/v1/models",
+    "tool_models_url": "https://openrouter.ai/api/v1/models?supported_parameters=tools",
+    "source_region": "global",
+    "tier": "tier_1"
+  },
+  "catalog_sources": [
+    {
+      "name": "LMArena Leaderboard",
+      "mode": "html_index",
+      "url": "https://lmarena.ai/leaderboard",
+      "source_region": "global",
+      "tier": "tier_1",
+      "source_type": "model_leaderboard"
+    },
+    {
+      "name": "Artificial Analysis Models",
+      "mode": "html_index",
+      "url": "https://artificialanalysis.ai/models",
+      "source_region": "global",
+      "tier": "tier_1",
+      "source_type": "model_benchmark_market"
+    },
+    {
+      "name": "Replicate Language Models",
+      "mode": "html_index",
+      "url": "https://replicate.com/collections/language-models",
+      "source_region": "global",
+      "tier": "tier_2",
+      "source_type": "model_catalog"
+    },
+    {
+      "name": "Together Serverless Models",
+      "mode": "html_index",
+      "url": "https://docs.together.ai/docs/serverless-models",
+      "source_region": "global",
+      "tier": "tier_2",
+      "source_type": "model_provider_catalog"
+    },
+    {
+      "name": "Fireworks Models",
+      "mode": "html_index",
+      "url": "https://fireworks.ai/models",
+      "source_region": "global",
+      "tier": "tier_2",
+      "source_type": "model_provider_catalog"
+    },
+    {
+      "name": "Groq Model Docs",
+      "mode": "html_index",
+      "url": "https://console.groq.com/docs/models",
+      "source_region": "global",
+      "tier": "tier_2",
+      "source_type": "model_provider_catalog"
+    }
+  ],
+  "tracked_change_fields": [
+    "context_length",
+    "pricing",
+    "supported_parameters",
+    "architecture",
+    "top_provider",
+    "per_request_limits"
+  ],
+  "watch_terms": [
+    "free",
+    "tools",
+    "reasoning",
+    "structured_outputs",
+    "vision",
+    "audio",
+    "image",
+    "qwen",
+    "deepseek",
+    "kimi",
+    "minimax",
+    "claude",
+    "gemini",
+    "gpt",
+    "hermes",
+    "openclaw"
+  ]
+}

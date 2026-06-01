@@ -1,0 +1,139 @@
+{
+  "verified_items": [
+    {
+      "id": "open-ai-gpt-5-5-instant",
+      "headline": "OpenAI Rolls Out GPT-5.5 Instant Globally as New Default Model",
+      "summary": "GPT-5.5 Instant has replaced GPT-5.3 as the default ChatGPT model, offering 52% fewer hallucinations in professional domains and deep integration with Drive and Gmail for Plus users. The model focuses on clarity and reduced verbosity.",
+      "source_url": "https://siliconangle.com/",
+      "source_name": "OpenAI Blog / SiliconANGLE",
+      "published_at": "2026-05-05T12:00:00Z",
+      "relevance_score": 9.8,
+      "agent": "Corporate Watcher (02)",
+      "unique_fields": {
+        "event_type": "launch",
+        "strategic_significance": 10,
+        "is_confirmed": true
+      }
+    },
+    {
+      "id": "microsoft-agentic-autonomy-shift",
+      "headline": "Microsoft Pivots to 'Agentic Autonomy' with Launch of Agent 365 and E7 Suite",
+      "summary": "Microsoft has officially shifted its strategy from assistants to autonomous agents, introducing Agent 365 for governance and the Microsoft 365 E7 enterprise tier. The shift addresses the 'Transformation Paradox' where work design lags behind AI capability.",
+      "source_url": "https://microsoft.com/",
+      "source_name": "Microsoft News",
+      "published_at": "2026-05-05T09:00:00Z",
+      "relevance_score": 9.5,
+      "agent": "Corporate Watcher (02)",
+      "unique_fields": {
+        "event_type": "strategy_shift",
+        "strategic_significance": 9,
+        "is_confirmed": true
+      }
+    },
+    {
+      "id": "stargate-microsoft-operational-control",
+      "headline": "Microsoft Assumes Operational Control of $500B Stargate Project",
+      "summary": "Microsoft has taken the lead on the 'Stargate' infrastructure alliance with OpenAI, SoftBank, and Oracle. The project aims for 10GW of power by 2030, with Microsoft securing Norway capacity while OpenAI pauses UK operations.",
+      "source_url": "https://investing.com/",
+      "source_name": "Fladgate / Investing.com",
+      "published_at": "2026-05-05T15:30:00Z",
+      "relevance_score": 9.2,
+      "agent": "Leak Hunter (03)",
+      "unique_fields": {
+        "financial_impact": "$500B",
+        "strategic_significance": 10,
+        "is_confirmed": true
+      }
+    },
+    {
+      "id": "unsloth-studio-beta-launch",
+      "headline": "Unsloth Studio (Beta) Drops: Open-Source No-Code UI for Local LLM Training",
+      "summary": "Unsloth has launched a web UI for training 500+ models locally with 2x speed and 70% VRAM reduction. It features self-healing tool calling and automated dataset creation from local files.",
+      "source_url": "https://unsloth.ai/",
+      "source_name": "Unsloth.ai",
+      "published_at": "2026-05-05T10:00:00Z",
+      "relevance_score": 9.0,
+      "agent": "Automation Scout (01)",
+      "unique_fields": {
+        "tool_name": "Unsloth Studio",
+        "category": "coding",
+        "pricing_model": "open_source",
+        "innovation_score": 8
+      }
+    },
+    {
+      "id": "sam-altman-ai-washing-callout",
+      "headline": "Sam Altman Warns of 'AI Washing' in Recent Corporate Layoffs",
+      "summary": "In a CNBC-TV18 interview, Altman stated that companies are using AI as a scapegoat for layoffs to signal innovation to investors, while the 'real impact' on the labor market is still 24-36 months away.",
+      "source_url": "https://techradar.com/",
+      "source_name": "CNBC-TV18 / TechRadar",
+      "published_at": "2026-05-05T18:00:00Z",
+      "relevance_score": 8.8,
+      "agent": "Founder Insights (06)",
+      "unique_fields": {
+        "person": "Sam Altman",
+        "topic": "labor market",
+        "contrarian": true
+      }
+    },
+    {
+      "id": "dario-amodei-claude-5-roadmap",
+      "headline": "Dario Amodei Teases Claude 5 with 'Extended Thinking' for Q2 2026",
+      "summary": "Anthropic CEO Dario Amodei detailed the Claude 5 roadmap, featuring a breakthrough 50,000-token internal reasoning mode and a target of >90% on SWE-bench Verified. He predicts a 'Genius Nation' in data centers by 2027.",
+      "source_url": "https://claude5.ai/",
+      "source_name": "TechCrunch / Claude5.ai",
+      "published_at": "2026-05-04T14:00:00Z",
+      "relevance_score": 9.4,
+      "agent": "Founder Insights (06)",
+      "unique_fields": {
+        "person": "Dario Amodei",
+        "topic": "product roadmap",
+        "strategic_significance": 9
+      }
+    },
+    {
+      "id": "gpu-market-bifurcation-may-2026",
+      "headline": "GPU Market Bifurcation: B200 Premiums Surge as H100 Prices Stabilize",
+      "summary": "B200 Blackwell chips command extreme premiums due to memory shortages, while H100 pricing has partially rebounded driven by massive inference demand. HBM3e costs now account for 45% of total manufacturing spend.",
+      "source_url": "https://siliconanalysts.com/",
+      "source_name": "Silicon Analysts",
+      "published_at": "2026-05-04T08:00:00Z",
+      "relevance_score": 8.5,
+      "agent": "Economics Analyst (05)",
+      "unique_fields": {
+        "data_point": "23.5% MoM B200 price jump",
+        "category": "pricing",
+        "data_quality": 9
+      }
+    },
+    {
+      "id": "heavyskill-agentic-harness-research",
+      "headline": "Research Trend: 'HeavySkill' and 'Workspace-Bench' Dominate Trending Papers",
+      "summary": "New research on Hugging Face focuses on 'Heavy Thinking' for agents to reduce hallucination-driven actions and 'Workspace-Bench 1.0' for testing AI in real-world office environments with complex dependencies.",
+      "source_url": "https://huggingface.co/",
+      "source_name": "Hugging Face",
+      "published_at": "2026-05-06T06:00:00Z",
+      "relevance_score": 8.2,
+      "agent": "Research Tracker (04)",
+      "unique_fields": {
+        "key_result": "Shift from parameter scaling to smarter agentic workflows",
+        "practical_impact": 9
+      }
+    },
+    {
+      "id": "ai-code-editor-power-stack-2026",
+      "headline": "The 2026 Code Editor Power Stack: Cursor for UX, Claude Code for Reasoning",
+      "summary": "A hands-on comparison of 2026 AI editors shows Cursor leading in daily UI features, while Claude Code (powered by Opus 4.7) dominates in complex refactoring and architectural changes with its 1M context window.",
+      "source_url": "https://dextralabs.com/",
+      "source_name": "Dextra Labs Review",
+      "published_at": "2026-05-05T11:00:00Z",
+      "relevance_score": 8.7,
+      "agent": "Tool Spotlight (07)",
+      "unique_fields": {
+        "category": "coding",
+        "user_sentiment": "positive",
+        "adoption_signal": 10
+      }
+    }
+  ]
+}

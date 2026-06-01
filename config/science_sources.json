@@ -1,0 +1,145 @@
+{
+  "metadata": {
+    "description": "Bio, science, biotech, and deep-tech breakthrough sources filtered for AI/tech/science commercialization signals.",
+    "last_updated": "2026-05-29T00:00:00Z"
+  },
+  "lookback_hours": 168,
+  "request_timeout_seconds": 25,
+  "max_items_per_source": 40,
+  "min_relevance_score": 4,
+  "science_keywords": [
+    "ai",
+    "artificial intelligence",
+    "machine learning",
+    "foundation model",
+    "drug discovery",
+    "protein",
+    "biology",
+    "biotech",
+    "biopharma",
+    "clinical",
+    "genomics",
+    "robotics",
+    "materials",
+    "semiconductor",
+    "quantum",
+    "climate",
+    "fusion",
+    "lab automation",
+    "deep tech"
+  ],
+  "breakthrough_keywords": [
+    "breakthrough",
+    "raises",
+    "raised",
+    "funding",
+    "launches",
+    "unveils",
+    "discovers",
+    "develops",
+    "clinical trial",
+    "fda",
+    "approval",
+    "partnership",
+    "platform"
+  ],
+  "rss_sources": [
+    {
+      "name": "Fierce Biotech",
+      "url": "https://www.fiercebiotech.com/",
+      "rss_url": "https://www.fiercebiotech.com/rss/xml",
+      "source_region": "global",
+      "tier": "tier_1",
+      "source_type": "biotech_news"
+    },
+    {
+      "name": "TechCrunch Biotech",
+      "url": "https://techcrunch.com/tag/biotech/",
+      "rss_url": "https://techcrunch.com/tag/biotech/feed/",
+      "source_region": "global",
+      "tier": "tier_1",
+      "source_type": "biotech_startup_news"
+    },
+    {
+      "name": "BioPharma Dive",
+      "url": "https://www.biopharmadive.com/",
+      "rss_url": "https://www.biopharmadive.com/feeds/news/",
+      "source_region": "global",
+      "tier": "tier_1",
+      "source_type": "biopharma_news"
+    },
+    {
+      "name": "Labiotech",
+      "url": "https://www.labiotech.eu/",
+      "rss_url": "https://www.labiotech.eu/feed/",
+      "source_region": "europe",
+      "tier": "tier_2",
+      "source_type": "biotech_news"
+    },
+    {
+      "name": "STAT News",
+      "url": "https://www.statnews.com/",
+      "rss_url": "https://www.statnews.com/feed/",
+      "source_region": "global",
+      "tier": "tier_1",
+      "source_type": "health_biotech_news"
+    },
+    {
+      "name": "Nature Biotechnology",
+      "url": "https://www.nature.com/nbt/",
+      "rss_url": "https://www.nature.com/nbt.rss",
+      "source_region": "global",
+      "tier": "tier_1",
+      "source_type": "science_journal_news"
+    },
+    {
+      "name": "IndieBio",
+      "url": "https://indiebio.co/",
+      "rss_url": "https://indiebio.co/feed/",
+      "source_region": "global",
+      "tier": "tier_2",
+      "source_type": "biotech_startup_accelerator"
+    },
+    {
+      "name": "SOSV",
+      "url": "https://sosv.com/",
+      "rss_url": "https://sosv.com/feed/",
+      "source_region": "global",
+      "tier": "tier_2",
+      "source_type": "deeptech_biotech_vc"
+    },
+    {
+      "name": "Genetic Engineering and Biotechnology News",
+      "url": "https://www.genengnews.com/",
+      "rss_url": "https://www.genengnews.com/feed/",
+      "source_region": "global",
+      "tier": "tier_2",
+      "source_type": "biotech_science_news"
+    },
+    {
+      "name": "ScienceDaily AI",
+      "url": "https://www.sciencedaily.com/news/computers_math/artificial_intelligence/",
+      "rss_url": "https://www.sciencedaily.com/rss/computers_math/artificial_intelligence.xml",
+      "source_region": "global",
+      "tier": "tier_3",
+      "source_type": "science_news"
+    }
+  ],
+  "html_sources": [
+    {
+      "name": "Endpoints News",
+      "url": "https://endpointsnews.com/",
+      "search_fallback_query": "site:endpointsnews.com AI biotech funding startup",
+      "source_region": "global",
+      "tier": "tier_1",
+      "source_type": "biotech_news"
+    },
+    {
+      "name": "SynBioBeta",
+      "url": "https://www.synbiobeta.com/",
+      "source_region": "global",
+      "tier": "tier_2",
+      "source_type": "synthetic_biology_news"
+    }
+  ]
+}

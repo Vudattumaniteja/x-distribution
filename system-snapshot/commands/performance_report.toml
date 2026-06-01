@@ -1,0 +1,39 @@
+description = "Generate performance analysis report and learning loop recommendations"
+
+[tools]
+web_fetch = true
+google_search = true
+mcp = ["notebooklm-mcp"]
+
+prompt = """Run the Performance Tracking pipeline as defined in references/performance-tracking.md.
+
+Load data from sent_posts.json, performance_history.json, credibility_scores.json.
+
+Execute ALL 5 analysis modules:
+1. CONTENT PERFORMANCE: variant comparison, reply angle comparison, topic analysis
+2. ALGORITHM LEARNING: Phoenix detection, high/low performer patterns, grade accuracy
+3. SOURCE EFFECTIVENESS: per-source engagement, Phoenix rates, credibility vs performance
+4. TEMPORAL ANALYSIS: best day/hour, posting frequency impact, time-since-news
+5. TREND ANALYSIS: engagement trends, follower growth, Phoenix rate over time, content mix
+
+Generate 5 specific actionable recommendations with:
+- Type (content/timing/strategy/source/format)
+- Priority (high/medium/low)
+- The recommendation (specific, no vague advice)
+- Evidence (what data supports this)
+- Expected impact
+- Implementation steps
+
+Query NotebookLM: "Based on these metrics [summary], what strategy adjustments would you recommend?"
+
+Edge case handling:
+- Insufficient data (< 5 posts): report "Need more data", suggest minimum threshold
+- All posts below expected grade: suggest grading recalibration
+- Sudden performance drop: check for algorithm changes, timing changes, content quality
+- One viral outlier: note as non-replicable, analyze separately from trend
+- User hasn't updated sent_posts in 14+ days: flag this
+
+Save report to data/performance_history.json (append as new entry).
+Save detailed log to logs/agent_runs/performance_TIMESTAMP.json.
+Present report with key metrics table, insights, and highlighted recommendations.
+"""

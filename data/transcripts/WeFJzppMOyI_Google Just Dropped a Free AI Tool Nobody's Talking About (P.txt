@@ -1,0 +1,129 @@
+00:00:00
+First AI came for the writers, then the coders, but the one category we thought was relatively safe was creativity itself. Branding, [music] studio photography, advertising, social media, the entire creative stack businesses rely on to grow. Well, Google just came for that, too. And somehow, they made it completely free. It's called Pomely, [music] and it can do in a few clicks what entire creative teams usually take weeks to build. Now, usually AI tools give you rough drafts [music] that still need hours of work
+
+00:00:28
+before they are usable. But, look at these stunning results. This is the first time an AI tool has made me question [music] how creative agencies will compete in the future. So, let me give you a walk-through of this tool, [music] and by the end of this video, you'll also be able to create a full website, a professional brand guide, high-converting [music] advertisements, and a photo shoot with hyperrealistic models. This is honestly the only video you need to watch to learn how to get outputs like this. I also have a
+
+00:00:55
+surprise for you right at the end. There's a hidden setting that pushes all of these assets [music] directly into Google Ads. So, your entire marketing pipeline can live inside one single free Google product. To make this even easier, I made a complete step-by-step guide for the tool, so you can follow along without missing anything. It's waiting inside my free WhatsApp community. You'll find the [music] link in the description below. Now, let's dive into the video. Before we open the tool, let me explain
+
+00:01:23
+what Pomely actually is and the exact jobs it is coming for. Let's start with the problem, building a brand. The normal way means hiring a small army. A designer for your logo and color palette, a copywriter to figure out your tone, a photographer for your product shots, an agency to design your campaigns, and a developer to build your website. For most small business owners and solo founders, getting five different people, paying them, and doing a few weeks of back and forth before posting is a hassle. That is exactly why
+
+00:01:54
+the marketing never gets done. It is too slow, and it costs too much. Here is how it works. You give this free tool just one thing, your website link. The AI then acts like a senior creative director studying your brand. It scrapes your colors, your fonts, your exact tone of voice, and your products. Then it turns around and does the jobs of an entire marketing department for you. We are talking ready-to-post campaign posters, professional product photo shoots with realistic models, a complete brand book, and a full website. All of
+
+00:02:25
+it looking like it belongs to your exact brand instead of a random AI template. But even if you do not have a website yet, you can build it from scratch using just a few images. We are going to do both in this video, but I promise to take things slow and hand-hold you through the process. So let's start from scratch. Let's first navigate the tool with the home page. Head over to Pomely website and you will land on the home page that says, "Easily generate on-brand content for your business."
+
+00:02:51
+Let's get started. The onboarding screen shows you the four core capabilities that Pomely unlocks, which are build your business DNA, get campaign ideas and assets, generate a product photo shoot, and create your brand book and website. Click let's go and you reach the input screen that asks for your website. From here, you have two complete paths you can take. The first path is for when you already have a website. The second path is for people who do not have one yet. This is where things get really interesting, but let's
+
+00:03:17
+start slow and go with the first one so you understand how the core engine works. For this walk-through, let's use H&M as the test brand because it is a global retailer with a deep product catalog, a clear brand identity, and a heavy website that puts real stress on the tool. Let's copy the H&M home page URL from the browser. Head back to the Pomely tab, paste the link into the input box, and click continue. Pomely now starts generating what it calls your business DNA. You will see a live status
+
+00:03:47
+screen that shows each step as it happens, including analyzing your website, gathering your colors, studying your brand values, determining your visual aesthetic, picking your brand fonts, pulling images from your website, summarizing your business, finding your logo, learning your tone of voice, and writing your tagline. This typically takes a few minutes depending on how heavy the website is and how busy the servers are. Once the analysis finishes, you land on the business DNA dashboard, which becomes your home base for
+
+00:04:17
+everything you build from this point forward. On the dashboard, you can see the generated brand overview, which includes the logo, fonts, color palette, tagline, brand values and aesthetic, tone of voice, and a full business overview. For H&M, the tagline Pameli generated reads, "Fashion and quality at the best price in a sustainable way," which actually matches the real H&M positioning surprisingly well. On the right side of the screen, you will notice the Pameli agent panel, which is
+
+00:04:47
+a chat interface that can directly trigger campaigns, photo shoots, websites, and more. Let's leave the agent panel closed for now because we will come back to it with a second brand later in this video. We click let's go at the bottom of the dashboard and a pop-up appears that says, "Your business DNA is ready," with four next step options, which are campaigns, photo shoot, website, and brand book. Let's walk through every single one of them in order. Let's click on campaigns first.
+
+00:05:16
+The moment you land on the screen, Pameli has already pre-generated three campaign concepts based on your business DNA. For H&M, you will see suggestions like "Summer starts here," "Golden hour in every stitch," and "Your summer escape styled." Click on the one you like and within a few seconds, Pameli generates four full vertical poster creatives for that campaign. Each poster uses real product images from the H&M catalog with professional layouts and auto-generated headlines like "From
+
+00:05:46
+beach to city nights" and matching descriptions. Click on any creative and the right sidebar opens up the full editor where you can change the header text, the font, the colors, and the description. You can also toggle the call to action on or off and when you turn the CTA on, Pamely adds a button like shop the edit to the poster. From the same sidebar, you can edit the CTA link, the button text, and the button font. Right below the creative, there is a button called fix layout and this feature is incredibly useful. When you
+
+00:06:16
+click fix layout, Pamely automatically adjust the spacing, the font sizes, and the overall composition. So, nothing on the poster feels cramped or oversized. So, basically, we don't need to waste any amount of hours on those tiny little design changes to make everything look professional. Once this finishes, you can use the version history toggle at the top to compare your edited version against the original and you can download any version as a high-resolution PNG by clicking the download arrow in the top right corner.
+
+00:06:48
+The file will then land straight in your downloads folder, ready to post on any platform. Now, if you don't want to use one of the pre-generated campaign concepts, you can build your own custom campaign. But before that, you need to know two of these underrated features. Look at the left sidebar. You'll see two tabs, the catalog tab and the assets tab. The catalog tab shows you every single product Pamely scraped from your website and each product comes with an auto-generated name and description.
+
+00:07:14
+Click on any product and can directly create a campaign or a photoshoot for that specific item without going back to the main dashboard. Then there's the assets tab which shows you every visual element Pamely pulled from your live website, including your logo, your lifestyle imagery, and your product photography. You can download any asset individually or you can delete the ones you do not want Pamely to use in future generations. That last part is a much bigger deal than it sounds because it
+
+00:07:40
+lets you quietly train the tool to ignore older or off-brand visuals over time. Now, let's create a custom campaign. In the prompt bar at the top of the screen, let's type out a clear brief. Create a social campaign to promote our new spring linen collection targeting young working professionals aged 25 to 35 time for the start of summer with a fresh and breezy tone. Below the prompt box, you can change the aspect ratio depending on where you plan to post and you can also manually select
+
+00:08:05
+up to six products from your catalog to feature inside the campaign. Now, click generate brief and Pomelo first builds a structured campaign brief that includes the title, the description, the goal, and any optional offers or promotions. You can edit anything in this brief before locking it in and once it looks right, click confirm. Pomelo then generates the full campaign with four ready to post creatives. I'm really impressed with Pomelo. These look genuinely studio-made with on-brand styling and clean typography. Now, here
+
+00:08:33
+we can also add more creatives to the same campaign by clicking add creative and the new ones automatically inherit the same brief and visual identity. Okay, so Pomelo can generate people well, but how good is it with products? What if I want to generate a professional product photo shoot? For this, let's explore the photo shoot tab on the left side bar. Click create a product photo shoot and Pomelo asks you to pick a product image from your catalog or your uploaded assets. Pick any product you want and then, as usual,
+
+00:09:00
+choose your aspect ratio depending on whether you are posting to Instagram, a story, or a website hero section. The most powerful part of this section is the template gallery. Pomelo photo shoot templates broken down by category such as fashion, beauty, home, and consumables. The most popular template is model try-on, which places your product directly on a photo-realistic AI-generated model in a setting that matches your brand aesthetic. Click generate, wait about a minute, and Pomelo returns four complete variations
+
+00:09:29
+of your product worn or used by a model. When you expand them, the lighting, the styling, the setting, and the outfit choices look genuinely like a real studio shoot. You've just saved a lot of money and time that would have gone in getting a photo shoot done by professionals. Now, you can save all four images, or you can even click create campaign directly from the photo shoot screen to instantly turn it into a marketing campaign. That was all you could do without a team. But, what if you've already hired an employee or
+
+00:09:56
+freelancer? How do you instantly explain your brand's DNA and prevent too many iterations in the future? For this, we need something called a brand book, which is the written compilation of your typography, your color palette with exact hex codes, your imagery guidelines, and more. >> [music] >> And Pomely can make this for you. Click on brand book in the left side bar. Pomely will ask you to choose your cover and some images first. For the cover, you can let Pomely generate one from
+
+00:10:22
+scratch, or you can pick an image from your existing catalog, or you can upload your own custom cover. Pick on whichever cover you like and click confirm. Next, select a few supporting images that will appear inside the brand book itself. Choose a mix of product shots, lifestyle imagery, and logo variants, then click confirm again. And that's it. Within about a minute, your full brand book is ready to view. The completed document includes six full sections, which are your brand overview, your brand logo
+
+00:10:51
+with clear space and minimum size rules, your typography, your color palette with exact hex codes, your imagery guidelines, and your brand voice. You can download the entire brand book as a PDF, or you can click the publish toggle in the top right corner to generate a public shareable link. Once you publish it, you can send the link to a designer, a client, an agency, or a new hire on your team. If you want to update anything later, you can edit the cover, swap the supporting visuals, and the published link updates automatically
+
+00:11:21
+without you needing to resend anything. Now, the final core feature in Pomely is the one most people outsource and pay large amounts of money for, website building. But, what if you could launch a high-converting website in 60 seconds with a tool that already knows your brand's colors, fonts, and vibe? Let's try this out. Do you see the websites tab? Click on it, and without doing anything, Pomely starts generating a full website directly from your business DNA. After about a minute, the website
+
+00:11:49
+editor opens up, and you can click preview in new tab to view the full thing the way a real visitor would see it. For H&M, Pomely built a complete landing page that includes a hero section, a product grid, a text block, a feature row, and a large image gallery at the bottom. The fonts, the colors, the imagery, and the copy all match the original H&M aesthetic. Back inside the editor, you can give Pomely a prompt to change any section. You can update the live link. You can delete the site, or
+
+00:12:19
+you can toggle the publish button to push it live on a hosted Pomely URL. The published version works on mobile and desktop, and you can share the link anywhere you want. Now, up until this point, everything we built assumed that you already have a live website that Pomely can scrape. But what happens if you do not have a website yet? What if you're starting a brand from scratch, or you are freelancing for a client whose site is not built yet, or you are just experimenting with a brand idea before
+
+00:12:47
+you commit? This is where the second path comes in, and it is the path most tutorials online skip completely. Before we go ahead, if you're getting value out of this walk-through and want to see more tool breakdowns, subscribe, and YouTube will ensure that you see the next one that drops. Because new free Google tools are dropping almost every week now, and most people on YouTube are going to miss them. Okay, back to the video. Head back to the home screen, click let's go again, and on the input
+
+00:13:12
+screen, click the small button that says no website yet. You will get two new options. You can either build your business DNA from a Pomely template, or you can build it completely from scratch using the Pomely agent. Let's go with the from scratch option. For this walk-through, let's build a fictional handcrafted jewelry brand called Gulabi, based in Jaipur. The Pomelo agent panel opens on the right side of the screen, and the first thing it asks you to do is upload any files that help the agent
+
+00:13:40
+understand your business. You can drag in product photos, lifestyle images, brand documents, or even PDFs. If you do not have product photos yet, you can generate them in seconds using Nano Banana or ChatGPT's image generator, and then drop them straight into Pomelo. For Gulabi, let's upload around six to eight handcrafted Kundan and Minakari jewelry photos directly into the chat. Pomelo analyzes each image, extracts visual details from the products, and once the analysis is complete, a button appears
+
+00:14:09
+in the chat that says, "Generate business DNA." Click that button, and Pomelo starts populating your dashboard, the same way it did for H&M, except this time it is working purely off your uploaded images instead of a website scrape. To make the DNA much sharper, type a clear brand description directly into the chat. For Gulabi, you can paste something like, "I run a small artistry jewelry brand based in Jaipur called Gulabi. We handcraft traditional Kundan and Minakari jewelry, including
+
+00:14:38
+necklaces, earrings, and maang tikas using designs rooted in classic Rajasthani artistry. Our brand feels regal, handcrafted, and timeless. Our colors are deep emerald green, royal gold, and Jaipur pink. Our tone is elegant, warm, and proud of its heritage. We sell to women who want statement jewelry for weddings, festivals, and special occasions." The moment you hit send such a detailed prompt, the dashboard updates the brand aesthetic, the tone of voice, the color palette, and the brand values to match
+
+00:15:10
+your description exactly. The agent then gives you three tagline options to choose from. For Gulabi, the third option, "Timeless Rajasthani craftsmanship, worn with pride," feels the most aligned with the brand description. So, let's lock that one in as the tagline. Now that we have a complete business DNA for this new brand we made, we click let's go at the bottom of the dashboard and you'll see the four options pop up. Let's click on campaigns and the moment we do that, Pomelo
+
+00:15:36
+suggests festive campaign ideas like the summer wedding guest edit based on your jewelry products and your description. But we want to create a custom one, so what we do is we go with a prompt like create a festive campaign to promote our handcrafted Kundan necklace sets targeting women shopping for weddings and Diwali with a regal and elegant tone that celebrates traditional Jaipur craftsmanship. Let's change the aspect ratio to 9 to 16 for an Instagram story and click on the arrow. In a few
+
+00:16:05
+minutes, Pomelo builds a campaign brief which consists of a title, description and a goal. Once you confirm it, within about a minute, you receive four high-end festive creatives. One even features an AI model styled in coordinating outfits wearing our uploaded jewelry with elegant typography that reads timeless Jaipur artistry. The other three are regal, stunning and instantly usable on social media, too. Let's go on to the photo shoot tab next. Click on create photo shoot, select some product images. Let's go with the
+
+00:16:36
+earrings, click generate photo shoot and soon enough we get four results. Pomelo place those exact earrings onto a few photorealistic Indian models. One is even wearing a matching magenta and red traditional outfit that complements the jewelry. That was a success. Now let's even try the brand book tab after that. Out of the cover options it gives me, let's pick the rich textured cover. It looks stunning. After we click confirm, we need to choose supporting images. Let's go with the logo, some jewelry
+
+00:17:04
+images and one model image. Now Pomelo instantly builds a full multi-page brand book for Gulabi with sections like brand overview, logo variants, minimum size, typography, color palette, imagery and brand voice. Now that we have that, the final thing we can do is create a website for this. So, let's click on the website tab, and like last time, all it took was a click, and it has already generated the first draft of the website. Look at this. There's a landing page that includes a legacy section,
+
+00:17:33
+then a grid with timeless pieces, a full product gallery, and a core values block, complete with placeholder links you can swap with your actual store URL whenever you go live. The colors and typography used in website are very regal. The whole thing is stunning for a first draft. This reminds me, one thing we missed out on was business details. When you go to the task bar and see overview, you'll find a section on business details. Here, you can add your location, business hours, phone numbers,
+
+00:18:01
+call to action links, and your social media handles. This will help fill in the website, too. And now, let's come to an even more useful part of the whole thing. This feature is going to be a blessing for marketers. Do you see the three dots in the top right corner of your dashboard? Click on it, and you'll see connected apps from the drop-down menu. What you can basically do on this is connect your Google Ads and integrate it here on Pomely. Once your Google Ads account is connected, every campaign you
+
+00:18:28
+generate inside Pomely, every creative variation, and every aspect ratio can be pushed straight into Google Ads without leaving the tool. If you manage multiple ad accounts, Pomely lets you pick the correct one at the time of sharing. That means your entire workflow, starting from brand identity, moving through product photo shoots, then campaign creatives, and ending at paid distribution on YouTube and Google Search, all lives inside one free Google product. Your marketing team doesn't need to use multiple different tools to
+
+00:18:57
+manage campaigns anymore. Google quietly collapsed them into a single interface. This is a free goldmine by Google. If you run a small business and you have been waiting for the right moment to take your marketing seriously, this is it. If you're are you can now hand clients a full brand kit, campaigns, and a website without hiring a single person. The people who start using tools like this now are going to look like they have a whole team behind them. While everyone else is still stuck waiting on three different
+
+00:19:28
+people to get back to them. Now, if you want to go even deeper on everything Google is building, I recently sat down with Josh Woodward for a full podcast all about Google's free AI tools. He's awesome to listen to and the video is linked right here. So, go check it out. Now, honestly, Pomely is just one of the free tools Google has quietly shipped in the last few weeks. A lot of you actually asked for this exact breakdown in the comments of my last video. So, if there is another Google tool you want me
+
+00:19:56
+to cover next, drop its name in the comments and I will line it up. And if you have not seen it yet, check out my full breakdown of Google Flow, Google's free AI filmmaking studio, and it pairs perfectly with everything we just built here. Watch that one next. Finally, if you are not subscribed yet, that is genuinely a problem because around 70% of the people watching right now are not, which means YouTube will not show you the next free tool I break down. Fix that and I will see you in the next one.
+

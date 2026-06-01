@@ -1,0 +1,240 @@
+00:00:00
+I also had close code doing destructive actions that uh resulted in me saying sorry to clients which is not a good thing that you want. This means everything can be any [music] and I can work on my computer locally with the task that I currently have and NN is just the execution layer. What meetings do I have today? There are some issues when you want to build with code especially if you're in an enterprise environment. I might have an N8N way to enable something like that for everybody. Claude Desktop is a great
+
+00:00:37
+tool, but the problem is it runs code directly on your computer. So, chances are if you've used it with clients, you've probably had the moment where it did something it wasn't supposed to. Today's guest, Marcel, had that same moment. So, we built something that has the potential the potential of being even better. Innident is a free open- source desktop app that looks and feels like claw desktop. But instead of running the code execution on your machine, the agents execute them inside
+
+00:01:05
+of N8. Your credentials are encrypted. Every agent's actions are inside [music] the N8 audit trail and the agent that runs inside of the desktop app can [music] run it with any AI model, including local ones. Today, Marcel is showing us two things. one, NAN's new official MCP, which for the very first time lets AI agents actually build workflows, not just run them. And then secondly, N8 desk itself, including a live demo of his calendar agent, Cali. The link is in the description down below. Let's get into it. Hey, Marcel,
+
+00:01:39
+welcome to the show. So, what are we going to be learning today? >> Hi, Dolan. Thanks for having me. Um, I think we're learning today that there are new ways to build workflows, right? Uh so as you might know uh there's uh a lot of people now wipe flow their nitn workflows and there are several ways to do so and obviously one of them would be with cloud code but nitn could also something new right >> fantastic you're right a lot of people are vibe coding using cloud code to make
+
+00:02:09
+these new workflows and I think you might possibly be showing us something you've been working on a little side project if people stick to the end. Yes, definitely. I have uh I was thinking about something that goes like clo code, but there are some issues when you want to build with clo code, especially if you're in an enterprise environment, you know, like code execution is a thing. And yeah, I might have an NADN way to enable something like that for everybody and uh make it wable, conversion based,
+
+00:02:46
+conversation based. It's always conversion based, but conversation based as well. So yeah, will be interesting. >> Well, I'm excited, brother. Feel free to share your screen and let's get into it, man. So this is now the I will be sharing my screen. [laughter] >> I mean I know back in the day was the flow grammar and now we're into vibe flowing. So I can see that we have an evolution here of the flow. >> Yeah. So I I just span up cowork right here. So this is a mode of closed
+
+00:03:16
+desktop and it's quite interesting because it enables us to use a similar agent to cl code but um it's more focused on essentially getting the job done less bad a little bit less about code and the cool thing is we can bring connectors right and we can even bring our own skills which is also cool and I brought uh an N connector So we can obviously connect with N8N with MCP and quite recently NN shipped in currently it's in beta but um a more advanced MCP server for any NIDN instance and this is super interesting
+
+00:04:03
+because I want to show you something with this new MCP. [clears throat] Um, let's build an NN agent that is my support buddy. And since this is, you know, like a general agent that is capable of working with MCP, it should figure that we can connect to N8N MCP and build and workflow there. And this is pretty much the the real new thing. And um this will be super helpful. I just need to answer stuff because Claude is uh not that good with just getting right ahead started, right? It's wants to give have a good task, good
+
+00:04:53
+context. But with this new MCP, we should be capable of creating workflows, which is a huge difference. Before that, we we are capable of executing workflows uh which was great. There was even the lovable connection which makes it possible to connect uh wire lovable with your NN workflow. So this was a great way of essentially having a part of your back end most essentially like your agentic back end uh in NN and just consume it. And now with the new MCP server, we can have it building workflows or so for us.
+
+00:05:33
+>> And that and to your point on that one with lovable uh the connector with lovable originally, you could read and you could execute your init workflows, which was great if you're using lovable if you want a front-end interface to then connect up to the back end of init. But now this is the next step and the next evolution because now we can both not only read and execute but we can now create and edit with this new MCP that I believe you have hooked up here to cloud code. Yes, exactly with but by the way
+
+00:06:05
+it doesn't need to be cl code I I haven't tried but it should also work from the lovable perspective as well. This is the magic of MCP right? So any agent now can use the inate NMCP to create workflows which is cool and I can tell you there's definitely something that is called context engineering that um the agent does need which is in the end some skills and the new NMCP server also serves those skills. So it's really plug and play um if you work with a decent MCP client. Um and then it should
+
+00:06:42
+really get you started on wipe flowing your first workflow. >> Can you define wl flowing a little bit for us? >> Yeah. You see n has a visual editor right? We can drag and drop nodes. We can connect them. And uh as he also mentioned Max Max Dash he the original flow grammar um he coined that flowming right it's not programming it's flowming because we build a workflow visually in a flow and yeah this this is great and it is still for me I I love doing this manually um still but there are benefits
+
+00:07:23
+of also getting started for example with now cloud code or any MCP client that can work with the Nate Nmcp and basically have AI build the workflow. And here's the magical thing for me. Um because a lot of people say it's hard to debug and whether things break. Usually those people refer to NN as something that is hard to control. But I think it's the right opposite because if you have code, it's not visual. If I would see an failed execution in NN, even if I just wipe float this, I can go to Nitn
+
+00:08:01
+see what is breaking and I see exactly the node that broke in a huge canvas. It's like viewing on electronic ship. You see the traces, right? And you see the modules and you see the exact module that broke. And with code, I can tell you it's not the same. You still get like, okay, it's line that one, but you don't see the whole context on a canvas, right? So I have high hopes that uh this will be even better wipe flowing your your automations because if things break I think with any you can see and debug
+
+00:08:40
+this yourself better than code that was generated with code for example. Sure. So it's taking the best of both worlds. You have Claude that can do a lot of the generative LLM thinking for you to create, but then when it when it breaks, you don't know what happens. I saw a meme a while ago of other Vive coders that basically says me trying to work with code is and and Claude was around taking a screenshot and go still not working, still not working, still not working. I roll versus being able to go
+
+00:09:11
+into an actual workflow execution and say this is the exact issue. This is exactly where it broke. This is why it broke. And if you have any of the knowledge of the visual interface for inadin, you can drill into specifics and you can even give it better context. And also if you know inadin a bit better, you can always suggest, well, why did you do it this way? There's a better solution that I'm aware of. You know, maybe use an HTTP node or some other solution that is available that you can
+
+00:09:37
+give it additional context and maybe some expert insights to solve that problem. Yeah, it's even more easy to to edit. Even though if you think about a collaboration part of things where you would have a colleague that is maybe not into wipe flowing the things and he's like old school and he wants to place the note himself. He can do this, right? And it will be all in any and and everybody can work like uh they want to. >> Fantastic. And it's fun being able to have this conversation with you while in
+
+00:10:09
+the background everything is being built. It is very difficult to actually try to build something and have conversation at the same time. So we are multitasking at its finest. >> This is also something that I observed that the times that we wait for our longunning agents nowadays it's it's quite some time. I guess by now it's running most likely 5 minutes and yeah it's how about we use this time most of the time we multitask right but enjoying a conversation what is better than that
+
+00:10:38
+[laughter] >> there's like a modernday ADHD thing that I've noticed when you're doing this uh you creating multiple agents is that you have multiple screens working on multiple projects and you're just jumping around to whatever agent's done and there's a bit of >> when that happens which is really fascinating. >> It's also so dystopian. There's this whole thing AI fatigue, right? And uh I I definitely feel that one could trapped into this and I I think we should use
+
+00:11:06
+our time that we gained through working with AI through automating with AI to have more fun, more some real connections, right? Uh we don't want to be the pusher for our AI agent terminals to make sure that they are busy. Right. [gasps] >> For sure. You know, take a break, go for a walk, kiss the baby, whatever you got going on. And so, can you talk to me while this thing is loading up? How did you connect up the MCP to claude code? >> It is actually super cool. Um it's simple because we can have the
+
+00:11:45
+connectors where we can um manage our connectors here as well. And then we would define a new connector. It's a German interface. I'm so sorry. [laughter] But uh it is uh we can connect custom connectors. We can name this our NN instance. And then we can copy the NATN MCPA URL. You will find this inside of your N8N instance in the settings and then you're good to go. Then you will be required to log in once. Then it will save a super secure token if you're really into this. This is all out open authentification
+
+00:12:25
+too which means um there's a handshake and there's no password exchange which is great. So it's super secure. I'm actually a huge fan of uh MCPS because they manage so much stuff. They're really underrated at the moment. >> Yeah, it's a it's a new superpower for your tool belt for creation here. And this one what you're going to be building is a you said it was a support ticket buddy. Is that what we got building out here? >> Yes. Uh essentially I wanted to start
+
+00:12:56
+with a simple agent. Claude made this a bit complex. I have to admit it went for uh let's have Slack as channel, let's have conversation AI. My basic idea was let's have first some agents that we can just ride with. Um but definitely we are going all the way currently. >> And one [clears throat] thing about this that you mentioned earlier that I double I want to double click on is when you're talking about the difference between vibe coding and context engineering is context engineering is you generally
+
+00:13:28
+have a deeper dive prd or some sort of deep insights for exactly you want to have created. Otherwise if you just say build me an app. >> Yes. This is this is actually super crucial and I think this is um something new for a lot of people because let's say one year ago a lot was about actually they were talking about context engineering but most of the people um understood this as prompt engineering. We need to have a solid prompt. We need to put a lot of information there. Nowadays, it's really that the agents
+
+00:14:03
+grab a lot of information and we have huge context windows like 1 million tokens. You can put a lot in 1 million tokens and um this can be used and I I'm have to admit I'm a huge fan of especially the cloud co-work mode because I can pin it to a local folder. I can drop any file there. It will explore this. it would work with this and then um it will have automatically fetched all the context there. This is super super cool. Amazing. Okay, it looks like we're coming. >> Yeah, we can open a workflow. Um let's
+
+00:14:42
+do this. Let's have a look what we have here. [snorts] And I need to share my screen back. Okay, [laughter] I'm not sure. This is uh obviously demoing things and it broke things. So, this is a super super simple workflow and it's not complete yet. Hooray. [laughter] So, this is uh not a good example, but at least it shows that it was working with it end. This is the workflow that it created. It correctly um created a trigger. it created our uh IT support body and I think it went into some
+
+00:15:24
+issues. Mind you, it's still beta, right? And also prompt was not good and I'm also not sure if all the skills were loaded properly. But I have something uh in a minute to share that will most likely have the context part right. Funny thing is we just talked about context, right? It's really important that you got uh the skills um for those things. uh which means this is files that are loaded automatically on demand and they contain a lot of uh information how to do things probably which might
+
+00:16:01
+would result in a better workflow than this. >> So this one has the documentation of what it is and how to set it up and so you have a request ticket coming in through Slack. It looks like >> AI agents processing that and then it replies back in Slack with the support request answered. To be honest, this happens uh for real, right? Um so the most easiest way is to know how to fix things, which would be okay. We we we need obviously a model here. And um let's see if it states in the system
+
+00:16:31
+prompt if there was any tool planned. No, it it really just wrote everything into the system prompt, which is fine. um you know like keeping things simple especially it doesn't need to be a rack pipeline right away right we can have it also be useful with just a solid uh system prompt and yeah that way this would be more complete it okay so we've been able to actually successfully at least create a example in workflow using the connectors with cloud code here it's it's fantastic and and so what else of
+
+00:17:07
+this do you would you like to demo about the system or is there anything else you'd like to explain about this? >> Yeah, I think it's really important that uh we once again talk about MCP itself. Um because most of the time people think about this is just API wrapped in something else. Obviously the NAND MCP uses the API uh that is there for the Nitn instances but there's even more and um the NMCP ships also reference document and I want to show you this because this is important for the people that want to
+
+00:17:43
+understand why did this not work first time there's obviously something missing missing or something went wrong and this is something that we want to fix right um so let's have a look at clo um one more time and when I observe the nitn mcp which is nen cloud was used and then there is um something called the references and one of the references is the workflow SDK SDK reference which ships automatically with the MCPS so this is not just like okay we ship endpoints and redescribe endpoints and
+
+00:18:24
+it just works. No, we can also ship documents that serve kind of like skills and we can actually see this as well. So this is what the MCP server gave users. It's a document. Um it looks m a lot but it's actually not that much. It's around uh 500 um lines which is condensed for definitely what it tells the agent to do. And this is great because again it's about context, right? And this is context that Nitn ships. This is our Nitn instance that tells with the MCP how to do stuff for mind you any agent.
+
+00:19:04
+So once the MCP client that we are using supports the reference documents then it can read this as well which is good which is important which I guess did not happen here. [laughter] And that one is what comes out of the gate with the new NM MCP beta. >> Yes, this is a essential part to make this work. And if you're also familiar with the community MCP server, they have um also created us the capabilities. Um also great work to be honest. uh we could also talk about this and um I'm
+
+00:19:41
+actually also a huge fan because Ramul who's also committee member creating this N community server he also figured okay we need skills and he also ships nowadays with skills and there he also provided skills and the magical thing is we can actually combine this so let's also explore this how to connect um the plugins so called plugins which is we have the so-called marketplaces um which you can have uh official marketplaces from in this case entropic right but you could also create uh custom marketplace connection
+
+00:20:27
+let me just making sure that I yeah it's a different place so there's uh your personal plugins and you can create a plugin and you can just add a marketplace and this requires a GitHub repository and I will grab the one from Ramul who's uh the N8N committee MCP creator because he added cool things and the magical thing is they should also work with NN um official NN MCP because it's essentially telling code how to build stuff with initative value of init in is the community the ability that the community members of
+
+00:21:10
+init they see what the problem is they see that there's gaps in what the system and the technology can do and then they build solutions around it and what's amazing about that is they then make that available like this GitHub repo of a community-built MCP uh GitHub repo that then allows you to have the ability to you know create and edit MCPS as well and so I know for us we saw that and said oh that's incredible how do we how do we do something similar so that we and build and add on top of this because
+
+00:21:38
+that's the things we get inspired from different community members and then we learn and grow and that's how a rising tide raises all ships. That's part of this technology. We're all working, learning, growing together and by sharing this in this open collaborative environment we can build something even better. >> Yes. Let me also find the correct way to connect this. Uh Claude is giving me a hard time today. [laughter] Here it should be connecting. No, this is MCP. >> You can see real time debugging of
+
+00:22:14
+what's going on inside the systems. I know a lot of people this technology is moving so fast and there's constantly things being shipped out there. I mean on our side, on Claude's side, on everybody else's side. And part of it is being able to navigate the waters. So we will uh learn from you going through this process on how to actually add these into the system. >> Yeah. And I don't know it it could be the repository maybe it's not probably set up for the entropic use case. Uh I
+
+00:22:41
+have another um skill store loaded uh which is my personal edit and workflow skills and um there's as example this the same thing you have it on GitHub and you can connect those. There's even ways of having um private stores as well. You can also just upload them. You can also just write skills yourself. And this is also the idea. You can customize this. If you have a specific way to build your N8 end workflows and you're not happy with how Clo would build it, you can chip a skill essentially um that helps
+
+00:23:17
+you to make this better. So yeah, this is for example a skill that I um added quite early when I saw there will be the workflow SDK which is no how the Niten community MCP works. No, the official NEN MCP works. Um there's also workflow SDK a lot of cool stuff happening and yeah which means with skills we can add a lot of context and we can even customize this. Yeah. And if you think about these skills, these MD files, essentially, every time we add these new skills, it gets smarter and better at
+
+00:23:54
+using that specific tool. For example, init and you can just take a look at the side of these things. It's talking about how to do plugins and workflow creations. And you can really dive in here to see what we're doing. And this is going to be an additive experience. So, as we add more things in, it's going to get smarter and better. But this is in beta. So, a little bit of grace for something that's coming out brand new. it, you know, we always want cuttingedge things that also work flawlessly without
+
+00:24:16
+any errors. And that is very rare for those two things to be the same. And so this is the latest and greatest coming out. Well, I'd say the latest coming out and it's going to be the greatest over time. I think this was also a good transition because as mentioned I also have like a small personal project and now that we uh jumped into code already a bit. Um, I want to to state something, right? Cloud desktop is great, right? Um, it has cool things that work for especially us single person businesses quite well, but uh I
+
+00:24:56
+see especially from from my end clients, they see that um people trying stuff there, but essentially it's code execution on the devices, especially with code. you have this thing bash which means it can run um potentially destru destructive actions on a device. We developers we kind of catch those quite fast, right? But regular people might have a hard time to figuring what CL is doing. I mean there are a lot of uh commands that it calls like grab, glob, they have funny names even, right? It
+
+00:25:34
+sounds funny in the end, but um maybe in some and I also had CL code doing destructive actions that uh resulted in me saying sorry to clients which is not a good thing that you want uh not a good feeling [laughter] in the end. And yeah, so I figured we we don't need to have this code execution running locally essentially if we could offload this to N8N. And this idea um had really stuck in my head quite some time um essentially two weeks ago when also working with uh CL code and cober and I was like I don't want
+
+00:26:18
+that it always generates the same code to do the job which is also a thing a lot of people doing now um automation jobs with code and it's prompting it's loading skills it writes code and it just works but in the end if you do this next Monday it will if you don't save the code right it would do the same thing again and try to scale this to an enterprise company with a thousand of employees they will eat tokens really really fast. So um the idea was why not having an agent working similar
+
+00:26:55
+like cloud code but all the execution is n instances and luckily now we have the nmcp which makes this possible. So I was playing and I'm really really stoked to show you something which does not only awfully look like the cloud desktop app. Um, I have to admit I took heavy inspiration on that because it works. Uh, it is a great interface. It's slick and it gets the job done. But it's different in that regard that we have um, for example the workflow tab which exposes a specific workflow agent
+
+00:27:35
+and this workflow agent is essentially I guess you already guessed it for building N workflows. So let's try this again. Um let's build an support body and an agent that answers support questions. So we do the same thing that we have couple of minutes tried with cloud cool work right and same thing um I essentially really recreated uh [laughter] a lot of the cloud desktop core functionalities. So this thing also ships with skills. It also has connectors which is MCPS in the end right and it also has the plug-in
+
+00:28:18
+stores. So it essentially enables you to bring all your skills. It's the same thing as Entropic and um it works quite similar but there's a catch. I don't want to have the vendor lock in of Entropic. As you might know it's not open source and even with their subscription they are not really transparent. So I also made this um agent agnostic in a way that it currently supports two ways. It supports the official entropic SDK as agent running framework but also the longchain deep agents which is the answer from
+
+00:28:55
+open source from langchain to task list agent like cl code. So this means you can bring any model. You can even bring a local model. Um which means connect to llama and then you can just having your machine working locally. No code execution in the cloud, right? Great stuff. You could even host your end locally on your machine as well. Then everything is just your computer. Great stuff. So you see there's definitely a benefit of going a bit more open I should say and um build a tool that gives the builder the possibility to
+
+00:29:31
+bring their own architecture >> and as we can see this looks also quite different right I mean this is a bit of uh the beta issue it is not placing always the uh pivot on the right place but this looks way better intentionally way better than what Clo Kberg does did because it ships with a lot of skills how to do things probably. Um, so it already figured we want to connect uh the memory here. We have a simple agent. We have a think module which is great and also say hello to your workflow in the chat. We have a
+
+00:30:09
+preview of this as well. >> Great. And so what I'm seeing here is the fact that you took the best kind of pattern I'd say design patterns that Anthropic did which essentially if you look at chat GPT it's pretty much the same thing with more actions built on top of it. So the layout the design layout looks the same. It's just different types of features for different purposes and you did that dedicated with NADN. I believe you're calling this NADN desktop. >> Yeah it's we're actually more simple.
+
+00:30:37
+It's just NAND desk because of the vision. By the way it's a desktop app. I I don't think I mentioned this. Uh similar to cloud desktop, nitn desk is a desktop app and the idea is to bring nitn to your desktop. Fun fact, let's have a little trivia, Dylan. Um did you know that nitn once had a desktop app? >> You know, I I heard of it uh through the pipeline a while ago. I never experienced it. >> Yeah, it is. is by now really really back in the days and the magical thing
+
+00:31:11
+was you could work with your local exopiles even this is pre- chat GPT right so you had your local exop files and you could have any and on desktop as desktop app open it load a desktop file and I just process this thing and to be honest I miss this so much it it does it sounds stupid but a lot of my clients also back in the days used in it and for theirs and um yeah we can build this with cloud we can connect with cloud service to be honest X is always a bad idea but there are some processes that
+
+00:31:46
+still have X inside of it right and having something working locally is uh super interesting so yeah why not talk about the corework tab of Nitn desk which is the exact idea to bring your desktop environment to your NIT end cloud for loading files and writing back files. So I can similar to let's call it other apps um provide a file or a folder especially like a project folder and have this agent here um working with the files inside of this folder which means for the sake of simplicity I just would ask it uh what
+
+00:32:31
+files are in my folder and one of the good things about this As we can see, these are new design patterns that are coming out and being able to give the agent context. Originally, it was just prompting and then we we had these system messages and then the user messages which was like somewhat of the next evolution that we could do inside of N. But now when the agent has access to files on your desktop, there's even more context because then you can parse things out. You can reference them. you
+
+00:32:57
+you have the ability to say, "Hey, look at this file and build me this build me the PRD that is inside this file for this workflow." There we go. >> Yes, this is what we want. This is a new way of working, right? And um this is essentially exactly the same idea. So I have in this folder an excel sheet. It contains five rows um which is companies. And now the use case that I want to achieve is to enrich those with data. So now big weakness of cl code approach would be okay I need to get a
+
+00:33:29
+service I need to get API keys put this into my local system all of this is like compliance uh worst case uh you cannot do this probably and get away with that uh in in any legal situation right and so the idea is big shift n desk would just use an end workflow in the cloud where all the credentials are even hidden for the AI agent He cannot know the credentials. He just uses an end workflow. And um let's see if this works. This would be super cool. I haven't tried this yet. And um research
+
+00:34:06
+those companies with their enrichment workflow. Let's see if this works. Then I actually do a great job at building such applications because I haven't tried this. This is uh as mentioned it's pretty early in this uh building phase of this tool. But what happens here? It searches for workflows. Uh it should see a workflow that it created earlier today and it's capable of doing luckily it just showed me the workflow. [laughter] So there's a web hook and this web hook can receive data. There's a company
+
+00:34:44
+research agent that does the job with uh Peplexity um which just researched this and now it should invoke those this workflow for each company. In this case we can always adjust the workflow to work with batch. Um currently it's not the workflow is not designed like this but yeah um the workflow fade. Okay maybe as proof of concept this would be the last step. it would be executing this workflow for each row and then write it back to Maxis. this is what I want to achieve and um this is at least for me it's
+
+00:35:22
+magical because uh this means or everything can be n and I can work on my computer locally with the task that I currently have and n is just the execution layer a super secure sec layer that has audit trails that has loggings you see all the executions credentials are securely stored and encrypted so from my perspective if this is a way to go. >> That's fantastic. And I can tell that this is going to be an evolution, right? This was proof of concept that I mean the MCPs just came out on our side. So
+
+00:35:56
+brand new. So I know you're part of the beta group. You're able to put this together. So this is all like hot off the presses as we say. And I think what's interesting about this too is the fact that we can see what's possible, but when we start to do additive things like you put a workflow that has a very specific use case. And if we look at this as an AI employee and this is for example a enrichment of these companies and we look at this as we could call this if this was a lead genen tool.
+
+00:36:23
+Okay, what other workflows would then create this to be a more featurerich AI employee. So you could have one that would scrape Google maps. You could have one that could send cold. You could have it do any of these other types of things. And every time you add a new workflow inside of there, this AI agent now has more tools in it tool belts. then makes you become a more competent AI employee which is ultimately what I think we all want. >> Yeah, exactly. And the the cool thing is we can have this essentially running in
+
+00:36:52
+any just consume it um in a supernatural way which is a conversation with our AI tools and we can have multiple um workflows invoked to get a job done which is just great. >> Fantastic. >> So you have >> talking about AI agents. Oh yeah, I was I was going to say you had this chat feature I thought you were going to tab over to. Did you want to go over to that side? >> Of course I want because um this is also something that I'm super proud of. I was thinking about hey how can we solve the
+
+00:37:23
+chat thing as well and what you're seeing here is essentially n chatub. So if I would uh choose the models, all of those models are my NAND instance and all those agents as you might see already and for our listeners there are the workflow agents and the custom agents which are our chatub agents that are not based on a workflow. You can by the way nowadays also create custom GPTs inside of any N. Great stuff. But um how to make this accessible inside of uh an end desk we can just write with those
+
+00:38:00
+agent as well. So I have this um calendar agent called Kelly and Kelly is a super simp agent. He it is essentially in any and I might show you as well. It's a agent that has connections with my calendar. He can read events from multiple calendars and write and update events. So what meetings do I have today, Kelly? [cough] [clears throat] And this is flawless experience. I have co-work, I have workflow, and now I have also my N8N real agents that I can just share with. So it shows us uh master podcast. It's
+
+00:38:42
+essentially our podcast that we're currently having, which is great. Kelly is a good agent. And yeah, this works completely in NAND. We could go to NAND. I could show you the execution. There's everything there. It's just streamed to this application and it's just making use of our agents via chat chatub. So this is the search mode. That's great. and it's added on top of it because again if you have this chat hub feature which is you know one of the features that we're iterating on as well that not
+
+00:39:15
+everybody is going to be as technical as you and so if you can give them a chat hub interface a front side of it to then interact with more of a complex interflow or workflow. Then you give it you give those users that maybe aren't as technical the ability to have access to those workflows without necessarily getting in to the nitty-gritty of the workflows. they can just simply interact with it and then extract the value because a lot of us just want to chat and then get a result. We don't
+
+00:39:39
+necessarily want to go into the back end. So this is a good way to abstract the complexity while still delivering the value. Yes. And this is also as mentioned this is not the attempt to clone cloud desktop. This is the attempt to bring something like cloud desktop for everyday workers. Um essentially our enterprise clients have their workforce there and not not everybody will have cloud desktop in the end or even cloud access because as mentioned expensive uh code execution on device there are ways
+
+00:40:14
+that this won't work for everybody but what if we can give them with any the access and the magical thing is any n has heavily role based control access control, right? And um if a user is just a chatup user, he will only see the chat tab. So he won't have co-work, he won't have workflow because there's no way that this user, this is a application uses CMCP, right? um cannot invoke those workflows without the proper roles which means he can still have a benefit of just having the local um or the chatub
+
+00:40:58
+agents on the computer. >> Mhm. I could also add on this because this application is also developed as hybrid app which means I could also chip quite easily a mobile app which I know a lot of my clients also want to have mobile their um and agents and this would essentially enable this as well as a little gimmick as well. [laughter] >> Well, it's a lot of people they there's different different modes in which people work. I know a lot of say people that are on the go, especially sales
+
+00:41:33
+people, they handle a lot of things from their phone. They do a lot of business and they basically run everything from their phone. And I know with the enterprise edition, we have role-based permissions, which then would allow them to only give them access to the say the chatub feature so that they could get in there and use that without getting into everything else. They still have the value and that you don't have to mess with the way that someone operates and works on their own business. Some people
+
+00:41:55
+do it on the go. Some people a lot of coders and programmers they like to be in an ID by a computer and so it's just kind of figure out how do you typically use these types of systems and then deliver it in a mechanism that is comate or similar to what they normally do. So this is this is great. A question for you on this is so this is you know a proof of concept and that you put together this N desk. What are the additional features? What are some of the add-ons that you would like to do to
+
+00:42:21
+this? I think first of all it's also important to state that everything that I just showed will be released free open source in the manner of how any end does things. So I want to make this just accessible and um this will be alone a great tool to add to any of your workflow situations and by the way it's also capable of managing multiple instances so you can switch instances as well. So it's really well thought in the end I've been using it in quite some time now and I know the needs and when
+
+00:42:55
+I'm happy I guess a lot of people will be happy with this tool and um as mentioned I really target a group of people that is currently not targeted by cloatropic or clo desktop um because this won't work for everybody right and I want to create something that works for everybody so there will be similar as and itself there's some um let's say quality of life features or let's say enterprise features um that might be um behind uh payment subscription for this tool but the core life cycle of chat
+
+00:43:36
+core work and workflow will be free open source I hope that the community will also add stuff to this because to be honest I think it will be a hard time to match the pace of Antropic as a solo developer from the NEN community here, but maybe this can be a cool community project as well. And um yeah, I'm >> yeah, I mean they're shipping at a a monstrous rate uh which is amazing for new features to come out, but at the same time, you can you can slip up. I know they accidentally leaked uh some
+
+00:44:07
+sensitive files by just shipping things via AI, which nobody have happened. So, you know, there was I don't know like 17 new features came out in the last 30 days or something and as well as, you know, leaking their uh I think it was source code or something like that, their documentations of what they had in place. So, uh pros and cons to shipping quickly with AI as as as we know, but this is great. So, you're going to have this be available. If people want to get this, we're going to have a link down
+
+00:44:34
+below. Whether you're seeing this on LinkedIn or on YouTube, if you go down in the description section, there'll be a link to this GitHub repo where you'll be able to download this open source project and be able to iterate with it. And if anybody's seen ideas, you're like, "Oh, this is great. I would love it if it did X, Y, and Z." Comment down below so that we can know and maybe inspire Marcel here to say, "Oo, if I get this comment, that's a really good
+
+00:44:55
+idea, and I should roll this up so that we can all benefit from that new feature idea." >> Awesome. >> Amazing. Uh, is there anything else you'd like to let people know about before we we conclude the podcast? >> Yeah, I would say if you're also passionate about this project, um, not sure when this podcast will be released, but I make sure that there will be a wait list and I get you dotified as soon as this will be completely viable. I need to make sure it's reliably working,
+
+00:45:21
+right? We don't want to have broken things uh through our um AI agents here working with or I need an instance. So I need to make sure this is something that is not happening and yeah but once it's safe to release there will be a release as mentioned open source free wable for you and then I'm super happy to see what first of all you will be building and of course if you have any feedback >> fantastic Marcel thank you so much for your time it's been an honor and pleasure my friend much love and I'll
+
+00:45:50
+see you on the other side see you Dylan bye
+

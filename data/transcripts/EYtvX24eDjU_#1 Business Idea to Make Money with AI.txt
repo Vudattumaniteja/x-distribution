@@ -1,0 +1,72 @@
+00:00:00
+This is honestly the best way to make money with AI in 2026. But before I tell you why, have a look at this video. Now, businesses pay anywhere between 5 to 25,000 rupees for getting a single video like this created. They hire a UGC creator, they hire a production staff, and they get this video made in 5 to 10 days. But I can create 10 videos like this in an afternoon using Seedance 2.0 on OpenArt. Hi everyone, I'm Ishan Sharma, and today, the biggest opportunity with AI is creating AI UGC ads for businesses. Seedance 2.0 is the
+
+00:00:37
+most advanced video generation model today that enables you to create videos with character consistency and audio and video and enables you to pretty much become a director of that ad with as much advanced features that you can imagine. And if you watch till the end, I'll show you how you can use Seedance 2.0 inside of OpenArt to generate videos like this every single hour and start charging businesses 3 to 7,000 rupees per video and start making money every single day. The link to start using
+
+00:01:12
+OpenArt is in the description of this video, but let's get started with Seedance on OpenArt. So, this right here is OpenArt, an entire video production platform powered by AI. You simply have to make an account over here, and once you do that, you can create any video that you want. They have the latest the most powerful video generation model out there called Seedance 2.0. But before that, let me show you what I made. So, this right here is the ad that I created. As you can see, I had given two images, an image of the
+
+00:01:44
+product and an image of me in the gym. And if you will notice, it retains me as the person, my face, it retains the actual product, it retains my clothes, and it also adds audio in the video, not just the actual dialogue, but it also adds the background music. And it creates all of these scenes dynamically on its own. That's the best part about it. So, this is basically what I entered. Create a 7-second vertical video ad for Bolt Energy that feels 100% real as if shot on a phone. And then the references were
+
+00:02:19
+just two images. And this was all made because of Seedance 2.0, and let me show you how you can make this as well. So, first of all, we need two images. The first step is to create the product image itself, and for that, I've come on to ChatGPT image. You can also get an image of the product from the company itself. But for the purpose of this video, we are creating a energy drink that you take before the gym called Surge. So, I've basically made this rough prompt, a premium energy drink
+
+00:02:46
+called Surge standing upright on a dark concrete surface. And this is basically the prompt for it. Now, we'll basically click on send the prompt, and this will create a real-life image of the product using the latest and the best image generation model out there by ChatGPT. And this is the image that we generated with ChatGPT. So, I will basically just download this. And once we are done with that, we can come and create our first video. So, I will go here, I'll pick up Seedance 2.0, and I'll start adding visual references.
+
+00:03:21
+So, the best part about OpenArt and Seedance 2.0 is that you can upload lots of media, and it will understand what this media is about. You can upload like mood boards, reference videos, you can upload a short of the product itself, you can upload an image of the influencer or the creator that you want in the video, and it will just all understand what you're trying to tell it. So, I will basically upload an image, and now I can upload one image of my own self. So, this right here is that image.
+
+00:03:54
+So, we are taking two images and one long prompt. And that is all that you need. That's the best part about it. And this is the prompt that I've just created, a raw authentic iPhone recorded UGC video ad shot in a gym home workout uh space. The person in the reference image has finished a set slightly out of breath athletic energy wearing a gym outfit warm tungsten gym lighting mixed with natural window light noticeable natural hand movement someone filming themselves post-workout. The person
+
+00:04:22
+reaches down to the side, picks up the Surge energy drink can, and brings it up close to the camera lens. So, it dominates 65 to 70% of the frame in the confident powerful reveal. And I can select the output and the duration. So, this one, I will keep it 9:16 because I want it to be a reel format, and I want the resolution to be 720p, and I want the duration to be 5 less to 7 seconds over here. You can also increase it if you want to. And then you can create different variations of this if you want. So, let's create two variations,
+
+00:04:54
+and let's generate it and see what we get. Now, another thing you could have done is to look at the start and the end frame. So, if you have two frames that you have in your mind, and you wanted it to create the video movement in between of those frames, you can very well do that as well. Like if you have one frame of the person and another frame of the person hitting the gym after having a good sip from the drink, you can even enter that, and it will create the video from that. So, that's the best part
+
+00:05:20
+about it. You also have tutorials, so you can access tutorials over here and start learning more about how to use Seedance 2.0 effectively. Now, you can even change the models from here if you want to. So, they have so many models accessible on OpenArt. Not just Seedance, but you also have things like Kling, you have Van, you have VO3.1, you have Grok Imagine, you have Sora 2, you have all of these models at your fingertips right inside of OpenArt. So, it created this ad right here. It picks up the can and
+
+00:05:52
+shows it to you in front of the camera, and this is how it looks. But this is just one frame. This you can create with any other model out there. But the specialty of Seedance 2.0 is that it enables you to mention every frame and every single thing happening in the video, and it will create an entire video ad for you. And in just a couple of minutes, we got these two references. As you can see, this is one ad that it created, and this is the another one that it created. Now, one thing you will notice is that this is just one single
+
+00:06:19
+frame. It is showing the can in front of you to the camera, and this was made in less than 2 minutes, and that's really impressive. But the best part about Seedance 2.0 is that you can retain the same person and the same can, their face and their clothes across various different frames. So, you can give it a very in-depth description for what frames do you want, and it will create this for you using the audio as well. So, now I will change this description, and this is a description that I've just
+
+00:06:51
+created. So, it says, a complete UGC style energy drink advertisement filmed on the iPhone. Three distinct shots with natural cuts between them. Total duration 12 to 15 seconds. 9:16 vertical format shot one. So, you can literally be a director telling Seedance exactly how you want the ad to be. The first 4 seconds, a medium shot. The person from the reference image is sitting down on a gym bench. And what are they saying? Bye aski workout me the told you much completely. So, this is what it will say
+
+00:07:22
+in the first shot. In the second one, it will reach out to the energy drink. Fir ek sip liya Surge ka aur sab kuch badal gaya. That is a dialogue over here. And then the third shot is the person stands up suddenly with full explosive energy. And then it says that gym may next level jana hai ye lo Surge. They nod at the camera after speaking. Final 2 seconds hold still. Cam can in frame. Person smoking behind it. Intense eye contact. Audio, we have also mentioned in the background how do we want it to be. The camera style,
+
+00:07:55
+iPhone 15 Pro aesthetic, slightly imperfect exposure, natural handheld. We have a face lock over here, and everything is defined over here like you're a director. And that's the best part about OpenArt. You can go in as much depth as you want. Then you can simply describe that you want the audio to be there, so it will add some background music. You can select the mode, you can keep it fast or normal. And then you can select the output. So, here since it is saying it's going to be 12 to 14 seconds, so we'll keep it
+
+00:08:21
+around 14 seconds. And then we'll keep our resolution to be 720p and the aspect ratio to be 9:16. And then we can just simply click on generate. We want two outputs from this. So, let's see what do we get. I'm really excited about this one. So, not only are we able to create one frame like I just showed you, we can now generate entire ad sequences where the person is consistent, the clothes are consistent, the product image is consistent, we have audio with proper lip sync, we have everything right over
+
+00:08:55
+here all because of Seedance. Imagine working on this for 3 hours every day creating at least a dozen different ads for a brand and charging them let's say $50 per ad. And you can very easily start making $500 every single day by just doing this. That is the potential of using Seedance 2.0 for creating UGC ads for businesses on OpenArt itself. Bye. Ask you what you want to do with me completely. I accept the search car. I accept the video. Give me next level general yellow. Search. Bye. Who can tell that this is AI
+
+00:09:36
+generated? I mean, if you're just scrolling reels on Instagram and you come across this ad, I'm not even sure you can tell this is AI. This looks very real, and it was all made within 2 minutes all using OpenArt and Seedance. Like just look at this again. Like it is getting the Hindi very real. It's not like other models is my Hindi it is butchering and all. So you can tell this is AI generated. Like it it has retained my clothes, it has retained my face, it is consistently keeping the
+
+00:10:10
+face and the lip sync and the can over here that you can see. This is so impressive. I mean, I just love how real it looks. Look at the next version. I mean, the possibilities here are endless. Like you could put like a girl over here, you could put like a sunscreen brand over here and you can create multiple assets every single day and just start making lots of money with this. All you need to do is to reach out to businesses and ask them the requirement that they have and start creating these UGC videos for them. So
+
+00:11:03
+reach out to a lot of D2C brands, reach out to energy drink, protein bars, these wafer companies and just ask them, "Hey, do you need a lot of UGC ads made every single day without the friction of hiring people and crew and get it done ASAP?" Well, I can help you with it using AI. And that's how you can start making your first 10,000, 50,000, 1 lakh rupees with AI. This is honestly insane. So that was OpenArt. If you have any questions about Seedao, let me know below in the comment section. And if you
+
+00:11:38
+want to start using OpenArt, the description will have the link to open it and start using it. And this is what their paid plans look like. I think for 1,200 rupees every single month you can create so many of these assets every single day. And if you can go up to $30, $56, which is like 5,6000 rupees, you can very easily get that money back by creating these UGC ads and selling it to businesses. And now if I switch to the annual plan, you can see that the price definitely goes down. But if you use the
+
+00:12:10
+link in the description of this video, you can actually get it for 50% off. That is an incredible value that you should definitely not be missing out, especially because of how lucrative this opportunity is of creating UGC videos and selling it to businesses using AI. And that is how you get started with making your first few thousand rupees with AI. That is all from me today. I will see you all in the next video. If you have any questions, let me know below and also write in the comment section. I was till the very end. I'll
+
+00:12:40
+see you in the next one. Bye-bye.
+

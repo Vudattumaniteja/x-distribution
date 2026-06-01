@@ -1,0 +1,35 @@
+{
+  "last_run": "2026-05-29T09:37:30.785932+00:00",
+  "new_discoveries": [
+    {
+      "source": "GitHub Release",
+      "org": "deepseek-ai",
+      "repo": "DeepSeek-V3",
+      "tag": "v1.0.0",
+      "url": "https://github.com/deepseek-ai/DeepSeek-V3/releases/tag/v1.0.0",
+      "published_at": "2025-06-27T08:46:37Z",
+      "discovered_at": "2026-05-29T09:37:29.343210+00:00",
+      "summary": "This release is created for archival purposes and DOI generation."
+    },
+    {
+      "source": "GitHub Release",
+      "org": "InternLM",
+      "repo": "InternLM",
+      "tag": "v0.2.1dev20240102",
+      "url": "https://github.com/InternLM/InternLM/releases/tag/v0.2.1dev20240102",
+      "published_at": "2024-01-02T05:05:11Z",
+      "discovered_at": "2026-05-29T09:37:30.164464+00:00",
+      "summary": "## What's Changed\r\n* fix(timeout): larger timeout by @JiaoPL in https://github.com/InternLM/InternLM/pull/495\r\n* feat(doc): add GPU memory info for 7B & 20B models by @li126com in https://github.com/InternLM/InternLM/pull/507\r\n* feat(model): add rope_base interface by @00INDEX in https://github.com/"
+    },
+    {
+      "source": "GitHub Release",
+      "org": "OpenBMB",
+      "repo": "MiniCPM",
+      "tag": "5.0",
+      "url": "https://github.com/OpenBMB/MiniCPM/releases/tag/5.0",
+      "published_at": "2026-05-26T02:48:10Z",
+      "discovered_at": "2026-05-29T09:37:30.784755+00:00",
+      "summary": "We are releasing **MiniCPM5-1B**, the first model in the **MiniCPM5** series. It is a dense 1B Transformer built for on-device, local deployment, and resource-constrained scenarios, reaching 1B-class open-source SOTA.\r\n\r\n\ud83c\udfc6 **1B-class open-source SOTA**: MiniCPM5-1B reaches an average score of 42.57 "
+    }
+  ]
+}

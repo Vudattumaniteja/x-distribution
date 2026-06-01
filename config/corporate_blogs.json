@@ -1,0 +1,169 @@
+{
+  "blogs": [
+    {
+      "name": "OpenAI News",
+      "url": "https://openai.com/news/",
+      "rss_url": "https://openai.com/news/rss.xml",
+      "tier": "tier_1"
+    },
+    {
+      "name": "Anthropic News",
+      "url": "https://www.anthropic.com/news",
+      "discovery_type": "official_index",
+      "article_prefix": "https://www.anthropic.com/news/",
+      "tier": "tier_1"
+    },
+    {
+      "name": "Google DeepMind Blog",
+      "url": "https://deepmind.google/blog/",
+      "rss_url": "https://deepmind.com/blog/feed/basic/",
+      "tier": "tier_1"
+    },
+    {
+      "name": "Meta AI Blog",
+      "url": "https://ai.meta.com/blog/",
+      "discovery_type": "official_index",
+      "article_prefix": "https://ai.meta.com/blog/",
+      "tier": "tier_1"
+    },
+    {
+      "name": "Mistral AI News",
+      "url": "https://mistral.ai/news/",
+      "discovery_type": "official_sitemap",
+      "sitemap_url": "https://mistral.ai/sitemap-index.xml",
+      "article_prefix": "https://mistral.ai/news/",
+      "tier": "tier_1"
+    },
+    {
+      "name": "xAI News",
+      "url": "https://x.ai/news",
+      "discovery_type": "official_sitemap",
+      "sitemap_url": "https://x.ai/sitemap.xml",
+      "article_prefix": "https://x.ai/news/",
+      "tier": "tier_1"
+    },
+    {
+      "name": "Google AI Blog",
+      "url": "https://blog.google/technology/ai/",
+      "rss_url": "https://blog.google/technology/ai/rss/",
+      "tier": "tier_2"
+    },
+    {
+      "name": "NVIDIA Blog",
+      "url": "https://blogs.nvidia.com/blog/category/deep-learning/",
+      "rss_url": "https://blogs.nvidia.com/feed/",
+      "tier": "tier_2"
+    },
+    {
+      "name": "Moonshot AI / Kimi Official News",
+      "url": "https://www.moonshot.ai/",
+      "discovery_type": "health_only",
+      "note": "No dated official corporate news feed has been identified; Kimi Resources contains tutorials and is not treated as announcement evidence.",
+      "fallback_sources": [
+        "KimiMoonshot YouTube channel",
+        "@Kimi_Moonshot / Moonshot X watchlist where configured",
+        "MoonshotAI GitHub organization",
+        "moonshotai Hugging Face organization",
+        "ModelScope / Chinese regional lanes"
+      ],
+      "tier": "tier_1"
+    },
+    {
+      "name": "TLDR AI",
+      "url": "https://tldr.tech/ai",
+      "rss_url": "https://bullrich.dev/tldr-rss/ai.rss",
+      "tier": "tier_2"
+    },
+    {
+      "name": "TechNode China Tech",
+      "url": "https://technode.com/",
+      "rss_url": "https://technode.com/feed/",
+      "tier": "regional_china",
+      "source_region": "china"
+    },
+    {
+      "name": "Pandaily China Tech",
+      "url": "https://pandaily.com/",
+      "rss_url": "https://pandaily.com/feed/",
+      "tier": "regional_china",
+      "source_region": "china"
+    },
+    {
+      "name": "QbitAI China AI",
+      "url": "https://www.qbitai.com/",
+      "rss_url": "https://www.qbitai.com/feed",
+      "tier": "regional_china",
+      "source_region": "china"
+    },
+    {
+      "name": "36Kr China Startups",
+      "url": "https://36kr.com/",
+      "rss_url": "https://36kr.com/feed",
+      "tier": "regional_china",
+      "source_region": "china"
+    },
+    {
+      "name": "Synced AI",
+      "url": "https://syncedreview.com/",
+      "rss_url": "https://syncedreview.com/feed/",
+      "tier": "regional_china_global_ai",
+      "source_region": "china_global_ai"
+    },
+    {
+      "name": "Inc42 AI India",
+      "url": "https://inc42.com/industry/ai/",
+      "rss_url": "https://inc42.com/industry/ai/feed/",
+      "tier": "regional_india",
+      "source_region": "india"
+    },
+    {
+      "name": "YourStory India Startups",
+      "url": "https://yourstory.com/",
+      "rss_url": "https://yourstory.com/feed",
+      "tier": "regional_india",
+      "source_region": "india"
+    },
+    {
+      "name": "Medianama India Tech Policy",
+      "url": "https://www.medianama.com/",
+      "rss_url": "https://www.medianama.com/feed/",
+      "tier": "regional_india",
+      "source_region": "india"
+    },
+    {
+      "name": "e27 Southeast Asia Startups",
+      "url": "https://e27.co/",
+      "rss_url": "https://e27.co/feed/",
+      "tier": "regional_asia",
+      "source_region": "southeast_asia"
+    },
+    {
+      "name": "Rest of World Emerging Tech",
+      "url": "https://restofworld.org/",
+      "rss_url": "https://restofworld.org/feed/latest/",
+      "tier": "regional_global",
+      "source_region": "emerging_markets"
+    },
+    {
+      "name": "Hacker News Top",
+      "url": "https://news.ycombinator.com/",
+      "discovery_type": "hacker_news_algolia",
+      "algolia_url": "https://hn.algolia.com/api/v1/search_by_date",
+      "tier": "community_signal",
+      "queries": [
+        "AI",
+        "OpenAI",
+        "Anthropic",
+        "Claude",
+        "Gemini",
+        "LLM",
+        "agent",
+        "MCP"
+      ],
+      "tags": "ai_community_signal",
+      "min_points": 50,
+      "lookback_hours": 48
+    }
+  ],
+  "last_check_timestamp": null
+}

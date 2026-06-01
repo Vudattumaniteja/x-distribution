@@ -1,0 +1,165 @@
+{
+  "metadata": {
+    "description": "Human-maintained categorization and priority policy for YouTube source channels.",
+    "last_updated": "2026-05-29T00:00:00Z",
+    "channel_count": 24
+  },
+  "priority_order": {
+    "P-2": "Highest-priority expert source; any upload is urgent regardless of length.",
+    "P-1": "Above-P0 top-tier source; any in-window upload is handled before normal P0.",
+    "P0": "High-cadence fast-update radar or official primary source; scan every run and transcript every in-window video.",
+    "P1": "Strong AI/product source; scan every run, transcript in-window videos when relevant.",
+    "P2": "Context, strategy, interviews, or regional perspective; scan normally, summarize selectively.",
+    "P3": "Low-frequency or broad tech context; keep for coverage, lower urgency."
+  },
+  "channels": {
+    "@JulianGoldieSEO": {
+      "category": "fast_update_creator",
+      "priority": "P0",
+      "role": "High-cadence AI product/update radar; catches fast tool updates, coding agents, Chinese tools, Hermes/OpenClaw/Claude/Gemini changes.",
+      "transcript_policy": "disabled",
+      "enabled": false,
+      "disabled_reason": "Temporarily stopped by user on 2026-05-30; user has a separate plan for this channel."
+    },
+    "@OpenAI": {
+      "category": "official_primary",
+      "priority": "P0",
+      "role": "Official OpenAI announcements, demos, model/product launches.",
+      "transcript_policy": "all_in_window"
+    },
+    "@anthropic-ai": {
+      "category": "official_primary",
+      "priority": "P0",
+      "role": "Official Anthropic/Claude announcements, talks, product demos.",
+      "transcript_policy": "all_in_window"
+    },
+    "@claude": {
+      "category": "official_primary",
+      "priority": "P0",
+      "role": "Claude product and platform updates.",
+      "transcript_policy": "all_in_window"
+    },
+    "Google": {
+      "category": "official_primary",
+      "priority": "P0",
+      "role": "Google/Gemini/AI Studio and ecosystem launches.",
+      "transcript_policy": "all_in_window"
+    },
+    "KimiMoonshot": {
+      "category": "official_primary_china",
+      "priority": "P0",
+      "role": "Moonshot/Kimi model and product announcements.",
+      "transcript_policy": "all_in_window"
+    },
+    "@n8n-io": {
+      "category": "official_tooling",
+      "priority": "P1",
+      "role": "Automation/workflow tooling updates relevant to agents and operators.",
+      "transcript_policy": "all_in_window"
+    },
+    "JayE-RoboNuggets": {
+      "category": "workflow_orchestration",
+      "priority": "P0",
+      "normal_priority": "P0",
+      "workflow_orchestration_priority": "P0",
+      "role": "Workflow orchestration source; cover every video he produces because it maps tools into practical agent/workflow systems.",
+      "transcript_policy": "all_in_window"
+    },
+    "AICodeKing": {
+      "category": "coding_agent_creator",
+      "priority": "P0",
+      "role": "AI coding tools, coding-agent workflows, practical developer updates.",
+      "transcript_policy": "all_in_window"
+    },
+    "airevolutionx": {
+      "category": "ai_news_creator",
+      "priority": "P0",
+      "role": "Fast AI product/model coverage and broad AI update radar.",
+      "transcript_policy": "all_in_window"
+    },
+    "@intheworldofai": {
+      "category": "fast_ai_tool_creator",
+      "priority": "P0",
+      "role": "WorldofAI fast AI tool, AI coding, agent, and automation updates.",
+      "transcript_policy": "all_in_window"
+    },
+    "MatthewBerman": {
+      "category": "ai_model_creator",
+      "priority": "P0",
+      "role": "AI model, tool, and benchmark commentary.",
+      "transcript_policy": "all_in_window"
+    },
+    "TBPNLive": {
+      "category": "tech_business_show",
+      "priority": "P-1",
+      "role": "Tech/business founder and market discussion with AI/startup signal.",
+      "transcript_policy": "all_in_window"
+    },
+    "@100xEngineers": {
+      "category": "india_builder_creator",
+      "priority": "P2",
+      "role": "India builder/developer ecosystem and AI/productivity perspective.",
+      "transcript_policy": "all_in_window"
+    },
+    "@vaibhavsisinty": {
+      "category": "growth_creator",
+      "priority": "P0",
+      "role": "AI/growth/automation/business tactics.",
+      "transcript_policy": "all_in_window"
+    },
+    "@IshanSharma7390": {
+      "category": "india_business_creator",
+      "priority": "P2",
+      "role": "India startup, AI business, creator/operator interviews.",
+      "transcript_policy": "all_in_window"
+    },
+    "@VarunMayya": {
+      "category": "india_ai_business_creator",
+      "priority": "P2",
+      "role": "India AI, business, startup, and operator commentary.",
+      "transcript_policy": "all_in_window"
+    },
+    "@BuildersCentral": {
+      "category": "builder_creator",
+      "priority": "P2",
+      "role": "Builder/startup/product execution signals.",
+      "transcript_policy": "all_in_window"
+    },
+    "@AlexFinnOfficial": {
+      "category": "growth_distribution_creator",
+      "priority": "P0",
+      "role": "X/growth/distribution mechanics and creator-market signal.",
+      "transcript_policy": "all_in_window"
+    },
+    "@nicksaraev": {
+      "category": "automation_creator",
+      "priority": "P2",
+      "role": "AI automation, SEO, and business workflow tactics.",
+      "transcript_policy": "all_in_window"
+    },
+    "AndrejKarpathy": {
+      "category": "expert_primary",
+      "priority": "P-2",
+      "role": "Highest-priority AI expert source; any upload is urgent and should be processed regardless of length.",
+      "transcript_policy": "all_in_window"
+    },
+    "LexFridman": {
+      "category": "longform_interview",
+      "priority": "P-1",
+      "role": "Above-P0 long-form interviews with AI researchers/founders; process any relevant upload regardless of length.",
+      "transcript_policy": "all_in_window"
+    },
+    "PeterDiamandis": {
+      "category": "future_business_creator",
+      "priority": "P0",
+      "role": "AI, abundance, startups, and macro future framing.",
+      "transcript_policy": "all_in_window"
+    },
+    "AndroidAuthority": {
+      "category": "consumer_tech",
+      "priority": "P3",
+      "role": "Consumer tech and Android ecosystem; useful for on-device AI context.",
+      "transcript_policy": "all_in_window"
+    }
+  }
+}

@@ -1,0 +1,43 @@
+description = "Score tweet drafts against the X algorithm (0-100 points)"
+
+[tools]
+mcp = ["notebooklm-mcp"]
+
+prompt = """Run the Post Grading pipeline as defined in references/post-grading.md.
+
+Load variants from data/approved_posts.json.
+If user specifies variant numbers, grade only those.
+
+For each variant, score across ALL 6 dimensions using config/grading_weights.json:
+
+1. HOOK STRENGTH (0-15): Pattern interruption (0-5) + Specificity (0-5) + Curiosity gap (0-5)
+2. ALGORITHM SIGNAL POTENTIAL (0-20): Bookmark (0-8) + Repost (0-7) + Reply-trigger (0-5)
+3. PHOENIX POTENTIAL (0-15): Out-of-network appeal (0-8) + Topic alignment (0-7)
+4. VOICE COMPLIANCE (0-20): Calm Authority (0-5) + Concrete-First (0-5) + Numbers (0-5) + Anti-Fluff (0-5)
+5. DARK SOCIAL POTENTIAL (0-15): Screenshot (0-5) + DM-share (0-5) + Self-contained (0-5)
+6. RISK PENALTIES (0 to -15): Ratio risk (0 to -5) + Engagement bait (0 to -5) + Saturation (0 to -5)
+
+For Voice Compliance: start at max for each sub-dimension, subtract for each violation found.
+- Hype words: -1 each (check full forbidden list in SKILL.md)
+- Vague openers: -1 each
+- No numbers at all: score 0
+- Filler phrases: -1 each (in order to, it's important to note, at the end of the day)
+
+Query NotebookLM for current engagement patterns to calibrate scores (especially Phoenix potential and saturation).
+
+Output per variant:
+- Total score (raw and risk-adjusted), rating (Excellent/Good/Acceptable/Needs Work/Weak/Skip)
+- Full dimension breakdown with per-sub-dimension scores
+- Top 2 strengths and top 2 weaknesses
+- 1-sentence improvement suggestion
+
+Edge case handling:
+- User disagrees with grade: explain the scoring, ask what they'd change
+- Borderline scores (e.g., 54/55): round in favor of user, present both options
+- Two variants tied: use dark_social_potential as tiebreaker, then hook_strength
+- All variants below 55: suggest repurposing as reply instead of forcing a weak post
+- High raw score but high risk: present trade-off clearly, let user decide
+
+Rank all variants by score. Present in clear table.
+Save graded results to data/approved_posts.json with scores.
+"""

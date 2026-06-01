@@ -1,0 +1,84 @@
+00:00:00
+Right now, there are two kinds of AI users in the world. The ones still typing prompts and the ones who figured out Claude has over a thousand skills sitting underneath that chat box. And the gap between them, it's already embarrassing. And it's only getting wider. And I'll tell you how wide. Gitan runs Y Combinator, the company behind Airbnb, behind Stripe. He finds the next big thing before the rest of the world catches on. He gave his entire team's work to these clawed skills. just him
+
+00:00:28
+sitting alone doing the work of 50 people. Over a thousand skills exist. Most are useless. I spent weeks testing them. This 10 changed everything. And one skill out of these 10, I'm not even joking. If you just start using it, your daily claude limit will double. Same plan you're already paying for. Twice the usage. And almost nobody knows this exists. You don't need to know coding. You don't need any setup. We're going through all 10. And the one I put at number one honestly builds entire
+
+00:00:55
+businesses while you sit there and watch it happen. Real quick before we get into this, that skill that doubles your daily claude, the install command is already sitting in our staying ahead WhatsApp community. It's completely free to join. Links in the description. Let's get into it. Before we get into the list, what is a Claude skill? A skill is a small package you install. Once that teaches Claude how to do one specific job really well. Once installed, Claude does that job the same way every time. And there are two
+
+00:01:28
+kinds. Skills others have built that you install in one click and skills you build yourself for your own workflow. We get to the build your own one later. Starting at 10, working down. First one fixes a problem you have probably had this week. Picture this. You need to go through 10 research papers, 15 articles and two PDFs sitting in your downloads folder. Skip any of them and you are guessing. So you open Claude and start dumping it in paper 1, paper 2, paper 3. By paper 9, that warning pops up. You
+
+00:01:57
+are approaching your usage limit and you have not even started the analysis. That problem is what skill 10 fixes. Token optimization. The job of the skill is exactly what the name says. You hand clawed the same 50 sources and it processes the whole thing using a fraction of the tokens. Same data in, same answer out, way less of your plan burnt. So we ran it on something real. Ask Claude to find everything published in the last 6 months about how Indian creators are growing on YouTube using AI. What came back was tight. Eight
+
+00:02:29
+tactics working right now ranked by impact each sourced to the original tweet or video. The whole answer fits on one screen. A second move worth knowing. 40page board deck due tomorrow. Drop it in. Ask Claude for the three decisions on the table and the data behind each. You walk in knowing more than half the people. The catch with token optimization is you still need to know which skill to invoke. How do you figure that out without memorizing a thousand of them? Number nine handles that the find skill. You have a thousand skills
+
+00:02:59
+sitting in the library. You cannot possibly know which one fits the task right now. The goal of find skill is simple. You stop being the one who has to pick. You describe what you want in plain English and Claude scans the library, matches the right skill, and runs it. We typed it in. Write a LinkedIn post about the recent SpaceX and anthropic deal. Find me the right skill for this. Hit enter. Claude pulled the writing style skill that matches our voice. Asked two follow-up questions to nail the angle, then started writing. 90
+
+00:03:24
+seconds later, a finished LinkedIn post showed up. In our voice, sources linked, ready to publish. This one is the gateway to every other skill. Install it first. So fine skill picks the right tool for the job. But every output should match how your brand sounds. That is skill eight. Brand guidelines. You probably have a brand, a business or a personal brand on LinkedIn. You have rules, specific colors, specific fonts, a voice, and every time you ask Claude to write or design something, you type
+
+00:03:52
+those rules out from scratch. The goal of this skill is to stop that. You set up your brand rules once, and from then on, every output respects them. The brand stuff never gets typed again. So, we set it up. We wrote one paragraph describing the brand, the colors, the voice, the things we never wanted to say, and asked Claude to lock it in. Using just that one paragraph, Claude built a full brand identity document, hex codes, font pairings for headings and body, seven sample sentences in the brand voice, and many more showing what
+
+00:04:22
+not to sound like, saved as a permanent skill on the account. The use case nobody talks about. If you run brands for a living and you are managing three or four at once, personal company, two clients, set up a separate brand skill for each. Switch between them whenever you need. Your brand looks tight. But what about the stuff you read on WhatsApp and Twitter every day? Half of it is fake. Skill 7 solves that one for everyone. The fact checker. Be honest. How many times have you forwarded a WhatsApp message to your family group
+
+00:04:51
+only to find out a week later that it was completely wrong? a madeup statistic, a scary headline from 2019. The goal of this skill is to stop you from being the person who spreads the wrong thing. You paste in any claim, post, or article. The skill pulls out every factual statement, checks each against authoritative sources, and returns a verdict before you hit forward. So, we tested it on a viral post. Big company deal, huge numbers, looked completely real. We ran the fact-checking skill over it, and 40
+
+00:05:21
+seconds later, the card came back. Verdict on top. Mixed. 17 separate claims pulled from that one post. Most confirmed. A few inflated. One quote attributed to a CEO had never been said. Each claim got its own confident score. Each source linked. That is the power of this skill. Any health tip, finance claim, or viral post gets a clear verdict in 40 seconds with every line scored and every source linked. So, you stop bad information from spreading. But what about getting your business found in the first place? That is skill six,
+
+00:05:55
+the SEO skill. If you own a website, a Shopify store, anything online, you have wondered why some competitor ranks above you with a worse product. The answer is SEO. Good SEO has historically cost 30,000 to two lakh rupees a month. The goal of the skill is to compress that monthly SEO retainer into one prompt. The skill runs a full technical audit on any website, compares it to competitors, and gives you a prioritized list ranked by which Fix moves the needle most. So, we gave it the hardest test, Nike, the
+
+00:06:26
+biggest brand on Earth. Compare against Adidas and New Balance. Tell us where Nike is losing. The skill ran a full audit across seven pillars and compared Nike to Adidas and New Balance side by side. Nike scored 78 out of 100. The weakest pillar was on page SEO at 68 with a broken homepage title and a viewport meta tag blocking mobile zoom. The wildest part, Nike scored just 60 on AI search readiness. Copy this prompt. Swap Nike for your website. Monday morning is sorted. The biggest leak in SEO is fixing the wrong thing first. I
+
+00:06:58
+know, I know. We are halfway in and have not even hit the heavy stuff yet. This is what we break down every single week here. Tool deep dives, skill walkthroughs, honest takes on what works. If you are getting value from this, you know what to do. Skill five, office hours, part of GStack built by Gary Tan. Gary is the president of Y Combinator, the birthplace of Airbnb and Stripe. He recently opensourced his exact AI setup. Office hours is the heaviest hitter in the kit. What this skill actually does, it puts Claude in
+
+00:07:29
+the chair of a YC partner sitting across from you. Not nice, brutal. It tears your business apart the way a real YC office hour session would. The kind of feedback nobody around you can give you. So we fed it Zumato, the brand every one of us knows. Asked Claude to grill it the way Gary would. 40 seconds later, six forcing questions came back. The ones YC partners actually use on founders. Demand reality, status quo, desperate specificity, narrowest wedge, observation, future fit. Question one made me sit up. Would users be upset if
+
+00:08:03
+Zomato disappeared tomorrow? Claude's answer, weak for consumers, stronger for restaurants. Most people have Zomato and Swiggy both installed. They open whichever has the better coupon today. Habit, not love. Then it goes after Zumato's own assumptions. Food delivery is their core business challenge. Swiggy is their main competitor, also challenged. Then three strategic paths. Consolidate everything under Zomato. Separate the brands completely or stop being an app entirely. Become the infrastructure layer under every food
+
+00:08:34
+business in India. Honest take. If you're building anything right now, run this tonight. Even if it is just an idea you want to validate before you put a rupee in. Type your brand. Add the context about what it actually does. Skill four, the skill creator. This is the one that broke my brain the first time because the skill builds new skills. The goal of the skill is to remove the weight. Every skill so far was built by someone else. With Skill Creator, you stop waiting. You describe your workflow the way you would explain
+
+00:09:03
+it to a new hire. The skill interviews you, drafts itself, tests it, and packages it. So, we tested it on something specific. There are startups in our personal investment portfolio that need a structured review every month. We described the whole thing to Skill Creator. What a healthy output looks like, what red flags to catch. The skill that got created did something we did not expect. It built itself. You can now build your own skill. Massive. But here is the part that lands on everyone watching because every one of you has
+
+00:09:31
+already written something using AI and it sounds exactly like AI. 29 specific patterns Claude can spot and erase. Skill three, the humanizer. You know the feeling. You ask chat GPT to write you a cold email. Looks fine on screen. You send it. Nobody replies because the person on the other end could smell it was AI from the subject line. The goal of this skill is to make Claude's writing past for human. Not by guessing, by systematically removing the 29 documented patterns that flag a piece of
+
+00:10:00
+writing as AI generated. Look at the email on the left. I hope this message finds you well. Gamechanging solution. Today's fast-paced startup landscape. Nobody writes a cold email like that. The humanizer catches these at the structural level, not just the word level. Same email after the skill. Quick math from your last 30 days, 47 meetings, 19 under 15 minutes, six with no agenda, direct specific numbers. That is what a human writes. Run this on a LinkedIn post and the comments multiply. The skill is not magic. It just removes
+
+00:10:32
+what was screaming. This person did not write this honest question. Drop it in the comments. The last AI email you sent. What was the dead giveaway phrase? Curious how many of us are guilty of the same five cliches. Your writing sounds like you again, but what about a real decision that cost real money? Should this product launch? Skill 2 handles that. Skill two, deep research. A friend wants to build an AI app for meeting nodes for sales teams priced at $ 20 to $50 a month per seat. Before she quits
+
+00:11:01
+her job to build it, she needs to know one thing. Is the space already too crowded or is there room? The traditional way takes two to three weeks of waiting. By the time the report lands, the market has shifted. The goal of this skill is to compress that entire consultant project into a single clawed session. Deep research spins up multiple agents at once. One handles market size, another profiles competitors. Another pulls funding data. Another analyzes pricing. They run in parallel then synthesize. So we ran her question
+
+00:11:31
+through. Claude asked three clarifying questions. First, geography, pricing tier, team size. Pick the answers. Hit go. You could watch the agents working on the screen. By the time we got back from making coffee, the report had landed. Verdict on top, crowded but not closed, total market size with growth rate, every competitor profiled, what each charges, the five gaps nobody has fixed, and a specific recommended angle, engineering managers, not sales managers, a $623 million market mapped with a go-to market angle in 8 minutes.
+
+00:12:03
+She had it before lunch. We have killed AI sounding writing, mapped entire markets. Everything so far was text on a page. Skill number one breaks past that front-end design, the official anthropic skill. 277,000 people have already installed this one skill, just this one. And the reason is about to land. The goal of this skill is specific. Most AI generated design looks like AI generated design. The same purple gradients on white, the same inter or robboto fonts, the same card grid layout you have seen on 500 SAS
+
+00:12:36
+landing pages. Front-end design exists to stop that. It bans those defaults and gives Claude a real design system. We just typed it in. We needed a production grade dashboard for an AI voice dictation tool. It had to be premium and memorable, not the AI slop defaults. 10 minutes from a typed sentence to this. The dashboard works. Hover states animate live waveforms pulse with the audio connected apps panel list Slack Gmail notion linear same prompt structure works for anything you can describe in a paragraph. This is the one
+
+00:13:06
+that builds entire businesses while you watch. So that is the 10. These are the top 10 claude skills you need to know. The ones you should be using based on what your work looks like. A year ago all of this stacked together was six figures and a team of five. Six weeks of work. Now an afternoon with Claude for free. If you want me to go deeper on any of these 10 skills, let me know in the comments which one. Whichever gets the most asks, that is the next breakdown. And one more thing, we are about to drop
+
+00:13:33
+a full 1h hour claude master class for beginners on this channel from zero to running your own skills free. The fastest way to get it the day it drops is to hit subscribe. If you want a head start before the masterass drops, I have already made a detailed video on Claude skills. Link is right here. See you on the next one.
+

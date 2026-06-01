@@ -1,0 +1,174 @@
+{
+  "project": "x-distribution",
+  "last_updated": "2026-05-28T00:00:00Z",
+  "features": [
+    {
+      "id": "F01",
+      "title": "Run full collection test",
+      "state": "done",
+      "behavior": "Verify collection covers X, YouTube, RSS/blogs, Reddit, Hacker News, GitHub, and arXiv.",
+      "verification": "python scripts/x_distribution.py collect --verify-only or full collect plus scripts/validate_schemas.py",
+      "evidence": [
+        "Full collect completed previously with 565 filtered queue items; Reddit direct JSON returned 403.",
+        "Targeted Reddit collector run wrote data/reddit_raw_standalone.json with 359 posts and 245 discoveries via RSS fallback."
+      ]
+    },
+    {
+      "id": "F02",
+      "title": "Fix data layout",
+      "state": "done",
+      "behavior": "Create a clear raw/normalized/verified/content/state/export storage layout while preserving legacy paths.",
+      "verification": "python scripts/x_distribution.py storage-check",
+      "evidence": ["data/storage_layout_manifest.json created by storage-check"]
+    },
+    {
+      "id": "F03",
+      "title": "Add master CLI",
+      "state": "done",
+      "behavior": "Expose collect, validate, normalize, verify, generate-posts, cleanup, and storage-check commands through one CLI.",
+      "verification": "python scripts/x_distribution.py --help",
+      "evidence": ["scripts/x_distribution.py exposes collect, validate, routes, normalize, storage-check, verify, generate-posts, and cleanup"]
+    },
+    {
+      "id": "F04",
+      "title": "Add schema validation",
+      "state": "done",
+      "behavior": "Validate critical config and data JSON files before and after collection.",
+      "verification": "python scripts/validate_schemas.py",
+      "evidence": ["Schema validation returned 0 errors and 2 legacy queue warnings after Reddit integration"]
+    },
+    {
+      "id": "F05",
+      "title": "Classify legacy scripts",
+      "state": "done",
+      "behavior": "Document active, collector, verification, diagnostic, and legacy/archive script classes.",
+      "verification": "references/script-inventory.md exists and names all scripts/*.py",
+      "evidence": ["references/script-inventory.md updated with reddit_mcp_buddy_collect.py and reddit_mcp_buddy_bridge.mjs"]
+    },
+    {
+      "id": "F06",
+      "title": "Run end-to-end verification",
+      "state": "done",
+      "behavior": "Prove route checks, schema validation, queue normalization, collection coverage, and cleanup all work.",
+      "verification": "make check plus CLI verification outputs recorded in .harness/verification_results.json",
+      "evidence": [
+        "Python compile passed for core scripts including reddit_mcp_buddy_collect.py; node --check passed for reddit_mcp_buddy_bridge.mjs.",
+        "scripts/x_distribution.py verify passed routes and schemas with 0 errors and 2 legacy queue warnings.",
+        "scripts/x_distribution.py storage-check passed and cleanup dry-run wrote cache/stale_file_audit.json."
+      ]
+    },
+    {
+      "id": "F07",
+      "title": "Add finance and macro intelligence lane",
+      "state": "done",
+      "behavior": "Collect AI-linked finance, market, macro, newsletter, India business, and SEC signals as a first-class Phase 1 source lane.",
+      "verification": "python scripts/finance_market_collector.py plus scripts/validate_schemas.py and scripts/x_distribution.py storage-check",
+      "evidence": [
+        "config/finance_sources.json defines Bloomberg, CNBC, Times of India, Economic Times, TLDR, and SEC watchlist sources.",
+        "scripts/phase1_collect.py ingests finance signals into the main collection queue.",
+        "finance_market_collector.py saved 58 finance signals with no failed source-health entries after endpoint replacement.",
+        "Schema validation passed with 0 errors and 2 legacy queue warnings; storage-check and x_distribution.py verify passed."
+      ]
+    },
+    {
+      "id": "F08",
+      "title": "Add startup funding and product hunt lane",
+      "state": "done",
+      "behavior": "Collect AI startup fundraising, Series A/B/C, funding amounts, investors, and product-launch signals as a first-class Phase 1 lane.",
+      "verification": "python scripts/startup_funding_collector.py plus scripts/validate_schemas.py and scripts/x_distribution.py collect --verify-only",
+      "evidence": [
+        "config/startup_sources.json defines TechCrunch, Crunchbase News, VentureBeat, SiliconANGLE, EU-Startups, and Product Hunt sources.",
+        "scripts/phase1_collect.py ingests startup funding/product signals into the main collection queue.",
+        "startup_funding_collector.py saved 11 startup signals with no failed source-health entries.",
+        "Schema validation passed with 0 errors and 2 legacy queue warnings; collect --verify-only, storage-check, and x_distribution.py verify passed."
+      ]
+    },
+    {
+      "id": "F09",
+      "title": "Creator fast-update and subreddit expansion",
+      "state": "done",
+      "behavior": "Use yt-transcript latest as the default YouTube discovery path with a day-window filter, and expand Reddit discovery for AI agents, startups, Chinese tools, and product launches.",
+      "verification": "yt-transcript latest --help, get_latest_videos(..., days=2), py_compile, validate_schemas.py, x_distribution.py verify",
+      "evidence": [
+        "Global yt-transcript latest now accepts --days and returns published_at metadata when available.",
+        "Julian Goldie latest discovery returned OpenClaw, Claude Opus/Ultracode, Chinese coding agent, and Hermes videos inside the 2-day window.",
+        "config/community_sources.json adds AI_Agents, AutoGPT, SaaS, SideProject, startups, Entrepreneur, ArtificialInteligence, China, Sino, opensource, and github.",
+        "Schema validation passed with 0 errors and 2 legacy queue warnings; x_distribution.py verify passed."
+      ]
+    },
+    {
+      "id": "F10",
+      "title": "YouTube all-in-window transcript policy and channel priority map",
+      "state": "done",
+      "behavior": "Scan YouTube by day window rather than fixed latest count, retrieve every in-window transcript, and categorize monitored YouTube channels by role and priority.",
+      "verification": "get_latest_videos(..., count=None, days=2, max_scan=100) on Julian Goldie plus py_compile and validate_schemas.py",
+      "evidence": [
+        "Julian Goldie returned 32 videos in the 2-day window with count=None.",
+        "config/source_registry.json sets transcript_count_per_channel to null and max_scan_per_channel to 500.",
+        "config/youtube_channel_profiles.json categorizes 24 monitored channels into P0/P1/P2/P3 priority bands.",
+        "references/youtube-source-priority.md documents the YouTube source map and policy."
+      ]
+    },
+    {
+      "id": "F11",
+      "title": "YouTube priority escalation and source cleanup",
+      "state": "done",
+      "behavior": "Promote critical YouTube sources into P-2/P-1/P0 bands, remove stale NetworkChuck coverage, add WorldofAI, and make collection process channels in priority order.",
+      "verification": "priority-order smoke test plus py_compile, validate_schemas.py, and x_distribution.py verify",
+      "evidence": [
+        "AndrejKarpathy sorts first as P-2, above all top-tier sources.",
+        "LexFridman and TBPNLive sort next as P-1 above normal P0.",
+        "@intheworldofai is present in youtube_channels and youtube_channel_profiles as P0; @NetworkChuck is absent from both.",
+        "JayE-RoboNuggets is categorized as workflow_orchestration with normal and workflow priority P0.",
+        "scripts/orchestrate_videos.py and scripts/orchestrate_all_latest.py process monitored channels through the priority profile map.",
+        "Schema validation passed with 0 errors and 2 legacy queue warnings; x_distribution.py verify passed."
+      ]
+    },
+    {
+      "id": "F12",
+      "title": "XCLI watchlist collection verification",
+      "state": "done",
+      "behavior": "Use the pinned local XCLI to collect current X watchlist tweets and refresh the registered X radar output.",
+      "verification": "twitter_timeline direct smoke test, x_timeline_scraper_standalone.py, x_radar_standalone.py --skip-home --max-accounts 10 --days 7 --per-account 5, py_compile, validate_schemas.py, x_distribution.py verify",
+      "evidence": [
+        "Direct XCLI timeline smoke test for OpenAI saved a recent tweet to cache/xcli_test_openai.json.",
+        "scripts/x_timeline_scraper_standalone.py saved 19 validated tweets to data/x_raw_standalone.json.",
+        "scripts/x_radar_standalone.py now supports bounded runs and refreshed data/x_radar_standalone.json with 19 discoveries.",
+        "Home-feed route hit Page.goto net::ERR_ABORTED, so bounded watchlist timeline collection is the reliable current X route.",
+        "Schema validation passed with 0 errors and 2 legacy queue warnings; x_distribution.py verify passed."
+      ]
+    },
+    {
+      "id": "F13",
+      "title": "Regional AI and startup coverage expansion",
+      "state": "done",
+      "behavior": "Expand source coverage beyond US/global English tech feeds by adding China, India, Southeast Asia, Europe, and emerging-market AI/startup sources plus Chinese model artifact orgs.",
+      "verification": "RSS endpoint checks, startup_funding_collector.py, corporate_rss_discovery.py, hf_tracker_standalone.py, validate_schemas.py, x_distribution.py verify",
+      "evidence": [
+        "config/startup_sources.json adds TechNode, Pandaily, Synced Review, Inc42 AI, Inc42, YourStory, Medianama, e27, Rest of World, and Sifted.",
+        "config/corporate_blogs.json adds regional recent-feed sources for TechNode, Pandaily, Synced, Inc42 AI, YourStory, Medianama, e27, and Rest of World.",
+        "config/community_sources.json adds StartUpIndia, AllIndiaStartups, developersIndia, and IndiaTech plus India/regional keywords.",
+        "config/source_registry.json and scripts/source_registry.py add Hugging Face as a live source and expand Chinese/global model artifact org coverage.",
+        "scripts/phase1_collect.py now ingests Hugging Face alongside GitHub and arXiv in the artifact/research lane.",
+        "startup_funding_collector.py saved 26 startup signals after regional feed expansion.",
+        "corporate_rss_discovery.py saved 214 announcements, including 14 TechNode, 20 Pandaily, 5 Inc42 AI, 20 YourStory, 10 Medianama, 50 e27, and 6 Rest of World items.",
+        "hf_tracker_standalone.py saved 61 model artifact discoveries across Qwen, DeepSeek, ByteDance Seed, BAAI, InternLM, 01-ai, and ModelScope.",
+        "Schema validation passed with 0 errors and 2 legacy queue warnings; x_distribution.py verify passed."
+      ]
+    },
+    {
+      "id": "F14",
+      "title": "Centralize protected queue persistence and document the system",
+      "state": "done",
+      "behavior": "Route active intelligence queue mutation through one atomic persistence seam, fail closed on historical prototype stories, prepare verified-only manual editorial packets, and publish clear Markdown and interactive HTML architecture documentation.",
+      "verification": "test_intelligence_queue.py, test_post_generation.py, validate_schemas.py, source_clis.py, x_distribution.py verify, build_intelligence_report.py, whole-scripts py_compile scan, live JSON parse scan, direct queue-write audit, and embedded HTML JavaScript syntax check",
+      "evidence": [
+        "scripts/intelligence_queue.py centralizes historical queue reads, canonical URL identity, provenance merging, recency filtering, metadata, and atomic writes.",
+        "Canonical and compatibility queue writers use the protected queue seam; AST audit found 0 direct data/news_queue.json write-mode open calls.",
+        "generated_codegen.py prepares verified-only empty manual drafting packets and process_news.py fails closed.",
+        "77 Python scripts compiled, 426 live JSON files parsed, 7 contract tests passed, schema validation returned 0 errors and 0 warnings, route checks passed, and intelligence reports regenerated.",
+        "README.md, docs/ARCHITECTURE.md, docs/x-distribution-architecture.html, CONTEXT.md, and docs/adr/0001-protected-intelligence-queue-seam.md were created."
+      ]
+    }
+  ]
+}

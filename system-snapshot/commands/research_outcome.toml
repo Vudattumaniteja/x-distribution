@@ -1,0 +1,41 @@
+description = "Spawn a 10-agent research fleet for a user-specified outcome and produce an implementation plan"
+
+[tools]
+file_read = true
+file_write = true
+subagents = true
+web_fetch = true
+google_search = true
+mcp = ["notebooklm-mcp"]
+
+prompt = """Run Mode 4: Outcome Research Pipeline as defined in references/self-evolution.md.
+
+The user will provide an outcome in the form: "this is what I want, this is how I want it" or equivalent.
+
+Execution:
+1. Extract the desired_outcome, constraints, success_criteria, target_files_or_modules, risks, and assumptions.
+2. Load the current pipeline files needed to understand fit and constraints.
+3. Spawn the 10 research agents in parallel if subagents are available:
+   - Outcome Analyst
+   - Existing-System Integrator
+   - Architecture Options Researcher
+   - Runtime Feasibility Researcher
+   - Data and Schema Planner
+   - Prompt and Agent Designer
+   - Eval and Validation Strategist
+   - Safety and Approval Reviewer
+   - Implementation Planner
+   - Operator Workflow Designer
+4. If subagents are unavailable, emulate the same 10 roles sequentially.
+5. Synthesize a recommended design, rejected alternatives, implementation phases, write scope, validation plan, and risks.
+6. Prepare the research plan as a proposed data/evolution_state.json last_research_plan update.
+7. If the user explicitly asked to save/persist the research, write the approved state/log files. Otherwise run dry and present the proposed update without writing.
+8. Ask the user to approve the implementation plan before any deployment/edit phase.
+
+Hard constraints:
+- Research may run immediately.
+- Do not implement until the user approves the plan and write scope.
+- Do not write evolution state/log outputs unless the user explicitly approved persistence.
+- If the request requires external current information, use web search and cite sources.
+- If NotebookLM is unavailable, continue using local references.
+"""

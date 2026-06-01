@@ -1,0 +1,1189 @@
+{
+  "last_updated": "2026-05-30T10:46:33.353109+00:00",
+  "cutoff": "2026-05-23T10:45:59.250545+00:00",
+  "total_items": 29,
+  "items": [
+    {
+      "id": "startup_yourstory_https_yourstory_com_2026_05_anthropic_hits_965b_valuation",
+      "title": "Anthropic hits $965B valuation; AI complexity plagues Indian companies",
+      "url": "https://yourstory.com/2026/05/anthropic-hits-965b-valuation",
+      "source": "YourStory",
+      "source_region": "india",
+      "source_type": "india_startup_news",
+      "tier": "tier_2",
+      "published_at": "2026-05-30T02:00:00+00:00",
+      "summary": "Anthropic’s Series H funding was led by Altimeter Capital, Dragoneer, Greenoaks, and Sequoia Capital.",
+      "signal_type": "Startup Funding Signal",
+      "company": "Anthropic",
+      "funding_rounds": [],
+      "funding_amount": "$965B",
+      "lead_investor": "Altimeter Capital",
+      "ai_keyword_hits": [
+        "ai"
+      ],
+      "startup_keyword_hits": [
+        "startup"
+      ],
+      "funding_keyword_hits": [
+        "funding",
+        "valuation",
+        "led by",
+        "capital"
+      ],
+      "product_keyword_hits": [],
+      "relevance_score": 10,
+      "discovery_method": "rss",
+      "discovery_source": "https://yourstory.com/feed"
+    },
+    {
+      "id": "startup_rest_of_world_https_restofworld_org_2026_pope_ai_encyclical_utm_source_rss_utm_medium_rss_utm_campaign_feeds",
+      "title": "Pope’s encyclical raises questions on who gets to shape AI",
+      "url": "https://restofworld.org/2026/pope-ai-encyclical/?utm_source=rss&utm_medium=rss&utm_campaign=feeds",
+      "source": "Rest of World",
+      "source_region": "emerging_markets",
+      "source_type": "global_regional_tech",
+      "tier": "tier_2",
+      "published_at": "2026-05-29T13:00:00+00:00",
+      "summary": "Pope Leo XIV during his weekly general audience in the Vatican on May 27, 2026.",
+      "signal_type": "Startup Funding Signal",
+      "company": "Pope’s encyclical",
+      "funding_rounds": [],
+      "funding_amount": null,
+      "lead_investor": null,
+      "ai_keyword_hits": [
+        "ai"
+      ],
+      "startup_keyword_hits": [],
+      "funding_keyword_hits": [
+        "raises",
+        "raise"
+      ],
+      "product_keyword_hits": [],
+      "relevance_score": 7,
+      "discovery_method": "rss",
+      "discovery_source": "https://restofworld.org/feed/latest/"
+    },
+    {
+      "id": "startup_product_hunt_https_www_producthunt_com_products_step_3_5_flash",
+      "title": "Step 3.7 Flash",
+      "url": "https://www.producthunt.com/products/step-3-5-flash",
+      "source": "Product Hunt",
+      "source_region": "global",
+      "source_type": "product_launch",
+      "tier": "tier_3",
+      "published_at": "2026-05-29T12:47:02+00:00",
+      "summary": "Flash-speed agents model that can see and act Discussion | Link",
+      "signal_type": "Startup Product Signal",
+      "company": null,
+      "funding_rounds": [],
+      "funding_amount": null,
+      "lead_investor": null,
+      "ai_keyword_hits": [
+        "agent",
+        "model"
+      ],
+      "startup_keyword_hits": [],
+      "funding_keyword_hits": [],
+      "product_keyword_hits": [
+        "launch",
+        "product"
+      ],
+      "relevance_score": 6,
+      "discovery_method": "rss",
+      "discovery_source": "https://www.producthunt.com/feed"
+    },
+    {
+      "id": "startup_techcrunch_startups_https_techcrunch_com_2026_05_29_xcena_secures_135m_at_570m_valuation_betting_on_memory_as_ais_real_bottleneck",
+      "title": "This chip startup just raised $135M on a bet that AI’s biggest bottleneck isn’t compute — it’s memory",
+      "url": "https://techcrunch.com/2026/05/29/xcena-secures-135m-at-570m-valuation-betting-on-memory-as-ais-real-bottleneck/",
+      "source": "TechCrunch Startups",
+      "source_region": "global",
+      "source_type": "startup_news",
+      "tier": "tier_1",
+      "published_at": "2026-05-29T12:00:00+00:00",
+      "summary": "South Korean chip startup XCENA is betting that AI's real bottleneck is not compute, but memory.",
+      "signal_type": "Startup Funding Signal",
+      "company": "This chip startup just",
+      "funding_rounds": [],
+      "funding_amount": "$135M",
+      "lead_investor": null,
+      "ai_keyword_hits": [
+        "ai",
+        "compute"
+      ],
+      "startup_keyword_hits": [
+        "startup"
+      ],
+      "funding_keyword_hits": [
+        "raised",
+        "raise",
+        "valuation"
+      ],
+      "product_keyword_hits": [],
+      "relevance_score": 10,
+      "discovery_method": "rss",
+      "discovery_source": "https://techcrunch.com/category/startups/feed/"
+    },
+    {
+      "id": "startup_medianama_https_www_medianama_com_2026_05_223_aws_launches_ai_shopping_assistant_retailers_cites_3_5x_higher_conversion_rates",
+      "title": "AWS launches AI shopping assistant for retailers, cites 3.5x higher conversion rates",
+      "url": "https://www.medianama.com/2026/05/223-aws-launches-ai-shopping-assistant-retailers-cites-3-5x-higher-conversion-rates/",
+      "source": "Medianama",
+      "source_region": "india",
+      "source_type": "india_tech_policy",
+      "tier": "tier_2",
+      "published_at": "2026-05-29T10:50:02+00:00",
+      "summary": "AWS has launched its Agentic Shopping Assistant, enabling retailers to deploy AI-powered conversational shopping tools built on Amazon Bedrock within weeks, promising conversion rates 3.5x higher than keyword search. The post AWS launches AI shopping assistant for retailers, cites 3.5x higher conversion rates appeared first on MEDIANAMA .",
+      "signal_type": "Startup Product Signal",
+      "company": "AWS",
+      "funding_rounds": [],
+      "funding_amount": null,
+      "lead_investor": null,
+      "ai_keyword_hits": [
+        "ai",
+        "agent",
+        "agentic"
+      ],
+      "startup_keyword_hits": [
+        "tool"
+      ],
+      "funding_keyword_hits": [],
+      "product_keyword_hits": [
+        "launch",
+        "launches",
+        "launched",
+        "tool"
+      ],
+      "relevance_score": 10,
+      "discovery_method": "rss",
+      "discovery_source": "https://www.medianama.com/feed/"
+    },
+    {
+      "id": "startup_pandaily_https_pandaily_com_zero_zero_robotics_hover_aqua_waterproof_flying_camera_may2026",
+      "title": "Zero Zero Robotics Launches Hover AQUA, the World's First Fully Waterproof Flying Camera",
+      "url": "https://pandaily.com/zero-zero-robotics-hover-aqua-waterproof-flying-camera-may2026",
+      "source": "Pandaily",
+      "source_region": "china",
+      "source_type": "china_startup_tech",
+      "tier": "tier_2",
+      "published_at": "2026-05-29T10:36:46+00:00",
+      "summary": "Zero Zero Robotics has unveiled the Hover AQUA, the world's first fully waterproof flying camera designed for water sports, featuring IP67 dust and water resistance, positive buoyancy for direct water takeoff and landing, and 4K/100fps video recording at under 250 grams.",
+      "signal_type": "Startup Product Signal",
+      "company": "Zero Zero Robotics",
+      "funding_rounds": [],
+      "funding_amount": null,
+      "lead_investor": null,
+      "ai_keyword_hits": [
+        "robotics"
+      ],
+      "startup_keyword_hits": [
+        "startup"
+      ],
+      "funding_keyword_hits": [],
+      "product_keyword_hits": [
+        "launch",
+        "launches"
+      ],
+      "relevance_score": 6,
+      "discovery_method": "rss",
+      "discovery_source": "https://pandaily.com/feed/"
+    },
+    {
+      "id": "startup_pandaily_https_pandaily_com_x_square_robot_wall_wm_event_level_world_model_may2026",
+      "title": "X-Square Robot Unveils WALL-WM, the World's First Event-Level Prediction Embodied AI World Model",
+      "url": "https://pandaily.com/x-square-robot-wall-wm-event-level-world-model-may2026",
+      "source": "Pandaily",
+      "source_region": "china",
+      "source_type": "china_startup_tech",
+      "tier": "tier_2",
+      "published_at": "2026-05-29T10:36:09+00:00",
+      "summary": "X-Square Robot has released WALL-WM, the world's first event-level prediction embodied AI world model that shifts from frame-by-frame prediction to semantic event understanding, enabling robots to grasp task objectives rather than memorizing pixel sequences.",
+      "signal_type": "Startup Product Signal",
+      "company": "X-Square Robot",
+      "funding_rounds": [],
+      "funding_amount": null,
+      "lead_investor": null,
+      "ai_keyword_hits": [
+        "ai",
+        "model"
+      ],
+      "startup_keyword_hits": [
+        "startup"
+      ],
+      "funding_keyword_hits": [],
+      "product_keyword_hits": [
+        "unveils"
+      ],
+      "relevance_score": 7,
+      "discovery_method": "rss",
+      "discovery_source": "https://pandaily.com/feed/"
+    },
+    {
+      "id": "startup_pandaily_https_pandaily_com_mediatek_dimensity_8550_4nm_mobile_soc_may2026",
+      "title": "MediaTek Launches Dimensity 8550: A 4nm All-Big-Core Mobile SoC with On-Device AI Focus",
+      "url": "https://pandaily.com/mediatek-dimensity-8550-4nm-mobile-soc-may2026",
+      "source": "Pandaily",
+      "source_region": "china",
+      "source_type": "china_startup_tech",
+      "tier": "tier_2",
+      "published_at": "2026-05-29T08:35:23+00:00",
+      "summary": "MediaTek has released the Dimensity 8550, a 4nm N4P mobile platform featuring an all-big-core Cortex-A725 CPU architecture, an 880 NPU unit with native Google Gemini Nano V3 support, and comprehensive connectivity features targeting the mid-to-premium smartphone segment.",
+      "signal_type": "Startup Product Signal",
+      "company": "MediaTek",
+      "funding_rounds": [],
+      "funding_amount": null,
+      "lead_investor": null,
+      "ai_keyword_hits": [
+        "ai"
+      ],
+      "startup_keyword_hits": [
+        "startup",
+        "platform"
+      ],
+      "funding_keyword_hits": [],
+      "product_keyword_hits": [
+        "launch",
+        "launches",
+        "platform"
+      ],
+      "relevance_score": 8,
+      "discovery_method": "rss",
+      "discovery_source": "https://pandaily.com/feed/"
+    },
+    {
+      "id": "startup_medianama_https_www_medianama_com_2026_05_223_meta_launches_paid_plans_instagram_facebook_whatsapp",
+      "title": "Meta launches paid plans for Instagram, Facebook and WhatsApp",
+      "url": "https://www.medianama.com/2026/05/223-meta-launches-paid-plans-instagram-facebook-whatsapp/",
+      "source": "Medianama",
+      "source_region": "india",
+      "source_type": "india_tech_policy",
+      "tier": "tier_2",
+      "published_at": "2026-05-29T08:04:26+00:00",
+      "summary": "Meta has launched paid subscription plans for Instagram Plus, Facebook Plus, and WhatsApp Plus, with AI-focused \"Meta One\" tiers also in testing as the company diversifies revenue beyond advertising. The post Meta launches paid plans for Instagram, Facebook and WhatsApp appeared first on MEDIANAMA .",
+      "signal_type": "Startup Product Signal",
+      "company": "Meta",
+      "funding_rounds": [],
+      "funding_amount": null,
+      "lead_investor": null,
+      "ai_keyword_hits": [
+        "ai"
+      ],
+      "startup_keyword_hits": [
+        "company"
+      ],
+      "funding_keyword_hits": [],
+      "product_keyword_hits": [
+        "launch",
+        "launches",
+        "launched"
+      ],
+      "relevance_score": 7,
+      "discovery_method": "rss",
+      "discovery_source": "https://www.medianama.com/feed/"
+    },
+    {
+      "id": "startup_e27_https_e27_co_anthropics_us65b_cheque_redraws_ai_funding_map_20260529",
+      "title": "Anthropic’s US$65B cheque redraws AI funding map",
+      "url": "https://e27.co/anthropics-us65b-cheque-redraws-ai-funding-map-20260529/",
+      "source": "e27",
+      "source_region": "southeast_asia",
+      "source_type": "asia_startup_news",
+      "tier": "tier_2",
+      "published_at": "2026-05-29T07:37:42+00:00",
+      "summary": "Anthropic has closed a staggering US$65 billion Series H round, taking the company to an estimated US$965 billion post‑money valuation and signalling an escalation in the race to dominate enterprise AI. The round was led by Altimeter Capital, Dragoneer, Greenoaks, and Sequoia Capital, and included heavyweights, such as Capital Group, Coatue, D1 Capital, GIC, and […] The post Anthropic’s US$65B cheque redraws AI funding map appeared first on e27 .",
+      "signal_type": "Startup Funding Signal",
+      "company": null,
+      "funding_rounds": [],
+      "funding_amount": "$65B",
+      "lead_investor": "Altimeter Capital",
+      "ai_keyword_hits": [
+        "ai"
+      ],
+      "startup_keyword_hits": [
+        "startup",
+        "company"
+      ],
+      "funding_keyword_hits": [
+        "funding",
+        "round",
+        "valuation",
+        "led by",
+        "capital"
+      ],
+      "product_keyword_hits": [],
+      "relevance_score": 10,
+      "discovery_method": "rss",
+      "discovery_source": "https://e27.co/feed/"
+    },
+    {
+      "id": "startup_pandaily_https_pandaily_com_thunderobot_haier_ai_workstations_amd_launch_may2026",
+      "title": "Haier's Thunderobot Launches 10 AI Workstations Powered by AMD Across Tower, Mini, and Mobile Lines",
+      "url": "https://pandaily.com/thunderobot-haier-ai-workstations-amd-launch-may2026",
+      "source": "Pandaily",
+      "source_region": "china",
+      "source_type": "china_startup_tech",
+      "tier": "tier_2",
+      "published_at": "2026-05-29T03:57:58+00:00",
+      "summary": "Haier's Thunderobot unveils 10 AMD-powered AI workstations across tower, mini PC, and mobile form factors, targeting the agent-era demand for local AI computing.",
+      "signal_type": "Startup Product Signal",
+      "company": "Haier's Thunderobot",
+      "funding_rounds": [],
+      "funding_amount": null,
+      "lead_investor": null,
+      "ai_keyword_hits": [
+        "ai",
+        "agent"
+      ],
+      "startup_keyword_hits": [
+        "startup"
+      ],
+      "funding_keyword_hits": [],
+      "product_keyword_hits": [
+        "launch",
+        "launches",
+        "unveils"
+      ],
+      "relevance_score": 9,
+      "discovery_method": "rss",
+      "discovery_source": "https://pandaily.com/feed/"
+    },
+    {
+      "id": "startup_e27_https_e27_co_i_built_a_c_suite_for_us50_a_month_heres_what_it_taught_me_about_talent_20260528",
+      "title": "I built a C-suite for US$50 a month: Here’s what it taught me about talent",
+      "url": "https://e27.co/i-built-a-c-suite-for-us50-a-month-heres-what-it-taught-me-about-talent-20260528/",
+      "source": "e27",
+      "source_region": "southeast_asia",
+      "source_type": "asia_startup_news",
+      "tier": "tier_2",
+      "published_at": "2026-05-29T03:45:14+00:00",
+      "summary": "The talent reset is not coming. For solo founders, it already happened. I run three businesses. An art school. An AI marketing firm. And before that, a healthy meal prep company I built to seven-figure revenue and eventually closed. I have no co-founder. No HR department. For years, I did what desperate founders do: I […] The post I built a C-suite for US$50 a month: Here’s what it taught me about talent appeared first on e27 .",
+      "signal_type": "Startup Signal",
+      "company": null,
+      "funding_rounds": [],
+      "funding_amount": null,
+      "lead_investor": null,
+      "ai_keyword_hits": [
+        "ai"
+      ],
+      "startup_keyword_hits": [
+        "startup",
+        "founder",
+        "company"
+      ],
+      "funding_keyword_hits": [],
+      "product_keyword_hits": [],
+      "relevance_score": 6,
+      "discovery_method": "rss",
+      "discovery_source": "https://e27.co/feed/"
+    },
+    {
+      "id": "startup_technode_https_technode_com_2026_05_29_tencent_launches_workbuddy_productivity_ai_agent_for_global_users",
+      "title": "Tencent launches WorkBuddy productivity AI agent for global users",
+      "url": "https://technode.com/2026/05/29/tencent-launches-workbuddy-productivity-ai-agent-for-global-users/",
+      "source": "TechNode",
+      "source_region": "china",
+      "source_type": "china_startup_tech",
+      "tier": "tier_2",
+      "published_at": "2026-05-29T01:38:32+00:00",
+      "summary": "Tencent Cloud has launched WorkBuddy, a productivity-focused AI agent for global users after first rolling out the product in China. The company said WorkBuddy is aimed at office workflows and can use natural language prompts to break down tasks, call external tools, and generate deliverables across work and study scenarios. WorkBuddy supports remote task execution […]",
+      "signal_type": "Startup Product Signal",
+      "company": "Tencent",
+      "funding_rounds": [],
+      "funding_amount": null,
+      "lead_investor": null,
+      "ai_keyword_hits": [
+        "ai",
+        "agent"
+      ],
+      "startup_keyword_hits": [
+        "startup",
+        "company",
+        "tool"
+      ],
+      "funding_keyword_hits": [],
+      "product_keyword_hits": [
+        "launch",
+        "launches",
+        "launched",
+        "product",
+        "tool"
+      ],
+      "relevance_score": 10,
+      "discovery_method": "rss",
+      "discovery_source": "https://technode.com/feed/"
+    },
+    {
+      "id": "startup_e27_https_e27_co_if_an_ai_agent_cannot_find_you_in_southeast_asia_you_do_not_exist_in_the_market_20260523",
+      "title": "If an AI agent cannot find you in Southeast Asia, you do not exist in the market",
+      "url": "https://e27.co/if-an-ai-agent-cannot-find-you-in-southeast-asia-you-do-not-exist-in-the-market-20260523/",
+      "source": "e27",
+      "source_region": "southeast_asia",
+      "source_type": "asia_startup_news",
+      "tier": "tier_2",
+      "published_at": "2026-05-29T01:20:15+00:00",
+      "summary": "For B2B tech firms and growth-stage companies eyeing the Southeast Asian prize in 2026, the traditional market entry playbook is officially broken. You have hired the local country manager. You have booked the regional tech conference slots. You have even landed a few prestigious headlines in national business dailies. Yet, when a regional CTO asks […] The post If an AI agent cannot find you in Southeast Asia, you do not exist in the market appeared first on e27 .",
+      "signal_type": "Startup Signal",
+      "company": null,
+      "funding_rounds": [],
+      "funding_amount": null,
+      "lead_investor": null,
+      "ai_keyword_hits": [
+        "ai",
+        "agent"
+      ],
+      "startup_keyword_hits": [
+        "startup"
+      ],
+      "funding_keyword_hits": [],
+      "product_keyword_hits": [],
+      "relevance_score": 6,
+      "discovery_method": "rss",
+      "discovery_source": "https://e27.co/feed/"
+    },
+    {
+      "id": "startup_technode_https_technode_com_2026_05_29_iflytek_launches_40g_ai_glasses_with_glassclaw_ai_agent_and_advanced_noise_recognition",
+      "title": "iFlytek launches 40g AI glasses with GlassClaw AI agent and advanced noise recognition",
+      "url": "https://technode.com/2026/05/29/iflytek-launches-40g-ai-glasses-with-glassclaw-ai-agent-and-advanced-noise-recognition/",
+      "source": "TechNode",
+      "source_region": "china",
+      "source_type": "china_startup_tech",
+      "tier": "tier_2",
+      "published_at": "2026-05-29T00:54:22+00:00",
+      "summary": "On Thursday, iFlytek unveiled its new AI smart glasses at BEYOND Expo 2026 in Macau under the theme Communication Without Boundaries, the World Before Your Eyes, showcasing the company’s latest push into AI-powered devices. At the launch event, Lin Huijie, General Manager of iFlytek’s Wearable Devices Business Department, said the company hopes the product can […]",
+      "signal_type": "Startup Product Signal",
+      "company": "iFlytek",
+      "funding_rounds": [],
+      "funding_amount": null,
+      "lead_investor": null,
+      "ai_keyword_hits": [
+        "ai",
+        "agent"
+      ],
+      "startup_keyword_hits": [
+        "startup",
+        "company"
+      ],
+      "funding_keyword_hits": [],
+      "product_keyword_hits": [
+        "launch",
+        "launches",
+        "product"
+      ],
+      "relevance_score": 10,
+      "discovery_method": "rss",
+      "discovery_source": "https://technode.com/feed/"
+    },
+    {
+      "id": "startup_product_hunt_https_www_producthunt_com_products_extract_by_firecrawl",
+      "title": "/monitor by Firecrawl",
+      "url": "https://www.producthunt.com/products/extract-by-firecrawl",
+      "source": "Product Hunt",
+      "source_region": "global",
+      "source_type": "product_launch",
+      "tier": "tier_3",
+      "published_at": "2026-05-28T22:56:59+00:00",
+      "summary": "Notify your AI agent when the web changes Discussion | Link",
+      "signal_type": "Startup Product Signal",
+      "company": null,
+      "funding_rounds": [],
+      "funding_amount": null,
+      "lead_investor": null,
+      "ai_keyword_hits": [
+        "ai",
+        "agent"
+      ],
+      "startup_keyword_hits": [],
+      "funding_keyword_hits": [],
+      "product_keyword_hits": [
+        "launch",
+        "product"
+      ],
+      "relevance_score": 6,
+      "discovery_method": "rss",
+      "discovery_source": "https://www.producthunt.com/feed"
+    },
+    {
+      "id": "startup_crunchbase_ai_https_news_crunchbase_com_ai_anthropic_nears_1t_valuation_65b_seriesh",
+      "title": "Anthropic Nears $1T Valuation And Leapfrogs OpenAI On Unicorn Board With $65B Funding Round",
+      "url": "https://news.crunchbase.com/ai/anthropic-nears-1t-valuation-65b-seriesh/",
+      "source": "Crunchbase AI",
+      "source_region": "global",
+      "source_type": "startup_funding",
+      "tier": "tier_1",
+      "published_at": "2026-05-28T19:11:47+00:00",
+      "summary": "Generative AI company Anthropic announced on Thursday that it has raised $65 billion in a Series H funding round, more than doubling its post-money valuation to a staggering $965 billion.",
+      "signal_type": "Startup Funding Signal",
+      "company": "Anthropic",
+      "funding_rounds": [],
+      "funding_amount": "$65B",
+      "lead_investor": null,
+      "ai_keyword_hits": [
+        "ai"
+      ],
+      "startup_keyword_hits": [
+        "startup",
+        "company"
+      ],
+      "funding_keyword_hits": [
+        "raised",
+        "raise",
+        "funding",
+        "round",
+        "valuation"
+      ],
+      "product_keyword_hits": [],
+      "relevance_score": 10,
+      "discovery_method": "rss",
+      "discovery_source": "https://news.crunchbase.com/sections/ai/feed/"
+    },
+    {
+      "id": "startup_techcrunch_fundraising_https_techcrunch_com_2026_05_28_anthropic_raises_65_billion_nears_1t_valuation_ahead_of_ipo",
+      "title": "Anthropic raises $65 billion, nears $1T valuation ahead of IPO",
+      "url": "https://techcrunch.com/2026/05/28/anthropic-raises-65-billion-nears-1t-valuation-ahead-of-ipo/",
+      "source": "TechCrunch Fundraising",
+      "source_region": "global",
+      "source_type": "startup_funding",
+      "tier": "tier_1",
+      "published_at": "2026-05-28T18:52:51+00:00",
+      "summary": "Anthropic has closed a $65 billion Series H round at a $965 billion post-money valuation, marking what could be the AI startup's final private fundraise before a highly anticipated IPO.",
+      "signal_type": "Startup Funding Signal",
+      "company": "Anthropic",
+      "funding_rounds": [],
+      "funding_amount": "$65 b",
+      "lead_investor": null,
+      "ai_keyword_hits": [
+        "ai"
+      ],
+      "startup_keyword_hits": [
+        "startup"
+      ],
+      "funding_keyword_hits": [
+        "raises",
+        "raise",
+        "funding",
+        "fundraise",
+        "round",
+        "valuation"
+      ],
+      "product_keyword_hits": [],
+      "relevance_score": 10,
+      "discovery_method": "rss",
+      "discovery_source": "https://techcrunch.com/category/startups/fundraising/feed/"
+    },
+    {
+      "id": "startup_techcrunch_fundraising_https_techcrunch_com_2026_05_28_h1_secures_40m_from_cvs_proving_saas_startups_can_still_attract_investment",
+      "title": "H1 secures $40M from CVS, proving SaaS startups can still attract investment",
+      "url": "https://techcrunch.com/2026/05/28/h1-secures-40m-from-cvs-proving-saas-startups-can-still-attract-investment/",
+      "source": "TechCrunch Fundraising",
+      "source_region": "global",
+      "source_type": "startup_funding",
+      "tier": "tier_1",
+      "published_at": "2026-05-28T18:08:37+00:00",
+      "summary": "CEO Ariel Katz argues that while AI can replicate workflow SaaS, it can't copy H1’s unique doctor data.",
+      "signal_type": "Startup Funding Signal",
+      "company": "H1",
+      "funding_rounds": [],
+      "funding_amount": "$40M",
+      "lead_investor": null,
+      "ai_keyword_hits": [
+        "ai",
+        "data"
+      ],
+      "startup_keyword_hits": [
+        "startup"
+      ],
+      "funding_keyword_hits": [
+        "funding",
+        "investment"
+      ],
+      "product_keyword_hits": [],
+      "relevance_score": 10,
+      "discovery_method": "rss",
+      "discovery_source": "https://techcrunch.com/category/startups/fundraising/feed/"
+    },
+    {
+      "id": "startup_product_hunt_https_www_producthunt_com_products_ahrefs",
+      "title": "Agent A by Ahrefs",
+      "url": "https://www.producthunt.com/products/ahrefs",
+      "source": "Product Hunt",
+      "source_region": "global",
+      "source_type": "product_launch",
+      "tier": "tier_3",
+      "published_at": "2026-05-28T15:00:52+00:00",
+      "summary": "The AI Marketing Agent Powered by Ahrefs Data Discussion | Link",
+      "signal_type": "Startup Product Signal",
+      "company": null,
+      "funding_rounds": [],
+      "funding_amount": null,
+      "lead_investor": null,
+      "ai_keyword_hits": [
+        "ai",
+        "agent",
+        "data"
+      ],
+      "startup_keyword_hits": [],
+      "funding_keyword_hits": [],
+      "product_keyword_hits": [
+        "launch",
+        "product"
+      ],
+      "relevance_score": 8,
+      "discovery_method": "rss",
+      "discovery_source": "https://www.producthunt.com/feed"
+    },
+    {
+      "id": "startup_product_hunt_https_www_producthunt_com_products_vibeocus_lens",
+      "title": "Vibeocus Lens",
+      "url": "https://www.producthunt.com/products/vibeocus-lens",
+      "source": "Product Hunt",
+      "source_region": "global",
+      "source_type": "product_launch",
+      "tier": "tier_3",
+      "published_at": "2026-05-28T09:24:39+00:00",
+      "summary": "Bridge your live frontend directly to your AI agent. Discussion | Link",
+      "signal_type": "Startup Product Signal",
+      "company": null,
+      "funding_rounds": [],
+      "funding_amount": null,
+      "lead_investor": null,
+      "ai_keyword_hits": [
+        "ai",
+        "agent"
+      ],
+      "startup_keyword_hits": [],
+      "funding_keyword_hits": [],
+      "product_keyword_hits": [
+        "launch",
+        "product"
+      ],
+      "relevance_score": 6,
+      "discovery_method": "rss",
+      "discovery_source": "https://www.producthunt.com/feed"
+    },
+    {
+      "id": "startup_pandaily_https_pandaily_com_moffett_ai_raises_nearly_1_billion_yuan_in_series_c_for_sparse_computing_ai_chips",
+      "title": "Moffett AI Raises Nearly 1 Billion Yuan in Series C for Sparse Computing AI Chips",
+      "url": "https://pandaily.com/moffett-ai-raises-nearly-1-billion-yuan-in-series-c-for-sparse-computing-ai-chips",
+      "source": "Pandaily",
+      "source_region": "china",
+      "source_type": "china_startup_tech",
+      "tier": "tier_2",
+      "published_at": "2026-05-28T08:17:51+00:00",
+      "summary": "Moffett AI, a Chinese AI chip company pioneering sparse computing technology, raised nearly 1 billion yuan in Series C funding to commercialize its SparsePrime computing card.",
+      "signal_type": "Startup Fundraising",
+      "company": "Moffett AI",
+      "funding_rounds": [
+        "series_c"
+      ],
+      "funding_amount": null,
+      "lead_investor": null,
+      "ai_keyword_hits": [
+        "ai"
+      ],
+      "startup_keyword_hits": [
+        "startup",
+        "company"
+      ],
+      "funding_keyword_hits": [
+        "raises",
+        "raised",
+        "raise",
+        "funding",
+        "series c"
+      ],
+      "product_keyword_hits": [],
+      "relevance_score": 10,
+      "discovery_method": "rss",
+      "discovery_source": "https://pandaily.com/feed/"
+    },
+    {
+      "id": "startup_e27_https_e27_co_we_want_things_to_arrive_the_next_day_indiegogos_apac_head_on_why_sea_is_crowdfundings_toughest_market_20260528",
+      "title": "“We want things to arrive the next day”: Indiegogo’s APAC head on why SEA is crowdfunding’s toughest market",
+      "url": "https://e27.co/we-want-things-to-arrive-the-next-day-indiegogos-apac-head-on-why-sea-is-crowdfundings-toughest-market-20260528/",
+      "source": "e27",
+      "source_region": "southeast_asia",
+      "source_type": "asia_startup_news",
+      "tier": "tier_2",
+      "published_at": "2026-05-28T08:14:28+00:00",
+      "summary": "Crowdfunding had a rough adolescence. The early boom years of the 2010s, when Pebble smartwatches and Oculus Rift headsets made the model look like the future of consumer tech fundraising, were followed by an ugly hangover. Scams proliferated, campaigns raised millions and went dark, and backers learned, often the hard way, that backing a product […] The post “We want things to arrive the next day”: Indiegogo’s APAC head on why SEA is crowdfunding’s toughest market appeared first on e27 .",
+      "signal_type": "Startup Funding Signal",
+      "company": null,
+      "funding_rounds": [],
+      "funding_amount": null,
+      "lead_investor": null,
+      "ai_keyword_hits": [
+        "model"
+      ],
+      "startup_keyword_hits": [
+        "startup"
+      ],
+      "funding_keyword_hits": [
+        "raised",
+        "raise",
+        "funding"
+      ],
+      "product_keyword_hits": [
+        "product"
+      ],
+      "relevance_score": 10,
+      "discovery_method": "rss",
+      "discovery_source": "https://e27.co/feed/"
+    },
+    {
+      "id": "startup_pandaily_https_pandaily_com_minimax_m3_llm_sparse_attention_launch_may2026",
+      "title": "MiniMax Prepares to Launch Next-Generation M3 Large Language Model",
+      "url": "https://pandaily.com/minimax-m3-llm-sparse-attention-launch-may2026",
+      "source": "Pandaily",
+      "source_region": "china",
+      "source_type": "china_startup_tech",
+      "tier": "tier_2",
+      "published_at": "2026-05-28T08:12:13+00:00",
+      "summary": "Chinese AI unicorn MiniMax is preparing to launch its M3 large language model featuring a custom sparse attention mechanism, claiming 9.7x prefilling speed improvements.",
+      "signal_type": "Startup Product Signal",
+      "company": null,
+      "funding_rounds": [],
+      "funding_amount": null,
+      "lead_investor": null,
+      "ai_keyword_hits": [
+        "ai",
+        "llm",
+        "model"
+      ],
+      "startup_keyword_hits": [
+        "startup"
+      ],
+      "funding_keyword_hits": [],
+      "product_keyword_hits": [
+        "launch"
+      ],
+      "relevance_score": 9,
+      "discovery_method": "rss",
+      "discovery_source": "https://pandaily.com/feed/"
+    },
+    {
+      "id": "startup_pandaily_https_pandaily_com_rayneo_gt_series_v4_ar_ai_glasses_may2026",
+      "title": "RayNeo Launches First Flagship AR Glasses with 59-Degree FOV and AI Glasses with 0.2s Response",
+      "url": "https://pandaily.com/rayneo-gt-series-v4-ar-ai-glasses-may2026",
+      "source": "Pandaily",
+      "source_region": "china",
+      "source_type": "china_startup_tech",
+      "tier": "tier_2",
+      "published_at": "2026-05-28T03:42:33+00:00",
+      "summary": "RayNeo launches GT series AR glasses (59-degree FOV, 78g at 1,899 yuan) and V4 AI glasses (0.2s response, IP rating) at its May 27 event, claiming global AR glasses market leadership.",
+      "signal_type": "Startup Funding Signal",
+      "company": "RayNeo",
+      "funding_rounds": [],
+      "funding_amount": null,
+      "lead_investor": null,
+      "ai_keyword_hits": [
+        "ai"
+      ],
+      "startup_keyword_hits": [
+        "startup"
+      ],
+      "funding_keyword_hits": [
+        "series a"
+      ],
+      "product_keyword_hits": [
+        "launch",
+        "launches"
+      ],
+      "relevance_score": 8,
+      "discovery_method": "rss",
+      "discovery_source": "https://pandaily.com/feed/"
+    },
+    {
+      "id": "startup_techcrunch_startups_https_techcrunch_com_2026_05_27_triomics_nabs_22m_to_bring_oncology_specific_ai_to_cancer_centers",
+      "title": "Triomics nabs $22M to bring oncology-specific AI to cancer centers",
+      "url": "https://techcrunch.com/2026/05/27/triomics-nabs-22m-to-bring-oncology-specific-ai-to-cancer-centers/",
+      "source": "TechCrunch Startups",
+      "source_region": "global",
+      "source_type": "startup_news",
+      "tier": "tier_1",
+      "published_at": "2026-05-27T21:11:15+00:00",
+      "summary": "The Series B round was led by Battery Ventures.",
+      "signal_type": "Startup Fundraising",
+      "company": "Triomics",
+      "funding_rounds": [
+        "series_b"
+      ],
+      "funding_amount": "$22M",
+      "lead_investor": "Battery Ventures",
+      "ai_keyword_hits": [
+        "ai"
+      ],
+      "startup_keyword_hits": [
+        "startup",
+        "venture"
+      ],
+      "funding_keyword_hits": [
+        "round",
+        "series b",
+        "led by"
+      ],
+      "product_keyword_hits": [],
+      "relevance_score": 10,
+      "discovery_method": "rss",
+      "discovery_source": "https://techcrunch.com/category/startups/feed/"
+    },
+    {
+      "id": "startup_product_hunt_https_www_producthunt_com_products_hyper_11",
+      "title": "Hyper: Self-driving Company Brain",
+      "url": "https://www.producthunt.com/products/hyper-11",
+      "source": "Product Hunt",
+      "source_region": "global",
+      "source_type": "product_launch",
+      "tier": "tier_3",
+      "published_at": "2026-05-27T20:25:45+00:00",
+      "summary": "Turn your AI agents from interns to veterans Discussion | Link",
+      "signal_type": "Startup Product Signal",
+      "company": null,
+      "funding_rounds": [],
+      "funding_amount": null,
+      "lead_investor": null,
+      "ai_keyword_hits": [
+        "ai",
+        "agent"
+      ],
+      "startup_keyword_hits": [
+        "company"
+      ],
+      "funding_keyword_hits": [],
+      "product_keyword_hits": [
+        "launch",
+        "product"
+      ],
+      "relevance_score": 7,
+      "discovery_method": "rss",
+      "discovery_source": "https://www.producthunt.com/feed"
+    },
+    {
+      "id": "startup_crunchbase_ai_https_news_crunchbase_com_venture_fintech_capchase_b2b_bnpl_200m_debt_equity",
+      "title": "Exclusive: Capchase, The ‘Affirm for B2B,’ Secures $200M In Debt And Equity",
+      "url": "https://news.crunchbase.com/venture/fintech-capchase-b2b-bnpl-200m-debt-equity/",
+      "source": "Crunchbase AI",
+      "source_region": "global",
+      "source_type": "startup_funding",
+      "tier": "tier_1",
+      "published_at": "2026-05-27T14:00:50+00:00",
+      "summary": "Financing startup Capchase has secured a new round of funding, consisting of $26 million in equity and a $174 million credit facility, the company told Crunchbase News exclusively.",
+      "signal_type": "Startup Funding Signal",
+      "company": "Capchase",
+      "funding_rounds": [],
+      "funding_amount": "$200M",
+      "lead_investor": null,
+      "ai_keyword_hits": [
+        "ai"
+      ],
+      "startup_keyword_hits": [
+        "startup",
+        "venture",
+        "company"
+      ],
+      "funding_keyword_hits": [
+        "funding",
+        "round"
+      ],
+      "product_keyword_hits": [],
+      "relevance_score": 10,
+      "discovery_method": "rss",
+      "discovery_source": "https://news.crunchbase.com/sections/ai/feed/"
+    },
+    {
+      "id": "startup_technode_https_technode_com_2026_05_26_limx_dynamics_unveils_luna_humanoid_robot_with_ai_dance_learning",
+      "title": "LimX Dynamics unveils Luna humanoid robot with AI dance learning",
+      "url": "https://technode.com/2026/05/26/limx-dynamics-unveils-luna-humanoid-robot-with-ai-dance-learning/",
+      "source": "TechNode",
+      "source_region": "china",
+      "source_type": "china_startup_tech",
+      "tier": "tier_2",
+      "published_at": "2026-05-26T10:03:48+00:00",
+      "summary": "LimX Dynamics on Monday unveiled the LimX Luna humanoid robot, priced at RMB 298,000 ($41,000). Standing 160cm tall, the LimX Luna features 27 degrees of freedom across its body and is powered by the company’s second-generation SYS 0 motion control engine. The robot also comes with upgraded cooling and battery life, while supporting multimodal interaction […]",
+      "signal_type": "Startup Product Signal",
+      "company": "LimX Dynamics",
+      "funding_rounds": [],
+      "funding_amount": null,
+      "lead_investor": null,
+      "ai_keyword_hits": [
+        "ai"
+      ],
+      "startup_keyword_hits": [
+        "startup",
+        "company"
+      ],
+      "funding_keyword_hits": [],
+      "product_keyword_hits": [
+        "unveils"
+      ],
+      "relevance_score": 6,
+      "discovery_method": "rss",
+      "discovery_source": "https://technode.com/feed/"
+    }
+  ],
+  "source_health": [
+    {
+      "source": "TechCrunch Fundraising",
+      "mode": "rss",
+      "endpoint": "https://techcrunch.com/category/startups/fundraising/feed/",
+      "status": "OK",
+      "http_status": 200,
+      "feed_entries": 20,
+      "items_seen": 20,
+      "items_added": 2,
+      "parse_warning": false
+    },
+    {
+      "source": "TechCrunch Startups",
+      "mode": "rss",
+      "endpoint": "https://techcrunch.com/category/startups/feed/",
+      "status": "OK",
+      "http_status": 200,
+      "feed_entries": 18,
+      "items_seen": 18,
+      "items_added": 3,
+      "parse_warning": false
+    },
+    {
+      "source": "TechCrunch Series A",
+      "mode": "rss",
+      "endpoint": "https://techcrunch.com/tag/series-a/feed/",
+      "status": "OK",
+      "http_status": 200,
+      "feed_entries": 20,
+      "items_seen": 20,
+      "items_added": 0,
+      "parse_warning": false
+    },
+    {
+      "source": "TechCrunch Series B",
+      "mode": "rss",
+      "endpoint": "https://techcrunch.com/tag/series-b/feed/",
+      "status": "OK",
+      "http_status": 200,
+      "feed_entries": 20,
+      "items_seen": 20,
+      "items_added": 0,
+      "parse_warning": false
+    },
+    {
+      "source": "TechCrunch Series C",
+      "mode": "rss",
+      "endpoint": "https://techcrunch.com/tag/series-c/feed/",
+      "status": "OK",
+      "http_status": 200,
+      "feed_entries": 20,
+      "items_seen": 20,
+      "items_added": 0,
+      "parse_warning": false
+    },
+    {
+      "source": "TechCrunch Biotech",
+      "mode": "rss",
+      "endpoint": "https://techcrunch.com/tag/biotech/feed/",
+      "status": "OK",
+      "http_status": 200,
+      "feed_entries": 20,
+      "items_seen": 20,
+      "items_added": 0,
+      "parse_warning": false
+    },
+    {
+      "source": "Crunchbase AI",
+      "mode": "rss",
+      "endpoint": "https://news.crunchbase.com/sections/ai/feed/",
+      "status": "OK",
+      "http_status": 200,
+      "feed_entries": 10,
+      "items_seen": 10,
+      "items_added": 2,
+      "parse_warning": false
+    },
+    {
+      "source": "Crunchbase Venture",
+      "mode": "rss",
+      "endpoint": "https://news.crunchbase.com/sections/venture/feed/",
+      "status": "OK",
+      "http_status": 200,
+      "feed_entries": 10,
+      "items_seen": 10,
+      "items_added": 1,
+      "parse_warning": false
+    },
+    {
+      "source": "VentureBeat AI",
+      "mode": "rss",
+      "endpoint": "https://venturebeat.com/category/ai/feed/",
+      "status": "OK",
+      "http_status": 200,
+      "feed_entries": 7,
+      "items_seen": 7,
+      "items_added": 0,
+      "parse_warning": false
+    },
+    {
+      "source": "SiliconANGLE AI",
+      "mode": "rss",
+      "endpoint": "https://siliconangle.com/category/ai/feed/",
+      "status": "OK",
+      "http_status": 200,
+      "feed_entries": 30,
+      "items_seen": 30,
+      "items_added": 0,
+      "parse_warning": false
+    },
+    {
+      "source": "EU-Startups AI",
+      "mode": "rss",
+      "endpoint": "https://www.eu-startups.com/tag/artificial-intelligence/feed/",
+      "status": "OK",
+      "http_status": 200,
+      "feed_entries": 10,
+      "items_seen": 10,
+      "items_added": 0,
+      "parse_warning": false
+    },
+    {
+      "source": "TechNode",
+      "mode": "rss",
+      "endpoint": "https://technode.com/feed/",
+      "status": "OK",
+      "http_status": 200,
+      "feed_entries": 2000,
+      "items_seen": 30,
+      "items_added": 3,
+      "parse_warning": false
+    },
+    {
+      "source": "Pandaily",
+      "mode": "rss",
+      "endpoint": "https://pandaily.com/feed/",
+      "status": "OK",
+      "http_status": 200,
+      "feed_entries": 20,
+      "items_seen": 20,
+      "items_added": 7,
+      "parse_warning": false
+    },
+    {
+      "source": "QbitAI",
+      "mode": "rss",
+      "endpoint": "https://www.qbitai.com/feed",
+      "status": "OK",
+      "http_status": 200,
+      "feed_entries": 10,
+      "items_seen": 10,
+      "items_added": 0,
+      "parse_warning": false
+    },
+    {
+      "source": "36Kr",
+      "mode": "rss",
+      "endpoint": "https://36kr.com/feed",
+      "status": "OK",
+      "http_status": 200,
+      "feed_entries": 30,
+      "items_seen": 30,
+      "items_added": 0,
+      "parse_warning": false
+    },
+    {
+      "source": "Synced Review",
+      "mode": "rss",
+      "endpoint": "https://syncedreview.com/feed/",
+      "status": "OK",
+      "http_status": 200,
+      "feed_entries": 10,
+      "items_seen": 10,
+      "items_added": 0,
+      "parse_warning": false
+    },
+    {
+      "source": "Inc42 AI",
+      "mode": "rss",
+      "endpoint": "https://inc42.com/industry/ai/feed/",
+      "status": "OK",
+      "http_status": 200,
+      "feed_entries": 24,
+      "items_seen": 24,
+      "items_added": 0,
+      "parse_warning": false
+    },
+    {
+      "source": "Inc42",
+      "mode": "rss",
+      "endpoint": "https://inc42.com/feed/",
+      "status": "OK",
+      "http_status": 200,
+      "feed_entries": 24,
+      "items_seen": 24,
+      "items_added": 0,
+      "parse_warning": false
+    },
+    {
+      "source": "YourStory",
+      "mode": "rss",
+      "endpoint": "https://yourstory.com/feed",
+      "status": "OK",
+      "http_status": 200,
+      "feed_entries": 20,
+      "items_seen": 20,
+      "items_added": 1,
+      "parse_warning": false
+    },
+    {
+      "source": "Medianama",
+      "mode": "rss",
+      "endpoint": "https://www.medianama.com/feed/",
+      "status": "OK",
+      "http_status": 200,
+      "feed_entries": 10,
+      "items_seen": 10,
+      "items_added": 2,
+      "parse_warning": false
+    },
+    {
+      "source": "e27",
+      "mode": "rss",
+      "endpoint": "https://e27.co/feed/",
+      "status": "OK",
+      "http_status": 200,
+      "feed_entries": 50,
+      "items_seen": 30,
+      "items_added": 4,
+      "parse_warning": false
+    },
+    {
+      "source": "Rest of World",
+      "mode": "rss",
+      "endpoint": "https://restofworld.org/feed/latest/",
+      "status": "OK",
+      "http_status": 200,
+      "feed_entries": 12,
+      "items_seen": 12,
+      "items_added": 1,
+      "parse_warning": false
+    },
+    {
+      "source": "Sifted",
+      "mode": "rss",
+      "endpoint": "https://sifted.eu/feed",
+      "status": "OK",
+      "http_status": 200,
+      "feed_entries": 24,
+      "items_seen": 24,
+      "items_added": 0,
+      "parse_warning": false
+    },
+    {
+      "source": "Product Hunt",
+      "mode": "rss",
+      "endpoint": "https://www.producthunt.com/feed",
+      "status": "OK",
+      "http_status": 200,
+      "feed_entries": 50,
+      "items_seen": 30,
+      "items_added": 5,
+      "parse_warning": false
+    }
+  ]
+}

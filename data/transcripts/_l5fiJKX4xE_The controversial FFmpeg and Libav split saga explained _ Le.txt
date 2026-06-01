@@ -1,0 +1,84 @@
+00:00:03
+We're uh taking a non-linear journey through history here, but we're talking about Michael Niedermayer. Uh And I wanted to ask about this for a time there was a split in FFmpeg and a libav. Yes. So, um in open-source projects, um sometimes you disagree, right? >> [laughter] >> That's such an S-word putting it. Yeah. And the good thing is because of the license, you're allowed to basically do your own, right? Um and this is normal and this has happened all the time, right? So, at the point there was a GCC
+
+00:00:44
+at the time of GCC 2 and EGCS, which became then GCC 3, right? There is what we told KHTML with WebKit with Blink. Um it is a sane process. And also, like when I want to do a new feature today in VLC, I fork I do my same on my own and then I merge back to the community. So, there was a split in the open-source community on FFmpeg which become libav and FFmpeg. And after a few years, well, the community merge back and people moved on. It's a bit um drama that is normal in open-source community, but forks are even
+
+00:01:20
+they're important because they they they change the statu quo of a community. Um um Not talking about FFmpeg and and libav here, but all the GCC fork made GCC a ton better because the some people wanted to change the architecture fundamentally to make it faster. And of course, it's always question of people and so on, but in the end, you realize that FFmpeg today is better than it was uh before the fork. Um and now, well, we're back all together, right? And I spent a lot of time in in Kankakee in
+
+00:01:55
+the in in the community. Um It's not often, to be honest, uh very well explained because a ton of the reasons are not very public, uh but I think that's that's normal. And that's good. Yeah, I mean, you're making it sound really nice, but there there is bad There's pretty heated battles inside open-source projects. I mean, it is a very passionate community and you're kind of in a distributed way have to define the direction of things. So, here looking at uh perplexity FFmpeg and
+
+00:02:25
+libav split in 2011 mainly over project governance, leadership style, and development processes, not because of a fundamental technical disagreement. Uh FFmpeg effectively absorbed libav's work. Uh while libav withered and most distributions and developers went back to FFmpeg. Yeah, that was a that was a weird That was a From a user's perspective, that was a weird experience cuz, you know, I'm a Linux user, so, you know, whether it's Ubuntu and so on, all of a sudden, I think for
+
+00:02:53
+for a little bit Ubuntu, I feel like, am I remembering correctly, switched to libav. 12, 14, something like that. Yeah. And then they switched back to FFmpeg. I was like, what is happening? For So, I don't know sort of you you get to feel the ripple effects of the different internal debates that are happening. >> To be fair, on Apple, when you type GCC, you get Clang. Like they they did something like that as well, so. Yeah, so to me, it's like the fork was like heated drama, but most of the
+
+00:03:25
+development from libav was merged back into FFmpeg, right? So, the facto FFmpeg got a a superset around libav, and so that gave the user because in the end, we have to use for the users a larger set of features and a ton of things that were um discussed. For example, the debate on reviews and on how we push are something that now is completely settled in FFmpeg and is following mostly what everyone in the community agrees, right? So, the facto, everyone who was active on libav came back in work on FFmpeg
+
+00:04:01
+because the disagreement were fixed. And in the end, FFmpeg is stronger than it was before, right? And I know people love drama, but um Well, my my main concern, I I understand I think looking at the the long history, it's all for the good, but I do I am concerned because there's so few humans that are critical to the success of open-source projects that I have seen it uh be a psychological toll on folks. And, you know, sometimes leads to burnout. So, you have these incredible people that are at the core of
+
+00:04:41
+open-source projects. There's a moment that happens cuz like, what is the motivation of doing it? Ultimately, it's because you're passionate about it and it makes you happy. And at a certain point, you wake up and it's like, this has been a bit too much heat from the drama. So, like at the at the project level, the project continues and often flourishes, but sometimes there's these individual humans that are just like, I've had enough. Yeah, but it's not just about forks, right? So,
+
+00:05:07
+this is very what what you what you are referring to is a one of the most challenging and most interesting part of open-source today is maintenance burnout, right? And AI is a problem because of that. And Daniel Steinberg, which is the maintainer of curl, who's probably one of the best promoter of open-source in the world. He's, by the way, a member of the European Open Source Academy with me. So, I'm very like humble to be on the same communities as him, right? He's against what he called AI slop, right? Because
+
+00:05:42
+it gives a ton of fake reports or bad reports, bad patches. And then, a lot of maintainers have a lot of burden to maintain the software. And this is uh straining the um the the the mind of open-source developers much more than forks. And for example, the XZ fiasco was because there was one guy maintaining it and he got basically hammered by two attackants who were asking him questions non-stop at weird times at night to block him and at some point, he got fed up and said, "Okay, I can't do that." and gave the
+
+00:06:19
+commit access to the attackant. Mhm. Um so, burnout in open-source community is something that exist, but mostly it's about maintaining things, right? >> No, for sure. I wonder how do we we help that cuz those people are so important. You know, the human beings are so important at the core of these projects. So, so for example, now I am maintaining a ton of multimedia and non-multimedia library as maintainer uh because the maintainers got fed up, right? Um someone VideoLAN, some outside of VideoLAN,
+
+00:06:52
+uh because it's sometimes you need a tough skins, right? Because you get like it's not really attacks, but they Oh, this is not working. This is not working. And you feel it personally. Um and this is also why resources or the the Google fiasco is was a problem, right? They don't realize that in the end, you have You know, it's like the same graph where you see like everything and it's just like one random open-source project that is maintaining the whole driver. internet. You see the one, right? Yeah,
+
+00:07:22
+this is the meme. I mean, it applies to to a lot of these projects, but this is the all modern digital multimedia infrastructure and then that thing at the very bottom that everything relies on is FFmpeg. It's true. And then there's usually, like, you know, a handful of folks that are maintaining that. And FFmpeg or VLC, right? You have a community of 10, 15 core developers. Are not the worst open-source project. XZ, which is even in more installations, is one person, right? There is one guy
+
+00:07:53
+libxml is Yeah, libxml, right? There was a big stop. No one is maintaining libxml anymore, which is like the only library that is able to parse XML everywhere. All the crazy edge cases of XML under ridiculous circumstances and they get attacked by security researchers because there's one other crazy edge case that they haven't thought of. I was like, yeah, but the body of knowledge to actually resolve that is massive. There is one guy maintaining all the time zones for everyone who is in the
+
+00:08:20
+middle of I think Was it Nebraska or South Dakota? Like the mental health of the open-source maintainers is something that large corporations don't care or don't see, right? It's just like, "Oh, yeah, I'm just doing an open-source report and so on." Some of it is financial, but some of it and people should definitely support open-source financially all across the board. But some of it is also like spiritual on a basic human level. There's something that happens like with this image of FFmpeg and so
+
+00:08:52
+much of the internet depending on it, where people almost like talk down to the folks who are carrying these projects forward and maintaining them. In the security they certainly did. That was one of That was one of the things I think that argument came out is there was there was a portion of the security community that said, "No, these guys write crap code. They need to fix their crap code." I was like, "No, no, no, no. This is a guy's hobby project. You've You've have a security bot that's
+
+00:09:17
+gone and found some AI-generated stuff. That guy didn't write crap code. It's just an edge case to the 99.99999% he didn't think about because it's his hobby project decoding Star Star Wars games. Forget the hobby project aspect of it. It's It's just hard work and it's it's beautiful. And I think the right approach there is to celebrate people for doing incredible incredible work. It's It's just incredible that humans step up, Sure. not getting really paid at first or
+
+00:09:48
+maybe ever, and then they're doing it out of the love of it. And we need to like human civilization runs on people like that. We need to celebrate them. >> To give you an idea, I received death threats on VideoLAN, right? And um You mentioned that to me. Like, what what is what is behind that? So, that must be what, 2009, 2010, right? Um Apple is moving from PowerPC to Core Duo. Um that's probably in 2006. And by 2009 or 2010, I decide that we are not going to do new versions of VLC for PowerPC. Mhm.
+
+00:10:22
+Like, at that time, like, VLC we were close to the number 1.0 we were four of us, right? Like, just like, no, this is not possible. So, I received a death threat with some powder in it, right? It Remember there was some anthrax threats at that time, right? Um and it was because I had taken the decision to not maintain the PowerPC port anymore. And of course, it wasn't anthrax, of course. It was some type of flour and so on. But I received that as a with a letter of like, uh you're piece of You should die.
+
+00:10:57
+PowerPC forever, and so on. And was 2009 or 2010, right? I was I was uh I was young. I was just like, why? What did I do, right? >> can break your spirit. It's like, why? >> My mother freaked out, right? We had to go to see the police and so on. And now, like, I I'm going to say that I'm quite happy that this happened at that time. It It forged me a lot, right? I am I I can see I can take a lot of uh of hate on me. I'm I'm okay with it, right? It sucks that that's part of
+
+00:11:29
+reality. Cuz all the people that love VLC, all the people that love FFmpeg, like me, you know, I I legitimately hundred probably thousands of times in my life had a smile on my face because FFmpeg made me happy. Period. And how many times did I get a chance to say that? Zero. Until I realize there's a Twitter account [laughter] logo. And every once in a while, I'm like, messaging One of the things I like on the Reddit meme about me, which I don't like this meme for a lot of reasons, but
+
+00:12:01
+and someone says, "Oh, JB is on is on Reddit." Which I am, right? And I say and say, "Hello, right?" And then I got so many people who say, "Oh, thank you for VLC." And like, I take pictures and then I share that to to to the signal, to IRC. Yes, we use IRC on on different I I I saw you as a quick tangent. You mentioned IRC is like Slack for old people. So, you still use IRC? Of course. Yeah. I have it on my phone as well. Of course. Every day. Works fine. Wow. It works fine. Works fine. You have
+
+00:12:29
+to power with the crank. >> No, but there's there's no There's no There's no There's no tracking. There's nothing. It's uh The biggest issue, to be honest, right, compared to Slack, is that it had doesn't have threads. That's annoying. It doesn't have emojis for action. Sometimes it would be nice. Yes, V3, but no one does it. And you cannot edit your messages, right? And the rest, it works perfectly fine for me. >> you communicate without emojis? Well,
+
+00:12:54
+that's that's why I said it's for old people. Old people. >> [laughter] >> And we do we do emojis with like, you know, the columns and that >> [laughter] >> So, anyway, you communicate on IRC. What were we even talking about? Yeah, we are talking about death threats. And and But having people thanking you and sometimes they got people who sent me a message and "Oh, thank you for VLC." And I always answer because I want to to to validate the fact that you need to thank the the
+
+00:13:22
+the open source community. Yeah, please, everybody listening to this, celebrate celebrate FFmpeg. Celebrate VLC. Celebrate all the incredible uh open source projects, Linux, everything. There's so many There's so many And and you know what? I mean, even outside of open source, just celebrate companies that create software that you use a lot and love. Celebrate human endeavor. Celebrate the human effort to not just build something that's okay. Yeah. Build something that is damn good. Yeah, this is important,
+
+00:13:55
+right? Like, because as we said, right? We work for technic We do something very complex for the normal people. Like, we want our excellence in tech to be useful for everyone. And this is why like This is why we work, right? This is why I wake up in the morning. It's because I want people to use our stuff because it's making everyone's life easier. Want to solve hard problems. Work on something interesting. Work on something interesting technical challenges. We are engineers. We love to
+
+00:14:24
+build things, right? When I was young, like, very early I knew I wanted to build to be engineer. I wanted to do to do cars, right? Maybe at some point I will go back to cars, right? But this is like, we want to build things that are cool and useful. And they need to be challenging, right? Because you want your brain to turn on.
+

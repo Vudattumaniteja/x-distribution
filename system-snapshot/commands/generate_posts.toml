@@ -1,0 +1,47 @@
+description = "Generate 5 tweet variants for fact-checked news items using NotebookLM strategy"
+
+[tools]
+web_fetch = true
+google_search = true
+mcp = ["notebooklm-mcp"]
+
+prompt = """Run the Post Generation pipeline as defined in references/post-generation.md.
+
+Load fact-checked items from data/news_queue.json (items with verdict PROCEED or PROCEED_WITH_CAUTION).
+If user specifies an item index, focus on that one only.
+
+For each news item, generate ALL 5 tweet variants:
+1. HOOK-ACCURACY — Pattern-interruption hook + precise factual claim + source
+2. VALUE-DRIVEN — Reader benefit + context + actionable takeaway
+3. DATA BOMB — Standalone surprising number + context + implication + source
+4. FOUNDER-FOCUSED — Person/company + bold action + industry signal
+5. TECHNICAL DEEP — One specific technical detail + plain language + source link
+
+Before writing each variant, query NotebookLM:
+"Given news about [topic], what hook patterns and content structures perform best on X?"
+
+Apply ALL voice rules from SKILL.md:
+- Calm Authority (no hype: insane, mind-blowing, game-changing, revolutionary, unprecedented)
+- Concrete-First (lead with specifics, never vague openers)
+- Numbers Everywhere (at least one quantifiable metric per variant)
+- No emoji overload (max 1, at end only)
+- Short sentences (most under 15 words)
+- Source attribution required
+- Forbidden openers: Thread, Hot take:, Just in:, Unpopular opinion:, OK so
+
+Each variant MUST include: full text (under 280 chars), char_count, intended audience, NotebookLM strategy used.
+
+After generating, run quality checklist:
+- Mandatory: under 280 chars, has number, has source, no forbidden words/openers, max 1 emoji
+- If a variant fails mandatory checks: regenerate it (max 3 attempts per variant)
+- If still failing after 3 attempts: mark as "failed_quality" and explain why
+
+Edge case handling:
+- News item doesn't fit any variant well: lean toward Founder-Focused or suggest as reply instead
+- Source attribution is complicated (paywalled, social media post, anonymous): adapt format
+- Character count over 280: restructure (remove weakest line), or convert to thread
+- Multiple news items about same event: generate for strongest version only
+
+Save all variants to data/approved_posts.json
+Present variants in comparison table with quality status and character counts
+"""

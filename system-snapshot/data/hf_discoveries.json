@@ -1,0 +1,325 @@
+{
+  "last_run": "2026-05-06T06:17:44.580576+00:00",
+  "new_discoveries": [
+    {
+      "source": "Hugging Face",
+      "org": "openai",
+      "model_id": "openai/privacy-filter",
+      "url": "https://huggingface.co/openai/privacy-filter",
+      "last_modified": "2026-04-22T16:50:17.000Z",
+      "discovered_at": "2026-05-06T06:17:42.788043+00:00"
+    },
+    {
+      "source": "Hugging Face",
+      "org": "openai",
+      "model_id": "openai/gpt-oss-safeguard-20b",
+      "url": "https://huggingface.co/openai/gpt-oss-safeguard-20b",
+      "last_modified": "2026-01-14T18:38:05.000Z",
+      "discovered_at": "2026-05-06T06:17:42.788043+00:00"
+    },
+    {
+      "source": "Hugging Face",
+      "org": "openai",
+      "model_id": "openai/circuit-sparsity",
+      "url": "https://huggingface.co/openai/circuit-sparsity",
+      "last_modified": "2025-12-12T07:36:26.000Z",
+      "discovered_at": "2026-05-06T06:17:42.788043+00:00"
+    },
+    {
+      "source": "Hugging Face",
+      "org": "openai",
+      "model_id": "openai/gpt-oss-safeguard-120b",
+      "url": "https://huggingface.co/openai/gpt-oss-safeguard-120b",
+      "last_modified": "2025-10-29T11:13:59.000Z",
+      "discovered_at": "2026-05-06T06:17:42.788043+00:00"
+    },
+    {
+      "source": "Hugging Face",
+      "org": "openai",
+      "model_id": "openai/gpt-oss-20b",
+      "url": "https://huggingface.co/openai/gpt-oss-20b",
+      "last_modified": "2025-08-26T17:25:47.000Z",
+      "discovered_at": "2026-05-06T06:17:42.788043+00:00"
+    },
+    {
+      "source": "Hugging Face",
+      "org": "openai",
+      "model_id": "openai/gpt-oss-120b",
+      "url": "https://huggingface.co/openai/gpt-oss-120b",
+      "last_modified": "2025-08-26T17:25:03.000Z",
+      "discovered_at": "2026-05-06T06:17:42.788043+00:00"
+    },
+    {
+      "source": "Hugging Face",
+      "org": "openai",
+      "model_id": "openai/whisper-large-v3-turbo",
+      "url": "https://huggingface.co/openai/whisper-large-v3-turbo",
+      "last_modified": "2024-10-04T14:51:11.000Z",
+      "discovered_at": "2026-05-06T06:17:42.788043+00:00"
+    },
+    {
+      "source": "Hugging Face",
+      "org": "openai",
+      "model_id": "openai/whisper-large-v3",
+      "url": "https://huggingface.co/openai/whisper-large-v3",
+      "last_modified": "2024-08-12T10:20:10.000Z",
+      "discovered_at": "2026-05-06T06:17:42.788043+00:00"
+    },
+    {
+      "source": "Hugging Face",
+      "org": "openai",
+      "model_id": "openai/whisper-large-v2",
+      "url": "https://huggingface.co/openai/whisper-large-v2",
+      "last_modified": "2024-02-29T10:57:50.000Z",
+      "discovered_at": "2026-05-06T06:17:42.788043+00:00"
+    },
+    {
+      "source": "Hugging Face",
+      "org": "openai",
+      "model_id": "openai/whisper-large",
+      "url": "https://huggingface.co/openai/whisper-large",
+      "last_modified": "2024-02-29T10:57:46.000Z",
+      "discovered_at": "2026-05-06T06:17:42.788043+00:00"
+    },
+    {
+      "source": "Hugging Face",
+      "org": "meta-llama",
+      "model_id": "meta-llama/Prompt-Guard-86M",
+      "url": "https://huggingface.co/meta-llama/Prompt-Guard-86M",
+      "last_modified": "2025-11-12T21:27:00.000Z",
+      "discovered_at": "2026-05-06T06:17:43.492434+00:00"
+    },
+    {
+      "source": "Hugging Face",
+      "org": "meta-llama",
+      "model_id": "meta-llama/Meta-Llama-3-8B-Instruct",
+      "url": "https://huggingface.co/meta-llama/Meta-Llama-3-8B-Instruct",
+      "last_modified": "2025-06-18T23:49:51.000Z",
+      "discovered_at": "2026-05-06T06:17:43.493433+00:00"
+    },
+    {
+      "source": "Hugging Face",
+      "org": "meta-llama",
+      "model_id": "meta-llama/Meta-Llama-3-70B-Instruct",
+      "url": "https://huggingface.co/meta-llama/Meta-Llama-3-70B-Instruct",
+      "last_modified": "2025-06-18T23:49:26.000Z",
+      "discovered_at": "2026-05-06T06:17:43.493433+00:00"
+    },
+    {
+      "source": "Hugging Face",
+      "org": "meta-llama",
+      "model_id": "meta-llama/Llama-4-Maverick-17B-128E-Instruct",
+      "url": "https://huggingface.co/meta-llama/Llama-4-Maverick-17B-128E-Instruct",
+      "last_modified": "2025-05-22T23:46:12.000Z",
+      "discovered_at": "2026-05-06T06:17:43.493433+00:00"
+    },
+    {
+      "source": "Hugging Face",
+      "org": "meta-llama",
+      "model_id": "meta-llama/Llama-4-Maverick-17B-128E-Instruct-FP8",
+      "url": "https://huggingface.co/meta-llama/Llama-4-Maverick-17B-128E-Instruct-FP8",
+      "last_modified": "2025-05-22T23:46:03.000Z",
+      "discovered_at": "2026-05-06T06:17:43.494431+00:00"
+    },
+    {
+      "source": "Hugging Face",
+      "org": "meta-llama",
+      "model_id": "meta-llama/Llama-4-Scout-17B-16E-Instruct",
+      "url": "https://huggingface.co/meta-llama/Llama-4-Scout-17B-16E-Instruct",
+      "last_modified": "2025-05-22T23:44:50.000Z",
+      "discovered_at": "2026-05-06T06:17:43.494431+00:00"
+    },
+    {
+      "source": "Hugging Face",
+      "org": "meta-llama",
+      "model_id": "meta-llama/Llama-4-Maverick-17B-128E-Instruct-Original",
+      "url": "https://huggingface.co/meta-llama/Llama-4-Maverick-17B-128E-Instruct-Original",
+      "last_modified": "2025-05-10T15:08:32.000Z",
+      "discovered_at": "2026-05-06T06:17:43.494431+00:00"
+    },
+    {
+      "source": "Hugging Face",
+      "org": "meta-llama",
+      "model_id": "meta-llama/Llama-Guard-4-12B",
+      "url": "https://huggingface.co/meta-llama/Llama-Guard-4-12B",
+      "last_modified": "2025-04-29T18:14:44.000Z",
+      "discovered_at": "2026-05-06T06:17:43.494431+00:00"
+    },
+    {
+      "source": "Hugging Face",
+      "org": "meta-llama",
+      "model_id": "meta-llama/Llama-Prompt-Guard-2-86M",
+      "url": "https://huggingface.co/meta-llama/Llama-Prompt-Guard-2-86M",
+      "last_modified": "2025-04-29T15:59:55.000Z",
+      "discovered_at": "2026-05-06T06:17:43.494431+00:00"
+    },
+    {
+      "source": "Hugging Face",
+      "org": "meta-llama",
+      "model_id": "meta-llama/Llama-Prompt-Guard-2-22M",
+      "url": "https://huggingface.co/meta-llama/Llama-Prompt-Guard-2-22M",
+      "last_modified": "2025-04-29T15:47:24.000Z",
+      "discovered_at": "2026-05-06T06:17:43.494431+00:00"
+    },
+    {
+      "source": "Hugging Face",
+      "org": "mistralai",
+      "model_id": "mistralai/Mistral-Medium-3.5-128B",
+      "url": "https://huggingface.co/mistralai/Mistral-Medium-3.5-128B",
+      "last_modified": "2026-05-04T14:16:22.000Z",
+      "discovered_at": "2026-05-06T06:17:43.841767+00:00"
+    },
+    {
+      "source": "Hugging Face",
+      "org": "mistralai",
+      "model_id": "mistralai/Mistral-Medium-3.5-128B-EAGLE",
+      "url": "https://huggingface.co/mistralai/Mistral-Medium-3.5-128B-EAGLE",
+      "last_modified": "2026-04-30T06:32:10.000Z",
+      "discovered_at": "2026-05-06T06:17:43.842768+00:00"
+    },
+    {
+      "source": "Hugging Face",
+      "org": "mistralai",
+      "model_id": "mistralai/Mistral-Small-4-119B-2603-eagle",
+      "url": "https://huggingface.co/mistralai/Mistral-Small-4-119B-2603-eagle",
+      "last_modified": "2026-04-27T15:33:15.000Z",
+      "discovered_at": "2026-05-06T06:17:43.842768+00:00"
+    },
+    {
+      "source": "Hugging Face",
+      "org": "mistralai",
+      "model_id": "mistralai/Mistral-Small-4-119B-2603",
+      "url": "https://huggingface.co/mistralai/Mistral-Small-4-119B-2603",
+      "last_modified": "2026-04-27T14:13:57.000Z",
+      "discovered_at": "2026-05-06T06:17:43.842768+00:00"
+    },
+    {
+      "source": "Hugging Face",
+      "org": "mistralai",
+      "model_id": "mistralai/Leanstral-2603",
+      "url": "https://huggingface.co/mistralai/Leanstral-2603",
+      "last_modified": "2026-04-21T15:10:31.000Z",
+      "discovered_at": "2026-05-06T06:17:43.842768+00:00"
+    },
+    {
+      "source": "Hugging Face",
+      "org": "mistralai",
+      "model_id": "mistralai/Voxtral-4B-TTS-2603",
+      "url": "https://huggingface.co/mistralai/Voxtral-4B-TTS-2603",
+      "last_modified": "2026-03-31T13:43:59.000Z",
+      "discovered_at": "2026-05-06T06:17:43.842768+00:00"
+    },
+    {
+      "source": "Hugging Face",
+      "org": "mistralai",
+      "model_id": "mistralai/Mistral-Small-4-119B-2603-NVFP4",
+      "url": "https://huggingface.co/mistralai/Mistral-Small-4-119B-2603-NVFP4",
+      "last_modified": "2026-03-17T13:54:58.000Z",
+      "discovered_at": "2026-05-06T06:17:43.842768+00:00"
+    },
+    {
+      "source": "Hugging Face",
+      "org": "mistralai",
+      "model_id": "mistralai/Voxtral-Mini-4B-Realtime-2602",
+      "url": "https://huggingface.co/mistralai/Voxtral-Mini-4B-Realtime-2602",
+      "last_modified": "2026-03-11T15:04:02.000Z",
+      "discovered_at": "2026-05-06T06:17:43.842768+00:00"
+    },
+    {
+      "source": "Hugging Face",
+      "org": "mistralai",
+      "model_id": "mistralai/Devstral-Small-2-24B-Instruct-2512",
+      "url": "https://huggingface.co/mistralai/Devstral-Small-2-24B-Instruct-2512",
+      "last_modified": "2026-02-25T08:50:48.000Z",
+      "discovered_at": "2026-05-06T06:17:43.842768+00:00"
+    },
+    {
+      "source": "Hugging Face",
+      "org": "mistralai",
+      "model_id": "mistralai/Devstral-2-123B-Instruct-2512",
+      "url": "https://huggingface.co/mistralai/Devstral-2-123B-Instruct-2512",
+      "last_modified": "2026-02-25T08:50:20.000Z",
+      "discovered_at": "2026-05-06T06:17:43.842768+00:00"
+    },
+    {
+      "source": "Hugging Face",
+      "org": "google",
+      "model_id": "google/gemma-4-26B-A4B-it-assistant",
+      "url": "https://huggingface.co/google/gemma-4-26B-A4B-it-assistant",
+      "last_modified": "2026-05-05T15:40:04.000Z",
+      "discovered_at": "2026-05-06T06:17:44.218825+00:00"
+    },
+    {
+      "source": "Hugging Face",
+      "org": "google",
+      "model_id": "google/gemma-4-31B-it-assistant",
+      "url": "https://huggingface.co/google/gemma-4-31B-it-assistant",
+      "last_modified": "2026-05-05T15:39:43.000Z",
+      "discovered_at": "2026-05-06T06:17:44.218825+00:00"
+    },
+    {
+      "source": "Hugging Face",
+      "org": "google",
+      "model_id": "google/gemma-4-E4B-it-assistant",
+      "url": "https://huggingface.co/google/gemma-4-E4B-it-assistant",
+      "last_modified": "2026-05-05T14:08:07.000Z",
+      "discovered_at": "2026-05-06T06:17:44.218825+00:00"
+    },
+    {
+      "source": "Hugging Face",
+      "org": "google",
+      "model_id": "google/gemma-4-E2B-it-assistant",
+      "url": "https://huggingface.co/google/gemma-4-E2B-it-assistant",
+      "last_modified": "2026-05-05T14:07:48.000Z",
+      "discovered_at": "2026-05-06T06:17:44.218825+00:00"
+    },
+    {
+      "source": "Hugging Face",
+      "org": "google",
+      "model_id": "google/medasr",
+      "url": "https://huggingface.co/google/medasr",
+      "last_modified": "2026-04-29T16:53:25.000Z",
+      "discovered_at": "2026-05-06T06:17:44.220430+00:00"
+    },
+    {
+      "source": "Hugging Face",
+      "org": "google",
+      "model_id": "google/gemma-4-31B-it",
+      "url": "https://huggingface.co/google/gemma-4-31B-it",
+      "last_modified": "2026-04-28T17:33:42.000Z",
+      "discovered_at": "2026-05-06T06:17:44.220430+00:00"
+    },
+    {
+      "source": "Hugging Face",
+      "org": "google",
+      "model_id": "google/gemma-4-26B-A4B-it",
+      "url": "https://huggingface.co/google/gemma-4-26B-A4B-it",
+      "last_modified": "2026-04-28T17:33:25.000Z",
+      "discovered_at": "2026-05-06T06:17:44.220824+00:00"
+    },
+    {
+      "source": "Hugging Face",
+      "org": "google",
+      "model_id": "google/gemma-4-E4B-it",
+      "url": "https://huggingface.co/google/gemma-4-E4B-it",
+      "last_modified": "2026-04-28T17:33:01.000Z",
+      "discovered_at": "2026-05-06T06:17:44.220824+00:00"
+    },
+    {
+      "source": "Hugging Face",
+      "org": "google",
+      "model_id": "google/gemma-4-E2B-it",
+      "url": "https://huggingface.co/google/gemma-4-E2B-it",
+      "last_modified": "2026-04-28T17:32:39.000Z",
+      "discovered_at": "2026-05-06T06:17:44.220824+00:00"
+    },
+    {
+      "source": "Hugging Face",
+      "org": "google",
+      "model_id": "google/tipsv2-g14-dpt",
+      "url": "https://huggingface.co/google/tipsv2-g14-dpt",
+      "last_modified": "2026-04-14T22:51:24.000Z",
+      "discovered_at": "2026-05-06T06:17:44.220824+00:00"
+    }
+  ]
+}

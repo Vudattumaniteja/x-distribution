@@ -1,0 +1,54 @@
+00:00:00
+OpenClaw 5.27 just came out. If you run any kind of business with an AI agent, it's worth knowing what changed. Let me walk you through it. So, OpenClaw is the AI agent a lot of people use to handle the work in the business, automate different workflows, etc. And this update isn't a giant new feature. It's mostly about making the agent safer, more reliable, and that matters because an agent that runs part of your business has to be something you can trust. So, let's go through exactly what changed in
+
+00:00:24
+update 5.27. Number one, security. So, this is probably the biggest part of the update. Open Claw 5.27 closed a number of security gaps. Here's why that matters. Your agent touches your stuff, your messages, maybe your customer data, maybe your calendar. And there's a real risk with AI agents called a prompt attack. Someone hides a sneaky instruction inside a normal looking message. The agent reads it and tries to follow that instruction. That's a problem. Open 5.27 made that harder to
+
+00:00:50
+pull off. Group chat texts now get kept away from the agents core instruction. So, a bad instruction dropped in a group is less likely to be followed. Fake looking web addresses got cleaned up. Risky commands that could mess up your system get blocked. And now only an admin can approve big changes like adding a new device or new permissions. What does that actually mean for you? It means your agent is harder to trick. That's the honest takeaway. It's not bulletproof. No software is, but it's
+
+00:01:20
+safer than the version before it. And I know some of you hear security and think this is KOD stuff. It's not. You don't need to read code. You just need to know the agent got safer and you need someone to point you to the right settings. So, for example, a small online shop running the agent to answer customer questions, for example, gets an agent that's harder to break with a weird message. Pretty useful. This is the kind of thing we go through inside the air profit boarding. We've got members running OpenClaw to
+
+00:01:47
+handle messages and follow-ups. When an update like 5.27 lands, we show you which settings to actually turn on step by step. Your agent is set up safely. You get four coaching calls a week where you can ask questions about your own opencore setup, plus a 30-day road map for getting your agent doing real work for you. Link in the comments description or just go to the apiprofitborn.com. Next part of the update, OpenClaw 5.27 made the agent faster in a few small ways. It reads post chats and pass chats quicker. It
+
+00:02:16
+loads his tools quicker. And there was a problem where replies got stuck waiting on background cleanup jobs. That's also fixed. Now, why care about speed? Because slow replies lose you customers. If someone messages your business and waits a couple of minutes, they may move on. And also like nobody wants an AI agent that's super slow to reply. That would be quite annoying. And so this speeds everything up and makes it faster. I've noticed that Hermes have just dropped a release called V0.15
+
+00:02:43
+and that is focused on speed as well. So it seems like all agents are focused on speed. Same with Opus 4.8 Okay, that just dropped. And obviously, they've focused on speed a lot and it's a lot faster to respond and actually build stuff. The same for example, if you're like a coach using an agent to answer questions on your booking page, for instance, you would lose fewer replies before they book if the replies come back fast. Next up, memory. This update made the agents memory steadier. So,
+
+00:03:08
+memory matters because an agent without it is like an employee forgets everything. You'd have to reexplain your whole business daily. OpenClaw already has a memory system. This update just made it hold onto your workspace information more reliably and route it through the right tools, so it's less likely to drop things. A steadier memory means the agent keeps better track of what you actually told it and what your customers need. It works more like a steady team member than a forgetful chat
+
+00:03:37
+agent. And here's a fair question you might be having, which is, if the agent keeps getting better, do I even need to learn this stuff? The honest answer is yes, you do. Because the agent does the work, but you have to know what work to give it and how to set up. The tool getting smarter doesn't change that. The people who learn how to point it in the right direction are the ones who get value out of it. Now, let's also talk about the new video agent tool that's inside there as well. So, OpenClaw 5127
+
+00:04:02
+added a video provider called Pix. That means the agent can now help generate videos as well. It already could do this before, but it's added Pix as well. So, this is genuinely useful for a lot of business owners because video is the thing most people want to do more of but never actually get round to it. So, for example, like a local bakery could put together a quick video of the day's fresh batch without hiring anyone or learning how to edit, right? And I'll be straight with you like AI video still
+
+00:04:31
+has limits. It's not going to replace a real person at this point, but it is super powerful, especially if you have the right workflows in place. And you know for quick videos having it built into the agent you already run is pretty handy. We've actually built out the open claw studio inside our agent operating system for openclaw and that just makes everything easier and faster. Plus you can keep everything in one place that's inside the air prof. Now openclaw has also added more model choices and better
+
+00:04:57
+support for different AI services in this update too. In plain English, your agent works with more AI options now. So you can pick one that fits your budget and task. And the messaging got cleaner, too. So Telegram, Slack, iMessage, Discord, the agent now sends messages more reliably across them. Fewer dropped to replies, fewer duplicate messages going to your customers. If your agent talks to people through, for example, apps, that's the difference between looking pretty solid and looking pretty
+
+00:05:25
+broken. So let's put it together. What did OpenClaw 5.27 give you? a safer agent that's harder to trick, a faster agent, a steadier memory, a new video tool, and cleaner messaging across your apps. None of these are like flashy on their own, but together they do one more thing, which is they make the agent more reliable to run real parts of your business. And that's the direction everything is going. Whether that's Hermes, whether that's Claude, whether that's Ultra Code with Claude, whether
+
+00:05:49
+that's Open Claw, one person with a well setup agent can handle work that used to take a whole team. The agent does the busy work. you handle the decisions and the judgment, but you do have to set up and that's the part no one can do for you. Here's the plain truth. The people learning this now whilst it's still early are going to get a massive head start. The ones who wait will spend a long time catching up. That's just how new tools tend to go. So, if you want to actually use OpenClaw
+
+00:06:15
+5.27 in your business with an amazing operating system with loads of tools, all your agents plugged into one place and a beautiful dashboard. Plus, you can generate videos, you can generate images and stuff like that and actually visualize them and keep everything that you've built inside one workspace. Join us in the air profitable because we've got the agent operating system specifically for OpenClaw and all your AI agents. We've got a 30-day road map built around getting an agent like
+
+00:06:41
+OpenClaw running for your business. When updates like Pix drop, we show you how to use them step by step. You get four live coaching calls a week where you can bring your own setup and your own questions. 3,200 business owners in there. a good number of them actually running OpenC claw right now and a prompt library so you're not starting from a blank page and an agent operating system where you can plug in openclaw clawed hermes all in one place and automate your own workflows. You get the
+
+00:07:06
+zip file, a video tutorial and updates daily as we improve it. Link in the comments description or go to the aprof.com. OpenClaw is shipping updates pretty often now. You don't have to chase every single one, but it's worth picking one thing that your agent could handle, right? Could be answering messages, could be following up with leads, could be making a quick video and setting it up this week. That's how you make progress. One step, then the next. The tools are here. Start small, start now.
+
+00:07:31
+I'll see you in the next one. Cheers. Bye-bye.
+

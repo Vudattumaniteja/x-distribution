@@ -1,0 +1,23 @@
+description = "Monitor the self-evolution loop and recommend the next evidence-backed improvement cycle"
+
+[tools]
+file_read = true
+file_write = true
+subagents = true
+
+prompt = """Run Mode D: Evolution Monitoring as defined in references/self-evolution.md.
+
+Execution:
+1. Load data/evolution_state.json, data/evolution_backlog.json, evals/evals.json, data/performance_history.json, and recent logs.
+2. Check open backlog, implemented changes, validation status, repeated failures, stale schemas, missing evals, and agent bottlenecks.
+3. Recommend the next evolution cycle only when there is evidence.
+4. Prepare a proposed data/evolution_state.json monitoring update.
+5. If the user explicitly asked to save/persist the monitor run, write the approved state/log files. Otherwise run dry and present the proposed update without writing.
+6. Present a concise monitoring report and recommended next action.
+
+Hard constraints:
+- Do not implement changes during monitoring.
+- Do not launch implementation agents.
+- Do not write evolution state/log outputs unless the user explicitly approved persistence.
+- Do not mark an improvement successful without validation evidence.
+"""

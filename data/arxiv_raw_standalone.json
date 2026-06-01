@@ -1,0 +1,333 @@
+{
+  "last_updated": "2026-05-30T10:45:33.974008+00:00",
+  "new_discoveries": [
+    {
+      "id": "arxiv_2605.30345v1",
+      "title": "ArXiv: SchGen: PCB Schematic Generation with Semantic-Grounded Code Representations",
+      "url": "http://arxiv.org/abs/2605.30345v1",
+      "source": "ArXiv",
+      "published_at": "2026-05-28T17:59:50Z",
+      "summary": "Printed circuit board (PCB) schematic design defines nearly all electronic hardware, but it remains manual and expertise-intensive. While generative AI has advanced digital and analog IC design, PCB schematic generation from natural-language intent is largely unexplored. This paper presents SchGen, the first large language model that generates editable PCB schematics from natural-language requests. The key challenge lies in the lack of an LLM-suited representation and a large-scale dataset. Curr..."
+    },
+    {
+      "id": "arxiv_2605.30344v1",
+      "title": "ArXiv: Tiny but Trusted: Efficient Vision-Language Reasoning for Time-Series Anomaly Detection",
+      "url": "http://arxiv.org/abs/2605.30344v1",
+      "source": "ArXiv",
+      "published_at": "2026-05-28T17:59:50Z",
+      "summary": "Recent advances in Vision-Language Models (VLMs) have achieved impressive performance across many tasks, yet prior studies report unsatisfactory performance when applying large language or multimodal models to finding abnormal patterns in sequential data. Public anomaly detection benchmarks typically provide interval annotations but not natural-language rationales, making it difficult to fine-tune VLMs to produce grounded, interpretable decisions. To address this gap, we construct VisAnomBench, ..."
+    },
+    {
+      "id": "arxiv_2605.30343v1",
+      "title": "ArXiv: Unlocking the Working Memory of Large Language Models for Latent Reasoning",
+      "url": "http://arxiv.org/abs/2605.30343v1",
+      "source": "ArXiv",
+      "published_at": "2026-05-28T17:59:49Z",
+      "summary": "To improve the reasoning capabilities of large language models, test-time compute is typically scaled by generating intermediate tokens before the final answer. However, this couples reasoning to autoregressive generation and thereby conflates internal computation with external communication. In contrast, human cognition can use working memory to hold and manipulate information internally without the need to externalize intermediate thoughts. Drawing on this principle, we introduce Reasoning in ..."
+    },
+    {
+      "id": "arxiv_2605.30341v1",
+      "title": "ArXiv: GPIC: A Giant Permissive Image Corpus for Visual Generation",
+      "url": "http://arxiv.org/abs/2605.30341v1",
+      "source": "ArXiv",
+      "published_at": "2026-05-28T17:59:26Z",
+      "summary": "Studying scalable methods for visual generative modeling requires large, accessible, and stable datasets. We introduce GPIC, a Giant Permissive Image Corpus of approximately 28 trillion pixels. GPIC comprises diverse internet images captioned by a state-of-the-art vision-language model, including 100M training, 200K validation, and 1M test examples. Moreover, all GPIC images are permissively licensed for both research and commercial use. GPIC is safety-filtered, deduplicated, and centrally hoste..."
+    },
+    {
+      "id": "arxiv_2605.30333v1",
+      "title": "ArXiv: COMPOSE: Composing Future Theorems from Citations and Formal Structure",
+      "url": "http://arxiv.org/abs/2605.30333v1",
+      "source": "ArXiv",
+      "published_at": "2026-05-28T17:58:42Z",
+      "summary": "A plausible future mathematical claim must satisfy two constraints: it should follow the direction of prior work and respect the formal dependencies that constrain what can validly follow. Existing approaches typically model only one of these sources, producing claims that are either weakly grounded or insufficiently motivated. We introduce grounded future mathematical generation, where the goal is to generate a plausible future theorem-like claim for an anchor paper using two complementary sour..."
+    },
+    {
+      "id": "arxiv_2605.30326v1",
+      "title": "ArXiv: RoboWits: Unexpected Challenges for Robotic Creative Problem Solving",
+      "url": "http://arxiv.org/abs/2605.30326v1",
+      "source": "ArXiv",
+      "published_at": "2026-05-28T17:57:15Z",
+      "summary": "The ability to reason, adapt, and creatively solve problems under unexpected challenges is essential for robots operating in real-world environments. However, current robotic benchmarks primarily emphasize skill-level execution and provide limited insight into such cognitive reasoning capabilities. We introduce RoboWits, a bi-manual robotic benchmark designed to systematically evaluate cognitive reasoning, creative tool use, and robustness to unexpected conditions. To enable scalable constructio..."
+    },
+    {
+      "id": "arxiv_2605.30295v1",
+      "title": "ArXiv: MedCase-Structured: A Text-to-FHIR Dataset for Benchmarking Diagnostic Reasoning in Clinically Realistic EHR Settings",
+      "url": "http://arxiv.org/abs/2605.30295v1",
+      "source": "ArXiv",
+      "published_at": "2026-05-28T17:42:43Z",
+      "summary": "Large language models (LLMs) show promise for clinical reasoning and decision support, but evaluation in realistic, electronic health record-congruent settings remains limited. Existing benchmarks often rely on static datasets or unstructured inputs that do not reflect the structured, interoperable data formats used in clinical systems. We introduce a pipeline for generating clinically realistic HL7 FHIR R4 bundles from unstructured text, enabling controllable evaluation of clinical decision sup..."
+    },
+    {
+      "id": "arxiv_2605.30288v1",
+      "title": "ArXiv: MIRA: Mid-training Rubric Anchoring for Source-Aware Data Selection",
+      "url": "http://arxiv.org/abs/2605.30288v1",
+      "source": "ArXiv",
+      "published_at": "2026-05-28T17:40:40Z",
+      "summary": "Mid-training has become an important stage in modern LLM development, using large-scale curated mixtures to strengthen capabilities before final post-training. Its data selection problem is distinct: the data are optimized under a pretraining-style objective at near-pretraining scale, but are curated toward downstream capabilities and drawn from heterogeneous sources with different formats and training roles. As a result, effective selection requires both scalability and source-adaptive semantic..."
+    },
+    {
+      "id": "arxiv_2605.30284v1",
+      "title": "ArXiv: ProjectionBench: Evaluating Scientific Hypothesis Generation in LLMs Under Progressive Information Disclosure",
+      "url": "http://arxiv.org/abs/2605.30284v1",
+      "source": "ArXiv",
+      "published_at": "2026-05-28T17:38:19Z",
+      "summary": "Scientific discovery is an inherently creative and uncertain process, requiring reasoning beyond the recall of known knowledge. While many benchmarks have been proposed to evaluate large language model (LLM) performance on deep research tasks via multi-hop retrieval, their innovative reasoning abilities essential for true scientific discovery remain largely untested. We introduce a benchmark framework for evaluating model performance in scientific discovery and reasoning, building up from a raw ..."
+    },
+    {
+      "id": "arxiv_2605.30280v1",
+      "title": "ArXiv: Qwen-VLA: Unifying Vision-Language-Action Modeling across Tasks, Environments, and Robot Embodiments",
+      "url": "http://arxiv.org/abs/2605.30280v1",
+      "source": "ArXiv",
+      "published_at": "2026-05-28T17:36:31Z",
+      "summary": "Embodied intelligence is often studied through specialized models for individual tasks such as manipulation or navigation, resulting in fragmented capabilities and limited generalization across tasks, environments, and robot embodiments. In this work, we study whether heterogeneous embodied decision-making problems can be unified within a single vision-language-action model. We present Qwen-VLA, a unified embodied foundation model that extends Qwen's vision-language modeling stack from perceptio..."
+    },
+    {
+      "id": "arxiv_2605.30265v1",
+      "title": "ArXiv: LoMo: Local Modality Substitution for Deeper Vision-Language Fusion",
+      "url": "http://arxiv.org/abs/2605.30265v1",
+      "source": "ArXiv",
+      "published_at": "2026-05-28T17:27:55Z",
+      "summary": "Vision-Language Models (VLMs) have achieved substantial progress across a wide range of understanding and reasoning tasks, driven by large-scale image-text training aimed at multimodal fusion. Ideally, replacing a textual question with its rendered-image counterpart should leave model performance essentially unaffected. In practice, however, such modality substitution induces dramatic performance degradation. We attribute this \"carrier sensitivity\" issue to an inherent bias in current training c..."
+    },
+    {
+      "id": "arxiv_2605.30256v1",
+      "title": "ArXiv: VideoFDB: Evaluating Full-Duplex Vision-Speech Capabilities in Conversational Agents",
+      "url": "http://arxiv.org/abs/2605.30256v1",
+      "source": "ArXiv",
+      "published_at": "2026-05-28T17:20:01Z",
+      "summary": "Natural human conversation is full-duplex and audio-visual: people simultaneously speak and listen while continuously interpreting and producing nonverbal cues, such as nods, smiles, and gestures. To support successful human-agent interaction, agents must model full-duplex audiovisual conversation; however, existing full-duplex benchmarks evaluate only speech. In this work, we present VideoFDB, the first benchmark to evaluate full-duplex audio-visual-to-audio-visual (AV2AV) conversational agents..."
+    },
+    {
+      "id": "arxiv_2605.30245v1",
+      "title": "ArXiv: Knowing What to Solve Before How: Preplan Empowered LLM Mathematical Reasoning",
+      "url": "http://arxiv.org/abs/2605.30245v1",
+      "source": "ArXiv",
+      "published_at": "2026-05-28T17:11:43Z",
+      "summary": "Current plan-based reasoning methods improve large language models (LLMs) by inserting a planning stage before execution, giving rise to the question $\\rightarrow$ plan $\\rightarrow$ cot paradigm. While effective, a closer examination reveals an inherent paradigm-level gap: both the planning and its execution stages decide how to solve a problem, while the prior question of what to solve; recognizing the problem type, the applicable tools, and the foreseeable pitfalls; remains entirely implicit...."
+    },
+    {
+      "id": "arxiv_2605.30244v1",
+      "title": "ArXiv: Reinforcement Learning with Robust Rubric Rewards",
+      "url": "http://arxiv.org/abs/2605.30244v1",
+      "source": "ArXiv",
+      "published_at": "2026-05-28T17:11:03Z",
+      "summary": "While Reinforcement Learning with Verifiable Rewards (RLVR) is effective for deterministically checkable tasks, many vision-language tasks are partially verifiable, demanding multi-criteria supervision (e.g., perceptual details, reasoning steps, and constraints). Rubrics provide a natural interface for this fine-grained supervision, but their effectiveness depends on the execution accuracy during online RL. We propose Reinforcement Learning with Robust Rubric Rewards ($\\text{RLR}^3$), extending ..."
+    },
+    {
+      "id": "arxiv_2605.30241v1",
+      "title": "ArXiv: CommunityFact: A Dynamic, Multilingual, Multi-domain Benchmark for Misinformation Detection in the Wild",
+      "url": "http://arxiv.org/abs/2605.30241v1",
+      "source": "ArXiv",
+      "published_at": "2026-05-28T17:09:19Z",
+      "summary": "Misinformation verification increasingly occurs in public, fast-moving, and multilingual online settings, where static benchmarks provide an incomplete measure of model reliability. We introduce CommunityFact, a refreshable benchmark for misinformation detection in the wild, with three major goals: coverage, granularity, and redistributability. This release contains 15,992 standalone claims across five languages and two domains. We evaluate ten LLMs under varying inference-time capabilities, inc..."
+    },
+    {
+      "id": "arxiv_2605.30237v1",
+      "title": "ArXiv: GRASP: Plan-Guided Graph Retrieval with Adaptive Fusion and Reranking on Semi-Structured Knowledge Bases",
+      "url": "http://arxiv.org/abs/2605.30237v1",
+      "source": "ArXiv",
+      "published_at": "2026-05-28T17:07:32Z",
+      "summary": "Semi-structured knowledge bases (SKBs) embed textual documents in a typed graph of entities and relations, and underpin applications such as product search, academic paper search, and precision-medicine inquiries. Existing hybrid retrieval systems on SKBs either use the graph only for query expansion, mix textual and structural branches under a global weighting, or rely on fine-tuned graph-traversal generators. We present GRASP, a three-stage SKB retrieval framework unifying plan-based graph ret..."
+    },
+    {
+      "id": "arxiv_2605.30231v1",
+      "title": "ArXiv: Beyond 3D VQAs: Injecting 3D Spatial Priors into Vision-Language Models for Enhanced Geometric Reasoning",
+      "url": "http://arxiv.org/abs/2605.30231v1",
+      "source": "ArXiv",
+      "published_at": "2026-05-28T17:00:52Z",
+      "summary": "Vision-Language Models (VLMs) often struggle with robust 3D spatial reasoning. Prevailing methods that rely on fine-tuning with 3D visual question-answering (VQA) datasets may overfit dataset-specific biases, while integrating specialized 3D visual encoders is often inflexible and cumbersome. In this paper, we argue that genuine spatial understanding should emerge from learning fundamental geometric priors, not only from high-level VQA supervision. We propose GASP (Geometric-Aware Spatial Priors..."
+    },
+    {
+      "id": "arxiv_2605.30227v1",
+      "title": "ArXiv: Unifying Temporal and Structural Credit Assignment in LLM-Based Multi-Agent Prompt Optimization",
+      "url": "http://arxiv.org/abs/2605.30227v1",
+      "source": "ArXiv",
+      "published_at": "2026-05-28T16:57:57Z",
+      "summary": "While Multi-Agent Systems (MAS) empower Large Language Models to tackle complex reasoning tasks through collaborative interaction, optimizing their dynamics remains a formidable challenge due to the discrete, non-differentiable nature of the computation graph and the sparsity of global supervisory signals. Existing black-box optimizers struggle to attribute trajectory-level failure to specific local components, resulting in inefficient, high-variance exploration. We argue that tractable MAS opti..."
+    },
+    {
+      "id": "arxiv_2605.30226v1",
+      "title": "ArXiv: BORA: Bridging Offline Reinforcement Learning and Online Residual Adaptation for Real-World Dexterous VLA Models",
+      "url": "http://arxiv.org/abs/2605.30226v1",
+      "source": "ArXiv",
+      "published_at": "2026-05-28T16:57:47Z",
+      "summary": "Vision-Language-Action (VLA) models have emerged as a promising paradigm for grounding visual-language understanding into real-world robotic manipulation. However, dexterous manipulation remains challenging for VLA policies due to high-dimensional hand control and compounding execution errors, which makes real-world RL post-training essential for bridging the gap between visually grounded action generation and physically reliable dexterous execution. However, high-dimensional dexterous explorati..."
+    },
+    {
+      "id": "arxiv_2605.30219v1",
+      "title": "ArXiv: When Should Models Change Their Minds? Contextual Belief Management in Large Language Models",
+      "url": "http://arxiv.org/abs/2605.30219v1",
+      "source": "ArXiv",
+      "published_at": "2026-05-28T16:52:04Z",
+      "summary": "Long-horizon interactions require language models to manage accumulating information: when to update their state, when to preserve their state, and what to ignore. We study this challenge as \\textbf{Contextual Belief Management (CBM)}: maintaining a predicted belief state aligned with formal evidence while isolating task-irrelevant noise. To make CBM measurable, we introduce BeliefTrack, a closed-world benchmark spanning Rule Discovery and Circuit Diagnosis, where a finite belief space and symbo..."
+    },
+    {
+      "id": "arxiv_2605.30195v1",
+      "title": "ArXiv: What drives performance in molecular MPNNs? An operator-level factorial benchmark",
+      "url": "http://arxiv.org/abs/2605.30195v1",
+      "source": "ArXiv",
+      "published_at": "2026-05-28T16:34:53Z",
+      "summary": "Message-passing neural networks (MPNNs) are widely used for molecular property prediction, but their deployment as monolithic architectures makes it difficult to identify how specific message-passing operators affect performance. We present an operator-level factorial benchmark that decomposes 2D molecular MPNNs into the three families of message-seed initialization, node-edge fusion, and node update operators. The resulting 84 configurations are benchmarked on ten MoleculeNet datasets under a s..."
+    },
+    {
+      "id": "arxiv_2605.30188v1",
+      "title": "ArXiv: CalArena: A Large-Scale Post-Hoc Calibration Benchmark",
+      "url": "http://arxiv.org/abs/2605.30188v1",
+      "source": "ArXiv",
+      "published_at": "2026-05-28T16:31:36Z",
+      "summary": "Reliable probability estimates are critical in many machine learning applications, yet modern classifiers are often poorly calibrated. Post-hoc calibration provides a simple and widely used solution, but the large number of proposed methods, combined with small-scale and inconsistent evaluations, makes it difficult to determine which approaches are truly effective in practice. We introduce a large-scale, standardized benchmark for post-hoc calibration, covering nearly 2000 experiments across tab..."
+    },
+    {
+      "id": "arxiv_2605.30159v1",
+      "title": "ArXiv: Meta-Cognitive Memory Policy Optimization for Long-Horizon LLM Agents",
+      "url": "http://arxiv.org/abs/2605.30159v1",
+      "source": "ArXiv",
+      "published_at": "2026-05-28T16:17:19Z",
+      "summary": "Memory-augmented LLM agents tackle complex long-horizon tasks by recursively summarizing interaction trajectories into compact memory. However, existing approaches typically train these memory policies using outcome-based reinforcement learning, failing to localize where intermediate memory quality degrades. As interactions unfold, ambiguous recursive summaries progressively discard task-relevant information and introduce semantic noise. This exacerbates belief deviation, obscuring the agent's e..."
+    },
+    {
+      "id": "arxiv_2605.30151v1",
+      "title": "ArXiv: Temporal Stability and Few-Shot Prompting in Math Task Assessment",
+      "url": "http://arxiv.org/abs/2605.30151v1",
+      "source": "ArXiv",
+      "published_at": "2026-05-28T16:10:24Z",
+      "summary": "As AI tools become increasingly integrated into educational contexts, questions arise about both their stability over time and their responsiveness to prompt engineering techniques. This longitudinal study focused on different AI tools' ability to use the Task Analysis Guide (TAG; Stein \\& Smith, 1998) to classify the cognitive demand of mathematics tasks. In particular, it examined whether this classification ability changed with (1) model version updates over time and (2) few-shot prompting us..."
+    },
+    {
+      "id": "arxiv_2605.30136v1",
+      "title": "ArXiv: Enhancing Multi-Agent Communication through Attention Steering with Context Relevance",
+      "url": "http://arxiv.org/abs/2605.30136v1",
+      "source": "ArXiv",
+      "published_at": "2026-05-28T16:02:52Z",
+      "summary": "LLM-based multi-agent systems have demonstrated remarkable performance on complex tasks through collaborative reasoning. However, these systems tend to rapidly accumulate extremely long conversation histories during interaction. As conversations lengthen, relevant information is increasingly diluted by irrelevant context, leading to degraded performance. In this work, we present Agent-Radar, a training-free context management method that dynamically steers each agent's attention toward relevant ..."
+    },
+    {
+      "id": "arxiv_2605.30133v1",
+      "title": "ArXiv: CorPipe at CRAC 2026: Empty Nodes and Cross-Lingual Transfer in Multilingual Coreference Resolution",
+      "url": "http://arxiv.org/abs/2605.30133v1",
+      "source": "ArXiv",
+      "published_at": "2026-05-28T16:01:03Z",
+      "summary": "We introduce CorPipe 26, our winning submission to the CRAC 2026 Shared Task on Multilingual Coreference Resolution. The fifth edition of this shared task focuses mainly on the comparison of generative LLMs and specialized systems; additionally, 5 more datasets and 2 new languages are introduced. CorPipe 26 is an improved version of CorPipe 25, with a new variant predicting empty nodes together with mentions and coreference links in a single model. Our system outperforms all other submissions in..."
+    },
+    {
+      "id": "arxiv_2605.30126v1",
+      "title": "ArXiv: PARCEL: Pool-Anchored Resampling with Conditioned Elastic Queries for Efficient Vision-Language Understanding",
+      "url": "http://arxiv.org/abs/2605.30126v1",
+      "source": "ArXiv",
+      "published_at": "2026-05-28T15:57:31Z",
+      "summary": "Large Vision-Language Models (LVLMs) map visual inputs into dense token sequences, imposing a quadratic computational bottleneck for inference. Elastic visual-token compression addresses this by training a single model that can run at multiple visual-token budgets. However, existing approaches struggle under aggressive compression. Spatial-only compression, as in nested pooling, behaves as an imperfect low-pass filter and induces spectral aliasing that obscures fine-grained detail. Query-only co..."
+    },
+    {
+      "id": "arxiv_2605.30120v1",
+      "title": "ArXiv: No More K-means:Single-Stage Sparse Coding for Efficient Multi-Vector Retrieval",
+      "url": "http://arxiv.org/abs/2605.30120v1",
+      "source": "ArXiv",
+      "published_at": "2026-05-28T15:53:34Z",
+      "summary": "Multi-vector retrieval (MVR) models, exemplified by ColBERT, have established new benchmarks in retrieval accuracy by preserving fine-grained token-level interactions. However, this granularity imposes prohibitive storage and retrieval efficiency bottlenecks: to manage the immense memory footprint and computational overhead of billion-scale token vectors, state-of-the-art systems are forced to rely on aggressive dimension reduction and complex clustering (e.g., K-means). This compromise introduc..."
+    },
+    {
+      "id": "arxiv_2605.30107v1",
+      "title": "ArXiv: Dial HEALTHDIAL for Advice: A Multilingual and Multi-Parallel Spoken Dialogue Dataset for Knowledge-Grounded Information Seeking",
+      "url": "http://arxiv.org/abs/2605.30107v1",
+      "source": "ArXiv",
+      "published_at": "2026-05-28T15:47:09Z",
+      "summary": "Creating spoken dialogue datasets is methodologically challenging, and these challenges are amplified when the goal is to build multilingual, multi-parallel datasets at scale. This work introduces HEALTHDIAL, a large-scale, multilingual, and multi-parallel dataset for developing and evaluating retrieval-augmented generation (RAG)-based spoken dialogue systems. The dataset comprises 6,000 information-seeking dialogues (1,500 per language) grounded in trusted content from the World Health Organiza..."
+    },
+    {
+      "id": "arxiv_2605.30104v1",
+      "title": "ArXiv: SEAL: Can Saturated Benchmarks Be Revived by LLM-as-a-Meta-Judge?",
+      "url": "http://arxiv.org/abs/2605.30104v1",
+      "source": "ArXiv",
+      "published_at": "2026-05-28T15:46:54Z",
+      "summary": "Widely used language-model benchmarks are increasingly saturated, with frontier systems often receiving near-tied scores that standard metrics cannot resolve. Rather than constructing harder alternatives, we ask whether existing tasks can be made informative again through improved evaluation over the same candidate outputs. Therefore, we present Seeded Elimination with Adaptive LLM-as-a-Meta-Judge, a self-improving evaluation protocol for extracting latent ranking signal from saturated benchmark..."
+    },
+    {
+      "id": "arxiv_2605.30094v1",
+      "title": "ArXiv: PokerSkill: LLMs Can Play Expert-Level Poker without Training or Solvers",
+      "url": "http://arxiv.org/abs/2605.30094v1",
+      "source": "ArXiv",
+      "published_at": "2026-05-28T15:38:33Z",
+      "summary": "Poker is a landmark challenge for artificial intelligence. The dominant approach relies on equilibrium solvers built on counterfactual regret minimization, requiring millions of core-hours of training. Large Language Models (LLMs) possess extensive poker knowledge but perform far below solver-based agents when asked to play directly. Traditional rule-based poker agents are interpretable and training-free, but their strategic ceiling remains far below equilibrium play. We introduce \\textbf{PokerS..."
+    },
+    {
+      "id": "arxiv_2605.30090v1",
+      "title": "ArXiv: DirectorBench: Diagnosing Long-Form Video Generation with Personalized Multi-Agent Evaluation",
+      "url": "http://arxiv.org/abs/2605.30090v1",
+      "source": "ArXiv",
+      "published_at": "2026-05-28T15:35:34Z",
+      "summary": "Long-form video generation is rapidly moving from short, single-scene synthesis toward minute-long, multi-shot creation with narrative structure, cinematic control, audio, and cross-modal synchronization. However, evaluating such videos remains challenging, since existing benchmarks largely focus on local visual quality, short-horizon temporal consistency, or generic prompt alignment, and provide limited diagnosis of workflow failures and user-dependent preferences. We introduce DirectorBench, a..."
+    },
+    {
+      "id": "arxiv_2605.30087v1",
+      "title": "ArXiv: Selective QA over Conflicting Multi-Source Personal Memory: A Diagnostic Testbed and Method Comparison",
+      "url": "http://arxiv.org/abs/2605.30087v1",
+      "source": "ArXiv",
+      "published_at": "2026-05-28T15:33:39Z",
+      "summary": "Emerging personal AI agents are moving toward persistent, multi-source memory. This creates an evaluation problem: systems must decide how to use conflicting or incomplete evidence; they cannot just retrieve facts from one clean history. Existing benchmarks rarely show whether an error came from the evidence given to a method or from the method's conflict-resolution step. We study this as selective QA over conflicting multi-source personal memory: systems answer based on conflicting, sometimes i..."
+    },
+    {
+      "id": "arxiv_2605.30058v1",
+      "title": "ArXiv: HEART-Bench: Do LLM Agents Exhibit Human-like Psychology?",
+      "url": "http://arxiv.org/abs/2605.30058v1",
+      "source": "ArXiv",
+      "published_at": "2026-05-28T15:08:03Z",
+      "summary": "While LLM agents have demonstrated remarkable task-oriented abilities such as planning, reasoning, and action, few works have treated them as complete human personalities where emotional dimensions hold equal importance. In this paper, we introduce a novel benchmark to systematically assess whether LLM agents can simulate coherent, human-like psychology. Specifically, our benchmark constructs 11 diverse human characters grounded in orthogonal Big Five personality traits, with each profile deeply..."
+    },
+    {
+      "id": "arxiv_2605.30052v1",
+      "title": "ArXiv: REPOT: Recoverable Program-of-Thought via Checkpoint Repair",
+      "url": "http://arxiv.org/abs/2605.30052v1",
+      "source": "ArXiv",
+      "published_at": "2026-05-28T15:03:17Z",
+      "summary": "One-shot Program-of-Thought (PoT) emits a Python program that prints a primitive-action plan; a single invalid action silently invalidates the trajectory. We introduce RePoT (Recoverable PoT): a deterministic verified replay that walks the plan through the environment to its first invalid transition, then one LLM call that resumes from the verified prefix. RePoT costs at most one extra LLM call on the ~14% of problems where PoT fails. RePoT beats PoT by +3 to +11pp across four closed-model confi..."
+    },
+    {
+      "id": "arxiv_2605.30051v1",
+      "title": "ArXiv: Who Am I? History-Aware Profiles for Student Simulation in Tutoring Dialogues",
+      "url": "http://arxiv.org/abs/2605.30051v1",
+      "source": "ArXiv",
+      "published_at": "2026-05-28T15:02:51Z",
+      "summary": "A key part of developing large language model (LLM)-powered, automated tutoring tools is student simulation, i.e., using LLMs to role-play as students, which can facilitate tutor model evaluation and training. Existing work mostly focuses on within-dialogue simulation, which lacks context on student knowledge and behavior, partly due to not grounding in past student question-answering or dialogue interactions. In this work, we introduce the task of history-conditioned student simulation, where t..."
+    },
+    {
+      "id": "arxiv_2605.30039v1",
+      "title": "ArXiv: Domain-Specific Data Synthesis for LLMs via Minimal Sufficient Representation Learning",
+      "url": "http://arxiv.org/abs/2605.30039v1",
+      "source": "ArXiv",
+      "published_at": "2026-05-28T14:57:02Z",
+      "summary": "Large Language Models have demonstrated remarkable progress in general-purpose capabilities and can achieve strong performance in specific domains through fine-tuning on domain-specific data. However, acquiring high-quality data for target domains remains a significant challenge. Existing data synthesis approaches follow a deductive paradigm, heavily relying on explicit domain descriptions expressed in natural language and careful prompt engineering, limiting their applicability in real-world sc..."
+    },
+    {
+      "id": "arxiv_2605.30038v1",
+      "title": "ArXiv: Alignment-Guided Score Matching for Text-to-Image Alignment in Diffusion Models",
+      "url": "http://arxiv.org/abs/2605.30038v1",
+      "source": "ArXiv",
+      "published_at": "2026-05-28T14:57:01Z",
+      "summary": "Diffusion models generate highly realistic images but often struggle with precise text-image alignment. While recent post-training methods improve alignment using external rewards or human preference signals, their performance heavily depends on reward quality and does not directly address alignment within the diffusion process itself. Recent reward-free approaches such as SoftREPA demonstrate that optimizing soft text tokens via contrastive learning can effectively improve text-image representa..."
+    },
+    {
+      "id": "arxiv_2605.30031v1",
+      "title": "ArXiv: Audio Jailbreaks in Large Audio-Language Models: Taxonomy, Attack-Defense Analysis, and Cost-Aware Evaluation",
+      "url": "http://arxiv.org/abs/2605.30031v1",
+      "source": "ArXiv",
+      "published_at": "2026-05-28T14:53:27Z",
+      "summary": "Large Audio Language Models (LALMs) expand jailbreak risks from token-level prompting to the full speech perception-to-reasoning pipeline, where unsafe behavior can be induced through semantics, acoustic style, signal artifacts, or internal representations. Existing work studies these risks under heterogeneous threat models and evaluation protocols, making it difficult to compare attack practicality or defense utility. This paper provides a unified taxonomy and a controlled empirical evaluation ..."
+    },
+    {
+      "id": "arxiv_2605.30029v1",
+      "title": "ArXiv: RAISE: RAG Design as an Architecture Search Problem",
+      "url": "http://arxiv.org/abs/2605.30029v1",
+      "source": "ArXiv",
+      "published_at": "2026-05-28T14:52:43Z",
+      "summary": "Retrieval-augmented generation (RAG) systems expose numerous design choices spanning query rewriting, chunking, retrieval depth, reranking, and context compression. In practice, these choices are often configured through heuristics, hindering systematic evaluation and reproducibility across settings. We argue that this challenge is best formulated as RAG architecture search. To support controlled and reproducible study of this problem, we introduce the RAG Intelligence Search Engine (RAISE), a c..."
+    },
+    {
+      "id": "arxiv_2605.30022v1",
+      "title": "ArXiv: Give it Space! Explicit Disentangling of Positional and Semantic Representations in Encoders",
+      "url": "http://arxiv.org/abs/2605.30022v1",
+      "source": "ArXiv",
+      "published_at": "2026-05-28T14:42:25Z",
+      "summary": "Positional encoding (PE) underpins how permutation-invariant Transformers represent sequence order, yet how positional information is processed and stored remains poorly understood. Modern PE methods such as RoPE still struggle on tasks such as long-context understanding or retrieval \\cite{chen-etal-2025-hope}. Hence, a better understanding of the internal positional mechanism could help design better PE. Building on evidence that positional and semantic signals occupy nearly orthogonal subspace..."
+    }
+  ]
+}

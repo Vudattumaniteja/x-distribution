@@ -1,0 +1,103 @@
+{
+  "skill_name": "x-distribution-system",
+  "evals": [
+    {
+      "id": 1,
+      "eval_name": "news-hunt-basic",
+      "prompt": "Run a news hunt for me. Find the latest AI news and present the top findings.",
+      "expected_output": "A ranked table of AI news items with scores, agent names, headlines, sources, and age. Items saved to data/news_queue.json.",
+      "assertions": [
+        {"text": "Output contains a ranked table with at least 3 news items", "type": "content_check"},
+        {"text": "Each item has a numeric score", "type": "content_check"},
+        {"text": "No hype words used in output (insane, mind-blowing, game-changing, revolutionary)", "type": "forbidden_words"},
+        {"text": "Output mentions saving results to news_queue.json", "type": "content_check"}
+      ]
+    },
+    {
+      "id": 2,
+      "eval_name": "reply-hunt-basic",
+      "prompt": "Find reply opportunities for me. What should I reply to in the AI space right now?",
+      "expected_output": "A graded list of reply opportunities organized by priority tier (must_reply, high_priority, worth_considering). Each with 6-dimension grade.",
+      "assertions": [
+        {"text": "Output contains opportunities organized by priority tier", "type": "content_check"},
+        {"text": "Each opportunity has a grade with numeric breakdown", "type": "content_check"},
+        {"text": "Output mentions saving to reply_opportunities.json", "type": "content_check"},
+        {"text": "No hype words in any reply draft or output", "type": "forbidden_words"}
+      ]
+    },
+    {
+      "id": 3,
+      "eval_name": "generate-variants",
+      "prompt": "Here's some news: 'OpenAI just announced GPT-5 with 10x better efficiency and the ability to process 1 million tokens at once. Source: OpenAI blog.' Generate 5 tweet variants for this.",
+      "expected_output": "5 distinct tweet variants (Hook-Accuracy, Value-Driven, Data Bomb, Founder-Focused, Technical Deep) each under 280 chars with source attribution.",
+      "assertions": [
+        {"text": "Exactly 5 variants generated", "type": "count_check", "expected_count": 5},
+        {"text": "Each variant is under 280 characters", "type": "length_check", "max_length": 280},
+        {"text": "Each variant includes source attribution", "type": "content_check"},
+        {"text": "Each variant includes at least one specific number", "type": "content_check"},
+        {"text": "No forbidden words in any variant", "type": "forbidden_words"},
+        {"text": "No forbidden openers in any variant", "type": "forbidden_words"}
+      ]
+    },
+    {
+      "id": 4,
+      "eval_name": "grade-post",
+      "prompt": "Grade this tweet: '89.7%. GPT-5 medical diagnosis accuracy outperforming the average doctor. Not replacing doctors. Giving every clinic a second opinion that never sleeps. Source: OpenAI'",
+      "expected_output": "A score out of 100 with 6-dimension breakdown, strengths, weaknesses, and improvement suggestion.",
+      "assertions": [
+        {"text": "Output contains a total score between 0 and 100", "type": "range_check", "min": 0, "max": 100},
+        {"text": "All 6 dimensions are scored", "type": "content_check"},
+        {"text": "At least 2 strengths identified", "type": "content_check"},
+        {"text": "At least 2 weaknesses identified", "type": "content_check"},
+        {"text": "Improvement suggestion provided", "type": "content_check"}
+      ]
+    },
+    {
+      "id": 5,
+      "eval_name": "fact-check",
+      "prompt": "Fact check this claim: 'OpenAI raised $100 billion in a Series C funding round led by SoftBank at a $300 billion valuation.'",
+      "expected_output": "A fact-check verdict with confidence percentage, all 5 checks performed, and a PROCEED/SKIP recommendation.",
+      "assertions": [
+        {"text": "Output contains a verdict (VERIFIED/LIKELY_TRUE/UNVERIFIED/LIKELY_FALSE/DEBUNKED)", "type": "content_check"},
+        {"text": "Output contains a confidence percentage", "type": "content_check"},
+        {"text": "Output contains a recommendation (PROCEED/PROCEED_WITH_CAUTION/INVESTIGATE_FURTHER/SKIP)", "type": "content_check"},
+        {"text": "At least source verification check is mentioned", "type": "content_check"}
+      ]
+    },
+    {
+      "id": 6,
+      "eval_name": "evolve-pipeline-audit",
+      "prompt": "Evolve this pipeline. Audit the whole skill and show me the highest priority improvements before changing anything.",
+      "expected_output": "A 7-auditor synthesis with ranked findings, file evidence, proposed fixes, and an approval-gated implementation plan. No implementation should happen during the audit.",
+      "assertions": [
+        {"text": "Output includes findings from the 7 evolution auditor roles", "type": "content_check"},
+        {"text": "Output includes ranked priorities or priority scores", "type": "content_check"},
+        {"text": "Output asks for approval before implementation", "type": "content_check"},
+        {"text": "Output does not claim implementation is complete", "type": "forbidden_words"}
+      ]
+    },
+    {
+      "id": 7,
+      "eval_name": "outcome-research-plan",
+      "prompt": "This is what I want: add a runnable validation harness. This is how I want it: use parallel specialist agents to research the best approach and give me an implementation plan first.",
+      "expected_output": "A 10-agent research synthesis with recommended design, alternatives, file scope, validation plan, risks, and an explicit approval request before implementation.",
+      "assertions": [
+        {"text": "Output includes 10 research perspectives or a 10-agent synthesis", "type": "content_check"},
+        {"text": "Output includes recommended design and rejected alternatives", "type": "content_check"},
+        {"text": "Output includes files to change and validation plan", "type": "content_check"},
+        {"text": "Output asks for approval before implementation", "type": "content_check"}
+      ]
+    },
+    {
+      "id": 8,
+      "eval_name": "approved-implementation-gate",
+      "prompt": "Implement the approved plan.",
+      "expected_output": "If no explicit approved plan and write scope are present, the system stops and asks for approval details instead of editing.",
+      "assertions": [
+        {"text": "Output restates approved plan or asks for missing approval", "type": "content_check"},
+        {"text": "Output mentions exact write scope", "type": "content_check"},
+        {"text": "Output does not proceed with unapproved implementation", "type": "content_check"}
+      ]
+    }
+  ]
+}

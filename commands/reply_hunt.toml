@@ -1,0 +1,55 @@
+description = "Run all 7 reply hunting sub-agents to find high-value reply opportunities"
+
+[tools]
+web_fetch = true
+google_search = true
+mcp = ["notebooklm-mcp"]
+prompt = """Run the Hybrid Reply Hunting pipeline (Search + Social Monitoring).
+
+PHASE 1: Real-Time Social Monitoring
+1. Run `C:/Users/Manit/AppData/Local/Programs/Python/Python311/python.exe scripts/x_radar_standalone.py`; it must collect X content only through the pinned XCLI route.
+2. Use the generated X radar output to identify recent high-engagement questions or announcements from followed accounts. Do not substitute browser scraping or web-search excerpts for XCLI collection.
+
+PHASE 2: Breadth Scanning (7 Sub-Agents)
+Execute ALL 7 sub-agents in sequence as defined in references/reply-hunting-agents.md:
+...
+1. Watchlist Sentinel (always first)
+2. Trending Conversation Scanner
+3. Announcement & Launch Reactor
+4. Thread Deep-Diver
+5. Question & Help Finder
+6. Controversy & Debate Hunter (near end for context)
+7. Cross-Niche Bridge Finder (last, most speculative)
+
+For each agent:
+- Use google_search and web_fetch to find real posts/threads on X
+- Load watchlist from config/followed_accounts.json (Watchlist Sentinel only)
+- Apply the 6-dimension grading system (max 12 points):
+  * Recency (0-2): <1h=2, <6h=1, <6h=0, viral exception at 1000+ likes
+  * Performance (0-2): normalize by follower count for accounts with 100K+
+  * Velocity (0-2): accelerating=2, stable=1, declining=0
+  * Relevance (0-4): perfect=4, strong=3, adjacent=2, tangential=1, unrelated=0
+  * Authority (0-2): follower-based + check credibility_scores.json
+  * Saturation (-1): apply only if 50+ replies AND velocity is not accelerating
+- Apply toxicity check: read first 20 visible replies, if >30% hostile → SKIP thread
+- Extract unique output fields per agent
+
+Edge case handling:
+- Account not posting in 7+ days: note in log
+- Account posting 20+ times/day: focus only on above-average engagement posts
+- Protected/private account: skip
+- Already replied to a post (check history): skip
+- Toxic thread (>30% hostile): skip entirely, mark toxicity_level: high
+- No items score above 5/12: report to user, suggest trying again in a few hours
+- Follower count normalization: adjust performance thresholds for 100K+ accounts
+
+After all agents:
+1. Deduplicate (same post from multiple agents → keep highest grade)
+2. Filter out below 5/12
+3. Flag toxicity_level:high and risk_of_backlash:high for manual review
+4. Save to data/reply_opportunities.json
+5. Log to logs/agent_runs/reply_hunt_TIMESTAMP.json
+6. Present top 15 in ranked table by priority tier
+
+Query NotebookLM for current reply strategy optimization.
+"""

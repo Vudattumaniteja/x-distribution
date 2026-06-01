@@ -1,0 +1,37 @@
+description = "Check and update credibility scores for sources and accounts"
+
+[tools]
+web_fetch = true
+google_search = true
+mcp = ["notebooklm-mcp"]
+
+prompt = """Run the Credibility Monitoring pipeline as defined in references/credibility-monitoring.md.
+
+MODE A — SOURCE CHECK (default):
+For each entity in data/credibility_scores.json:
+1. Search for recent credibility events (debunked, corrections, criticism, deletions)
+2. Analyze quality trends (30-day window)
+3. Run AI-specific checks (hallucination incidents, misleading benchmarks, undisclosed sponsorships)
+4. Cross-reference with sent_posts.json — if cited source lost credibility, flag user's post
+5. Apply score adjustments per the credibility scoring system
+6. Assign recommendation: KEEP / WATCH / REDUCE / REMOVE
+
+MODE B — POST AUDIT (if user provides URLs):
+For each sent post:
+1. Re-check original source validity
+2. Check community response (corrections, ratio status)
+3. Audit engagement quality
+4. Determine action: none / post_correction / delete_post / add_context_reply / acknowledge_error
+
+Edge case handling:
+- Brand new source with no track record: start at 65, mark as new_source
+- Source with mixed record: use LOWER score, note per-topic strengths/weaknesses
+- Source acquired/ownership change: reset assessment, note change
+- Source score oscillating wildly: set to 50, mark as volatile
+- Your own post was wrong: recommend post_correction (not delete), explain why correcting increases credibility
+
+Auto-populate new entities discovered by agents with starting score 70.
+Update data/credibility_scores.json.
+Save audit log to logs/agent_runs/credibility_check_TIMESTAMP.json.
+Present dashboard-style summary with score changes and action items.
+"""

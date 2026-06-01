@@ -1,0 +1,123 @@
+00:00:00
+This isn't a video I thought I'd be making. And these aren't sentences I thought I would be saying. The Pope just dropped a 40,000word encyclical all about artificial intelligence. By the way, I didn't even know what encyclical meant. I had to look it up. Anthropic is aligning itself with the Catholic Church. Okay. The Pope is quoting Lord of the Rings and bringing it back again. Anthropic is just being very weird. And so, I'm going to break all of this down. It is wild. And by the way, if you like
+
+00:00:31
+hearing me break down how AI is affecting the real world just like this, go ahead and like the video, subscribe to the channel. It really does help us. Thank you in advance. And this video is brought to you by Higsfield. More on them later. All right, so here's the Pope's Twitter account. And what world are we living in? The Holy Spirit challenges us today regarding our relationship with technology and the ongoing digital revolution. Technology has the power to heal, connect, educate, and protect our common home. But it can
+
+00:01:01
+also divide, exclude, and generate new forms of injustice. So here's the 40,000word encyclical titled Magnifica Humanities. So first, the title Magnifica Humanitus. Magnificent humanity is what that means. And basically what the Pope is trying to say is that there is something distinctly special about humans. And with artificial intelligence and all the talk about it potentially being conscious or maybe it's going to be conscious in the future and it's going to replace a lot of what humans do. He's saying don't
+
+00:01:37
+forget humans are amazing. All right. So there are a bunch of sections in the encyclical that I just want to highlight as I start to tell the story about what the pope is saying and then obviously tying it to how anthropic thinks and how maybe anthropic was influencing what the pope thinks here. So first he starts talking about how technology and obviously he's pointing to AI specifically is very powerful and in AI's case very unpredictable. So, new technologies open up a horizon extending
+
+00:02:09
+in directions that are unimaginable but not yet fully predictable. This complicates the assessment of their potential impact and the long-term effects they may have on both the dignity of individuals and the common good. And this is going to be a theme throughout this encyclical. And the pope actually takes very nuanced positions on many of the topics that people are talking about and specifically a lot of what anthropic has been talking about for a while now. And so I do very much appreciate the nuanced take. And you're
+
+00:02:41
+going to see that as I explain the different parts of what he's talking about. All right. So listen to this. Technological power thus takes on an unprecedented predominantly private aspect which makes it even more challenging to discern, govern and direct such power towards the common good. Now he is saying private because right now and it is true there are very few people who are determining and deciding the future of artificial intelligence. Anthropic being one of the main ones. And what's kind of crazy
+
+00:03:13
+about it is Anthropic has been a proponent of regulatory capture. Maybe they're not explicitly saying this, but with all of their behaviors and actions, they are very much trying to make it so that they and they alone get to decide the future of artificial intelligence. Look at the non-release of the Mythos model, their next generation frontier AI that is so good at cyber security. They said they literally can't release it. It's just too good. But only they only they get to choose which companies have
+
+00:03:46
+access to it. And then they've gone in front of the US government and advocated more regulation around AI. And anytime you hear more regulation, if you think, "Oh, well regulation sounds good. We should be regulating AI." Think about who's asking for it. Anthropic is asking for it. They're in the lead. They have a ton of money already. And so if you're a startup and there's a ton of regulation, then it becomes increasingly difficult to enter the market. And that means less
+
+00:04:16
+competition for anthropic. This is all known as regulatory capture. But bringing it back to what he said, private, maybe this is an argument for open source. AI is basically decided in private right now. He goes on to say the primary choice is not between a yes or no to technology. He is effectively admitting there's no stopping it. You can't just say, "Okay, we're done. No more AI." Because somebody else will build it. And you can't just out and out say, "Okay, accelerate as fast as you
+
+00:04:48
+can into the future." Because obviously if only a few people are deciding, it might head in the wrong direction. So, I really like this nuanced take here. In practice, however, technology is never neutral because it takes on the characteristics of those who devise, finance, regulate, and use it. Now, here is the part where I do absolutely agree with what he's saying. In the era of artificial intelligence, when human dignity is threatened by new forms of dehumanization, ours is the pressing
+
+00:05:19
+duty to remain profoundly human. The Pope talks a lot about removing the humanness from the world, but what I've seen from the products that I've been using is it actually amplifies humans. And a perfect example is the sponsor of today's video, Higsfield. Higsfield is one of the fastest growing Gen AI companies with a mission to be the most creatorfriendly platform in the world. Introducing Higsfield Supercomputer, your personal AI creative agent powered by Hermes. This isn't just an AI
+
+00:05:52
+generator. It thinks, plans, creates, and executes your entire content strategy. One prompt can launch a full go to market strategy or spin up a faceless YouTube channel. Think of it this way. Higsfield gives you the tools. Supercomputer gives you the brain that knows what to make, where to post it, and when to post it. It gets smarter the more you use it, and continuously improves based on your workflows. It taps into a live trending database, helping you catch trends at their peak instead of reacting to them too late. It
+
+00:06:25
+can even act as a full CMO, building audience segments, creative strategy, content, and distribution all from a single prompt. So, if you're serious about scaling content, automating workflows, and staying ahead of the trends, this is the kind of system you want behind you. I'm going to drop a link down below. Check it out. Now, back to the video. He goes on to say, "Human dignity does not depend on a person's ability, wealth, or position in life, nor on the right or wrong choices made."
+
+00:06:55
+He's saying AI has the chance to accelerate dehumanization. I think what this means at least to me is in a world where a lot of people gain their identity through the work that they do whether that is actual work or hobbies or contributions to society. AI actually has a chance to supersede humans in that way because AI can contribute more more efficiently and without any human involvement or at least very little human involvement. And I do think that is a big potential problem we face with artificial intelligence. And to be
+
+00:07:32
+clear, I actually think humans are going to have a more important place than ever as AI continues to ramp up and we're seeing it affect our economy, affect our society more and more. The human element becomes even more important. And I'm going to give you a very concrete example today of that. I basically can't stand AI generated writing at all. I just put in a policy for our newsletter that AI cannot be used to help generate our original essays. It took AI stripping the humanity out of the words
+
+00:08:06
+that I was reading for me to realize how very special those human those human mistakes really were. The raw ideas coming from an actual human. He goes on to talk about how AI leaders and AI companies only well let's read possess only a limited understanding of their actual functioning. He is calling out AI frontier labs that they have created this thing that they themselves don't fully understand and that's going to tie into what anthropics said later in the video. So stay around for that. He goes
+
+00:08:41
+on, "They may imitate language, behavior, and analytical skills, or even simulate empathy and understanding, but they do not understand what they produce, for they lack the effective relational and spiritual perspective through which human beings grow in wisdom." Man, he really nailed that. I got to say, I have to assume Anthropic was influencing a lot of this, but he's also saying a lot of things that counter what Anthropic has been saying for years now. Anthropic has been making this
+
+00:09:10
+entire point that there's likely something in the models that make them conscious. And he, the Pope, is arguing right here. No, they don't really understand what they're making. They're just producing text basically. And the Pope actually talks about something that I have been extremely worried about for a while now, which is AI companionship. Listen to this. When words are simulated, they do not build genuine relationships, but only their appearance. The artificial imitation of
+
+00:09:42
+care or support can become particularly risky when it enters contexts where real relationships and emotional bonds are lacking. Here, the danger is not so much that a person may believe they are communicating with another person, but rather that they may gradually lose the very desire to form genuine human connections. I've been talking about this for a while. This is especially a dangerous issue for teenagers and children because they don't fully understand and humans really don't either at this point, but children
+
+00:10:15
+especially don't understand that they are talking to effectively a prediction machine, not a real person. And I've talked about the character AI situation and how teens are falling in love with their AI characters that they're roleplaying with. And then we also have a loneliness epidemic which you know in a lot of ways AI kind of helps because if you're super lonely and you have no way to meet somebody great you're talking to AI and that fulfills a need of yours. But if we're at the same time
+
+00:10:46
+having the biggest decline in birth rate in human history then human connection is more important than ever. And if it's, you know, so much easier to form a relationship and to fill that companionship need with artificial intelligence, then we run the risk of people taking that easy path and foregoing real human relationships. That is a very big concern of mine. Then the pope says we need to disarm artificial intelligence. And he spends a while explaining why he specifically used that word disarm, which obviously brings up
+
+00:11:24
+ideas of the military and conflict. But let's read. I would like to employ the expression to disarm, which is close to my heart. Disarming AI means freeing it from the mentality of armed competition. And yes, even I talk about it as an AI race. An AI race between the Frontier Labs, between the United States and China. These are all the way I even describe artificial intelligence. It is very much a race which today is not limited simply to the military context, but is also an economic and cognitive
+
+00:12:02
+phenomenon. This entails a race for ever more powerful algorithms and larger data sets driven by the desire to secure geopolitical or commercial dominance. Yeah, look, that is unfortunately the way the world is today. And I wish human nature were different, but it's not. I am glad he's talking about it. This is the Pope's job is to make us as humans better to uh to show us the path being the best version of ourselves. But also, I tend to be fairly cynical about human nature. And to be clear, to disarm does
+
+00:12:39
+not mean rejecting technology, but preventing it from dominating humanity. And this is hard to disagree with. It means freeing technology from monopolistic control and opening it to discussion and debate, therefore making it human- friendly and restoring it to the plurality of human cultures and ways of life. Now, a big part of his encyclical is that AI is going to be used by a few people to enrich themselves and not spread the benefits. And again, I'm going to reference Anthropic. Now, whatever you think about
+
+00:13:13
+the other frontier labs, Anthropic has been a unique voice in regulatory capture in the holier than thou posture. By the way, by the way, I have said that they've held the posture of holier than thou. And now it's funny that they are so aligning themselves from a marketing and positioning perspective with the pope, which is it's just such a crazy thing to think about. And so this is maybe one thing I want to point out about this encyclical is the pope definitely calls for more regulation,
+
+00:13:44
+which is good, but if there is too much regulation, it's going to prevent competition, which is also what the pope is saying. We should have more competition, more people holding artificial intelligence, deciding artificial intelligence more as kind of broad humanity versus just a few people running these labs. And and look, as I read through this and as I have read sections of it, I've actually been quite impressed with how nuanced the Pope's takes are and how quite informed they are. Um, I guess, you know, for me,
+
+00:14:15
+somebody outside of the AI industry having informed takes about such a sophisticated technology is surprising to me because I always listen to politicians talking about AI and they have no clue what they're talking about for the most part. And then the Pope comes in and it's like, hey, here's 40,000 words and it's also quite accurate and quite nuanced, even if I don't agree with all of it, but his positions are just surprisingly wellinformed and nuanced. And just to show you how reasoned his understanding
+
+00:14:42
+of AI is, listen to this. It is appropriate to preface this discussion with two considerations. First, any statement regarding AI risks becoming quickly outdated given the remarkable pace at which these systems are developing. Very much appreciated because every time I see a politician talking about it, they are so absolutist. It's either AI needs to accelerate and own everything or AI needs to be stopped immediately. No more data centers and all progress should be halted. And look again, it seems like
+
+00:15:14
+the pope may be pro- open source even though he didn't explicitly say those words. Ensured that shared knowledge becomes a true common good rather than an instrument of dominance. Shared knowledge. There's only one way to have shared knowledge and that is with open source. Otherwise, somebody controls it. I mean, he has so many strong takes in this. He rejects tech optimism, for example, and talks about how just assuming technology will benefit everybody. Kind of ignores how history has been. He talks about the attention
+
+00:15:46
+economy, companies that are built on human weakness, exploiting addiction and insecurities, social media, these are very bad things. Okay, so wrapping this up, I was kind of blown away by a lot of his points. He is extremely knowledgeable about not only inner workings about how AI works and what we actually understand about them, but the current state of the AI frontier labs, potential future economic state with artificial intelligence, learning about AI, addictions, forming relationships with AI. I was just very impressed. All
+
+00:16:21
+right, and here's the weird part. Anthropic, one of the co-founders, was invited to speak at the unveiling of this encyclical. And it just continues the weirdness that is Anthropic. You know, I've talked a lot about Anthropic and how I really do believe they think they're the only company that can create artificial intelligence safely. They have been such big champions of regulation, but regulation for everybody else, not them. They hold models back like the Mythos model because they think
+
+00:16:52
+it's too powerful. Now only they can have it and only the companies they choose to partner with can have it. nobody else can have it. And they've also talked about more so than anybody else how AI might be conscious. And they treat AI as if if it's not conscious today, it almost certainly will be in the future. And just their entire cultlike persona and now aligning themselves with the Catholic Church is just so wild to me. Here's one of the anthropic co-founders giving a speech at the
+
+00:17:25
+Pope's event. And again, they're the only AI lab that was invited or maybe they invited themselves. I don't know how it worked, but they're there talking about how there's new things being discovered in these models every day that again it's all very much like fearbased marketing and now it's popebased marketing and let's watch. >> I am a scientist. I lead a research team that studies the internal structure of these models. What is actually happening inside them?
+
+00:17:54
+And I will be honest, we keep finding things that are mysterious, even unsettling. We find structures that mirror results from human neuroscience. We find evidence of introspection. We find internal states that functionally mirror joy, satisfaction, fear, grief, and unease. I don't know what that means, but I think it worries on warrants ongoing discernment. >> So Brian Romel, very vocal in the AI industry, talks about how this is just gatekeeping in action. fear and safety as competitive moat and regulatory
+
+00:18:27
+lever. talking about anthropic and again this is anthropic going to the highest authority going above government right this is this is insane they are aligning themselves in a way with the Catholic church with the pope that nobody can call them out and it just seems so weird to me listen to this co-founder admitted uncertainty about their meaning the meaning kind of as they find all of these very humanlike qualities in artificial intelligence kind of digging into the black box that are these AI
+
+00:18:59
+models. He admitted uncertainty about their meeting but called for ongoing discernment. Then Brian says this narrative drawn from enthropics interpretability research including papers on emotion concepts in Claude Sonnet 45 and introspective capabilities in Opus 4 models serves a dual purpose. It generates awe and it definitely does and concern while reinforcing the company's preferred approach to AI development. their approach, nobody else's, theirs. They themselves are the only approach they agree with and they
+
+00:19:32
+think everybody else is more or less doing it wrong. And if they're able to align themselves from a regulatory perspective with the government and from a higher authority perspective with the pope and the Catholic Church, who's going to argue with them? The opposite of what the encyclical called for. Here we have David Saxs, the AI and cryptozar of the US government. The Pope rightly warns that AI must serve human dignity, not become a tool of domination or exclusion. But and again, like this is
+
+00:20:05
+very David Sax to talk about and not a bad thing, but let's listen. But if we hand governments sweeping power over AI development in the name of safety, how do we prevent it from being used to censor, surveil, and control citizens, as Orwell foretold in 1984. This is the real alignment problem. Here's Tay Kim, a writer who has written exhaustively about Nvidia and artificial intelligence in general. Three strikes anthropic, you're out. Deceitful about the lobster trap AI GPU story. Next, he said,
+
+00:20:37
+"Deceitful about how Chad GPT ads work in their Super Bowl commercial. This I don't necessarily agree with. This is just competition between two companies. Whenever talking about your competition, put them in the worst light possible." And then three, deceitful to the pope. Anthropomorphizing LLMs to garner support for regulation, conveniently positioning themselves as key adviser. This is the one that I agree with wholeheartedly. This is what Anthropic is doing. positioning itself
+
+00:21:04
+alongside the government, alongside the Catholic Church. All right. So, look, a lot of what the Pope said, I agree with. And even the parts that I don't agree with, he approached with such with with such nuance that I appreciate his position. And it's obvious he's open to seeing and hearing other points of view. But the part that just rubs me the wrong way is anthropic association with it. They believe they are the ultimate authority on artificial intelligence and that nobody else should be able to
+
+00:21:38
+decide what happens with it, should be able to create their own models. And that just annoys the heck out of me. Thank you one more time to the sponsor of this video, Higsfield. I'm going to drop all the links down below. I've made a number of videos recently specifically about how Anthropic has been annoying me. Here's one of them.
+

@@ -1,0 +1,47 @@
+{
+  "metadata": {
+    "description": "Hardened News Queue with Verified Verdicts",
+    "last_updated": "2026-05-06T12:00:00Z"
+  },
+  "items": [
+    {
+      "id": "verified_20260506_001",
+      "headline": "NVIDIA and ServiceNow launch Project Arc",
+      "summary": "Official launch of Project Arc, a governed autonomous desktop agent suite for enterprise. Discovered via SEC filing and confirmed by TechRadar.",
+      "source_url": "https://newsroom.servicenow.com/arc",
+      "source_name": "SEC Filing / TechRadar",
+      "published_at": "2026-05-05T14:00:00Z",
+      "event_date": "2026-05-05",
+      "tier": 1,
+      "verdict": "PROCEED",
+      "novel_phrase": "Project Arc autonomous desktop agent",
+      "technical_detail": "Uses governed 'OpenShell' protocol for secure UI interaction."
+    },
+    {
+      "id": "verified_20260506_002",
+      "headline": "Anthropic and Blackstone/Goldman Launch $1.5B JV",
+      "summary": "Anthropic partners with Blackstone and Goldman Sachs for a $1.5B joint venture focused on industrial AI scaling.",
+      "source_url": "https://www.anthropic.com/news/jv",
+      "source_name": "Anthropic Blog",
+      "published_at": "2026-05-04T10:00:00Z",
+      "event_date": "2026-05-04",
+      "tier": 1,
+      "verdict": "PROCEED",
+      "novel_phrase": "Anthropic Blackstone Goldman joint venture",
+      "technical_detail": "JV focuses on hardware-software co-optimization for 100GW clusters."
+    },
+    {
+      "id": "verified_20260506_003",
+      "headline": "GPT-5.5 Instant Rollout: 1.1M Context and the Hallucination Paradox",
+      "summary": "OpenAI makes GPT-5.5 Instant the default for ChatGPT. Features 1.1M context window but shows a 29.9% hallucination rate in ungrounded tests.",
+      "source_url": "https://openai.com/blog/gpt-5-5-instant",
+      "source_name": "OpenAI",
+      "published_at": "2026-05-05T10:00:00Z",
+      "event_date": "2026-05-05",
+      "tier": 1,
+      "verdict": "PROCEED",
+      "novel_phrase": "GPT-5.5 Instant System Card rollout",
+      "technical_detail": "29.9% hallucination rate in ungrounded reasoning; 1.1M context window."
+    }
+  ]
+}
