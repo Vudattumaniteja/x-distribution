@@ -24,13 +24,13 @@
     "meta-llama/Llama-Prompt-Guard-2-22M"
   ],
   "mistralai": [
+    "mistralai/Mistral-Small-4-119B-2603-NVFP4",
+    "mistralai/Mistral-Small-4-119B-2603",
     "mistralai/Mistral-Medium-3.5-128B",
     "mistralai/Mistral-Medium-3.5-128B-EAGLE",
     "mistralai/Mistral-Small-4-119B-2603-eagle",
-    "mistralai/Mistral-Small-4-119B-2603",
     "mistralai/Leanstral-2603",
     "mistralai/Voxtral-4B-TTS-2603",
-    "mistralai/Mistral-Small-4-119B-2603-NVFP4",
     "mistralai/Voxtral-Mini-4B-Realtime-2602",
     "mistralai/Devstral-Small-2-24B-Instruct-2512",
     "mistralai/Devstral-2-123B-Instruct-2512"

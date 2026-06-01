@@ -1,6 +1,288 @@
 {
-  "last_updated": "2026-05-30T10:46:33.353109+00:00",
+  "last_updated": "2026-06-01T14:52:00.310973+00:00",
   "signals": [
+    {
+      "id": "startup_pandaily_https_pandaily_com_jd_robot_matrix_smart_expo_2026",
+      "title": "JD.com Unveils 'Wolf Pack' Robot Matrix at World Intelligent Industry Expo",
+      "url": "https://pandaily.com/jd-robot-matrix-smart-expo-2026",
+      "source": "Pandaily",
+      "source_region": "china",
+      "source_type": "china_startup_tech",
+      "tier": "tier_2",
+      "published_at": "2026-06-01T08:08:19+00:00",
+      "summary": "JD.com showcased its comprehensive \"Wolf Pack\" robot matrix at the 2026 World Intelligent Industry Expo, covering aerial, ground, and warehouse scenarios, while founder Liu Qiangdong pledged not to lay off any workers displaced by automation.",
+      "signal_type": "Startup Funding Signal",
+      "company": "JD.com",
+      "funding_rounds": [],
+      "funding_amount": null,
+      "lead_investor": null,
+      "ai_keyword_hits": [
+        "automation"
+      ],
+      "startup_keyword_hits": [
+        "startup",
+        "founder"
+      ],
+      "funding_keyword_hits": [
+        "round"
+      ],
+      "product_keyword_hits": [
+        "unveils"
+      ],
+      "relevance_score": 8,
+      "discovery_method": "rss",
+      "discovery_source": "https://pandaily.com/feed/"
+    },
+    {
+      "id": "startup_pandaily_https_pandaily_com_minimax_m3_model_2026",
+      "title": "MiniMax Launches M3 Model With 1M Context and Native Multimodal Capabilities",
+      "url": "https://pandaily.com/minimax-m3-model-2026",
+      "source": "Pandaily",
+      "source_region": "china",
+      "source_type": "china_startup_tech",
+      "tier": "tier_2",
+      "published_at": "2026-06-01T08:03:25+00:00",
+      "summary": "MiniMax released its M3 flagship model, claiming it as the first domestic AI model to combine frontier coding, agentic capabilities, 1M-token context windows, and native multimodal processing in a single architecture.",
+      "signal_type": "Startup Product Signal",
+      "company": "MiniMax",
+      "funding_rounds": [],
+      "funding_amount": null,
+      "lead_investor": null,
+      "ai_keyword_hits": [
+        "ai",
+        "agent",
+        "agentic",
+        "model",
+        "coding"
+      ],
+      "startup_keyword_hits": [
+        "startup"
+      ],
+      "funding_keyword_hits": [],
+      "product_keyword_hits": [
+        "launch",
+        "launches"
+      ],
+      "relevance_score": 10,
+      "discovery_method": "rss",
+      "discovery_source": "https://pandaily.com/feed/"
+    },
+    {
+      "id": "startup_pandaily_https_pandaily_com_om_ai_launches_otto_box_ai_video_creation_assistant_at_beyond_expo_2026",
+      "title": "OmAI Launches OttoBox AI Video Creation Assistant at BEYOND Expo 2026",
+      "url": "https://pandaily.com/om-ai-launches-otto-box-ai-video-creation-assistant-at-beyond-expo-2026",
+      "source": "Pandaily",
+      "source_region": "china",
+      "source_type": "china_startup_tech",
+      "tier": "tier_2",
+      "published_at": "2026-06-01T08:02:44+00:00",
+      "summary": "OmAI unveiled OttoBox, an AI-native video creation assistant powered by its in-house OmModel multimodal model, reducing rough cut editing from 8 hours to 30 minutes.",
+      "signal_type": "Startup Product Signal",
+      "company": "OmAI",
+      "funding_rounds": [],
+      "funding_amount": null,
+      "lead_investor": null,
+      "ai_keyword_hits": [
+        "ai",
+        "model"
+      ],
+      "startup_keyword_hits": [
+        "startup"
+      ],
+      "funding_keyword_hits": [],
+      "product_keyword_hits": [
+        "launch",
+        "launches"
+      ],
+      "relevance_score": 8,
+      "discovery_method": "rss",
+      "discovery_source": "https://pandaily.com/feed/"
+    },
+    {
+      "id": "startup_pandaily_https_pandaily_com_iregene_therapeutics_c1_2026",
+      "title": "iRegene Therapeutics Raises 210M Yuan in Series C1 for AI-Powered Cell Therapy Platform",
+      "url": "https://pandaily.com/iregene-therapeutics-c1-2026",
+      "source": "Pandaily",
+      "source_region": "china",
+      "source_type": "china_startup_tech",
+      "tier": "tier_2",
+      "published_at": "2026-06-01T07:57:53+00:00",
+      "summary": "iRegene Therapeutics completed a 210 million yuan ($29 million) Series C1 financing round to advance its AI-driven chemical induction platform for universal cell therapies targeting age-related diseases.",
+      "signal_type": "Startup Funding Signal",
+      "company": "iRegene Therapeutics",
+      "funding_rounds": [],
+      "funding_amount": "$29 m",
+      "lead_investor": null,
+      "ai_keyword_hits": [
+        "ai"
+      ],
+      "startup_keyword_hits": [
+        "startup",
+        "platform"
+      ],
+      "funding_keyword_hits": [
+        "raises",
+        "raise",
+        "round",
+        "series c"
+      ],
+      "product_keyword_hits": [
+        "platform"
+      ],
+      "relevance_score": 10,
+      "discovery_method": "rss",
+      "discovery_source": "https://pandaily.com/feed/"
+    },
+    {
+      "id": "startup_product_hunt_https_www_producthunt_com_products_mistral_7b",
+      "title": "Mistral Vibe",
+      "url": "https://www.producthunt.com/products/mistral-7b",
+      "source": "Product Hunt",
+      "source_region": "global",
+      "source_type": "product_launch",
+      "tier": "tier_3",
+      "published_at": "2026-06-01T03:25:48+00:00",
+      "summary": "I agent for long-running, multi-step work and coding Discussion | Link",
+      "signal_type": "Startup Product Signal",
+      "company": null,
+      "funding_rounds": [],
+      "funding_amount": null,
+      "lead_investor": null,
+      "ai_keyword_hits": [
+        "agent",
+        "coding"
+      ],
+      "startup_keyword_hits": [],
+      "funding_keyword_hits": [],
+      "product_keyword_hits": [
+        "launch",
+        "product"
+      ],
+      "relevance_score": 6,
+      "discovery_method": "rss",
+      "discovery_source": "https://www.producthunt.com/feed"
+    },
+    {
+      "id": "startup_pandaily_https_pandaily_com_re_dnote_launches_ai_search_assistant_diandian_on_pc",
+      "title": "REDnote Launches AI Search Assistant 'Diandian' on PC",
+      "url": "https://pandaily.com/re-dnote-launches-ai-search-assistant-diandian-on-pc",
+      "source": "Pandaily",
+      "source_region": "china",
+      "source_type": "china_startup_tech",
+      "tier": "tier_2",
+      "published_at": "2026-06-01T02:00:10+00:00",
+      "summary": "RED (Xiaohongshu) officially launched its AI search assistant \"Diandian\" on PC on May 29, accessible directly via a dedicated domain. The AI assistant transform...",
+      "signal_type": "Startup Product Signal",
+      "company": "REDnote",
+      "funding_rounds": [],
+      "funding_amount": null,
+      "lead_investor": null,
+      "ai_keyword_hits": [
+        "ai"
+      ],
+      "startup_keyword_hits": [
+        "startup"
+      ],
+      "funding_keyword_hits": [],
+      "product_keyword_hits": [
+        "launch",
+        "launches",
+        "launched"
+      ],
+      "relevance_score": 7,
+      "discovery_method": "rss",
+      "discovery_source": "https://pandaily.com/feed/"
+    },
+    {
+      "id": "startup_product_hunt_https_www_producthunt_com_products_paint_by_json_an_api_client_for_figma",
+      "title": "Paint By JSON | Figma API Client",
+      "url": "https://www.producthunt.com/products/paint-by-json-an-api-client-for-figma",
+      "source": "Product Hunt",
+      "source_region": "global",
+      "source_type": "product_launch",
+      "tier": "tier_3",
+      "published_at": "2026-05-31T21:45:07+00:00",
+      "summary": "Real API data in your mockups made as easy as lorem ipsum. Discussion | Link",
+      "signal_type": "Startup Product Signal",
+      "company": null,
+      "funding_rounds": [],
+      "funding_amount": null,
+      "lead_investor": null,
+      "ai_keyword_hits": [
+        "data"
+      ],
+      "startup_keyword_hits": [],
+      "funding_keyword_hits": [],
+      "product_keyword_hits": [
+        "launch",
+        "product",
+        "api"
+      ],
+      "relevance_score": 5,
+      "discovery_method": "rss",
+      "discovery_source": "https://www.producthunt.com/feed"
+    },
+    {
+      "id": "startup_product_hunt_https_www_producthunt_com_products_r0y_ai_financial_studio",
+      "title": "R0Y OMNI 1.0",
+      "url": "https://www.producthunt.com/products/r0y-ai-financial-studio",
+      "source": "Product Hunt",
+      "source_region": "global",
+      "source_type": "product_launch",
+      "tier": "tier_3",
+      "published_at": "2026-05-31T19:03:57+00:00",
+      "summary": "Generate more accurate investment dashboards and reports Discussion | Link",
+      "signal_type": "Startup Product Signal",
+      "company": null,
+      "funding_rounds": [],
+      "funding_amount": null,
+      "lead_investor": null,
+      "ai_keyword_hits": [
+        "ai"
+      ],
+      "startup_keyword_hits": [],
+      "funding_keyword_hits": [
+        "investment"
+      ],
+      "product_keyword_hits": [
+        "launch",
+        "product"
+      ],
+      "relevance_score": 6,
+      "discovery_method": "rss",
+      "discovery_source": "https://www.producthunt.com/feed"
+    },
+    {
+      "id": "startup_product_hunt_https_www_producthunt_com_products_typeahead",
+      "title": "Typeahead",
+      "url": "https://www.producthunt.com/products/typeahead",
+      "source": "Product Hunt",
+      "source_region": "global",
+      "source_type": "product_launch",
+      "tier": "tier_3",
+      "published_at": "2026-05-30T23:47:44+00:00",
+      "summary": "AI autocomplete for every app on your Mac Discussion | Link",
+      "signal_type": "Startup Product Signal",
+      "company": null,
+      "funding_rounds": [],
+      "funding_amount": null,
+      "lead_investor": null,
+      "ai_keyword_hits": [
+        "ai"
+      ],
+      "startup_keyword_hits": [
+        "app"
+      ],
+      "funding_keyword_hits": [],
+      "product_keyword_hits": [
+        "launch",
+        "product",
+        "app"
+      ],
+      "relevance_score": 6,
+      "discovery_method": "rss",
+      "discovery_source": "https://www.producthunt.com/feed"
+    },
     {
       "id": "startup_yourstory_https_yourstory_com_2026_05_anthropic_hits_965b_valuation",
       "title": "Anthropic hits $965B valuation; AI complexity plagues Indian companies",
@@ -34,6 +316,35 @@
       "discovery_source": "https://yourstory.com/feed"
     },
     {
+      "id": "startup_product_hunt_https_www_producthunt_com_products_tabstack",
+      "title": "Tabstack Web Research",
+      "url": "https://www.producthunt.com/products/tabstack",
+      "source": "Product Hunt",
+      "source_region": "global",
+      "source_type": "product_launch",
+      "tier": "tier_3",
+      "published_at": "2026-05-29T23:25:35+00:00",
+      "summary": "Run a research agent with cited answers in a single API call Discussion | Link",
+      "signal_type": "Startup Product Signal",
+      "company": null,
+      "funding_rounds": [],
+      "funding_amount": null,
+      "lead_investor": null,
+      "ai_keyword_hits": [
+        "agent"
+      ],
+      "startup_keyword_hits": [],
+      "funding_keyword_hits": [],
+      "product_keyword_hits": [
+        "launch",
+        "product",
+        "api"
+      ],
+      "relevance_score": 5,
+      "discovery_method": "rss",
+      "discovery_source": "https://www.producthunt.com/feed"
+    },
+    {
       "id": "startup_rest_of_world_https_restofworld_org_2026_pope_ai_encyclical_utm_source_rss_utm_medium_rss_utm_campaign_feeds",
       "title": "Pope’s encyclical raises questions on who gets to shape AI",
       "url": "https://restofworld.org/2026/pope-ai-encyclical/?utm_source=rss&utm_medium=rss&utm_campaign=feeds",
@@ -60,35 +371,6 @@
       "relevance_score": 7,
       "discovery_method": "rss",
       "discovery_source": "https://restofworld.org/feed/latest/"
-    },
-    {
-      "id": "startup_product_hunt_https_www_producthunt_com_products_step_3_5_flash",
-      "title": "Step 3.7 Flash",
-      "url": "https://www.producthunt.com/products/step-3-5-flash",
-      "source": "Product Hunt",
-      "source_region": "global",
-      "source_type": "product_launch",
-      "tier": "tier_3",
-      "published_at": "2026-05-29T12:47:02+00:00",
-      "summary": "Flash-speed agents model that can see and act Discussion | Link",
-      "signal_type": "Startup Product Signal",
-      "company": null,
-      "funding_rounds": [],
-      "funding_amount": null,
-      "lead_investor": null,
-      "ai_keyword_hits": [
-        "agent",
-        "model"
-      ],
-      "startup_keyword_hits": [],
-      "funding_keyword_hits": [],
-      "product_keyword_hits": [
-        "launch",
-        "product"
-      ],
-      "relevance_score": 6,
-      "discovery_method": "rss",
-      "discovery_source": "https://www.producthunt.com/feed"
     },
     {
       "id": "startup_techcrunch_startups_https_techcrunch_com_2026_05_29_xcena_secures_135m_at_570m_valuation_betting_on_memory_as_ais_real_bottleneck",
@@ -121,40 +403,6 @@
       "relevance_score": 10,
       "discovery_method": "rss",
       "discovery_source": "https://techcrunch.com/category/startups/feed/"
-    },
-    {
-      "id": "startup_medianama_https_www_medianama_com_2026_05_223_aws_launches_ai_shopping_assistant_retailers_cites_3_5x_higher_conversion_rates",
-      "title": "AWS launches AI shopping assistant for retailers, cites 3.5x higher conversion rates",
-      "url": "https://www.medianama.com/2026/05/223-aws-launches-ai-shopping-assistant-retailers-cites-3-5x-higher-conversion-rates/",
-      "source": "Medianama",
-      "source_region": "india",
-      "source_type": "india_tech_policy",
-      "tier": "tier_2",
-      "published_at": "2026-05-29T10:50:02+00:00",
-      "summary": "AWS has launched its Agentic Shopping Assistant, enabling retailers to deploy AI-powered conversational shopping tools built on Amazon Bedrock within weeks, promising conversion rates 3.5x higher than keyword search. The post AWS launches AI shopping assistant for retailers, cites 3.5x higher conversion rates appeared first on MEDIANAMA .",
-      "signal_type": "Startup Product Signal",
-      "company": "AWS",
-      "funding_rounds": [],
-      "funding_amount": null,
-      "lead_investor": null,
-      "ai_keyword_hits": [
-        "ai",
-        "agent",
-        "agentic"
-      ],
-      "startup_keyword_hits": [
-        "tool"
-      ],
-      "funding_keyword_hits": [],
-      "product_keyword_hits": [
-        "launch",
-        "launches",
-        "launched",
-        "tool"
-      ],
-      "relevance_score": 10,
-      "discovery_method": "rss",
-      "discovery_source": "https://www.medianama.com/feed/"
     },
     {
       "id": "startup_pandaily_https_pandaily_com_zero_zero_robotics_hover_aqua_waterproof_flying_camera_may2026",
@@ -247,37 +495,6 @@
       "relevance_score": 8,
       "discovery_method": "rss",
       "discovery_source": "https://pandaily.com/feed/"
-    },
-    {
-      "id": "startup_medianama_https_www_medianama_com_2026_05_223_meta_launches_paid_plans_instagram_facebook_whatsapp",
-      "title": "Meta launches paid plans for Instagram, Facebook and WhatsApp",
-      "url": "https://www.medianama.com/2026/05/223-meta-launches-paid-plans-instagram-facebook-whatsapp/",
-      "source": "Medianama",
-      "source_region": "india",
-      "source_type": "india_tech_policy",
-      "tier": "tier_2",
-      "published_at": "2026-05-29T08:04:26+00:00",
-      "summary": "Meta has launched paid subscription plans for Instagram Plus, Facebook Plus, and WhatsApp Plus, with AI-focused \"Meta One\" tiers also in testing as the company diversifies revenue beyond advertising. The post Meta launches paid plans for Instagram, Facebook and WhatsApp appeared first on MEDIANAMA .",
-      "signal_type": "Startup Product Signal",
-      "company": "Meta",
-      "funding_rounds": [],
-      "funding_amount": null,
-      "lead_investor": null,
-      "ai_keyword_hits": [
-        "ai"
-      ],
-      "startup_keyword_hits": [
-        "company"
-      ],
-      "funding_keyword_hits": [],
-      "product_keyword_hits": [
-        "launch",
-        "launches",
-        "launched"
-      ],
-      "relevance_score": 7,
-      "discovery_method": "rss",
-      "discovery_source": "https://www.medianama.com/feed/"
     },
     {
       "id": "startup_e27_https_e27_co_anthropics_us65b_cheque_redraws_ai_funding_map_20260529",
@@ -472,35 +689,6 @@
       "discovery_source": "https://technode.com/feed/"
     },
     {
-      "id": "startup_product_hunt_https_www_producthunt_com_products_extract_by_firecrawl",
-      "title": "/monitor by Firecrawl",
-      "url": "https://www.producthunt.com/products/extract-by-firecrawl",
-      "source": "Product Hunt",
-      "source_region": "global",
-      "source_type": "product_launch",
-      "tier": "tier_3",
-      "published_at": "2026-05-28T22:56:59+00:00",
-      "summary": "Notify your AI agent when the web changes Discussion | Link",
-      "signal_type": "Startup Product Signal",
-      "company": null,
-      "funding_rounds": [],
-      "funding_amount": null,
-      "lead_investor": null,
-      "ai_keyword_hits": [
-        "ai",
-        "agent"
-      ],
-      "startup_keyword_hits": [],
-      "funding_keyword_hits": [],
-      "product_keyword_hits": [
-        "launch",
-        "product"
-      ],
-      "relevance_score": 6,
-      "discovery_method": "rss",
-      "discovery_source": "https://www.producthunt.com/feed"
-    },
-    {
       "id": "startup_crunchbase_ai_https_news_crunchbase_com_ai_anthropic_nears_1t_valuation_65b_seriesh",
       "title": "Anthropic Nears $1T Valuation And Leapfrogs OpenAI On Unicorn Board With $65B Funding Round",
       "url": "https://news.crunchbase.com/ai/anthropic-nears-1t-valuation-65b-seriesh/",
@@ -600,45 +788,15 @@
       "discovery_source": "https://techcrunch.com/category/startups/fundraising/feed/"
     },
     {
-      "id": "startup_product_hunt_https_www_producthunt_com_products_ahrefs",
-      "title": "Agent A by Ahrefs",
-      "url": "https://www.producthunt.com/products/ahrefs",
+      "id": "startup_product_hunt_https_www_producthunt_com_products_socialecho",
+      "title": "SocialEcho 2.0",
+      "url": "https://www.producthunt.com/products/socialecho",
       "source": "Product Hunt",
       "source_region": "global",
       "source_type": "product_launch",
       "tier": "tier_3",
-      "published_at": "2026-05-28T15:00:52+00:00",
-      "summary": "The AI Marketing Agent Powered by Ahrefs Data Discussion | Link",
-      "signal_type": "Startup Product Signal",
-      "company": null,
-      "funding_rounds": [],
-      "funding_amount": null,
-      "lead_investor": null,
-      "ai_keyword_hits": [
-        "ai",
-        "agent",
-        "data"
-      ],
-      "startup_keyword_hits": [],
-      "funding_keyword_hits": [],
-      "product_keyword_hits": [
-        "launch",
-        "product"
-      ],
-      "relevance_score": 8,
-      "discovery_method": "rss",
-      "discovery_source": "https://www.producthunt.com/feed"
-    },
-    {
-      "id": "startup_product_hunt_https_www_producthunt_com_products_vibeocus_lens",
-      "title": "Vibeocus Lens",
-      "url": "https://www.producthunt.com/products/vibeocus-lens",
-      "source": "Product Hunt",
-      "source_region": "global",
-      "source_type": "product_launch",
-      "tier": "tier_3",
-      "published_at": "2026-05-28T09:24:39+00:00",
-      "summary": "Bridge your live frontend directly to your AI agent. Discussion | Link",
+      "published_at": "2026-05-27T16:57:27+00:00",
+      "summary": "AI social media copilot for teams and agents Discussion | Link",
       "signal_type": "Startup Product Signal",
       "company": null,
       "funding_rounds": [],
@@ -655,203 +813,6 @@
         "product"
       ],
       "relevance_score": 6,
-      "discovery_method": "rss",
-      "discovery_source": "https://www.producthunt.com/feed"
-    },
-    {
-      "id": "startup_pandaily_https_pandaily_com_moffett_ai_raises_nearly_1_billion_yuan_in_series_c_for_sparse_computing_ai_chips",
-      "title": "Moffett AI Raises Nearly 1 Billion Yuan in Series C for Sparse Computing AI Chips",
-      "url": "https://pandaily.com/moffett-ai-raises-nearly-1-billion-yuan-in-series-c-for-sparse-computing-ai-chips",
-      "source": "Pandaily",
-      "source_region": "china",
-      "source_type": "china_startup_tech",
-      "tier": "tier_2",
-      "published_at": "2026-05-28T08:17:51+00:00",
-      "summary": "Moffett AI, a Chinese AI chip company pioneering sparse computing technology, raised nearly 1 billion yuan in Series C funding to commercialize its SparsePrime computing card.",
-      "signal_type": "Startup Fundraising",
-      "company": "Moffett AI",
-      "funding_rounds": [
-        "series_c"
-      ],
-      "funding_amount": null,
-      "lead_investor": null,
-      "ai_keyword_hits": [
-        "ai"
-      ],
-      "startup_keyword_hits": [
-        "startup",
-        "company"
-      ],
-      "funding_keyword_hits": [
-        "raises",
-        "raised",
-        "raise",
-        "funding",
-        "series c"
-      ],
-      "product_keyword_hits": [],
-      "relevance_score": 10,
-      "discovery_method": "rss",
-      "discovery_source": "https://pandaily.com/feed/"
-    },
-    {
-      "id": "startup_e27_https_e27_co_we_want_things_to_arrive_the_next_day_indiegogos_apac_head_on_why_sea_is_crowdfundings_toughest_market_20260528",
-      "title": "“We want things to arrive the next day”: Indiegogo’s APAC head on why SEA is crowdfunding’s toughest market",
-      "url": "https://e27.co/we-want-things-to-arrive-the-next-day-indiegogos-apac-head-on-why-sea-is-crowdfundings-toughest-market-20260528/",
-      "source": "e27",
-      "source_region": "southeast_asia",
-      "source_type": "asia_startup_news",
-      "tier": "tier_2",
-      "published_at": "2026-05-28T08:14:28+00:00",
-      "summary": "Crowdfunding had a rough adolescence. The early boom years of the 2010s, when Pebble smartwatches and Oculus Rift headsets made the model look like the future of consumer tech fundraising, were followed by an ugly hangover. Scams proliferated, campaigns raised millions and went dark, and backers learned, often the hard way, that backing a product […] The post “We want things to arrive the next day”: Indiegogo’s APAC head on why SEA is crowdfunding’s toughest market appeared first on e27 .",
-      "signal_type": "Startup Funding Signal",
-      "company": null,
-      "funding_rounds": [],
-      "funding_amount": null,
-      "lead_investor": null,
-      "ai_keyword_hits": [
-        "model"
-      ],
-      "startup_keyword_hits": [
-        "startup"
-      ],
-      "funding_keyword_hits": [
-        "raised",
-        "raise",
-        "funding"
-      ],
-      "product_keyword_hits": [
-        "product"
-      ],
-      "relevance_score": 10,
-      "discovery_method": "rss",
-      "discovery_source": "https://e27.co/feed/"
-    },
-    {
-      "id": "startup_pandaily_https_pandaily_com_minimax_m3_llm_sparse_attention_launch_may2026",
-      "title": "MiniMax Prepares to Launch Next-Generation M3 Large Language Model",
-      "url": "https://pandaily.com/minimax-m3-llm-sparse-attention-launch-may2026",
-      "source": "Pandaily",
-      "source_region": "china",
-      "source_type": "china_startup_tech",
-      "tier": "tier_2",
-      "published_at": "2026-05-28T08:12:13+00:00",
-      "summary": "Chinese AI unicorn MiniMax is preparing to launch its M3 large language model featuring a custom sparse attention mechanism, claiming 9.7x prefilling speed improvements.",
-      "signal_type": "Startup Product Signal",
-      "company": null,
-      "funding_rounds": [],
-      "funding_amount": null,
-      "lead_investor": null,
-      "ai_keyword_hits": [
-        "ai",
-        "llm",
-        "model"
-      ],
-      "startup_keyword_hits": [
-        "startup"
-      ],
-      "funding_keyword_hits": [],
-      "product_keyword_hits": [
-        "launch"
-      ],
-      "relevance_score": 9,
-      "discovery_method": "rss",
-      "discovery_source": "https://pandaily.com/feed/"
-    },
-    {
-      "id": "startup_pandaily_https_pandaily_com_rayneo_gt_series_v4_ar_ai_glasses_may2026",
-      "title": "RayNeo Launches First Flagship AR Glasses with 59-Degree FOV and AI Glasses with 0.2s Response",
-      "url": "https://pandaily.com/rayneo-gt-series-v4-ar-ai-glasses-may2026",
-      "source": "Pandaily",
-      "source_region": "china",
-      "source_type": "china_startup_tech",
-      "tier": "tier_2",
-      "published_at": "2026-05-28T03:42:33+00:00",
-      "summary": "RayNeo launches GT series AR glasses (59-degree FOV, 78g at 1,899 yuan) and V4 AI glasses (0.2s response, IP rating) at its May 27 event, claiming global AR glasses market leadership.",
-      "signal_type": "Startup Funding Signal",
-      "company": "RayNeo",
-      "funding_rounds": [],
-      "funding_amount": null,
-      "lead_investor": null,
-      "ai_keyword_hits": [
-        "ai"
-      ],
-      "startup_keyword_hits": [
-        "startup"
-      ],
-      "funding_keyword_hits": [
-        "series a"
-      ],
-      "product_keyword_hits": [
-        "launch",
-        "launches"
-      ],
-      "relevance_score": 8,
-      "discovery_method": "rss",
-      "discovery_source": "https://pandaily.com/feed/"
-    },
-    {
-      "id": "startup_techcrunch_startups_https_techcrunch_com_2026_05_27_triomics_nabs_22m_to_bring_oncology_specific_ai_to_cancer_centers",
-      "title": "Triomics nabs $22M to bring oncology-specific AI to cancer centers",
-      "url": "https://techcrunch.com/2026/05/27/triomics-nabs-22m-to-bring-oncology-specific-ai-to-cancer-centers/",
-      "source": "TechCrunch Startups",
-      "source_region": "global",
-      "source_type": "startup_news",
-      "tier": "tier_1",
-      "published_at": "2026-05-27T21:11:15+00:00",
-      "summary": "The Series B round was led by Battery Ventures.",
-      "signal_type": "Startup Fundraising",
-      "company": "Triomics",
-      "funding_rounds": [
-        "series_b"
-      ],
-      "funding_amount": "$22M",
-      "lead_investor": "Battery Ventures",
-      "ai_keyword_hits": [
-        "ai"
-      ],
-      "startup_keyword_hits": [
-        "startup",
-        "venture"
-      ],
-      "funding_keyword_hits": [
-        "round",
-        "series b",
-        "led by"
-      ],
-      "product_keyword_hits": [],
-      "relevance_score": 10,
-      "discovery_method": "rss",
-      "discovery_source": "https://techcrunch.com/category/startups/feed/"
-    },
-    {
-      "id": "startup_product_hunt_https_www_producthunt_com_products_hyper_11",
-      "title": "Hyper: Self-driving Company Brain",
-      "url": "https://www.producthunt.com/products/hyper-11",
-      "source": "Product Hunt",
-      "source_region": "global",
-      "source_type": "product_launch",
-      "tier": "tier_3",
-      "published_at": "2026-05-27T20:25:45+00:00",
-      "summary": "Turn your AI agents from interns to veterans Discussion | Link",
-      "signal_type": "Startup Product Signal",
-      "company": null,
-      "funding_rounds": [],
-      "funding_amount": null,
-      "lead_investor": null,
-      "ai_keyword_hits": [
-        "ai",
-        "agent"
-      ],
-      "startup_keyword_hits": [
-        "company"
-      ],
-      "funding_keyword_hits": [],
-      "product_keyword_hits": [
-        "launch",
-        "product"
-      ],
-      "relevance_score": 7,
       "discovery_method": "rss",
       "discovery_source": "https://www.producthunt.com/feed"
     },
@@ -938,7 +899,7 @@
       "http_status": 200,
       "feed_entries": 18,
       "items_seen": 18,
-      "items_added": 3,
+      "items_added": 2,
       "parse_warning": false
     },
     {
@@ -1059,7 +1020,7 @@
       "http_status": 200,
       "feed_entries": 20,
       "items_seen": 20,
-      "items_added": 7,
+      "items_added": 9,
       "parse_warning": false
     },
     {
@@ -1136,7 +1097,7 @@
       "http_status": 200,
       "feed_entries": 10,
       "items_seen": 10,
-      "items_added": 2,
+      "items_added": 0,
       "parse_warning": false
     },
     {
@@ -1147,7 +1108,7 @@
       "http_status": 200,
       "feed_entries": 50,
       "items_seen": 30,
-      "items_added": 4,
+      "items_added": 3,
       "parse_warning": false
     },
     {
@@ -1180,7 +1141,7 @@
       "http_status": 200,
       "feed_entries": 50,
       "items_seen": 30,
-      "items_added": 5,
+      "items_added": 6,
       "parse_warning": false
     }
   ]

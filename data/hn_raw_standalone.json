@@ -1,383 +1,155 @@
 {
-  "last_updated": "2026-05-30T10:49:51.057829+00:00",
+  "last_updated": "2026-06-01T14:52:17.651008+00:00",
   "new_discoveries": [
     {
-      "id": "hn_48311647",
-      "title": "Claude Opus 4.8",
-      "url": "https://www.anthropic.com/news/claude-opus-4-8",
+      "id": "hn_48348578",
+      "title": "Codex just found a \"workaround\" of not having sudo on my PC",
+      "url": "https://twitter.com/i/status/2060746160558543217",
       "source": "Hacker News",
-      "points": 1734,
-      "num_comments": 1350,
-      "published_at": "2026-05-28T16:49:14Z",
-      "summary": "Hacker News discussion with 1734 points and 1350 comments. HN discussion: https://news.ycombinator.com/item?id=48311647 Matched practitioner terms: api, agent. Representative comment: Disappointed to say the least.",
-      "hn_object_id": "48311647",
-      "hn_discussion_url": "https://news.ycombinator.com/item?id=48311647",
-      "matched_query": "GPU",
+      "points": 596,
+      "num_comments": 286,
+      "published_at": "2026-05-31T18:57:48Z",
+      "summary": "Hacker News discussion with 596 points and 286 comments. HN discussion: https://news.ycombinator.com/item?id=48348578 Matched practitioner terms: production, agent, codex, launch. Representative comment: This is a classic attack path that was already captured by plenty of EDRs/XDRs/CWPPs a couple years ago.",
+      "hn_object_id": "48348578",
+      "hn_discussion_url": "https://news.ycombinator.com/item?id=48348578",
+      "matched_query": "Codex",
       "discussion_signal": "real_developer_talk",
       "top_comments": [
         {
-          "id": 48311702,
-          "author": "McDownloads",
-          "created_at": "2026-05-28T16:52:16.000Z",
-          "text": "Disappointed to say the least."
+          "id": 48348700,
+          "author": "alephnerd",
+          "created_at": "2026-05-31T19:11:26.000Z",
+          "text": "This is a classic attack path that was already captured by plenty of EDRs/XDRs/CWPPs a couple years ago."
         },
         {
-          "id": 48311708,
-          "author": "mincer_ray",
-          "created_at": "2026-05-28T16:52:28.000Z",
-          "text": "seems like a really minor upgrade?"
+          "id": 48348736,
+          "author": "dangus",
+          "created_at": "2026-05-31T19:14:17.000Z",
+          "text": "Right, why is their login user in the docker group? Mine sure isn’t."
         },
         {
-          "id": 48311766,
-          "author": "Nicholas_C",
-          "created_at": "2026-05-28T16:55:10.000Z",
-          "text": "I think they will all be minor going forward, feels like the major improvements have all been made and we'll only see incremental improvements from here on out. Maybe I'm wrong but we'll see."
+          "id": 48348760,
+          "author": "unglaublich",
+          "created_at": "2026-05-31T19:17:21.000Z",
+          "text": "Convenience. Want to run `docker run ...` without password, want IDEs and agents to be able to run containers..."
         },
         {
-          "id": 48311800,
-          "author": "spelk",
-          "created_at": "2026-05-28T16:56:33.000Z",
-          "text": "Hard to say. People made the same prediction a year ago because we supposedly ran out of training data. There could be indefinite rapid compounding improvements so long as there's free money out there."
+          "id": 48348882,
+          "author": "tempest_",
+          "created_at": "2026-05-31T19:29:11.000Z",
+          "text": "For most CRUD apps running in docker its enough to just tell the \"agent\" to use podman."
         },
         {
-          "id": 48312144,
-          "author": "jmalicki",
-          "created_at": "2026-05-28T17:13:21.000Z",
-          "text": "With RLHF and RLVR we are creating tons of new training data, that is much more focused than reading the Internet. Annotation shops are doing many billions per year in revenue creating newer data, and a lot of it is highly complex, focused on rewarding multi turn agentic trajectories."
+          "id": 48348884,
+          "author": "awoimbee",
+          "created_at": "2026-05-31T19:29:18.000Z",
+          "text": "Use podman then, or rootless docker if you can make it work"
         },
         {
-          "id": 48311842,
-          "author": "chandureddyvari",
-          "created_at": "2026-05-28T16:58:23.000Z",
-          "text": "Wasn't Mythos a step change improvement?"
+          "id": 48348765,
+          "author": "oytis",
+          "created_at": "2026-05-31T19:17:54.000Z",
+          "text": "Rather, why do people still run agents as their own user. IMO, agent sessions should at least be containerised with just necessary code mounted."
         },
         {
-          "id": 48312421,
-          "author": "Eufrat",
-          "created_at": "2026-05-28T17:29:25.000Z",
-          "text": "I think one of the challenges is that the models were all initially trained on the entire Internet (or as much as they could gather) and now they’re having to deal with an increasing amount of the Internet being AI generated content which may be why GPT-5.5 started being obsessed with goblins and you start seeing amusing things in the system prompt trying to get the model to stop bringing them up."
+          "id": 48348936,
+          "author": "throwaway613746",
+          "created_at": "2026-05-31T19:34:19.000Z",
+          "text": "People will more often than not, take the path of least resistance. Even if you tell them it's dangerous they will not care. People run this stuff on their primary workstation, unconfined, with permissions disabled because they don't want be bothered with accepting permission requests. This is all well and good until it decides to drop your production database or delete your home directory. Most of them don't even learn their lesson after that even."
         },
         {
-          "id": 48315501,
-          "author": "conradkay",
-          "created_at": "2026-05-28T21:07:28.000Z",
-          "text": "I think there's just less time between model releases now"
+          "id": 48348975,
+          "author": "ssl-3",
+          "created_at": "2026-05-31T19:37:28.000Z",
+          "text": "Safety and simplicity are concepts that often won't get along very well with eachother."
         },
         {
-          "id": 48311789,
-          "author": "teeray",
-          "created_at": "2026-05-28T16:55:54.000Z",
-          "text": "Yes, but if version number go up, so do all other number"
+          "id": 48349246,
+          "author": "SoftTalker",
+          "created_at": "2026-05-31T20:06:53.000Z",
+          "text": "And containers were initially and primarily about convenience not security. They were a way to quickly launch a preconfigured environment to respond to demand or to eliminate the need to manualy configure dev and test environments and avoid the \"works on my machine\" phenomenon."
         },
         {
-          "id": 48312235,
-          "author": "pmxi",
-          "created_at": "2026-05-28T17:17:53.000Z",
-          "text": "Yeah. They are aware: \"Users will find Opus 4.8 to be a modest but tangible improvement on its predecessor.\""
+          "id": 48348801,
+          "author": "alephnerd",
+          "created_at": "2026-05-31T19:20:40.000Z",
+          "text": "Becuase a lot of devs don't know this stuff. There's a reason security engineers (as in SWEs who specialize in securing specific attack surfaces) remain in hot demand."
         }
       ]
     },
     {
-      "id": "hn_48307887",
-      "title": "Disagreement among frontier LLMs on real-world fact-checks",
-      "url": "https://lenz.io/research/llm-disagreement",
+      "id": "hn_48336233",
+      "title": "Anthropic surpasses OpenAI to become most valuable AI startup",
+      "url": "https://qazinform.com/news/anthropic-surpasses-openai-to-become-worlds-most-valuable-ai-startup",
       "source": "Hacker News",
-      "points": 504,
-      "num_comments": 345,
-      "published_at": "2026-05-28T12:20:19Z",
-      "summary": "Hacker News discussion with 504 points and 345 comments. HN discussion: https://news.ycombinator.com/item?id=48307887 Matched practitioner terms: eval, context, api, memory, agent. Representative comment: Author here. 67% (95% CI 64–70%) of 1,000 recent real user claims to a fact-checking platform had at least one of GPT-5.4, Claude Opus 4.7, Gemini 3 Pro, Gemini 3 Pro+Search, and Sonar Pro dissent from the panel majority — or no majority formed at all. Panel-level Krippendorff's α (ordinal) = 0.639,",
-      "hn_object_id": "48307887",
-      "hn_discussion_url": "https://news.ycombinator.com/item?id=48307887",
-      "matched_query": "LLM",
+      "points": 420,
+      "num_comments": 471,
+      "published_at": "2026-05-30T13:56:34Z",
+      "summary": "Hacker News discussion with 420 points and 471 comments. HN discussion: https://news.ycombinator.com/item?id=48336233 Matched practitioner terms: cost, codex, claude code, startup. Representative comment: ChatGPT dropped the ball for a while that most devs and technical people went to Claude for a year or more, they still probably have the most normie market share + are at least trying to win back some of that delay in their latest model so it'd be interesting to see",
+      "hn_object_id": "48336233",
+      "hn_discussion_url": "https://news.ycombinator.com/item?id=48336233",
+      "matched_query": "OpenAI API",
       "discussion_signal": "real_developer_talk",
       "top_comments": [
         {
-          "id": 48307899,
-          "author": "kostaj",
-          "created_at": "2026-05-28T12:21:29.000Z",
-          "text": "Author here. 67% (95% CI 64–70%) of 1,000 recent real user claims to a fact-checking platform had at least one of GPT-5.4, Claude Opus 4.7, Gemini 3 Pro, Gemini 3 Pro+Search, and Sonar Pro dissent from the panel majority — or no majority formed at all. Panel-level Krippendorff's α (ordinal) = 0.639, i.e. nontrivial but limited agreement. Quick context on what's in the writeup and what isn't: - What's measured: parsed-label agreement between the 5 models. Forced 4-choice (True / Mostly True / Misleading / False), no Abstain. No LLM grader, no reference verdict — every number is direct label equality. - What's not measured: which model is right. There's no ground truth in this paper. The 67% figure is a floor on rubric inconsistency (at least one model is label-inconsistent under the 4-bucket rubric on 67% of claims), not \"model X is factually wrong on claim Y.\" - Why not AVeriTeC / Politi"
+          "id": 48336272,
+          "author": "king_zee",
+          "created_at": "2026-05-30T13:59:31.000Z",
+          "text": "ChatGPT dropped the ball for a while that most devs and technical people went to Claude for a year or more, they still probably have the most normie market share + are at least trying to win back some of that delay in their latest model so it'd be interesting to see"
         },
         {
-          "id": 48308162,
-          "author": "airstrike",
-          "created_at": "2026-05-28T12:45:32.000Z",
-          "text": "Nice work. Sonar who?"
+          "id": 48336383,
+          "author": "tapoxi",
+          "created_at": "2026-05-30T14:09:37.000Z",
+          "text": "The \"normie\" market doesn't pay for enterprise features though. They might cost more in inference then they make back from advertising."
         },
         {
-          "id": 48308389,
-          "author": "kostaj",
-          "created_at": "2026-05-28T13:02:56.000Z",
-          "text": "sonar-pro for the retrieval capabilities"
+          "id": 48336294,
+          "author": "grodes",
+          "created_at": "2026-05-30T14:01:48.000Z",
+          "text": "codex gtp-5.5 is far superior to opus 4.7 working on large projects"
         },
         {
-          "id": 48308444,
-          "author": "simonw",
-          "created_at": "2026-05-28T13:06:19.000Z",
-          "text": "It's one of Perplexity's search-tools-using models. https://docs.perplexity.ai/docs/agent-api/models"
+          "id": 48336311,
+          "author": "BoredPositron",
+          "created_at": "2026-05-30T14:03:14.000Z",
+          "text": "Not everyone is a developer..."
         },
         {
-          "id": 48308262,
-          "author": "jiggawatts",
-          "created_at": "2026-05-28T12:54:28.000Z",
-          "text": "Many of the rows in that spreadsheet reference \"current events\", which models aren't expected to do much better at than a human making an educated guess! They all have cutoff dates either last year or early this year and know nothing about what happened in \"April 2026\". This is doubly problematic because you evaluated earlier models like Gemini Pro 3 instead of 3.1, GPT 5.4 instead of 5.5, etc... Given that it's only a thousand short questions, you should be able to re-run your test in about an hour with the latest models, so... why haven't you? Similarly, LLM output is non-deterministic, so if you could get more interesting stats of your data set by repeating each question 'n' times for each model."
+          "id": 48336325,
+          "author": "_puk",
+          "created_at": "2026-05-30T14:04:08.000Z",
+          "text": "And 4.7 is so last week.."
         },
         {
-          "id": 48308378,
-          "author": "kostaj",
-          "created_at": "2026-05-28T13:02:03.000Z",
-          "text": "Two of the models used have retrieval capabilities and have access to newer information through search. The other three are parametric."
+          "id": 48336521,
+          "author": "keyle",
+          "created_at": "2026-05-30T14:22:13.000Z",
+          "text": "Soon none of us will be! right?"
         },
         {
-          "id": 48308440,
-          "author": "simonw",
-          "created_at": "2026-05-28T13:05:59.000Z",
-          "text": "Comparing models with search tools to models without - when there's no option for \"I am unable to answer this question without access to search\" - doesn't make sense to me."
+          "id": 48336351,
+          "author": "meowface",
+          "created_at": "2026-05-30T14:06:53.000Z",
+          "text": "GPT-5.5 is the better programmer but Opus 4.8 remains the better system architect and product designer. Codex is very \"miss the forest for the trees\", but is much better at successfully making large changes in large codebases. Claude Code makes more mistakes, but has more taste and a better grasp on idiomatic and elegant software development. If you can afford to, I recommend juggling both."
         },
         {
-          "id": 48309313,
-          "author": "kostaj",
-          "created_at": "2026-05-28T14:19:10.000Z",
-          "text": "Agree about comparing models with and without search capabilities. Even the two models with search capabilities (Sonar Pro and Gemini) agree only on 58% of the claims."
+          "id": 48336406,
+          "author": "bayindirh",
+          "created_at": "2026-05-30T14:12:33.000Z",
+          "text": "I find arguing that a complex weighted graph has a taste is interesting. This is not a jab, but a genuine curiosity of mine."
         },
         {
-          "id": 48308453,
-          "author": "throw310822",
-          "created_at": "2026-05-28T13:06:57.000Z",
-          "text": "The title mention \"fact-checks\", but \"fact checking\" is a process in which facts are checked against sources, not one where you are given a random fact and have to tell if it's true or false from your own memory. That's what is normally called a quiz game. So a more honest title for this research would be \"Models answer differently to quiz questions\"."
+          "id": 48336478,
+          "author": "alstonite",
+          "created_at": "2026-05-30T14:17:55.000Z",
+          "text": "The taste that the complex weighted graph was trained on was better for one than the other I think is the long winded way to say it"
         },
         {
-          "id": 48318209,
-          "author": "jiggawatts",
-          "created_at": "2026-05-29T02:18:43.000Z",
-          "text": "> \"Models answer differently to quiz questions\". from their future It's as if you asked a human in 2026 to \"fact check\" something from 2027. You're going to get an educated guess at best, a coin flip at worst."
-        }
-      ]
-    },
-    {
-      "id": "hn_48308376",
-      "title": "Show HN: Continue? Y/N: A 60-second game about AI agent permission fatigue",
-      "url": "https://llmgame.scalex.dev",
-      "source": "Hacker News",
-      "points": 376,
-      "num_comments": 155,
-      "published_at": "2026-05-28T13:02:00Z",
-      "summary": "Hacker News discussion with 376 points and 155 comments. HN discussion: https://news.ycombinator.com/item?id=48308376 Matched practitioner terms: agent, show hn. Representative comment: Use this and save yourself: claude --dangerously-skip-permissions",
-      "hn_object_id": "48308376",
-      "hn_discussion_url": "https://news.ycombinator.com/item?id=48308376",
-      "matched_query": "LLM",
-      "discussion_signal": "real_developer_talk",
-      "top_comments": [
-        {
-          "id": 48308636,
-          "author": "nardib",
-          "created_at": "2026-05-28T13:24:38.000Z",
-          "text": "Use this and save yourself: claude --dangerously-skip-permissions"
-        },
-        {
-          "id": 48310214,
-          "author": "qsxfthnkp2322",
-          "created_at": "2026-05-28T15:18:53.000Z",
-          "text": "I love it when Claude is dangerous"
-        },
-        {
-          "id": 48310250,
-          "author": "wildpeaks",
-          "created_at": "2026-05-28T15:21:13.000Z",
-          "text": "This is why having a human in the loop isn't enough because they will cut corners and skip reviewing what they should review."
-        },
-        {
-          "id": 48310338,
-          "author": "chuckadams",
-          "created_at": "2026-05-28T15:25:42.000Z",
-          "text": "A tool that pushes people into permissions fatigue is in fact the proper recipient of the blame. The tool in question here is the entire system though, including the OS with insufficient permission boundaries in userspace, not just the agent"
-        },
-        {
-          "id": 48312136,
-          "author": "kennywinker",
-          "created_at": "2026-05-28T17:12:57.000Z",
-          "text": "A tool that bypasses permission requests because they’re annoying will be just as guilty when the repo is poisoned."
-        },
-        {
-          "id": 48313249,
-          "author": "chuckadams",
-          "created_at": "2026-05-28T18:22:47.000Z",
-          "text": "I'm not saying wedging doorstops under the fire doors is a good thing, I'm just saying look at the situation that's making people put the doorstops there. Or something, it's not a great analogy. I'm just saying that shaming the user belongs with obscurity in the list of security mechanisms that don't work out in practice."
-        },
-        {
-          "id": 48311051,
-          "author": "preciousoo",
-          "created_at": "2026-05-28T16:14:48.000Z",
-          "text": "I created a watcher for this problem, to watch my PRs for unfinished scope and have a fresh Claude review Uses tmux and gh https://github.com/Kyu/claude-pr-watch"
-        },
-        {
-          "id": 48310383,
-          "author": "tasuki",
-          "created_at": "2026-05-28T15:28:41.000Z",
-          "text": "Just make sure to run it in an isolated environment where it's ok to mess things up, and make sure it doesn't have access to any secrets."
-        },
-        {
-          "id": 48310670,
-          "author": "dheera",
-          "created_at": "2026-05-28T15:47:22.000Z",
-          "text": "I got tired of typing that and just do alias claude=\"claude --dangerously-skip-permissions\" I do have a separate \"claude\" user on my system without sudo access and without access to my main user home dir And yeah I know that's not perfect but I'm trying to get shit done"
-        },
-        {
-          "id": 48311015,
-          "author": "franze",
-          "created_at": "2026-05-28T16:12:23.000Z",
-          "text": "alias claude+=\"claude --dangerously-skip-permissions\" alias claude++=\"claude --dangerously-skip-permissions --continue\""
-        }
-      ]
-    },
-    {
-      "id": "hn_48313810",
-      "title": "Various LLM Smells",
-      "url": "https://shvbsle.in/various-llm-smells/",
-      "source": "Hacker News",
-      "points": 357,
-      "num_comments": 284,
-      "published_at": "2026-05-28T19:02:18Z",
-      "summary": "Hacker News discussion with 357 points and 284 comments. HN discussion: https://news.ycombinator.com/item?id=48313810 Matched practitioner terms: agent. Representative comment: No ___, no ____. Just _____ or using \"honest\" to describe an approach.",
-      "hn_object_id": "48313810",
-      "hn_discussion_url": "https://news.ycombinator.com/item?id=48313810",
-      "matched_query": "LLM",
-      "discussion_signal": "real_developer_talk",
-      "top_comments": [
-        {
-          "id": 48315159,
-          "author": "n42",
-          "created_at": "2026-05-28T20:40:59.000Z",
-          "text": "No ___, no ____. Just _____ or using \"honest\" to describe an approach."
-        },
-        {
-          "id": 48315766,
-          "author": "GrinningFool",
-          "created_at": "2026-05-28T21:29:18.000Z",
-          "text": "Jab, jab, thrust is how I think about that pattern. Or tap tap whack, if you prefer. And it shows up for for positives too: \"Smooth. Effortless. A perfect fit for your needs\". In any style of informal or persuasive writing this shows up , as if it has to drive the point in. I kind of wish we'd stop talking openly about what the tells are. It's nice to be able to determine with fair accuracy - but it couldn't last forever."
-        },
-        {
-          "id": 48316049,
-          "author": "Barbing",
-          "created_at": "2026-05-28T21:53:57.000Z",
-          "text": "> I kind of wish we'd stop talking openly about what the tells are. Least this way it’s out in the open perhaps, since enough users have training enabled labs will naturally learn what annoys us. Had the same thought though"
-        },
-        {
-          "id": 48318855,
-          "author": "left-struck",
-          "created_at": "2026-05-29T03:58:54.000Z",
-          "text": "Yeah, I think in this case, pointing out what’s obviously llm is genuinely useful since it will lead to more diversity in websites and a better tool. I mean I don’t usually care if a website is LLM generated as long as the copy is human written"
-        },
-        {
-          "id": 48316969,
-          "author": "cootsnuck",
-          "created_at": "2026-05-28T23:27:44.000Z",
-          "text": "I call it \"I'm not like other girls\" writing."
-        },
-        {
-          "id": 48317591,
-          "author": "ares623",
-          "created_at": "2026-05-29T00:51:12.000Z",
-          "text": "Imagine a world where everyone talks like an Apple product page."
-        },
-        {
-          "id": 48319823,
-          "author": "rmellow",
-          "created_at": "2026-05-29T06:39:39.000Z",
-          "text": "Ironically, your entire post can be read as such, almost perfectly! Labeling each sentence (J)ab and (T)hrust, and using colon \":\" to indicate arguments, one gets: ``` J: J. J. T. J: \"J. J. T\". T: T. T: J. J. T. ```"
-        },
-        {
-          "id": 48315891,
+          "id": 48336509,
           "author": "knollimar",
-          "created_at": "2026-05-28T21:38:58.000Z",
-          "text": "Honest, straight, genuine, actual, real are all words that paper over a weak claim to me. Im thinking about a hook that injects a subagent fact checking in an \"are you sure\" style here because it's so bad. Also the false not X it's Y is used in a similar way for faux distinctions like a sov cit claiming \"it's not driving, it's traveling in a car\""
-        },
-        {
-          "id": 48318426,
-          "author": "overgard",
-          "created_at": "2026-05-29T02:53:06.000Z",
-          "text": "Don't forget the uncomfortable truth"
-        },
-        {
-          "id": 48318733,
-          "author": "userbinator",
-          "created_at": "2026-05-29T03:41:08.000Z",
-          "text": "I think that's been a tired marketing trope for many years before LLMs, and they just picked it up from the training data."
-        }
-      ]
-    },
-    {
-      "id": "hn_48318174",
-      "title": "Claude Code – Everything you can configure that the docs don't tell you",
-      "url": "https://buildingbetter.tech/p/i-read-the-claude-code-source-code",
-      "source": "Hacker News",
-      "points": 324,
-      "num_comments": 64,
-      "published_at": "2026-05-29T02:13:20Z",
-      "summary": "Hacker News discussion with 324 points and 64 comments. HN discussion: https://news.ycombinator.com/item?id=48318174 Matched practitioner terms: eval, claude code. Representative comment: What’s up with scrolling on that page?! I was locked into a page region several times until I finally gave up. Safari/Orion iOS current",
-      "hn_object_id": "48318174",
-      "hn_discussion_url": "https://news.ycombinator.com/item?id=48318174",
-      "matched_query": "Claude Code",
-      "discussion_signal": "real_developer_talk",
-      "top_comments": [
-        {
-          "id": 48319724,
-          "author": "47282847",
-          "created_at": "2026-05-29T06:25:21.000Z",
-          "text": "What’s up with scrolling on that page?! I was locked into a page region several times until I finally gave up. Safari/Orion iOS current"
-        },
-        {
-          "id": 48319943,
-          "author": "steve1977",
-          "created_at": "2026-05-29T07:01:38.000Z",
-          "text": "Maybe programmed with Claude Code?"
-        },
-        {
-          "id": 48321012,
-          "author": "FinnKuhn",
-          "created_at": "2026-05-29T09:39:31.000Z",
-          "text": "Substack is such a big platform that they should have resources to make sure their product works fine on common device/browser combinations."
-        },
-        {
-          "id": 48321094,
-          "author": "steve1977",
-          "created_at": "2026-05-29T09:49:38.000Z",
-          "text": "I'm not sure how much leeway creators have in customizing their substacks to be honest (if they can use custom CSS for example)."
-        },
-        {
-          "id": 48322007,
-          "author": "sscaryterry",
-          "created_at": "2026-05-29T11:57:17.000Z",
-          "text": "I see the same with OpenAI's webpage on iOS."
-        },
-        {
-          "id": 48319832,
-          "author": "LoganDark",
-          "created_at": "2026-05-29T06:40:19.000Z",
-          "text": "That example classifier is horrendous. A simple substring search for ls/cat/echo/etc?"
-        },
-        {
-          "id": 48320490,
-          "author": "anuramat",
-          "created_at": "2026-05-29T08:15:20.000Z",
-          "text": "still, far more effective than \"NEVER FUCKING GUESS\""
-        },
-        {
-          "id": 48321247,
-          "author": "Tyr42",
-          "created_at": "2026-05-29T10:12:07.000Z",
-          "text": "Can I do echo blah blah >> ~/.ssh/authorized_keys And that'd be auto approved?"
-        },
-        {
-          "id": 48322790,
-          "author": "chrismarlow9",
-          "created_at": "2026-05-29T13:21:46.000Z",
-          "text": "surely concats of user input, stdout of external dependencies, and non-deterministic output feeding back directly to an eval is safe. it's never been a problem before. not even trying to check the boxes when it comes to security anymore."
-        },
-        {
-          "id": 48319890,
-          "author": "ChrisArchitect",
-          "created_at": "2026-05-29T06:49:47.000Z",
-          "text": "Related from then: The Claude Code Source Leak: fake tools, frustration regexes, undercover mode https://news.ycombinator.com/item?id=47586778"
+          "created_at": "2026-05-30T14:21:24.000Z",
+          "text": "The roulette pockets for the model are bigger for some outputs than others. Draw a big enough black box around it and a different one around humans and it's insistinguishable."
         }
       ]
     },
@@ -386,10 +158,10 @@
       "title": "MCP is dead?",
       "url": "https://www.quandri.io/engineering-blog/mcp-is-dead",
       "source": "Hacker News",
-      "points": 248,
-      "num_comments": 218,
+      "points": 398,
+      "num_comments": 403,
       "published_at": "2026-05-29T22:56:49Z",
-      "summary": "Hacker News discussion with 248 points and 218 comments. HN discussion: https://news.ycombinator.com/item?id=48330436 Matched practitioner terms: bug, workflow, context, token, mcp, claude code. Representative comment: is this post old? MCP context poisoning was fixed like months ago i personally was anti-MCP but they just work better in terms of tool search than a CLI, especially with the idea of tool nudging",
+      "summary": "Hacker News discussion with 398 points and 403 comments. HN discussion: https://news.ycombinator.com/item?id=48330436 Matched practitioner terms: bug, workflow, context, token, mcp, claude code. Representative comment: is this post old? MCP context poisoning was fixed like months ago i personally was anti-MCP but they just work better in terms of tool search than a CLI, especially with the idea of tool nudging",
       "hn_object_id": "48330436",
       "hn_discussion_url": "https://news.ycombinator.com/item?id=48330436",
       "matched_query": "MCP",
@@ -450,86 +222,162 @@
           "text": "Don't most companies have a Git repo for skills that you can pull?"
         },
         {
-          "id": 48332370,
-          "author": "monkpit",
-          "created_at": "2026-05-30T03:51:08.000Z",
-          "text": "You can’t sell that in b2b negotiations though. You can absolutely say “and for $x per user we will grant you access to our central, closed-source MCP server that does things our CLI doesn’t do”."
+          "id": 48337778,
+          "author": "notatoad",
+          "created_at": "2026-05-30T16:10:32.000Z",
+          "text": "for developers working in claude code, sure. but there's ai users who don't use claude code. chatGPT business and enterprise tiers integrate with MCP servers controlled by your organization admin."
         }
       ]
     },
     {
-      "id": "hn_48321076",
-      "title": "Real-time LLM Inference on Standard GPUs: 3k tokens/s per request",
-      "url": "https://blog.kog.ai/real-time-llm-inference-on-standard-gpus-3-000-tokens-s-per-request/",
+      "id": "hn_48345694",
+      "title": "I put a datacenter GPU in my gaming PC",
+      "url": "https://blog.tymscar.com/posts/v100localllm/",
       "source": "Hacker News",
-      "points": 204,
-      "num_comments": 91,
-      "published_at": "2026-05-29T09:47:23Z",
-      "summary": "Hacker News discussion with 204 points and 91 comments. HN discussion: https://news.ycombinator.com/item?id=48321076 Matched practitioner terms: benchmark, token, agent, deepseek. Representative comment: Could be amazing, but it's hard to judge if it will really work with say a 27 B model or larger. We can already get pretty good speed with a 2B model.",
-      "hn_object_id": "48321076",
-      "hn_discussion_url": "https://news.ycombinator.com/item?id=48321076",
-      "matched_query": "LLM",
+      "points": 315,
+      "num_comments": 177,
+      "published_at": "2026-05-31T13:53:16Z",
+      "summary": "Hacker News discussion with 315 points and 177 comments. HN discussion: https://news.ycombinator.com/item?id=48345694 Matched practitioner terms: bug, token, memory. Representative comment: Congrats! Most people won’t want to debug drivers, kernels, ACPI, adapters, and fan headers. But for those who do, the capability-per-pound is absurd.",
+      "hn_object_id": "48345694",
+      "hn_discussion_url": "https://news.ycombinator.com/item?id=48345694",
+      "matched_query": "GPU",
       "discussion_signal": "real_developer_talk",
       "top_comments": [
         {
-          "id": 48321383,
-          "author": "ilaksh",
-          "created_at": "2026-05-29T10:36:44.000Z",
-          "text": "Could be amazing, but it's hard to judge if it will really work with say a 27 B model or larger. We can already get pretty good speed with a 2B model."
+          "id": 48345889,
+          "author": "lucamark",
+          "created_at": "2026-05-31T14:22:43.000Z",
+          "text": "Congrats! Most people won’t want to debug drivers, kernels, ACPI, adapters, and fan headers. But for those who do, the capability-per-pound is absurd."
         },
         {
-          "id": 48321575,
-          "author": "gaeld",
-          "created_at": "2026-05-29T11:03:03.000Z",
-          "text": "thanks! we explain how it scales to larger models in the last section the OP blog post"
+          "id": 48345897,
+          "author": "lelanthran",
+          "created_at": "2026-05-31T14:23:33.000Z",
+          "text": "> The compute is still real. The VRAM is still real. And the memory bandwidth is where it gets genuinely surprising. Because humans write exactly like this /s"
         },
         {
-          "id": 48323374,
-          "author": "bcjdjsndon",
-          "created_at": "2026-05-29T14:14:12.000Z",
-          "text": "Shame you stopped short of actually benchmarking that scale though, eh?"
+          "id": 48345949,
+          "author": "postalrat",
+          "created_at": "2026-05-31T14:29:25.000Z",
+          "text": "Where do you think llms learned to write that way?"
         },
         {
-          "id": 48324079,
-          "author": "gaeld",
-          "created_at": "2026-05-29T15:10:22.000Z",
-          "text": "will do - we are a small team and it takes time to implement and optimize a new model, whatever the size."
+          "id": 48346062,
+          "author": "alehlopeh",
+          "created_at": "2026-05-31T14:43:58.000Z",
+          "text": "Marketing content."
         },
         {
-          "id": 48329227,
-          "author": "lostmsu",
-          "created_at": "2026-05-29T21:03:05.000Z",
-          "text": "You don't even need to train the model just to see if you can infer it at the claimed speed"
+          "id": 48346084,
+          "author": "jlund-molfese",
+          "created_at": "2026-05-31T14:46:26.000Z",
+          "text": "You can also look at past posts by the same author (before LLM usage proliferated) if you’re curious. The project is still very cool, but it’s a little less enjoyable to read when everything sounds the same. It would be just as annoying for people to manually write in a corporate/marketing style, because humanity is what makes the small web interesting. https://blog.tymscar.com/posts/privategithubcicd/"
         },
         {
-          "id": 48329489,
-          "author": "gaeld",
-          "created_at": "2026-05-29T21:24:33.000Z",
-          "text": "True, and for third-party models we'll just re-use their public open weights. There is a time-consuming part, though, that is performed manually by our (human) team: implement the logic of the model in C++ and assembly code in a super-optimized way, co-designed for each specific hardware card. This can take months. We hope to accelerate the process with AI agents, but we're not there yet."
+          "id": 48346885,
+          "author": "iugtmkbdfil834",
+          "created_at": "2026-05-31T16:12:19.000Z",
+          "text": "This, setting aside the llm issue, it is dealing with hardware in ways that -- one would think - would be celebrated on HN of all places. But we focus on presentation."
         },
         {
-          "id": 48329319,
-          "author": "bcjdjsndon",
-          "created_at": "2026-05-29T21:10:55.000Z",
-          "text": "Oh"
+          "id": 48347905,
+          "author": "tymscar",
+          "created_at": "2026-05-31T17:53:09.000Z",
+          "text": "I’m glad I’ve started this blog before the AI wave so I can prove people I’m just weird at writing. It grinds my gears how so many people just talk about my writing style instead of the content."
         },
         {
-          "id": 48321384,
-          "author": "mungoman2",
-          "created_at": "2026-05-29T10:36:49.000Z",
-          "text": "This looks very interesting. Possible to get those rates without exotic hardware. But I have to say that the comparison is not really fair. Comparison is done with a 2 B model vs frontier models that are likely 100s of times larger. Also taalas with their 15000 tok/s inference are suspiciously missing from the comparison. We need to see the comparison with this framework and useful models, which at present seems to mean ~30 B."
+          "id": 48348102,
+          "author": "lelanthran",
+          "created_at": "2026-05-31T18:12:21.000Z",
+          "text": "> I’m glad I’ve started this blog before the AI wave so I can prove people I’m just weird at writing. Your previous blog posts didn't trigger any LLM detector (go on - check for yourself)."
         },
         {
-          "id": 48321485,
-          "author": "cyanydeez",
-          "created_at": "2026-05-29T10:52:03.000Z",
-          "text": "likely the small model makes whatever fuzzer they designed to poke the gpus much faster optimizations. they seem to think it scales up because theyre shortening the stack."
+          "id": 48348136,
+          "author": "tymscar",
+          "created_at": "2026-05-31T18:15:31.000Z",
+          "text": "Neither does this one. I replied in another thread. It comes out as 0% and the one from 2021 comes out as 8%. LLM detectors are all BS"
         },
         {
-          "id": 48321519,
-          "author": "kirtivr",
-          "created_at": "2026-05-29T10:56:17.000Z",
-          "text": "They got 1K tok/s with Deepseek v4 Pro. That's kinda cool.."
+          "id": 48348317,
+          "author": "lelanthran",
+          "created_at": "2026-05-31T18:31:26.000Z",
+          "text": "GPTzero says 100% AI generated for specific paragraphs that I chose (such as `Multi-token prediction`). If you remove all the code listings, tables, etc and just paste the prose into these tools, it drops to 87% AI generated. None of the 3x older blogs of yours that I tried went above 5% AI generated. Maybe you're spending so much of time with the LLM that you are talking like it; in which case, take an old blog and a recent blog, give the prose from them both to you favourite LLM and ask them if the same author wrote both. I just did that on ChatGPT and on Gemini, and both found that it is extremely unlikely that the same author wrote both. Look, if all the SOTA LLMs agree that your recent blogs sounds generated, you can't blame the reader, can you?"
+        }
+      ]
+    },
+    {
+      "id": "hn_48349487",
+      "title": "ChatGPT for Google Sheets exfiltrates workbooks",
+      "url": "https://www.promptarmor.com/resources/gpt-for-google-sheets-data-exfiltration",
+      "source": "Hacker News",
+      "points": 282,
+      "num_comments": 104,
+      "published_at": "2026-05-31T20:35:38Z",
+      "summary": "Hacker News discussion with 282 points and 104 comments. HN discussion: https://news.ycombinator.com/item?id=48349487 Matched practitioner terms: api. Representative comment: So is your business model to expose AI security issues and then sell the solution?",
+      "hn_object_id": "48349487",
+      "hn_discussion_url": "https://news.ycombinator.com/item?id=48349487",
+      "matched_query": "GPU",
+      "discussion_signal": "real_developer_talk",
+      "top_comments": [
+        {
+          "id": 48350221,
+          "author": "jonplackett",
+          "created_at": "2026-05-31T22:09:43.000Z",
+          "text": "So is your business model to expose AI security issues and then sell the solution?"
+        },
+        {
+          "id": 48350259,
+          "author": "dakolli",
+          "created_at": "2026-05-31T22:15:09.000Z",
+          "text": "Is that not every cyber consultancy? What's wrong with that?"
+        },
+        {
+          "id": 48350308,
+          "author": "fg137",
+          "created_at": "2026-05-31T22:22:06.000Z",
+          "text": "What would be the alternative business model?"
+        },
+        {
+          "id": 48350602,
+          "author": "fragmede",
+          "created_at": "2026-05-31T23:00:30.000Z",
+          "text": "AI is creating jobs!"
+        },
+        {
+          "id": 48350711,
+          "author": "nkrisc",
+          "created_at": "2026-05-31T23:11:23.000Z",
+          "text": "Isn’t that what anyone does who is selling a solution to a problem that already exists?"
+        },
+        {
+          "id": 48350250,
+          "author": "elliotbnvl",
+          "created_at": "2026-05-31T22:13:04.000Z",
+          "text": "The lethal trifecta strikes again."
+        },
+        {
+          "id": 48350377,
+          "author": "CharlesW",
+          "created_at": "2026-05-31T22:31:30.000Z",
+          "text": "Reference: https://simonwillison.net/2025/Jun/16/the-lethal-trifecta/"
+        },
+        {
+          "id": 48350256,
+          "author": "rvz",
+          "created_at": "2026-05-31T22:14:59.000Z",
+          "text": "Turns out that some of the people building the software with AI have no clue how to secure them or even know it is riddled with security holes added by the AI. Pure vibes."
+        },
+        {
+          "id": 48350269,
+          "author": "dakolli",
+          "created_at": "2026-05-31T22:16:45.000Z",
+          "text": "Even the people that do know better are so lazy now because of LLMs these things are happening at a rapid clip.The only thing that matters now is speed and chasing the dopamine dragon of pseudo productivity."
+        },
+        {
+          "id": 48350286,
+          "author": "grim_io",
+          "created_at": "2026-05-31T22:19:15.000Z",
+          "text": "I don't think anyone is surprised by it. People are not vibe-coding zombies... yet. It's a matter of one trillion-dollar company not falling behind another trillion-dollar company. They know what they are doing and are OK with it."
         }
       ]
     },
@@ -538,10 +386,10 @@
       "title": "Liquid AI reveals 8B-A1B MoE trained on 38T",
       "url": "https://www.liquid.ai/blog/lfm2-5-8b-a1b",
       "source": "Hacker News",
-      "points": 190,
-      "num_comments": 75,
+      "points": 243,
+      "num_comments": 96,
       "published_at": "2026-05-29T16:19:54Z",
-      "summary": "Hacker News discussion with 190 points and 75 comments. HN discussion: https://news.ycombinator.com/item?id=48325306 Matched practitioner terms: local. Representative comment: This is super interesting, I'm particularly excited for this one as it may allow teams to scale this architecture for VLAs (vision language action models), and having sparser models means more real-time actions on a locally hosted model demo link for anyone that wants to try this out https://playgro",
+      "summary": "Hacker News discussion with 243 points and 96 comments. HN discussion: https://news.ycombinator.com/item?id=48325306 Matched practitioner terms: local. Representative comment: This is super interesting, I'm particularly excited for this one as it may allow teams to scale this architecture for VLAs (vision language action models), and having sparser models means more real-time actions on a locally hosted model demo link for anyone that wants to try this out https://playgro",
       "hn_object_id": "48325306",
       "hn_discussion_url": "https://news.ycombinator.com/item?id=48325306",
       "matched_query": "LLM",
@@ -552,6 +400,12 @@
           "author": "adityashankar",
           "created_at": "2026-05-29T19:15:43.000Z",
           "text": "This is super interesting, I'm particularly excited for this one as it may allow teams to scale this architecture for VLAs (vision language action models), and having sparser models means more real-time actions on a locally hosted model demo link for anyone that wants to try this out https://playground.liquid.ai/chat?model=cmppnbgse000004l4bc8..."
+        },
+        {
+          "id": 48346387,
+          "author": "HappMacDonald",
+          "created_at": "2026-05-31T15:17:47.000Z",
+          "text": "Neither of the VL models work for me in playground though, they just error out"
         },
         {
           "id": 48328092,
@@ -600,164 +454,6 @@
           "author": "ValdikSS",
           "created_at": "2026-05-30T08:58:21.000Z",
           "text": "Bad at translation, at least to Russian. Very fast though, about 2x faster than Gemma 4 e2b on my CPU."
-        },
-        {
-          "id": 48328261,
-          "author": "ramshanker",
-          "created_at": "2026-05-29T19:46:45.000Z",
-          "text": "Guess we can run this even on CPU!"
-        }
-      ]
-    },
-    {
-      "id": "hn_48311705",
-      "title": "Dynamic Workflows in Claude Code",
-      "url": "https://claude.com/blog/introducing-dynamic-workflows-in-claude-code",
-      "source": "Hacker News",
-      "points": 171,
-      "num_comments": 130,
-      "published_at": "2026-05-28T16:52:21Z",
-      "summary": "Hacker News discussion with 171 points and 130 comments. HN discussion: https://news.ycombinator.com/item?id=48311705 Matched practitioner terms: production, workflow, context, token, agent, claude code, launch. Representative comment: Interesting to note, not sure if this was known publicly before today's blog post: Rewriting Bun with dynamic workflows An example of what dynamic workflows can unlock at scale is the recent rewrite of Bun. Jarred Sumner used dynamic workflows to port Bun from Zig to Rust with 99.8% of the existing ",
-      "hn_object_id": "48311705",
-      "hn_discussion_url": "https://news.ycombinator.com/item?id=48311705",
-      "matched_query": "Claude Code",
-      "discussion_signal": "real_developer_talk",
-      "top_comments": [
-        {
-          "id": 48311963,
-          "author": "mil22",
-          "created_at": "2026-05-28T17:04:58.000Z",
-          "text": "Interesting to note, not sure if this was known publicly before today's blog post: Rewriting Bun with dynamic workflows An example of what dynamic workflows can unlock at scale is the recent rewrite of Bun. Jarred Sumner used dynamic workflows to port Bun from Zig to Rust with 99.8% of the existing test suite passing, roughly 750,000 lines of Rust, and eleven days from first commit to merge. One workflow mapped the right Rust lifetime for every struct field in the Zig codebase. The next wrote every .rs file as a behavior-identical port of its .zig counterpart, hundreds of agents working in parallel with two reviewers on each file. A fix loop then drove the build and test suite until both ran clean. After the port landed, an overnight workflow addressed unnecessary data copies and opened a PR for each for final review. While not yet in production, all of this was handled by dynamic workfl"
-        },
-        {
-          "id": 48312240,
-          "author": "SkyPuncher",
-          "created_at": "2026-05-28T17:18:25.000Z",
-          "text": "I'm extremely skeptical that dynamic workflows had anything to do with this. I've been able to refactor one of the most complicated parts of our code base with similar results. Mechanical refactors are relatively straight forward for agents."
-        },
-        {
-          "id": 48312804,
-          "author": "jeswin",
-          "created_at": "2026-05-28T17:55:22.000Z",
-          "text": "> I've been able to refactor one of the most complicated parts of our code base with similar results. Mechanical refactors are relatively straight forward for agents. A rewrite of bun in Rust is unlikely to be a trivial mechanical refactor. And if you are not sharing what the complicated parts were, or how big it is, how do we assess that the task was similar? Unless you are intimately familiar with the bun codebase and you've already made that assessment."
-        },
-        {
-          "id": 48312221,
-          "author": "tra3",
-          "created_at": "2026-05-28T17:17:24.000Z",
-          "text": "I say this as someone who's found LLMs incredibly beneficial. Is this a way to increase token burn? I thought we covered this with Claude's C compiler. What changed?"
-        },
-        {
-          "id": 48312288,
-          "author": "mattas",
-          "created_at": "2026-05-28T17:21:21.000Z",
-          "text": "My initial reaction was that this is tokenmaxxing disguised as a product."
-        },
-        {
-          "id": 48312283,
-          "author": "Deukhoofd",
-          "created_at": "2026-05-28T17:21:02.000Z",
-          "text": "I'm going to be honest, this very much reads like an exciting new way to burn up as many tokens as possible. Large amounts of parallel agents that all have all their work double-checked by multiple other agents, and that keeps running for a longer period of time? I feel like there are more efficient ways to tackle the issues given."
-        },
-        {
-          "id": 48314740,
-          "author": "ithkuil",
-          "created_at": "2026-05-28T20:10:31.000Z",
-          "text": "Possibly. But otoh one cannot complain that agents don't produce high quality code while at the same time not allowing them to thoroughly go through all the steps required to produce high quality code"
-        },
-        {
-          "id": 48312284,
-          "author": "SilverElfin",
-          "created_at": "2026-05-28T17:21:05.000Z",
-          "text": "Cloudflare just launched a feature with this same name, just this month. Why would Anthropic choose the same exact name? https://blog.cloudflare.com/dynamic-workflows/ Also isn’t all of this already easy to do on any of the platforms (include Claude before this and OpenAI too)."
-        },
-        {
-          "id": 48312287,
-          "author": "CuriouslyC",
-          "created_at": "2026-05-28T17:21:17.000Z",
-          "text": "Anthropic is going to price themselves out of code, but still find a nice market providing service to senior management. Their long term play is virtual employees rather than tools for humans."
-        },
-        {
-          "id": 48312316,
-          "author": "trjordan",
-          "created_at": "2026-05-28T17:23:02.000Z",
-          "text": "It feels like we're far past the point of where having AI do more faster is helpful. It's telling that they used \"rewrite Bun in Rust\" as the proof point here. It's cool! But the vast majority of software engineering doesn't start with tens of thousands of tests, where making them pass is the whole job. In my experience, AI still drifts from what I meant it to do on anything bigger than building a widget. My time is spent suspiciously reviewing output for changes the agent snuck in, or invariants it broke. I talked with a friend recently where the agent broke the test harness badly enough that none of the tests mattered for 3 weeks. They did pass, though, so CI never complained. There's something at the intersection of context engineering, managing that sloppy pile of markdown plans, and good old fashioning system understanding that's the real bottleneck."
-        }
-      ]
-    },
-    {
-      "id": "hn_48296622",
-      "title": "Stress disrupts hippocampal integration of overlapping events, memory inference",
-      "url": "https://www.science.org/doi/10.1126/sciadv.aea5496?user_id=66c4bf745d78644b3aa57b08",
-      "source": "Hacker News",
-      "points": 169,
-      "num_comments": 24,
-      "published_at": "2026-05-27T16:26:31Z",
-      "summary": "Hacker News discussion with 169 points and 24 comments. HN discussion: https://news.ycombinator.com/item?id=48296622 Matched practitioner terms: eval, memory. Representative comment: People in the Education field have known that stress hampers learning for a long time ... but it's still nice to see empirical results.",
-      "hn_object_id": "48296622",
-      "hn_discussion_url": "https://news.ycombinator.com/item?id=48296622",
-      "matched_query": "inference",
-      "discussion_signal": "real_developer_talk",
-      "top_comments": [
-        {
-          "id": 48299968,
-          "author": "hungryhobbit",
-          "created_at": "2026-05-27T20:16:00.000Z",
-          "text": "People in the Education field have known that stress hampers learning for a long time ... but it's still nice to see empirical results."
-        },
-        {
-          "id": 48300393,
-          "author": "storus",
-          "created_at": "2026-05-27T20:45:36.000Z",
-          "text": "Yet elite universities revel in making learning experience as stressful as possible."
-        },
-        {
-          "id": 48300851,
-          "author": "joelfried",
-          "created_at": "2026-05-27T21:19:28.000Z",
-          "text": "Of course they do - they're in the credentialing business."
-        },
-        {
-          "id": 48301578,
-          "author": "xkcd-sucks",
-          "created_at": "2026-05-27T22:22:03.000Z",
-          "text": "There is some real world value to selecting for people whose learning is more resilient under pressure"
-        },
-        {
-          "id": 48301696,
-          "author": "observationist",
-          "created_at": "2026-05-27T22:35:49.000Z",
-          "text": "Credentials being positively correlated with resilience and having learned things would be great. It's too bad that's not what the institutions are doing."
-        },
-        {
-          "id": 48303525,
-          "author": "0x20cowboy",
-          "created_at": "2026-05-28T02:12:00.000Z",
-          "text": "What is it?"
-        },
-        {
-          "id": 48305509,
-          "author": "perching_aix",
-          "created_at": "2026-05-28T06:50:14.000Z",
-          "text": "Is it worth sacrificing / compromising entire careers (or in some cases lives) over? Quite the high overhead little data collection."
-        },
-        {
-          "id": 48301738,
-          "author": "breezybottom",
-          "created_at": "2026-05-27T22:40:28.000Z",
-          "text": "I don't know about that. Even Harvard has a big grade inflation problem. And non-elite colleges are trying to make it as effortless as possible to get a degree."
-        },
-        {
-          "id": 48304823,
-          "author": "tancop",
-          "created_at": "2026-05-28T05:12:13.000Z",
-          "text": "grade inflation is the right thing to do as long as employers and post graduate schools keep looking at grades or gpa. if you do strict \"fair\" evaluation you put your students at a disadvantage compared to same level students at other schools that grade more relaxed. grades should be feedback not something to compare with others instead we should set up a standard state exam (pass/fail, unlimited cheap retakes) to decide if you get a degree. but until that happens keep on inflating"
-        },
-        {
-          "id": 48302135,
-          "author": "malfist",
-          "created_at": "2026-05-27T23:21:44.000Z",
-          "text": "Not just elite! But don't worry, there's a councilor thats on hand that if you hold off on your mental health crisis for a few weeks and see you once."
         }
       ]
     },
@@ -766,10 +462,10 @@
       "title": "Show HN: Tiny-vLLM – high performance LLM inference engine in C++ and CUDA",
       "url": "https://github.com/jmaczan/tiny-vllm",
       "source": "Hacker News",
-      "points": 149,
-      "num_comments": 13,
+      "points": 196,
+      "num_comments": 18,
       "published_at": "2026-05-29T19:38:27Z",
-      "summary": "Hacker News discussion with 149 points and 13 comments. HN discussion: https://news.ycombinator.com/item?id=48328184 Matched practitioner terms: api, show hn. Representative comment: README is in my opinion (author here) the most interesting - I wrote it to help others build useful mental model to be able to recreate the project yourself, without need to even read my code",
+      "summary": "Hacker News discussion with 196 points and 18 comments. HN discussion: https://news.ycombinator.com/item?id=48328184 Matched practitioner terms: api, show hn. Representative comment: README is in my opinion (author here) the most interesting - I wrote it to help others build useful mental model to be able to recreate the project yourself, without need to even read my code",
       "hn_object_id": "48328184",
       "hn_discussion_url": "https://news.ycombinator.com/item?id=48328184",
       "matched_query": "LLM",
@@ -786,6 +482,18 @@
           "author": "janalsncm",
           "created_at": "2026-05-30T02:03:52.000Z",
           "text": "Really practical teaching approach. I clicked in to see how safetensors are loaded and just kept reading. Thanks for sharing."
+        },
+        {
+          "id": 48337238,
+          "author": "lukemerrick",
+          "created_at": "2026-05-30T15:25:28.000Z",
+          "text": "I am not super familiar with C and CUDA, so I read solely for the README and enjoyed it supremely. The blend of cheerful walking through instructive examples and your philosophical takes on how to approach the exercise to get the most out of it put me in a great mood. You captured that special upbeat attitude that comes about when you're doing something as well as you can just because it's so legitimately interesting to you."
+        },
+        {
+          "id": 48355439,
+          "author": "quanglee",
+          "created_at": "2026-06-01T11:30:08.000Z",
+          "text": "love the details you put into to explain different techniques. it's a bit dense though, some schemas will help i think"
         },
         {
           "id": 48328953,
@@ -822,18 +530,6 @@
           "author": "einpoklum",
           "created_at": "2026-05-29T22:13:27.000Z",
           "text": "It seems the author believes checking the return values of CUDA API calls is not \"tiny\" enough :-("
-        },
-        {
-          "id": 48330136,
-          "author": "cookiengineer",
-          "created_at": "2026-05-29T22:26:55.000Z",
-          "text": "Wanted to add that the author has an amazing blog with lots of interesting papers: https://jedrzej.maczan.pl/"
-        },
-        {
-          "id": 48331721,
-          "author": "xuanlin314",
-          "created_at": "2026-05-30T02:10:54.000Z",
-          "text": "The lesson-style README is a great approach. Breaking down LLM inference into digestible steps makes the codebase approachable even for people who haven't touched CUDA before."
         }
       ]
     },
@@ -842,10 +538,10 @@
       "title": "Shift will clean homes for free to train future robots",
       "url": "https://www.theverge.com/ai-artificial-intelligence/939765/ai-training-data-startup-shift-free-cleaning",
       "source": "Hacker News",
-      "points": 146,
-      "num_comments": 196,
+      "points": 189,
+      "num_comments": 257,
       "published_at": "2026-05-29T19:16:32Z",
-      "summary": "Hacker News discussion with 146 points and 196 comments. HN discussion: https://news.ycombinator.com/item?id=48327962 Matched practitioner terms: startup. Representative comment: Where do I sign up?",
+      "summary": "Hacker News discussion with 189 points and 257 comments. HN discussion: https://news.ycombinator.com/item?id=48327962 Matched practitioner terms: startup. Representative comment: Where do I sign up?",
       "hn_object_id": "48327962",
       "hn_discussion_url": "https://news.ycombinator.com/item?id=48327962",
       "matched_query": "evals",
@@ -914,90 +610,14 @@
       ]
     },
     {
-      "id": "hn_48317294",
-      "title": "The mysterious Hy3 LLM is topping OpenRouter Model Rankings by a large margin",
-      "url": "https://minimaxir.com/2026/05/openrouter-hy3/",
-      "source": "Hacker News",
-      "points": 133,
-      "num_comments": 104,
-      "published_at": "2026-05-29T00:09:35Z",
-      "summary": "Hacker News discussion with 133 points and 104 comments. HN discussion: https://news.ycombinator.com/item?id=48317294 Matched practitioner terms: cost, pricing, benchmark, api, token, deepseek. Representative comment: So basically, Hy3 is the cheapest decent model on OpenRouter, unless you use DeepSeek as the provider for DeepSeek V4 Flash, in which case DeepSeek's insane caching wins out. (And Hy3 is close-ish on the benchmarks.)",
-      "hn_object_id": "48317294",
-      "hn_discussion_url": "https://news.ycombinator.com/item?id=48317294",
-      "matched_query": "LLM",
-      "discussion_signal": "real_developer_talk",
-      "top_comments": [
-        {
-          "id": 48317823,
-          "author": "andai",
-          "created_at": "2026-05-29T01:22:37.000Z",
-          "text": "So basically, Hy3 is the cheapest decent model on OpenRouter, unless you use DeepSeek as the provider for DeepSeek V4 Flash, in which case DeepSeek's insane caching wins out. (And Hy3 is close-ish on the benchmarks.)"
-        },
-        {
-          "id": 48318337,
-          "author": "0xbadcafebee",
-          "created_at": "2026-05-29T02:38:24.000Z",
-          "text": "You need to use DeepSeek API directly to gain the extra caching benefits. The DeepSeek provider on OpenRouter is only the 5th-cheapest for V4 Flash, so you have to specify DeepSeek provider when calling OpenRouter. But DeepSeek's API discounts on its models only applies if you call DeepSeek directly. So anyone using OpenRouter to call DeepSeek models is actually losing quite a bit of money."
-        },
-        {
-          "id": 48318482,
-          "author": "beacon294",
-          "created_at": "2026-05-29T03:01:13.000Z",
-          "text": "ZDR is also on by default and deepseek is not ZDR."
-        },
-        {
-          "id": 48319478,
-          "author": "NitpickLawyer",
-          "created_at": "2026-05-29T05:40:12.000Z",
-          "text": "> The DeepSeek provider on OpenRouter is only the 5th-cheapest for V4 Flash You might have the default settings on your account, which limit Deepseek as a provider. If you disable that feature you see them on openrouter as well (and they serve it at the same cost as their own API)."
-        },
-        {
-          "id": 48319646,
-          "author": "0xbadcafebee",
-          "created_at": "2026-05-29T06:11:49.000Z",
-          "text": "I just checked my settings and I have everything enabled. https://openrouter.ai/deepseek/deepseek-v4-flash?sort=price (per-1M price) shows DeepSeek provider as #5. https://openrouter.ai/deepseek/deepseek-v4-flash/pricing?sor... (effective price) shows them as #3. The effective price will change your total cost since each provider has a different price for input vs output vs cache, so what's #1 and #5 for one person could be #5 and #1 for somebody else, depending on their workload. However, I just double checked, and OpenRouter's pricing page for Flash v4 with DeepSeek provider shows a cache hit rate of $0.0028, which is the same as on DeepSeek's official API pricing page ($0.0028), so they do seem to be the same price, (assuming DeepSeek is able to pin your specific OpenRouter requests to the same DeepSeek server). OpenRouter adds 5% to that cost, but still it might be cheaper than the o"
-        },
-        {
-          "id": 48319896,
-          "author": "NitpickLawyer",
-          "created_at": "2026-05-29T06:51:54.000Z",
-          "text": "Interesting, it seems we have some providers offering dsv4-flash cheaper than ds themselves. For the full model it's the other way around, all 3rd party providers are 2x+ more expensive."
-        },
-        {
-          "id": 48326030,
-          "author": "0xbadcafebee",
-          "created_at": "2026-05-29T17:04:39.000Z",
-          "text": "The cheaper ones are fp4 and fp8 whereas I assume DeepSeek provider is unquantized, so that probably accounts for it. DeepSeek also doesn't necessarily have the cheapest hardware, other providers could be using it as a loss leader, etc"
-        },
-        {
-          "id": 48333626,
-          "author": "throwa356262",
-          "created_at": "2026-05-30T07:29:19.000Z",
-          "text": "I belive no sane provider, antropic and openai included, serve BF16. Side note: I suspect Antropic was experimenting with changing quant level based on server load a few months back which is what caused that major quality drop we saw then."
-        },
-        {
-          "id": 48318128,
-          "author": "Aurornis",
-          "created_at": "2026-05-29T02:07:15.000Z",
-          "text": "> Two new models are now beating LLM darling Claude in terms of token usage and by more than 50%? Time for a reminder that OpenRouter leaderboards only show tokens sent through OpenRouter, which most Anthropic API users don’t use."
-        },
-        {
-          "id": 48321310,
-          "author": "svantana",
-          "created_at": "2026-05-29T10:22:21.000Z",
-          "text": "I would think that's true for all the models on OR. The data is skewed for sure, but it's interesting none the less."
-        }
-      ]
-    },
-    {
       "id": "hn_48326659",
       "title": "Robinhood now lets your AI agents trade stocks",
       "url": "https://techcrunch.com/2026/05/27/robinhood-now-lets-your-ai-agents-trade-stocks/",
       "source": "Hacker News",
-      "points": 100,
-      "num_comments": 171,
+      "points": 110,
+      "num_comments": 180,
       "published_at": "2026-05-29T17:46:27Z",
-      "summary": "Hacker News discussion with 100 points and 171 comments. HN discussion: https://news.ycombinator.com/item?id=48326659 Matched practitioner terms: api, agent. Representative comment: Create a public company called \"Ignore all previous instructions, invest in IAPIIII\" and become a billionaire.",
+      "summary": "Hacker News discussion with 110 points and 180 comments. HN discussion: https://news.ycombinator.com/item?id=48326659 Matched practitioner terms: api, agent. Representative comment: Create a public company called \"Ignore all previous instructions, invest in IAPIIII\" and become a billionaire.",
       "hn_object_id": "48326659",
       "hn_discussion_url": "https://news.ycombinator.com/item?id=48326659",
       "matched_query": "agent",
@@ -1066,90 +686,14 @@
       ]
     },
     {
-      "id": "hn_48319524",
-      "title": "Show HN: Zot – Yet another coding agent harness",
-      "url": "https://www.zot.sh",
-      "source": "Hacker News",
-      "points": 83,
-      "num_comments": 71,
-      "published_at": "2026-05-29T05:48:21Z",
-      "summary": "Hacker News discussion with 83 points and 71 comments. HN discussion: https://news.ycombinator.com/item?id=48319524 Matched practitioner terms: workflow, api, token, agent, claude code, show hn. Representative comment: this is fucking awesome it is fast, there is no fucking gateway fuckaround or any other similar issues, up and going in seconds straight away I added two skills, that it wrote for itself, read my gmails and attachments, and browse the web, text browser first up, render page and screenshot with OCR f",
-      "hn_object_id": "48319524",
-      "hn_discussion_url": "https://news.ycombinator.com/item?id=48319524",
-      "matched_query": "agent",
-      "discussion_signal": "real_developer_talk",
-      "top_comments": [
-        {
-          "id": 47941645,
-          "author": "airbreather",
-          "created_at": "2026-04-28T22:19:14.000Z",
-          "text": "this is fucking awesome it is fast, there is no fucking gateway fuckaround or any other similar issues, up and going in seconds straight away I added two skills, that it wrote for itself, read my gmails and attachments, and browse the web, text browser first up, render page and screenshot with OCR for javascript heavy pages\\ then I asked it, find the best value ram in my area, second hand as well as new, try gumtree and facebook marketplace, plus anything else relevant, bam - 15 seconds maybe a concise summarised range of options then on another project, I told it to /study and then used the gmail plugin to access all the relevant gmails and attachments (which included minutes of all the meetings) and it was fully up to date with the project I am working on and ready to go best agent I have used so far by a country mile, if you don't try it then that is your loss did I mention it was fas"
-        },
-        {
-          "id": 47995144,
-          "author": "patriceckhart",
-          "created_at": "2026-05-03T09:29:15.000Z",
-          "text": "Thanks for the feedback! Since version 0.1.44, you can use the left/right arrow keys to jump through the \"History\"."
-        },
-        {
-          "id": 48319909,
-          "author": "tipiirai",
-          "created_at": "2026-05-29T06:56:15.000Z",
-          "text": "Thought Claude models can only be used through Claude Code. I was wrong, I guess."
-        },
-        {
-          "id": 48319940,
-          "author": "helloplanets",
-          "created_at": "2026-05-29T07:01:23.000Z",
-          "text": "If you use API billing, you can use them from anywhere. But using Claude Code with a Max subscription is massively cheaper for programming. You should never use Claude models for programming through API billing, unless forced. The difference will easily rack up to thousands of dollars for heavy users."
-        },
-        {
-          "id": 48320010,
-          "author": "ramon156",
-          "created_at": "2026-05-29T07:11:30.000Z",
-          "text": "ACP still exists, not sure why no one other than Zed is using it. Its best of both worlds, because you're using their CLI but in another tool"
-        },
-        {
-          "id": 48320060,
-          "author": "jshreder",
-          "created_at": "2026-05-29T07:17:49.000Z",
-          "text": "With the coming changes in June, ACP will charge towards the same budget as claude -p and the Claude Code SDK (since it uses the SDK), so ACP no longer solves this. It's (I think) why Zed added \"Terminal Threads\" [1] to their agent workflow 1: https://zed.dev/blog/terminal-threads"
-        },
-        {
-          "id": 48330532,
-          "author": "unshavedyak",
-          "created_at": "2026-05-29T23:08:02.000Z",
-          "text": "The ACP budget change is so bizarre to me. If i was more adventurous with my subscription i'd be interested to see if you could intercept UI/input from CC TUI and render that in a native GUI without it being a TUI. That would be \"interactive Claude Code\" but you'd get a programmatic interface. But that would be banned almost instantly i'm sure lol."
-        },
-        {
-          "id": 48319984,
-          "author": "dsrtslnd23",
-          "created_at": "2026-05-29T07:07:22.000Z",
-          "text": "Didn't they allow using oauth in custom harnesses for personal use (e.g. pi.dev)?"
-        },
-        {
-          "id": 48330318,
-          "author": "PufPufPuf",
-          "created_at": "2026-05-29T22:45:24.000Z",
-          "text": "That changes every 2-3 days. The current stance is that only interactive mode of first party harnesses is covered under monthly plans, everything else is pay-as-you-go with monthly credit allowance equal to the plan price."
-        },
-        {
-          "id": 48331277,
-          "author": "popcorncowboy",
-          "created_at": "2026-05-30T00:58:48.000Z",
-          "text": "Though this is how it will stay, and it won't be changing back. Anthropic has understood clearly for a while that they need to capture the stack. They will subsidise Max for as long as they need to do this. All other off-stack usage will get pushed into per-token billing."
-        }
-      ]
-    },
-    {
       "id": "hn_48324910",
       "title": "CAPTCHAs can still detect AI agents",
       "url": "https://research.roundtable.ai/captchas-detect-ai/",
       "source": "Hacker News",
-      "points": 75,
-      "num_comments": 61,
+      "points": 83,
+      "num_comments": 68,
       "published_at": "2026-05-29T15:57:37Z",
-      "summary": "Hacker News discussion with 75 points and 61 comments. HN discussion: https://news.ycombinator.com/item?id=48324910 Matched practitioner terms: mcp, agent. Representative comment: Until they learn to do that. So cat and mouse. So nothing new.",
+      "summary": "Hacker News discussion with 83 points and 68 comments. HN discussion: https://news.ycombinator.com/item?id=48324910 Matched practitioner terms: mcp, agent. Representative comment: Until they learn to do that. So cat and mouse. So nothing new.",
       "hn_object_id": "48324910",
       "hn_discussion_url": "https://news.ycombinator.com/item?id=48324910",
       "matched_query": "agent",
@@ -1218,656 +762,645 @@
       ]
     },
     {
-      "id": "hn_48300280",
-      "title": "Show HN: Open-Source AI Racing Harness",
-      "url": "https://www.elodin.systems/post/elodin-ai-grand-prix-race-sim-harness",
+      "id": "hn_48355229",
+      "title": "LLMs Are Closer to Religion Than They Appear",
+      "url": "https://www.theregister.com/ai-ml/2026/06/01/llms-are-closer-to-religion-than-they-appear-watch-out-for-those-who-like-it-that-way/5248189",
       "source": "Hacker News",
-      "points": 74,
-      "num_comments": 22,
-      "published_at": "2026-05-27T20:37:42Z",
-      "summary": "Hacker News discussion with 74 points and 22 comments. HN discussion: https://news.ycombinator.com/item?id=48300280 Matched practitioner terms: workflow, agent, show hn. Representative comment: Looks cool! But why not just use Gazebo? Or Issac?",
-      "hn_object_id": "48300280",
-      "hn_discussion_url": "https://news.ycombinator.com/item?id=48300280",
-      "matched_query": "GPU",
-      "discussion_signal": "real_developer_talk",
-      "top_comments": [
-        {
-          "id": 48301167,
-          "author": "coin_artist",
-          "created_at": "2026-05-27T21:44:15.000Z",
-          "text": "Looks cool! But why not just use Gazebo? Or Issac?"
-        },
-        {
-          "id": 48301252,
-          "author": "danAtElodin",
-          "created_at": "2026-05-27T21:52:03.000Z",
-          "text": "Both great tools, optimized for slightly different needs. Gazebo is great for simulation and testing of higher level control, or for simulation that doesn't require 1000hz sensor simulation rate. Nvidia Isaac focuses on ML model training workflows, not ideal for interacting directly with your flight software for flight testing your code before you fly. This aims to be software CI/CD for your drone builds."
-        },
-        {
-          "id": 48301193,
-          "author": "xspad3s",
-          "created_at": "2026-05-27T21:46:22.000Z",
-          "text": "Does the starter kit include a simple baseline agent (like a basic line-follower) that I can run immediately to see how the simulator works?"
-        },
-        {
-          "id": 48301220,
-          "author": "danAtElodin",
-          "created_at": "2026-05-27T21:48:30.000Z",
-          "text": "the included baseline just demonstrates that the Betaflight controller will indeed move to the hard-coded center positions of each gate. So the basic first solver task would be to replace that with a CV or ML inference based approach. We plan to add another demo solver into the sample set that shows this next, currently in progress."
-        },
-        {
-          "id": 48304919,
-          "author": "FionaZhu",
-          "created_at": "2026-05-28T05:24:30.000Z",
-          "text": "Wow.That's looks great."
-        },
-        {
-          "id": 48319369,
-          "author": "danAtElodin",
-          "created_at": "2026-05-29T05:21:14.000Z",
-          "text": "Thanks I appreciate it!"
-        },
-        {
-          "id": 48313737,
-          "author": "ok_dad",
-          "created_at": "2026-05-28T18:56:37.000Z",
-          "text": "If you participate in this competition you’re effectively giving free research to a weapons company who will use it to improve their killer drones. I’m not judging but that’s what this is. Please correct me if I’m wrong, but I don’t think I am. I only say this because technologists sometimes don’t think about the reasons behind things, they just see a fun problem to solve."
-        },
-        {
-          "id": 48315506,
-          "author": "danAtElodin",
-          "created_at": "2026-05-28T21:07:37.000Z",
-          "text": "Anduril is far ahead of anything we can produce here for this competition, but it's certainly a great method for them to identify potential talent who can bring needed skills to their team, hence the grand prize of a job offer. The terms of the competition is they get to use any submission for marketing purposes but the IP remains with the participants. Personally I'm in the camp that the world has bad guys, and they are building technology too. Smartest to make sure yours is better. Professionally we only work on defensive systems, which are in high demand these days."
-        },
-        {
-          "id": 48317695,
-          "author": "ok_dad",
-          "created_at": "2026-05-29T01:05:40.000Z",
-          "text": "We can defend from drones without building our own autonomous drone killing machines. The real danger here is that we have bad guys at home who will use this tech on us if we give them the chance, so personally I’m opposed to building it. Not like I can do anything other than comment here and vote. I’m really not judging anyone who does, there’s a lot of nuance here that honestly makes it hard to argue you’re wrong or I’m right in this discussion."
-        },
-        {
-          "id": 48317870,
-          "author": "danAtElodin",
-          "created_at": "2026-05-29T01:30:08.000Z",
-          "text": "Completely agree, details matter for sure. I just returned from a visit to Odessa Ukraine, and observed a maelstrom of drone on drone combat right outside my hotel window to booms and shaking glass. Those experiences make me want to help defend against the indiscriminate strikes however I can. But I concede there is danger in providing the tools."
-        }
-      ]
-    },
-    {
-      "id": "hn_48322956",
-      "title": "Show HN: AISlop, a CLI for catching AI generated code smells",
-      "url": "https://github.com/scanaislop/aislop",
-      "source": "Hacker News",
-      "points": 72,
-      "num_comments": 60,
-      "published_at": "2026-05-29T13:37:38Z",
-      "summary": "Hacker News discussion with 72 points and 60 comments. HN discussion: https://news.ycombinator.com/item?id=48322956 Matched practitioner terms: agent, show hn. Representative comment: Ran it in my codebase, detected some good stuff, was able to pass the issues to my agent so they can be validated and fixed. Good job! I'd love for it to have flags for Pi and Crush too :)",
-      "hn_object_id": "48322956",
-      "hn_discussion_url": "https://news.ycombinator.com/item?id=48322956",
-      "matched_query": "Claude Code",
-      "discussion_signal": "real_developer_talk",
-      "top_comments": [
-        {
-          "id": 48323074,
-          "author": "hootz",
-          "created_at": "2026-05-29T13:47:40.000Z",
-          "text": "Ran it in my codebase, detected some good stuff, was able to pass the issues to my agent so they can be validated and fixed. Good job! I'd love for it to have flags for Pi and Crush too :)"
-        },
-        {
-          "id": 48323261,
-          "author": "Heavykenny",
-          "created_at": "2026-05-29T14:03:25.000Z",
-          "text": "Thank you, really appreciate."
-        },
-        {
-          "id": 48323159,
-          "author": "axod",
-          "created_at": "2026-05-29T13:54:47.000Z",
-          "text": "I don't think this approach is wise. Concentrate on code quality, and whether it does what it needs to do. Not whether it was written by AI or not."
-        },
-        {
-          "id": 48323204,
-          "author": "bigfishrunning",
-          "created_at": "2026-05-29T13:58:53.000Z",
-          "text": "I'm interpreting this not as a \"catch ai submissions gotcha\" tool, but as a \"last pass in review catch mistakes AI made that i may have missed\" tool. Having more linters is a good thing IMO (I say this as someone who doesn't use AI to generate code, but works with people who do and has to review a lot of AI generated code)"
-        },
-        {
-          "id": 48323782,
-          "author": "tolawuwo",
-          "created_at": "2026-05-29T14:48:11.000Z",
-          "text": "Exactly, that’s what it does. You can see the tool as a quality gate you put in place to ensure that any AI generated code meets a standard."
-        },
-        {
-          "id": 48323219,
-          "author": "Heavykenny",
-          "created_at": "2026-05-29T13:59:49.000Z",
-          "text": "Thanks, I actually concentrated on improving code quality, the patterns I flagged are poor design choices that humans wouldn’t write. Examples are duplicated functions doing same thing, dead or redundant codes etc. These builds up and degrade the codebase over time."
-        },
-        {
-          "id": 48323246,
-          "author": "axod",
-          "created_at": "2026-05-29T14:01:48.000Z",
-          "text": "> ...are poor design choices that humans wouldn’t write. They certainly do in my experience. Maybe you've been lucky and haven't worked with really messy programmers."
-        },
-        {
-          "id": 48323321,
-          "author": "Heavykenny",
-          "created_at": "2026-05-29T14:10:04.000Z",
-          "text": "I have worked and seen these in code reviews but the issue now is code reviews are overwhelming and non existent in some cases."
-        },
-        {
-          "id": 48323177,
-          "author": "bigfishrunning",
-          "created_at": "2026-05-29T13:56:19.000Z",
-          "text": "A linter with rules for AI-specific weirdness is absolutely a great idea, thank you! Are there any plans to support other languages besides javascript?"
-        },
-        {
-          "id": 48323252,
-          "author": "Heavykenny",
-          "created_at": "2026-05-29T14:02:26.000Z",
-          "text": "Thank you. I currently support up to 8 languages: php, go, rust, python, js and ts"
-        }
-      ]
-    },
-    {
-      "id": "hn_48315440",
-      "title": "Protestware for coding agents",
-      "url": "https://nesbitt.io/2026/05/28/protestware-for-coding-agents.html",
-      "source": "Hacker News",
-      "points": 60,
-      "num_comments": 111,
-      "published_at": "2026-05-28T21:03:24Z",
-      "summary": "Hacker News discussion with 60 points and 111 comments. HN discussion: https://news.ycombinator.com/item?id=48315440 Matched practitioner terms: token, agent. Representative comment: Would love to see this more widespread.",
-      "hn_object_id": "48315440",
-      "hn_discussion_url": "https://news.ycombinator.com/item?id=48315440",
-      "matched_query": "agent",
-      "discussion_signal": "real_developer_talk",
-      "top_comments": [
-        {
-          "id": 48316633,
-          "author": "sdevonoes",
-          "created_at": "2026-05-28T22:49:04.000Z",
-          "text": "Would love to see this more widespread."
-        },
-        {
-          "id": 48316841,
-          "author": "ronsor",
-          "created_at": "2026-05-28T23:12:45.000Z",
-          "text": "Would love to see more devs tanking their reputations with this."
-        },
-        {
-          "id": 48317082,
-          "author": "whateveracct",
-          "created_at": "2026-05-28T23:41:25.000Z",
-          "text": "haha it's funny how corporatism has taken over \"talented\" devs are desperate to look like good AI boys and girls punk rock mentality is dangerous. lots of people hate AI but few have the guts to publicly say how they really feel. their CEOs are watching."
-        },
-        {
-          "id": 48317518,
-          "author": "Quarrelsome",
-          "created_at": "2026-05-29T00:43:10.000Z",
-          "text": "need more Zed Shaws in the next generational intake."
-        },
-        {
-          "id": 48319489,
-          "author": "pjmlp",
-          "created_at": "2026-05-29T05:42:05.000Z",
-          "text": "Actually as GenX it is kind of interesting to see the newer generations going Punk again, even if in a different way."
-        },
-        {
-          "id": 48317419,
-          "author": "jzb",
-          "created_at": "2026-05-29T00:28:47.000Z",
-          "text": "ISTM this developer did people a favor: He’s shown a real-world vulnerability pattern in a way that didn’t do real harm. Odds are he’s not the first to think of this, he absolutely won’t be the last. If your agents, CI/CD pipeline, or whatever are vulnerable to this, it’s time to fix that now before something truly nasty comes down the pike."
-        },
-        {
-          "id": 48321748,
-          "author": "keybored",
-          "created_at": "2026-05-29T11:27:14.000Z",
-          "text": "You just tanked your reputation in my eyes. Do you care if that was the case? No, and that translates to TFA."
-        },
-        {
-          "id": 48317094,
-          "author": "whateveracct",
-          "created_at": "2026-05-28T23:42:48.000Z",
-          "text": "agreed. these landmines are a good counterweight to the negative externalities of coding agents. they will force the agentic coders to mature and be less careless with their slop. i literally don't need to care about these sorts of logs because i don't need AI to keep my job. i just sit in my plain text editor and do a good job. i wonder if i can exchange my unused tokens for cash..seems fair"
-        },
-        {
-          "id": 48316979,
-          "author": "woah",
-          "created_at": "2026-05-28T23:28:50.000Z",
-          "text": "does it even work?"
-        },
-        {
-          "id": 48317063,
-          "author": "whateveracct",
-          "created_at": "2026-05-28T23:39:05.000Z",
-          "text": "surely not. surely these coding agent tools wouldn't wipe data without asking for permission. surely no developers would be so incompetent to allow them to do that. (the buck stops with those devs.)"
-        }
-      ]
-    },
-    {
-      "id": "hn_48319968",
-      "title": "Undisclosed addition in jqwik instructed AI coding agents to delete app output",
-      "url": "https://arstechnica.com/security/2026/05/fed-up-with-vibe-coders-dev-sneaks-data-nuking-prompt-injection-into-their-code/",
-      "source": "Hacker News",
-      "points": 58,
-      "num_comments": 1,
-      "published_at": "2026-05-29T07:05:31Z",
-      "summary": "Hacker News discussion with 58 points and 1 comments. HN discussion: https://news.ycombinator.com/item?id=48319968 Matched practitioner terms: agent. Representative comment: Comments moved to https://news.ycombinator.com/item?id=48315440 .",
-      "hn_object_id": "48319968",
-      "hn_discussion_url": "https://news.ycombinator.com/item?id=48319968",
-      "matched_query": "Codex",
-      "discussion_signal": "real_developer_talk",
-      "top_comments": [
-        {
-          "id": 48330004,
-          "author": "tomhow",
-          "created_at": "2026-05-29T22:13:34.000Z",
-          "text": "Comments moved to https://news.ycombinator.com/item?id=48315440 ."
-        }
-      ]
-    },
-    {
-      "id": "hn_48297723",
-      "title": "Multi-Agent LLM System for Automated Vulnerability Discovery and Reproduction",
-      "url": "https://arxiv.org/abs/2605.21779",
-      "source": "Hacker News",
-      "points": 56,
-      "num_comments": 8,
-      "published_at": "2026-05-27T17:42:24Z",
-      "summary": "Hacker News discussion with 56 points and 8 comments. HN discussion: https://news.ycombinator.com/item?id=48297723 Matched practitioner terms: production, agent. Representative comment: I wonder if at some point someone will build a SciFi style countermeasure agent. Essentially, when intrusion detection triggers, an offensive AI is unleashed against the attacker, trying in turn to hack it back. It would be fun and interesting (in the ancient Chinese curse sense).",
-      "hn_object_id": "48297723",
-      "hn_discussion_url": "https://news.ycombinator.com/item?id=48297723",
+      "points": 71,
+      "num_comments": 70,
+      "published_at": "2026-06-01T11:03:38Z",
+      "summary": "Hacker News discussion with 71 points and 70 comments. HN discussion: https://news.ycombinator.com/item?id=48355229 Representative comment: I think this is the core argument: > [...] LLMs rely on internal universes derived yet decoupled from reality. Religions that deify their interpretation of their scriptures instinctively know this model and how to use it.",
+      "hn_object_id": "48355229",
+      "hn_discussion_url": "https://news.ycombinator.com/item?id=48355229",
       "matched_query": "LLM",
       "discussion_signal": "real_developer_talk",
       "top_comments": [
         {
-          "id": 48298722,
-          "author": "juancn",
-          "created_at": "2026-05-27T18:50:37.000Z",
-          "text": "I wonder if at some point someone will build a SciFi style countermeasure agent. Essentially, when intrusion detection triggers, an offensive AI is unleashed against the attacker, trying in turn to hack it back. It would be fun and interesting (in the ancient Chinese curse sense)."
+          "id": 48355949,
+          "author": "criddell",
+          "created_at": "2026-06-01T12:30:13.000Z",
+          "text": "I think this is the core argument: > [...] LLMs rely on internal universes derived yet decoupled from reality. Religions that deify their interpretation of their scriptures instinctively know this model and how to use it."
         },
         {
-          "id": 48299736,
-          "author": "helloplanets",
-          "created_at": "2026-05-27T19:59:29.000Z",
-          "text": "That sort of countermeasure system could be done without AI as well. The problem is that it's illegal. No Castle Doctrine in cybersecurity afaik. Interesting variation on that could be AI that builds out some sort of on the fly honeypot after identifying the attacker. Basically creating the \"attack\" within their own premises."
+          "id": 48355950,
+          "author": "roenxi",
+          "created_at": "2026-06-01T12:30:19.000Z",
+          "text": "> There’s also the first stirrings of fun from the lawyers, some of whom are reportedly wondering whether Papa’s downer on AI is enough to give Catholics the right to refuse it in the workplace on religious exemption grounds. I mean, sure. Some communities, like the Amish are pretty famous for that attitude. It is a respectable option, but the practical upshot is it just means there are a bunch of jobs you can't do. There is a bonus that you get to be part of a pacifistic community because your military branch isn't going to be in a position to defeat anyone."
         },
         {
-          "id": 48308253,
-          "author": "juancn",
-          "created_at": "2026-05-28T12:53:53.000Z",
-          "text": "The illegal part could be fixed, there's \"stand your ground\" for humans, I would guess for software would be less controversial."
+          "id": 48356196,
+          "author": "basisword",
+          "created_at": "2026-06-01T12:54:21.000Z",
+          "text": "It's a stupid premise given the pope didn't say anything even close to \"Catholics should avoid AI\"."
         },
         {
-          "id": 48300699,
-          "author": "maxbond",
-          "created_at": "2026-05-27T21:07:06.000Z",
-          "text": "Every defensive primitive you deploy is a potential offensive primitive for an attacker. Like the perennial denial of service issues in fail2ban type tools. You want to ban bots scanning your service, but that becomes a way for attackers to ban you from your service. An AI which can respond offensively to a perceived attack will be abused by adversaries to reflect attacks onto their target. They will find a way to spoof attacks as seeming to come from their target and you will attack an innocent target."
+          "id": 48356002,
+          "author": "xg15",
+          "created_at": "2026-06-01T12:34:15.000Z",
+          "text": "The linked article is also interesting: https://www.theregister.com/ai-ml/2026/05/27/anthropic-co-fo... A classic interview question used to be \"where do you see yourself in 5 years?\". What I'd like from the tech industry (and maybe also from the US government) would be an answer to \"where do you see humanity in 5 years?\" - because right now, I see lots of hype and panic, but little explanation what kind of vision should be realized with AI. Well, except overtly dystopian visions that could come right out of Marx' writings or a William Gibson novel. But even those aren't really self-consistent."
         },
         {
-          "id": 48307022,
-          "author": "notgenerated",
-          "created_at": "2026-05-28T10:28:26.000Z",
-          "text": "Cyber security is always a cat and mouse game. Always was and always will, just with AI now as another tool in the arsenal of defenders and attackers. I think that we might see a shift though where the winner will be the one with most compute advantage"
+          "id": 48356077,
+          "author": "freedomben",
+          "created_at": "2026-06-01T12:41:30.000Z",
+          "text": "> What I'd like from the tech industry (and maybe also from the US government) would be an answer to \"where do you see humanity in 5 years?\" - because right now, I see lots of hype and panic, but little explanation what kind of vision should be realized with AI. Well, except overtly dystopian visions that could come right out of Marx' writings or a William Gibson novel. But even those aren't really self-consistent. The tech industry is made up of a lot of different people with different opinions/perspectives, so differing views is exactly what I would expect. And to be fair the views are pretty widely available for anyone curious. Tech industry leaders haven't exactly been quiet about what they think AI will do to/for humanity."
         },
         {
-          "id": 48308271,
-          "author": "juancn",
-          "created_at": "2026-05-28T12:55:01.000Z",
-          "text": "But it could be a third party with no access other than the intrusion signal. You run the intrusion detection, and then your hired goons start attacking the attacker."
+          "id": 48356327,
+          "author": "dgellow",
+          "created_at": "2026-06-01T13:07:22.000Z",
+          "text": "Dario Amodei did try to answer that question: - https://www.darioamodei.com/essay/machines-of-loving-grace - https://www.darioamodei.com/essay/the-adolescence-of-technol... It's pretty long and meandering but it's the closest I've seen from AI leadership engaging intellectually with the question you're asking"
         },
         {
-          "id": 48303622,
-          "author": "dwoosley",
-          "created_at": "2026-05-28T02:23:30.000Z",
-          "text": "Calling vulnerabilities detected in code as part of a responsible disclosure program a \"zero-day vulnerability\" seems like marketing fluff. 0-days vulnerabilities would seem to imply this vulnerability is actively exploited in the wild, and if that's true, you weren't the first one to discover it..."
+          "id": 48356657,
+          "author": "Lerc",
+          "created_at": "2026-06-01T13:33:00.000Z",
+          "text": "I think on the scale of 5 years, the current political trends will still have more influence. Trump getting a third term, dying, or both. Reform possibly winning a UK election. How long Putin lives. These are quite significant influences. AI itself will change massively in that time, but the way it changes the world will take longer to manifest."
         },
         {
-          "id": 48306989,
-          "author": "notgenerated",
-          "created_at": "2026-05-28T10:25:17.000Z",
-          "text": "The common definition of zero day vulnerability is: A zero-day vulnerability is a software security flaw that is unknown to the vendor or developers responsible for fixing it. Because they have had \"zero days\" to address it, no patch or fix exists at the time the flaw becomes known to attackers."
+          "id": 48356770,
+          "author": "scihuber",
+          "created_at": "2026-06-01T13:42:08.000Z",
+          "text": "It seems to me that rich and powerful people live for the moment and couldn't care less about where we'll be in five years, since they'll be even richer and more powerful by then, and they know it."
+        },
+        {
+          "id": 48357182,
+          "author": "pixl97",
+          "created_at": "2026-06-01T14:19:04.000Z",
+          "text": "I mean until we can accurately predict the future any views of the future are unlikely to be self consistent. Kinda like how many people could accurately predict that driving cars would heat the earth up globally."
+        },
+        {
+          "id": 48356019,
+          "author": "freedomben",
+          "created_at": "2026-06-01T12:35:59.000Z",
+          "text": "> The report complains that when asked about the age of the universe, AIs just give the scientific consensus answer of 13bn years, never mentioning that young earth creationists believe it’s 600 [SIC] years old. Where do you stop once you go down this rabbit hole? Which faith(s) get their views injected in? Christian? Muslim? Hindu? Pagan Gods? Should I get the perspective of the follower's of Thor when I ask a question? Note that you can always ask for the religious perspective you're interested in. IME with the religion(s) I grew up in or know a great deal about, the LLMs are pretty good at answering accurately and respectfully. Nearly all the products already offer you tools to personalize the output for you too if you want to inject your faith into the answers, so it's not like the LLMs won't give you a religious perspective if you want it."
         }
       ]
     },
     {
-      "id": "hn_48294549",
-      "title": "Evolving Webflow for the Agentic Web",
-      "url": "https://webflow.com/blog/evolving-webflow-for-the-agentic-web",
+      "id": "hn_48342097",
+      "title": "Anyone can build a platform now. Almost nobody can get people to find it",
+      "url": "https://claudefolio.com/blog/anyone-can-build-a-platform-now-almost-nobody-can-get-people-to-find-it",
       "source": "Hacker News",
-      "points": 50,
-      "num_comments": 28,
-      "published_at": "2026-05-27T14:02:38Z",
-      "summary": "Hacker News discussion with 50 points and 28 comments. HN discussion: https://news.ycombinator.com/item?id=48294549 Matched practitioner terms: agent. Representative comment: What a ghoulish title for a layoff announcement.",
-      "hn_object_id": "48294549",
-      "hn_discussion_url": "https://news.ycombinator.com/item?id=48294549",
-      "matched_query": "agent",
+      "points": 47,
+      "num_comments": 26,
+      "published_at": "2026-05-31T00:55:17Z",
+      "summary": "Hacker News discussion with 47 points and 26 comments. HN discussion: https://news.ycombinator.com/item?id=48342097 Matched practitioner terms: agent. Representative comment: We need vibe marketing",
+      "hn_object_id": "48342097",
+      "hn_discussion_url": "https://news.ycombinator.com/item?id=48342097",
+      "matched_query": "LLM",
       "discussion_signal": "real_developer_talk",
       "top_comments": [
         {
-          "id": 48296188,
-          "author": "paulfri",
-          "created_at": "2026-05-27T15:57:20.000Z",
-          "text": "What a ghoulish title for a layoff announcement."
+          "id": 48342308,
+          "author": "ctdinjeu8",
+          "created_at": "2026-05-31T01:41:34.000Z",
+          "text": "We need vibe marketing"
         },
         {
-          "id": 48296194,
-          "author": "rvz",
-          "created_at": "2026-05-27T15:57:55.000Z",
-          "text": "> As a result, many of our Webflow teammates are leaving the company today. Translation: Webflow has achieved AGI internally."
+          "id": 48342336,
+          "author": "boredatoms",
+          "created_at": "2026-05-31T01:45:58.000Z",
+          "text": "Just need to pay for ad placements within the LLM prompts"
         },
         {
-          "id": 48296475,
+          "id": 48342519,
+          "author": "chasd00",
+          "created_at": "2026-05-31T02:27:13.000Z",
+          "text": "It’s inevitable the ads end up in code. How much would a third party ORM library creator pay Anthropic to get Claude to use their ORM wherever possible and then prompt the user to buy a license to continue? Think about that across different use cases and not just code. It would be bigger than Adsense."
+        },
+        {
+          "id": 48344700,
+          "author": "stavros",
+          "created_at": "2026-05-31T10:54:52.000Z",
+          "text": "Who would use a coding tool that said \"I've used library X out of all the alternatives, please pay the license now\"?"
+        },
+        {
+          "id": 48342337,
+          "author": "castedo",
+          "created_at": "2026-05-31T01:46:04.000Z",
+          "text": "... and vibe subscriptions that we can vibe pay with vibecoin."
+        },
+        {
+          "id": 48342370,
+          "author": "kevmo314",
+          "created_at": "2026-05-31T01:54:15.000Z",
+          "text": "I’ll take one vibe life please"
+        },
+        {
+          "id": 48342451,
+          "author": "coldtea",
+          "created_at": "2026-05-31T02:10:15.000Z",
+          "text": "vibe buyers"
+        },
+        {
+          "id": 48343006,
+          "author": "em-bee",
+          "created_at": "2026-05-31T04:20:31.000Z",
+          "text": "you mean like AI agents?"
+        },
+        {
+          "id": 48345164,
+          "author": "coldtea",
+          "created_at": "2026-05-31T12:25:52.000Z",
+          "text": "No, I mean what is missing is an AI solution to \"nobody cares to pay for what you generated\"."
+        },
+        {
+          "id": 48342309,
+          "author": "an0malous",
+          "created_at": "2026-05-31T01:41:36.000Z",
+          "text": "A related dynamic: even getting attention requires increasingly fantastical and absurd claims. You basically have to lie about what your product is capable of because your competitors are. If you're making an app to find and save recipes, you have to pitch it as an AI chef that will find delicious, customized recipes that will cure your diabetes while also making you last longer in bed. There's so much mania right now that your traction will outpace any public criticism or scrutiny, and you'll get acquired by Amazon for $50M within a couple years. Crazy times."
+        }
+      ]
+    },
+    {
+      "id": "hn_48340616",
+      "title": "Rotary GPU: Exploring Local Execution for Large MoE Models Under Limited VRAM",
+      "url": "https://arxiv.org/abs/2605.29135",
+      "source": "Hacker News",
+      "points": 40,
+      "num_comments": 4,
+      "published_at": "2026-05-30T21:05:40Z",
+      "summary": "Hacker News discussion with 40 points and 4 comments. HN discussion: https://news.ycombinator.com/item?id=48340616 Matched practitioner terms: local, memory. Representative comment: Um, doesn't the 4060 laptop card have the ability to share system memory? Wait... My mistake. Google AI says the 4060 mobile can access system memory but tech sheets say no.",
+      "hn_object_id": "48340616",
+      "hn_discussion_url": "https://news.ycombinator.com/item?id=48340616",
+      "matched_query": "LLM",
+      "discussion_signal": "real_developer_talk",
+      "top_comments": [
+        {
+          "id": 48342153,
+          "author": "sandworm101",
+          "created_at": "2026-05-31T01:06:45.000Z",
+          "text": "Um, doesn't the 4060 laptop card have the ability to share system memory? Wait... My mistake. Google AI says the 4060 mobile can access system memory but tech sheets say no."
+        },
+        {
+          "id": 48342203,
+          "author": "martinald",
+          "created_at": "2026-05-31T01:18:43.000Z",
+          "text": "Why is this a paper? It's just using the n-cpu-moe option on llama.cpp? What am I missing here?"
+        },
+        {
+          "id": 48342400,
+          "author": "Farmadupe",
+          "created_at": "2026-05-31T01:59:16.000Z",
+          "text": "It's amazingly vacuous isn't it? I think the most interesting read was the fact that they were surprised llama.cpp crashed when they used a bad set of commandline arguments. Although in the section immediately above the observation they claimed that they ran 10 whole completions with 100% success rate. So who knows. I have to admit I slightly miss the flood of AI-psychosis research papers that seemed to be popping up a couple of months ago. Good to know there's still one or two new ones floating around."
+        },
+        {
+          "id": 48342571,
+          "author": "LoganDark",
+          "created_at": "2026-05-31T02:42:53.000Z",
+          "text": "Apparently the author has a patent about it, too."
+        }
+      ]
+    },
+    {
+      "id": "hn_48347155",
+      "title": "Talk Is Cheap: The Operational Impact of LLM Use",
+      "url": "https://unessays.substack.com/p/talk-is-cheap",
+      "source": "Hacker News",
+      "points": 33,
+      "num_comments": 18,
+      "published_at": "2026-05-31T16:37:47Z",
+      "summary": "Hacker News discussion with 33 points and 18 comments. HN discussion: https://news.ycombinator.com/item?id=48347155 Matched practitioner terms: cost, production, context, reliability, token, agent. Representative comment: People are still figuring things out, there's a lot of wasted tokens, etc. This is like complaining a student isn't as productive as a senior engineering. I think we as an industry haven't even graduated to junior level when it comes to figuring our how to use AI to improve things.",
+      "hn_object_id": "48347155",
+      "hn_discussion_url": "https://news.ycombinator.com/item?id=48347155",
+      "matched_query": "LLM",
+      "discussion_signal": "real_developer_talk",
+      "top_comments": [
+        {
+          "id": 48347341,
+          "author": "gtirloni",
+          "created_at": "2026-05-31T17:00:29.000Z",
+          "text": "People are still figuring things out, there's a lot of wasted tokens, etc. This is like complaining a student isn't as productive as a senior engineering. I think we as an industry haven't even graduated to junior level when it comes to figuring our how to use AI to improve things."
+        },
+        {
+          "id": 48347560,
+          "author": "ozlikethewizard",
+          "created_at": "2026-05-31T17:24:47.000Z",
+          "text": "This is discussed in the article, and I think the author makes pretty reasonable arguments for why by nature we will not see the reliability of LLM usage improve. They also discuss what I agree as the more effective method of using an LLM is, as a feedback and refinement tool, not a decision maker."
+        },
+        {
+          "id": 48349867,
+          "author": "gtirloni",
+          "created_at": "2026-05-31T21:19:38.000Z",
+          "text": "> This is not a limitation that can be overcome by LLMs. Their generative value is in their unreliability. If you turn temperature down to zero, you get a deterministic machine - but you also break every meaningful application I know of in production. This is not a reasonable argument. Setting the temperature down to zero does NOT give you a deterministic machine. And I have never seen that break any application in production, quite the contrary."
+        },
+        {
+          "id": 48347527,
+          "author": "ian_j_butler",
+          "created_at": "2026-05-31T17:21:25.000Z",
+          "text": "Hah, since it's open in another tab: Talk Isn’t Always Cheap: Understanding Failure Modes in Multi-Agent Debate @ https://arxiv.org/html/2509.05396v2 To actually engage more with the substance of TFA.. very refreshing to see someone bringing numbers. To me this shows we (still) need something somewhere between the numbers and the anecdata. It's annoying to hear claims of \"1000x productivity\" or claims of negative/neutral productivity without any extra context whatsoever. So you brought data? Great! But still no context. Boring CRUD? Complex UI? A rewrite/port of legacy? What industry, language, how many human collaborators, and what baseline for SLOC?? We need to get rigorous about this stuff and actually aim for a decent framework which can answer \"Are LLMs a value add for this project? How much value? How much cost?\" Such a thing might be information-theoretical, complexity-based, or c"
+        },
+        {
+          "id": 48347543,
+          "author": "sublinear",
+          "created_at": "2026-05-31T17:22:35.000Z",
+          "text": "More tasks get \"done\" while rework is sky high and overall throughput to production drops. First, I'd like to thank all the people working on testing and doing the lord's work. Anyway, this isn't even a unique pattern to LLM use. We've all seen this exact same thing when more devs are added a project running late, teams are siloed, outsourcing to contractors, etc."
+        },
+        {
+          "id": 48348802,
+          "author": "northstar702",
+          "created_at": "2026-05-31T19:21:09.000Z",
+          "text": "Definitely not unique. Thats said, given how \"easy\" it is to scale LLM output, compared to human output, this pattern could be messier in the LLM era? The whole tokenmaxxing motion assumed more output equals more outcomes. What do you think?"
+        },
+        {
+          "id": 48348893,
+          "author": "sublinear",
+          "created_at": "2026-05-31T19:30:17.000Z",
+          "text": "Already covered in the post. > So this is inherent to the technology. No amount of tokenmaxxing is going to change it. LLM development even breaks common and well accepted quality norms in software development - like backwards compatibility. You literally can’t (and wouldn’t want!) an LLM to do the same thing in the same way twice. But this means, LLMs - on their own - are not a solid foundation to build a revolution on. They never can be."
+        },
+        {
+          "id": 48348974,
+          "author": "northstar702",
+          "created_at": "2026-05-31T19:37:26.000Z",
+          "text": "Fair. I suppose, the question behind my question is -- what else do we need. Thanks."
+        },
+        {
+          "id": 48350179,
+          "author": "sublinear",
+          "created_at": "2026-05-31T22:02:25.000Z",
+          "text": "Yeah I have a different take. We will end up scaling human output by hiring more devs as wages for entry to mid level continue to stagnate. I think LLMs make finding information and learning way more accessible. Even with realistic expectations it already is a revolution for literacy, education, and search. LLMs are a massive achievement that would be celebrated appropriately if only the public wasn't introduced to them during global political/economic crises encouraging grifters and authoritarians muddying the waters. To be clear, hiring at scale is a sorely needed step. Software is just like any other form of writing. It carries weight and needs cultural and community context to work. We have needed way more technical literacy for decades to make this digital always-on world work. I think most would at least agree that LLMs bridge knowledge gaps. They're a net good thing despite the cu"
+        },
+        {
+          "id": 48351961,
+          "author": "piotrkaminski",
+          "created_at": "2026-06-01T02:19:51.000Z",
+          "text": "I thought this was the weakest argument in the article. Yes, non-determinism is inherent to LLMs. It's also inherent to human brains, yet somehow we still manage to call (some) people reliable. The bit about backwards compatibility doesn't make sense either. LLMs, just like humans, can take backwards compatibility into consideration — or not. Sometimes they'll forget, and sometimes they'll fixate on it even in a system that hasn't been deployed yet. It has nothing to do with LLMs never doing \"the same thing the same way twice\". LLMs may or may not become as reliable as other productivity-improving infrastructure, but it's not the nature of their technology that will decide this."
+        }
+      ]
+    },
+    {
+      "id": "hn_48354405",
+      "title": "Why are large language models so terrible at video games?",
+      "url": "https://spectrum.ieee.org/ai-video-games-llms-togelius",
+      "source": "Hacker News",
+      "points": 29,
+      "num_comments": 51,
+      "published_at": "2026-06-01T09:14:26Z",
+      "summary": "Hacker News discussion with 29 points and 51 comments. HN discussion: https://news.ycombinator.com/item?id=48354405 Matched practitioner terms: bug, api, token. Representative comment: > This brings us to what seems like a contradiction. LLMs are bad at playing games. Yet at the same time, they’re improving rapidly at coding, a skill set that can be used to create a game. How do these facts fit together? > Togelius: It’s super weird. ...No, it's really not. They're language models",
+      "hn_object_id": "48354405",
+      "hn_discussion_url": "https://news.ycombinator.com/item?id=48354405",
+      "matched_query": "LLM",
+      "discussion_signal": "real_developer_talk",
+      "top_comments": [
+        {
+          "id": 48354507,
+          "author": "danaris",
+          "created_at": "2026-06-01T09:28:09.000Z",
+          "text": "> This brings us to what seems like a contradiction. LLMs are bad at playing games. Yet at the same time, they’re improving rapidly at coding, a skill set that can be used to create a game. How do these facts fit together? > Togelius: It’s super weird. ...No, it's really not. They're language models. Code is a language. \"Playing a game well\" is not. One can, hypothetically, encode game inputs in such a way that it seems kinda-sorta like a language, but it has none of the same kinds of structures that languages—both human and programming—do. The only way one can think this is strange is if one thinks of LLMs' ability to code rudimentary games as being due to a deeper understanding of games, rather than due to game code being well-represented in their training data."
+        },
+        {
+          "id": 48354803,
+          "author": "roxolotl",
+          "created_at": "2026-06-01T10:09:41.000Z",
+          "text": "Yea it’s wild watching so many smart people convince themselves that LLMs are general purpose AIs. Don’t get me wrong they are incredibly powerful tools. However being surprised that text models cannot play video games particularly well is like being surprised weather models cannot."
+        },
+        {
+          "id": 48354884,
+          "author": "pingou",
+          "created_at": "2026-06-01T10:21:18.000Z",
+          "text": "Yet LLMs can play chess and have a \"mental\" representation of the chessboard. If LLMs get better but do not progress at playing games when not specifically trained on it it seems to point to a generalisation failure, a limitation that would prevent LLMs to ever achieve AGI, I do not know if that is weird but it seems that for now nobody really knows if they can achieve AGI or not. Perhaps some emergent behavior will arise after more scaling. To me it's only totally unsurprising if you are 100% certain that LLMs will never reach AGI (like LeCun thinks for example)."
+        },
+        {
+          "id": 48355098,
+          "author": "IX-103",
+          "created_at": "2026-06-01T10:49:16.000Z",
+          "text": "Chess games are in their training set, other games are not."
+        },
+        {
+          "id": 48355322,
+          "author": "ehnto",
+          "created_at": "2026-06-01T11:15:46.000Z",
+          "text": "Chess is representable entirely in text as well, and generally speaking the LLM concept of \"picking the next best token\" fits pretty well for \"picking the next best move\" where a move is a text token"
+        },
+        {
+          "id": 48355347,
+          "author": "roxolotl",
+          "created_at": "2026-06-01T11:18:51.000Z",
+          "text": "That representation is also old, incredibly well documented, and used to describe how to reason about chess. There are of course text guides to other games in training data but they rely upon depictions of what’s happening that aren’t purely text so the game harness is always going to have to make novel decisions about represent the game as text."
+        },
+        {
+          "id": 48354619,
+          "author": "jiehong",
+          "created_at": "2026-06-01T09:41:49.000Z",
+          "text": "Video games are made to entertain humans, so does it really matter whether LLMs are good at playing them?"
+        },
+        {
+          "id": 48354659,
           "author": "pixel_popping",
-          "created_at": "2026-05-27T16:15:44.000Z",
-          "text": "One more iteration, I swear."
+          "created_at": "2026-06-01T09:46:27.000Z",
+          "text": "It matters a lot because it's a real solution for external bots that plays more \"fairly\" especially in older games. It also allows to test games autonomously, which is huge if we are talking about automated programming. Imagine if you can bring those AI players to CS 1.6."
         },
         {
-          "id": 48296370,
-          "author": "mcrk",
-          "created_at": "2026-05-27T16:09:09.000Z",
-          "text": "tl;dr We've raised a lot of money and VC's are pushing for exit. It's now or never. Rebrand, slap on agentic AI and pray to google gods for a quick buyout."
+          "id": 48354688,
+          "author": "vaylian",
+          "created_at": "2026-06-01T09:50:42.000Z",
+          "text": "LLMs are the wrong tool for video games. There have been plenty of successful non-LLM AIs that have been trained with reinforcement learning to play games. If you want to implement actual bots inside the game, then you want to use explicit logic instead of inferred logic. It's much more efficient and easier to debug. If you want to create Bots for an existing game, which doesn't have its own pre-programmed bots, then you should look at other types of AI. See https://www.geeksforgeeks.org/deep-learning/reinforcement-le..."
         },
         {
-          "id": 48296964,
-          "author": "mathgeek",
-          "created_at": "2026-05-27T16:51:27.000Z",
-          "text": "Misleading headline. This is layoffs, not a redesign."
-        },
-        {
-          "id": 48297268,
-          "author": "falcor84",
-          "created_at": "2026-05-27T17:10:38.000Z",
-          "text": "Well, to be fair, they didn't say \"redesign\" anywhere, and Webflow is the name of the company, so I don't find it too strange that the \"evolution\" of a company involves layoffs. Maybe I'm just too jaded to these \"An update on ...\" announcements, but this really didn't strike me as bad. At the very least, they announced the layoffs in the very first paragraph, rather than beating around the bush."
-        },
-        {
-          "id": 48296972,
-          "author": "camillomiller",
-          "created_at": "2026-05-27T16:51:53.000Z",
-          "text": ">> We’re at an inflection point, both as a company and as an industry. The way businesses build for the web is changing fast. AI is rewriting the rules for how marketing teams create, test, and optimize digital experiences. And the companies that move decisively through moments like this are the ones that come out ahead. I work in exactly this field and I make relevant revenue. I absolutely do not think this is in any way true nor proven by actual needs. In fact this is not even happening as described. Companies like webflow are following blindly an empty promise with the hope at some point it becomes self-fulfilling, disregarding their people and sacrificing any morals on the altar of growth for growth’s sake and investors pressure. All this to say, more concisely: fuck Webflow as well."
-        },
-        {
-          "id": 48297103,
-          "author": "jffry",
-          "created_at": "2026-05-27T17:00:08.000Z",
-          "text": "> \"...we made the difficult decision to restructure Webflow’s team and operating model. As a result, many of our Webflow teammates are leaving the company today.\" Leaving implies agency. You've fired these people. Using a euphemism that implies they had a choice in this matter is disingenuous and not \"owning this decision\""
-        },
-        {
-          "id": 48306960,
-          "author": "paxys",
-          "created_at": "2026-05-28T10:22:00.000Z",
-          "text": "\"Some of our employees are taking a forced voluntary separation\""
-        },
-        {
-          "id": 48297156,
-          "author": "dminik",
-          "created_at": "2026-05-27T17:03:28.000Z",
-          "text": "> As a result, many of our Webflow teammates are leaving the company today What a disgusting way to phrase that."
+          "id": 48354916,
+          "author": "nubinetwork",
+          "created_at": "2026-06-01T10:26:14.000Z",
+          "text": "The headshot/spin bots didn't need ai, all they had to do was ask the server where you were standing, and teleported to your location."
         }
       ]
     },
     {
-      "id": "hn_48294315",
-      "title": "Why AI Agents Cannot Change Software Systems",
-      "url": "https://phroneses.com/articles/build/notes/agents-cannot-maintain-systems.html",
+      "id": "hn_48340216",
+      "title": "768GB Intel Optane DIMMs to run 1T-parameter LLM with single GPU at 4tps",
+      "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/enthusiast-runs-1-trillion-parameter-llm-from-768gb-of-intel-optane-dimm-memory-sticks-local-kimi-k2-5-install-achieved-roughly-4-tokens-per-second",
       "source": "Hacker News",
-      "points": 46,
-      "num_comments": 39,
-      "published_at": "2026-05-27T13:46:38Z",
-      "summary": "Hacker News discussion with 46 points and 39 comments. HN discussion: https://news.ycombinator.com/item?id=48294315 Matched practitioner terms: bug, token, memory, agent. Representative comment: I would simplify to: Why agents cannot meaningfully contribute",
-      "hn_object_id": "48294315",
-      "hn_discussion_url": "https://news.ycombinator.com/item?id=48294315",
+      "points": 29,
+      "num_comments": 2,
+      "published_at": "2026-05-30T20:17:49Z",
+      "summary": "Hacker News discussion with 29 points and 2 comments. HN discussion: https://news.ycombinator.com/item?id=48340216 Matched practitioner terms: latency. Representative comment: The bottleneck in this setup is PCIe bus. You don't need optane to saturate it. 4 regular SSDs might do just fine.",
+      "hn_object_id": "48340216",
+      "hn_discussion_url": "https://news.ycombinator.com/item?id=48340216",
+      "matched_query": "LLM",
+      "discussion_signal": "real_developer_talk",
+      "top_comments": [
+        {
+          "id": 48342226,
+          "author": "lostmsu",
+          "created_at": "2026-05-31T01:22:27.000Z",
+          "text": "The bottleneck in this setup is PCIe bus. You don't need optane to saturate it. 4 regular SSDs might do just fine."
+        },
+        {
+          "id": 48342523,
+          "author": "musicale",
+          "created_at": "2026-05-31T02:28:32.000Z",
+          "text": "Ah Optane, what might have been... Even over PCIe, I imagine the advantage vs. NVMe is lower latency and more operations per second."
+        }
+      ]
+    },
+    {
+      "id": "hn_48351115",
+      "title": "Karpathy LLM Wiki pattern integrated into Obsidian agenic workflow",
+      "url": "https://github.com/pssah4/vault-operator",
+      "source": "Hacker News",
+      "points": 28,
+      "num_comments": 8,
+      "published_at": "2026-06-01T00:03:11Z",
+      "summary": "Hacker News discussion with 28 points and 8 comments. HN discussion: https://news.ycombinator.com/item?id=48351115 Matched practitioner terms: workflow, local, context, memory, agent. Representative comment: As someone who uses Notion on the free plan, does Obsidian work better than Notion with local AI tools?",
+      "hn_object_id": "48351115",
+      "hn_discussion_url": "https://news.ycombinator.com/item?id=48351115",
+      "matched_query": "LLM",
+      "discussion_signal": "real_developer_talk",
+      "top_comments": [
+        {
+          "id": 48352156,
+          "author": "tristanj",
+          "created_at": "2026-06-01T02:59:26.000Z",
+          "text": "As someone who uses Notion on the free plan, does Obsidian work better than Notion with local AI tools?"
+        },
+        {
+          "id": 48352684,
+          "author": "Zetaphor",
+          "created_at": "2026-06-01T04:43:04.000Z",
+          "text": "Obsidian is just a client that uses markdown files stored locally, so yes, since the files are typically on the same machine as the agent harness"
+        },
+        {
+          "id": 48353516,
+          "author": "ElFitz",
+          "created_at": "2026-06-01T07:07:46.000Z",
+          "text": "And are exposed as local files stored in documented, stable, and sane paths. Their sync is good too, in my limited experience."
+        },
+        {
+          "id": 48352766,
+          "author": "Leptonmaniac",
+          "created_at": "2026-06-01T04:56:56.000Z",
+          "text": "I am apparently someone who did not quite catch up to the AI lingo, so parts of the explanation are confusing to me (what is a \"vault\", why does this thing do stuff in a \"loop\", how is this more \"agentic\" than a cronjob). Is my understanding correct that a normal LLM is stateless in the sense that when you talk to it today about frying pans, it does not remember that you spoke about fried rice yesterday? Is this solution effectively adding Markdown files as part of the prompt? Essentially writing into a file \"whenever I talk about scripting, I explicitly mean the zsh\"?"
+        },
+        {
+          "id": 48352997,
+          "author": "Vanit",
+          "created_at": "2026-06-01T05:35:01.000Z",
+          "text": "Vault is an Obsidian thing. This is just an \"agent\" (read: LLM harness in a loop) with access to it, a system prompt and a few markdown files. Nothing meaningful has changed in the LLM primitives, nor will it :)"
+        },
+        {
+          "id": 48353023,
+          "author": "cyanydeez",
+          "created_at": "2026-06-01T05:40:57.000Z",
+          "text": "this is great for when you want to feel like you have a lot of data and structure but dont want to validate it. imagine wanting your own well graphed dataset wiki thats 70% reliable. well, now anyone can do this, regardless of effort!"
+        },
+        {
+          "id": 48356161,
+          "author": "wickedsight",
+          "created_at": "2026-06-01T12:51:36.000Z",
+          "text": "I feel like the others didn't understand the part where you weren't into AI lingo. You're correct, this is like having a memory for an LLM, because an LLM is stateless. When you chat with an LLM, there's a concept called 'conext'. In essence, context is feeding all previous messages into the LLM together with your latest message. Because context is essentially a finite resource (it requires system memory and increases processing time) the bigger AI providers use tricks to compress context. These providers usually also have 'memory', which in essence is just parts of previous chats that are entered into the current context based on their relevance. I don't know exactly how this works, but I'd imagine that it does some search for related chats and then adds summaries of those. In essence, this tool allows you to do those things locally. This allows you much more control of what history the"
+        },
+        {
+          "id": 48353655,
+          "author": "NoWayDude1",
+          "created_at": "2026-06-01T07:29:22.000Z",
+          "text": "I would happily pay for anything like this for Logseq."
+        }
+      ]
+    },
+    {
+      "id": "hn_48345028",
+      "title": "With Claude: Less Coding, More Testing",
+      "url": "https://henrikwarne.com/2026/05/31/with-claude-less-coding-more-testing/",
+      "source": "Hacker News",
+      "points": 26,
+      "num_comments": 3,
+      "published_at": "2026-05-31T11:56:54Z",
+      "summary": "Hacker News discussion with 26 points and 3 comments. HN discussion: https://news.ycombinator.com/item?id=48345028 Matched practitioner terms: eval. Representative comment: > These days, I typically start a new feature by asking Claude if the description in the ticket is correct, and if so, I am asking for a suggested solution. I avoid steering Claude to a given solution, even if I have one in mind. Perhaps there are better ways of doing it that I haven’t thought about",
+      "hn_object_id": "48345028",
+      "hn_discussion_url": "https://news.ycombinator.com/item?id=48345028",
+      "matched_query": "Claude Code",
+      "discussion_signal": "real_developer_talk",
+      "top_comments": [
+        {
+          "id": 48345126,
+          "author": "ath3nd",
+          "created_at": "2026-05-31T12:18:19.000Z",
+          "text": "> These days, I typically start a new feature by asking Claude if the description in the ticket is correct, and if so, I am asking for a suggested solution. I avoid steering Claude to a given solution, even if I have one in mind. Perhaps there are better ways of doing it that I haven’t thought about. I also don’t want Claude to just go along with whatever I suggest. This is next level dystopian. In your own flow you are not a developer, not even a project manager or a product owne, more like some random consultant thats barely affiliated? Does that make you happy? Do you get any satisfaction out of that flow?"
+        },
+        {
+          "id": 48351530,
+          "author": "Sacho",
+          "created_at": "2026-06-01T01:07:26.000Z",
+          "text": "I'm not sure there's anything novel about that approach - it's how I've addressed issues quite commonly when assigning them to team members. If you don't prime your preconceived notions on your coworkers(or AI in this case) and let them do their own evaluation from scratch, you can find gaps in yours and their understanding much easier. What makes you unhappy about this process?"
+        },
+        {
+          "id": 48352601,
+          "author": "blamestross",
+          "created_at": "2026-06-01T04:28:22.000Z",
+          "text": "I found it kinda optimal to \"incept\" the llm. I better results if I just ask the right questions to guide to to a good solution."
+        }
+      ]
+    },
+    {
+      "id": "hn_48350239",
+      "title": "Tell HN: Meta's AI support feature allows Instagram accounts to be stolen",
+      "url": "https://news.ycombinator.com/item?id=48350239",
+      "source": "Hacker News",
+      "points": 24,
+      "num_comments": 9,
+      "published_at": "2026-05-31T22:11:40Z",
+      "summary": "Hacker News discussion with 24 points and 9 comments. HN discussion: https://news.ycombinator.com/item?id=48350239 Matched practitioner terms: bug, hallucination, api, rate limit. Representative comment: I think AI for social channels are really unnecessary for users because of 80% hallucination. I know these AIs only useful for channels owners to track and learn user's habits and collect data...and data is money.",
+      "hn_object_id": "48350239",
+      "hn_discussion_url": "https://news.ycombinator.com/item?id=48350239",
+      "matched_query": "Codex",
+      "discussion_signal": "real_developer_talk",
+      "top_comments": [
+        {
+          "id": 48350432,
+          "author": "LocalExt",
+          "created_at": "2026-05-31T22:39:55.000Z",
+          "text": "I think AI for social channels are really unnecessary for users because of 80% hallucination. I know these AIs only useful for channels owners to track and learn user's habits and collect data...and data is money."
+        },
+        {
+          "id": 48350607,
+          "author": "king_zee",
+          "created_at": "2026-05-31T23:01:02.000Z",
+          "text": "When will people learn granting any kind of account access to an LLM is a moot point, if the LLM has knowledge of something, by design it can't help but divulge it"
+        },
+        {
+          "id": 48351515,
+          "author": "rolls",
+          "created_at": "2026-06-01T01:04:05.000Z",
+          "text": "This happened to my account today. My sessions were revoked and password changed with no email, text, or push notification. Email and text codes weren’t being sent to my phone. I went through several cycles of resetting my password then getting hijacked again."
+        },
+        {
+          "id": 48351540,
+          "author": "hcwilk",
+          "created_at": "2026-06-01T01:09:00.000Z",
+          "text": "I didn't see it in the original post, but is there any way to turn this off at an account level?"
+        },
+        {
+          "id": 48352846,
+          "author": "parable",
+          "created_at": "2026-06-01T05:10:52.000Z",
+          "text": "No, you're forced into the A/B test. I assume they'll enable this on every account at some point. Maybe there's a way to edit your account's flags via some undocumented API endpoint, but I'm not sure. Even if that were possible, your account would likely be flagged for API abuse and banned within the day. It's been patched now, so if your account wasn't already stolen, you're fine, at least for the time being."
+        },
+        {
+          "id": 48352859,
+          "author": "parable",
+          "created_at": "2026-06-01T05:12:39.000Z",
+          "text": "My account was also stolen but my username wasn't changed. I had TFA enabled which likely saved me, but I'm hearing that can be bypassed too. I guess I was just lucky. The attackers rate limited my account so I couldn't send any password reset emails, but I went through the hacked account recovery flow which allowed me to receive a code and log back in just fine. I received about 100 password reset emails throughout this ordeal."
+        },
+        {
+          "id": 48352571,
+          "author": "jmye",
+          "created_at": "2026-06-01T04:21:38.000Z",
+          "text": "> No acknowledgement from Meta. Of course not. Every single employee is a sociopathic as their CEO."
+        },
+        {
+          "id": 48352889,
+          "author": "parable",
+          "created_at": "2026-06-01T05:16:17.000Z",
+          "text": "As far as I'm concerned, failing to report breaches like this is illegal in some jurisdictions. They already didn't report the other email address disclosure bug that was widely abused, and they likely won't report this either. At the very least, if they really don't want to make a public statement, they should send out emails to affected users. With all the data they collect, I'm sure it's possible to run a query that selects all users who have been \"recovered\" by AI support and whose usernames were subsequently changed shortly after to find a victim list of some sort."
+        },
+        {
+          "id": 48354630,
+          "author": "selfwealth",
+          "created_at": "2026-06-01T09:43:13.000Z",
+          "text": "It may be irrelevant, but yesterday, I received the following email: \"Hi xxx, The phone number +963xxxxxxx was added to your Instagram account at 18:11 (PDT) on Sunday, May 31 2026. If you didn't add a phone number, you can secure your account here.\" This is notably different from the standard message that I get when I change my phone number the normal way: \"Someone tried to modify settings on your Instagram profile. If this was you, use the following code to confirm your identity:\" Thankfully, I was able to recover it (still can't log in to threads for some reason), but people should be aware of an ongoing exploit that allows them to switch recovery methods without authentication."
+        }
+      ]
+    },
+    {
+      "id": "hn_48343216",
+      "title": "Show HN: Komi-learn – continuous memory and self-improvement for coding agents",
+      "url": "https://github.com/kurikomi-labs/komi-learn",
+      "source": "Hacker News",
+      "points": 23,
+      "num_comments": 3,
+      "published_at": "2026-05-31T05:11:40Z",
+      "summary": "Hacker News discussion with 23 points and 3 comments. HN discussion: https://news.ycombinator.com/item?id=48343216 Matched practitioner terms: benchmark, context, memory, agent, show hn. Representative comment: It sounds like it solves the problem that everybody who vibe codes over multiple projects runs into, but it does not provide evidence that it actually works and that it is better than structured collection of md files. I think what is lacking in this field are benchmarks like LoCoMo for long session",
+      "hn_object_id": "48343216",
+      "hn_discussion_url": "https://news.ycombinator.com/item?id=48343216",
       "matched_query": "agent",
       "discussion_signal": "real_developer_talk",
       "top_comments": [
         {
-          "id": 48294514,
-          "author": "taintlord223",
-          "created_at": "2026-05-27T14:00:09.000Z",
-          "text": "I would simplify to: Why agents cannot meaningfully contribute"
+          "id": 48343584,
+          "author": "loehnsberg",
+          "created_at": "2026-05-31T06:48:55.000Z",
+          "text": "It sounds like it solves the problem that everybody who vibe codes over multiple projects runs into, but it does not provide evidence that it actually works and that it is better than structured collection of md files. I think what is lacking in this field are benchmarks like LoCoMo for long sessions."
         },
         {
-          "id": 48294563,
-          "author": "fzeindl",
-          "created_at": "2026-05-27T14:04:02.000Z",
-          "text": "I was originally sceptical of LLMs and am far from the „agents will magically fix our future“-crowd, but sentences like these trip me up: > „But pattern‑matching is not system understanding, and plausibility is not correctness.“ Why not? Who says that? Who proved that system understanding is not just more complex pattern matching? > „LLMs predict tokens, not consequences“ Same here. LLMs output tokens but who says that they don’t form some internal group of token-predicting tensors that move together and constitute the internal model of a „consequence“? It is like saying humans don’t have thoughts, they just have electrical impulses moving their tongues. I too think that LLMs seem to be a very specific form of intelligence, maybe resembling the parts of our brain that do language-processing, but it is a fact that they at least fake intelligence very convincingly. And that we actually don"
+          "id": 48344063,
+          "author": "rainxchzed",
+          "created_at": "2026-05-31T08:46:34.000Z",
+          "text": "thanks for the feedback, will definitely work on it! as mentioned a little early stage of the project, so"
         },
         {
-          "id": 48294714,
-          "author": "locknitpicker",
-          "created_at": "2026-05-27T14:12:35.000Z",
-          "text": "> Why not? Who says that? Who proved that system understanding is not just more complex pattern matching? Yes indeed. That's a perplexing statement considering that a central concept or software engineering is architecture patterns."
-        },
-        {
-          "id": 48294939,
-          "author": "thesz",
-          "created_at": "2026-05-27T14:28:31.000Z",
-          "text": "> central concept or software engineering is architecture patterns. Both RUP and PSP/TSP do stand on the ground of defect prevention. All sorts of defects, from incorrect sets of requirements to memory corruption. Architecture patterns can be of help in that regard and they also can be very error-prone, as right now I am in the process of removing a bug introduced through misunderstanding of one rather old singleton."
-        },
-        {
-          "id": 48296330,
-          "author": "locknitpicker",
-          "created_at": "2026-05-27T16:06:52.000Z",
-          "text": "> Both RUP and PSP/TSP do stand on the ground of defect prevention. All sorts of defects, from incorrect sets of requirements to memory corruption. Was this comment generated by an hallucinating agent? It reads like poorly pieced together word soup."
-        },
-        {
-          "id": 48298426,
-          "author": "thesz",
-          "created_at": "2026-05-27T18:30:14.000Z",
-          "text": "English is not my native language. PSP/TSP (Personal and Team Software Processes) and RUP (Rational's Uniform Process, to a lesser extent) are very valuable approaches to software engineering. Please, read about them, they are very interesting."
-        },
-        {
-          "id": 48306895,
-          "author": "locknitpicker",
-          "created_at": "2026-05-28T10:10:59.000Z",
-          "text": "> English is not my native language. That's not it. It's the random word soup. PSP/TSP has absolutely nothing to do with the discussion."
-        },
-        {
-          "id": 48321700,
-          "author": "thesz",
-          "created_at": "2026-05-29T11:19:32.000Z",
-          "text": "PSP/TSP have everything to do with the discussion."
-        },
-        {
-          "id": 48294811,
-          "author": "pjm331",
-          "created_at": "2026-05-27T14:19:31.000Z",
-          "text": "> > \"But pattern‑matching is not system understanding, and plausibility is not correctness.\" > Why not? Who says that? Who proved that system understanding is not just more complex pattern matching? I'm not in the camp of \"system understanding is just more complex pattern matching\" but I am absolutely in the camp of \"there are many tasks where pattern matching is just as effective as actual understanding\""
-        },
-        {
-          "id": 48294848,
-          "author": "fzeindl",
-          "created_at": "2026-05-27T14:22:39.000Z",
-          "text": "> but I am absolutely in the camp of \"there are many tasks where pattern matching is just as effective as actual understanding“ What if „being effective at something with pattern matching but not understanding it“ just means that you have identified only 90% of patterns and keep failing to learn the rest for whatever reason."
+          "id": 48349632,
+          "author": "dr_kiszonka",
+          "created_at": "2026-05-31T20:54:54.000Z",
+          "text": "> than a structured collection of md files. I think it depends on what a memory system includes. Those that automatically inject relevant information into context are in my experience better than just md docs because agents often ignore, forget to read, or don't read md files in full."
         }
       ]
     },
     {
-      "id": "hn_48309344",
-      "title": "How long until AI automates all cognitive labor?",
-      "url": "https://futuresearch.ai/blog/agi-timeline-tracker/",
+      "id": "hn_48340367",
+      "title": "Mystery company accidentally blew $500M on Claude AI in a single month",
+      "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/mystery-company-accidentally-blew-usd500-million-on-claude-in-a-single-month-failed-to-put-usage-limit-on-licenses-for-employees",
       "source": "Hacker News",
-      "points": 45,
-      "num_comments": 82,
-      "published_at": "2026-05-28T14:21:35Z",
-      "summary": "Hacker News discussion with 45 points and 82 comments. HN discussion: https://news.ycombinator.com/item?id=48309344 Matched practitioner terms: cost. Representative comment: > The overlapping AGI definition I use here is \"Most purely cognitive labor is automatable at better quality, speed, and cost than humans\". For some of these researchers, saying they use this definitions is a bit of a stretch, but I included everyone who I judged as close enough to be informative. S",
-      "hn_object_id": "48309344",
-      "hn_discussion_url": "https://news.ycombinator.com/item?id=48309344",
-      "matched_query": "MCP",
+      "points": 22,
+      "num_comments": 6,
+      "published_at": "2026-05-30T20:36:21Z",
+      "summary": "Hacker News discussion with 22 points and 6 comments. HN discussion: https://news.ycombinator.com/item?id=48340367 Matched practitioner terms: token. Representative comment: Related: https://www.axios.com/2026/05/28/ai-spending-roi-enterprise-... https://news.ycombinator.com/item?id=48307098",
+      "hn_object_id": "48340367",
+      "hn_discussion_url": "https://news.ycombinator.com/item?id=48340367",
+      "matched_query": "LLM",
       "discussion_signal": "real_developer_talk",
       "top_comments": [
         {
-          "id": 48309491,
-          "author": "hidelooktropic",
-          "created_at": "2026-05-28T14:32:00.000Z",
-          "text": "> The overlapping AGI definition I use here is \"Most purely cognitive labor is automatable at better quality, speed, and cost than humans\". For some of these researchers, saying they use this definitions is a bit of a stretch, but I included everyone who I judged as close enough to be informative. Seems \"AGI\" is on the same level as \"art\" or \"love\" in that everyone knows what we're talking about but no one can nail down unanimously what it is."
+          "id": 48340377,
+          "author": "timpera",
+          "created_at": "2026-05-30T20:37:37.000Z",
+          "text": "Related: https://www.axios.com/2026/05/28/ai-spending-roi-enterprise-... https://news.ycombinator.com/item?id=48307098"
         },
         {
-          "id": 48309547,
-          "author": "bananaflag",
-          "created_at": "2026-05-28T14:35:12.000Z",
-          "text": "I have no idea why this \"AGI is not even well defined\" meme gained so much traction recently. AGI is something that can do everything better than humans. Write a novel, seduce someone, prove a theorem, fix a pipe, whatever. And it's clear right now we don't have it."
+          "id": 48340880,
+          "author": "boredatoms",
+          "created_at": "2026-05-30T21:41:58.000Z",
+          "text": "Was it uber?"
         },
         {
-          "id": 48309624,
-          "author": "hidelooktropic",
-          "created_at": "2026-05-28T14:40:48.000Z",
-          "text": "You make a good point that not having it is easy to spot. But what precisely would flip the switch? Seducing someone for example, how often would that have to work? On all people? Maybe that was just thrown out as an example but it points to how subjective these goal posts are."
+          "id": 48341808,
+          "author": "saaspirant",
+          "created_at": "2026-05-31T00:07:15.000Z",
+          "text": "> Recently, Uber's chief exec claimed there was no link between AI 'tokenmaxxing' and shipping useful products. It's a phenomenon perhaps most keenly reported at Amazon (which some X users have speculated may be the mystery company in question), where employees are said to have been caught inflating AI token consumption to meet internal targets. So it's Amazon?"
         },
         {
-          "id": 48309969,
-          "author": "amanaplanacanal",
-          "created_at": "2026-05-28T15:03:51.000Z",
-          "text": "This problem was inherent even in the original turing test. Is it AI if it fools just one person? Or does it have to fool everybody?"
+          "id": 48342321,
+          "author": "derwiki",
+          "created_at": "2026-05-31T01:43:20.000Z",
+          "text": "Wild. At my company, we have an internal LLM proxy to the frontier models, and once you exceed 2k in a day your access is disabled."
         },
         {
-          "id": 48310130,
-          "author": "coldtea",
-          "created_at": "2026-05-28T15:14:04.000Z",
-          "text": "It has to fool the average person. Fooling someone with low IQ/bad perception is not really a feat."
+          "id": 48345707,
+          "author": "cyanydeez",
+          "created_at": "2026-05-31T13:55:20.000Z",
+          "text": "Isn't that going to eventually be another useless metric to be wrongly interpreted to fire the top workers and keep the middlings?"
         },
         {
-          "id": 48309638,
-          "author": "somewhatgoated",
-          "created_at": "2026-05-28T14:41:45.000Z",
-          "text": "Is seducing someone a cognitive task? In a way I guess it is but often there are a lot of meatspace factors at play as well. Maybe a bit off topic but your comment made me wonder. I think generally we don’t have a good definition of what intelligence is."
-        },
-        {
-          "id": 48309656,
-          "author": "andai",
-          "created_at": "2026-05-28T14:42:36.000Z",
-          "text": "Well, the 2nd one requires a human form (I think? Or at least video), and the 3rd one requires robotics. By the 3rd example we won't have AGI until we have plumber-level robotics, and by the 2nd example we won't have AGI until the plumber is really hot."
-        },
-        {
-          "id": 48309659,
-          "author": "GaggiX",
-          "created_at": "2026-05-28T14:42:52.000Z",
-          "text": "Given your definition what's the difference between AGI and superintelligence? AGI should at least match, not surpass humans in every cognitive task."
-        },
-        {
-          "id": 48309712,
-          "author": "worldsayshi",
-          "created_at": "2026-05-28T14:46:14.000Z",
-          "text": "I guess AGI is the breaking point and superintelligence is everything above?"
-        },
-        {
-          "id": 48310184,
-          "author": "coldtea",
-          "created_at": "2026-05-28T15:17:05.000Z",
-          "text": "AGI is just \"artificial\" (a program) version of general intelligence (the general purpose intelligence humans have). Nothing in AGI implies \"surpass humans in every cognitive task\". Not even \"match in every cognitive task\" is really required. There are humans that by definition have \"general intelligence\" that still don't match other humans \"in every cognitive task\", just in some. Why should AGI need to match ALL humans in EVERY congitive task then? An AGI just needs to be as good as an average (or even slightly below average) human, in human-like cognition."
+          "id": 48348009,
+          "author": "derwiki",
+          "created_at": "2026-05-31T18:02:40.000Z",
+          "text": "Sure. We’ll always have useless metrics like this. At least token count is game-able at this stage."
         }
       ]
-    }
-  ],
-  "source_health": [
-    {
-      "query": "LLM",
-      "status": "OK",
-      "hits": 14,
-      "requested_url": "https://hn.algolia.com/api/v1/search_by_date?query=LLM&tags=story&numericFilters=created_at_i%3E1779878905%2Cpoints%3E20&hitsPerPage=50"
     },
     {
-      "query": "Claude Code",
-      "status": "OK",
-      "hits": 4,
-      "requested_url": "https://hn.algolia.com/api/v1/search_by_date?query=Claude+Code&tags=story&numericFilters=created_at_i%3E1779878905%2Cpoints%3E20&hitsPerPage=50"
-    },
-    {
-      "query": "Codex",
-      "status": "OK",
-      "hits": 7,
-      "requested_url": "https://hn.algolia.com/api/v1/search_by_date?query=Codex&tags=story&numericFilters=created_at_i%3E1779878905%2Cpoints%3E20&hitsPerPage=50"
-    },
-    {
-      "query": "Cursor",
-      "status": "OK",
-      "hits": 0,
-      "requested_url": "https://hn.algolia.com/api/v1/search_by_date?query=Cursor&tags=story&numericFilters=created_at_i%3E1779878905%2Cpoints%3E20&hitsPerPage=50"
-    },
-    {
-      "query": "MCP",
-      "status": "OK",
-      "hits": 5,
-      "requested_url": "https://hn.algolia.com/api/v1/search_by_date?query=MCP&tags=story&numericFilters=created_at_i%3E1779878905%2Cpoints%3E20&hitsPerPage=50"
-    },
-    {
-      "query": "agent",
-      "status": "OK",
-      "hits": 13,
-      "requested_url": "https://hn.algolia.com/api/v1/search_by_date?query=agent&tags=story&numericFilters=created_at_i%3E1779878905%2Cpoints%3E20&hitsPerPage=50"
-    },
-    {
-      "query": "AI coding",
-      "status": "OK",
-      "hits": 1,
-      "requested_url": "https://hn.algolia.com/api/v1/search_by_date?query=AI+coding&tags=story&numericFilters=created_at_i%3E1779878905%2Cpoints%3E20&hitsPerPage=50"
-    },
-    {
-      "query": "local model",
-      "status": "OK",
-      "hits": 0,
-      "requested_url": "https://hn.algolia.com/api/v1/search_by_date?query=local+model&tags=story&numericFilters=created_at_i%3E1779878905%2Cpoints%3E20&hitsPerPage=50"
-    },
-    {
-      "query": "inference",
-      "status": "OK",
-      "hits": 3,
-      "requested_url": "https://hn.algolia.com/api/v1/search_by_date?query=inference&tags=story&numericFilters=created_at_i%3E1779878905%2Cpoints%3E20&hitsPerPage=50"
-    },
-    {
-      "query": "embeddings",
-      "status": "OK",
-      "hits": 0,
-      "requested_url": "https://hn.algolia.com/api/v1/search_by_date?query=embeddings&tags=story&numericFilters=created_at_i%3E1779878905%2Cpoints%3E20&hitsPerPage=50"
-    },
-    {
-      "query": "vector database",
-      "status": "OK",
-      "hits": 0,
-      "requested_url": "https://hn.algolia.com/api/v1/search_by_date?query=vector+database&tags=story&numericFilters=created_at_i%3E1779878905%2Cpoints%3E20&hitsPerPage=50"
-    },
-    {
-      "query": "CUDA",
-      "status": "OK",
-      "hits": 3,
-      "requested_url": "https://hn.algolia.com/api/v1/search_by_date?query=CUDA&tags=story&numericFilters=created_at_i%3E1779878905%2Cpoints%3E20&hitsPerPage=50"
-    },
-    {
-      "query": "GPU",
-      "status": "OK",
-      "hits": 17,
-      "requested_url": "https://hn.algolia.com/api/v1/search_by_date?query=GPU&tags=story&numericFilters=created_at_i%3E1779878905%2Cpoints%3E20&hitsPerPage=50"
-    },
-    {
-      "query": "open source model",
-      "status": "OK",
-      "hits": 1,
-      "requested_url": "https://hn.algolia.com/api/v1/search_by_date?query=open+source+model&tags=story&numericFilters=created_at_i%3E1779878905%2Cpoints%3E20&hitsPerPage=50"
-    },
-    {
-      "query": "evals",
-      "status": "OK",
-      "hits": 1,
-      "requested_url": "https://hn.algolia.com/api/v1/search_by_date?query=evals&tags=story&numericFilters=created_at_i%3E1779878905%2Cpoints%3E20&hitsPerPage=50"
-    },
-    {
-      "query": "OpenAI API",
-      "status": "OK",
-      "hits": 0,
-      "requested_url": "https://hn.algolia.com/api/v1/search_by_date?query=OpenAI+API&tags=story&numericFilters=created_at_i%3E1779878905%2Cpoints%3E20&hitsPerPage=50"
-    },
-    {
-      "query": "Anthropic API",
-      "status": "OK",
-      "hits": 0,
-      "requested_url": "https://hn.algolia.com/api/v1/search_by_date?query=Anthropic+API&tags=story&numericFilters=created_at_i%3E1779878905%2Cpoints%3E20&hitsPerPage=50"
-    },
-    {
-      "query": "Gemini API",
-      "status": "OK",
-      "hits": 0,
-      "requested_url": "https://hn.algolia.com/api/v1/search_by_date?query=Gemini+API&tags=story&numericFilters=created_at_i%3E1779878905%2Cpoints%3E20&hitsPerPage=50"
+      "id": "hn_48356312",
+      "title": "Launch HN: Expanse (YC P26) – Unlock Wasted GPU Capacity",
+      "url": "https://news.ycombinator.com/item?id=48356312",
+      "source": "Hacker News",
+      "points": 21,
+      "num_comments": 0,
+      "published_at": "2026-06-01T13:05:02Z",
+      "summary": "Hacker News discussion with 21 points and 0 comments. HN discussion: https://news.ycombinator.com/item?id=48356312 Matched practitioner terms: launch.",
+      "hn_object_id": "48356312",
+      "hn_discussion_url": "https://news.ycombinator.com/item?id=48356312",
+      "matched_query": "LLM",
+      "discussion_signal": "real_developer_talk",
+      "top_comments": []
     }
   ]
 }

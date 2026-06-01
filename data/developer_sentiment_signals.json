@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-30T10:46:53.273780+00:00",
+  "last_updated": "2026-06-01T14:52:44.613953+00:00",
   "signals": [
     {
       "id": "developer_sentiment_https_status_openai_com_incidents_01kssy9d28am92bcdxrts4cdkz",
@@ -10,7 +10,7 @@
       "source_type": "status_page",
       "tier": "tier_1",
       "published_at": "2026-05-29T13:28:52+00:00",
-      "summary": "Status: Resolved All impacted services have now fully recovered. Affected components Connectors/Apps (Operational) ChatGPT Atlas (Operational) Login (Operational) Search (Operational) Conversations (Operational) Compliance API (Operational) GPTs (Operational) File uploads (Operational) Voice mode (Operational) Image Generation (Operational) Agent (Operational) Deep Research (Operational)",
+      "summary": "Status: Resolved All impacted services have now fully recovered. Affected components Agent (Operational) Connectors/Apps (Operational) ChatGPT Atlas (Operational) Login (Operational) File uploads (Operational) Conversations (Operational) Compliance API (Operational) Deep Research (Operational) Voice mode (Operational) Search (Operational) Image Generation (Operational) GPTs (Operational)",
       "signal_type": "Developer Pain/Adoption Signal",
       "pain_keyword_hits": [
         "api"
@@ -96,7 +96,7 @@
       "source_type": "status_page",
       "tier": "tier_1",
       "published_at": "2026-05-28T05:27:00+00:00",
-      "summary": "Status: Resolved Resolved - Some users were unable to complete subscriptions on web and mobile. Affected users may have experienced the Subscribe button becoming unresponsive or encountered the error message submit_error_source:email during checkout. Affected components Login (Operational) File uploads (Operational) Search (Operational) Fine-tuning (Operational) Files (Operational) Compliance API (Operational) Responses (Operational) Login (Operational) Realtime (Operational) GPTs (Operational) Agent (Operational) FedRAMP (Operational) Codex Web (Operational) Voice mode (Operational) Images (Operational) Audio (Operational) Connectors/Apps (Operational) CLI (Operational) App (Operational) Codex API (Operational) VS Code extension (Operational) Conversations (Operational) Batch (Operational",
+      "summary": "Status: Resolved Resolved - Some users were unable to complete subscriptions on web and mobile. Affected users may have experienced the Subscribe button becoming unresponsive or encountered the error message submit_error_source:email during checkout. Affected components Voice mode (Operational) Responses (Operational) Codex Web (Operational) App (Operational) Codex API (Operational) Search (Operational) Fine-tuning (Operational) Files (Operational) GPTs (Operational) Sora (Operational) Audio (Operational) Compliance API (Operational) VS Code extension (Operational) Realtime (Operational) Deep Research (Operational) File uploads (Operational) Embeddings (Operational) Login (Operational) Image Generation (Operational) Agent (Operational) FedRAMP (Operational) Login (Operational) Conversation",
       "signal_type": "Developer Pain/Adoption Signal",
       "pain_keyword_hits": [
         "error",
@@ -176,19 +176,90 @@
       "confidence": "provider_status_or_public_signal"
     },
     {
-      "id": "developer_sentiment_https_status_openai_com_incidents_01ks88sradtwqw27nyraxmbaqn",
-      "title": "Increase in users hitting Codex rate limits",
-      "url": "https://status.openai.com//incidents/01KS88SRADTWQW27NYRAXMBAQN",
-      "source": "OpenAI Status",
+      "id": "developer_sentiment_https_status_claude_com_incidents_8p6f4r16xxmp",
+      "title": "Elevated errors on Claude Sonnet 4.6",
+      "url": "https://status.claude.com/incidents/8p6f4r16xxmp",
+      "source": "Anthropic Status",
       "source_region": "global",
       "source_type": "status_page",
       "tier": "tier_1",
-      "published_at": "2026-05-23T10:58:20+00:00",
-      "summary": "Status: Resolved All impacted services have now fully recovered. Affected components App (Operational) VS Code extension (Operational) Codex API (Operational) Codex Web (Operational) CLI (Operational)",
+      "published_at": "2026-06-01T14:40:23+00:00",
+      "summary": "Jun 1 , 14:40 UTC Identified - The issue has been identified and a fix is being implemented.",
       "signal_type": "Developer Pain/Adoption Signal",
       "pain_keyword_hits": [
-        "rate limit",
-        "api"
+        "error"
+      ],
+      "discovery_method": "rss",
+      "confidence": "provider_status_or_public_signal"
+    },
+    {
+      "id": "developer_sentiment_https_status_claude_com_incidents_qc88nvqjv99m",
+      "title": "Elevated errors for Claude Opus 4.7",
+      "url": "https://status.claude.com/incidents/qc88nvqjv99m",
+      "source": "Anthropic Status",
+      "source_region": "global",
+      "source_type": "status_page",
+      "tier": "tier_1",
+      "published_at": "2026-06-01T13:33:56+00:00",
+      "summary": "Jun 1 , 13:33 UTC Resolved - This incident has been resolved. Jun 1 , 12:48 UTC Monitoring - A fix has been implemented and we are monitoring the results. Jun 1 , 12:19 UTC Identified - The issue has been identified and a fix is being implemented. Jun 1 , 12:15 UTC Investigating - We are currently investigating this issue.",
+      "signal_type": "Developer Pain/Adoption Signal",
+      "pain_keyword_hits": [
+        "incident",
+        "error"
+      ],
+      "discovery_method": "rss",
+      "confidence": "provider_status_or_public_signal"
+    },
+    {
+      "id": "developer_sentiment_https_status_claude_com_incidents_z4pz8z34hr4x",
+      "title": "Sonnet 4.5 elevated errors",
+      "url": "https://status.claude.com/incidents/z4pz8z34hr4x",
+      "source": "Anthropic Status",
+      "source_region": "global",
+      "source_type": "status_page",
+      "tier": "tier_1",
+      "published_at": "2026-06-01T09:28:37+00:00",
+      "summary": "Jun 1 , 09:28 UTC Resolved - This incident has been resolved. Jun 1 , 09:17 UTC Update - We are continuing to monitor for any further issues. Jun 1 , 09:13 UTC Monitoring - A fix has been implemented and we are monitoring the results. Jun 1 , 09:08 UTC Investigating - We are currently investigating this issue.",
+      "signal_type": "Developer Pain/Adoption Signal",
+      "pain_keyword_hits": [
+        "incident",
+        "error"
+      ],
+      "discovery_method": "rss",
+      "confidence": "provider_status_or_public_signal"
+    },
+    {
+      "id": "developer_sentiment_https_status_claude_com_incidents_rk70zc69m54p",
+      "title": "Opus 4.7 elevated errors",
+      "url": "https://status.claude.com/incidents/rk70zc69m54p",
+      "source": "Anthropic Status",
+      "source_region": "global",
+      "source_type": "status_page",
+      "tier": "tier_1",
+      "published_at": "2026-06-01T07:22:22+00:00",
+      "summary": "Jun 1 , 07:22 UTC Resolved - This incident has been resolved. Jun 1 , 07:08 UTC Monitoring - A fix has been implemented and we are monitoring the results. Jun 1 , 06:48 UTC Investigating - We are currently investigating this issue.",
+      "signal_type": "Developer Pain/Adoption Signal",
+      "pain_keyword_hits": [
+        "incident",
+        "error"
+      ],
+      "discovery_method": "rss",
+      "confidence": "provider_status_or_public_signal"
+    },
+    {
+      "id": "developer_sentiment_https_status_claude_com_incidents_694jznhm6tsl",
+      "title": "opus 4.7 elevated errors",
+      "url": "https://status.claude.com/incidents/694jznhm6tsl",
+      "source": "Anthropic Status",
+      "source_region": "global",
+      "source_type": "status_page",
+      "tier": "tier_1",
+      "published_at": "2026-05-31T00:16:20+00:00",
+      "summary": "May 31 , 00:16 UTC Resolved - This incident has been resolved. May 30 , 22:58 UTC Investigating - We are currently investigating this issue.",
+      "signal_type": "Developer Pain/Adoption Signal",
+      "pain_keyword_hits": [
+        "incident",
+        "error"
       ],
       "discovery_method": "rss",
       "confidence": "provider_status_or_public_signal"
@@ -310,24 +381,6 @@
       "tier": "tier_1",
       "published_at": "2026-05-26T05:19:13+00:00",
       "summary": "May 26 , 05:19 UTC Resolved - This incident has been resolved. May 26 , 01:56 UTC Investigating - We are currently investigating this issue.",
-      "signal_type": "Developer Pain/Adoption Signal",
-      "pain_keyword_hits": [
-        "incident",
-        "error"
-      ],
-      "discovery_method": "rss",
-      "confidence": "provider_status_or_public_signal"
-    },
-    {
-      "id": "developer_sentiment_https_status_claude_com_incidents_44pgyz54d48z",
-      "title": "Elevated error rates on Opus 4.7",
-      "url": "https://status.claude.com/incidents/44pgyz54d48z",
-      "source": "Anthropic Status",
-      "source_region": "global",
-      "source_type": "status_page",
-      "tier": "tier_1",
-      "published_at": "2026-05-25T10:39:30+00:00",
-      "summary": "May 25 , 10:39 UTC Resolved - This incident has been resolved. May 25 , 10:32 UTC Monitoring - We had an elevated error rate on Opus 4.7 from 6:30 UTC until 10:30 UTC",
       "signal_type": "Developer Pain/Adoption Signal",
       "pain_keyword_hits": [
         "incident",
@@ -582,8 +635,8 @@
       "endpoint": "https://status.openai.com/history.rss",
       "status": "OK",
       "http_status": 200,
-      "items_seen": 96,
-      "items_added": 11,
+      "items_seen": 93,
+      "items_added": 10,
       "parse_warning": false
     },
     {
@@ -593,7 +646,7 @@
       "status": "OK",
       "http_status": 200,
       "items_seen": 25,
-      "items_added": 8,
+      "items_added": 12,
       "parse_warning": false
     },
     {

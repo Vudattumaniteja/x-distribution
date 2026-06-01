@@ -1,56 +1,58 @@
 {
-  "last_updated": "2026-05-30T11:07:56.835686+00:00",
+  "last_updated": "2026-06-01T15:19:30.199852+00:00",
   "lane_workers": 5,
   "lanes": [
     {
       "lane": "artifact_research",
       "status": "OK",
-      "items": 106
+      "items": 438
     },
     {
       "lane": "community",
       "status": "OK",
-      "items": 426
+      "items": 540
     },
     {
       "lane": "developer_sentiment",
       "status": "OK",
-      "items": 33
+      "items": 36
     },
     {
       "lane": "finance",
       "status": "OK",
-      "items": 126
+      "items": 138
     },
     {
       "lane": "model_market",
       "status": "OK",
-      "items": 614
+      "items": 603
     },
     {
       "lane": "rss",
       "status": "OK",
-      "items": 0
+      "items": 237
     },
     {
       "lane": "science",
       "status": "OK",
-      "items": 98
+      "items": 94
     },
     {
       "lane": "startup_collections",
       "status": "OK",
-      "items": 343
+      "items": 344
     },
     {
       "lane": "startup_funding",
       "status": "OK",
-      "items": 29
+      "items": 28
     },
     {
       "lane": "x",
-      "status": "OK",
-      "items": 111
+      "status": "PARTIAL",
+      "x_status": "PARTIAL",
+      "x_run_id": "x-20260601T145046.958016Z-16040",
+      "items": 106
     },
     {
       "lane": "youtube",
