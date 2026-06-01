@@ -362,6 +362,29 @@ class Validator:
         if not isinstance(data.get("pain_keywords"), list) or not data.get("pain_keywords"):
             self.error(rel_path, "pain_keywords must be a non-empty list")
 
+    def validate_prediction_market_sources(self) -> None:
+        rel_path = "config/prediction_market_sources.json"
+        data = self.load_json(rel_path)
+        if not isinstance(data, dict):
+            self.error(rel_path, "must be a JSON object")
+            return
+        self.require_keys(
+            rel_path,
+            data,
+            ["watchlist_queries", "min_volume", "min_price_change_24h", "max_creation_age_hours"]
+        )
+        queries = data.get("watchlist_queries", [])
+        if not isinstance(queries, list) or not queries:
+            self.error(rel_path, "watchlist_queries must be a non-empty list")
+        else:
+            for index, query in enumerate(queries):
+                if not isinstance(query, str):
+                    self.error(rel_path, f"watchlist_queries[{index}] must be a string")
+        for key in ["min_volume", "min_price_change_24h", "max_creation_age_hours"]:
+            val = data.get(key)
+            if not isinstance(val, (int, float)) or val < 0:
+                self.error(rel_path, f"{key} must be a non-negative number")
+
     def validate_news_queue(self) -> None:
         rel_path = "data/news_queue.json"
         data = self.load_json(rel_path)
@@ -436,6 +459,7 @@ class Validator:
         self.validate_startup_collection_sources()
         self.validate_science_sources()
         self.validate_developer_sentiment_sources()
+        self.validate_prediction_market_sources()
         self.validate_news_queue()
         self.validate_collector_outputs()
 

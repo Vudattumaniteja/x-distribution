@@ -299,6 +299,34 @@ def collect_developer_sentiment_data():
             })
     return items
 
+def collect_prediction_market_data():
+    print("--- Lane M: Polymarket Prediction Market (Rumors) ---")
+    for script in enabled_live_source_scripts("prediction_market"):
+        subprocess.run(python_script_command(script), check=False, env=UTF8_ENV)
+
+    items = []
+    for path in signal_output_paths("prediction_market"):
+        if not os.path.exists(path):
+            continue
+        with open(path, 'r', encoding='utf-8') as f:
+            payload = json.load(f)
+        prediction_items = payload.get('signals') or payload.get('items') or []
+        for item in prediction_items:
+            items.append({
+                "headline": item.get('title') or "Prediction market signal",
+                "summary": item.get('summary', ''),
+                "source": item.get('source', 'Polymarket'),
+                "url": item.get('url', ''),
+                "signal_type": item.get('signal_type', 'Prediction Market Signal'),
+                "notes": "Polymarket prediction odds/volatility signal",
+                "published_at": item.get('published_at'),
+                "score": item.get('relevance_score'),
+                "source_region": item.get('source_region'),
+                "unique_fields": item.get('unique_fields', {}),
+                "source_type": item.get("source_type", "prediction_market")
+            })
+    return items
+
 def main():
     runtime = collection_runtime_policy()
     lane_workers = max(1, int(runtime.get("lane_workers", 5)))
@@ -314,6 +342,7 @@ def main():
         "startup_collections": collect_startup_collection_data,
         "science": collect_science_breakthrough_data,
         "developer_sentiment": collect_developer_sentiment_data,
+        "prediction_market": collect_prediction_market_data,
     }
     lane_results = {name: [] for name in lanes}
     lane_health = []
@@ -365,6 +394,7 @@ def main():
         + lane_results["startup_collections"]
         + lane_results["science"]
         + lane_results["developer_sentiment"]
+        + lane_results.get("prediction_market", [])
     )
     
     # Re-reading corporate announcements

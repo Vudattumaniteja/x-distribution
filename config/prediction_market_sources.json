@@ -1,0 +1,25 @@
+{
+  "metadata": {
+    "description": "Prediction market watchlist queries and filtering thresholds for detecting rumours and events.",
+    "last_updated": "2026-06-01T22:45:00Z"
+  },
+  "watchlist_queries": [
+    "OpenAI",
+    "Anthropic",
+    "DeepSeek",
+    "Google Gemini",
+    "Claude",
+    "Sam Altman",
+    "GPT-5",
+    "Llama",
+    "Nvidia",
+    "IPO",
+    "acquisition",
+    "merger",
+    "valuation",
+    "fundraising"
+  ],
+  "min_volume": 5000,
+  "min_price_change_24h": 0.03,
+  "max_creation_age_hours": 48
+}

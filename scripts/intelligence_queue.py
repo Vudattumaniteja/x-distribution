@@ -103,6 +103,12 @@ def merge_duplicate(current: dict[str, Any], duplicate: dict[str, Any]) -> None:
     if duplicate.get("top_comments") and not current.get("top_comments"):
         current["top_comments"] = duplicate["top_comments"]
 
+    # Overwrite prediction market dynamic updates (odds, volume, metrics)
+    if current.get("source_type") == "prediction_market" or duplicate.get("source_type") == "prediction_market":
+        for key in ["headline", "title", "summary", "score", "relevance_score", "unique_fields"]:
+            if key in duplicate and duplicate[key] is not None:
+                current[key] = duplicate[key]
+
 
 def dedupe_items(items: Iterable[dict[str, Any]]) -> tuple[list[dict[str, Any]], int]:
     deduped: dict[str, dict[str, Any]] = {}

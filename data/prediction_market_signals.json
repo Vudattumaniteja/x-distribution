@@ -1,0 +1,161 @@
+{
+  "last_updated": "2026-06-01T17:20:34.320015+00:00",
+  "total_items": 1,
+  "signals": [
+    {
+      "id": "prediction_market_2397827",
+      "title": "Perugia: Pablo Llamas Ruiz vs Michele Ribecai [Pablo Llamas Ruiz: 75.0% | Michele Ribecai: 25.0%]",
+      "url": "https://polymarket.com/event/atp-ruiz-ribecai-2026-06-01",
+      "source": "Polymarket",
+      "source_region": "global",
+      "source_type": "prediction_market",
+      "tier": "tier_1",
+      "published_at": "2026-05-30T22:00:29.147567Z",
+      "summary": "This market refers to the tennis match between Pablo Llamas Ruiz and Michele Ribecai in the Perugia, originally scheduled for June 1, 2026 at 4:00AM ET.\n\nThis market will resolve to 'Pablo Llamas Ruiz' if Pablo Llamas Ruiz advances against Michele Ribecai.\n\nThis market will resolve to 'Michele Ribecai' if Michele Ribecai advances against Pablo Llamas Ruiz.\n\nIf the match is canceled (not played at all), ends in a tie, or is delayed beyond 7 days from the scheduled date without a winner determined, this market will resolve to 50-50.\n\nIf the match begins but is not completed, and one player advances due to the opponent's retirement, default, or disqualification, this market will resolve to the ",
+      "signal_type": "Prediction Market Signal",
+      "prediction_market_signal_types": [
+        "rumor_speculation"
+      ],
+      "relevance_score": 10.0,
+      "discovery_method": "polymarket_api",
+      "discovery_source": "https://gamma-api.polymarket.com/public-search?q=Llama",
+      "unique_fields": {
+        "market_id": "2397827",
+        "volume": 49041.14438599999,
+        "volume24h": 48919.607814999996,
+        "one_day_price_change": -0.105,
+        "outcomes": "[\"Pablo Llamas Ruiz\", \"Michele Ribecai\"]",
+        "outcome_prices": "[\"0.75\", \"0.25\"]",
+        "slug": "atp-ruiz-ribecai-2026-06-01"
+      }
+    }
+  ],
+  "source_health": [
+    {
+      "source": "Polymarket: OpenAI",
+      "mode": "public-search",
+      "endpoint": "https://gamma-api.polymarket.com/public-search?q=OpenAI",
+      "items_seen": 20,
+      "items_added": 20,
+      "status": "OK",
+      "http_status": 200
+    },
+    {
+      "source": "Polymarket: Anthropic",
+      "mode": "public-search",
+      "endpoint": "https://gamma-api.polymarket.com/public-search?q=Anthropic",
+      "items_seen": 23,
+      "items_added": 23,
+      "status": "OK",
+      "http_status": 200
+    },
+    {
+      "source": "Polymarket: DeepSeek",
+      "mode": "public-search",
+      "endpoint": "https://gamma-api.polymarket.com/public-search?q=DeepSeek",
+      "items_seen": 0,
+      "items_added": 0,
+      "status": "OK",
+      "http_status": 200
+    },
+    {
+      "source": "Polymarket: Google Gemini",
+      "mode": "public-search",
+      "endpoint": "https://gamma-api.polymarket.com/public-search?q=Google Gemini",
+      "items_seen": 7,
+      "items_added": 7,
+      "status": "OK",
+      "http_status": 200
+    },
+    {
+      "source": "Polymarket: Claude",
+      "mode": "public-search",
+      "endpoint": "https://gamma-api.polymarket.com/public-search?q=Claude",
+      "items_seen": 14,
+      "items_added": 14,
+      "status": "OK",
+      "http_status": 200
+    },
+    {
+      "source": "Polymarket: Sam Altman",
+      "mode": "public-search",
+      "endpoint": "https://gamma-api.polymarket.com/public-search?q=Sam Altman",
+      "items_seen": 1,
+      "items_added": 1,
+      "status": "OK",
+      "http_status": 200
+    },
+    {
+      "source": "Polymarket: GPT-5",
+      "mode": "public-search",
+      "endpoint": "https://gamma-api.polymarket.com/public-search?q=GPT-5",
+      "items_seen": 3,
+      "items_added": 3,
+      "status": "OK",
+      "http_status": 200
+    },
+    {
+      "source": "Polymarket: Llama",
+      "mode": "public-search",
+      "endpoint": "https://gamma-api.polymarket.com/public-search?q=Llama",
+      "items_seen": 12,
+      "items_added": 12,
+      "status": "OK",
+      "http_status": 200
+    },
+    {
+      "source": "Polymarket: Nvidia",
+      "mode": "public-search",
+      "endpoint": "https://gamma-api.polymarket.com/public-search?q=Nvidia",
+      "items_seen": 0,
+      "items_added": 0,
+      "status": "OK",
+      "http_status": 200
+    },
+    {
+      "source": "Polymarket: IPO",
+      "mode": "public-search",
+      "endpoint": "https://gamma-api.polymarket.com/public-search?q=IPO",
+      "items_seen": 46,
+      "items_added": 46,
+      "status": "OK",
+      "http_status": 200
+    },
+    {
+      "source": "Polymarket: acquisition",
+      "mode": "public-search",
+      "endpoint": "https://gamma-api.polymarket.com/public-search?q=acquisition",
+      "items_seen": 6,
+      "items_added": 6,
+      "status": "OK",
+      "http_status": 200
+    },
+    {
+      "source": "Polymarket: merger",
+      "mode": "public-search",
+      "endpoint": "https://gamma-api.polymarket.com/public-search?q=merger",
+      "items_seen": 5,
+      "items_added": 4,
+      "status": "OK",
+      "http_status": 200
+    },
+    {
+      "source": "Polymarket: valuation",
+      "mode": "public-search",
+      "endpoint": "https://gamma-api.polymarket.com/public-search?q=valuation",
+      "items_seen": 44,
+      "items_added": 44,
+      "status": "OK",
+      "http_status": 200
+    },
+    {
+      "source": "Polymarket: fundraising",
+      "mode": "public-search",
+      "endpoint": "https://gamma-api.polymarket.com/public-search?q=fundraising",
+      "items_seen": 0,
+      "items_added": 0,
+      "status": "OK",
+      "http_status": 200
+    }
+  ]
+}
