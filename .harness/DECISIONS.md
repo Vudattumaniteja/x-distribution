@@ -29,3 +29,10 @@
 - Reason: Independent browser-backed XCLI subprocesses must not navigate the same user tab or hide browser instability behind stale cached output.
 - Rejected alternative: Parallelize existing timeline calls while letting each bridge subprocess navigate the first available Chrome page.
 - Constraint: Posting, reply, follow, and older bridge workflows retain their default behavior; cache policy and the X-only PID lock apply inside the shared read-only coordinator boundary.
+
+## 2026-06-02: Implement Polymarket claim verification and confidence scoring
+- Decision: Add `fetch_polymarket_corroboration` to `TruthOracle` and hook it into `VerificationEngine` (Check 2: Claim Verification) to query active prediction markets. Update the confidence score calculator to apply a `+10` bonus for YES odds > 70% and a `-15` penalty for YES odds < 15%.
+- Reason: Prediction markets are a strong signal of claim likelihood; incorporating YES odds from active markets provides dynamic, market-backed verification metrics.
+- Rejected alternative: Hardcode odds values in independent collectors or manual overrides.
+- Constraint: Ensure keyword queries return binary active markets and handle non-binary or inactive markets gracefully by returning `None` without crashing.
+
