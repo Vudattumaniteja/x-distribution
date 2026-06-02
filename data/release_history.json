@@ -1,9 +1,0 @@
-{
-  "openai/openai-python": "332794745",
-  "google-deepmind/gemma": "326072422",
-  "mistralai/mistral-common": "315044601",
-  "meta-llama/llama-models": "210567831",
-  "deepseek-ai/DeepSeek-V3": "228293516",
-  "InternLM/InternLM": "135497569",
-  "OpenBMB/MiniCPM": "329163054"
-}
