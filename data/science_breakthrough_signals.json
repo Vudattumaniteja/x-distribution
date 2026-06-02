@@ -1,19 +1,239 @@
 {
-  "last_updated": "2026-06-01T14:52:34.490658+00:00",
+  "last_updated": "2026-06-02T12:19:03.268583+00:00",
   "signals": [
     {
-      "id": "science_https_www_genengnews_com_topics_drug_discovery_novel_therapeutic_modalities_target_the_undruggable",
-      "title": "Novel Therapeutic Modalities Target the Undruggable",
-      "url": "https://www.genengnews.com/topics/drug-discovery/novel-therapeutic-modalities-target-the-undruggable/",
+      "id": "science_https_www_biopharmadive_com_news_asco_2026_daraxonrasib_ivonescimab_proteus_erleada_results_821622",
+      "title": "ASCO ‘26: Bispecifics vs. ADCs, a ‘RAS’ revolution and a step change in prostate cancer",
+      "url": "https://www.biopharmadive.com/news/asco-2026-daraxonrasib-ivonescimab-proteus-erleada-results/821622/",
+      "source": "BioPharma Dive",
+      "source_region": "global",
+      "source_type": "biopharma_news",
+      "tier": "tier_1",
+      "published_at": "2026-06-02T10:27:00+00:00",
+      "summary": "At the year’s biggest cancer meeting, a high-stakes clash between two popular drug classes erupted, and scientists made headway against a once-insurmountable foe.",
+      "signal_type": "Science/Deep-Tech Breakthrough",
+      "science_keyword_hits": [
+        "ai",
+        "biopharma"
+      ],
+      "breakthrough_keyword_hits": [],
+      "relevance_score": 6,
+      "discovery_method": "rss",
+      "confidence": "public_source_signal"
+    },
+    {
+      "id": "science_https_www_biopharmadive_com_spons_why_us_manufactured_pharmaceutical_packaging_equipment_matters_821680",
+      "title": "Why US-manufactured pharmaceutical packaging equipment matters",
+      "url": "https://www.biopharmadive.com/spons/why-us-manufactured-pharmaceutical-packaging-equipment-matters/821680/",
+      "source": "BioPharma Dive",
+      "source_region": "global",
+      "source_type": "biopharma_news",
+      "tier": "tier_1",
+      "published_at": "2026-06-02T10:00:00+00:00",
+      "summary": "As manufacturers modernize operations, the origin of their equipment is a strategic consideration.",
+      "signal_type": "Science/Deep-Tech Breakthrough",
+      "science_keyword_hits": [
+        "biopharma"
+      ],
+      "breakthrough_keyword_hits": [],
+      "relevance_score": 4,
+      "discovery_method": "rss",
+      "confidence": "public_source_signal"
+    },
+    {
+      "id": "science_https_www_statnews_com_2026_06_02_doctors_office_waiting_room_telehealth_virtual_care_utm_campaign_rss",
+      "title": "Opinion: The virtual end of the doctor’s office waiting room",
+      "url": "https://www.statnews.com/2026/06/02/doctors-office-waiting-room-telehealth-virtual-care/?utm_campaign=rss",
+      "source": "STAT News",
+      "source_region": "global",
+      "source_type": "health_biotech_news",
+      "tier": "tier_1",
+      "published_at": "2026-06-02T08:30:00+00:00",
+      "summary": "It’s time to rethink and redesign how patients enter the health care system altogether, writes emergency physician Iyesatta Massaquoi Emeli.",
+      "signal_type": "Science/Deep-Tech Breakthrough",
+      "science_keyword_hits": [
+        "ai",
+        "biotech"
+      ],
+      "breakthrough_keyword_hits": [],
+      "relevance_score": 6,
+      "discovery_method": "rss",
+      "confidence": "public_source_signal"
+    },
+    {
+      "id": "science_https_www_statnews_com_2026_06_02_telehealth_virtual_rx_boom_corporate_practice_of_medicine_laws_utm_campaign_rss",
+      "title": "STAT+: Online care is caught in the crossfire as states crack down on corporate medicine",
+      "url": "https://www.statnews.com/2026/06/02/telehealth-virtual-rx-boom-corporate-practice-of-medicine-laws/?utm_campaign=rss",
+      "source": "STAT News",
+      "source_region": "global",
+      "source_type": "health_biotech_news",
+      "tier": "tier_1",
+      "published_at": "2026-06-02T08:30:00+00:00",
+      "summary": "Growing legislative scrutiny across multiple states targets the corporate structure underlying most direct-to-consumer telehealth businesses.",
+      "signal_type": "Science/Deep-Tech Breakthrough",
+      "science_keyword_hits": [
+        "biotech"
+      ],
+      "breakthrough_keyword_hits": [],
+      "relevance_score": 4,
+      "discovery_method": "rss",
+      "confidence": "public_source_signal"
+    },
+    {
+      "id": "science_https_www_genengnews_com_topics_artificial_intelligence_bio_it_world_keynote_highlights_collaborative_intelligence_in_ai_driven_drug_discove",
+      "title": "Bio-IT World Keynote Highlights Collaborative Intelligence in AI-Driven Drug Discovery",
+      "url": "https://www.genengnews.com/topics/artificial-intelligence/bio-it-world-keynote-highlights-collaborative-intelligence-in-ai-driven-drug-discovery/",
       "source": "Genetic Engineering and Biotechnology News",
       "source_region": "global",
       "source_type": "biotech_science_news",
       "tier": "tier_2",
-      "published_at": "2026-06-01T14:27:03+00:00",
-      "summary": "Macrocycles, de novo antibodies, and mRNA therapies are expanding the drug discovery toolbox for unmet patient needs. The post Novel Therapeutic Modalities Target the Undruggable appeared first on GEN - Genetic Engineering and Biotechnology News .",
+      "published_at": "2026-06-02T00:15:03+00:00",
+      "summary": "At the meeting, experts discussed the growing need for federated learning frameworks that enable AI model training across proprietary biopharma datasets without compromising intellectual property or sensitive research data. The post Bio-IT World Keynote Highlights Collaborative Intelligence in AI-Driven Drug Discovery appeared first on GEN - Genetic Engineering and Biotechnology News .",
       "signal_type": "Science/Deep-Tech Breakthrough",
       "science_keyword_hits": [
+        "ai",
         "drug discovery",
+        "biotech",
+        "biopharma"
+      ],
+      "breakthrough_keyword_hits": [],
+      "relevance_score": 9,
+      "discovery_method": "rss",
+      "confidence": "public_source_signal"
+    },
+    {
+      "id": "science_https_www_statnews_com_2026_06_01_trump_medicaid_work_requirement_rules_verification_eligibility_utm_campaign_rss",
+      "title": "STAT+: Trump administration releases rules for new Medicaid work requirements",
+      "url": "https://www.statnews.com/2026/06/01/trump-medicaid-work-requirement-rules-verification-eligibility/?utm_campaign=rss",
+      "source": "STAT News",
+      "source_region": "global",
+      "source_type": "health_biotech_news",
+      "tier": "tier_1",
+      "published_at": "2026-06-01T22:24:47+00:00",
+      "summary": "States are racing to implement the new requirements by the start of next year.",
+      "signal_type": "Science/Deep-Tech Breakthrough",
+      "science_keyword_hits": [
+        "ai",
+        "biotech"
+      ],
+      "breakthrough_keyword_hits": [],
+      "relevance_score": 6,
+      "discovery_method": "rss",
+      "confidence": "public_source_signal"
+    },
+    {
+      "id": "science_https_www_statnews_com_pharmalot_2026_06_01_lilly_warns_hospitals_submit_claims_data_or_lose_340b_drug_discounts_utm_campaign_rss",
+      "title": "STAT+: Eli Lilly warns hospitals to submit claims data in the next five days or lose their 340B drug discounts",
+      "url": "https://www.statnews.com/pharmalot/2026/06/01/lilly-warns-hospitals-submit-claims-data-or-lose-340b-drug-discounts/?utm_campaign=rss",
+      "source": "STAT News",
+      "source_region": "global",
+      "source_type": "health_biotech_news",
+      "tier": "tier_1",
+      "published_at": "2026-06-01T22:00:00+00:00",
+      "summary": "Eli Lilly has told more than 1,000 hospitals participating in the 340B drug discount program to submit claims data over the next five days — or lose price breaks.",
+      "signal_type": "Science/Deep-Tech Breakthrough",
+      "science_keyword_hits": [
+        "ai",
+        "biotech"
+      ],
+      "breakthrough_keyword_hits": [],
+      "relevance_score": 6,
+      "discovery_method": "rss",
+      "confidence": "public_source_signal"
+    },
+    {
+      "id": "science_https_www_statnews_com_2026_06_01_ebola_bundibugyo_vaccine_studies_cepi_62_million_funding_utm_campaign_rss",
+      "title": "STAT+: Global coalition to fast-track three vaccines targeting Ebola outbreak with $62 million in funding",
+      "url": "https://www.statnews.com/2026/06/01/ebola-bundibugyo-vaccine-studies-cepi-62-million-funding/?utm_campaign=rss",
+      "source": "STAT News",
+      "source_region": "global",
+      "source_type": "health_biotech_news",
+      "tier": "tier_1",
+      "published_at": "2026-06-01T21:35:53+00:00",
+      "summary": "With no licensed vaccines available to protect against the Ebola virus currently spreading in the Congo, efforts are underway to fast-track development of at least three vaccines.",
+      "signal_type": "Science/Deep-Tech Breakthrough",
+      "science_keyword_hits": [
+        "ai",
+        "biotech"
+      ],
+      "breakthrough_keyword_hits": [
+        "funding"
+      ],
+      "relevance_score": 7,
+      "discovery_method": "rss",
+      "confidence": "public_source_signal"
+    },
+    {
+      "id": "science_https_www_statnews_com_2026_06_01_abivax_ulcerative_colitis_obefazimod_utm_campaign_rss",
+      "title": "STAT+: Abivax ulcerative colitis drug shows strong efficacy, but cases of cancer raise concerns",
+      "url": "https://www.statnews.com/2026/06/01/abivax-ulcerative-colitis-obefazimod/?utm_campaign=rss",
+      "source": "STAT News",
+      "source_region": "global",
+      "source_type": "health_biotech_news",
+      "tier": "tier_1",
+      "published_at": "2026-06-01T21:31:11+00:00",
+      "summary": "Abivax said its experimental treatment for ulcerative colitis showed significant efficacy in a closely watched trial, but shares of the company tanked on safety concerns.",
+      "signal_type": "Science/Deep-Tech Breakthrough",
+      "science_keyword_hits": [
+        "ai",
+        "biotech"
+      ],
+      "breakthrough_keyword_hits": [],
+      "relevance_score": 6,
+      "discovery_method": "rss",
+      "confidence": "public_source_signal"
+    },
+    {
+      "id": "science_https_www_statnews_com_2026_06_01_asco_news_day_4_merkel_cell_carcinoma_glp1s_grail_utm_campaign_rss",
+      "title": "STAT+: At ASCO, talk of barriers to cancer care, new treatments, and other big takeaways",
+      "url": "https://www.statnews.com/2026/06/01/asco-news-day-4-merkel-cell-carcinoma-glp1s-grail/?utm_campaign=rss",
+      "source": "STAT News",
+      "source_region": "global",
+      "source_type": "health_biotech_news",
+      "tier": "tier_1",
+      "published_at": "2026-06-01T20:56:38+00:00",
+      "summary": "Here is some of what you may have missed from the world's largest cancer research meeting.",
+      "signal_type": "Science/Deep-Tech Breakthrough",
+      "science_keyword_hits": [
+        "biotech"
+      ],
+      "breakthrough_keyword_hits": [],
+      "relevance_score": 4,
+      "discovery_method": "rss",
+      "confidence": "public_source_signal"
+    },
+    {
+      "id": "science_https_www_statnews_com_2026_06_01_cancer_oncologists_grief_asco_2026_utm_campaign_rss",
+      "title": "STAT+: At the world’s largest cancer research meeting, data briefly took a backseat to grief",
+      "url": "https://www.statnews.com/2026/06/01/cancer-oncologists-grief-asco-2026/?utm_campaign=rss",
+      "source": "STAT News",
+      "source_region": "global",
+      "source_type": "health_biotech_news",
+      "tier": "tier_1",
+      "published_at": "2026-06-01T20:25:58+00:00",
+      "summary": "At the world's largest cancer research meeting, new data were plentiful. But this year, there was also a focus on grief.",
+      "signal_type": "Science/Deep-Tech Breakthrough",
+      "science_keyword_hits": [
+        "biotech"
+      ],
+      "breakthrough_keyword_hits": [],
+      "relevance_score": 4,
+      "discovery_method": "rss",
+      "confidence": "public_source_signal"
+    },
+    {
+      "id": "science_https_www_genengnews_com_topics_translational_medicine_attacking_gout_crystalys_sees_room_for_its_dotinurad_and_other_allopurinol_alternativ",
+      "title": "Attacking Gout: Crystalys Sees Room for Its Dotinurad and Other Allopurinol Alternatives",
+      "url": "https://www.genengnews.com/topics/translational-medicine/attacking-gout-crystalys-sees-room-for-its-dotinurad-and-other-allopurinol-alternatives/",
+      "source": "Genetic Engineering and Biotechnology News",
+      "source_region": "global",
+      "source_type": "biotech_science_news",
+      "tier": "tier_2",
+      "published_at": "2026-06-01T19:26:10+00:00",
+      "summary": "First-patient dosing in AMETHYST comes five days after a Crystalys rival, Swedish Orphan Biovitrum (Sobi), announced positive Phase III data for pozdeutinurad, a treatment for progressive gout which like dotinurad is a next-generation, once-daily oral URAT1 inhibitor. The post Attacking Gout: Crystalys Sees Room for Its Dotinurad and Other Allopurinol Alternatives appeared first on GEN - Genetic Engineering and Biotechnology News .",
+      "signal_type": "Science/Deep-Tech Breakthrough",
+      "science_keyword_hits": [
+        "ai",
         "biotech"
       ],
       "breakthrough_keyword_hits": [],
@@ -22,47 +242,226 @@
       "confidence": "public_source_signal"
     },
     {
-      "id": "science_https_www_genengnews_com_topics_omics_mass_spectrometrys_discovery_revolution",
-      "title": "Mass Spectrometry’s Discovery Revolution",
-      "url": "https://www.genengnews.com/topics/omics/mass-spectrometrys-discovery-revolution/",
+      "id": "science_https_www_biopharmadive_com_news_avenzo_rallybio_reverse_merger_cancer_drugs_821613",
+      "title": "RallyBio tries again for reverse merger, this time with Avenzo",
+      "url": "https://www.biopharmadive.com/news/avenzo-rallybio-reverse-merger-cancer-drugs/821613/",
+      "source": "BioPharma Dive",
+      "source_region": "global",
+      "source_type": "biopharma_news",
+      "tier": "tier_1",
+      "published_at": "2026-06-01T19:03:00+00:00",
+      "summary": "It's the second attempt for the rare disease company, which initially announced plans to merge with Candid Therapeutics before the immune drug developer was bought by UCB.",
+      "signal_type": "Science/Deep-Tech Breakthrough",
+      "science_keyword_hits": [
+        "ai",
+        "biopharma"
+      ],
+      "breakthrough_keyword_hits": [],
+      "relevance_score": 6,
+      "discovery_method": "rss",
+      "confidence": "public_source_signal"
+    },
+    {
+      "id": "science_https_www_genengnews_com_topics_translational_medicine_neuropixels_opto_integrates_electrophysiology_and_optogenetics_to_probe_neuronal_func",
+      "title": "Neuropixels Opto Integrates Electrophysiology and Optogenetics to Probe Neuronal Function",
+      "url": "https://www.genengnews.com/topics/translational-medicine/neuropixels-opto-integrates-electrophysiology-and-optogenetics-to-probe-neuronal-function/",
       "source": "Genetic Engineering and Biotechnology News",
       "source_region": "global",
       "source_type": "biotech_science_news",
       "tier": "tier_2",
-      "published_at": "2026-06-01T14:16:35+00:00",
-      "summary": "Next-generation MS platforms are transforming drug discovery by revealing complex biology earlier, faster, and at unprecedented depth. The post Mass Spectrometry’s Discovery Revolution appeared first on GEN - Genetic Engineering and Biotechnology News .",
+      "published_at": "2026-06-01T18:26:22+00:00",
+      "summary": "Neuropixels Opto is a single brain probe combining electrophysiology and optogenetics that simultaneously records and controls neurons deep in the brain, enabling unprecedented insights into neural circuits and brain function. The post Neuropixels Opto Integrates Electrophysiology and Optogenetics to Probe Neuronal Function appeared first on GEN - Genetic Engineering and Biotechnology News .",
       "signal_type": "Science/Deep-Tech Breakthrough",
       "science_keyword_hits": [
-        "drug discovery",
-        "biology",
+        "ai",
         "biotech"
       ],
+      "breakthrough_keyword_hits": [],
+      "relevance_score": 5,
+      "discovery_method": "rss",
+      "confidence": "public_source_signal"
+    },
+    {
+      "id": "science_https_www_genengnews_com_topics_drug_discovery_top_10_u_s_biopharma_clusters_2026",
+      "title": "Top 10 U.S. Biopharma Clusters 2026",
+      "url": "https://www.genengnews.com/topics/drug-discovery/top-10-u-s-biopharma-clusters-2026/",
+      "source": "Genetic Engineering and Biotechnology News",
+      "source_region": "global",
+      "source_type": "biotech_science_news",
+      "tier": "tier_2",
+      "published_at": "2026-06-01T17:35:16+00:00",
+      "summary": "Mid-cap buyers, improved capital raising climate, and reshoring of manufacturing are shaping how much and where biopharmas choose to grow. The post Top 10 U.S. Biopharma Clusters 2026 appeared first on GEN - Genetic Engineering and Biotechnology News .",
+      "signal_type": "Science/Deep-Tech Breakthrough",
+      "science_keyword_hits": [
+        "ai",
+        "biotech",
+        "biopharma",
+        "climate"
+      ],
+      "breakthrough_keyword_hits": [],
+      "relevance_score": 9,
+      "discovery_method": "rss",
+      "confidence": "public_source_signal"
+    },
+    {
+      "id": "science_https_www_genengnews_com_topics_artificial_intelligence_pharmas_trial_problem_outdated_systems_broken_data_and_the_coming_ai_reset",
+      "title": "Pharma’s Trial Problem: Outdated Systems, Broken Data, and the Coming AI Reset",
+      "url": "https://www.genengnews.com/topics/artificial-intelligence/pharmas-trial-problem-outdated-systems-broken-data-and-the-coming-ai-reset/",
+      "source": "Genetic Engineering and Biotechnology News",
+      "source_region": "global",
+      "source_type": "biotech_science_news",
+      "tier": "tier_2",
+      "published_at": "2026-06-01T16:37:40+00:00",
+      "summary": "In this thought leadership article, Erik Terjesen of Silicon Foundry explores how AI has the potential to transform clinical trials, while outdated data systems continue to limit progress. Although AI can help shorten timelines and improve decision-making, it is not a cure-all—it cannot fix flawed trial design, replace human oversight, or remove the need for regulatory rigor. The post Pharma’s Trial Problem: Outdated Systems, Broken Data, and the Coming AI Reset appeared first on GEN - Genetic Engineering and Biotechnology News .",
+      "signal_type": "Science/Deep-Tech Breakthrough",
+      "science_keyword_hits": [
+        "ai",
+        "biotech",
+        "clinical"
+      ],
       "breakthrough_keyword_hits": [
-        "platform"
+        "clinical trial"
       ],
       "relevance_score": 8,
       "discovery_method": "rss",
       "confidence": "public_source_signal"
     },
     {
-      "id": "science_https_www_genengnews_com_topics_omics_multiomics_mass_spec_workflows_in_drug_discovery",
-      "title": "Multiomics Mass Spec Workflows in Drug Discovery",
-      "url": "https://www.genengnews.com/topics/omics/multiomics-mass-spec-workflows-in-drug-discovery/",
+      "id": "science_https_www_genengnews_com_topics_drug_discovery_targeted_protein_degradation_broadens_its_scope",
+      "title": "Targeted Protein Degradation Broadens Its Scope",
+      "url": "https://www.genengnews.com/topics/drug-discovery/targeted-protein-degradation-broadens-its-scope/",
       "source": "Genetic Engineering and Biotechnology News",
       "source_region": "global",
       "source_type": "biotech_science_news",
       "tier": "tier_2",
-      "published_at": "2026-06-01T13:49:52+00:00",
-      "summary": "Advances in end-to-end multiomics platforms and the underlying scientific knowledge now enable faster and more precise biomarker discovery, mechanistic insight generation, and therapeutic design—core drivers of modern drug discovery programs. The post Multiomics Mass Spec Workflows in Drug Discovery appeared first on GEN - Genetic Engineering and Biotechnology News .",
+      "published_at": "2026-06-01T16:30:59+00:00",
+      "summary": "Advancing targeted protein degradation (TPD) depends on a coordinated ecosystem of tools that support target validation, mechanistic interrogation, and translational predictions. The post Targeted Protein Degradation Broadens Its Scope appeared first on GEN - Genetic Engineering and Biotechnology News .",
       "signal_type": "Science/Deep-Tech Breakthrough",
       "science_keyword_hits": [
-        "drug discovery",
+        "protein",
+        "biotech"
+      ],
+      "breakthrough_keyword_hits": [],
+      "relevance_score": 5,
+      "discovery_method": "rss",
+      "confidence": "public_source_signal"
+    },
+    {
+      "id": "science_https_www_genengnews_com_topics_translational_medicine_organ_chips_move_towards_mainstream_drug_development_with_hurdles_ahead",
+      "title": "Organ Chips Move Towards Mainstream Drug Development, with Hurdles Ahead",
+      "url": "https://www.genengnews.com/topics/translational-medicine/organ-chips-move-towards-mainstream-drug-development-with-hurdles-ahead/",
+      "source": "Genetic Engineering and Biotechnology News",
+      "source_region": "global",
+      "source_type": "biotech_science_news",
+      "tier": "tier_2",
+      "published_at": "2026-06-01T16:13:25+00:00",
+      "summary": "From spaceflight to high-throughput studies, evidence supports greater use of organ chips, but regulatory ambiguity and reliance on animal models slow adoption . The post Organ Chips Move Towards Mainstream Drug Development, with Hurdles Ahead appeared first on GEN - Genetic Engineering and Biotechnology News .",
+      "signal_type": "Science/Deep-Tech Breakthrough",
+      "science_keyword_hits": [
+        "ai",
+        "biotech"
+      ],
+      "breakthrough_keyword_hits": [],
+      "relevance_score": 5,
+      "discovery_method": "rss",
+      "confidence": "public_source_signal"
+    },
+    {
+      "id": "science_https_www_genengnews_com_topics_translational_medicine_state_of_the_diagnostic_industry_recombinants_on_the_rise",
+      "title": "State of the Diagnostic Industry: Recombinants on the Rise",
+      "url": "https://www.genengnews.com/topics/translational-medicine/state-of-the-diagnostic-industry-recombinants-on-the-rise/",
+      "source": "Genetic Engineering and Biotechnology News",
+      "source_region": "global",
+      "source_type": "biotech_science_news",
+      "tier": "tier_2",
+      "published_at": "2026-06-01T15:58:11+00:00",
+      "summary": "In this June issue Thought Leader article, David A. George of Scripps Laboratories explains why recombinant technologies are the most responsible path to ensuring the continued availability of the tests patients and clinicians rely on every day. The post State of the Diagnostic Industry: Recombinants on the Rise appeared first on GEN - Genetic Engineering and Biotechnology News .",
+      "signal_type": "Science/Deep-Tech Breakthrough",
+      "science_keyword_hits": [
+        "ai",
+        "biotech"
+      ],
+      "breakthrough_keyword_hits": [],
+      "relevance_score": 5,
+      "discovery_method": "rss",
+      "confidence": "public_source_signal"
+    },
+    {
+      "id": "science_https_www_biopharmadive_com_news_servier_edgewise_muscular_dystrophy_deal_acquisition_neuroscience_neurology_821605",
+      "title": "Servier buys into muscular dystrophy with potentially $2.7B deal",
+      "url": "https://www.biopharmadive.com/news/servier-edgewise-muscular-dystrophy-deal-acquisition-neuroscience-neurology/821605/",
+      "source": "BioPharma Dive",
+      "source_region": "global",
+      "source_type": "biopharma_news",
+      "tier": "tier_1",
+      "published_at": "2026-06-01T15:39:00+00:00",
+      "summary": "The French drugmaker has agreed to acquire an experimental tablet from Edgewise Therapeutics that some bullish analysts say could eventually hit peak sales of over $2 billion.",
+      "signal_type": "Science/Deep-Tech Breakthrough",
+      "science_keyword_hits": [
+        "biopharma"
+      ],
+      "breakthrough_keyword_hits": [],
+      "relevance_score": 4,
+      "discovery_method": "rss",
+      "confidence": "public_source_signal"
+    },
+    {
+      "id": "science_https_www_statnews_com_2026_06_01_fda_misses_deadline_electric_shock_ban_disability_advocates_speak_out_utm_campaign_rss",
+      "title": "As FDA misses deadline on electric shock ban, disability advocates speak out",
+      "url": "https://www.statnews.com/2026/06/01/fda-misses-deadline-electric-shock-ban-disability-advocates-speak-out/?utm_campaign=rss",
+      "source": "STAT News",
+      "source_region": "global",
+      "source_type": "health_biotech_news",
+      "tier": "tier_1",
+      "published_at": "2026-06-01T15:30:14+00:00",
+      "summary": "The FDA has missed a self-imposed deadline to ban the use of electrical shock devices in people with intellectual disabilities.",
+      "signal_type": "Science/Deep-Tech Breakthrough",
+      "science_keyword_hits": [
         "biotech"
       ],
       "breakthrough_keyword_hits": [
-        "platform"
+        "fda"
       ],
-      "relevance_score": 6,
+      "relevance_score": 5,
+      "discovery_method": "rss",
+      "confidence": "public_source_signal"
+    },
+    {
+      "id": "science_https_www_genengnews_com_topics_drug_discovery_next_generation_biopharma_innovation",
+      "title": "Next Generation Biopharma Innovation",
+      "url": "https://www.genengnews.com/topics/drug-discovery/next-generation-biopharma-innovation/",
+      "source": "Genetic Engineering and Biotechnology News",
+      "source_region": "global",
+      "source_type": "biotech_science_news",
+      "tier": "tier_2",
+      "published_at": "2026-06-01T15:27:29+00:00",
+      "summary": "In a quest to provide more relevant translational data, traditional in vivo models join forces with new approach methodologies. The post Next Generation Biopharma Innovation appeared first on GEN - Genetic Engineering and Biotechnology News .",
+      "signal_type": "Science/Deep-Tech Breakthrough",
+      "science_keyword_hits": [
+        "biotech",
+        "biopharma"
+      ],
+      "breakthrough_keyword_hits": [],
+      "relevance_score": 5,
+      "discovery_method": "rss",
+      "confidence": "public_source_signal"
+    },
+    {
+      "id": "science_https_www_statnews_com_2026_06_01_medicare_bridge_obesity_drug_coverage_no_surprises_act_idr_rules_health_care_inc_utm_campaign_rss",
+      "title": "STAT+: Medicare’s mum on GLP-1s, and Massachusetts sues United",
+      "url": "https://www.statnews.com/2026/06/01/medicare-bridge-obesity-drug-coverage-no-surprises-act-idr-rules-health-care-inc/?utm_campaign=rss",
+      "source": "STAT News",
+      "source_region": "global",
+      "source_type": "health_biotech_news",
+      "tier": "tier_1",
+      "published_at": "2026-06-01T15:14:34+00:00",
+      "summary": "We've been asking Medicare for weeks about the cost of giving seniors $50 obesity drugs.",
+      "signal_type": "Science/Deep-Tech Breakthrough",
+      "science_keyword_hits": [
+        "biotech"
+      ],
+      "breakthrough_keyword_hits": [],
+      "relevance_score": 4,
       "discovery_method": "rss",
       "confidence": "public_source_signal"
     },
@@ -162,90 +561,6 @@
       ],
       "breakthrough_keyword_hits": [],
       "relevance_score": 4,
-      "discovery_method": "rss",
-      "confidence": "public_source_signal"
-    },
-    {
-      "id": "science_https_www_genengnews_com_sponsored_one_antibody_fewer_scientific_surprises",
-      "title": "One Antibody, Fewer Scientific Surprises",
-      "url": "https://www.genengnews.com/sponsored/one-antibody-fewer-scientific-surprises/",
-      "source": "Genetic Engineering and Biotechnology News",
-      "source_region": "global",
-      "source_type": "biotech_science_news",
-      "tier": "tier_2",
-      "published_at": "2026-06-01T10:57:44+00:00",
-      "summary": "Why maintaining translational continuity across preclinical research models can make or break confidence in experimental results. The post One Antibody, Fewer Scientific Surprises appeared first on GEN - Genetic Engineering and Biotechnology News .",
-      "signal_type": "Science/Deep-Tech Breakthrough",
-      "science_keyword_hits": [
-        "ai",
-        "biotech",
-        "clinical"
-      ],
-      "breakthrough_keyword_hits": [],
-      "relevance_score": 7,
-      "discovery_method": "rss",
-      "confidence": "public_source_signal"
-    },
-    {
-      "id": "science_https_www_genengnews_com_sponsored_from_discovery_to_development_in_emerging_modalities",
-      "title": "From Discovery to Development in Emerging Modalities",
-      "url": "https://www.genengnews.com/sponsored/from-discovery-to-development-in-emerging-modalities/",
-      "source": "Genetic Engineering and Biotechnology News",
-      "source_region": "global",
-      "source_type": "biotech_science_news",
-      "tier": "tier_2",
-      "published_at": "2026-06-01T10:56:21+00:00",
-      "summary": "ProBio is building flexible platforms for multispecific antibodies, ADCs, and other advanced therapeutic approaches. The post From Discovery to Development in Emerging Modalities appeared first on GEN - Genetic Engineering and Biotechnology News .",
-      "signal_type": "Science/Deep-Tech Breakthrough",
-      "science_keyword_hits": [
-        "biotech"
-      ],
-      "breakthrough_keyword_hits": [
-        "platform"
-      ],
-      "relevance_score": 4,
-      "discovery_method": "rss",
-      "confidence": "public_source_signal"
-    },
-    {
-      "id": "science_https_www_genengnews_com_sponsored_corning_advances_the_organoid_revolution",
-      "title": "Corning Advances the Organoid Revolution",
-      "url": "https://www.genengnews.com/sponsored/corning-advances-the-organoid-revolution/",
-      "source": "Genetic Engineering and Biotechnology News",
-      "source_region": "global",
-      "source_type": "biotech_science_news",
-      "tier": "tier_2",
-      "published_at": "2026-06-01T10:55:56+00:00",
-      "summary": "As FDA support for NAMs accelerates, Corning is helping researchers standardize, scale, and automate organoid science. The post Corning Advances the Organoid Revolution appeared first on GEN - Genetic Engineering and Biotechnology News .",
-      "signal_type": "Science/Deep-Tech Breakthrough",
-      "science_keyword_hits": [
-        "biotech"
-      ],
-      "breakthrough_keyword_hits": [
-        "fda"
-      ],
-      "relevance_score": 4,
-      "discovery_method": "rss",
-      "confidence": "public_source_signal"
-    },
-    {
-      "id": "science_https_www_genengnews_com_sponsored_evaluating_cns_anti_inflammatory_therapies_with_human_brain_organoids",
-      "title": "Evaluating CNS Anti-inflammatory Therapies with Human Brain Organoids",
-      "url": "https://www.genengnews.com/sponsored/evaluating-cns-anti-inflammatory-therapies-with-human-brain-organoids/",
-      "source": "Genetic Engineering and Biotechnology News",
-      "source_region": "global",
-      "source_type": "biotech_science_news",
-      "tier": "tier_2",
-      "published_at": "2026-06-01T10:54:15+00:00",
-      "summary": "Inflammatory pathways involving microglia, astrocytes, and cytokine signaling are widely implicated in disorders including Alzheimer’s disease, Parkinson’s disease, ALS, multiple sclerosis, and traumatic brain injury. Yet despite significant investment in anti-inflammatory therapies, clinical success has remained limited. The post Evaluating CNS Anti-inflammatory Therapies with Human Brain Organoids appeared first on GEN - Genetic Engineering and Biotechnology News .",
-      "signal_type": "Science/Deep-Tech Breakthrough",
-      "science_keyword_hits": [
-        "ai",
-        "biotech",
-        "clinical"
-      ],
-      "breakthrough_keyword_hits": [],
-      "relevance_score": 7,
       "discovery_method": "rss",
       "confidence": "public_source_signal"
     },
@@ -367,25 +682,6 @@
       "confidence": "public_source_signal"
     },
     {
-      "id": "science_https_www_statnews_com_2026_06_01_us_military_medical_corps_recruitment_incentives_utm_campaign_rss",
-      "title": "Opinion: The military’s medical corps has a serious recruitment problem",
-      "url": "https://www.statnews.com/2026/06/01/us-military-medical-corps-recruitment-incentives/?utm_campaign=rss",
-      "source": "STAT News",
-      "source_region": "global",
-      "source_type": "health_biotech_news",
-      "tier": "tier_1",
-      "published_at": "2026-06-01T08:30:00+00:00",
-      "summary": "Congress must incentivize more physicians (and their employers) to join the military medical corps, writes the former attending physician to Congress.",
-      "signal_type": "Science/Deep-Tech Breakthrough",
-      "science_keyword_hits": [
-        "biotech"
-      ],
-      "breakthrough_keyword_hits": [],
-      "relevance_score": 4,
-      "discovery_method": "rss",
-      "confidence": "public_source_signal"
-    },
-    {
       "id": "science_https_www_nature_com_articles_s41587_026_03161_w",
       "title": "Decoding the origins of cellular self-organization for engineered biology",
       "url": "https://www.nature.com/articles/s41587-026-03161-w",
@@ -425,53 +721,15 @@
       "confidence": "public_source_signal"
     },
     {
-      "id": "science_https_www_statnews_com_2026_05_31_asco_news_day_3_revmed_akeso_summit_lilly_kelonia_utm_campaign_rss",
-      "title": "STAT+: A standing ovation for RevMed, and caution for Akeso",
-      "url": "https://www.statnews.com/2026/05/31/asco-news-day-3-revmed-akeso-summit-lilly-kelonia/?utm_campaign=rss",
-      "source": "STAT News",
-      "source_region": "global",
-      "source_type": "health_biotech_news",
-      "tier": "tier_1",
-      "published_at": "2026-05-31T23:03:06+00:00",
-      "summary": "ASCO Day 3: A huge advance for pancreatic cancer, a let down for Akeso and Summit, and a new approach to immunotherapy.",
-      "signal_type": "Science/Deep-Tech Breakthrough",
-      "science_keyword_hits": [
-        "biotech"
-      ],
-      "breakthrough_keyword_hits": [],
-      "relevance_score": 4,
-      "discovery_method": "rss",
-      "confidence": "public_source_signal"
-    },
-    {
-      "id": "science_https_www_statnews_com_2026_05_31_low_dose_nivolumab_extends_survival_trial_head_neck_squamous_cell_carcinoma_asco_2026_utm_campaign_rss",
-      "title": "Ultra-low doses could bring costly cancer treatments to more patients in poorer countries",
-      "url": "https://www.statnews.com/2026/05/31/low-dose-nivolumab-extends-survival-trial-head-neck-squamous-cell-carcinoma-asco-2026/?utm_campaign=rss",
-      "source": "STAT News",
-      "source_region": "global",
-      "source_type": "health_biotech_news",
-      "tier": "tier_1",
-      "published_at": "2026-05-31T17:11:55+00:00",
-      "summary": "Low-dose, low-cost immunotherapies may help patients in poorer countries access high-tech cancer treatments.",
-      "signal_type": "Science/Deep-Tech Breakthrough",
-      "science_keyword_hits": [
-        "biotech"
-      ],
-      "breakthrough_keyword_hits": [],
-      "relevance_score": 4,
-      "discovery_method": "rss",
-      "confidence": "public_source_signal"
-    },
-    {
       "id": "science_https_techcrunch_com_2026_05_31_i_went_to_the_so_called_steroid_olympics_to_understand_why_silicon_valley_is_obsessed_with_peptides",
-      "title": "What happens in Vega$: steroids, swimmers, and a billion-dollar hustle",
+      "title": "What happens in Vega$: Steroids, swimmers, and a billion-dollar hustle",
       "url": "https://techcrunch.com/2026/05/31/i-went-to-the-so-called-steroid-olympics-to-understand-why-silicon-valley-is-obsessed-with-peptides/",
       "source": "TechCrunch Biotech",
       "source_region": "global",
       "source_type": "biotech_startup_news",
       "tier": "tier_1",
       "published_at": "2026-05-31T13:00:00+00:00",
-      "summary": "The Enhanced Games — a singular sporting competition where a majority of the athletes were on performance enhancing drugs — may herald a new business model that the tech industry is ready to embrace.",
+      "summary": "The Enhanced Games — a singular sporting competition where a majority of the athletes were on performance-enhancing drugs — may herald a new business model that the tech industry is ready to embrace.",
       "signal_type": "Science/Deep-Tech Breakthrough",
       "science_keyword_hits": [
         "biotech"
@@ -504,26 +762,6 @@
       "confidence": "public_source_signal"
     },
     {
-      "id": "science_https_www_statnews_com_2026_05_31_pancreatic_cancer_daraxonrasib_revolution_medicines_results_asco_2026_utm_campaign_rss",
-      "title": "STAT+: Practice-changing results reported for Revolution Medicines pancreatic cancer drug",
-      "url": "https://www.statnews.com/2026/05/31/pancreatic-cancer-daraxonrasib-revolution-medicines-results-asco-2026/?utm_campaign=rss",
-      "source": "STAT News",
-      "source_region": "global",
-      "source_type": "health_biotech_news",
-      "tier": "tier_1",
-      "published_at": "2026-05-31T12:00:00+00:00",
-      "summary": "Much-awaited results at ASCO show that scientists have indeed found a way to drug a \"greasy ball\" involved in pancreatic cancer.",
-      "signal_type": "Science/Deep-Tech Breakthrough",
-      "science_keyword_hits": [
-        "ai",
-        "biotech"
-      ],
-      "breakthrough_keyword_hits": [],
-      "relevance_score": 6,
-      "discovery_method": "rss",
-      "confidence": "public_source_signal"
-    },
-    {
       "id": "science_https_www_biopharmadive_com_news_akeso_summit_ivonescimab_asco_2026_harmoni6_821559",
       "title": "Akeso, Summit drug extends survival in closely watched lung cancer trial",
       "url": "https://www.biopharmadive.com/news/akeso-summit-ivonescimab-asco-2026-harmoni6/821559/",
@@ -532,135 +770,13 @@
       "source_type": "biopharma_news",
       "tier": "tier_1",
       "published_at": "2026-05-31T12:00:00+00:00",
-      "summary": "Ivonescimab reduced the risk of death by one-third compared to chemotherapy in a China-based study that’s seen as an important barometer for a class of cancer immunotherapies known as \"PD-1/VEGF inhibitors.\"",
+      "summary": "Though ivonescimab reduced the risk of death by one-third compared to chemotherapy in a China-based study, the total survival benefit of four months stirred debate and pressured company shares.",
       "signal_type": "Science/Deep-Tech Breakthrough",
       "science_keyword_hits": [
         "biopharma"
       ],
       "breakthrough_keyword_hits": [],
       "relevance_score": 4,
-      "discovery_method": "rss",
-      "confidence": "public_source_signal"
-    },
-    {
-      "id": "science_https_www_statnews_com_2026_05_31_prostate_cancer_hormone_therapy_cut_relapse_asco_2026_utm_campaign_rss",
-      "title": "STAT+: For prostate cancer patients set on surgery, new hormone regimen may improve outcomes, study finds",
-      "url": "https://www.statnews.com/2026/05/31/prostate-cancer-hormone-therapy-cut-relapse-asco-2026/?utm_campaign=rss",
-      "source": "STAT News",
-      "source_region": "global",
-      "source_type": "health_biotech_news",
-      "tier": "tier_1",
-      "published_at": "2026-05-31T12:00:00+00:00",
-      "summary": "By doing hormone therapy up front in prostate cancer cases, the hope was to shrink the relapse rate after surgery. Results were encouraging.",
-      "signal_type": "Science/Deep-Tech Breakthrough",
-      "science_keyword_hits": [
-        "biotech"
-      ],
-      "breakthrough_keyword_hits": [],
-      "relevance_score": 4,
-      "discovery_method": "rss",
-      "confidence": "public_source_signal"
-    },
-    {
-      "id": "science_https_www_statnews_com_2026_05_31_squamous_cell_lung_cancer_akeso_summit_harmoni_asco_2026_utm_campaign_rss",
-      "title": "STAT+: Akeso and Summit’s ivonescimab extends survival in squamous cell lung cancer",
-      "url": "https://www.statnews.com/2026/05/31/squamous-cell-lung-cancer-akeso-summit-harmoni-asco-2026/?utm_campaign=rss",
-      "source": "STAT News",
-      "source_region": "global",
-      "source_type": "health_biotech_news",
-      "tier": "tier_1",
-      "published_at": "2026-05-31T12:00:00+00:00",
-      "summary": "A lung cancer drug developed in China was a highlight of ASCO but doctors want to see follow-up in a more diverse population.",
-      "signal_type": "Science/Deep-Tech Breakthrough",
-      "science_keyword_hits": [
-        "biotech"
-      ],
-      "breakthrough_keyword_hits": [],
-      "relevance_score": 4,
-      "discovery_method": "rss",
-      "confidence": "public_source_signal"
-    },
-    {
-      "id": "science_https_www_statnews_com_2026_05_30_asco_news_day_2_biontech_pfizer_kelun_merck_pazdur_utm_campaign_rss",
-      "title": "STAT+: BioNTech and Pfizer tout bispecifics data at ASCO, and Pazdur sees silver lining at FDA",
-      "url": "https://www.statnews.com/2026/05/30/asco-news-day-2-biontech-pfizer-kelun-merck-pazdur/?utm_campaign=rss",
-      "source": "STAT News",
-      "source_region": "global",
-      "source_type": "health_biotech_news",
-      "tier": "tier_1",
-      "published_at": "2026-05-30T21:28:47+00:00",
-      "summary": "ASCO, Day 2: promising news around lung cancer, new immunotherapies, and bold words from Rick Pazdur.",
-      "signal_type": "Science/Deep-Tech Breakthrough",
-      "science_keyword_hits": [
-        "biotech"
-      ],
-      "breakthrough_keyword_hits": [
-        "fda"
-      ],
-      "relevance_score": 5,
-      "discovery_method": "rss",
-      "confidence": "public_source_signal"
-    },
-    {
-      "id": "science_https_www_statnews_com_2026_05_30_rick_pazdur_fda_destruction_rebuilding_asco_2026_utm_campaign_rss",
-      "title": "STAT+: China competition, ‘destruction’ at FDA give agency chance to restructure, Rick Pazdur says",
-      "url": "https://www.statnews.com/2026/05/30/rick-pazdur-fda-destruction-rebuilding-asco-2026/?utm_campaign=rss",
-      "source": "STAT News",
-      "source_region": "global",
-      "source_type": "health_biotech_news",
-      "tier": "tier_1",
-      "published_at": "2026-05-30T15:48:20+00:00",
-      "summary": "Rick Pazdur on the FDA: “We've had a lot of destruction here, and it doesn't mean that we have to just go back and say, well, let's rebuild it as…",
-      "signal_type": "Science/Deep-Tech Breakthrough",
-      "science_keyword_hits": [
-        "biotech"
-      ],
-      "breakthrough_keyword_hits": [
-        "fda"
-      ],
-      "relevance_score": 5,
-      "discovery_method": "rss",
-      "confidence": "public_source_signal"
-    },
-    {
-      "id": "science_https_www_statnews_com_2026_05_30_pancreatic_cancer_daraxonrasib_revolution_medicines_early_access_asco_2026_utm_campaign_rss",
-      "title": "STAT+: Revolution Medicines starts shipping experimental pancreatic cancer drug",
-      "url": "https://www.statnews.com/2026/05/30/pancreatic-cancer-daraxonrasib-revolution-medicines-early-access-asco-2026/?utm_campaign=rss",
-      "source": "STAT News",
-      "source_region": "global",
-      "source_type": "health_biotech_news",
-      "tier": "tier_1",
-      "published_at": "2026-05-30T13:25:26+00:00",
-      "summary": "CEO Mark Goldsmith says Revolution Medicines will submit pancreatic cancer drug daraxonrasib for FDA approval soon.",
-      "signal_type": "Science/Deep-Tech Breakthrough",
-      "science_keyword_hits": [
-        "biotech"
-      ],
-      "breakthrough_keyword_hits": [
-        "fda",
-        "approval"
-      ],
-      "relevance_score": 6,
-      "discovery_method": "rss",
-      "confidence": "public_source_signal"
-    },
-    {
-      "id": "science_https_www_statnews_com_2026_05_30_trump_ebola_response_biden_pandemic_preparations_thrown_away_utm_campaign_rss",
-      "title": "STAT+: As Ebola outbreak grows, Trump administration veers from previous government playbook",
-      "url": "https://www.statnews.com/2026/05/30/trump-ebola-response-biden-pandemic-preparations-thrown-away/?utm_campaign=rss",
-      "source": "STAT News",
-      "source_region": "global",
-      "source_type": "health_biotech_news",
-      "tier": "tier_1",
-      "published_at": "2026-05-30T10:00:00+00:00",
-      "summary": "Trump officials are disregarding the Biden administration's detailed pandemic plans in favor of their own strategy.",
-      "signal_type": "Science/Deep-Tech Breakthrough",
-      "science_keyword_hits": [
-        "ai",
-        "biotech"
-      ],
-      "breakthrough_keyword_hits": [],
-      "relevance_score": 6,
       "discovery_method": "rss",
       "confidence": "public_source_signal"
     },
@@ -729,73 +845,6 @@
       "confidence": "public_source_signal"
     },
     {
-      "id": "science_https_www_biopharmadive_com_news_allogene_chang_agios_decnupaz_imfinzi_bridgebio_821367",
-      "title": "Allogene CEO to step down; Agios drug fails key test",
-      "url": "https://www.biopharmadive.com/news/allogene-chang-agios-decnupaz-imfinzi-bridgebio/821367/",
-      "source": "BioPharma Dive",
-      "source_region": "global",
-      "source_type": "biopharma_news",
-      "tier": "tier_1",
-      "published_at": "2026-05-29T14:17:00+00:00",
-      "summary": "David Chang will leave his post after an eight-year run at the cell therapy maker. Elsewhere, a next-generation blood disease drug stumbled and an acquisition yielded an FDA approval for AbbVie.",
-      "signal_type": "Science/Deep-Tech Breakthrough",
-      "science_keyword_hits": [
-        "ai",
-        "biopharma"
-      ],
-      "breakthrough_keyword_hits": [
-        "fda",
-        "approval"
-      ],
-      "relevance_score": 8,
-      "discovery_method": "rss",
-      "confidence": "public_source_signal"
-    },
-    {
-      "id": "science_https_www_biopharmadive_com_news_fda_chaos_drug_approval_pharma_parexel_821431",
-      "title": "Can a chaotic FDA still deliver on faster drug development?",
-      "url": "https://www.biopharmadive.com/news/fda-chaos-drug-approval-pharma-parexel/821431/",
-      "source": "BioPharma Dive",
-      "source_region": "global",
-      "source_type": "biopharma_news",
-      "tier": "tier_1",
-      "published_at": "2026-05-29T13:54:00+00:00",
-      "summary": "As leadership changes create more instability at the FDA, here’s what one former agency official thinks it will take to keep speedier drug approvals on track.",
-      "signal_type": "Science/Deep-Tech Breakthrough",
-      "science_keyword_hits": [
-        "biopharma"
-      ],
-      "breakthrough_keyword_hits": [
-        "fda",
-        "approval"
-      ],
-      "relevance_score": 6,
-      "discovery_method": "rss",
-      "confidence": "public_source_signal"
-    },
-    {
-      "id": "science_https_www_biopharmadive_com_news_pfizer_innovent_china_adc_cancer_drug_deal_821444",
-      "title": "Pfizer, Innovent strike $10B cancer drug deal",
-      "url": "https://www.biopharmadive.com/news/pfizer-innovent-china-adc-cancer-drug-deal/821444/",
-      "source": "BioPharma Dive",
-      "source_region": "global",
-      "source_type": "biopharma_news",
-      "tier": "tier_1",
-      "published_at": "2026-05-29T11:14:00+00:00",
-      "summary": "Involving up to 12 antibody drugs, the alliance is the latest broad partnership between Chinese biotech and a multinational pharmaceutical company.",
-      "signal_type": "Science/Deep-Tech Breakthrough",
-      "science_keyword_hits": [
-        "biotech",
-        "biopharma"
-      ],
-      "breakthrough_keyword_hits": [
-        "partnership"
-      ],
-      "relevance_score": 7,
-      "discovery_method": "rss",
-      "confidence": "public_source_signal"
-    },
-    {
       "id": "science_https_www_nature_com_articles_s41587_026_03158_5",
       "title": "Optically detected and radio wave-controlled spin chemistry in flavoproteins",
       "url": "https://www.nature.com/articles/s41587-026-03158-5",
@@ -812,25 +861,6 @@
       ],
       "breakthrough_keyword_hits": [],
       "relevance_score": 6,
-      "discovery_method": "rss",
-      "confidence": "public_source_signal"
-    },
-    {
-      "id": "science_https_www_biopharmadive_com_news_gsk_ionis_bepirovirsen_hepatitis_b_nejm_study_results_821341",
-      "title": "GSK, Ionis unveil data for hepatitis B drug touted as ‘functional cure’",
-      "url": "https://www.biopharmadive.com/news/gsk-ionis-bepirovirsen-hepatitis-b-nejm-study-results/821341/",
-      "source": "BioPharma Dive",
-      "source_region": "global",
-      "source_type": "biopharma_news",
-      "tier": "tier_1",
-      "published_at": "2026-05-28T16:01:00+00:00",
-      "summary": "The findings supporting bepirovirsen were deemed a “historic moment” by physicians and validate a drug that has “clear blockbuster potential,” according to one analyst.",
-      "signal_type": "Science/Deep-Tech Breakthrough",
-      "science_keyword_hits": [
-        "biopharma"
-      ],
-      "breakthrough_keyword_hits": [],
-      "relevance_score": 4,
       "discovery_method": "rss",
       "confidence": "public_source_signal"
     },
@@ -942,67 +972,6 @@
       "confidence": "public_source_signal"
     },
     {
-      "id": "science_https_www_nature_com_articles_s41587_026_03134_z",
-      "title": "Improving multimodal wearable sensing for healthcare with artificial intelligence",
-      "url": "https://www.nature.com/articles/s41587-026-03134-z",
-      "source": "Nature Biotechnology",
-      "source_region": "global",
-      "source_type": "science_journal_news",
-      "tier": "tier_1",
-      "published_at": "2026-05-26T00:00:00+00:00",
-      "summary": "Nature Biotechnology, Published online: 26 May 2026; doi:10.1038/s41587-026-03134-z This Comment explores artificial intelligence-driven strategies to accelerate the clinical translation of multimodal wearable sensors. We outline key data-science challenges and highlight disease contexts in which these systems could support therapeutic interventions.",
-      "signal_type": "Science/Deep-Tech Breakthrough",
-      "science_keyword_hits": [
-        "artificial intelligence",
-        "biotech",
-        "clinical"
-      ],
-      "breakthrough_keyword_hits": [],
-      "relevance_score": 8,
-      "discovery_method": "rss",
-      "confidence": "public_source_signal"
-    },
-    {
-      "id": "science_https_www_nature_com_articles_s41587_026_03153_w",
-      "title": "A framework for building a synthetic cell from the SynCell Asia Initiative",
-      "url": "https://www.nature.com/articles/s41587-026-03153-w",
-      "source": "Nature Biotechnology",
-      "source_region": "global",
-      "source_type": "science_journal_news",
-      "tier": "tier_1",
-      "published_at": "2026-05-26T00:00:00+00:00",
-      "summary": "Nature Biotechnology, Published online: 26 May 2026; doi:10.1038/s41587-026-03153-w Building a living cell from scratch requires overcoming a bottleneck that has remained unresolved despite decades of progress: orchestrating the spatiotemporal integration of core functional modules. To tackle this barrier, the SynCell Asia Initiative outlines a strategy for developing core functional modules followed by their systems-level integration through the establishment of a centralized, artificial intelligence (AI)-driven biofoundry.",
-      "signal_type": "Science/Deep-Tech Breakthrough",
-      "science_keyword_hits": [
-        "ai",
-        "artificial intelligence",
-        "biotech"
-      ],
-      "breakthrough_keyword_hits": [],
-      "relevance_score": 8,
-      "discovery_method": "rss",
-      "confidence": "public_source_signal"
-    },
-    {
-      "id": "science_https_www_nature_com_articles_s41587_026_03180_7",
-      "title": "Author Correction: DNA-guided CRISPR–Cas12a effectors for programmable RNA recognition and cleavage",
-      "url": "https://www.nature.com/articles/s41587-026-03180-7",
-      "source": "Nature Biotechnology",
-      "source_region": "global",
-      "source_type": "science_journal_news",
-      "tier": "tier_1",
-      "published_at": "2026-05-26T00:00:00+00:00",
-      "summary": "Nature Biotechnology, Published online: 26 May 2026; doi:10.1038/s41587-026-03180-7 Author Correction: DNA-guided CRISPR–Cas12a effectors for programmable RNA recognition and cleavage",
-      "signal_type": "Science/Deep-Tech Breakthrough",
-      "science_keyword_hits": [
-        "biotech"
-      ],
-      "breakthrough_keyword_hits": [],
-      "relevance_score": 4,
-      "discovery_method": "rss",
-      "confidence": "public_source_signal"
-    },
-    {
       "id": "science_https_www_fiercebiotech_com_sponsored_entry_japan_clarity_execute_confidence",
       "title": "Entry Japan with Clarity, Execute with Confidence",
       "url": "https://www.fiercebiotech.com/sponsored/entry-japan-clarity-execute-confidence",
@@ -1021,31 +990,6 @@
       ],
       "breakthrough_keyword_hits": [
         "approval"
-      ],
-      "relevance_score": 10,
-      "discovery_method": "rss",
-      "confidence": "public_source_signal"
-    },
-    {
-      "id": "science_https_www_fiercebiotech_com_medtech_human_longevity_launches_newco_teams_insilico_ai_powered_longevity_research",
-      "title": "Human Longevity launches newco, teams with Insilico for AI-powered longevity research",
-      "url": "https://www.fiercebiotech.com/medtech/human-longevity-launches-newco-teams-insilico-ai-powered-longevity-research",
-      "source": "Fierce Biotech",
-      "source_region": "global",
-      "source_type": "biotech_news",
-      "tier": "tier_1",
-      "published_at": null,
-      "summary": "Human Longevity, which is seeking to use biology and genomics to boost the human lifespan, has launched a new company called Human Life Foundation Models (HLFM) to help with its goal.",
-      "signal_type": "Science/Deep-Tech Breakthrough",
-      "science_keyword_hits": [
-        "ai",
-        "foundation model",
-        "biology",
-        "biotech",
-        "genomics"
-      ],
-      "breakthrough_keyword_hits": [
-        "launches"
       ],
       "relevance_score": 10,
       "discovery_method": "rss",
@@ -1074,6 +1018,52 @@
       ],
       "relevance_score": 10,
       "discovery_method": "html_index",
+      "confidence": "public_source_signal"
+    },
+    {
+      "id": "science_https_www_fiercebiotech_com_biotech_abivax_stock_crashes_cancer_cases_overshadow_stellar_efficacy_ulcerative_colitis_phase_3",
+      "title": "Abivax stock suffers as cancer cases overshadow stellar efficacy in ulcerative colitis phase 3 trial",
+      "url": "https://www.fiercebiotech.com/biotech/abivax-stock-crashes-cancer-cases-overshadow-stellar-efficacy-ulcerative-colitis-phase-3",
+      "source": "Fierce Biotech",
+      "source_region": "global",
+      "source_type": "biotech_news",
+      "tier": "tier_1",
+      "published_at": null,
+      "summary": "Abivax has raised the efficacy bar in ulcerative colitis, linking obefazimod to a 40%, placebo-adjusted jump in clinical remission rates in a phase 3 trial. But the share price of the biotech, a reported takeover target for several Big Pharmas, collapsed after several patients on the high dose developed cancers.",
+      "signal_type": "Science/Deep-Tech Breakthrough",
+      "science_keyword_hits": [
+        "ai",
+        "biotech",
+        "clinical"
+      ],
+      "breakthrough_keyword_hits": [
+        "raised"
+      ],
+      "relevance_score": 9,
+      "discovery_method": "rss",
+      "confidence": "public_source_signal"
+    },
+    {
+      "id": "science_https_www_fiercebiotech_com_cro_asco_ryght_ai_team_breast_cancer_trial_site_selection",
+      "title": "ASCO, Ryght AI team up for breast cancer trial site selection",
+      "url": "https://www.fiercebiotech.com/cro/asco-ryght-ai-team-breast-cancer-trial-site-selection",
+      "source": "Fierce Biotech",
+      "source_region": "global",
+      "source_type": "biotech_news",
+      "tier": "tier_1",
+      "published_at": null,
+      "summary": "The American Society of Clinical Oncology (ASCO) and Ryght AI are teaming up to identify research sites for an ASCO clinical trial evaluating starting doses of CDK4/6 inhibitors in patients with metastatic breast cancer.",
+      "signal_type": "Science/Deep-Tech Breakthrough",
+      "science_keyword_hits": [
+        "ai",
+        "biotech",
+        "clinical"
+      ],
+      "breakthrough_keyword_hits": [
+        "clinical trial"
+      ],
+      "relevance_score": 9,
+      "discovery_method": "rss",
       "confidence": "public_source_signal"
     },
     {
@@ -1312,6 +1302,126 @@
       "confidence": "public_source_signal"
     },
     {
+      "id": "science_https_www_fiercebiotech_com_biotech_asco_10_billion_ambitions_celcuity_details_breast_cancer_win_over_piqray",
+      "title": "ASCO: Celcuity dares to dream of becoming $10B company after breast cancer win over Piqray",
+      "url": "https://www.fiercebiotech.com/biotech/asco-10-billion-ambitions-celcuity-details-breast-cancer-win-over-piqray",
+      "source": "Fierce Biotech",
+      "source_region": "global",
+      "source_type": "biotech_news",
+      "tier": "tier_1",
+      "published_at": null,
+      "summary": "While Revolution Medicines dominated this year’s American Society of Clinical Oncology annual meeting by conquering the “undruggable” RAS pathway, another up-and-coming biotech hopes to do the same with a different vexing target that drives a plethora of cancers.",
+      "signal_type": "Science/Deep-Tech Breakthrough",
+      "science_keyword_hits": [
+        "biotech",
+        "clinical"
+      ],
+      "breakthrough_keyword_hits": [],
+      "relevance_score": 6,
+      "discovery_method": "rss",
+      "confidence": "public_source_signal"
+    },
+    {
+      "id": "science_https_www_fiercebiotech_com_biotech_bristol_myers_800m_bispecific_adc_aces_breast_cancer_study_putting_trop2_drugs_notice",
+      "title": "ASCO: Bristol Myers’ $800M bispecific ADC aces China breast cancer study, putting TROP2 drugs on notice",
+      "url": "https://www.fiercebiotech.com/biotech/bristol-myers-800m-bispecific-adc-aces-breast-cancer-study-putting-trop2-drugs-notice",
+      "source": "Fierce Biotech",
+      "source_region": "global",
+      "source_type": "biotech_news",
+      "tier": "tier_1",
+      "published_at": null,
+      "summary": "The first-in-class EGFRxHER3 bispecific ADC that BMS paid $800 million for has shown strong phase 3 results from China that suggest it could put up a fight against blockbuster TROP2 agents in triple-negative breast cancer.",
+      "signal_type": "Science/Deep-Tech Breakthrough",
+      "science_keyword_hits": [
+        "ai",
+        "biotech"
+      ],
+      "breakthrough_keyword_hits": [],
+      "relevance_score": 6,
+      "discovery_method": "rss",
+      "confidence": "public_source_signal"
+    },
+    {
+      "id": "science_https_www_fiercebiotech_com_biotech_praxis_pauses_one_its_seizure_programs_after_phase_2_fail",
+      "title": "Praxis pauses one of its seizure programs after phase 2 fail",
+      "url": "https://www.fiercebiotech.com/biotech/praxis-pauses-one-its-seizure-programs-after-phase-2-fail",
+      "source": "Fierce Biotech",
+      "source_region": "global",
+      "source_type": "biotech_news",
+      "tier": "tier_1",
+      "published_at": null,
+      "summary": "Praxis Precision Medicines’ epilepsy pipeline has suffered a setback after a next-gen NaV blocker failed to sufficiently reduce seizures in a phase 2/3 study.",
+      "signal_type": "Science/Deep-Tech Breakthrough",
+      "science_keyword_hits": [
+        "ai",
+        "biotech"
+      ],
+      "breakthrough_keyword_hits": [],
+      "relevance_score": 6,
+      "discovery_method": "rss",
+      "confidence": "public_source_signal"
+    },
+    {
+      "id": "science_https_www_fiercebiotech_com_biotech_asco_long_term_early_data_backs_tremendous_potential_takedas_innovent_oncology_collab",
+      "title": "ASCO: Takeda touts ‘tremendous potential’ of Innovent’s PD-1/IL-2 bispecific after seeing survival data",
+      "url": "https://www.fiercebiotech.com/biotech/asco-long-term-early-data-backs-tremendous-potential-takedas-innovent-oncology-collab",
+      "source": "Fierce Biotech",
+      "source_region": "global",
+      "source_type": "biotech_news",
+      "tier": "tier_1",
+      "published_at": null,
+      "summary": "Takeda and Innovent's long-term follow-up data from an early study of their collaborative PD-1/IL-2 bispecific colors the \"tremendous potential\" of the asset, Takeda's P.K. Morrow said in an interview.",
+      "signal_type": "Science/Deep-Tech Breakthrough",
+      "science_keyword_hits": [
+        "ai",
+        "biotech"
+      ],
+      "breakthrough_keyword_hits": [],
+      "relevance_score": 6,
+      "discovery_method": "rss",
+      "confidence": "public_source_signal"
+    },
+    {
+      "id": "science_https_www_fiercebiotech_com_biotech_asco_telix_tees_pivotal_test_pluvicto_challenger_while_eyeing_white_space_radio_therapy",
+      "title": "ASCO: Telix tees up pivotal test for Pluvicto challenger while eyeing ‘white space’ on radiopharma canvas",
+      "url": "https://www.fiercebiotech.com/biotech/asco-telix-tees-pivotal-test-pluvicto-challenger-while-eyeing-white-space-radio-therapy",
+      "source": "Fierce Biotech",
+      "source_region": "global",
+      "source_type": "biotech_news",
+      "tier": "tier_1",
+      "published_at": null,
+      "summary": "David Cade, the chief medical officer of Melbourne-based Telix Pharmaceuticals, traveled a long way to the American Society of Clinical Oncology meeting in Chicago with a singular goal in mind: spread the word about Telix’s pivotal trial for a potential challenger to Novartis’ Pluvicto.",
+      "signal_type": "Science/Deep-Tech Breakthrough",
+      "science_keyword_hits": [
+        "biotech",
+        "clinical"
+      ],
+      "breakthrough_keyword_hits": [],
+      "relevance_score": 6,
+      "discovery_method": "rss",
+      "confidence": "public_source_signal"
+    },
+    {
+      "id": "science_https_www_fiercebiotech_com_biotech_asco_2026_paradigm_shift_rare_gut_cancer_looms",
+      "title": "At ASCO 2026, a ‘paradigm shift’ for a rare gut cancer looms",
+      "url": "https://www.fiercebiotech.com/biotech/asco-2026-paradigm-shift-rare-gut-cancer-looms",
+      "source": "Fierce Biotech",
+      "source_region": "global",
+      "source_type": "biotech_news",
+      "tier": "tier_1",
+      "published_at": null,
+      "summary": "For patients with a rare cancer that arises in the gut wall, standard treatment hasn’t changed in the last 20 years. At the American Society of Clinical Oncology meeting in Chicago, GSK shared a first look at its attempt to change that.",
+      "signal_type": "Science/Deep-Tech Breakthrough",
+      "science_keyword_hits": [
+        "biotech",
+        "clinical"
+      ],
+      "breakthrough_keyword_hits": [],
+      "relevance_score": 6,
+      "discovery_method": "rss",
+      "confidence": "public_source_signal"
+    },
+    {
       "id": "science_https_www_fiercebiotech_com_biotech_agios_agrees_165m_blood_disorder_drug_koreas_oscotec_flunked_phase_2_study",
       "title": "Agios signs $165M deal for blood disorder drug from Korea’s Oscotec that flunked phase 2 study",
       "url": "https://www.fiercebiotech.com/biotech/agios-agrees-165m-blood-disorder-drug-koreas-oscotec-flunked-phase-2-study",
@@ -1445,68 +1555,6 @@
       "science_keyword_hits": [
         "biotech",
         "clinical"
-      ],
-      "breakthrough_keyword_hits": [],
-      "relevance_score": 6,
-      "discovery_method": "rss",
-      "confidence": "public_source_signal"
-    },
-    {
-      "id": "science_https_www_fiercebiotech_com_biotech_fda_extends_berens_rare_disease_review_after_info_request_further_stretching_saga",
-      "title": "FDA extends Beren’s rare disease review after info request, further stretching saga",
-      "url": "https://www.fiercebiotech.com/biotech/fda-extends-berens-rare-disease-review-after-info-request-further-stretching-saga",
-      "source": "Fierce Biotech",
-      "source_region": "global",
-      "source_type": "biotech_news",
-      "tier": "tier_1",
-      "published_at": null,
-      "summary": "The FDA has delayed its approval decision on Beren Therapeutics’ rare disease drug candidate, extending the asset’s long path toward the U.S. market.",
-      "signal_type": "Science/Deep-Tech Breakthrough",
-      "science_keyword_hits": [
-        "biotech"
-      ],
-      "breakthrough_keyword_hits": [
-        "fda",
-        "approval"
-      ],
-      "relevance_score": 6,
-      "discovery_method": "rss",
-      "confidence": "public_source_signal"
-    },
-    {
-      "id": "science_https_www_fiercebiotech_com_biotech_hoth_therapeutics_pivot_ai_space_sees_stock_price_rocket_after_rebrand",
-      "title": "Hoth Therapeutics’ pivot to AI in space sees stock rocket after rebrand",
-      "url": "https://www.fiercebiotech.com/biotech/hoth-therapeutics-pivot-ai-space-sees-stock-price-rocket-after-rebrand",
-      "source": "Fierce Biotech",
-      "source_region": "global",
-      "source_type": "biotech_news",
-      "tier": "tier_1",
-      "published_at": null,
-      "summary": "Hoth Therapeutics’ search for salvation in the stars appears to have been rewarded by investors, as the company’s stock doubled after a pivot to powering AI in space.",
-      "signal_type": "Science/Deep-Tech Breakthrough",
-      "science_keyword_hits": [
-        "ai",
-        "biotech"
-      ],
-      "breakthrough_keyword_hits": [],
-      "relevance_score": 6,
-      "discovery_method": "rss",
-      "confidence": "public_source_signal"
-    },
-    {
-      "id": "science_https_www_fiercebiotech_com_biotech_novartis_always_looking_further_ways_shuttle_drugs_brain_despite_run_deals",
-      "title": "Novartis ‘always looking’ for further ways to shuttle drugs to brain despite run of recent deals",
-      "url": "https://www.fiercebiotech.com/biotech/novartis-always-looking-further-ways-shuttle-drugs-brain-despite-run-deals",
-      "source": "Fierce Biotech",
-      "source_region": "global",
-      "source_type": "biotech_news",
-      "tier": "tier_1",
-      "published_at": null,
-      "summary": "Novartis may be launching an array of vehicles to shuttle drugs across the blood-brain barrier, but executives told Fierce the Swiss pharma is “always looking” for new ways to traverse this final frontier of neuroscience.",
-      "signal_type": "Science/Deep-Tech Breakthrough",
-      "science_keyword_hits": [
-        "ai",
-        "biotech"
       ],
       "breakthrough_keyword_hits": [],
       "relevance_score": 6,
@@ -1797,82 +1845,6 @@
       "confidence": "public_source_signal"
     },
     {
-      "id": "science_https_www_fiercebiotech_com_biotech_asco_bms_celmod_drug_stands_out_doubling_pfs_ph_3_myeloma_study",
-      "title": "ASCO: BMS’ CELMoD drug doubles PFS in ‘incredibly exciting’ ph. 3 myeloma study",
-      "url": "https://www.fiercebiotech.com/biotech/asco-bms-celmod-drug-stands-out-doubling-pfs-ph-3-myeloma-study",
-      "source": "Fierce Biotech",
-      "source_region": "global",
-      "source_type": "biotech_news",
-      "tier": "tier_1",
-      "published_at": null,
-      "summary": "Bristol Myers Squibb may have gone big in its pursuit of cereblon E3 ligase modulator (CELMoD) drugs, but today the pharma is standing tall.",
-      "signal_type": "Science/Deep-Tech Breakthrough",
-      "science_keyword_hits": [
-        "biotech"
-      ],
-      "breakthrough_keyword_hits": [],
-      "relevance_score": 4,
-      "discovery_method": "rss",
-      "confidence": "public_source_signal"
-    },
-    {
-      "id": "science_https_www_fiercebiotech_com_biotech_gilead_scraps_lead_arthritis_drug_405m_mirobio_buyout_latest_blow_btla_field",
-      "title": "Gilead scraps lead arthritis drug from $405M MiroBio buyout in latest blow to BTLA agonist field",
-      "url": "https://www.fiercebiotech.com/biotech/gilead-scraps-lead-arthritis-drug-405m-mirobio-buyout-latest-blow-btla-field",
-      "source": "Fierce Biotech",
-      "source_region": "global",
-      "source_type": "biotech_news",
-      "tier": "tier_1",
-      "published_at": null,
-      "summary": "Gilead has abandoned work on the lead rheumatoid arthritis drug from its $405 million buyout of MiroBio in the latest blow to the BTLA agonist field.",
-      "signal_type": "Science/Deep-Tech Breakthrough",
-      "science_keyword_hits": [
-        "biotech"
-      ],
-      "breakthrough_keyword_hits": [],
-      "relevance_score": 4,
-      "discovery_method": "rss",
-      "confidence": "public_source_signal"
-    },
-    {
-      "id": "science_https_www_fiercebiotech_com_biotech_pfizer_pays_innovent_650m_broad_bet_chinese_innovation_early_development_speed",
-      "title": "Pfizer pens $10B, 12-drug deal with Innovent in broad bet on Chinese cancer med innovation",
-      "url": "https://www.fiercebiotech.com/biotech/pfizer-pays-innovent-650m-broad-bet-chinese-innovation-early-development-speed",
-      "source": "Fierce Biotech",
-      "source_region": "global",
-      "source_type": "biotech_news",
-      "tier": "tier_1",
-      "published_at": null,
-      "summary": "Pfizer is paying Innovent $650 million upfront to partner on cancer drug development, following Bristol Myers Squibb by striking a broad pact that positions it to leverage China’s fast early development system.",
-      "signal_type": "Science/Deep-Tech Breakthrough",
-      "science_keyword_hits": [
-        "biotech"
-      ],
-      "breakthrough_keyword_hits": [],
-      "relevance_score": 4,
-      "discovery_method": "rss",
-      "confidence": "public_source_signal"
-    },
-    {
-      "id": "science_https_www_fiercebiotech_com_cro_icon_ends_internal_accounting_investigation_finds_overstated_revenue",
-      "title": "Icon ends internal accounting investigation, finds it overstated revenue in prior years",
-      "url": "https://www.fiercebiotech.com/cro/icon-ends-internal-accounting-investigation-finds-overstated-revenue",
-      "source": "Fierce Biotech",
-      "source_region": "global",
-      "source_type": "biotech_news",
-      "tier": "tier_1",
-      "published_at": null,
-      "summary": "Irish CRO Icon has concluded its investigation into its accounting practices and restated its consolidated financials for 2023 and 2024.",
-      "signal_type": "Science/Deep-Tech Breakthrough",
-      "science_keyword_hits": [
-        "biotech"
-      ],
-      "breakthrough_keyword_hits": [],
-      "relevance_score": 4,
-      "discovery_method": "rss",
-      "confidence": "public_source_signal"
-    },
-    {
       "id": "science_https_www_synbiobeta_com_read_the_1_in_a_million_breakthrough_behind_genyro_s_vision_for_a_post_darwinian_age",
       "title": "The 1-in-a-Million Breakthrough Behind Genyroâs Vision for a Post-Darwinian Age",
       "url": "https://www.synbiobeta.com/read/the-1-in-a-million-breakthrough-behind-genyroâs-vision-for-a-post-darwinian-age",
@@ -2000,7 +1972,7 @@
       "http_status": 200,
       "feed_entries": 8,
       "items_seen": 8,
-      "items_added": 8,
+      "items_added": 5,
       "parse_warning": false
     },
     {
@@ -2033,7 +2005,7 @@
       "http_status": 200,
       "feed_entries": 10,
       "items_seen": 10,
-      "items_added": 7,
+      "items_added": 9,
       "parse_warning": false
     },
     {
@@ -2060,7 +2032,7 @@
         "mode": "search_fallback",
         "endpoint": "https://duckduckgo.com/html/?q=site%3Aendpointsnews.com%20AI%20biotech%20funding%20startup",
         "status": "OK",
-        "http_status": 200,
+        "http_status": 202,
         "items_seen": 0,
         "items_added": 0
       }

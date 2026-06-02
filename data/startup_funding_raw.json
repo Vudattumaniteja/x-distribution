@@ -1,8 +1,269 @@
 {
-  "last_updated": "2026-06-01T14:52:00.310973+00:00",
-  "cutoff": "2026-05-25T14:51:10.965997+00:00",
-  "total_items": 28,
+  "last_updated": "2026-06-02T12:16:10.383141+00:00",
+  "cutoff": "2026-05-26T12:15:36.905993+00:00",
+  "total_items": 25,
   "items": [
+    {
+      "id": "startup_inc42_https_inc42_com_buzz_edtech_startup_prolearn_bags_e2_82_b930_cr_to_tailor_ai_learning_for_students",
+      "title": "Edtech Startup ProLearn Bags ₹30 Cr To Tailor AI Learning For Students",
+      "url": "https://inc42.com/buzz/edtech-startup-prolearn-bags-%e2%82%b930-cr-to-tailor-ai-learning-for-students/",
+      "source": "Inc42",
+      "source_region": "india",
+      "source_type": "india_startup_news",
+      "tier": "tier_1",
+      "published_at": "2026-06-02T09:59:39+00:00",
+      "summary": "Ex-Vedantu director Ravneet Singh’s new edtech startup ProLearn has raised ₹30 Cr ($3.2 Mn) in a pre-seed funding round led…",
+      "signal_type": "Startup Funding Signal",
+      "company": "Edtech Startup ProLearn",
+      "funding_rounds": [],
+      "funding_amount": "$3.2 M",
+      "lead_investor": null,
+      "ai_keyword_hits": [
+        "ai"
+      ],
+      "startup_keyword_hits": [
+        "startup"
+      ],
+      "funding_keyword_hits": [
+        "raised",
+        "raise",
+        "funding",
+        "round"
+      ],
+      "product_keyword_hits": [],
+      "relevance_score": 10,
+      "discovery_method": "rss",
+      "discovery_source": "https://inc42.com/feed/"
+    },
+    {
+      "id": "startup_pandaily_https_pandaily_com_jaka_robotics_jaka_pi_jun2026",
+      "title": "JAKA Robotics Unveils Compact 1.22m Humanoid Robot JAKA Pi for Education and Service",
+      "url": "https://pandaily.com/jaka-robotics-jaka-pi-jun2026",
+      "source": "Pandaily",
+      "source_region": "china",
+      "source_type": "china_startup_tech",
+      "tier": "tier_2",
+      "published_at": "2026-06-02T07:57:13+00:00",
+      "summary": "JAKA Robotics, a Shanghai-based company headquartered in the Minhang District's Dalian Bay innovation hub, has launched the JAKA Pi, a compact humanoid robot st...",
+      "signal_type": "Startup Product Signal",
+      "company": "JAKA Robotics",
+      "funding_rounds": [],
+      "funding_amount": null,
+      "lead_investor": null,
+      "ai_keyword_hits": [
+        "robotics"
+      ],
+      "startup_keyword_hits": [
+        "startup",
+        "company"
+      ],
+      "funding_keyword_hits": [],
+      "product_keyword_hits": [
+        "launch",
+        "launched",
+        "unveils"
+      ],
+      "relevance_score": 8,
+      "discovery_method": "rss",
+      "discovery_source": "https://pandaily.com/feed/"
+    },
+    {
+      "id": "startup_pandaily_https_pandaily_com_siclink_bci_visual_reconstruction_jun2026",
+      "title": "Brain-Computer Interface Startup SiClink Raises Millions for Visual Reconstruction Technology",
+      "url": "https://pandaily.com/siclink-bci-visual-reconstruction-jun2026",
+      "source": "Pandaily",
+      "source_region": "china",
+      "source_type": "china_startup_tech",
+      "tier": "tier_2",
+      "published_at": "2026-06-02T07:08:05+00:00",
+      "summary": "SiClink, an invasive brain-computer interface startup, has closed consecutive seed and angel funding rounds worth millions of yuan, backed by BlueRun Ventures, ...",
+      "signal_type": "Startup Funding Signal",
+      "company": "Brain-Computer Interface Startup SiClink",
+      "funding_rounds": [],
+      "funding_amount": null,
+      "lead_investor": null,
+      "ai_keyword_hits": [
+        "compute"
+      ],
+      "startup_keyword_hits": [
+        "startup",
+        "backed",
+        "venture"
+      ],
+      "funding_keyword_hits": [
+        "raises",
+        "raise",
+        "funding",
+        "round"
+      ],
+      "product_keyword_hits": [],
+      "relevance_score": 10,
+      "discovery_method": "rss",
+      "discovery_source": "https://pandaily.com/feed/"
+    },
+    {
+      "id": "startup_technode_https_technode_com_2026_06_02_bytedances_doubao_to_launch_paid_plans_in_late_june_link_with_douyin_e_commerce_push",
+      "title": "ByteDance’s Doubao to launch paid plans in late June, link with Douyin E-commerce push",
+      "url": "https://technode.com/2026/06/02/bytedances-doubao-to-launch-paid-plans-in-late-june-link-with-douyin-e-commerce-push/",
+      "source": "TechNode",
+      "source_region": "china",
+      "source_type": "china_startup_tech",
+      "tier": "tier_2",
+      "published_at": "2026-06-02T05:51:41+00:00",
+      "summary": "ByteDance’s AI assistant Doubao is expected to roll out paid subscription services in late June, alongside feature updates announced at its upcoming Force conference, according to 36Kr. The PC and mobile versions are still completing billing system integration, which is expected to take about one month, the sources said. Doubao has listed three subscription tiers […]",
+      "signal_type": "Startup Product Signal",
+      "company": null,
+      "funding_rounds": [],
+      "funding_amount": null,
+      "lead_investor": null,
+      "ai_keyword_hits": [
+        "ai"
+      ],
+      "startup_keyword_hits": [
+        "startup"
+      ],
+      "funding_keyword_hits": [],
+      "product_keyword_hits": [
+        "launch"
+      ],
+      "relevance_score": 5,
+      "discovery_method": "rss",
+      "discovery_source": "https://technode.com/feed/"
+    },
+    {
+      "id": "startup_pandaily_https_pandaily_com_tencent_games_42_products_2026",
+      "title": "Tencent Games Unveils 42-Product Roadmap With AI Integration Strategy",
+      "url": "https://pandaily.com/tencent-games-42-products-2026",
+      "source": "Pandaily",
+      "source_region": "china",
+      "source_type": "china_startup_tech",
+      "tier": "tier_2",
+      "published_at": "2026-06-02T02:05:53+00:00",
+      "summary": "Tencent Games showcased 42 products including 15 new titles at its annual conference, highlighting AI-powered game development and global expansion as key strategic priorities.",
+      "signal_type": "Startup Product Signal",
+      "company": "Tencent Games",
+      "funding_rounds": [],
+      "funding_amount": null,
+      "lead_investor": null,
+      "ai_keyword_hits": [
+        "ai"
+      ],
+      "startup_keyword_hits": [
+        "startup"
+      ],
+      "funding_keyword_hits": [],
+      "product_keyword_hits": [
+        "unveils",
+        "product"
+      ],
+      "relevance_score": 6,
+      "discovery_method": "rss",
+      "discovery_source": "https://pandaily.com/feed/"
+    },
+    {
+      "id": "startup_pandaily_https_pandaily_com_deep_principle_mpa_materials_ai_2026",
+      "title": "Deep Principle Launches MPA, a 'Materials AlphaFold' Achieving SOTA on 40 Industrial Tasks",
+      "url": "https://pandaily.com/deep-principle-mpa-materials-ai-2026",
+      "source": "Pandaily",
+      "source_region": "china",
+      "source_type": "china_startup_tech",
+      "tier": "tier_2",
+      "published_at": "2026-06-02T02:05:14+00:00",
+      "summary": "Deep Principle released MPA (Materials Property Axiom), an AI foundation model for materials science that achieves state-of-the-art results on 40 real-world industrial tasks by borrowing large language model training techniques.",
+      "signal_type": "Startup Product Signal",
+      "company": "Deep Principle",
+      "funding_rounds": [],
+      "funding_amount": null,
+      "lead_investor": null,
+      "ai_keyword_hits": [
+        "ai",
+        "model"
+      ],
+      "startup_keyword_hits": [
+        "startup"
+      ],
+      "funding_keyword_hits": [],
+      "product_keyword_hits": [
+        "launch",
+        "launches"
+      ],
+      "relevance_score": 8,
+      "discovery_method": "rss",
+      "discovery_source": "https://pandaily.com/feed/"
+    },
+    {
+      "id": "startup_e27_https_e27_co_japans_i_w_g_raises_us1_8m_to_stitch_asias_fractured_medical_records_20260531",
+      "title": "Japan’s I.W.G raises US$1.8M to stitch Asia’s fractured medical records",
+      "url": "https://e27.co/japans-i-w-g-raises-us1-8m-to-stitch-asias-fractured-medical-records-20260531/",
+      "source": "e27",
+      "source_region": "southeast_asia",
+      "source_type": "asia_startup_news",
+      "tier": "tier_2",
+      "published_at": "2026-06-02T01:00:11+00:00",
+      "summary": "I.W.G Inc., a Tokyo-based healthtech startup, has raised US$1.8 million in a pre-Series A round led by Golden Gate Ventures, with participation from Antler and individual backers, including radiologist-entrepreneur Dr Toshihiko Sato. The funding will be used to scale an AI-driven interoperability platform that maps and routes clinical data across incompatible hospital systems and languages, […] The post Japan’s I.W.G raises US$1.8M to stitch Asia’s fractured medical records appeared first on e27 .",
+      "signal_type": "Startup Fundraising",
+      "company": "Japan’s I.W.G",
+      "funding_rounds": [
+        "series_a"
+      ],
+      "funding_amount": "$1.8M",
+      "lead_investor": "Golden Gate Ventures",
+      "ai_keyword_hits": [
+        "ai",
+        "data"
+      ],
+      "startup_keyword_hits": [
+        "startup",
+        "venture",
+        "platform"
+      ],
+      "funding_keyword_hits": [
+        "raises",
+        "raised",
+        "raise",
+        "funding",
+        "round",
+        "series a",
+        "led by"
+      ],
+      "product_keyword_hits": [
+        "platform"
+      ],
+      "relevance_score": 10,
+      "discovery_method": "rss",
+      "discovery_source": "https://e27.co/feed/"
+    },
+    {
+      "id": "startup_product_hunt_https_www_producthunt_com_products_paste",
+      "title": "Paste MCP & AI Tools",
+      "url": "https://www.producthunt.com/products/paste",
+      "source": "Product Hunt",
+      "source_region": "global",
+      "source_type": "product_launch",
+      "tier": "tier_3",
+      "published_at": "2026-06-01T17:55:40+00:00",
+      "summary": "Infinite clipboard for Claude, Codex and other AI tools Discussion | Link",
+      "signal_type": "Startup Product Signal",
+      "company": null,
+      "funding_rounds": [],
+      "funding_amount": null,
+      "lead_investor": null,
+      "ai_keyword_hits": [
+        "ai"
+      ],
+      "startup_keyword_hits": [
+        "tool"
+      ],
+      "funding_keyword_hits": [],
+      "product_keyword_hits": [
+        "launch",
+        "product",
+        "tool"
+      ],
+      "relevance_score": 6,
+      "discovery_method": "rss",
+      "discovery_source": "https://www.producthunt.com/feed"
+    },
     {
       "id": "startup_pandaily_https_pandaily_com_jd_robot_matrix_smart_expo_2026",
       "title": "JD.com Unveils 'Wolf Pack' Robot Matrix at World Intelligent Industry Expo",
@@ -136,35 +397,6 @@
       "discovery_source": "https://pandaily.com/feed/"
     },
     {
-      "id": "startup_product_hunt_https_www_producthunt_com_products_mistral_7b",
-      "title": "Mistral Vibe",
-      "url": "https://www.producthunt.com/products/mistral-7b",
-      "source": "Product Hunt",
-      "source_region": "global",
-      "source_type": "product_launch",
-      "tier": "tier_3",
-      "published_at": "2026-06-01T03:25:48+00:00",
-      "summary": "I agent for long-running, multi-step work and coding Discussion | Link",
-      "signal_type": "Startup Product Signal",
-      "company": null,
-      "funding_rounds": [],
-      "funding_amount": null,
-      "lead_investor": null,
-      "ai_keyword_hits": [
-        "agent",
-        "coding"
-      ],
-      "startup_keyword_hits": [],
-      "funding_keyword_hits": [],
-      "product_keyword_hits": [
-        "launch",
-        "product"
-      ],
-      "relevance_score": 6,
-      "discovery_method": "rss",
-      "discovery_source": "https://www.producthunt.com/feed"
-    },
-    {
       "id": "startup_pandaily_https_pandaily_com_re_dnote_launches_ai_search_assistant_diandian_on_pc",
       "title": "REDnote Launches AI Search Assistant 'Diandian' on PC",
       "url": "https://pandaily.com/re-dnote-launches-ai-search-assistant-diandian-on-pc",
@@ -225,36 +457,6 @@
       "discovery_source": "https://www.producthunt.com/feed"
     },
     {
-      "id": "startup_product_hunt_https_www_producthunt_com_products_r0y_ai_financial_studio",
-      "title": "R0Y OMNI 1.0",
-      "url": "https://www.producthunt.com/products/r0y-ai-financial-studio",
-      "source": "Product Hunt",
-      "source_region": "global",
-      "source_type": "product_launch",
-      "tier": "tier_3",
-      "published_at": "2026-05-31T19:03:57+00:00",
-      "summary": "Generate more accurate investment dashboards and reports Discussion | Link",
-      "signal_type": "Startup Product Signal",
-      "company": null,
-      "funding_rounds": [],
-      "funding_amount": null,
-      "lead_investor": null,
-      "ai_keyword_hits": [
-        "ai"
-      ],
-      "startup_keyword_hits": [],
-      "funding_keyword_hits": [
-        "investment"
-      ],
-      "product_keyword_hits": [
-        "launch",
-        "product"
-      ],
-      "relevance_score": 6,
-      "discovery_method": "rss",
-      "discovery_source": "https://www.producthunt.com/feed"
-    },
-    {
       "id": "startup_product_hunt_https_www_producthunt_com_products_typeahead",
       "title": "Typeahead",
       "url": "https://www.producthunt.com/products/typeahead",
@@ -282,67 +484,6 @@
         "app"
       ],
       "relevance_score": 6,
-      "discovery_method": "rss",
-      "discovery_source": "https://www.producthunt.com/feed"
-    },
-    {
-      "id": "startup_yourstory_https_yourstory_com_2026_05_anthropic_hits_965b_valuation",
-      "title": "Anthropic hits $965B valuation; AI complexity plagues Indian companies",
-      "url": "https://yourstory.com/2026/05/anthropic-hits-965b-valuation",
-      "source": "YourStory",
-      "source_region": "india",
-      "source_type": "india_startup_news",
-      "tier": "tier_2",
-      "published_at": "2026-05-30T02:00:00+00:00",
-      "summary": "Anthropic’s Series H funding was led by Altimeter Capital, Dragoneer, Greenoaks, and Sequoia Capital.",
-      "signal_type": "Startup Funding Signal",
-      "company": "Anthropic",
-      "funding_rounds": [],
-      "funding_amount": "$965B",
-      "lead_investor": "Altimeter Capital",
-      "ai_keyword_hits": [
-        "ai"
-      ],
-      "startup_keyword_hits": [
-        "startup"
-      ],
-      "funding_keyword_hits": [
-        "funding",
-        "valuation",
-        "led by",
-        "capital"
-      ],
-      "product_keyword_hits": [],
-      "relevance_score": 10,
-      "discovery_method": "rss",
-      "discovery_source": "https://yourstory.com/feed"
-    },
-    {
-      "id": "startup_product_hunt_https_www_producthunt_com_products_tabstack",
-      "title": "Tabstack Web Research",
-      "url": "https://www.producthunt.com/products/tabstack",
-      "source": "Product Hunt",
-      "source_region": "global",
-      "source_type": "product_launch",
-      "tier": "tier_3",
-      "published_at": "2026-05-29T23:25:35+00:00",
-      "summary": "Run a research agent with cited answers in a single API call Discussion | Link",
-      "signal_type": "Startup Product Signal",
-      "company": null,
-      "funding_rounds": [],
-      "funding_amount": null,
-      "lead_investor": null,
-      "ai_keyword_hits": [
-        "agent"
-      ],
-      "startup_keyword_hits": [],
-      "funding_keyword_hits": [],
-      "product_keyword_hits": [
-        "launch",
-        "product",
-        "api"
-      ],
-      "relevance_score": 5,
       "discovery_method": "rss",
       "discovery_source": "https://www.producthunt.com/feed"
     },
@@ -407,193 +548,6 @@
       "discovery_source": "https://techcrunch.com/category/startups/feed/"
     },
     {
-      "id": "startup_pandaily_https_pandaily_com_zero_zero_robotics_hover_aqua_waterproof_flying_camera_may2026",
-      "title": "Zero Zero Robotics Launches Hover AQUA, the World's First Fully Waterproof Flying Camera",
-      "url": "https://pandaily.com/zero-zero-robotics-hover-aqua-waterproof-flying-camera-may2026",
-      "source": "Pandaily",
-      "source_region": "china",
-      "source_type": "china_startup_tech",
-      "tier": "tier_2",
-      "published_at": "2026-05-29T10:36:46+00:00",
-      "summary": "Zero Zero Robotics has unveiled the Hover AQUA, the world's first fully waterproof flying camera designed for water sports, featuring IP67 dust and water resistance, positive buoyancy for direct water takeoff and landing, and 4K/100fps video recording at under 250 grams.",
-      "signal_type": "Startup Product Signal",
-      "company": "Zero Zero Robotics",
-      "funding_rounds": [],
-      "funding_amount": null,
-      "lead_investor": null,
-      "ai_keyword_hits": [
-        "robotics"
-      ],
-      "startup_keyword_hits": [
-        "startup"
-      ],
-      "funding_keyword_hits": [],
-      "product_keyword_hits": [
-        "launch",
-        "launches"
-      ],
-      "relevance_score": 6,
-      "discovery_method": "rss",
-      "discovery_source": "https://pandaily.com/feed/"
-    },
-    {
-      "id": "startup_pandaily_https_pandaily_com_x_square_robot_wall_wm_event_level_world_model_may2026",
-      "title": "X-Square Robot Unveils WALL-WM, the World's First Event-Level Prediction Embodied AI World Model",
-      "url": "https://pandaily.com/x-square-robot-wall-wm-event-level-world-model-may2026",
-      "source": "Pandaily",
-      "source_region": "china",
-      "source_type": "china_startup_tech",
-      "tier": "tier_2",
-      "published_at": "2026-05-29T10:36:09+00:00",
-      "summary": "X-Square Robot has released WALL-WM, the world's first event-level prediction embodied AI world model that shifts from frame-by-frame prediction to semantic event understanding, enabling robots to grasp task objectives rather than memorizing pixel sequences.",
-      "signal_type": "Startup Product Signal",
-      "company": "X-Square Robot",
-      "funding_rounds": [],
-      "funding_amount": null,
-      "lead_investor": null,
-      "ai_keyword_hits": [
-        "ai",
-        "model"
-      ],
-      "startup_keyword_hits": [
-        "startup"
-      ],
-      "funding_keyword_hits": [],
-      "product_keyword_hits": [
-        "unveils"
-      ],
-      "relevance_score": 7,
-      "discovery_method": "rss",
-      "discovery_source": "https://pandaily.com/feed/"
-    },
-    {
-      "id": "startup_pandaily_https_pandaily_com_mediatek_dimensity_8550_4nm_mobile_soc_may2026",
-      "title": "MediaTek Launches Dimensity 8550: A 4nm All-Big-Core Mobile SoC with On-Device AI Focus",
-      "url": "https://pandaily.com/mediatek-dimensity-8550-4nm-mobile-soc-may2026",
-      "source": "Pandaily",
-      "source_region": "china",
-      "source_type": "china_startup_tech",
-      "tier": "tier_2",
-      "published_at": "2026-05-29T08:35:23+00:00",
-      "summary": "MediaTek has released the Dimensity 8550, a 4nm N4P mobile platform featuring an all-big-core Cortex-A725 CPU architecture, an 880 NPU unit with native Google Gemini Nano V3 support, and comprehensive connectivity features targeting the mid-to-premium smartphone segment.",
-      "signal_type": "Startup Product Signal",
-      "company": "MediaTek",
-      "funding_rounds": [],
-      "funding_amount": null,
-      "lead_investor": null,
-      "ai_keyword_hits": [
-        "ai"
-      ],
-      "startup_keyword_hits": [
-        "startup",
-        "platform"
-      ],
-      "funding_keyword_hits": [],
-      "product_keyword_hits": [
-        "launch",
-        "launches",
-        "platform"
-      ],
-      "relevance_score": 8,
-      "discovery_method": "rss",
-      "discovery_source": "https://pandaily.com/feed/"
-    },
-    {
-      "id": "startup_e27_https_e27_co_anthropics_us65b_cheque_redraws_ai_funding_map_20260529",
-      "title": "Anthropic’s US$65B cheque redraws AI funding map",
-      "url": "https://e27.co/anthropics-us65b-cheque-redraws-ai-funding-map-20260529/",
-      "source": "e27",
-      "source_region": "southeast_asia",
-      "source_type": "asia_startup_news",
-      "tier": "tier_2",
-      "published_at": "2026-05-29T07:37:42+00:00",
-      "summary": "Anthropic has closed a staggering US$65 billion Series H round, taking the company to an estimated US$965 billion post‑money valuation and signalling an escalation in the race to dominate enterprise AI. The round was led by Altimeter Capital, Dragoneer, Greenoaks, and Sequoia Capital, and included heavyweights, such as Capital Group, Coatue, D1 Capital, GIC, and […] The post Anthropic’s US$65B cheque redraws AI funding map appeared first on e27 .",
-      "signal_type": "Startup Funding Signal",
-      "company": null,
-      "funding_rounds": [],
-      "funding_amount": "$65B",
-      "lead_investor": "Altimeter Capital",
-      "ai_keyword_hits": [
-        "ai"
-      ],
-      "startup_keyword_hits": [
-        "startup",
-        "company"
-      ],
-      "funding_keyword_hits": [
-        "funding",
-        "round",
-        "valuation",
-        "led by",
-        "capital"
-      ],
-      "product_keyword_hits": [],
-      "relevance_score": 10,
-      "discovery_method": "rss",
-      "discovery_source": "https://e27.co/feed/"
-    },
-    {
-      "id": "startup_pandaily_https_pandaily_com_thunderobot_haier_ai_workstations_amd_launch_may2026",
-      "title": "Haier's Thunderobot Launches 10 AI Workstations Powered by AMD Across Tower, Mini, and Mobile Lines",
-      "url": "https://pandaily.com/thunderobot-haier-ai-workstations-amd-launch-may2026",
-      "source": "Pandaily",
-      "source_region": "china",
-      "source_type": "china_startup_tech",
-      "tier": "tier_2",
-      "published_at": "2026-05-29T03:57:58+00:00",
-      "summary": "Haier's Thunderobot unveils 10 AMD-powered AI workstations across tower, mini PC, and mobile form factors, targeting the agent-era demand for local AI computing.",
-      "signal_type": "Startup Product Signal",
-      "company": "Haier's Thunderobot",
-      "funding_rounds": [],
-      "funding_amount": null,
-      "lead_investor": null,
-      "ai_keyword_hits": [
-        "ai",
-        "agent"
-      ],
-      "startup_keyword_hits": [
-        "startup"
-      ],
-      "funding_keyword_hits": [],
-      "product_keyword_hits": [
-        "launch",
-        "launches",
-        "unveils"
-      ],
-      "relevance_score": 9,
-      "discovery_method": "rss",
-      "discovery_source": "https://pandaily.com/feed/"
-    },
-    {
-      "id": "startup_e27_https_e27_co_i_built_a_c_suite_for_us50_a_month_heres_what_it_taught_me_about_talent_20260528",
-      "title": "I built a C-suite for US$50 a month: Here’s what it taught me about talent",
-      "url": "https://e27.co/i-built-a-c-suite-for-us50-a-month-heres-what-it-taught-me-about-talent-20260528/",
-      "source": "e27",
-      "source_region": "southeast_asia",
-      "source_type": "asia_startup_news",
-      "tier": "tier_2",
-      "published_at": "2026-05-29T03:45:14+00:00",
-      "summary": "The talent reset is not coming. For solo founders, it already happened. I run three businesses. An art school. An AI marketing firm. And before that, a healthy meal prep company I built to seven-figure revenue and eventually closed. I have no co-founder. No HR department. For years, I did what desperate founders do: I […] The post I built a C-suite for US$50 a month: Here’s what it taught me about talent appeared first on e27 .",
-      "signal_type": "Startup Signal",
-      "company": null,
-      "funding_rounds": [],
-      "funding_amount": null,
-      "lead_investor": null,
-      "ai_keyword_hits": [
-        "ai"
-      ],
-      "startup_keyword_hits": [
-        "startup",
-        "founder",
-        "company"
-      ],
-      "funding_keyword_hits": [],
-      "product_keyword_hits": [],
-      "relevance_score": 6,
-      "discovery_method": "rss",
-      "discovery_source": "https://e27.co/feed/"
-    },
-    {
       "id": "startup_technode_https_technode_com_2026_05_29_tencent_launches_workbuddy_productivity_ai_agent_for_global_users",
       "title": "Tencent launches WorkBuddy productivity AI agent for global users",
       "url": "https://technode.com/2026/05/29/tencent-launches-workbuddy-productivity-ai-agent-for-global-users/",
@@ -628,34 +582,6 @@
       "relevance_score": 10,
       "discovery_method": "rss",
       "discovery_source": "https://technode.com/feed/"
-    },
-    {
-      "id": "startup_e27_https_e27_co_if_an_ai_agent_cannot_find_you_in_southeast_asia_you_do_not_exist_in_the_market_20260523",
-      "title": "If an AI agent cannot find you in Southeast Asia, you do not exist in the market",
-      "url": "https://e27.co/if-an-ai-agent-cannot-find-you-in-southeast-asia-you-do-not-exist-in-the-market-20260523/",
-      "source": "e27",
-      "source_region": "southeast_asia",
-      "source_type": "asia_startup_news",
-      "tier": "tier_2",
-      "published_at": "2026-05-29T01:20:15+00:00",
-      "summary": "For B2B tech firms and growth-stage companies eyeing the Southeast Asian prize in 2026, the traditional market entry playbook is officially broken. You have hired the local country manager. You have booked the regional tech conference slots. You have even landed a few prestigious headlines in national business dailies. Yet, when a regional CTO asks […] The post If an AI agent cannot find you in Southeast Asia, you do not exist in the market appeared first on e27 .",
-      "signal_type": "Startup Signal",
-      "company": null,
-      "funding_rounds": [],
-      "funding_amount": null,
-      "lead_investor": null,
-      "ai_keyword_hits": [
-        "ai",
-        "agent"
-      ],
-      "startup_keyword_hits": [
-        "startup"
-      ],
-      "funding_keyword_hits": [],
-      "product_keyword_hits": [],
-      "relevance_score": 6,
-      "discovery_method": "rss",
-      "discovery_source": "https://e27.co/feed/"
     },
     {
       "id": "startup_technode_https_technode_com_2026_05_29_iflytek_launches_40g_ai_glasses_with_glassclaw_ai_agent_and_advanced_noise_recognition",
@@ -790,6 +716,37 @@
       "discovery_source": "https://techcrunch.com/category/startups/fundraising/feed/"
     },
     {
+      "id": "startup_product_hunt_https_www_producthunt_com_products_fundraisly",
+      "title": "Fundraisly",
+      "url": "https://www.producthunt.com/products/fundraisly",
+      "source": "Product Hunt",
+      "source_region": "global",
+      "source_type": "product_launch",
+      "tier": "tier_3",
+      "published_at": "2026-05-28T12:39:22+00:00",
+      "summary": "AI fundraising agent that finds investors and books meetings Discussion | Link",
+      "signal_type": "Startup Product Signal",
+      "company": null,
+      "funding_rounds": [],
+      "funding_amount": null,
+      "lead_investor": null,
+      "ai_keyword_hits": [
+        "ai",
+        "agent"
+      ],
+      "startup_keyword_hits": [],
+      "funding_keyword_hits": [
+        "investors"
+      ],
+      "product_keyword_hits": [
+        "launch",
+        "product"
+      ],
+      "relevance_score": 8,
+      "discovery_method": "rss",
+      "discovery_source": "https://www.producthunt.com/feed"
+    },
+    {
       "id": "startup_product_hunt_https_www_producthunt_com_products_socialecho",
       "title": "SocialEcho 2.0",
       "url": "https://www.producthunt.com/products/socialecho",
@@ -849,36 +806,6 @@
       "relevance_score": 10,
       "discovery_method": "rss",
       "discovery_source": "https://news.crunchbase.com/sections/ai/feed/"
-    },
-    {
-      "id": "startup_technode_https_technode_com_2026_05_26_limx_dynamics_unveils_luna_humanoid_robot_with_ai_dance_learning",
-      "title": "LimX Dynamics unveils Luna humanoid robot with AI dance learning",
-      "url": "https://technode.com/2026/05/26/limx-dynamics-unveils-luna-humanoid-robot-with-ai-dance-learning/",
-      "source": "TechNode",
-      "source_region": "china",
-      "source_type": "china_startup_tech",
-      "tier": "tier_2",
-      "published_at": "2026-05-26T10:03:48+00:00",
-      "summary": "LimX Dynamics on Monday unveiled the LimX Luna humanoid robot, priced at RMB 298,000 ($41,000). Standing 160cm tall, the LimX Luna features 27 degrees of freedom across its body and is powered by the company’s second-generation SYS 0 motion control engine. The robot also comes with upgraded cooling and battery life, while supporting multimodal interaction […]",
-      "signal_type": "Startup Product Signal",
-      "company": "LimX Dynamics",
-      "funding_rounds": [],
-      "funding_amount": null,
-      "lead_investor": null,
-      "ai_keyword_hits": [
-        "ai"
-      ],
-      "startup_keyword_hits": [
-        "startup",
-        "company"
-      ],
-      "funding_keyword_hits": [],
-      "product_keyword_hits": [
-        "unveils"
-      ],
-      "relevance_score": 6,
-      "discovery_method": "rss",
-      "discovery_source": "https://technode.com/feed/"
     }
   ],
   "source_health": [
@@ -899,9 +826,9 @@
       "endpoint": "https://techcrunch.com/category/startups/feed/",
       "status": "OK",
       "http_status": 200,
-      "feed_entries": 18,
-      "items_seen": 18,
-      "items_added": 2,
+      "feed_entries": 19,
+      "items_seen": 19,
+      "items_added": 1,
       "parse_warning": false
     },
     {
@@ -1042,10 +969,10 @@
       "endpoint": "https://36kr.com/feed",
       "status": "OK",
       "http_status": 200,
-      "feed_entries": 30,
-      "items_seen": 30,
+      "feed_entries": 0,
+      "items_seen": 0,
       "items_added": 0,
-      "parse_warning": false
+      "parse_warning": true
     },
     {
       "source": "Synced Review",
@@ -1077,7 +1004,7 @@
       "http_status": 200,
       "feed_entries": 24,
       "items_seen": 24,
-      "items_added": 0,
+      "items_added": 1,
       "parse_warning": false
     },
     {
@@ -1088,7 +1015,7 @@
       "http_status": 200,
       "feed_entries": 20,
       "items_seen": 20,
-      "items_added": 1,
+      "items_added": 0,
       "parse_warning": false
     },
     {
@@ -1110,7 +1037,7 @@
       "http_status": 200,
       "feed_entries": 50,
       "items_seen": 30,
-      "items_added": 3,
+      "items_added": 1,
       "parse_warning": false
     },
     {
@@ -1143,7 +1070,7 @@
       "http_status": 200,
       "feed_entries": 50,
       "items_seen": 30,
-      "items_added": 6,
+      "items_added": 5,
       "parse_warning": false
     }
   ]

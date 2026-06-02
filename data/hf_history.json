@@ -24,6 +24,8 @@
     "meta-llama/Llama-Prompt-Guard-2-22M"
   ],
   "mistralai": [
+    "mistralai/Pixtral-Large-Instruct-2411",
+    "mistralai/Pixtral-12B-2409",
     "mistralai/Mistral-Small-4-119B-2603-NVFP4",
     "mistralai/Mistral-Small-4-119B-2603",
     "mistralai/Mistral-Medium-3.5-128B",
@@ -31,9 +33,7 @@
     "mistralai/Mistral-Small-4-119B-2603-eagle",
     "mistralai/Leanstral-2603",
     "mistralai/Voxtral-4B-TTS-2603",
-    "mistralai/Voxtral-Mini-4B-Realtime-2602",
-    "mistralai/Devstral-Small-2-24B-Instruct-2512",
-    "mistralai/Devstral-2-123B-Instruct-2512"
+    "mistralai/Voxtral-Mini-4B-Realtime-2602"
   ],
   "google": [
     "google/gemma-4-26B-A4B-it",
@@ -96,6 +96,7 @@
     "deepseek-ai/DeepSeek-OCR"
   ],
   "ByteDance-Seed": [
+    "ByteDance-Seed/TaskMem",
     "ByteDance-Seed/SimArt",
     "ByteDance-Seed/Cola-DLM",
     "ByteDance-Seed/byteff2",
@@ -104,8 +105,7 @@
     "ByteDance-Seed/Stable-DiffCoder-8B-Base",
     "ByteDance-Seed/cryofm-v1",
     "ByteDance-Seed/cryofm-v2",
-    "ByteDance-Seed/BAGEL-7B-MoT",
-    "ByteDance-Seed/VINCIE-7B"
+    "ByteDance-Seed/BAGEL-7B-MoT"
   ],
   "BAAI": [
     "BAAI/OpenSeek-Mid-v1",

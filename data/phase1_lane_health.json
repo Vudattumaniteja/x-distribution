@@ -1,26 +1,26 @@
 {
-  "last_updated": "2026-06-01T15:19:30.199852+00:00",
+  "last_updated": "2026-06-02T12:09:32.913189+00:00",
   "lane_workers": 5,
   "lanes": [
     {
       "lane": "artifact_research",
       "status": "OK",
-      "items": 438
+      "items": 59
     },
     {
       "lane": "community",
       "status": "OK",
-      "items": 540
+      "items": 507
     },
     {
       "lane": "developer_sentiment",
       "status": "OK",
-      "items": 36
+      "items": 38
     },
     {
       "lane": "finance",
       "status": "OK",
-      "items": 138
+      "items": 150
     },
     {
       "lane": "model_market",
@@ -28,31 +28,36 @@
       "items": 603
     },
     {
+      "lane": "prediction_market",
+      "status": "OK",
+      "items": 0
+    },
+    {
       "lane": "rss",
       "status": "OK",
-      "items": 237
+      "items": 286
     },
     {
       "lane": "science",
       "status": "OK",
-      "items": 94
+      "items": 93
     },
     {
       "lane": "startup_collections",
       "status": "OK",
-      "items": 344
+      "items": 358
     },
     {
       "lane": "startup_funding",
       "status": "OK",
-      "items": 28
+      "items": 24
     },
     {
       "lane": "x",
       "status": "PARTIAL",
       "x_status": "PARTIAL",
-      "x_run_id": "x-20260601T145046.958016Z-16040",
-      "items": 106
+      "x_run_id": "x-20260602T114116.660670Z-4672",
+      "items": 40
     },
     {
       "lane": "youtube",

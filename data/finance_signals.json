@@ -1,42 +1,716 @@
 {
-  "last_updated": "2026-06-01T14:51:09.898175+00:00",
+  "last_updated": "2026-06-02T12:19:05.384923+00:00",
   "signals": [
     {
-      "id": "finance_bloomberg_technology_https_www_bloomberg_com_news_videos_2026_06_01_nvidia_enters_the_laptop_market_with_superchip_video",
-      "title": "Nvidia Enters the Laptop Market with Superchip, Taking on Intel and AMD",
-      "url": "https://www.bloomberg.com/news/videos/2026-06-01/nvidia-enters-the-laptop-market-with-superchip-video",
-      "source": "Bloomberg Technology",
+      "id": "finance_cnbc_technology_https_www_cnbc_com_2026_06_02_5_things_to_know_before_the_stock_market_opens_html",
+      "title": "Alphabet's stock sale, Iran negotiations, Anthropic's IPO plans and more in Morning Squawk",
+      "url": "https://www.cnbc.com/2026/06/02/5-things-to-know-before-the-stock-market-opens.html",
+      "source": "CNBC Technology",
       "source_region": "global",
       "source_type": "market_news",
-      "tier": "tier_1",
-      "published_at": "2026-06-01T14:31:08+00:00",
-      "summary": "Nvidia is entering the PC market with a new superchip. With Windows running on the chips, the company is going head-to-head with Intel and AMD, Tom Mackenzie explains. (Source: Bloomberg)",
+      "tier": "tier_2",
+      "published_at": "2026-06-02T12:09:05+00:00",
+      "summary": "Here are five key things investors need to know to start the trading day.",
+      "signal_type": "AI Market Intelligence",
+      "finance_signal_types": [
+        "market_sentiment_signal"
+      ],
+      "ai_keyword_hits": [
+        "anthropic"
+      ],
+      "finance_keyword_hits": [
+        "ipo",
+        "stock",
+        "market"
+      ],
+      "relevance_score": 7,
+      "discovery_method": "rss",
+      "discovery_source": "https://www.cnbc.com/id/19854910/device/rss/rss.html"
+    },
+    {
+      "id": "finance_cnbc_technology_https_www_cnbc_com_2026_06_02_nvidias_new_pc_chips_are_ceos_bid_to_own_every_part_of_ai_stack_html",
+      "title": "Nvidia's new PC chips represent CEO Huang's bid to win at every layer of AI stack",
+      "url": "https://www.cnbc.com/2026/06/02/nvidias-new-pc-chips-are-ceos-bid-to-own-every-part-of-ai-stack.html",
+      "source": "CNBC Technology",
+      "source_region": "global",
+      "source_type": "market_news",
+      "tier": "tier_2",
+      "published_at": "2026-06-02T12:00:01+00:00",
+      "summary": "Nvidia's announced entry into the PC chip market sent shares of AMD, Intel and Qualcomm lower as Wall Street recognized the threat.",
       "signal_type": "AI Market Intelligence",
       "finance_signal_types": [
         "chip_supply_signal",
         "market_sentiment_signal"
       ],
       "ai_keyword_hits": [
+        "ai",
         "nvidia",
         "chip"
       ],
       "finance_keyword_hits": [
+        "shares",
         "market"
       ],
-      "relevance_score": 9,
+      "relevance_score": 10,
+      "discovery_method": "rss",
+      "discovery_source": "https://www.cnbc.com/id/19854910/device/rss/rss.html"
+    },
+    {
+      "id": "finance_bloomberg_technology_https_www_bloomberg_com_news_articles_2026_06_02_withings_debuts_new_smart_scale_marketed_toward_glp_1_users",
+      "title": "Withings Debuts New Smart Scale Marketed Toward GLP-1 Users",
+      "url": "https://www.bloomberg.com/news/articles/2026-06-02/withings-debuts-new-smart-scale-marketed-toward-glp-1-users",
+      "source": "Bloomberg Technology",
+      "source_region": "global",
+      "source_type": "market_news",
+      "tier": "tier_1",
+      "published_at": "2026-06-02T12:00:00+00:00",
+      "summary": "Withings, the French company that pioneered the category of Wi-Fi bathroom scales, unveiled a new model with advanced body composition scanning abilities that is being marketed toward people on GLP-1 weight loss drugs.",
+      "signal_type": "AI Market Intelligence",
+      "finance_signal_types": [
+        "market_sentiment_signal"
+      ],
+      "ai_keyword_hits": [
+        "model"
+      ],
+      "finance_keyword_hits": [
+        "market"
+      ],
+      "relevance_score": 6,
       "discovery_method": "rss",
       "discovery_source": "https://feeds.bloomberg.com/technology/news.rss"
     },
     {
-      "id": "finance_bloomberg_markets_https_www_bloomberg_com_news_articles_2026_06_01_dollar_opens_week_boosted_by_ai_enthusiasm_haven_demand",
-      "title": "Dollar Opens Week Boosted by AI Enthusiasm, Haven Demand",
-      "url": "https://www.bloomberg.com/news/articles/2026-06-01/dollar-opens-week-boosted-by-ai-enthusiasm-haven-demand",
+      "id": "finance_cnbc_technology_https_www_cnbc_com_2026_06_02_jensen_huang_nvidia_marvell_technology_trillion_dollar_ai_html",
+      "title": "Nvidia's Jensen Huang says Marvell could be the next trillion-dollar company; stock jumps 22%",
+      "url": "https://www.cnbc.com/2026/06/02/jensen-huang-nvidia-marvell-technology-trillion-dollar-ai.html",
+      "source": "CNBC Technology",
+      "source_region": "global",
+      "source_type": "market_news",
+      "tier": "tier_2",
+      "published_at": "2026-06-02T11:54:15+00:00",
+      "summary": "Nvidia's CEO, Jensen Huang, hailed this chip designer as the next trillion-dollar firm, sending its shares up sharply in early market trading.",
+      "signal_type": "AI Market Intelligence",
+      "finance_signal_types": [
+        "chip_supply_signal",
+        "market_sentiment_signal"
+      ],
+      "ai_keyword_hits": [
+        "ai",
+        "nvidia",
+        "chip"
+      ],
+      "finance_keyword_hits": [
+        "shares",
+        "stock",
+        "market"
+      ],
+      "relevance_score": 10,
+      "discovery_method": "rss",
+      "discovery_source": "https://www.cnbc.com/id/19854910/device/rss/rss.html"
+    },
+    {
+      "id": "finance_economic_times_markets_https_economictimes_indiatimes_com_markets_us_stocks_news_dow_jones_stock_market_live_updates_nasdaq_sp_500_iran_isra",
+      "title": "Dow Jones| Nasdaq | US Stock Market Today | Live: Wall Street futures dip after record highs; Hewlett Packard soars",
+      "url": "https://economictimes.indiatimes.com/markets/us-stocks/news/dow-jones-stock-market-live-updates-nasdaq-sp-500-iran-israel-war-crude-brent-oil-price-nvidia-google-marvell-hewlett-packard-stock-price-news-2nd-june-2026/liveblog/131463019.cms",
+      "source": "Economic Times Markets",
+      "source_region": "india",
+      "source_type": "market_news",
+      "tier": "tier_2",
+      "published_at": "2026-06-02T11:38:54+00:00",
+      "summary": "",
+      "signal_type": "AI Market Intelligence",
+      "finance_signal_types": [
+        "chip_supply_signal",
+        "market_sentiment_signal"
+      ],
+      "ai_keyword_hits": [
+        "nvidia"
+      ],
+      "finance_keyword_hits": [
+        "stock",
+        "market"
+      ],
+      "relevance_score": 7,
+      "discovery_method": "rss",
+      "discovery_source": "https://economictimes.indiatimes.com/markets/rssfeeds/1977021501.cms"
+    },
+    {
+      "id": "finance_cnbc_technology_https_www_cnbc_com_2026_06_01_alphabet_to_raise_80_billion_from_stock_sales_to_fund_ai_buildout_html",
+      "title": "Alphabet plans to raise $80 billion from stock sales to fund AI build-out",
+      "url": "https://www.cnbc.com/2026/06/01/alphabet-to-raise-80-billion-from-stock-sales-to-fund-ai-buildout.html",
+      "source": "CNBC Technology",
+      "source_region": "global",
+      "source_type": "market_news",
+      "tier": "tier_2",
+      "published_at": "2026-06-02T11:38:51+00:00",
+      "summary": "Alphabet said it plans to sell $80 billion in stock, including through a $10 billion investment by Berkshire Hathaway.",
+      "signal_type": "AI Market Intelligence",
+      "finance_signal_types": [
+        "market_sentiment_signal"
+      ],
+      "ai_keyword_hits": [
+        "ai"
+      ],
+      "finance_keyword_hits": [
+        "investment",
+        "stock"
+      ],
+      "relevance_score": 6,
+      "discovery_method": "rss",
+      "discovery_source": "https://www.cnbc.com/id/19854910/device/rss/rss.html"
+    },
+    {
+      "id": "finance_bloomberg_markets_https_www_bloomberg_com_news_videos_2026_06_02_bloomberg_brief_6_2_2026_video",
+      "title": "Alphabet to Raise $80B; Trump Tries to Stop Israel’s Lebanon Push | Bloomberg Brief 6/2/2026",
+      "url": "https://www.bloomberg.com/news/videos/2026-06-02/bloomberg-brief-6-2-2026-video",
       "source": "Bloomberg Markets",
       "source_region": "global",
       "source_type": "market_news",
       "tier": "tier_1",
-      "published_at": "2026-06-01T14:19:01+00:00",
-      "summary": "Traders are betting the US dollar will rise in the weeks ahead, supported by lingering uncertainty over US-Iran talks and an AI-fueled rally in US stocks.",
+      "published_at": "2026-06-02T11:21:49+00:00",
+      "summary": "US equities stall their rally as futures hover near a record high. Alphabet plans to raise $80 billion through a package of equity offerings to fund its AI spending plans. US President Donald Trump and Israeli Prime Minister Benjamin Netanyahu offer differing accounts of a call about the fighting in Lebanon, which could impact efforts to reach a peace deal with Iran. Seems Shah of Principal Asset Management looks ahead to a slew of jobs data this week. (Source: Bloomberg)",
+      "signal_type": "AI Market Intelligence",
+      "finance_signal_types": [
+        "market_sentiment_signal",
+        "labor_signal"
+      ],
+      "ai_keyword_hits": [
+        "ai"
+      ],
+      "finance_keyword_hits": [
+        "market"
+      ],
+      "relevance_score": 7,
+      "discovery_method": "rss",
+      "discovery_source": "https://feeds.bloomberg.com/markets/news.rss"
+    },
+    {
+      "id": "finance_cnbc_investing_https_www_cnbc_com_2026_06_02_software_stocks_just_passed_a_big_milestone_html",
+      "title": "Software stocks just passed a big milestone",
+      "url": "https://www.cnbc.com/2026/06/02/software-stocks-just-passed-a-big-milestone.html",
+      "source": "CNBC Investing",
+      "source_region": "global",
+      "source_type": "market_news",
+      "tier": "tier_2",
+      "published_at": "2026-06-02T11:13:29+00:00",
+      "summary": "Software stocks are making a comeback from their artificial intelligence-driven sell-off earlier this year.",
+      "signal_type": "AI Market Intelligence",
+      "finance_signal_types": [
+        "market_sentiment_signal"
+      ],
+      "ai_keyword_hits": [
+        "artificial intelligence"
+      ],
+      "finance_keyword_hits": [
+        "stock"
+      ],
+      "relevance_score": 5,
+      "discovery_method": "rss",
+      "discovery_source": "https://www.cnbc.com/id/100003114/device/rss/rss.html"
+    },
+    {
+      "id": "finance_bloomberg_markets_https_www_bloomberg_com_news_videos_2026_06_02_why_india_s_run_as_a_stock_market_darling_may_be_over_video",
+      "title": "Why India’s Run as a Stock Market Darling May Be Over",
+      "url": "https://www.bloomberg.com/news/videos/2026-06-02/why-india-s-run-as-a-stock-market-darling-may-be-over-video",
+      "source": "Bloomberg Markets",
+      "source_region": "global",
+      "source_type": "market_news",
+      "tier": "tier_1",
+      "published_at": "2026-06-02T10:45:37+00:00",
+      "summary": "India's stock market is losing its allure. The South Asian nation stands out as one of the biggest losers as factors like the AI trade reshape global investment flows. Asmi Bhatia with more. (Source: Bloomberg)",
+      "signal_type": "AI Market Intelligence",
+      "finance_signal_types": [
+        "market_sentiment_signal"
+      ],
+      "ai_keyword_hits": [
+        "ai"
+      ],
+      "finance_keyword_hits": [
+        "investment",
+        "stock",
+        "market"
+      ],
+      "relevance_score": 8,
+      "discovery_method": "rss",
+      "discovery_source": "https://feeds.bloomberg.com/markets/news.rss"
+    },
+    {
+      "id": "finance_bloomberg_markets_https_www_bloomberg_com_news_articles_2026_06_02_marvell_surges_after_huang_calls_it_the_next_1_trillion_company",
+      "title": "Marvell Soars After Nvidia Chief’s $1 Trillion Stock Call",
+      "url": "https://www.bloomberg.com/news/articles/2026-06-02/marvell-surges-after-huang-calls-it-the-next-1-trillion-company",
+      "source": "Bloomberg Markets",
+      "source_region": "global",
+      "source_type": "market_news",
+      "tier": "tier_1",
+      "published_at": "2026-06-02T10:41:53+00:00",
+      "summary": "Marvell Technology Inc. shares surged in early trading Tuesday after Nvidia Corp.’s Jensen Huang predicted the semiconductor and networking company will be the next business to hit a $1 trillion valuation, more than five times its current capitalization.",
+      "signal_type": "AI Market Intelligence",
+      "finance_signal_types": [
+        "funding_signal",
+        "chip_supply_signal",
+        "market_sentiment_signal"
+      ],
+      "ai_keyword_hits": [
+        "nvidia",
+        "semiconductor"
+      ],
+      "finance_keyword_hits": [
+        "valuation",
+        "shares",
+        "stock",
+        "market"
+      ],
+      "relevance_score": 10,
+      "discovery_method": "rss",
+      "discovery_source": "https://feeds.bloomberg.com/markets/news.rss"
+    },
+    {
+      "id": "finance_bloomberg_markets_https_www_bloomberg_com_news_newsletters_2026_06_02_a_200_billion_test_of_investors_appetite_for_ai_looms",
+      "title": "A $200 Billion Test of Investors’ Appetite for AI Looms",
+      "url": "https://www.bloomberg.com/news/newsletters/2026-06-02/a-200-billion-test-of-investors-appetite-for-ai-looms",
+      "source": "Bloomberg Markets",
+      "source_region": "global",
+      "source_type": "market_news",
+      "tier": "tier_1",
+      "published_at": "2026-06-02T10:36:42+00:00",
+      "summary": "Offerings from SpaceX, Anthropic, OpenAI will be blockbuster market events.",
+      "signal_type": "AI Market Intelligence",
+      "finance_signal_types": [
+        "market_sentiment_signal"
+      ],
+      "ai_keyword_hits": [
+        "ai",
+        "openai",
+        "anthropic"
+      ],
+      "finance_keyword_hits": [
+        "market"
+      ],
+      "relevance_score": 10,
+      "discovery_method": "rss",
+      "discovery_source": "https://feeds.bloomberg.com/markets/news.rss"
+    },
+    {
+      "id": "finance_bloomberg_technology_https_www_bloomberg_com_news_newsletters_2026_06_02_how_ai_is_transforming_billing_hiring_and_legal_work_at_top_law_fir",
+      "title": "Law’s Billable Hour Is Being Shredded by AI",
+      "url": "https://www.bloomberg.com/news/newsletters/2026-06-02/how-ai-is-transforming-billing-hiring-and-legal-work-at-top-law-firms",
+      "source": "Bloomberg Technology",
+      "source_region": "global",
+      "source_type": "market_news",
+      "tier": "tier_1",
+      "published_at": "2026-06-02T10:31:10+00:00",
+      "summary": "AI is upending law firms’ billing, hiring and even their legal products.",
+      "signal_type": "AI Market Intelligence",
+      "finance_signal_types": [
+        "labor_signal"
+      ],
+      "ai_keyword_hits": [
+        "ai"
+      ],
+      "finance_keyword_hits": [
+        "hiring"
+      ],
+      "relevance_score": 6,
+      "discovery_method": "rss",
+      "discovery_source": "https://feeds.bloomberg.com/technology/news.rss"
+    },
+    {
+      "id": "finance_cnbc_investing_https_www_cnbc_com_2026_06_02_abivax_stock_bowel_crohns_disease_trial_data_html",
+      "title": "Biotech takeover target Abivax sinks over 30% as cancer cases cloud trial data for bowel disease drug",
+      "url": "https://www.cnbc.com/2026/06/02/abivax-stock-bowel-crohns-disease-trial-data.html",
+      "source": "CNBC Investing",
+      "source_region": "global",
+      "source_type": "market_news",
+      "tier": "tier_2",
+      "published_at": "2026-06-02T10:30:34+00:00",
+      "summary": "A clinical trial update wiped out billions in the French company's market cap and raised questions over a potential takeover.",
+      "signal_type": "AI Market Intelligence",
+      "finance_signal_types": [
+        "funding_signal",
+        "market_sentiment_signal"
+      ],
+      "ai_keyword_hits": [
+        "cloud"
+      ],
+      "finance_keyword_hits": [
+        "raised",
+        "stock",
+        "market"
+      ],
+      "relevance_score": 8,
+      "discovery_method": "rss",
+      "discovery_source": "https://www.cnbc.com/id/100003114/device/rss/rss.html"
+    },
+    {
+      "id": "finance_economic_times_markets_https_economictimes_indiatimes_com_markets_expert_view_ai_will_expand_opportunities_for_indian_it_luxury_housing_dema",
+      "title": "AI will expand opportunities for Indian IT; luxury housing demand remains strong: BofA Securities",
+      "url": "https://economictimes.indiatimes.com/markets/expert-view/ai-will-expand-opportunities-for-indian-it-luxury-housing-demand-remains-strong-bofa-securities/articleshow/131461290.cms",
+      "source": "Economic Times Markets",
+      "source_region": "india",
+      "source_type": "market_news",
+      "tier": "tier_2",
+      "published_at": "2026-06-02T10:17:23+00:00",
+      "summary": "AI presents significant new revenue streams for Indian IT services, despite job displacement concerns. Experts believe AI will expand beyond coding into business processes, creating a larger market. While enterprise adoption is nascent, technology modernization and AI integration will drive growth. Separately, India's residential real estate, particularly luxury housing, shows strong potential, with developers expected to manage rising costs.",
+      "signal_type": "AI Market Intelligence",
+      "finance_signal_types": [
+        "earnings_signal",
+        "market_sentiment_signal"
+      ],
+      "ai_keyword_hits": [
+        "ai"
+      ],
+      "finance_keyword_hits": [
+        "revenue",
+        "market",
+        "demand"
+      ],
+      "relevance_score": 8,
+      "discovery_method": "rss",
+      "discovery_source": "https://economictimes.indiatimes.com/markets/rssfeeds/1977021501.cms"
+    },
+    {
+      "id": "finance_economic_times_markets_https_economictimes_indiatimes_com_markets_stocks_news_tcs_shares_soar_7_up_nearly_10_in_just_two_sessions_what_are_t",
+      "title": "TCS shares soar 7%, up nearly 9% in just two sessions! What are technical charts indicating?",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/tcs-shares-soar-7-up-nearly-10-in-just-two-sessions-what-are-technical-charts-indicating/articleshow/131460701.cms",
+      "source": "Economic Times Markets",
+      "source_region": "india",
+      "source_type": "market_news",
+      "tier": "tier_2",
+      "published_at": "2026-06-02T09:49:05+00:00",
+      "summary": "TCS shares jumped as much as 7% on Tuesday, extending their two-day gain to nearly 9% as investors snapped up the stock after months of underperformance. The rally was driven by optimism around AI-related opportunities and attractive valuations following a sharp sector-wide selloff. Analysts at Nuvama believe the IT sector is poised for a comeback rather than a collapse, helping boost sentiment toward large-cap IT stocks.",
+      "signal_type": "AI Market Intelligence",
+      "finance_signal_types": [
+        "funding_signal",
+        "market_sentiment_signal"
+      ],
+      "ai_keyword_hits": [
+        "ai"
+      ],
+      "finance_keyword_hits": [
+        "valuation",
+        "shares",
+        "stock",
+        "market"
+      ],
+      "relevance_score": 9,
+      "discovery_method": "rss",
+      "discovery_source": "https://economictimes.indiatimes.com/markets/rssfeeds/1977021501.cms"
+    },
+    {
+      "id": "finance_bloomberg_technology_https_www_bloomberg_com_news_articles_2026_06_02_softbank_in_early_talks_to_back_800_million_agile_robots_round",
+      "title": "SoftBank in Early Talks to Back $800 Million Agile Robots Round",
+      "url": "https://www.bloomberg.com/news/articles/2026-06-02/softbank-in-early-talks-to-back-800-million-agile-robots-round",
+      "source": "Bloomberg Technology",
+      "source_region": "global",
+      "source_type": "market_news",
+      "tier": "tier_1",
+      "published_at": "2026-06-02T09:40:34+00:00",
+      "summary": "German industrial robotics startup Agile Robots is in discussions to raise about $800 million in new funding from backers including SoftBank Group Corp., as investors seek out companies deploying artificial intelligence in real-world settings.",
+      "signal_type": "AI Market Intelligence",
+      "finance_signal_types": [
+        "funding_signal",
+        "market_sentiment_signal"
+      ],
+      "ai_keyword_hits": [
+        "artificial intelligence"
+      ],
+      "finance_keyword_hits": [
+        "funding"
+      ],
+      "relevance_score": 7,
+      "discovery_method": "rss",
+      "discovery_source": "https://feeds.bloomberg.com/technology/news.rss"
+    },
+    {
+      "id": "finance_economic_times_markets_https_economictimes_indiatimes_com_markets_stocks_news_infosys_shares_jump_6_rally_10_in_3_days_as_it_stocks_shine_mo",
+      "title": "Infosys shares jump 6%, rally 10% in 3 days as IT stocks shine. More upside ahead?",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/infosys-shares-jump-6-rally-10-in-3-days-as-it-stocks-shine-more-upside-ahead/articleshow/131460164.cms",
+      "source": "Economic Times Markets",
+      "source_region": "india",
+      "source_type": "market_news",
+      "tier": "tier_2",
+      "published_at": "2026-06-02T09:24:18+00:00",
+      "summary": "Infosys shares have rallied sharply, rising nearly 10% in three days as investors reassess valuations following a steep AI-driven correction in IT stocks. Analysts see improving technical indicators and recovering sentiment, though they caution that a sustained uptrend will depend on stronger AI-led revenue growth, deal wins and broader sector demand recovery.",
+      "signal_type": "AI Market Intelligence",
+      "finance_signal_types": [
+        "funding_signal",
+        "earnings_signal",
+        "market_sentiment_signal"
+      ],
+      "ai_keyword_hits": [
+        "ai"
+      ],
+      "finance_keyword_hits": [
+        "valuation",
+        "revenue",
+        "shares",
+        "stock",
+        "market",
+        "demand"
+      ],
+      "relevance_score": 10,
+      "discovery_method": "rss",
+      "discovery_source": "https://economictimes.indiatimes.com/markets/rssfeeds/1977021501.cms"
+    },
+    {
+      "id": "finance_bloomberg_technology_https_www_bloomberg_com_news_videos_2026_06_02_amundi_diversifying_risk_via_commodity_currencies_gold_video",
+      "title": "Amundi Is Diversifying Risk Via Commodity Currencies, Gold",
+      "url": "https://www.bloomberg.com/news/videos/2026-06-02/amundi-diversifying-risk-via-commodity-currencies-gold-video",
+      "source": "Bloomberg Technology",
+      "source_region": "global",
+      "source_type": "market_news",
+      "tier": "tier_1",
+      "published_at": "2026-06-02T09:14:03+00:00",
+      "summary": "John O’Toole, head of CIO solutions at Amundi, discusses risk diversification strategies as the war in the Middle East continues and the artificial intelligence trade dominates equity markets. \"We've seen opportunities in high-yielding commodity currencies for example,\" O’Toole tells Bloomberg Television. \"We have had exposure to gold, and continue to have exposure to gold,\" he adds. (Source: Bloomberg)",
+      "signal_type": "AI Market Intelligence",
+      "finance_signal_types": [
+        "market_sentiment_signal"
+      ],
+      "ai_keyword_hits": [
+        "artificial intelligence"
+      ],
+      "finance_keyword_hits": [
+        "market"
+      ],
+      "relevance_score": 6,
+      "discovery_method": "rss",
+      "discovery_source": "https://feeds.bloomberg.com/technology/news.rss"
+    },
+    {
+      "id": "finance_economic_times_ai_https_economictimes_indiatimes_com_ai_ai_insights_nvidias_latest_ai_chip_explained_the_future_of_ai_powered_computers_arti",
+      "title": "NVIDIA’s latest AI chip explained: The future of AI-powered computers",
+      "url": "https://economictimes.indiatimes.com/ai/ai-insights/nvidias-latest-ai-chip-explained-the-future-of-ai-powered-computers/articleshow/131459389.cms",
+      "source": "Economic Times AI",
+      "source_region": "india",
+      "source_type": "business_news",
+      "tier": "tier_2",
+      "published_at": "2026-06-02T08:48:10+00:00",
+      "summary": "NVIDIA’s new AI chip reflects a shift toward computers that can actively assist users rather than simply execute commands. As AI moves onto devices, it is becoming central to how personal computing will function, enabling more automated, intent-driven interactions across everyday tasks.",
+      "signal_type": "AI Market Intelligence",
+      "finance_signal_types": [
+        "capex_signal",
+        "chip_supply_signal"
+      ],
+      "ai_keyword_hits": [
+        "ai",
+        "nvidia",
+        "chip",
+        "compute"
+      ],
+      "finance_keyword_hits": [
+        "power"
+      ],
+      "relevance_score": 10,
+      "discovery_method": "rss",
+      "discovery_source": "https://economictimes.indiatimes.com/ai/rssfeeds/119215726.cms"
+    },
+    {
+      "id": "finance_bloomberg_technology_https_www_bloomberg_com_news_articles_2026_06_02_mediatek_pledges_hiring_spree_to_boost_push_into_new_ai_spheres",
+      "title": "MediaTek Pledges Hiring Spree to Boost Push Into New AI Spheres",
+      "url": "https://www.bloomberg.com/news/articles/2026-06-02/mediatek-pledges-hiring-spree-to-boost-push-into-new-ai-spheres",
+      "source": "Bloomberg Technology",
+      "source_region": "global",
+      "source_type": "market_news",
+      "tier": "tier_1",
+      "published_at": "2026-06-02T08:45:54+00:00",
+      "summary": "Taiwanese chipmaker MediaTek Inc. will hike hiring to support a push into new AI activities, joining fellow tech firms in assuaging concerns about job losses in the era of artificial intelligence.",
+      "signal_type": "AI Market Intelligence",
+      "finance_signal_types": [
+        "chip_supply_signal",
+        "labor_signal"
+      ],
+      "ai_keyword_hits": [
+        "ai",
+        "artificial intelligence",
+        "chip"
+      ],
+      "finance_keyword_hits": [
+        "hiring"
+      ],
+      "relevance_score": 10,
+      "discovery_method": "rss",
+      "discovery_source": "https://feeds.bloomberg.com/technology/news.rss"
+    },
+    {
+      "id": "finance_economic_times_markets_https_economictimes_indiatimes_com_markets_stocks_news_explained_why_indian_stock_market_has_fallen_prey_to_south_kor",
+      "title": "Explained: Why Indian stock market has fallen prey to South Korea, Taiwan’s AI prowess",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/explained-why-indian-stock-market-has-fallen-prey-to-south-korea-taiwans-ai-prowess/articleshow/131459489.cms",
+      "source": "Economic Times Markets",
+      "source_region": "india",
+      "source_type": "market_news",
+      "tier": "tier_2",
+      "published_at": "2026-06-02T08:34:33+00:00",
+      "summary": "South Korea's stock market has surged past India's, becoming the world's sixth-largest, driven by its semiconductor giants' AI boom. India faces headwinds from a weakening rupee and lack of AI exposure. Despite current challenges, Morgan Stanley remains optimistic about India's long-term growth prospects, citing improving earnings and macro support.",
+      "signal_type": "AI Market Intelligence",
+      "finance_signal_types": [
+        "earnings_signal",
+        "chip_supply_signal",
+        "market_sentiment_signal"
+      ],
+      "ai_keyword_hits": [
+        "ai",
+        "semiconductor"
+      ],
+      "finance_keyword_hits": [
+        "earnings",
+        "stock",
+        "market"
+      ],
+      "relevance_score": 10,
+      "discovery_method": "rss",
+      "discovery_source": "https://economictimes.indiatimes.com/markets/rssfeeds/1977021501.cms"
+    },
+    {
+      "id": "finance_economic_times_tech_https_economictimes_indiatimes_com_tech_technology_stmicro_lifts_data_centre_revenue_goals_on_ai_demand_shares_hit_25_ye",
+      "title": "STMicro lifts data centre revenue goals on AI demand, shares hit 25-year high",
+      "url": "https://economictimes.indiatimes.com/tech/technology/stmicro-lifts-data-centre-revenue-goals-on-ai-demand-shares-hit-25-year-high/articleshow/131458940.cms",
+      "source": "Economic Times Tech",
+      "source_region": "india",
+      "source_type": "business_news",
+      "tier": "tier_2",
+      "published_at": "2026-06-02T08:04:12+00:00",
+      "summary": "The Franco-Italian chipmaker's shares rose as much ‌as 10% ⁠to €65.21 ⁠per share, their highest since September 2000. They were ​up 8.4% as of 0738 GMT, among top gainers on Europe's ​benchmark STOXX 600 index.",
+      "signal_type": "AI Market Intelligence",
+      "finance_signal_types": [
+        "earnings_signal",
+        "chip_supply_signal",
+        "market_sentiment_signal"
+      ],
+      "ai_keyword_hits": [
+        "ai",
+        "chip"
+      ],
+      "finance_keyword_hits": [
+        "revenue",
+        "shares",
+        "demand"
+      ],
+      "relevance_score": 10,
+      "discovery_method": "rss",
+      "discovery_source": "https://economictimes.indiatimes.com/tech/rssfeeds/13357270.cms"
+    },
+    {
+      "id": "finance_economic_times_tech_https_economictimes_indiatimes_com_tech_artificial_intelligence_anthropic_confidentially_files_to_go_public_potential_tr",
+      "title": "Anthropic confidentially files to go public; potential trillion-dollar IPO will test Wall Street appetite for AI companies",
+      "url": "https://economictimes.indiatimes.com/tech/artificial-intelligence/anthropic-confidentially-files-to-go-public-potential-trillion-dollar-ipo-will-test-wall-street-appetite-for-ai-companies/articleshow/131458650.cms",
+      "source": "Economic Times Tech",
+      "source_region": "india",
+      "source_type": "business_news",
+      "tier": "tier_2",
+      "published_at": "2026-06-02T07:55:01+00:00",
+      "summary": "If Anthropic’s offer goes ahead, it will test investor appetite for AI companies, which have commanded massive private valuations—both Anthropic and OpenAI are within shouting distance of the trillion-dollar mark.",
+      "signal_type": "AI Market Intelligence",
+      "finance_signal_types": [
+        "funding_signal",
+        "market_sentiment_signal"
+      ],
+      "ai_keyword_hits": [
+        "ai",
+        "openai",
+        "anthropic"
+      ],
+      "finance_keyword_hits": [
+        "valuation",
+        "ipo"
+      ],
+      "relevance_score": 10,
+      "discovery_method": "rss",
+      "discovery_source": "https://economictimes.indiatimes.com/tech/rssfeeds/13357270.cms"
+    },
+    {
+      "id": "finance_economic_times_markets_https_economictimes_indiatimes_com_markets_stocks_news_ai_bubble_or_boom_warren_buffetts_berkshire_hathaway_invests_a",
+      "title": "AI bubble or boom? Warren Buffett's Berkshire Hathaway invests another $10 billion in Google's parent, Alphabet",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/ai-bubble-or-boom-warren-buffetts-berkshire-hathaway-invests-another-10-billion-in-googles-parent-alphabet/articleshow/131458769.cms",
+      "source": "Economic Times Markets",
+      "source_region": "india",
+      "source_type": "market_news",
+      "tier": "tier_2",
+      "published_at": "2026-06-02T07:54:43+00:00",
+      "summary": "Berkshire Hathaway has agreed to invest $10 billion in Alphabet through a private placement as part of the Google parent’s $80 billion fundraising plan focused on AI expansion. The move deepens Berkshire’s exposure to artificial intelligence and signals confidence in Alphabet’s long-term growth despite ongoing debates over AI valuations.",
+      "signal_type": "AI Market Intelligence",
+      "finance_signal_types": [
+        "funding_signal",
+        "market_sentiment_signal"
+      ],
+      "ai_keyword_hits": [
+        "ai",
+        "artificial intelligence"
+      ],
+      "finance_keyword_hits": [
+        "valuation",
+        "stock",
+        "market"
+      ],
+      "relevance_score": 10,
+      "discovery_method": "rss",
+      "discovery_source": "https://economictimes.indiatimes.com/markets/rssfeeds/1977021501.cms"
+    },
+    {
+      "id": "finance_bloomberg_technology_https_www_bloomberg_com_news_videos_2026_06_02_advantech_s_tsai_on_nvidia_collaboration_ai_strategy_video",
+      "title": "Advantech's Tsai on Nvidia Collaboration, AI Strategy",
+      "url": "https://www.bloomberg.com/news/videos/2026-06-02/advantech-s-tsai-on-nvidia-collaboration-ai-strategy-video",
+      "source": "Bloomberg Technology",
+      "source_region": "global",
+      "source_type": "market_news",
+      "tier": "tier_1",
+      "published_at": "2026-06-02T07:48:38+00:00",
+      "summary": "Advantech COO and President of the Intelligent Systems Sector Linda Tsai discusses the company's collaboration with Nvidia to power next-generation AI solutions. She also lays out the company's strategic vision behind integrating AI across products and services. Linda speaks with Stephen Engle from the sidelines of 'Computex 2026' in Taipei. (Source: Bloomberg)",
+      "signal_type": "AI Market Intelligence",
+      "finance_signal_types": [
+        "capex_signal",
+        "chip_supply_signal"
+      ],
+      "ai_keyword_hits": [
+        "ai",
+        "nvidia",
+        "compute"
+      ],
+      "finance_keyword_hits": [
+        "power"
+      ],
+      "relevance_score": 10,
+      "discovery_method": "rss",
+      "discovery_source": "https://feeds.bloomberg.com/technology/news.rss"
+    },
+    {
+      "id": "finance_economic_times_markets_https_economictimes_indiatimes_com_markets_us_stocks_news_global_markets_european_stocks_rise_as_stmicroelectronics_f",
+      "title": "Global Markets: European stocks rise as STMicroelectronics' forecasts lift tech stocks",
+      "url": "https://economictimes.indiatimes.com/markets/us-stocks/news/global-markets-european-stocks-rise-as-stmicroelectronics-forecasts-lift-tech-stocks/articleshow/131458571.cms",
+      "source": "Economic Times Markets",
+      "source_region": "india",
+      "source_type": "market_news",
+      "tier": "tier_2",
+      "published_at": "2026-06-02T07:42:12+00:00",
+      "summary": "European shares climbed Tuesday, led by technology stocks boosted by strong forecasts from STMicroelectronics amid AI demand. Investors await key inflation data for insights into the Mideast conflict's economic impact. A partial ceasefire in Lebanon and easing crude prices also supported market sentiment.",
+      "signal_type": "AI Market Intelligence",
+      "finance_signal_types": [
+        "earnings_signal",
+        "market_sentiment_signal"
+      ],
+      "ai_keyword_hits": [
+        "ai"
+      ],
+      "finance_keyword_hits": [
+        "shares",
+        "stock",
+        "market",
+        "forecast",
+        "demand"
+      ],
+      "relevance_score": 10,
+      "discovery_method": "rss",
+      "discovery_source": "https://economictimes.indiatimes.com/markets/rssfeeds/1977021501.cms"
+    },
+    {
+      "id": "finance_economic_times_markets_https_economictimes_indiatimes_com_markets_stocks_news_nifty_at_25900_by_march_2027_nomura_cites_key_catalysts_to_wat",
+      "title": "Nifty at 25,900 by March 2027? Nomura cites key catalysts to watch out for",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/nifty-at-25900-by-march-2027-nomura-cites-key-catalysts-to-watch-out-for/articleshow/131458472.cms",
+      "source": "Economic Times Markets",
+      "source_region": "india",
+      "source_type": "market_news",
+      "tier": "tier_2",
+      "published_at": "2026-06-02T07:39:43+00:00",
+      "summary": "Indian stocks have seen a sharp fall. Nomura predicts the Nifty will climb almost 11% to reach 25,900 by March 2027. This optimism stems from hopes of a West Asia conflict resolution and a strong AI theme. Despite recent selling by foreign investors, Indian equities have shown resilience. Nomura favors exporters, financials, and IT services, while remaining cautious on consumption.",
       "signal_type": "AI Market Intelligence",
       "finance_signal_types": [
         "market_sentiment_signal"
@@ -46,12 +720,690 @@
       ],
       "finance_keyword_hits": [
         "stock",
+        "market"
+      ],
+      "relevance_score": 6,
+      "discovery_method": "rss",
+      "discovery_source": "https://economictimes.indiatimes.com/markets/rssfeeds/1977021501.cms"
+    },
+    {
+      "id": "finance_economic_times_ai_https_economictimes_indiatimes_com_ai_ai_insights_et_most_innovative_ai_product_awards_2026_how_ai_powered_legal_technolog",
+      "title": "ET Most Innovative AI Product Awards 2026: How AI-powered legal technology is transforming legal research, compliance and contract management",
+      "url": "https://economictimes.indiatimes.com/ai/ai-insights/et-most-innovative-ai-product-awards-2026-how-ai-powered-legal-technology-is-transforming-legal-research-compliance-and-contract-management/articleshow/131458321.cms",
+      "source": "Economic Times AI",
+      "source_region": "india",
+      "source_type": "business_news",
+      "tier": "tier_2",
+      "published_at": "2026-06-02T07:29:20+00:00",
+      "summary": "ET Most Innovative AI Product Awards 2026 recognises AI-powered innovations transforming the legal ecosystem. As legal teams face growing volumes of contracts, regulatory requirements, compliance obligations, and litigation data, AI-powered legal technology is helping professionals work faster, reduce risk, improve decision-making, and drive greater operational efficiency across the legal value chain.",
+      "signal_type": "AI Market Intelligence",
+      "finance_signal_types": [
+        "capex_signal"
+      ],
+      "ai_keyword_hits": [
+        "ai"
+      ],
+      "finance_keyword_hits": [
+        "power"
+      ],
+      "relevance_score": 5,
+      "discovery_method": "rss",
+      "discovery_source": "https://economictimes.indiatimes.com/ai/rssfeeds/119215726.cms"
+    },
+    {
+      "id": "finance_economic_times_markets_https_economictimes_indiatimes_com_markets_us_stocks_news_global_markets_south_korean_shares_post_record_high_close_a",
+      "title": "Global Markets: South Korean shares post record-high close as Nvidia hopes lift tech stocks",
+      "url": "https://economictimes.indiatimes.com/markets/us-stocks/news/global-markets-south-korean-shares-post-record-high-close-as-nvidia-hopes-lift-tech-stocks/articleshow/131458266.cms",
+      "source": "Economic Times Markets",
+      "source_region": "india",
+      "source_type": "market_news",
+      "tier": "tier_2",
+      "published_at": "2026-06-02T07:26:50+00:00",
+      "summary": "South Korean stocks hit a record high Tuesday, driven by tech giants like Samsung Electronics and Naver, fueled by hopes of AI collaboration with Nvidia. Despite a volatile trading session, the KOSPI closed higher. Meanwhile, consumer inflation surged to a two-year peak, potentially prompting monetary tightening. Foreign investors continued their selling spree.",
+      "signal_type": "AI Market Intelligence",
+      "finance_signal_types": [
+        "chip_supply_signal",
+        "market_sentiment_signal"
+      ],
+      "ai_keyword_hits": [
+        "ai",
+        "nvidia"
+      ],
+      "finance_keyword_hits": [
+        "shares",
+        "stock",
+        "market"
+      ],
+      "relevance_score": 10,
+      "discovery_method": "rss",
+      "discovery_source": "https://economictimes.indiatimes.com/markets/rssfeeds/1977021501.cms"
+    },
+    {
+      "id": "finance_economic_times_tech_https_economictimes_indiatimes_com_tech_technology_global_markets_south_korean_shares_post_record_high_close_as_nvidia_h",
+      "title": "Global Markets: South Korean shares post record-high close as Nvidia hopes lift tech stocks",
+      "url": "https://economictimes.indiatimes.com/tech/technology/global-markets-south-korean-shares-post-record-high-close-as-nvidia-hopes-lift-tech-stocks/articleshow/131459302.cms",
+      "source": "Economic Times Tech",
+      "source_region": "india",
+      "source_type": "business_news",
+      "tier": "tier_2",
+      "published_at": "2026-06-02T07:26:50+00:00",
+      "summary": "South Korean stocks hit a record high Tuesday, driven by tech giants like Samsung Electronics and Naver, fueled by hopes of AI collaboration with Nvidia. Despite a volatile trading session, the KOSPI closed higher. Meanwhile, consumer inflation surged to a two-year peak, potentially prompting monetary tightening. Foreign investors continued their selling spree.",
+      "signal_type": "AI Market Intelligence",
+      "finance_signal_types": [
+        "chip_supply_signal",
+        "market_sentiment_signal"
+      ],
+      "ai_keyword_hits": [
+        "ai",
+        "nvidia"
+      ],
+      "finance_keyword_hits": [
+        "shares",
+        "stock",
+        "market"
+      ],
+      "relevance_score": 10,
+      "discovery_method": "rss",
+      "discovery_source": "https://economictimes.indiatimes.com/tech/rssfeeds/13357270.cms"
+    },
+    {
+      "id": "finance_times_of_india_business_https_timesofindia_indiatimes_com_business_international_business_h_1b_hiring_boost_nvidia_offers_top_salaries_despi",
+      "title": "H-1B hiring boost: Nvidia offers top salaries despite slowdown in foreign recruitment",
+      "url": "https://timesofindia.indiatimes.com/business/international-business/h-1b-hiring-boost-nvidia-offers-top-salaries-despite-slowdown-in-foreign-recruitment/articleshow/131457242.cms",
+      "source": "Times of India Business",
+      "source_region": "india",
+      "source_type": "business_news",
+      "tier": "tier_2",
+      "published_at": "2026-06-02T07:02:00+00:00",
+      "summary": "While many tech firms scale back, Nvidia is aggressively hiring foreign talent via the H-1B visa program, increasing its certified positions. This surge reflects the company's immense demand for AI specialists and engineers, contrasting with competitors like Google and Amazon. CEO Jensen Huang emphasizes immigration's vital role in US technological leadership.",
+      "signal_type": "AI Market Intelligence",
+      "finance_signal_types": [
+        "chip_supply_signal",
+        "labor_signal"
+      ],
+      "ai_keyword_hits": [
+        "ai",
+        "nvidia"
+      ],
+      "finance_keyword_hits": [
+        "hiring",
+        "demand"
+      ],
+      "relevance_score": 9,
+      "discovery_method": "rss",
+      "discovery_source": "https://timesofindia.indiatimes.com/rssfeeds/1898055.cms"
+    },
+    {
+      "id": "finance_bloomberg_technology_https_www_bloomberg_com_news_videos_2026_06_02_haas_says_arm_may_hit_15_bln_ai_chip_revenue_goal_early_video",
+      "title": "Haas Says Arm May Hit $15 Billion AI Chip Revenue Goal Early",
+      "url": "https://www.bloomberg.com/news/videos/2026-06-02/haas-says-arm-may-hit-15-bln-ai-chip-revenue-goal-early-video",
+      "source": "Bloomberg Technology",
+      "source_region": "global",
+      "source_type": "market_news",
+      "tier": "tier_1",
+      "published_at": "2026-06-02T06:55:19+00:00",
+      "summary": "Arm Holdings Plc Chief Executive Officer Rene Haas says the firm may achieve its target of $15 billion in sales of its own-branded chips earlier than anticipated, reflecting stronger-than-projected demand from the AI boom. Haas speaks to Bloomberg's Stephen Engle on the sidelines of the Computex trade show in Taipei. (Source: Bloomberg)",
+      "signal_type": "AI Market Intelligence",
+      "finance_signal_types": [
+        "earnings_signal",
+        "chip_supply_signal"
+      ],
+      "ai_keyword_hits": [
+        "ai",
+        "chip",
+        "compute"
+      ],
+      "finance_keyword_hits": [
+        "revenue",
+        "demand"
+      ],
+      "relevance_score": 10,
+      "discovery_method": "rss",
+      "discovery_source": "https://feeds.bloomberg.com/technology/news.rss"
+    },
+    {
+      "id": "finance_economic_times_markets_https_economictimes_indiatimes_com_markets_expert_view_ai_disruption_in_indian_it_front_loaded_but_long_term_demand_i",
+      "title": "AI disruption in Indian IT front-loaded, but long-term demand intact: Sushovan Nayak",
+      "url": "https://economictimes.indiatimes.com/markets/expert-view/ai-disruption-in-indian-it-front-loaded-but-long-term-demand-intact-sushovan-nayak/articleshow/131457190.cms",
+      "source": "Economic Times Markets",
+      "source_region": "india",
+      "source_type": "market_news",
+      "tier": "tier_2",
+      "published_at": "2026-06-02T06:47:31+00:00",
+      "summary": "Indian IT services face near-term AI-driven revenue pressure, estimated at 1-3%, impacting stock valuations. However, experts believe markets are overlooking significant long-term opportunities in legacy modernization and enterprise AI implementation, where Indian firms will act as key partners, mirroring past cloud transition cycles.",
+      "signal_type": "AI Market Intelligence",
+      "finance_signal_types": [
+        "funding_signal",
+        "earnings_signal",
+        "market_sentiment_signal"
+      ],
+      "ai_keyword_hits": [
+        "ai",
+        "cloud"
+      ],
+      "finance_keyword_hits": [
+        "valuation",
+        "revenue",
+        "stock",
         "market",
         "demand"
       ],
-      "relevance_score": 8,
+      "relevance_score": 10,
+      "discovery_method": "rss",
+      "discovery_source": "https://economictimes.indiatimes.com/markets/rssfeeds/1977021501.cms"
+    },
+    {
+      "id": "finance_bloomberg_technology_https_www_bloomberg_com_news_articles_2026_06_02_arm_may_hit_15_billion_ai_chip_revenue_goal_early_ceo_says",
+      "title": "Arm May Hit $15 Billion AI Chip Revenue Goal Early, CEO Says",
+      "url": "https://www.bloomberg.com/news/articles/2026-06-02/arm-may-hit-15-billion-ai-chip-revenue-goal-early-ceo-says",
+      "source": "Bloomberg Technology",
+      "source_region": "global",
+      "source_type": "market_news",
+      "tier": "tier_1",
+      "published_at": "2026-06-02T06:43:05+00:00",
+      "summary": "Arm Holdings Plc may achieve its target of $15 billion in sales of its own chips earlier than anticipated, its chief executive officer said, reflecting stronger-than-projected demand from the AI boom.",
+      "signal_type": "AI Market Intelligence",
+      "finance_signal_types": [
+        "earnings_signal",
+        "chip_supply_signal"
+      ],
+      "ai_keyword_hits": [
+        "ai",
+        "chip"
+      ],
+      "finance_keyword_hits": [
+        "revenue",
+        "demand"
+      ],
+      "relevance_score": 10,
+      "discovery_method": "rss",
+      "discovery_source": "https://feeds.bloomberg.com/technology/news.rss"
+    },
+    {
+      "id": "finance_bloomberg_technology_https_www_bloomberg_com_news_articles_2026_06_02_stmicro_raises_estimates_for_data_center_revenue_to_1_billion",
+      "title": "STMicro Nearly Doubles Outlook for 2026 Data Center Revenue",
+      "url": "https://www.bloomberg.com/news/articles/2026-06-02/stmicro-raises-estimates-for-data-center-revenue-to-1-billion",
+      "source": "Bloomberg Technology",
+      "source_region": "global",
+      "source_type": "market_news",
+      "tier": "tier_1",
+      "published_at": "2026-06-02T06:34:07+00:00",
+      "summary": "STMicroelectronics NV nearly doubled its forecast for revenue from its data centers business to $1 billion this year, fueled by booming demand for artificial intelligence infrastructure.",
+      "signal_type": "AI Market Intelligence",
+      "finance_signal_types": [
+        "funding_signal",
+        "earnings_signal",
+        "capex_signal"
+      ],
+      "ai_keyword_hits": [
+        "artificial intelligence",
+        "data center"
+      ],
+      "finance_keyword_hits": [
+        "raises",
+        "revenue",
+        "forecast",
+        "demand"
+      ],
+      "relevance_score": 10,
+      "discovery_method": "rss",
+      "discovery_source": "https://feeds.bloomberg.com/technology/news.rss"
+    },
+    {
+      "id": "finance_economic_times_tech_https_economictimes_indiatimes_com_tech_technology_polish_ecommerce_major_allegro_secures_275_million_eib_loan_for_ai_re",
+      "title": "Polish ecommerce major Allegro secures $275 million EIB loan for AI, research and development",
+      "url": "https://economictimes.indiatimes.com/tech/technology/polish-ecommerce-major-allegro-secures-275-million-eib-loan-for-ai-research-and-development/articleshow/131455594.cms",
+      "source": "Economic Times Tech",
+      "source_region": "india",
+      "source_type": "business_news",
+      "tier": "tier_2",
+      "published_at": "2026-06-02T05:36:30+00:00",
+      "summary": "The deal is the largest ​corporate R&D programme the EIB has backed in Poland ​and falls under the bank's TechEU initiative, which targets €250 billion ($291 billion) in ​new investment across Europe by ⁠2027.",
+      "signal_type": "AI Market Intelligence",
+      "finance_signal_types": [
+        "finance_context_signal"
+      ],
+      "ai_keyword_hits": [
+        "ai"
+      ],
+      "finance_keyword_hits": [
+        "investment"
+      ],
+      "relevance_score": 5,
+      "discovery_method": "rss",
+      "discovery_source": "https://economictimes.indiatimes.com/tech/rssfeeds/13357270.cms"
+    },
+    {
+      "id": "finance_economic_times_tech_https_economictimes_indiatimes_com_tech_artificial_intelligence_australias_cba_flags_surging_ai_costs_as_tasks_grow_comp",
+      "title": "Australia's CBA flags surging AI costs as tasks grow complex, slams 'work slop'",
+      "url": "https://economictimes.indiatimes.com/tech/artificial-intelligence/australias-cba-flags-surging-ai-costs-as-tasks-grow-complex-slams-work-slop/articleshow/131455028.cms",
+      "source": "Economic Times Tech",
+      "source_region": "india",
+      "source_type": "business_news",
+      "tier": "tier_2",
+      "published_at": "2026-06-02T04:55:46+00:00",
+      "summary": "Commonwealth Bank of Australia CEO Matt Comyn said businesses globally are likely to tighten ‌scrutiny of artificial ⁠intelligence-related ⁠spending through 2026 as adoption accelerates and pressure mounts to demonstrate returns on investment.",
+      "signal_type": "AI Market Intelligence",
+      "finance_signal_types": [
+        "finance_context_signal"
+      ],
+      "ai_keyword_hits": [
+        "ai"
+      ],
+      "finance_keyword_hits": [
+        "investment"
+      ],
+      "relevance_score": 5,
+      "discovery_method": "rss",
+      "discovery_source": "https://economictimes.indiatimes.com/tech/rssfeeds/13357270.cms"
+    },
+    {
+      "id": "finance_economic_times_tech_https_economictimes_indiatimes_com_tech_artificial_intelligence_china_adds_data_and_ai_to_trade_secret_rules_to_block_le",
+      "title": "China adds data and AI to trade secret rules to block leaks",
+      "url": "https://economictimes.indiatimes.com/tech/artificial-intelligence/china-adds-data-and-ai-to-trade-secret-rules-to-block-leaks/articleshow/131454170.cms",
+      "source": "Economic Times Tech",
+      "source_region": "india",
+      "source_type": "business_news",
+      "tier": "tier_2",
+      "published_at": "2026-06-02T03:51:47+00:00",
+      "summary": "Effective Monday, the Regulations on Trade Secret Protection mark the first time Chinese law protects such digital assets as proprietary secrets, according to state broadcaster China Central Television.",
+      "signal_type": "AI Market Intelligence",
+      "finance_signal_types": [
+        "regulatory_signal"
+      ],
+      "ai_keyword_hits": [
+        "ai"
+      ],
+      "finance_keyword_hits": [
+        "regulation"
+      ],
+      "relevance_score": 5,
+      "discovery_method": "rss",
+      "discovery_source": "https://economictimes.indiatimes.com/tech/rssfeeds/13357270.cms"
+    },
+    {
+      "id": "finance_bloomberg_markets_https_www_bloomberg_com_news_articles_2026_06_02_pimco_says_treasury_yields_driven_by_fed_bets_not_ai_for_now",
+      "title": "Pimco Says Treasury Yields Driven by Fed Bets, Not AI, for Now",
+      "url": "https://www.bloomberg.com/news/articles/2026-06-02/pimco-says-treasury-yields-driven-by-fed-bets-not-ai-for-now",
+      "source": "Bloomberg Markets",
+      "source_region": "global",
+      "source_type": "market_news",
+      "tier": "tier_1",
+      "published_at": "2026-06-02T03:46:50+00:00",
+      "summary": "A boom in artificial intelligence-related borrowing may become a bigger influence on bond markets over time, but the idea that it’s behind a recent rise in long-dated Treasury yields appears overstated, according to Pacific Investment Management Co.",
+      "signal_type": "AI Market Intelligence",
+      "finance_signal_types": [
+        "market_sentiment_signal"
+      ],
+      "ai_keyword_hits": [
+        "ai",
+        "artificial intelligence"
+      ],
+      "finance_keyword_hits": [
+        "investment",
+        "market"
+      ],
+      "relevance_score": 9,
       "discovery_method": "rss",
       "discovery_source": "https://feeds.bloomberg.com/markets/news.rss"
+    },
+    {
+      "id": "finance_times_of_india_business_https_timesofindia_indiatimes_com_business_india_business_after_taiwan_south_korea_overtakes_india_to_become_worlds_",
+      "title": "After Taiwan, South Korea overtakes India to become world’s sixth largest stock market; here’s why",
+      "url": "https://timesofindia.indiatimes.com/business/india-business/after-taiwan-south-korea-overtakes-india-to-become-worlds-sixth-largest-stock-market-heres-why/articleshow/131454029.cms",
+      "source": "Times of India Business",
+      "source_region": "india",
+      "source_type": "business_news",
+      "tier": "tier_2",
+      "published_at": "2026-06-02T03:43:21+00:00",
+      "summary": "In the cases of both South Korea and Taiwan, the stock market rally is fuelled by a powerful surge in semiconductor giants that are benefiting from the global artificial intelligence boom.",
+      "signal_type": "AI Market Intelligence",
+      "finance_signal_types": [
+        "capex_signal",
+        "chip_supply_signal",
+        "market_sentiment_signal"
+      ],
+      "ai_keyword_hits": [
+        "artificial intelligence",
+        "semiconductor"
+      ],
+      "finance_keyword_hits": [
+        "stock",
+        "market",
+        "power"
+      ],
+      "relevance_score": 10,
+      "discovery_method": "rss",
+      "discovery_source": "https://timesofindia.indiatimes.com/rssfeeds/1898055.cms"
+    },
+    {
+      "id": "finance_bloomberg_technology_https_www_bloomberg_com_news_articles_2026_06_02_tencent_gains_after_report_it_s_set_to_launch_wechat_ai_agent",
+      "title": "Tencent Jumps After Report It’s Set to Launch WeChat AI Agent",
+      "url": "https://www.bloomberg.com/news/articles/2026-06-02/tencent-gains-after-report-it-s-set-to-launch-wechat-ai-agent",
+      "source": "Bloomberg Technology",
+      "source_region": "global",
+      "source_type": "market_news",
+      "tier": "tier_1",
+      "published_at": "2026-06-02T03:30:27+00:00",
+      "summary": "Tencent Holdings Ltd. shares advanced the most since late 2022 after a report it’s testing a prototype AI agent fueled optimism about the company’s artificial intelligence efforts.",
+      "signal_type": "AI Market Intelligence",
+      "finance_signal_types": [
+        "market_sentiment_signal"
+      ],
+      "ai_keyword_hits": [
+        "ai",
+        "artificial intelligence",
+        "agent"
+      ],
+      "finance_keyword_hits": [
+        "shares"
+      ],
+      "relevance_score": 10,
+      "discovery_method": "rss",
+      "discovery_source": "https://feeds.bloomberg.com/technology/news.rss"
+    },
+    {
+      "id": "finance_economic_times_tech_https_economictimes_indiatimes_com_tech_technology_anthropic_ipo_filing_ratifies_wall_streets_ai_obsession_articleshow_1",
+      "title": "Anthropic IPO filing ratifies Wall Street's AI obsession",
+      "url": "https://economictimes.indiatimes.com/tech/technology/anthropic-ipo-filing-ratifies-wall-streets-ai-obsession/articleshow/131453395.cms",
+      "source": "Economic Times Tech",
+      "source_region": "india",
+      "source_type": "business_news",
+      "tier": "tier_2",
+      "published_at": "2026-06-02T02:55:55+00:00",
+      "summary": "Tech stocks continue to lead ​the Nasdaq Composite and S&P 500 in a record-breaking market rally, while Elon Musk's SpaceX is set to price its ​IPO this month and Anthropic rival OpenAI, led by Sam Altman, is waiting on deck.",
+      "signal_type": "AI Market Intelligence",
+      "finance_signal_types": [
+        "market_sentiment_signal"
+      ],
+      "ai_keyword_hits": [
+        "ai",
+        "openai",
+        "anthropic"
+      ],
+      "finance_keyword_hits": [
+        "ipo",
+        "stock",
+        "market"
+      ],
+      "relevance_score": 10,
+      "discovery_method": "rss",
+      "discovery_source": "https://economictimes.indiatimes.com/tech/rssfeeds/13357270.cms"
+    },
+    {
+      "id": "finance_economic_times_tech_https_economictimes_indiatimes_com_tech_technology_chinas_zhipu_ai_plans_to_apply_for_shanghais_sci_tech_board_listing_a",
+      "title": "China's Zhipu AI plans to apply for Shanghai's Sci-Tech Board listing",
+      "url": "https://economictimes.indiatimes.com/tech/technology/chinas-zhipu-ai-plans-to-apply-for-shanghais-sci-tech-board-listing/articleshow/131453241.cms",
+      "source": "Economic Times Tech",
+      "source_region": "india",
+      "source_type": "business_news",
+      "tier": "tier_2",
+      "published_at": "2026-06-02T02:43:48+00:00",
+      "summary": "One of the leading players in China's crowded artificial intelligence sector, Zhipu AI, said the proposed issuance of A shares, each with a ‌nominal value ⁠of 0.10 ⁠yuan, would represent between 2% and 8% of the company's total share capital, or 9.1 million to ​38.8 million shares.",
+      "signal_type": "AI Market Intelligence",
+      "finance_signal_types": [
+        "market_sentiment_signal"
+      ],
+      "ai_keyword_hits": [
+        "ai",
+        "artificial intelligence"
+      ],
+      "finance_keyword_hits": [
+        "shares"
+      ],
+      "relevance_score": 7,
+      "discovery_method": "rss",
+      "discovery_source": "https://economictimes.indiatimes.com/tech/rssfeeds/13357270.cms"
+    },
+    {
+      "id": "finance_economic_times_tech_https_economictimes_indiatimes_com_tech_technology_nvidia_ceo_says_has_capacity_to_supply_robust_cpu_and_gpu_growth_arti",
+      "title": "Nvidia CEO says has capacity to supply robust CPU and GPU growth",
+      "url": "https://economictimes.indiatimes.com/tech/technology/nvidia-ceo-says-has-capacity-to-supply-robust-cpu-and-gpu-growth/articleshow/131453055.cms",
+      "source": "Economic Times Tech",
+      "source_region": "india",
+      "source_type": "business_news",
+      "tier": "tier_2",
+      "published_at": "2026-06-02T02:32:41+00:00",
+      "summary": "Huang ​was ​speaking ⁠at Nvidia's GTC press conference ​during Computex week ​in Taipei a day after the $5 trillion ‌chip giant unveiled a ​new ​chip ⁠that processes artificial intelligence capabilities directly.",
+      "signal_type": "AI Market Intelligence",
+      "finance_signal_types": [
+        "chip_supply_signal"
+      ],
+      "ai_keyword_hits": [
+        "artificial intelligence",
+        "nvidia",
+        "gpu",
+        "chip",
+        "compute"
+      ],
+      "finance_keyword_hits": [
+        "supply"
+      ],
+      "relevance_score": 10,
+      "discovery_method": "rss",
+      "discovery_source": "https://economictimes.indiatimes.com/tech/rssfeeds/13357270.cms"
+    },
+    {
+      "id": "finance_economic_times_tech_https_economictimes_indiatimes_com_tech_technology_update_4_hpe_lifts_forecast_past_2028_goals_on_robust_ai_demand_share",
+      "title": "HPE lifts forecast past 2028 goals on robust AI demand, shares surge 36%",
+      "url": "https://economictimes.indiatimes.com/tech/technology/update-4-hpe-lifts-forecast-past-2028-goals-on-robust-ai-demand-shares-surge-36/articleshow/131453034.cms",
+      "source": "Economic Times Tech",
+      "source_region": "india",
+      "source_type": "business_news",
+      "tier": "tier_2",
+      "published_at": "2026-06-02T02:30:35+00:00",
+      "summary": "HPE, ⁠which competes with Dell and Super Micro Computer, is benefiting as customers increasingly buy its servers and networking products to power AI ​applications such as ChatGPT, amid higher memory chip prices.",
+      "signal_type": "AI Market Intelligence",
+      "finance_signal_types": [
+        "earnings_signal",
+        "capex_signal",
+        "chip_supply_signal",
+        "market_sentiment_signal"
+      ],
+      "ai_keyword_hits": [
+        "ai",
+        "chatgpt",
+        "chip",
+        "compute"
+      ],
+      "finance_keyword_hits": [
+        "shares",
+        "forecast",
+        "power",
+        "demand"
+      ],
+      "relevance_score": 10,
+      "discovery_method": "rss",
+      "discovery_source": "https://economictimes.indiatimes.com/tech/rssfeeds/13357270.cms"
+    },
+    {
+      "id": "finance_economic_times_tech_https_economictimes_indiatimes_com_tech_technology_south_korea_overtakes_india_as_worlds_sixth_largest_stock_market_arti",
+      "title": "South Korea overtakes India as world’s sixth-largest stock market",
+      "url": "https://economictimes.indiatimes.com/tech/technology/south-korea-overtakes-india-as-worlds-sixth-largest-stock-market/articleshow/131454303.cms",
+      "source": "Economic Times Tech",
+      "source_region": "india",
+      "source_type": "business_news",
+      "tier": "tier_2",
+      "published_at": "2026-06-02T01:17:09+00:00",
+      "summary": "South Korea's stock market has now surpassed India's, becoming the world's sixth largest. This significant shift is largely due to the booming performance of its chip giants, Samsung Electronics and SK Hynix, which are central to the global artificial intelligence boom.",
+      "signal_type": "AI Market Intelligence",
+      "finance_signal_types": [
+        "chip_supply_signal",
+        "market_sentiment_signal"
+      ],
+      "ai_keyword_hits": [
+        "artificial intelligence",
+        "chip"
+      ],
+      "finance_keyword_hits": [
+        "stock",
+        "market"
+      ],
+      "relevance_score": 9,
+      "discovery_method": "rss",
+      "discovery_source": "https://economictimes.indiatimes.com/tech/rssfeeds/13357270.cms"
+    },
+    {
+      "id": "finance_cnbc_technology_https_www_cnbc_com_2026_06_01_hpe_stock_earnings_q2_html",
+      "title": "HPE skyrockets 30% on biggest earnings beat since 2018",
+      "url": "https://www.cnbc.com/2026/06/01/hpe-stock-earnings-q2.html",
+      "source": "CNBC Technology",
+      "source_region": "global",
+      "source_type": "market_news",
+      "tier": "tier_2",
+      "published_at": "2026-06-01T21:30:07+00:00",
+      "summary": "HPE's blowout second-quarter earnings report was highlighted by a strong Cloud & AI segment that showed soaring server revenue.",
+      "signal_type": "AI Market Intelligence",
+      "finance_signal_types": [
+        "earnings_signal",
+        "market_sentiment_signal"
+      ],
+      "ai_keyword_hits": [
+        "ai",
+        "cloud"
+      ],
+      "finance_keyword_hits": [
+        "earnings",
+        "revenue",
+        "stock"
+      ],
+      "relevance_score": 10,
+      "discovery_method": "rss",
+      "discovery_source": "https://www.cnbc.com/id/19854910/device/rss/rss.html"
+    },
+    {
+      "id": "finance_bloomberg_technology_https_www_bloomberg_com_news_articles_2026_06_01_hpe_sees_strong_growth_over_next_18_months_on_server_demand",
+      "title": "HPE Surges After Intense Demand for AI Buoys Sales Forecast",
+      "url": "https://www.bloomberg.com/news/articles/2026-06-01/hpe-sees-strong-growth-over-next-18-months-on-server-demand",
+      "source": "Bloomberg Technology",
+      "source_region": "global",
+      "source_type": "market_news",
+      "tier": "tier_1",
+      "published_at": "2026-06-01T20:07:33+00:00",
+      "summary": "Hewlett Packard Enterprise Co. shares soared in premarket trading after the company gave an outlook for annual sales that topped estimates, citing massive growth in AI-fueled demand for its servers and networking.",
+      "signal_type": "AI Market Intelligence",
+      "finance_signal_types": [
+        "earnings_signal",
+        "market_sentiment_signal"
+      ],
+      "ai_keyword_hits": [
+        "ai"
+      ],
+      "finance_keyword_hits": [
+        "shares",
+        "market",
+        "forecast",
+        "demand"
+      ],
+      "relevance_score": 10,
+      "discovery_method": "rss",
+      "discovery_source": "https://feeds.bloomberg.com/technology/news.rss"
+    },
+    {
+      "id": "finance_cnbc_technology_https_www_cnbc_com_2026_06_01_anthropic_ipo_s1_prospectus_html",
+      "title": "Anthropic confidentially files IPO prospectus with SEC, prepping Wall Street for landmark AI deal",
+      "url": "https://www.cnbc.com/2026/06/01/anthropic-ipo-s1-prospectus.html",
+      "source": "CNBC Technology",
+      "source_region": "global",
+      "source_type": "market_news",
+      "tier": "tier_2",
+      "published_at": "2026-06-01T18:33:49+00:00",
+      "summary": "Anthropic said it confidentially filed its IPO prospectus with the SEC, setting up a potentially historic share sale for investors ready to jump into AI.",
+      "signal_type": "AI Market Intelligence",
+      "finance_signal_types": [
+        "market_sentiment_signal",
+        "regulatory_signal"
+      ],
+      "ai_keyword_hits": [
+        "ai",
+        "anthropic"
+      ],
+      "finance_keyword_hits": [
+        "ipo"
+      ],
+      "relevance_score": 8,
+      "discovery_method": "rss",
+      "discovery_source": "https://www.cnbc.com/id/19854910/device/rss/rss.html"
+    },
+    {
+      "id": "finance_cnbc_technology_https_www_cnbc_com_2026_06_01_nvidias_entrance_into_the_pc_market_gives_investors_another_reason_to_own_the_stock_html",
+      "title": "Nvidia's entrance into the PC market gives investors another reason to own the stock",
+      "url": "https://www.cnbc.com/2026/06/01/nvidias-entrance-into-the-pc-market-gives-investors-another-reason-to-own-the-stock.html",
+      "source": "CNBC Technology",
+      "source_region": "global",
+      "source_type": "market_news",
+      "tier": "tier_2",
+      "published_at": "2026-06-01T16:25:12+00:00",
+      "summary": "The investment case for Nvidia just got broader and stronger.",
+      "signal_type": "AI Market Intelligence",
+      "finance_signal_types": [
+        "chip_supply_signal",
+        "market_sentiment_signal"
+      ],
+      "ai_keyword_hits": [
+        "nvidia"
+      ],
+      "finance_keyword_hits": [
+        "investment",
+        "stock",
+        "market"
+      ],
+      "relevance_score": 8,
+      "discovery_method": "rss",
+      "discovery_source": "https://www.cnbc.com/id/19854910/device/rss/rss.html"
+    },
+    {
+      "id": "finance_cnbc_technology_https_www_cnbc_com_2026_05_31_nvidias_new_chip_to_power_fresh_line_of_windows_laptops_by_dell_hp_html",
+      "title": "Nvidia jumps into PCs with new Arm-based chip debuting in laptops from Microsoft, Dell, HP",
+      "url": "https://www.cnbc.com/2026/05/31/nvidias-new-chip-to-power-fresh-line-of-windows-laptops-by-dell-hp.html",
+      "source": "CNBC Technology",
+      "source_region": "global",
+      "source_type": "market_news",
+      "tier": "tier_2",
+      "published_at": "2026-06-01T16:09:43+00:00",
+      "summary": "Nvidia CEO Jensen Huang unveiled a long-awaited Arm-based PC chip, breaking into PCs for the first time on new laptops by Dell, Microsoft, HP, ASUS and others.",
+      "signal_type": "AI Market Intelligence",
+      "finance_signal_types": [
+        "capex_signal",
+        "chip_supply_signal"
+      ],
+      "ai_keyword_hits": [
+        "nvidia",
+        "chip"
+      ],
+      "finance_keyword_hits": [
+        "power"
+      ],
+      "relevance_score": 8,
+      "discovery_method": "rss",
+      "discovery_source": "https://www.cnbc.com/id/19854910/device/rss/rss.html"
+    },
+    {
+      "id": "finance_cnbc_technology_https_www_cnbc_com_2026_06_01_ai_startup_valuations_pre_chatgpt_html",
+      "title": "'Disrupted or dead': AI is crushing a generation of startups built before ChatGPT",
+      "url": "https://www.cnbc.com/2026/06/01/ai-startup-valuations-pre-chatgpt.html",
+      "source": "CNBC Technology",
+      "source_region": "global",
+      "source_type": "market_news",
+      "tier": "tier_2",
+      "published_at": "2026-06-01T15:37:30+00:00",
+      "summary": "The AI boom that has funneled more than $250 billion into OpenAI and Anthropic has left hundreds of startups built before ChatGPT's arrival in 2022 stranded.",
+      "signal_type": "AI Market Intelligence",
+      "finance_signal_types": [
+        "funding_signal"
+      ],
+      "ai_keyword_hits": [
+        "ai",
+        "openai",
+        "anthropic",
+        "chatgpt"
+      ],
+      "finance_keyword_hits": [
+        "valuation"
+      ],
+      "relevance_score": 10,
+      "discovery_method": "rss",
+      "discovery_source": "https://www.cnbc.com/id/19854910/device/rss/rss.html"
     },
     {
       "id": "finance_cnbc_investing_https_www_cnbc_com_2026_06_01_the_stock_market_just_did_something_eerily_similar_to_the_dotcom_bubble_top_in_2000_html",
@@ -75,184 +1427,6 @@
         "market"
       ],
       "relevance_score": 6,
-      "discovery_method": "rss",
-      "discovery_source": "https://www.cnbc.com/id/100003114/device/rss/rss.html"
-    },
-    {
-      "id": "finance_economic_times_tech_https_economictimes_indiatimes_com_tech_artificial_intelligence_investment_platform_lvx_launches_elvix_an_ai_tool_for_pr",
-      "title": "Investment platform LVX launches Elvix, an AI tool for private market investors",
-      "url": "https://economictimes.indiatimes.com/tech/artificial-intelligence/investment-platform-lvx-launches-elvix-an-ai-tool-for-private-market-investors/articleshow/131444599.cms",
-      "source": "Economic Times Tech",
-      "source_region": "india",
-      "source_type": "business_news",
-      "tier": "tier_2",
-      "published_at": "2026-06-01T14:12:38+00:00",
-      "summary": "LVX Ventures has launched Elvix, an AI platform offering continuous investment feedback. Built on extensive private market data, Elvix helps investors evaluate startups and track portfolio risks. This innovation addresses information gaps in private investing. The platform uses proprietary AI to analyze opportunities and monitor performance. Elvix aims to provide decision intelligence for early-stage and growth investments.",
-      "signal_type": "AI Market Intelligence",
-      "finance_signal_types": [
-        "market_sentiment_signal"
-      ],
-      "ai_keyword_hits": [
-        "ai"
-      ],
-      "finance_keyword_hits": [
-        "investment",
-        "market"
-      ],
-      "relevance_score": 6,
-      "discovery_method": "rss",
-      "discovery_source": "https://economictimes.indiatimes.com/tech/rssfeeds/13357270.cms"
-    },
-    {
-      "id": "finance_cnbc_technology_https_www_cnbc_com_2026_05_31_nvidias_new_chip_to_power_fresh_line_of_windows_laptops_by_dell_hp_html",
-      "title": "Nvidia jumps into PCs with new Arm-based chip debuting in laptops from Microsoft, Dell, HP",
-      "url": "https://www.cnbc.com/2026/05/31/nvidias-new-chip-to-power-fresh-line-of-windows-laptops-by-dell-hp.html",
-      "source": "CNBC Technology",
-      "source_region": "global",
-      "source_type": "market_news",
-      "tier": "tier_2",
-      "published_at": "2026-06-01T14:08:57+00:00",
-      "summary": "Nvidia CEO Jensen Huang unveiled a long-awaited Arm-based PC chip, breaking into PCs for the first time on new laptops by Dell, Microsoft, HP, ASUS and others.",
-      "signal_type": "AI Market Intelligence",
-      "finance_signal_types": [
-        "capex_signal",
-        "chip_supply_signal"
-      ],
-      "ai_keyword_hits": [
-        "nvidia",
-        "chip"
-      ],
-      "finance_keyword_hits": [
-        "power"
-      ],
-      "relevance_score": 8,
-      "discovery_method": "rss",
-      "discovery_source": "https://www.cnbc.com/id/19854910/device/rss/rss.html"
-    },
-    {
-      "id": "finance_economic_times_tech_https_economictimes_indiatimes_com_tech_newsletters_tech_top_5_tech_jobs_go_cold_chip_startups_shift_gear_articleshow_13",
-      "title": "Tech jobs go cold; Chip startups shift gear",
-      "url": "https://economictimes.indiatimes.com/tech/newsletters/tech-top-5/tech-jobs-go-cold-chip-startups-shift-gear/articleshow/131443887.cms",
-      "source": "Economic Times Tech",
-      "source_region": "india",
-      "source_type": "business_news",
-      "tier": "tier_2",
-      "published_at": "2026-06-01T13:45:47+00:00",
-      "summary": "India’s tech hiring has fallen to its lowest level in more than two years. This and more in today's ETtech Top 5.",
-      "signal_type": "AI Market Intelligence",
-      "finance_signal_types": [
-        "chip_supply_signal",
-        "labor_signal"
-      ],
-      "ai_keyword_hits": [
-        "chip"
-      ],
-      "finance_keyword_hits": [
-        "hiring"
-      ],
-      "relevance_score": 6,
-      "discovery_method": "rss",
-      "discovery_source": "https://economictimes.indiatimes.com/tech/rssfeeds/13357270.cms"
-    },
-    {
-      "id": "finance_bloomberg_technology_https_www_bloomberg_com_news_videos_2026_06_01_france_has_advantage_to_attract_data_centers_cagni_video",
-      "title": "France Has Compelling Advantage to Attract Data Centers, Cagni Says",
-      "url": "https://www.bloomberg.com/news/videos/2026-06-01/france-has-advantage-to-attract-data-centers-cagni-video",
-      "source": "Bloomberg Technology",
-      "source_region": "global",
-      "source_type": "market_news",
-      "tier": "tier_1",
-      "published_at": "2026-06-01T13:40:35+00:00",
-      "summary": "French Ambassador for International Investments and President of C4 Industries Pascal Cagni joins Bloomberg's Matt Miller on \"Bloomberg Brief\" to discuss foreign investments in France as French President Emmanuel Macron announced €93 billion ($108 billion) investment pledges at the \"Choose France\" summit. (Source: Bloomberg)",
-      "signal_type": "AI Market Intelligence",
-      "finance_signal_types": [
-        "capex_signal"
-      ],
-      "ai_keyword_hits": [
-        "data center"
-      ],
-      "finance_keyword_hits": [
-        "investment"
-      ],
-      "relevance_score": 6,
-      "discovery_method": "rss",
-      "discovery_source": "https://feeds.bloomberg.com/technology/news.rss"
-    },
-    {
-      "id": "finance_bloomberg_technology_https_www_bloomberg_com_news_articles_2026_06_01_investors_pick_up_bargains_in_europe_s_embattled_software_sector",
-      "title": "Investors Pick Up Bargains in Europe’s Embattled Software Sector",
-      "url": "https://www.bloomberg.com/news/articles/2026-06-01/investors-pick-up-bargains-in-europe-s-embattled-software-sector",
-      "source": "Bloomberg Technology",
-      "source_region": "global",
-      "source_type": "market_news",
-      "tier": "tier_1",
-      "published_at": "2026-06-01T13:39:42+00:00",
-      "summary": "Fund managers are snapping up beaten-down European software stocks as fears of disruption from artificial intelligence fade.",
-      "signal_type": "AI Market Intelligence",
-      "finance_signal_types": [
-        "market_sentiment_signal"
-      ],
-      "ai_keyword_hits": [
-        "artificial intelligence"
-      ],
-      "finance_keyword_hits": [
-        "stock"
-      ],
-      "relevance_score": 6,
-      "discovery_method": "rss",
-      "discovery_source": "https://feeds.bloomberg.com/technology/news.rss"
-    },
-    {
-      "id": "finance_economic_times_markets_https_economictimes_indiatimes_com_markets_us_stocks_news_us_stocks_today_us_stocks_opens_near_record_highs_as_ai_opt",
-      "title": "US stocks today: US stocks open near record highs as AI optimism counters US-Iran war worries",
-      "url": "https://economictimes.indiatimes.com/markets/us-stocks/news/us-stocks-today-us-stocks-opens-near-record-highs-as-ai-optimism-counters-us-iran-war-worries/articleshow/131443971.cms",
-      "source": "Economic Times Markets",
-      "source_region": "india",
-      "source_type": "market_news",
-      "tier": "tier_2",
-      "published_at": "2026-06-01T13:35:21+00:00",
-      "summary": "Wall Street opened near record highs on Monday as investors balanced optimism around Nvidia’s latest AI developments with uncertainty over a potential US-Iran deal. The Dow and S&P 500 edged higher at the open, while the Nasdaq slipped slightly, reflecting caution in tech stocks despite strong artificial intelligence momentum.",
-      "signal_type": "AI Market Intelligence",
-      "finance_signal_types": [
-        "chip_supply_signal",
-        "market_sentiment_signal"
-      ],
-      "ai_keyword_hits": [
-        "ai",
-        "artificial intelligence",
-        "nvidia"
-      ],
-      "finance_keyword_hits": [
-        "stock",
-        "market"
-      ],
-      "relevance_score": 10,
-      "discovery_method": "rss",
-      "discovery_source": "https://economictimes.indiatimes.com/markets/rssfeeds/1977021501.cms"
-    },
-    {
-      "id": "finance_cnbc_investing_https_www_cnbc_com_2026_06_01_jim_cramers_top_10_things_to_watch_in_the_stock_market_monday_html",
-      "title": "Jim Cramer's top 10 things to watch in the stock market Monday",
-      "url": "https://www.cnbc.com/2026/06/01/jim-cramers-top-10-things-to-watch-in-the-stock-market-monday.html",
-      "source": "CNBC Investing",
-      "source_region": "global",
-      "source_type": "market_news",
-      "tier": "tier_2",
-      "published_at": "2026-06-01T13:00:27+00:00",
-      "summary": "Nvidia is going after the PC market, and the software stock comeback continues.",
-      "signal_type": "AI Market Intelligence",
-      "finance_signal_types": [
-        "chip_supply_signal",
-        "market_sentiment_signal"
-      ],
-      "ai_keyword_hits": [
-        "nvidia"
-      ],
-      "finance_keyword_hits": [
-        "stock",
-        "market"
-      ],
-      "relevance_score": 7,
       "discovery_method": "rss",
       "discovery_source": "https://www.cnbc.com/id/100003114/device/rss/rss.html"
     },
@@ -281,84 +1455,6 @@
       "discovery_source": "https://www.cnbc.com/id/19854910/device/rss/rss.html"
     },
     {
-      "id": "finance_economic_times_tech_https_economictimes_indiatimes_com_tech_startups_cars24_launches_ai_lab_commits_20_million_to_ai_early_stage_startups_ar",
-      "title": "Cars24 launches AI lab, commits $20 million to AI, early-stage startups",
-      "url": "https://economictimes.indiatimes.com/tech/startups/cars24-launches-ai-lab-commits-20-million-to-ai-early-stage-startups/articleshow/131443131.cms",
-      "source": "Economic Times Tech",
-      "source_region": "india",
-      "source_type": "business_news",
-      "tier": "tier_2",
-      "published_at": "2026-06-01T12:41:52+00:00",
-      "summary": "Cars24 is launching Cars24 Labs, a new initiative backed by a $20 million investment. This program will focus on developing artificial intelligence products and supporting early-stage founders. Cars24 aims to provide capital, mentorship, and infrastructure to help innovators build the next generation of AI businesses. The company is also preparing for a public listing.",
-      "signal_type": "AI Market Intelligence",
-      "finance_signal_types": [
-        "finance_context_signal"
-      ],
-      "ai_keyword_hits": [
-        "ai",
-        "artificial intelligence"
-      ],
-      "finance_keyword_hits": [
-        "investment"
-      ],
-      "relevance_score": 7,
-      "discovery_method": "rss",
-      "discovery_source": "https://economictimes.indiatimes.com/tech/rssfeeds/13357270.cms"
-    },
-    {
-      "id": "finance_economic_times_markets_https_economictimes_indiatimes_com_markets_us_stocks_news_us_stock_market_live_dow_jones_sp_500_nasdaq_iran_war_brent",
-      "title": "US Stock Market Today | Dow Jones | Nasdaq Live: US stocks hover near record levels as AI optimism tempers war concerns; Nvidia, Microsoft up",
-      "url": "https://economictimes.indiatimes.com/markets/us-stocks/news/us-stock-market-live-dow-jones-sp-500-nasdaq-iran-war-brent-oil-price-nvidia-microsoft-micron-broadcom-dell-cadence-qualcomm-intel-amd-apple-ai-chip-tech-stocks/liveblog/131442699.cms",
-      "source": "Economic Times Markets",
-      "source_region": "india",
-      "source_type": "market_news",
-      "tier": "tier_2",
-      "published_at": "2026-06-01T12:23:45+00:00",
-      "summary": "",
-      "signal_type": "AI Market Intelligence",
-      "finance_signal_types": [
-        "chip_supply_signal",
-        "market_sentiment_signal"
-      ],
-      "ai_keyword_hits": [
-        "ai",
-        "nvidia",
-        "chip"
-      ],
-      "finance_keyword_hits": [
-        "stock",
-        "market"
-      ],
-      "relevance_score": 10,
-      "discovery_method": "rss",
-      "discovery_source": "https://economictimes.indiatimes.com/markets/rssfeeds/1977021501.cms"
-    },
-    {
-      "id": "finance_bloomberg_technology_https_www_bloomberg_com_news_videos_2026_06_01_economist_slok_doesn_t_expect_ai_to_impact_may_payrolls_video",
-      "title": "Economist Slok Doesn’t Expect an AI Impact on May Jobs Report",
-      "url": "https://www.bloomberg.com/news/videos/2026-06-01/economist-slok-doesn-t-expect-ai-to-impact-may-payrolls-video",
-      "source": "Bloomberg Technology",
-      "source_region": "global",
-      "source_type": "market_news",
-      "tier": "tier_1",
-      "published_at": "2026-06-01T12:13:38+00:00",
-      "summary": "Torsten Slok, chief economist at Apollo, explains what people are getting wrong about the impact of AI on the US labor market. (Source: Bloomberg)",
-      "signal_type": "AI Market Intelligence",
-      "finance_signal_types": [
-        "market_sentiment_signal",
-        "labor_signal"
-      ],
-      "ai_keyword_hits": [
-        "ai"
-      ],
-      "finance_keyword_hits": [
-        "market"
-      ],
-      "relevance_score": 7,
-      "discovery_method": "rss",
-      "discovery_source": "https://feeds.bloomberg.com/technology/news.rss"
-    },
-    {
       "id": "finance_cnbc_technology_https_www_cnbc_com_2026_06_01_5_things_to_know_before_the_market_opens_html",
       "title": "Berkshire Hathaway deal, startups grapple with AI, the cost of the Iran war and more in Morning Squawk",
       "url": "https://www.cnbc.com/2026/06/01/5-things-to-know-before-the-market-opens.html",
@@ -381,83 +1477,6 @@
       "relevance_score": 5,
       "discovery_method": "rss",
       "discovery_source": "https://www.cnbc.com/id/19854910/device/rss/rss.html"
-    },
-    {
-      "id": "finance_bloomberg_markets_https_www_bloomberg_com_news_articles_2026_06_01_us_stock_futures_today_nvidia_ibm_intel_microsoft_redwire",
-      "title": "US Premarket Movers for June 1, 2026",
-      "url": "https://www.bloomberg.com/news/articles/2026-06-01/us-stock-futures-today-nvidia-ibm-intel-microsoft-redwire",
-      "source": "Bloomberg Markets",
-      "source_region": "global",
-      "source_type": "market_news",
-      "tier": "tier_1",
-      "published_at": "2026-06-01T11:54:11+00:00",
-      "summary": "US equity-index futures rise, despite higher oil prices. Contracts on the S&P 500 Index are up 0.3% at 7:46 a.m. in New York.",
-      "signal_type": "AI Market Intelligence",
-      "finance_signal_types": [
-        "chip_supply_signal",
-        "market_sentiment_signal"
-      ],
-      "ai_keyword_hits": [
-        "nvidia"
-      ],
-      "finance_keyword_hits": [
-        "stock",
-        "market"
-      ],
-      "relevance_score": 8,
-      "discovery_method": "rss",
-      "discovery_source": "https://feeds.bloomberg.com/markets/news.rss"
-    },
-    {
-      "id": "finance_cnbc_technology_https_www_cnbc_com_2026_06_01_ai_startup_valuations_pre_chatgpt_html",
-      "title": "'Disrupted or dead': AI is crushing a generation of startups built before ChatGPT",
-      "url": "https://www.cnbc.com/2026/06/01/ai-startup-valuations-pre-chatgpt.html",
-      "source": "CNBC Technology",
-      "source_region": "global",
-      "source_type": "market_news",
-      "tier": "tier_2",
-      "published_at": "2026-06-01T11:47:31+00:00",
-      "summary": "The AI boom that has funneled more than $250 billion into OpenAI and Anthropic has left hundreds of startups built before ChatGPT's arrival in 2022 stranded.",
-      "signal_type": "AI Market Intelligence",
-      "finance_signal_types": [
-        "funding_signal"
-      ],
-      "ai_keyword_hits": [
-        "ai",
-        "openai",
-        "anthropic",
-        "chatgpt"
-      ],
-      "finance_keyword_hits": [
-        "valuation"
-      ],
-      "relevance_score": 10,
-      "discovery_method": "rss",
-      "discovery_source": "https://www.cnbc.com/id/19854910/device/rss/rss.html"
-    },
-    {
-      "id": "finance_bloomberg_technology_https_www_bloomberg_com_news_videos_2026_06_01_ai_rally_has_room_to_go_says_ozan_tarman_video",
-      "title": "AI Rally Has 'Room To Go' Says Ozan Tarman",
-      "url": "https://www.bloomberg.com/news/videos/2026-06-01/ai-rally-has-room-to-go-says-ozan-tarman-video",
-      "source": "Bloomberg Technology",
-      "source_region": "global",
-      "source_type": "market_news",
-      "tier": "tier_1",
-      "published_at": "2026-06-01T11:40:48+00:00",
-      "summary": "The artificial-intelligence trade locked in fresh gains on Monday, allowing global equities to shrug off a rebound in oil prices as the US and Iran remained deadlocked over a peace deal. Ozan Tarman, Global Macro Vice Chair at Deutsche Bank joined Stephen Carroll and Lizzy Burden to discuss the the moves in stocks as where Bond yields go from here. (Source: Bloomberg)",
-      "signal_type": "AI Market Intelligence",
-      "finance_signal_types": [
-        "market_sentiment_signal"
-      ],
-      "ai_keyword_hits": [
-        "ai"
-      ],
-      "finance_keyword_hits": [
-        "stock"
-      ],
-      "relevance_score": 6,
-      "discovery_method": "rss",
-      "discovery_source": "https://feeds.bloomberg.com/technology/news.rss"
     },
     {
       "id": "finance_economic_times_ai_https_economictimes_indiatimes_com_ai_ai_insights_ai_powered_drug_discovery_could_transform_treatment_development_for_alzh",
@@ -484,114 +1503,6 @@
       "discovery_source": "https://economictimes.indiatimes.com/ai/rssfeeds/119215726.cms"
     },
     {
-      "id": "finance_economic_times_markets_https_economictimes_indiatimes_com_markets_stocks_news_morgan_stanley_sees_reliance_industries_ai_new_energy_bets_pow",
-      "title": "Morgan Stanley sees Reliance Industries’ AI, new energy bets powering next growth chapters. Here’s why",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/news/morgan-stanley-sees-reliance-industries-ai-new-energy-bets-powering-next-growth-chapters-heres-why/articleshow/131441134.cms",
-      "source": "Economic Times Markets",
-      "source_region": "india",
-      "source_type": "market_news",
-      "tier": "tier_2",
-      "published_at": "2026-06-01T11:07:55+00:00",
-      "summary": "Morgan Stanley believes Reliance Industries has entered its fifth monetisation cycle, with artificial intelligence infrastructure and new energy businesses poised to become key growth drivers. Maintaining an overweight rating and a target price of Rs 1,803, the brokerage sees 34% upside in the stock.",
-      "signal_type": "AI Market Intelligence",
-      "finance_signal_types": [
-        "capex_signal",
-        "market_sentiment_signal"
-      ],
-      "ai_keyword_hits": [
-        "ai",
-        "artificial intelligence"
-      ],
-      "finance_keyword_hits": [
-        "stock",
-        "market",
-        "power",
-        "energy"
-      ],
-      "relevance_score": 10,
-      "discovery_method": "rss",
-      "discovery_source": "https://economictimes.indiatimes.com/markets/rssfeeds/1977021501.cms"
-    },
-    {
-      "id": "finance_bloomberg_economics_https_www_bloomberg_com_news_newsletters_2026_06_01_how_the_ai_boom_is_rewiring_asia_s_growth_model",
-      "title": "How the AI Boom Is Rewiring Asia’s Growth Model",
-      "url": "https://www.bloomberg.com/news/newsletters/2026-06-01/how-the-ai-boom-is-rewiring-asia-s-growth-model",
-      "source": "Bloomberg Economics",
-      "source_region": "global",
-      "source_type": "macro_news",
-      "tier": "tier_1",
-      "published_at": "2026-06-01T11:00:04+00:00",
-      "summary": "The artificial-intelligence capex boom is fueling gains for South Korea and Taiwan and rewiring the region’s growth model.",
-      "signal_type": "AI Market Intelligence",
-      "finance_signal_types": [
-        "capex_signal"
-      ],
-      "ai_keyword_hits": [
-        "ai",
-        "model"
-      ],
-      "finance_keyword_hits": [
-        "capex"
-      ],
-      "relevance_score": 8,
-      "discovery_method": "rss",
-      "discovery_source": "https://feeds.bloomberg.com/economics/news.rss"
-    },
-    {
-      "id": "finance_economic_times_markets_https_economictimes_indiatimes_com_markets_stocks_news_tata_sons_ipo_tata_chemicals_tata_investment_corp_shares_tumbl",
-      "title": "Tata Sons IPO: Tata Chemicals, Tata Investment Corp shares tumble 3%. Here's why",
-      "url": "https://economictimes.indiatimes.com/markets/stocks/news/tata-sons-ipo-tata-chemicals-tata-investment-corp-shares-tumble-3-heres-why/articleshow/131440969.cms",
-      "source": "Economic Times Markets",
-      "source_region": "india",
-      "source_type": "market_news",
-      "tier": "tier_2",
-      "published_at": "2026-06-01T10:59:33+00:00",
-      "summary": "Shares of Tata Chemicals and Tata Investment Corporation fell around 3% after reports claimed Tata Trusts Chairman Noel Tata had written to the RBI opposing a potential Tata Sons listing. According to the report, Tata Trusts fears a public listing could shift Tata Sons’ focus towards short-term market pressures and away from its long-term strategic and philanthropic objectives, amid growing internal debate over the holding company’s future.",
-      "signal_type": "AI Market Intelligence",
-      "finance_signal_types": [
-        "market_sentiment_signal"
-      ],
-      "ai_keyword_hits": [
-        "anthropic"
-      ],
-      "finance_keyword_hits": [
-        "ipo",
-        "investment",
-        "shares",
-        "stock",
-        "market"
-      ],
-      "relevance_score": 9,
-      "discovery_method": "rss",
-      "discovery_source": "https://economictimes.indiatimes.com/markets/rssfeeds/1977021501.cms"
-    },
-    {
-      "id": "finance_cnbc_investing_https_www_cnbc_com_2026_06_01_arm_ibm_and_hewlett_packard_nvidia_chip_extends_software_rally_html",
-      "title": "Arm, IBM and Hewlett Packard soar as Nvidia chip 'reinvention' extends software rally",
-      "url": "https://www.cnbc.com/2026/06/01/arm-ibm-and-hewlett-packard-nvidia-chip-extends-software-rally.html",
-      "source": "CNBC Investing",
-      "source_region": "global",
-      "source_type": "market_news",
-      "tier": "tier_2",
-      "published_at": "2026-06-01T10:43:02+00:00",
-      "summary": "Shares in software compares surged ahead of Monday's opening bell.",
-      "signal_type": "AI Market Intelligence",
-      "finance_signal_types": [
-        "chip_supply_signal",
-        "market_sentiment_signal"
-      ],
-      "ai_keyword_hits": [
-        "nvidia",
-        "chip"
-      ],
-      "finance_keyword_hits": [
-        "shares"
-      ],
-      "relevance_score": 8,
-      "discovery_method": "rss",
-      "discovery_source": "https://www.cnbc.com/id/100003114/device/rss/rss.html"
-    },
-    {
       "id": "finance_bloomberg_technology_https_www_bloomberg_com_news_newsletters_2026_06_01_bain_survey_ai_delivers_less_cost_reduction_than_many_firms_predict",
       "title": "AI Investments Are ‘Circular Bet’ as ROI Disappoints, Bain Survey Shows",
       "url": "https://www.bloomberg.com/news/newsletters/2026-06-01/bain-survey-ai-delivers-less-cost-reduction-than-many-firms-predicted",
@@ -612,118 +1523,6 @@
         "investment"
       ],
       "relevance_score": 6,
-      "discovery_method": "rss",
-      "discovery_source": "https://feeds.bloomberg.com/technology/news.rss"
-    },
-    {
-      "id": "finance_economic_times_markets_https_economictimes_indiatimes_com_markets_us_stocks_news_spacex_needs_to_get_to_5_quadrillion_to_rival_mag_seven_mag",
-      "title": "SpaceX needs to get to $5 quadrillion to rival mag seven magic",
-      "url": "https://economictimes.indiatimes.com/markets/us-stocks/news/spacex-needs-to-get-to-5-quadrillion-to-rival-mag-seven-magic-nir-kaissar/articleshow/131440176.cms",
-      "source": "Economic Times Markets",
-      "source_region": "india",
-      "source_type": "market_news",
-      "tier": "tier_2",
-      "published_at": "2026-06-01T10:18:56+00:00",
-      "summary": "Upcoming trillion-dollar IPOs from SpaceX, OpenAI, and Anthropic are set to redefine market valuations, asking investors to wager heavily on uncertain futures. These companies are bypassing the traditional path of public markets, potentially capturing future growth for private investors at the expense of public shareholders.",
-      "signal_type": "AI Market Intelligence",
-      "finance_signal_types": [
-        "funding_signal",
-        "market_sentiment_signal"
-      ],
-      "ai_keyword_hits": [
-        "openai",
-        "anthropic"
-      ],
-      "finance_keyword_hits": [
-        "valuation",
-        "stock",
-        "market"
-      ],
-      "relevance_score": 10,
-      "discovery_method": "rss",
-      "discovery_source": "https://economictimes.indiatimes.com/markets/rssfeeds/1977021501.cms"
-    },
-    {
-      "id": "finance_bloomberg_technology_https_www_bloomberg_com_news_articles_2026_06_01_anthropic_to_give_eu_s_cybersecurity_agency_access_to_mythos",
-      "title": "Anthropic to Give Mythos to First EU Body Ahead of Wider Release",
-      "url": "https://www.bloomberg.com/news/articles/2026-06-01/anthropic-to-give-eu-s-cybersecurity-agency-access-to-mythos",
-      "source": "Bloomberg Technology",
-      "source_region": "global",
-      "source_type": "market_news",
-      "tier": "tier_1",
-      "published_at": "2026-06-01T10:10:46+00:00",
-      "summary": "Anthropic PBC is set to give the European Union’s cybersecurity body access to Mythos, the first EU agency to get access to the powerful artificial intelligence tool that officials fear may be used to exploit vulnerabilities in key computer systems.",
-      "signal_type": "AI Market Intelligence",
-      "finance_signal_types": [
-        "capex_signal"
-      ],
-      "ai_keyword_hits": [
-        "artificial intelligence",
-        "anthropic",
-        "compute"
-      ],
-      "finance_keyword_hits": [
-        "power"
-      ],
-      "relevance_score": 10,
-      "discovery_method": "rss",
-      "discovery_source": "https://feeds.bloomberg.com/technology/news.rss"
-    },
-    {
-      "id": "finance_times_of_india_business_https_timesofindia_indiatimes_com_business_india_business_it_stocks_rally_why_are_infosys_tcs_and_tech_mahindra_shar",
-      "title": "IT stocks rally: Why are Infosys, TCS and Tech Mahindra shares surging despite AI disruption fears?",
-      "url": "https://timesofindia.indiatimes.com/business/india-business/it-stocks-rally-why-are-infosys-tcs-and-tech-mahindra-shares-surging-despite-ai-disruption-fears/articleshow/131439306.cms",
-      "source": "Times of India Business",
-      "source_region": "india",
-      "source_type": "business_news",
-      "tier": "tier_2",
-      "published_at": "2026-06-01T09:42:32+00:00",
-      "summary": "Indian IT stocks surged Monday, with major players like Infosys and TCS gaining up to 5%. This rebound follows months of AI-driven pessimism, as investors reassess sector valuations ahead of a key US Federal Reserve meeting. Technical indicators suggest a potential short-term recovery, though analysts caution it might be a retracement within a broader trend.",
-      "signal_type": "AI Market Intelligence",
-      "finance_signal_types": [
-        "funding_signal",
-        "market_sentiment_signal"
-      ],
-      "ai_keyword_hits": [
-        "ai"
-      ],
-      "finance_keyword_hits": [
-        "valuation",
-        "shares",
-        "stock"
-      ],
-      "relevance_score": 8,
-      "discovery_method": "rss",
-      "discovery_source": "https://timesofindia.indiatimes.com/rssfeeds/1898055.cms"
-    },
-    {
-      "id": "finance_bloomberg_technology_https_www_bloomberg_com_news_videos_2026_06_01_mediatek_s_hu_on_business_acceleration_on_ai_video",
-      "title": "MediaTek's Hu on Business Acceleration on AI",
-      "url": "https://www.bloomberg.com/news/videos/2026-06-01/mediatek-s-hu-on-business-acceleration-on-ai-video",
-      "source": "Bloomberg Technology",
-      "source_region": "global",
-      "source_type": "market_news",
-      "tier": "tier_1",
-      "published_at": "2026-06-01T09:33:30+00:00",
-      "summary": "MediaTek, Taiwan’s foremost designer of chips for mobile devices, is hiring more engineers on expectations of revenue to multiple in 2027 from its developing AI data center business. Vince Hu, MediaTek, Corporate Senior Vice President, speaks with Bloomberg News' Stephen Engle at COMPUTEX 2026 in Taipei. (Source: Bloomberg)",
-      "signal_type": "AI Market Intelligence",
-      "finance_signal_types": [
-        "earnings_signal",
-        "capex_signal",
-        "chip_supply_signal",
-        "labor_signal"
-      ],
-      "ai_keyword_hits": [
-        "ai",
-        "chip",
-        "data center",
-        "compute"
-      ],
-      "finance_keyword_hits": [
-        "revenue",
-        "hiring"
-      ],
-      "relevance_score": 10,
       "discovery_method": "rss",
       "discovery_source": "https://feeds.bloomberg.com/technology/news.rss"
     },
@@ -752,109 +1551,6 @@
       "discovery_source": "https://economictimes.indiatimes.com/ai/rssfeeds/119215726.cms"
     },
     {
-      "id": "finance_bloomberg_technology_https_www_bloomberg_com_news_videos_2026_06_01_deutsche_bank_says_ai_is_the_key_narrative_for_stocks_video",
-      "title": "Deutsche Bank Says AI, Not Iran, Is the Key Narrative for Stocks",
-      "url": "https://www.bloomberg.com/news/videos/2026-06-01/deutsche-bank-says-ai-is-the-key-narrative-for-stocks-video",
-      "source": "Bloomberg Technology",
-      "source_region": "global",
-      "source_type": "market_news",
-      "tier": "tier_1",
-      "published_at": "2026-06-01T09:12:38+00:00",
-      "summary": "Ozan Tarman, global macro vice chair at Deutsche Bank, discusses the artificial intelligence trade and how the industry could impact jobs. He speaks on Bloomberg Television. (Source: Bloomberg)",
-      "signal_type": "AI Market Intelligence",
-      "finance_signal_types": [
-        "market_sentiment_signal",
-        "labor_signal"
-      ],
-      "ai_keyword_hits": [
-        "ai",
-        "artificial intelligence"
-      ],
-      "finance_keyword_hits": [
-        "stock"
-      ],
-      "relevance_score": 9,
-      "discovery_method": "rss",
-      "discovery_source": "https://feeds.bloomberg.com/technology/news.rss"
-    },
-    {
-      "id": "finance_cnbc_investing_https_www_cnbc_com_2026_05_31_softbank_to_build_up_ai_data_centers_in_france_with_major_investment_html",
-      "title": "SoftBank becomes Japan's most valuable company, announces $53 billion French investment",
-      "url": "https://www.cnbc.com/2026/05/31/softbank-to-build-up-ai-data-centers-in-france-with-major-investment.html",
-      "source": "CNBC Investing",
-      "source_region": "global",
-      "source_type": "market_news",
-      "tier": "tier_2",
-      "published_at": "2026-06-01T09:09:46+00:00",
-      "summary": "The Japanese tech giant plans to develop and operate 5 GW of AI data center capacity in France, with an initial 3.1 GW of facilities in the country's north.",
-      "signal_type": "AI Market Intelligence",
-      "finance_signal_types": [
-        "capex_signal"
-      ],
-      "ai_keyword_hits": [
-        "ai",
-        "data center"
-      ],
-      "finance_keyword_hits": [
-        "investment"
-      ],
-      "relevance_score": 7,
-      "discovery_method": "rss",
-      "discovery_source": "https://www.cnbc.com/id/100003114/device/rss/rss.html"
-    },
-    {
-      "id": "finance_bloomberg_technology_https_www_bloomberg_com_news_videos_2026_06_01_nvidia_to_debut_new_chip_for_laptops_desktop_computers_video",
-      "title": "Nvidia to Debut New Chip for Laptops, Desktop Computers",
-      "url": "https://www.bloomberg.com/news/videos/2026-06-01/nvidia-to-debut-new-chip-for-laptops-desktop-computers-video",
-      "source": "Bloomberg Technology",
-      "source_region": "global",
-      "source_type": "market_news",
-      "tier": "tier_1",
-      "published_at": "2026-06-01T08:47:20+00:00",
-      "summary": "Nvidia is entering the PC market with a new RTX Spark Superchip which will debut in laptop and desktop computers from leading PC brands including Dell and Lenovo this fall. CEO Jensen Huang made the announcement at the Computex trade show in Taipei. Bloomberg's Peter Elstrom reports. (Source: Bloomberg)",
-      "signal_type": "AI Market Intelligence",
-      "finance_signal_types": [
-        "chip_supply_signal",
-        "market_sentiment_signal"
-      ],
-      "ai_keyword_hits": [
-        "nvidia",
-        "chip",
-        "compute"
-      ],
-      "finance_keyword_hits": [
-        "market"
-      ],
-      "relevance_score": 10,
-      "discovery_method": "rss",
-      "discovery_source": "https://feeds.bloomberg.com/technology/news.rss"
-    },
-    {
-      "id": "finance_economic_times_tech_https_economictimes_indiatimes_com_tech_technology_samsung_overtakes_micron_in_chips_for_cars_to_claim_top_spot_captures",
-      "title": "Samsung overtakes Micron in chips for cars to claim top spot; Captures 40% market share",
-      "url": "https://economictimes.indiatimes.com/tech/technology/samsung-overtakes-micron-in-chips-for-cars-to-claim-top-spot-captures-40-market-share/articleshow/131438337.cms",
-      "source": "Economic Times Tech",
-      "source_region": "india",
-      "source_type": "business_news",
-      "tier": "tier_2",
-      "published_at": "2026-06-01T08:40:29+00:00",
-      "summary": "Samsung Electronics has overtaken Micron Technology to become the world's top automotive memory chip supplier, capturing a 40 per cent market share as its US rival lost its long-held lead in the vehicle memory market.",
-      "signal_type": "AI Market Intelligence",
-      "finance_signal_types": [
-        "chip_supply_signal",
-        "market_sentiment_signal"
-      ],
-      "ai_keyword_hits": [
-        "chip"
-      ],
-      "finance_keyword_hits": [
-        "market"
-      ],
-      "relevance_score": 6,
-      "discovery_method": "rss",
-      "discovery_source": "https://economictimes.indiatimes.com/tech/rssfeeds/13357270.cms"
-    },
-    {
       "id": "finance_economic_times_ai_https_economictimes_indiatimes_com_ai_ai_insights_from_coding_events_to_innovation_ecosystems_the_changing_role_of_hackath",
       "title": "From coding events to innovation ecosystems: The changing role of hackathons",
       "url": "https://economictimes.indiatimes.com/ai/ai-insights/from-coding-events-to-innovation-ecosystems-the-changing-role-of-hackathons/articleshow/131437747.cms",
@@ -877,159 +1573,6 @@
       "relevance_score": 5,
       "discovery_method": "rss",
       "discovery_source": "https://economictimes.indiatimes.com/ai/rssfeeds/119215726.cms"
-    },
-    {
-      "id": "finance_economic_times_markets_https_economictimes_indiatimes_com_markets_expert_view_crude_oil_shock_clouds_near_term_outlook_but_fy27_earnings_gro",
-      "title": "Crude oil shock clouds near-term outlook, but FY27 earnings growth still intact: Karthikraj Lakshmanan",
-      "url": "https://economictimes.indiatimes.com/markets/expert-view/crude-oil-shock-clouds-near-term-outlook-but-fy27-earnings-growth-still-intact-karthikraj-lakshmanan/articleshow/131437899.cms",
-      "source": "Economic Times Markets",
-      "source_region": "india",
-      "source_type": "market_news",
-      "tier": "tier_2",
-      "published_at": "2026-06-01T08:13:41+00:00",
-      "summary": "UTI AMC's Karthikraj Lakshmanan sees cautiously optimistic Indian market outlook with intact FY27 earnings trajectory, despite near-term crude oil volatility. Macro pressures from rising oil prices are noted, but India remains resilient, with potential for double-digit earnings growth. Selective sector bets, particularly financials and IT, are favored over unpredictable fund flows.",
-      "signal_type": "AI Market Intelligence",
-      "finance_signal_types": [
-        "earnings_signal",
-        "market_sentiment_signal"
-      ],
-      "ai_keyword_hits": [
-        "cloud"
-      ],
-      "finance_keyword_hits": [
-        "earnings",
-        "market"
-      ],
-      "relevance_score": 7,
-      "discovery_method": "rss",
-      "discovery_source": "https://economictimes.indiatimes.com/markets/rssfeeds/1977021501.cms"
-    },
-    {
-      "id": "finance_bloomberg_markets_https_www_bloomberg_com_news_articles_2026_06_01_pakistan_outlines_4_growth_target_for_next_fiscal",
-      "title": "Pakistan Outlines 4% Growth Target For Next Fiscal Year",
-      "url": "https://www.bloomberg.com/news/articles/2026-06-01/pakistan-outlines-4-growth-target-for-next-fiscal",
-      "source": "Bloomberg Markets",
-      "source_region": "global",
-      "source_type": "market_news",
-      "tier": "tier_1",
-      "published_at": "2026-06-01T08:07:23+00:00",
-      "summary": "Pakistan aims to grow at a slightly faster pace in the financial year starting July even as the crude price shock from the Middle East war clouds the outlook for the nation, which continues to rely on support from the International Monetary Fund.",
-      "signal_type": "AI Market Intelligence",
-      "finance_signal_types": [
-        "market_sentiment_signal"
-      ],
-      "ai_keyword_hits": [
-        "cloud"
-      ],
-      "finance_keyword_hits": [
-        "market"
-      ],
-      "relevance_score": 6,
-      "discovery_method": "rss",
-      "discovery_source": "https://feeds.bloomberg.com/markets/news.rss"
-    },
-    {
-      "id": "finance_economic_times_tech_https_economictimes_indiatimes_com_tech_information_tech_no_negative_impact_of_ai_visible_yet_on_software_companies_earn",
-      "title": "No negative impact of AI visible yet on software companies' earnings: Report",
-      "url": "https://economictimes.indiatimes.com/tech/information-tech/no-negative-impact-of-ai-visible-yet-on-software-companies-earnings-report/articleshow/131436494.cms",
-      "source": "Economic Times Tech",
-      "source_region": "india",
-      "source_type": "business_news",
-      "tier": "tier_2",
-      "published_at": "2026-06-01T07:03:03+00:00",
-      "summary": "Artificial Intelligence (AI) has not yet had a negative impact on the earnings performance of software-as-a-service (SaaS) companies, according to a report by CLSA.",
-      "signal_type": "AI Market Intelligence",
-      "finance_signal_types": [
-        "earnings_signal"
-      ],
-      "ai_keyword_hits": [
-        "ai",
-        "artificial intelligence"
-      ],
-      "finance_keyword_hits": [
-        "earnings"
-      ],
-      "relevance_score": 7,
-      "discovery_method": "rss",
-      "discovery_source": "https://economictimes.indiatimes.com/tech/rssfeeds/13357270.cms"
-    },
-    {
-      "id": "finance_bloomberg_technology_https_www_bloomberg_com_news_videos_2026_06_01_insight_with_haslinda_amin_6_1_2026_video",
-      "title": "Nvidia CEO Says Market Got it Wrong On Software Stocks | Insight with Haslinda Amin 6/1/2026",
-      "url": "https://www.bloomberg.com/news/videos/2026-06-01/insight-with-haslinda-amin-6-1-2026-video",
-      "source": "Bloomberg Technology",
-      "source_region": "global",
-      "source_type": "market_news",
-      "tier": "tier_1",
-      "published_at": "2026-06-01T06:38:20+00:00",
-      "summary": "Insight with Haslinda Amin, a daily news program featuring in-depth, high-profile interviews and analysis to give viewers the complete picture on the stories that matter. The show features prominent leaders spanning the worlds of business, finance, politics and culture. (Source: Bloomberg)",
-      "signal_type": "AI Market Intelligence",
-      "finance_signal_types": [
-        "chip_supply_signal",
-        "market_sentiment_signal"
-      ],
-      "ai_keyword_hits": [
-        "nvidia"
-      ],
-      "finance_keyword_hits": [
-        "stock",
-        "market"
-      ],
-      "relevance_score": 8,
-      "discovery_method": "rss",
-      "discovery_source": "https://feeds.bloomberg.com/technology/news.rss"
-    },
-    {
-      "id": "finance_economic_times_tech_https_economictimes_indiatimes_com_tech_technology_strique_unveils_self_learning_ai_platform_that_optimises_d2c_growth_r",
-      "title": "Strique unveils self-learning AI platform that optimises D2C growth, revenue and ROAS at Meta day",
-      "url": "https://economictimes.indiatimes.com/tech/technology/strique-unveils-self-learning-ai-platform-that-optimises-d2c-growth-revenue-and-roas-at-meta-day/articleshow/131435395.cms",
-      "source": "Economic Times Tech",
-      "source_region": "india",
-      "source_type": "business_news",
-      "tier": "tier_2",
-      "published_at": "2026-06-01T06:10:20+00:00",
-      "summary": "Strique has launched an autonomous performance marketing execution platform for D2C brands, addressing the gap between knowing what to change and implementing it. This AI-powered system connects to various platforms to audit, reallocate budgets, generate creatives, and execute campaigns, aiming to continuously optimize revenue and performance by learning from every marketing cycle and customer interaction.",
-      "signal_type": "AI Market Intelligence",
-      "finance_signal_types": [
-        "earnings_signal",
-        "capex_signal",
-        "market_sentiment_signal"
-      ],
-      "ai_keyword_hits": [
-        "ai"
-      ],
-      "finance_keyword_hits": [
-        "revenue",
-        "market",
-        "power"
-      ],
-      "relevance_score": 9,
-      "discovery_method": "rss",
-      "discovery_source": "https://economictimes.indiatimes.com/tech/rssfeeds/13357270.cms"
-    },
-    {
-      "id": "finance_economic_times_tech_https_economictimes_indiatimes_com_tech_technology_scripbox_acquires_wealth_manager_bluechip_capital_to_expand_offerings",
-      "title": "Scripbox acquires wealth manager Bluechip Capital to expand offerings",
-      "url": "https://economictimes.indiatimes.com/tech/technology/scripbox-acquires-wealth-manager-bluechip-capital-to-expand-offerings/articleshow/131435160.cms",
-      "source": "Economic Times Tech",
-      "source_region": "india",
-      "source_type": "business_news",
-      "tier": "tier_2",
-      "published_at": "2026-06-01T05:56:00+00:00",
-      "summary": "Without disclosing the financial details of the deal, Scripbox said that post the acquisition, Bluechip’s employees and clients would become part of the larger Scripbox ecosystem.",
-      "signal_type": "AI Market Intelligence",
-      "finance_signal_types": [
-        "chip_supply_signal"
-      ],
-      "ai_keyword_hits": [
-        "chip"
-      ],
-      "finance_keyword_hits": [
-        "acquisition"
-      ],
-      "relevance_score": 5,
-      "discovery_method": "rss",
-      "discovery_source": "https://economictimes.indiatimes.com/tech/rssfeeds/13357270.cms"
     },
     {
       "id": "finance_cnbc_technology_https_www_cnbc_com_2026_06_01_nvidia_unitree_humanoid_robotics_system_researchers_html",
@@ -1058,412 +1601,144 @@
       "discovery_source": "https://www.cnbc.com/id/19854910/device/rss/rss.html"
     },
     {
-      "id": "finance_economic_times_tech_https_economictimes_indiatimes_com_tech_technology_openai_wants_you_to_have_a_personal_robot_starts_hiring_for_robotics_",
-      "title": "OpenAI wants you to have a personal robot; starts hiring for robotics division",
-      "url": "https://economictimes.indiatimes.com/tech/technology/openai-wants-you-to-have-a-personal-robot-starts-hiring-for-robotics-division/articleshow/131434679.cms",
-      "source": "Economic Times Tech",
-      "source_region": "india",
-      "source_type": "business_news",
-      "tier": "tier_2",
-      "published_at": "2026-06-01T05:18:01+00:00",
-      "summary": "The robotics division grew out of OpenAI's world simulation research program, led by Aditya Ramesh, the researcher also known for his work on DALL-E.",
-      "signal_type": "AI Market Intelligence",
-      "finance_signal_types": [
-        "labor_signal"
-      ],
-      "ai_keyword_hits": [
-        "openai"
-      ],
-      "finance_keyword_hits": [
-        "hiring"
-      ],
-      "relevance_score": 5,
-      "discovery_method": "rss",
-      "discovery_source": "https://economictimes.indiatimes.com/tech/rssfeeds/13357270.cms"
-    },
-    {
-      "id": "finance_bloomberg_markets_https_www_bloomberg_com_news_articles_2026_06_01_em_stocks_hit_record_high_on_ai_currencies_lower_as_oil_climbs",
-      "title": "Emerging Currencies Snap Winning Streak as Peace Deal in Doubt",
-      "url": "https://www.bloomberg.com/news/articles/2026-06-01/em-stocks-hit-record-high-on-ai-currencies-lower-as-oil-climbs",
-      "source": "Bloomberg Markets",
+      "id": "finance_tldr_all_https_www_thurrott_com_mobile_copilot_pc_336816_leaks_nvidia_powered_windows_11_pcs_set_to_debut",
+      "title": "Leaks: Nvidia-Powered Windows 11 PCs Set to Debut (2 minute read)",
+      "url": "https://www.thurrott.com/mobile/copilot-pc/336816/leaks-nvidia-powered-windows-11-pcs-set-to-debut",
+      "source": "TLDR All",
       "source_region": "global",
-      "source_type": "market_news",
-      "tier": "tier_1",
-      "published_at": "2026-06-01T04:51:11+00:00",
-      "summary": "Emerging-market currencies sank on waning hopes for a peace deal in the Middle East after a report that Iran had stopped exchanging messages with the US in protest at Israel’s actions in Lebanon.",
-      "signal_type": "AI Market Intelligence",
-      "finance_signal_types": [
-        "market_sentiment_signal"
-      ],
-      "ai_keyword_hits": [
-        "ai"
-      ],
-      "finance_keyword_hits": [
-        "stock",
-        "market"
-      ],
-      "relevance_score": 7,
-      "discovery_method": "rss",
-      "discovery_source": "https://feeds.bloomberg.com/markets/news.rss"
-    },
-    {
-      "id": "finance_bloomberg_technology_https_www_bloomberg_com_news_articles_2026_06_01_nvidia_enters_windows_laptop_market_taking_on_intel_and_amd",
-      "title": "Nvidia Is Taking On Intel and AMD With New AI Chip for Computers",
-      "url": "https://www.bloomberg.com/news/articles/2026-06-01/nvidia-enters-windows-laptop-market-taking-on-intel-and-amd",
-      "source": "Bloomberg Technology",
-      "source_region": "global",
-      "source_type": "market_news",
-      "tier": "tier_1",
-      "published_at": "2026-06-01T04:25:23+00:00",
-      "summary": "Nvidia Corp. is entering the PC market with a new chip aimed at loosening the stranglehold of Intel Corp. technology in that arena and modernizing the machines for the AI era.",
-      "signal_type": "AI Market Intelligence",
-      "finance_signal_types": [
-        "chip_supply_signal",
-        "market_sentiment_signal"
-      ],
-      "ai_keyword_hits": [
-        "ai",
-        "nvidia",
-        "chip",
-        "compute"
-      ],
-      "finance_keyword_hits": [
-        "market"
-      ],
-      "relevance_score": 10,
-      "discovery_method": "rss",
-      "discovery_source": "https://feeds.bloomberg.com/technology/news.rss"
-    },
-    {
-      "id": "finance_economic_times_tech_https_economictimes_indiatimes_com_tech_technology_softbank_set_to_dethrone_toyota_as_japans_most_valuable_company_artic",
-      "title": "SoftBank set to dethrone Toyota as Japan’s most valuable company",
-      "url": "https://economictimes.indiatimes.com/tech/technology/softbank-set-to-dethrone-toyota-as-japans-most-valuable-company/articleshow/131433651.cms",
-      "source": "Economic Times Tech",
-      "source_region": "india",
-      "source_type": "business_news",
+      "source_type": "newsletter",
       "tier": "tier_2",
-      "published_at": "2026-06-01T04:16:34+00:00",
-      "summary": "Shares of the Masayoshi Son-led technology group climbed as much as 10% in Tokyo trading Monday, as AI-related shares climbed across the region. SoftBank shares have been gaining since news broke that two high-profile portfolio companies - OpenAI and SB Energy Corp. - were preparing for potential US listings.",
+      "published_at": "2026-06-01T00:00:00+00:00",
+      "summary": "Nvidia has designed new chips in partnership with Microsoft to power Windows on Arm-based PCs. PC makers will soon release new Nvidia-powered PCs that will be able to run AI agents locally. The N1 chip will have up to 16 GB of RAM and run at 18 to 45 watts, and the N1x whip will have up to 128 GB of RAM and consume 45 to 80 watts. A recent cryptic tweet from Nvidia indicates that an announcement is imminent.",
       "signal_type": "AI Market Intelligence",
       "finance_signal_types": [
         "capex_signal",
-        "market_sentiment_signal"
-      ],
-      "ai_keyword_hits": [
-        "ai",
-        "openai"
-      ],
-      "finance_keyword_hits": [
-        "shares",
-        "energy"
-      ],
-      "relevance_score": 9,
-      "discovery_method": "rss",
-      "discovery_source": "https://economictimes.indiatimes.com/tech/rssfeeds/13357270.cms"
-    },
-    {
-      "id": "finance_cnbc_technology_https_www_cnbc_com_2026_05_29_tokens_or_humans_the_new_corporate_trade_off_html",
-      "title": "Tokens or humans? The new corporate trade-off",
-      "url": "https://www.cnbc.com/2026/05/29/-tokens-or-humans-the-new-corporate-trade-off.html",
-      "source": "CNBC Technology",
-      "source_region": "global",
-      "source_type": "market_news",
-      "tier": "tier_2",
-      "published_at": "2026-05-30T12:16:47+00:00",
-      "summary": "AI is costing far more than companies expected, forcing CFOs into a new trade-off between tokens and humans and posing a risk the market hasn't priced in.",
-      "signal_type": "AI Market Intelligence",
-      "finance_signal_types": [
-        "market_sentiment_signal"
-      ],
-      "ai_keyword_hits": [
-        "ai"
-      ],
-      "finance_keyword_hits": [
-        "market"
-      ],
-      "relevance_score": 5,
-      "discovery_method": "rss",
-      "discovery_source": "https://www.cnbc.com/id/19854910/device/rss/rss.html"
-    },
-    {
-      "id": "finance_cnbc_technology_https_www_cnbc_com_2026_05_29_jim_cramer_says_dells_blowout_quarter_sets_up_a_crucial_week_for_ai_stocks_html",
-      "title": "Jim Cramer says Dell’s blowout quarter sets up a crucial week for AI stocks",
-      "url": "https://www.cnbc.com/2026/05/29/jim-cramer-says-dells-blowout-quarter-sets-up-a-crucial-week-for-ai-stocks.html",
-      "source": "CNBC Technology",
-      "source_region": "global",
-      "source_type": "market_news",
-      "tier": "tier_2",
-      "published_at": "2026-05-29T22:18:08+00:00",
-      "summary": "CNBC’s Jim Cramer said Dell Technologies’ blockbuster quarter reignited enthusiasm around AI and data center stocks.",
-      "signal_type": "AI Market Intelligence",
-      "finance_signal_types": [
-        "capex_signal",
-        "market_sentiment_signal"
-      ],
-      "ai_keyword_hits": [
-        "ai",
-        "data center"
-      ],
-      "finance_keyword_hits": [
-        "stock"
-      ],
-      "relevance_score": 8,
-      "discovery_method": "rss",
-      "discovery_source": "https://www.cnbc.com/id/19854910/device/rss/rss.html"
-    },
-    {
-      "id": "finance_cnbc_technology_https_www_cnbc_com_2026_05_29_software_stocks_wrap_best_month_since_2001_as_talk_of_saaspocalypse_html",
-      "title": "Software stocks wrap up best month since 2001 as talk of 'SaaSpocalypse' subsides",
-      "url": "https://www.cnbc.com/2026/05/29/software-stocks-wrap-best-month-since-2001-as-talk-of-saaspocalypse-.html",
-      "source": "CNBC Technology",
-      "source_region": "global",
-      "source_type": "market_news",
-      "tier": "tier_2",
-      "published_at": "2026-05-29T21:14:04+00:00",
-      "summary": "Snowflake and Okta both saw record stock pops this week as investors found favor in their AI software strategies.",
-      "signal_type": "AI Market Intelligence",
-      "finance_signal_types": [
-        "market_sentiment_signal"
-      ],
-      "ai_keyword_hits": [
-        "ai"
-      ],
-      "finance_keyword_hits": [
-        "stock"
-      ],
-      "relevance_score": 5,
-      "discovery_method": "rss",
-      "discovery_source": "https://www.cnbc.com/id/19854910/device/rss/rss.html"
-    },
-    {
-      "id": "finance_cnbc_technology_https_www_cnbc_com_2026_05_29_dell_stock_earnings_ai_servers_html",
-      "title": "Dell stock skyrockets 32% for its best day ever as AI server revenue soars",
-      "url": "https://www.cnbc.com/2026/05/29/dell-stock-earnings-ai-servers.html",
-      "source": "CNBC Technology",
-      "source_region": "global",
-      "source_type": "market_news",
-      "tier": "tier_2",
-      "published_at": "2026-05-29T20:10:26+00:00",
-      "summary": "Dell reported its fastest pace of revenue growth since returning to the public market in 2018, with AI server revenue soaring 757% over last year.",
-      "signal_type": "AI Market Intelligence",
-      "finance_signal_types": [
-        "earnings_signal",
-        "market_sentiment_signal"
-      ],
-      "ai_keyword_hits": [
-        "ai"
-      ],
-      "finance_keyword_hits": [
-        "earnings",
-        "revenue",
-        "stock",
-        "market"
-      ],
-      "relevance_score": 9,
-      "discovery_method": "rss",
-      "discovery_source": "https://www.cnbc.com/id/19854910/device/rss/rss.html"
-    },
-    {
-      "id": "finance_cnbc_technology_https_www_cnbc_com_2026_05_29_sentinelone_s_stock_earnings_ai_layoffs_html",
-      "title": "SentinelOne stock drops 8% as cyber firm trims headcount to boost AI investments",
-      "url": "https://www.cnbc.com/2026/05/29/sentinelone-s-stock-earnings-ai-layoffs.html",
-      "source": "CNBC Technology",
-      "source_region": "global",
-      "source_type": "market_news",
-      "tier": "tier_2",
-      "published_at": "2026-05-29T20:09:02+00:00",
-      "summary": "SentinelOne reported earnings after the bell Thursday and issued lackluster guidance for the current quarter and full-year.",
-      "signal_type": "AI Market Intelligence",
-      "finance_signal_types": [
-        "earnings_signal",
-        "market_sentiment_signal",
-        "labor_signal"
-      ],
-      "ai_keyword_hits": [
-        "ai"
-      ],
-      "finance_keyword_hits": [
-        "earnings",
-        "investment",
-        "stock",
-        "guidance",
-        "layoffs"
-      ],
-      "relevance_score": 10,
-      "discovery_method": "rss",
-      "discovery_source": "https://www.cnbc.com/id/19854910/device/rss/rss.html"
-    },
-    {
-      "id": "finance_cnbc_technology_https_www_cnbc_com_2026_05_29_dells_earnings_blowout_makes_clear_now_is_not_the_time_to_go_against_the_ai_grain_html",
-      "title": "Dell's earnings blowout makes clear now is not the time to go against the AI grain",
-      "url": "https://www.cnbc.com/2026/05/29/dells-earnings-blowout-makes-clear-now-is-not-the-time-to-go-against-the-ai-grain.html",
-      "source": "CNBC Technology",
-      "source_region": "global",
-      "source_type": "market_news",
-      "tier": "tier_2",
-      "published_at": "2026-05-29T17:47:47+00:00",
-      "summary": "Don't fight the tape.",
-      "signal_type": "AI Market Intelligence",
-      "finance_signal_types": [
-        "earnings_signal"
-      ],
-      "ai_keyword_hits": [
-        "ai"
-      ],
-      "finance_keyword_hits": [
-        "earnings"
-      ],
-      "relevance_score": 5,
-      "discovery_method": "rss",
-      "discovery_source": "https://www.cnbc.com/id/19854910/device/rss/rss.html"
-    },
-    {
-      "id": "finance_cnbc_technology_https_www_cnbc_com_2026_05_29_spacex_skeptics_concerned_as_musk_comments_diverge_from_ipo_filing_html",
-      "title": "SpaceX skeptics have added reason for concern after Musk comments diverge from IPO filing",
-      "url": "https://www.cnbc.com/2026/05/29/spacex-skeptics-concerned-as-musk-comments-diverge-from-ipo-filing.html",
-      "source": "CNBC Technology",
-      "source_region": "global",
-      "source_type": "market_news",
-      "tier": "tier_2",
-      "published_at": "2026-05-29T15:49:09+00:00",
-      "summary": "In a post on X, Elon Musk offered details about SpaceX's deal with Anthropic that weren't included in the company's IPO prospectus.",
-      "signal_type": "AI Market Intelligence",
-      "finance_signal_types": [
-        "market_sentiment_signal"
-      ],
-      "ai_keyword_hits": [
-        "anthropic"
-      ],
-      "finance_keyword_hits": [
-        "ipo"
-      ],
-      "relevance_score": 5,
-      "discovery_method": "rss",
-      "discovery_source": "https://www.cnbc.com/id/19854910/device/rss/rss.html"
-    },
-    {
-      "id": "finance_cnbc_technology_https_www_cnbc_com_2026_05_29_nvidia_photonics_investment_ai_html",
-      "title": "Nvidia is investing billions into this emerging technology that could change the AI industry",
-      "url": "https://www.cnbc.com/2026/05/29/nvidia-photonics-investment-ai.html",
-      "source": "CNBC Technology",
-      "source_region": "global",
-      "source_type": "market_news",
-      "tier": "tier_2",
-      "published_at": "2026-05-29T15:39:41+00:00",
-      "summary": "Photonics is considered to be a more efficient alternative to the current process of transferring data using electricity, which could be crucial to the AI boom.",
-      "signal_type": "AI Market Intelligence",
-      "finance_signal_types": [
         "chip_supply_signal"
       ],
       "ai_keyword_hits": [
         "ai",
-        "nvidia"
+        "agent",
+        "nvidia",
+        "chip"
       ],
       "finance_keyword_hits": [
-        "investment"
+        "power"
       ],
-      "relevance_score": 7,
+      "relevance_score": 10,
       "discovery_method": "rss",
-      "discovery_source": "https://www.cnbc.com/id/19854910/device/rss/rss.html"
+      "discovery_source": "https://bullrich.dev/tldr-rss/feed.rss"
     },
     {
-      "id": "finance_tldr_all_https_sherwood_news_tech_meta_looks_to_enterprise_cloud_subscriptions_to_justify_ballooning_capex_bill_utm_source_tldrnewsletter",
-      "title": "How Meta is looking for revenue outside advertising to justify its ballooning capex bill (4 minute read)",
-      "url": "https://sherwood.news/tech/meta-looks-to-enterprise-cloud-subscriptions-to-justify-ballooning-capex-bill/?utm_source=tldrnewsletter",
+      "id": "finance_tldr_all_https_wccftech_com_nvidia_computex_2026_what_to_expect_utm_source_tldrai",
+      "title": "Computex 2026 Will Be NVIDIA's Biggest Event Of The Year. Here's What To Expect (5 minute read)",
+      "url": "https://wccftech.com/nvidia-computex-2026-what-to-expect/?utm_source=tldrai",
       "source": "TLDR All",
       "source_region": "global",
       "source_type": "newsletter",
       "tier": "tier_2",
-      "published_at": "2026-05-29T00:00:00+00:00",
-      "summary": "Meta's capital expenditures are forcing it to explore new revenue sources. The company has announced a series of subscription tiers and it is monetizing its AI chatbot. It is also launching a new Enterprise Solutions unit, which will mimic the forward-deployed engineer models used by Google and OpenAI to open up B2B revenue streams. The company is considering opening its own cloud computing business once it has excess compute.",
+      "published_at": "2026-06-01T00:00:00+00:00",
+      "summary": "Nvidia plans to unveil its N1X laptop chip at Computex 2026, featuring 20 ARM cores and an RTX 5070 equivalent GPU, promising improved VRAM allocation for AI applications. The company will also present its \"Vera Rubin\" AI platform for datacenters, aiming to strengthen its position in the AI market. Nvidia's focus on Physical and Agentic AI will highlight advancements in autonomous machines and robotics, while gaming announcements seem minimal.",
       "signal_type": "AI Market Intelligence",
       "finance_signal_types": [
-        "funding_signal",
-        "earnings_signal",
+        "capex_signal",
+        "chip_supply_signal",
+        "market_sentiment_signal"
+      ],
+      "ai_keyword_hits": [
+        "ai",
+        "agent",
+        "agentic",
+        "nvidia",
+        "gpu",
+        "chip",
+        "datacenter",
+        "compute"
+      ],
+      "finance_keyword_hits": [
+        "market"
+      ],
+      "relevance_score": 10,
+      "discovery_method": "rss",
+      "discovery_source": "https://bullrich.dev/tldr-rss/feed.rss"
+    },
+    {
+      "id": "finance_tldr_ai_https_x_com_ido_pesok_status_2060416230641881336_utm_source_tldrai",
+      "title": "Verifying Agentic Development at Scale (8 minute read)",
+      "url": "https://x.com/ido_pesok/status/2060416230641881336?utm_source=tldrai",
+      "source": "TLDR AI",
+      "source_region": "global",
+      "source_type": "newsletter",
+      "tier": "tier_2",
+      "published_at": "2026-06-01T00:00:00+00:00",
+      "summary": "Cognition's Ido Pesok shares lessons from building autonomous end-to-end testing into Devin, noting that for the first time, more Devin sessions are now triggered asynchronously than interactively, making verified-before-merge results a hard requirement rather than a nicety. Devin's harness gained computer-use tools roughly six months ago, and the breakthrough came when engineers started running 10-20 Devins in parallel, each with its own dev server, something impossible on a single laptop.",
+      "signal_type": "AI Market Intelligence",
+      "finance_signal_types": [
+        "market_sentiment_signal"
+      ],
+      "ai_keyword_hits": [
+        "ai",
+        "agent",
+        "agentic",
+        "compute"
+      ],
+      "finance_keyword_hits": [
+        "shares"
+      ],
+      "relevance_score": 10,
+      "discovery_method": "rss",
+      "discovery_source": "https://bullrich.dev/tldr-rss/ai.rss"
+    },
+    {
+      "id": "finance_tldr_all_https_strandsagents_com_trk_a4da53aa_717f_4a44_830e_8f3b61d43501_amp_sc_channel_display_ads",
+      "title": "Strands Agents: open source agent harness SDK - run your agents with any model, anywhere (Sponsor)",
+      "url": "https://strandsagents.com/?trk=a4da53aa-717f-4a44-830e-8f3b61d43501&amp;sc_channel=display+ads",
+      "source": "TLDR All",
+      "source_region": "global",
+      "source_type": "newsletter",
+      "tier": "tier_2",
+      "published_at": "2026-06-01T00:00:00+00:00",
+      "summary": "Your agent harness can have a bigger impact than the model you're running...With Strands Agents, you can build your own agent harness and control it end-to-end without getting locked in. Run it with any model, any cloud, anywhere.→ Monitor, modify, and debug with hooks→ Deliver outcomes that work with guardrails that catch mistakes before they run→ Replace brittle scripts with tools that adapt when processes changeStrands was built from prod systems inside Amazon.Start building with code examples",
+      "signal_type": "AI Market Intelligence",
+      "finance_signal_types": [
+        "funding_signal"
+      ],
+      "ai_keyword_hits": [
+        "agent",
+        "model",
+        "cloud"
+      ],
+      "finance_keyword_hits": [
+        "stake"
+      ],
+      "relevance_score": 9,
+      "discovery_method": "rss",
+      "discovery_source": "https://bullrich.dev/tldr-rss/feed.rss"
+    },
+    {
+      "id": "finance_tldr_all_https_www_nytimes_com_2026_05_30_us_politics_anthropic_openai_super_pacs_midterms_html_unlocked_article_code_1_m1a_v_ps_8dy05enrdvd",
+      "title": "Powerful AI Super PACs Duel Over the Midterms: ‘This Is a War' (13 minute read)",
+      "url": "https://www.nytimes.com/2026/05/30/us/politics/anthropic-openai-super-pacs-midterms.html?unlocked_article_code=1.m1A.V-Ps.8Dy05ENRdvdQ&smid=url-share&utm_source=tldrnewsletter",
+      "source": "TLDR All",
+      "source_region": "global",
+      "source_type": "newsletter",
+      "tier": "tier_2",
+      "published_at": "2026-06-01T00:00:00+00:00",
+      "summary": "OpenAI and Anthropic are both spending millions to influence this year's elections.",
+      "signal_type": "AI Market Intelligence",
+      "finance_signal_types": [
         "capex_signal"
       ],
       "ai_keyword_hits": [
         "ai",
-        "model",
         "openai",
-        "cloud",
-        "compute"
+        "anthropic"
       ],
       "finance_keyword_hits": [
-        "series",
-        "revenue",
-        "capex",
-        "capital expenditure"
+        "power"
       ],
-      "relevance_score": 10,
+      "relevance_score": 9,
       "discovery_method": "rss",
       "discovery_source": "https://bullrich.dev/tldr-rss/feed.rss"
-    },
-    {
-      "id": "finance_tldr_all_https_www_anthropic_com_news_series_h_utm_source_tldrai",
-      "title": "Anthropic Raised $65B in Series H Funding (2 minute read)",
-      "url": "https://www.anthropic.com/news/series-h?utm_source=tldrai",
-      "source": "TLDR All",
-      "source_region": "global",
-      "source_type": "newsletter",
-      "tier": "tier_2",
-      "published_at": "2026-05-29T00:00:00+00:00",
-      "summary": "Anthropic announced a $65 billion Series H round at a $965 billion post-money valuation, citing strong enterprise adoption, $47 billion in run-rate revenue, and plans to expand compute capacity, research, and product development.",
-      "signal_type": "AI Market Intelligence",
-      "finance_signal_types": [
-        "funding_signal",
-        "earnings_signal"
-      ],
-      "ai_keyword_hits": [
-        "anthropic",
-        "compute"
-      ],
-      "finance_keyword_hits": [
-        "funding",
-        "valuation",
-        "raised",
-        "series",
-        "revenue"
-      ],
-      "relevance_score": 10,
-      "discovery_method": "rss",
-      "discovery_source": "https://bullrich.dev/tldr-rss/feed.rss"
-    },
-    {
-      "id": "finance_sec_edgar_meta_https_www_sec_gov_archives_edgar_data_1326801_000162828026039193_meta_20260527_htm",
-      "title": "Meta 8-K filing",
-      "url": "https://www.sec.gov/Archives/edgar/data/1326801/000162828026039193/meta-20260527.htm",
-      "source": "SEC EDGAR META",
-      "source_region": "us",
-      "source_type": "sec_filing",
-      "tier": "tier_1",
-      "published_at": "2026-05-29T00:00:00+00:00",
-      "summary": "Meta filed 8-K. 8-K Meta META AI cloud compute GPU data center earnings revenue capex",
-      "signal_type": "AI Market Intelligence",
-      "finance_signal_types": [
-        "earnings_signal",
-        "capex_signal",
-        "chip_supply_signal",
-        "regulatory_signal"
-      ],
-      "ai_keyword_hits": [
-        "ai",
-        "gpu",
-        "data center",
-        "cloud",
-        "compute"
-      ],
-      "finance_keyword_hits": [
-        "earnings",
-        "revenue",
-        "capex"
-      ],
-      "relevance_score": 10,
-      "discovery_method": "sec_submissions",
-      "discovery_source": "https://data.sec.gov/submissions/CIK0001326801.json",
-      "company": "Meta",
-      "ticker": "META",
-      "sec_form": "8-K"
     },
     {
       "id": "finance_tldr_all_https_jobs_ashbyhq_com_tldr_tech_9a1d9022_357b_4774_86b2_468e8b3665c5_utm_source_tldrnewsletter",
@@ -1473,7 +1748,7 @@
       "source_region": "global",
       "source_type": "newsletter",
       "tier": "tier_2",
-      "published_at": "2026-05-29T00:00:00+00:00",
+      "published_at": "2026-06-01T00:00:00+00:00",
       "summary": "TLDR is hiring a VP of Marketing to scale growth, pipeline, and brand across 8M+ subscribers, 13 newsletters, and advertisers like AWS, Google Cloud, Microsoft, and Anthropic. Apply here.",
       "signal_type": "AI Market Intelligence",
       "finance_signal_types": [
@@ -1493,70 +1768,18 @@
       "discovery_source": "https://bullrich.dev/tldr-rss/feed.rss"
     },
     {
-      "id": "finance_tldr_all_https_www_judgmentlabs_ai_blogs_agent_judge_solving_long_context_evaluations_utm_source_tldrai",
-      "title": "Agent Judge: Solving Long-Context Evals for Production Agents (10 minute read)",
-      "url": "https://www.judgmentlabs.ai/blogs/agent-judge-solving-long-context-evaluations?utm_source=tldrai",
-      "source": "TLDR All",
-      "source_region": "global",
-      "source_type": "newsletter",
-      "tier": "tier_2",
-      "published_at": "2026-05-29T00:00:00+00:00",
-      "summary": "Agent Judge improves evaluations for long-context, production agents by focusing on Search, Verification, and Adaptation. It tackles LLM judges' shortcomings by navigating long trajectories, verifying stateful actions against systems, and updating rubrics based on real feedback. Test results show Agent Judge, especially with refined rubrics, surpasses traditional LLM judges in accuracy and consistency, particularly in challenging scenarios.",
-      "signal_type": "AI Market Intelligence",
-      "finance_signal_types": [
-        "funding_signal"
-      ],
-      "ai_keyword_hits": [
-        "ai",
-        "agent",
-        "llm"
-      ],
-      "finance_keyword_hits": [
-        "valuation"
-      ],
-      "relevance_score": 9,
-      "discovery_method": "rss",
-      "discovery_source": "https://bullrich.dev/tldr-rss/feed.rss"
-    },
-    {
-      "id": "finance_tldr_ai_https_venturebeat_com_technology_minimax_teases_upcoming_m3_model_with_new_sparse_attention_mechanism_and_15_6x_response_speed_boost",
-      "title": "MiniMax teases upcoming M3 model with new sparse attention mechanism and 15.6X long-context response speed boost (12 minute read)",
-      "url": "https://venturebeat.com/technology/minimax-teases-upcoming-m3-model-with-new-sparse-attention-mechanism-and-15-6x-response-speed-boost?utm_source=tldrai",
+      "id": "finance_tldr_ai_https_openai_com_index_trustworthy_third_party_evaluations_foundations_utm_source_tldrai",
+      "title": "OpenAI Outlines Playbook for Trustworthy Third-Party AI Model Evaluations (4 minute read)",
+      "url": "https://openai.com/index/trustworthy-third-party-evaluations-foundations/?utm_source=tldrai",
       "source": "TLDR AI",
       "source_region": "global",
       "source_type": "newsletter",
       "tier": "tier_2",
-      "published_at": "2026-05-29T00:00:00+00:00",
-      "summary": "MiniMax has released a new in-depth technical report on the making of its popular M2 series of language models. The report sheds light on numerous engineering innovations and clever approaches. It teases a new sparse attention approach used in MiniMax's upcoming series of models that yields up to 15.6 times faster decode speed at long contexts. MiniMax's upcoming M3 models will make ultra-long-context AI agent deployment economically viable.",
+      "published_at": "2026-06-01T00:00:00+00:00",
+      "summary": "OpenAI published a comprehensive guide on May 28 for conducting trustworthy third-party evaluations of frontier AI models like GPT-5.5.",
       "signal_type": "AI Market Intelligence",
       "finance_signal_types": [
         "funding_signal"
-      ],
-      "ai_keyword_hits": [
-        "ai",
-        "agent",
-        "model"
-      ],
-      "finance_keyword_hits": [
-        "series"
-      ],
-      "relevance_score": 9,
-      "discovery_method": "rss",
-      "discovery_source": "https://bullrich.dev/tldr-rss/ai.rss"
-    },
-    {
-      "id": "finance_tldr_ai_https_openai_com_index_openai_frontier_governance_framework_utm_source_tldrai",
-      "title": "OpenAI Published a Frontier Governance Framework (4 minute read)",
-      "url": "https://openai.com/index/openai-frontier-governance-framework/?utm_source=tldrai",
-      "source": "TLDR AI",
-      "source_region": "global",
-      "source_type": "newsletter",
-      "tier": "tier_2",
-      "published_at": "2026-05-29T00:00:00+00:00",
-      "summary": "OpenAI released a governance framework describing how its safety and security practices align with emerging regulations, covering risk management, model reporting, incident response, and oversight for advanced AI systems.",
-      "signal_type": "AI Market Intelligence",
-      "finance_signal_types": [
-        "regulatory_signal"
       ],
       "ai_keyword_hits": [
         "ai",
@@ -1564,122 +1787,71 @@
         "openai"
       ],
       "finance_keyword_hits": [
-        "regulation"
+        "valuation"
       ],
       "relevance_score": 9,
       "discovery_method": "rss",
       "discovery_source": "https://bullrich.dev/tldr-rss/ai.rss"
     },
     {
-      "id": "finance_tldr_all_https_www_cnbc_com_2026_05_28_anthropic_open_ai_startup_value_html_utm_source_tldrnewsletter",
-      "title": "Anthropic nears $1 trillion valuation in latest round (4 minute read)",
-      "url": "https://www.cnbc.com/2026/05/28/anthropic-open-ai-startup-value.html?utm_source=tldrnewsletter",
-      "source": "TLDR All",
-      "source_region": "global",
-      "source_type": "newsletter",
-      "tier": "tier_2",
-      "published_at": "2026-05-29T00:00:00+00:00",
-      "summary": "Anthropic is now the most valuable AI company in Silicon Valley.",
-      "signal_type": "AI Market Intelligence",
-      "finance_signal_types": [
-        "funding_signal"
-      ],
-      "ai_keyword_hits": [
-        "ai",
-        "anthropic"
-      ],
-      "finance_keyword_hits": [
-        "valuation"
-      ],
-      "relevance_score": 7,
-      "discovery_method": "rss",
-      "discovery_source": "https://bullrich.dev/tldr-rss/feed.rss"
-    },
-    {
-      "id": "finance_tldr_all_https_sherwood_news_tech_report_microsoft_tries_to_get_back_in_the_ai_coding_game_with_new_model_utm_source_tldrai",
-      "title": "Microsoft tries to get back in the AI coding game with new model (1 minute read)",
-      "url": "https://sherwood.news/tech/report-microsoft-tries-to-get-back-in-the-ai-coding-game-with-new-model/?utm_source=tldrai",
-      "source": "TLDR All",
-      "source_region": "global",
-      "source_type": "newsletter",
-      "tier": "tier_2",
-      "published_at": "2026-05-29T00:00:00+00:00",
-      "summary": "Microsoft is developing a new AI model to strengthen its position in the AI coding arena. This effort highlights Microsoft's ongoing competition in AI development and its response to evolving industry demands. The initiative aims to enhance coding capabilities and support advancements in AI technology.",
-      "signal_type": "AI Market Intelligence",
-      "finance_signal_types": [
-        "finance_context_signal"
-      ],
-      "ai_keyword_hits": [
-        "ai",
-        "model"
-      ],
-      "finance_keyword_hits": [
-        "demand"
-      ],
-      "relevance_score": 7,
-      "discovery_method": "rss",
-      "discovery_source": "https://bullrich.dev/tldr-rss/feed.rss"
-    },
-    {
-      "id": "finance_tldr_ai_https_x_com_voidasuka_status_2059963769804214506_utm_source_tldrai",
-      "title": "Data Isn't Scarce. Your Imagination Is (8 minute read)",
-      "url": "https://x.com/VoidAsuka/status/2059963769804214506?utm_source=tldrai",
+      "id": "finance_tldr_ai_https_threadreaderapp_com_thread_2061117302528188712_html_utm_source_tldrai",
+      "title": "OpenAI Robotics is hiring (1 minute read)",
+      "url": "https://threadreaderapp.com/thread/2061117302528188712.html?utm_source=tldrai",
       "source": "TLDR AI",
       "source_region": "global",
       "source_type": "newsletter",
       "tier": "tier_2",
-      "published_at": "2026-05-29T00:00:00+00:00",
-      "summary": "Asuka Zheng argues the \"we're running out of training data\" panic misses the actual shape of the data market, recounting her own SRE-replacement project that trained two world models until it stalled because end-to-end long-horizon incident trajectories from first anomaly to full resolution did not exist as a dataset.",
+      "published_at": "2026-06-01T00:00:00+00:00",
+      "summary": "OpenAI Robotics is looking for full-stack hardware, ops, systems, and ML engineers to help it program and manufacture robots.",
       "signal_type": "AI Market Intelligence",
       "finance_signal_types": [
-        "market_sentiment_signal"
+        "labor_signal"
       ],
       "ai_keyword_hits": [
         "ai",
-        "model"
+        "openai"
       ],
       "finance_keyword_hits": [
-        "market"
+        "hiring"
       ],
       "relevance_score": 7,
       "discovery_method": "rss",
       "discovery_source": "https://bullrich.dev/tldr-rss/ai.rss"
     },
     {
-      "id": "finance_tldr_all_https_sherwood_news_markets_ibm_quantum_computing_10_billion_investment_government_support_utm_source_tldrnewsletter",
-      "title": "IBM rallies after committing to spend $10 billion to pursue the holy grail of quantum computing (2 minute read)",
-      "url": "https://sherwood.news/markets/ibm-quantum-computing-10-billion-investment-government-support/?utm_source=tldrnewsletter",
+      "id": "finance_tldr_all_https_thenextweb_com_news_ai_replacing_summer_internships_college_students_utm_source_tldrnewsletter",
+      "title": "AI is killing the summer internship. The entry-level pipeline that built careers is breaking (5 minute read)",
+      "url": "https://thenextweb.com/news/ai-replacing-summer-internships-college-students?utm_source=tldrnewsletter",
       "source": "TLDR All",
       "source_region": "global",
       "source_type": "newsletter",
       "tier": "tier_2",
-      "published_at": "2026-05-29T00:00:00+00:00",
-      "summary": "IBM plans to spend over $10 billion over the next five years to create a large-scale, fault-tolerant quantum computer.",
+      "published_at": "2026-06-01T00:00:00+00:00",
+      "summary": "Open positions for tech internships have dropped 30% since 2023. Companies are now using AI to handle the tasks previously entrusted to interns. The entry-level pipeline is breaking. However, at the same time, the AI job market is booming at the senior level.",
       "signal_type": "AI Market Intelligence",
       "finance_signal_types": [
         "market_sentiment_signal"
       ],
       "ai_keyword_hits": [
-        "compute"
+        "ai"
       ],
       "finance_keyword_hits": [
-        "investment",
         "market"
       ],
-      "relevance_score": 6,
+      "relevance_score": 5,
       "discovery_method": "rss",
       "discovery_source": "https://bullrich.dev/tldr-rss/feed.rss"
     },
     {
-      "id": "finance_tldr_all_https_www_bloomberg_com_news_features_2026_05_28_apple_ios_27_photos_screenshots_revamped_siri_pro_camera_app_new_ai_features_acces",
-      "title": "Apple to Overhaul iOS 27 Siri, AI Features: Here's a First Peek (6 minute read)",
-      "url": "https://www.bloomberg.com/news/features/2026-05-28/apple-ios-27-photos-screenshots-revamped-siri-pro-camera-app-new-ai-features?accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzb3VyY2UiOiJTdWJzY3JpYmVyR2lmdGVkQXJ0aWNsZSIsImlhdCI6MTc4MDAzNTczOSwiZXhwIjoxNzgwNjQwNTM5LCJhcnRpY2xlSWQiOiJURlFYU1FLSVVQVVkwMCIsImJjb25uZWN0SWQiOiIwOThFNzNDQTE5QTA0RDkxODEyQzQ4MjcwRDZERTI0QiJ9.gvCOMh-K624b18XZPufSHOqwD-NoxOePEBpY99EVEB8&utm_source=tldrnewsletter",
-      "source": "TLDR All",
+      "id": "finance_tldr_ai_https_thenextweb_com_news_inherent_ai_50_million_seed_deepmind_faraday_science_utm_source_tldrai",
+      "title": "Ex-DeepMind researchers raised $50M to build AI that figures out which scientific questions are worth asking (4 minute read)",
+      "url": "https://thenextweb.com/news/inherent-ai-50-million-seed-deepmind-faraday-science?utm_source=tldrai",
+      "source": "TLDR AI",
       "source_region": "global",
       "source_type": "newsletter",
       "tier": "tier_2",
-      "published_at": "2026-05-29T00:00:00+00:00",
-      "summary": "Apple plans to announce a revamped Siri interface, a new chatbot-style app, and other major iOS 27 changes at its Worldwide Developers Conference on June 8. The launch will be a pivotal moment for the company's AI strategy. Apple previewed some of the features in 2024, but it suffered a series of delays that put it further behind competitors and hurt its reputation. The Siri revamp will likely be CEO Tim Cook's final major product launch before handing leadership over to John Ternus.",
+      "published_at": "2026-06-01T00:00:00+00:00",
+      "summary": "Inherent, a London-based AI lab, is building a platform called Faraday aimed at figuring out which questions are worth asking.",
       "signal_type": "AI Market Intelligence",
       "finance_signal_types": [
         "funding_signal"
@@ -1688,31 +1860,7 @@
         "ai"
       ],
       "finance_keyword_hits": [
-        "series"
-      ],
-      "relevance_score": 5,
-      "discovery_method": "rss",
-      "discovery_source": "https://bullrich.dev/tldr-rss/feed.rss"
-    },
-    {
-      "id": "finance_tldr_ai_https_lwn_net_articles_1075065_utm_source_tldrai",
-      "title": "IBM's \"Project Lightwell\" (1 minute read)",
-      "url": "https://lwn.net/Articles/1075065/?utm_source=tldrai",
-      "source": "TLDR AI",
-      "source_region": "global",
-      "source_type": "newsletter",
-      "tier": "tier_2",
-      "published_at": "2026-05-29T00:00:00+00:00",
-      "summary": "Project Lightwell will establish a trusted enterprise clearinghouse to serve as a security coordination layer to help enterprises integrate secure patches directly into their existing software supply chains with enterprise-grade validation and lifecycle management.",
-      "signal_type": "AI Market Intelligence",
-      "finance_signal_types": [
-        "finance_context_signal"
-      ],
-      "ai_keyword_hits": [
-        "ai"
-      ],
-      "finance_keyword_hits": [
-        "supply"
+        "raised"
       ],
       "relevance_score": 5,
       "discovery_method": "rss",
@@ -1726,7 +1874,7 @@
       "source_region": "global",
       "source_type": "newsletter",
       "tier": "tier_2",
-      "published_at": "2026-05-29T00:00:00+00:00",
+      "published_at": "2026-06-01T00:00:00+00:00",
       "summary": "TLDR's Applied AI team is tasked with making every process at TLDR legible to code, runnable by anyone, and composable into larger workflows. Join a small, fast moving team using the latest AI tools with an unlimited token budget. Learn more.",
       "signal_type": "AI Market Intelligence",
       "finance_signal_types": [
@@ -1741,58 +1889,6 @@
       "relevance_score": 5,
       "discovery_method": "rss",
       "discovery_source": "https://bullrich.dev/tldr-rss/ai.rss"
-    },
-    {
-      "id": "finance_tldr_ai_https_www_wsj_com_tech_ai_ai_is_changing_how_consultants_get_paidand_much_more_bcgs_ceo_says_c009b111_st_77mhtv_reflink_desktopwebsh",
-      "title": "AI Is Changing How Consultants Get Paid—and Much More (5 minute read)",
-      "url": "https://www.wsj.com/tech/ai/ai-is-changing-how-consultants-get-paidand-much-more-bcgs-ceo-says-c009b111?st=77MHTv&reflink=desktopwebshare_permalink&utm_source=tldrai",
-      "source": "TLDR AI",
-      "source_region": "global",
-      "source_type": "newsletter",
-      "tier": "tier_2",
-      "published_at": "2026-05-29T00:00:00+00:00",
-      "summary": "Boston Consulting Group's revenue has grown 7% in the last year, and its headcount is expanding due to an infinite need from companies needing help to roll out AI.",
-      "signal_type": "AI Market Intelligence",
-      "finance_signal_types": [
-        "earnings_signal"
-      ],
-      "ai_keyword_hits": [
-        "ai"
-      ],
-      "finance_keyword_hits": [
-        "revenue"
-      ],
-      "relevance_score": 5,
-      "discovery_method": "rss",
-      "discovery_source": "https://bullrich.dev/tldr-rss/ai.rss"
-    },
-    {
-      "id": "finance_economic_times_ai_https_economictimes_indiatimes_com_ai_ai_insights_as_ai_adoption_accelerates_in_india_mumbai_emerges_as_a_key_technology_h",
-      "title": "As AI Adoption Accelerates in India, Mumbai Emerges as a Key Technology Hub",
-      "url": "https://economictimes.indiatimes.com/ai/ai-insights/as-ai-adoption-accelerates-in-india-mumbai-emerges-as-a-key-technology-hub/articleshow/131373252.cms",
-      "source": "Economic Times AI",
-      "source_region": "india",
-      "source_type": "business_news",
-      "tier": "tier_2",
-      "published_at": "2026-05-28T15:52:29+00:00",
-      "summary": "As India’s AI ecosystem shifts from experimentation to real-world deployment, conversations around startup innovation, enterprise adoption, AI hiring and venture activity are gaining momentum across the technology landscape. Against this backdrop, Mumbai Tech Week (MTW) 2026 returns to Mumbai on May 29–30, bringing together developers, founders, investors, policymakers and global technology companies under the theme AI in Action. Featuring participation from companies including OpenAI, Meta, Anthropic and Google Cloud, the gathering reflects Mumbai’s growing role in India’s AI and technology ecosystem.",
-      "signal_type": "AI Market Intelligence",
-      "finance_signal_types": [
-        "market_sentiment_signal",
-        "labor_signal"
-      ],
-      "ai_keyword_hits": [
-        "ai",
-        "openai",
-        "anthropic",
-        "cloud"
-      ],
-      "finance_keyword_hits": [
-        "hiring"
-      ],
-      "relevance_score": 10,
-      "discovery_method": "rss",
-      "discovery_source": "https://economictimes.indiatimes.com/ai/rssfeeds/119215726.cms"
     }
   ],
   "source_health": [
@@ -1804,7 +1900,7 @@
       "http_status": 200,
       "feed_entries": 30,
       "items_seen": 25,
-      "items_added": 4,
+      "items_added": 5,
       "parse_warning": false
     },
     {
@@ -1815,7 +1911,7 @@
       "http_status": 200,
       "feed_entries": 30,
       "items_seen": 25,
-      "items_added": 13,
+      "items_added": 14,
       "parse_warning": false
     },
     {
@@ -1826,7 +1922,7 @@
       "http_status": 200,
       "feed_entries": 30,
       "items_seen": 25,
-      "items_added": 1,
+      "items_added": 0,
       "parse_warning": false
     },
     {
@@ -1848,7 +1944,7 @@
       "http_status": 200,
       "feed_entries": 30,
       "items_seen": 25,
-      "items_added": 13,
+      "items_added": 12,
       "parse_warning": false
     },
     {
@@ -1859,7 +1955,7 @@
       "http_status": 200,
       "feed_entries": 30,
       "items_seen": 25,
-      "items_added": 8,
+      "items_added": 9,
       "parse_warning": false
     },
     {
@@ -1870,7 +1966,7 @@
       "http_status": 200,
       "feed_entries": 20,
       "items_seen": 20,
-      "items_added": 1,
+      "items_added": 2,
       "parse_warning": false
     },
     {
@@ -1881,7 +1977,7 @@
       "http_status": 200,
       "feed_entries": 50,
       "items_seen": 25,
-      "items_added": 4,
+      "items_added": 5,
       "parse_warning": false
     },
     {
@@ -1892,7 +1988,7 @@
       "http_status": 200,
       "feed_entries": 50,
       "items_seen": 25,
-      "items_added": 6,
+      "items_added": 10,
       "parse_warning": false
     },
     {
@@ -1903,7 +1999,7 @@
       "http_status": 200,
       "feed_entries": 50,
       "items_seen": 25,
-      "items_added": 9,
+      "items_added": 11,
       "parse_warning": false
     },
     {
@@ -1912,9 +2008,9 @@
       "endpoint": "https://bullrich.dev/tldr-rss/feed.rss",
       "status": "OK",
       "http_status": 200,
-      "feed_entries": 373,
+      "feed_entries": 525,
       "items_seen": 25,
-      "items_added": 8,
+      "items_added": 6,
       "parse_warning": false
     },
     {
@@ -1923,9 +2019,9 @@
       "endpoint": "https://bullrich.dev/tldr-rss/ai.rss",
       "status": "OK",
       "http_status": 200,
-      "feed_entries": 53,
+      "feed_entries": 110,
       "items_seen": 25,
-      "items_added": 9,
+      "items_added": 6,
       "parse_warning": false
     },
     {
@@ -1971,7 +2067,7 @@
       "status": "OK",
       "http_status": 200,
       "items_seen": 5,
-      "items_added": 1
+      "items_added": 0
     },
     {
       "source": "SEC EDGAR AMD",

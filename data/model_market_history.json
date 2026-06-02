@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-01T14:52:12.112343+00:00",
+  "last_updated": "2026-06-02T12:18:58.410313+00:00",
   "models": {
     "minimax/minimax-m3": {
       "id": "minimax/minimax-m3",
@@ -1606,9 +1606,9 @@
       "created": 1776878150,
       "context_length": 262144,
       "pricing": {
-        "prompt": "0.000000066",
-        "completion": "0.00000026",
-        "input_cache_read": "0.000000029"
+        "prompt": "0.000000063",
+        "completion": "0.00000021",
+        "input_cache_read": "0.000000021"
       },
       "supported_parameters": [
         "frequency_penalty",
@@ -1637,7 +1637,7 @@
       },
       "top_provider": {
         "context_length": 262144,
-        "max_completion_tokens": 262144,
+        "max_completion_tokens": null,
         "is_moderated": false
       },
       "per_request_limits": null
@@ -2681,7 +2681,7 @@
       "created": 1773836697,
       "context_length": 204800,
       "pricing": {
-        "prompt": "0.00000026",
+        "prompt": "0.000000279",
         "completion": "0.0000012"
       },
       "supported_parameters": [
@@ -2718,7 +2718,7 @@
       },
       "top_provider": {
         "context_length": 196608,
-        "max_completion_tokens": null,
+        "max_completion_tokens": 131072,
         "is_moderated": false
       },
       "per_request_limits": null
@@ -9465,45 +9465,6 @@
       "top_provider": {
         "context_length": 123000,
         "max_completion_tokens": 16000,
-        "is_moderated": false
-      },
-      "per_request_limits": null
-    },
-    "baidu/ernie-4.5-300b-a47b": {
-      "id": "baidu/ernie-4.5-300b-a47b",
-      "name": "Baidu: ERNIE 4.5 300B A47B ",
-      "created": 1751300139,
-      "context_length": 131072,
-      "pricing": {
-        "prompt": "0.00000028",
-        "completion": "0.0000011"
-      },
-      "supported_parameters": [
-        "frequency_penalty",
-        "max_tokens",
-        "presence_penalty",
-        "repetition_penalty",
-        "response_format",
-        "seed",
-        "stop",
-        "temperature",
-        "top_k",
-        "top_p"
-      ],
-      "architecture": {
-        "modality": "text->text",
-        "input_modalities": [
-          "text"
-        ],
-        "output_modalities": [
-          "text"
-        ],
-        "tokenizer": "Other",
-        "instruct_type": null
-      },
-      "top_provider": {
-        "context_length": 123000,
-        "max_completion_tokens": 12000,
         "is_moderated": false
       },
       "per_request_limits": null

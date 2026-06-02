@@ -1,5 +1,5 @@
 {
-  "started_at": "2026-06-01T14:50:47.797710+00:00",
+  "started_at": "2026-06-02T12:18:46.930935+00:00",
   "lookback_days": 2,
   "max_scan_per_channel": 500,
   "workers": 4,
@@ -12,9 +12,65 @@
       "items": 0
     },
     {
+      "channel": "@AlexFinnOfficial",
+      "priority": "P0",
+      "channel_id": "UCfQNB91qRP_5ILeu_S_bSkg",
+      "status": "ERROR",
+      "error": "module 'global_yt_transcript_cli' has no attribute 'get_latest_videos'",
+      "items": 0
+    },
+    {
+      "channel": "@anthropic-ai",
+      "priority": "P0",
+      "channel_id": "UCrDwWp7EBBv4NwvScIpBDOA",
+      "status": "ERROR",
+      "error": "module 'global_yt_transcript_cli' has no attribute 'get_latest_videos'",
+      "items": 0
+    },
+    {
+      "channel": "@OpenAI",
+      "priority": "P0",
+      "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
+      "status": "ERROR",
+      "error": "module 'global_yt_transcript_cli' has no attribute 'get_latest_videos'",
+      "items": 0
+    },
+    {
+      "channel": "AndrejKarpathy",
+      "priority": "P-2",
+      "channel_id": "UCYO_jab_esuFRV4b17AJtAw",
+      "status": "ERROR",
+      "error": "module 'global_yt_transcript_cli' has no attribute 'get_latest_videos'",
+      "items": 0
+    },
+    {
+      "channel": "@vaibhavsisinty",
+      "priority": "P0",
+      "channel_id": "UClXAalunTPaX1YV185DWUeg",
+      "status": "ERROR",
+      "error": "module 'global_yt_transcript_cli' has no attribute 'get_latest_videos'",
+      "items": 0
+    },
+    {
+      "channel": "@claude",
+      "priority": "P0",
+      "channel_id": "UCV03SRZXJEz-hchIAogeJOg",
+      "status": "ERROR",
+      "error": "module 'global_yt_transcript_cli' has no attribute 'get_latest_videos'",
+      "items": 0
+    },
+    {
       "channel": "AICodeKing",
       "priority": "P0",
       "channel_id": "UC0m81bQuthaQZmFbXEY9QSw",
+      "status": "ERROR",
+      "error": "module 'global_yt_transcript_cli' has no attribute 'get_latest_videos'",
+      "items": 0
+    },
+    {
+      "channel": "TBPNLive",
+      "priority": "P-1",
+      "channel_id": "UC-DRzaGnL_vtBUpCFH5M0tg",
       "status": "ERROR",
       "error": "module 'global_yt_transcript_cli' has no attribute 'get_latest_videos'",
       "items": 0
@@ -31,62 +87,6 @@
       "channel": "LexFridman",
       "priority": "P-1",
       "channel_id": "UCJIfeSCssxSC_Dhc5s7woww",
-      "status": "ERROR",
-      "error": "module 'global_yt_transcript_cli' has no attribute 'get_latest_videos'",
-      "items": 0
-    },
-    {
-      "channel": "AndrejKarpathy",
-      "priority": "P-2",
-      "channel_id": "UCYO_jab_esuFRV4b17AJtAw",
-      "status": "ERROR",
-      "error": "module 'global_yt_transcript_cli' has no attribute 'get_latest_videos'",
-      "items": 0
-    },
-    {
-      "channel": "@AlexFinnOfficial",
-      "priority": "P0",
-      "channel_id": "UCfQNB91qRP_5ILeu_S_bSkg",
-      "status": "ERROR",
-      "error": "module 'global_yt_transcript_cli' has no attribute 'get_latest_videos'",
-      "items": 0
-    },
-    {
-      "channel": "@OpenAI",
-      "priority": "P0",
-      "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
-      "status": "ERROR",
-      "error": "module 'global_yt_transcript_cli' has no attribute 'get_latest_videos'",
-      "items": 0
-    },
-    {
-      "channel": "@anthropic-ai",
-      "priority": "P0",
-      "channel_id": "UCrDwWp7EBBv4NwvScIpBDOA",
-      "status": "ERROR",
-      "error": "module 'global_yt_transcript_cli' has no attribute 'get_latest_videos'",
-      "items": 0
-    },
-    {
-      "channel": "@claude",
-      "priority": "P0",
-      "channel_id": "UCV03SRZXJEz-hchIAogeJOg",
-      "status": "ERROR",
-      "error": "module 'global_yt_transcript_cli' has no attribute 'get_latest_videos'",
-      "items": 0
-    },
-    {
-      "channel": "@vaibhavsisinty",
-      "priority": "P0",
-      "channel_id": "UClXAalunTPaX1YV185DWUeg",
-      "status": "ERROR",
-      "error": "module 'global_yt_transcript_cli' has no attribute 'get_latest_videos'",
-      "items": 0
-    },
-    {
-      "channel": "TBPNLive",
-      "priority": "P-1",
-      "channel_id": "UC-DRzaGnL_vtBUpCFH5M0tg",
       "status": "ERROR",
       "error": "module 'global_yt_transcript_cli' has no attribute 'get_latest_videos'",
       "items": 0
@@ -196,6 +196,6 @@
       "items": 0
     }
   ],
-  "finished_at": "2026-06-01T14:50:47.800711+00:00",
+  "finished_at": "2026-06-02T12:18:46.936940+00:00",
   "total_videos": 0
 }
