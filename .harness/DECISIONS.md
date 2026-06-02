@@ -36,3 +36,9 @@
 - Rejected alternative: Hardcode odds values in independent collectors or manual overrides.
 - Constraint: Ensure keyword queries return binary active markets and handle non-binary or inactive markets gracefully by returning `None` without crashing.
 
+## 2026-06-02: Separate code from the xdist-brain data repository
+- Decision: Remove all code, scripts, configuration, and documentation files from the `xdist-brain` repository (remote `brain`) while keeping the code safe and fully active in the main `x-distribution` repository (remote `origin`).
+- Reason: Separate concerns and make `xdist-brain` a dedicated, data-only repository storing transcripts, runs, and collection outputs.
+- Rejected alternative: Keep both code and data in the same repository for both remotes.
+- Constraint: Local workspace tracks `x-distribution` and keeps all code active; remote updates on `brain` are performed via temporary clean branches.
+
