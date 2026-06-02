@@ -143,6 +143,7 @@ class Phase1StatusPropagationTests(unittest.TestCase):
             "collect_startup_collection_data",
             "collect_science_breakthrough_data",
             "collect_developer_sentiment_data",
+            "collect_prediction_market_data",
         ]
         with tempfile.TemporaryDirectory() as temp_dir:
             lane_health_path = Path(temp_dir) / "lane_health.json"

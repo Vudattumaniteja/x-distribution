@@ -31,7 +31,7 @@
     "rss_fallback": false
   },
   "collection_runtime": {
-    "lane_workers": 5,
+    "lane_workers": 15,
     "x_workers": 3,
     "x_timeline_days": 7,
     "x_tweets_per_account": 3
