@@ -8,6 +8,7 @@ from intelligence_queue import filter_recent_items, replace_queue
 from source_clis import python_script_command
 from source_registry import enabled_live_source_scripts, live_source_outputs, collection_runtime_policy
 from x_collection_coordinator import collect_x_read_only
+import polymarket_collector
 
 UTF8_ENV = {**os.environ, "PYTHONIOENCODING": "utf-8", "PYTHONUTF8": "1"}
 PHASE1_LANE_HEALTH_PATH = "data/phase1_lane_health.json"
@@ -301,8 +302,10 @@ def collect_developer_sentiment_data():
 
 def collect_prediction_market_data():
     print("--- Lane M: Polymarket Prediction Market (Rumors) ---")
-    for script in enabled_live_source_scripts("prediction_market"):
-        subprocess.run(python_script_command(script), check=False, env=UTF8_ENV)
+    try:
+        polymarket_collector.main()
+    except Exception as exc:
+        print(f"Polymarket collection failed in-process: {exc}")
 
     items = []
     for path in signal_output_paths("prediction_market"):
@@ -313,14 +316,18 @@ def collect_prediction_market_data():
         prediction_items = payload.get('signals') or payload.get('items') or []
         for item in prediction_items:
             items.append({
+                "id": item.get("id"),
                 "headline": item.get('title') or "Prediction market signal",
                 "summary": item.get('summary', ''),
                 "source": item.get('source', 'Polymarket'),
+                "source_name": item.get('source', 'Polymarket'),
                 "url": item.get('url', ''),
+                "source_url": item.get('url', ''),
                 "signal_type": item.get('signal_type', 'Prediction Market Signal'),
                 "notes": "Polymarket prediction odds/volatility signal",
                 "published_at": item.get('published_at'),
                 "score": item.get('relevance_score'),
+                "relevance_score": item.get('relevance_score'),
                 "source_region": item.get('source_region'),
                 "unique_fields": item.get('unique_fields', {}),
                 "source_type": item.get("source_type", "prediction_market")

@@ -187,10 +187,16 @@
     {
       "id": "F16",
       "title": "Add prediction market source lane",
-      "state": "ready-for-agent",
+      "state": "done",
       "behavior": "Integrate Polymarket as a first-class local source lane using stateless API-native 24h ratio scoring, updating odds in news_queue.json.",
       "verification": "python scripts/polymarket_collector.py, validate_schemas.py, and checking queue outcomes",
-      "evidence": []
+      "evidence": [
+        "Imported polymarket_collector and invoked main() in-process inside phase1_collect.py.",
+        "Mapped Polymarket collector signals to canonical queue schema fields.",
+        "Implemented merge_duplicate override to overwrite headline, relevance_score, summary, and unique_fields from duplicate runs while preserving fact_check_status and provenance.",
+        "Added unit tests in test_intelligence_queue.py asserting odds update and flag preservation; all tests passed.",
+        "Polymarket collector successfully wrote data/prediction_market_raw.json and data/prediction_market_signals.json on collection run."
+      ]
     }
   ]
 }

@@ -91,7 +91,8 @@ class IntelligenceQueueTests(unittest.TestCase):
                         "source": "Polymarket",
                         "source_type": "prediction_market",
                         "score": 5.0,
-                        "unique_fields": {"volume": 10000, "odds": "10%"}
+                        "unique_fields": {"volume": 10000, "odds": "10%"},
+                        "fact_check_status": "verified"
                     },
                     {
                         "headline": "OpenAI Launch odds: 12.5%",
@@ -99,7 +100,8 @@ class IntelligenceQueueTests(unittest.TestCase):
                         "source": "Polymarket",
                         "source_type": "prediction_market",
                         "score": 6.5,
-                        "unique_fields": {"volume": 15000, "odds": "12.5%"}
+                        "unique_fields": {"volume": 15000, "odds": "12.5%"},
+                        "fact_check_status": "pending"
                     },
                 ],
                 path=path,
@@ -109,6 +111,7 @@ class IntelligenceQueueTests(unittest.TestCase):
             self.assertEqual(document["items"][0]["headline"], "OpenAI Launch odds: 12.5%")
             self.assertEqual(document["items"][0]["score"], 6.5)
             self.assertEqual(document["items"][0]["unique_fields"]["volume"], 15000)
+            self.assertEqual(document["items"][0]["fact_check_status"], "verified")
 
 
 if __name__ == "__main__":
