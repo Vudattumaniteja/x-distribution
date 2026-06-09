@@ -6,9 +6,12 @@ setup:
 	$(PY) -c "print('No package install required for local script workspace')"
 
 test:
-	$(PY) -m py_compile scripts/source_registry.py scripts/source_clis.py scripts/intelligence_queue.py scripts/test_intelligence_queue.py scripts/test_post_generation.py scripts/test_xcli_slot_routing.py scripts/x_collection_coordinator.py scripts/test_x_collection_coordinator.py scripts/test_x_collection_integration.py scripts/phase1_collect.py scripts/x_radar_standalone.py scripts/x_timeline_scraper_standalone.py scripts/master_poller.py scripts/queue_maintenance.py scripts/aggregate_deep_discovery.py scripts/aggregate_news.py scripts/final_hybrid_aggregator.py scripts/flash_hunt.py scripts/merge_breadth.py scripts/generated_codegen.py scripts/process_news.py scripts/archive_stale_files.py scripts/validate_schemas.py scripts/x_distribution.py scripts/reddit_mcp_buddy_collect.py scripts/finance_market_collector.py scripts/startup_funding_collector.py scripts/polymarket_collector.py
+	$(PY) -m py_compile scripts/source_registry.py scripts/source_clis.py scripts/intelligence_queue.py scripts/test_intelligence_queue.py scripts/test_post_generation.py scripts/test_verification_engine.py scripts/test_source_lane_transport.py scripts/test_transcript_retrieval.py scripts/test_xcli_slot_routing.py scripts/x_collection_coordinator.py scripts/test_x_collection_coordinator.py scripts/test_x_collection_integration.py scripts/verification_engine.py scripts/truth_oracle.py scripts/source_lane_transport.py scripts/transcript_retrieval.py scripts/phase1_collect.py scripts/x_radar_standalone.py scripts/x_timeline_scraper_standalone.py scripts/master_poller.py scripts/orchestrate_all_latest.py scripts/orchestrate_mass_pool.py scripts/queue_maintenance.py scripts/aggregate_deep_discovery.py scripts/aggregate_news.py scripts/final_hybrid_aggregator.py scripts/flash_hunt.py scripts/merge_breadth.py scripts/generated_codegen.py scripts/process_news.py scripts/archive_stale_files.py scripts/validate_schemas.py scripts/x_distribution.py scripts/reddit_mcp_buddy_collect.py scripts/finance_market_collector.py scripts/startup_funding_collector.py scripts/polymarket_collector.py
 	$(PY) scripts/test_intelligence_queue.py
 	$(PY) scripts/test_post_generation.py
+	$(PY) scripts/test_verification_engine.py
+	$(PY) scripts/test_source_lane_transport.py
+	$(PY) scripts/test_transcript_retrieval.py
 	$(PY) scripts/test_xcli_slot_routing.py
 	$(PY) scripts/test_x_collection_coordinator.py
 	$(PY) scripts/test_x_collection_integration.py

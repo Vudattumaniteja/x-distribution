@@ -211,6 +211,56 @@
         "Passed all verification_engine diagnostic tests and compilation checks.",
         "Updated references/fact-checking.md system documentation."
       ]
+    },
+    {
+      "id": "F17",
+      "title": "Extract source-lane transport module",
+      "state": "done",
+      "behavior": "Centralize source-lane request/session setup, RSS parsing, source-health diagnostics, source-identity dedupe, and raw/signals collector-output persistence without moving lane-specific scoring.",
+      "verification": "py_compile for source_lane_transport, finance/startup collectors, and test_source_lane_transport.py; python scripts/test_source_lane_transport.py; scripts/x_distribution.py validate",
+      "evidence": [
+        "scripts/source_lane_transport.py provides shared transport helpers for RSS collection, diagnostics, source-identity dedupe, and collector output writes.",
+        "scripts/finance_market_collector.py and scripts/startup_funding_collector.py route RSS collection and output persistence through the shared module while preserving existing item fields.",
+        "scripts/test_source_lane_transport.py passed 4 no-network tests covering success, failure diagnostics, dedupe, and persistence.",
+        "Schema validation passed with 0 errors and 25 warnings for empty/generated state in this worktree."
+      ]
+    },
+    {
+      "id": "F18",
+      "title": "Deepen Phase 1 collection runner seam",
+      "state": "done",
+      "behavior": "Route Phase 1 collection through a narrow lane adapter interface returning normalized queue records plus lane health, with artifact/research as the tracer-bullet subprocess/output lane.",
+      "verification": "py_compile for collection_adapter.py, phase1_collect.py, and test_x_collection_integration.py; python scripts/test_x_collection_integration.py; scripts/x_distribution.py validate; scripts/x_distribution.py routes",
+      "evidence": [
+        "scripts/collection_adapter.py defines LaneRunResult, FunctionLaneAdapter, ScriptOutputLaneAdapter, and ArtifactResearchLaneAdapter.",
+        "scripts/phase1_collect.py executes lane adapters and preserves X status/run-id lane health propagation.",
+        "scripts/test_x_collection_integration.py passed 9 tests, including an artifact/research adapter contract test."
+      ]
+    },
+    {
+      "id": "F19",
+      "title": "Collapse YouTube transcript retrieval path",
+      "state": "done",
+      "behavior": "Centralize transcript retrieval behind a programmatic interface while preserving the pinned YT Transcript CLI route and existing transcript/report compatibility.",
+      "verification": "py_compile for transcript_retrieval.py, test_transcript_retrieval.py, orchestrate_all_latest.py, master_poller.py, and orchestrate_mass_pool.py; python scripts/test_transcript_retrieval.py; scripts/x_distribution.py routes",
+      "evidence": [
+        "scripts/transcript_retrieval.py owns transcript reuse, output-path handling, CLI invocation, content validation, and failure classification.",
+        "orchestrate_all_latest.py, master_poller.py, and orchestrate_mass_pool.py use the shared retrieval interface.",
+        "scripts/test_transcript_retrieval.py passed 4 no-network tests covering existing reuse, no captions, adapter success, and adapter/subprocess failures."
+      ]
+    },
+    {
+      "id": "F20",
+      "title": "Deepen verification around atomic claims",
+      "state": "done",
+      "behavior": "Verify atomic claims with normalized source evidence, corroboration hints, optional market context, reasoned verdicts, confidence scores, and rationale output.",
+      "verification": "py_compile for verification_engine.py and test_verification_engine.py; python scripts/test_verification_engine.py; python scripts/test_post_generation.py",
+      "evidence": [
+        "scripts/verification_engine.py adds AtomicClaim, SourceEvidence, VerificationResult, verify_atomic_claim, adapter wrappers, and rationale/verdict generation.",
+        "GitHub, Hugging Face, Wayback, and Polymarket checks remain behind evidence adapter wrappers.",
+        "Polymarket YES odds >70% still add confidence and <15% still penalize confidence.",
+        "scripts/test_verification_engine.py passed 5 no-network tests and post generation fail-closed tests passed."
+      ]
     }
   ]
 }

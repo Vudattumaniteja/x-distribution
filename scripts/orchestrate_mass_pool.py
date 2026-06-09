@@ -1,21 +1,15 @@
 import json
-import subprocess
 import os
 import importlib.util
-import re
-from source_clis import yt_transcript_command, yt_transcript_python_script
-
-DEFAULT_COUNT_PER_CHANNEL = 1
-INVALID_TRANSCRIPT_MARKERS = (
-    "Google Sorry",
-    "We're sorry",
-    "automated queries",
-    "unusual traffic from your computer network",
-    "To protect our users, we can't process your request right now",
-    "<!doctype html",
-    "<html",
+from source_clis import yt_transcript_python_script
+from transcript_retrieval import (
+    is_valid_transcript,
+    normalize_video_url,
+    retrieve_transcript,
+    video_id_from_url,
 )
 
+DEFAULT_COUNT_PER_CHANNEL = 1
 def load_global_yt_cli():
     global_yt_transcript = yt_transcript_python_script()
     spec = importlib.util.spec_from_file_location(
@@ -26,19 +20,9 @@ def load_global_yt_cli():
     spec.loader.exec_module(module)
     return module
 
-def video_id_from_url(url):
-    if not url:
-        return ""
-    match = re.search(r"(?:v=|/shorts/|youtu\.be/)([A-Za-z0-9_-]{6,})", url)
-    if match:
-        return match.group(1)
-    return url.rstrip("/").split("/")[-1]
-
 def normalize_video(video, source_name):
-    url = video.get("url") or ""
+    url = normalize_video_url(video)
     video_id = video.get("id") or video_id_from_url(url)
-    if not url.startswith("http"):
-        url = f"https://www.youtube.com/watch?v={video_id or url}"
     return {
         "video_id": video_id,
         "title": video.get("title", "Unknown"),
@@ -49,12 +33,6 @@ def normalize_video(video, source_name):
         "discovered_by": "yt-transcript latest",
         "duration": video.get("duration"),
     }
-
-def is_valid_transcript(content):
-    if not content or len(content.strip()) < 200:
-        return False
-    lowered = content.lower()
-    return not any(marker.lower() in lowered for marker in INVALID_TRANSCRIPT_MARKERS)
 
 def discover_latest_videos(channels):
     yt_cli = load_global_yt_cli()
@@ -104,23 +82,22 @@ def mass_pool():
         transcript_file = f"transcript_{video_id}.txt"
         transcript_path = os.path.join(output_dir, transcript_file)
         
-        # Transcript content must come through the canonical YT Transcript CLI.
-        result = subprocess.run(
-            yt_transcript_command("get", video_url, "-o", transcript_path),
-            capture_output=True,
-            text=True,
-            encoding='utf-8',
-            errors='replace',
+        result = retrieve_transcript(
+            v,
+            output_path=transcript_path,
+            reuse_existing=False,
+            require_valid=True,
+            accept_output_on_nonzero=True,
         )
         
-        if os.path.exists(transcript_path):
+        if result.get("status") == "OK" and os.path.exists(transcript_path):
             with open(transcript_path, 'r', encoding='utf-8') as tf:
                 content = tf.read()
             if not is_valid_transcript(content):
                 os.remove(transcript_path)
                 print(f"     Rejected invalid transcript content for {video_url}.")
-                if result.stderr:
-                    print(f"     CLI stderr: {result.stderr}")
+                if result.get("stderr_tail"):
+                    print(f"     CLI stderr: {result.get('stderr_tail')}")
                 continue
             
             pool_results.append({
@@ -132,6 +109,8 @@ def mass_pool():
                 "notes": "Full Transcript Pooled via yt-transcript CLI",
                 "published_at": v.get('published_at')
             })
+        else:
+            print(f"     Transcript retrieval {result.get('status')} for {video_url}: {result.get('reason', '')}")
             
     # 3. Save Mass Pool
     with open('data/mass_transcript_pool.json', 'w', encoding='utf-8') as f:

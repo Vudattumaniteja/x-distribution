@@ -4,10 +4,12 @@ from __future__ import annotations
 
 import json
 import os
+import subprocess
 import sys
+from dataclasses import dataclass, field
 from datetime import datetime, timezone, timedelta
 from pathlib import Path
-from typing import Any
+from typing import Any, Callable
 
 import requests
 
@@ -24,6 +26,138 @@ class CollectionAdapter:
     def collect(self) -> list[dict[str, Any]]:
         """Run collection and return a list of normalized signal records."""
         raise NotImplementedError("Subclasses must implement collect()")
+
+
+@dataclass
+class LaneRunResult:
+    """Normalized Phase 1 lane result plus health metadata."""
+
+    lane: str
+    records: list[dict[str, Any]]
+    status: str = "OK"
+    health: dict[str, Any] = field(default_factory=dict)
+
+    def health_entry(self) -> dict[str, Any]:
+        entry = {"lane": self.lane, "status": self.status, "items": len(self.records)}
+        entry.update(self.health)
+        return entry
+
+
+class CollectionLaneAdapter:
+    """Base Phase 1 lane adapter returning records and health."""
+
+    lane_name: str
+
+    def run(self) -> LaneRunResult:
+        raise NotImplementedError("Subclasses must implement run()")
+
+
+class FunctionLaneAdapter(CollectionLaneAdapter):
+    """Wrap existing collection functions during incremental lane migration."""
+
+    def __init__(
+        self,
+        lane_name: str,
+        collect_fn: Callable[[], Any],
+        *,
+        x_metadata: bool = False,
+    ) -> None:
+        self.lane_name = lane_name
+        self.collect_fn = collect_fn
+        self.x_metadata = x_metadata
+
+    def run(self) -> LaneRunResult:
+        value = self.collect_fn()
+        if self.x_metadata:
+            records, metadata = value
+            status = metadata["status"]
+            return LaneRunResult(
+                lane=self.lane_name,
+                records=records,
+                status=status,
+                health={
+                    "x_status": status,
+                    "x_run_id": metadata["run_id"],
+                },
+            )
+        return LaneRunResult(self.lane_name, value or [])
+
+
+class ScriptOutputLaneAdapter(CollectionLaneAdapter):
+    """Run configured scripts, read compatibility outputs, and normalize records."""
+
+    def __init__(
+        self,
+        lane_name: str,
+        source_names: tuple[str, ...],
+        output_loader: Callable[[Path], list[dict[str, Any]]],
+        normalizer: Callable[[dict[str, Any]], dict[str, Any]],
+    ) -> None:
+        self.lane_name = lane_name
+        self.source_names = source_names
+        self.output_loader = output_loader
+        self.normalizer = normalizer
+
+    def run(self) -> LaneRunResult:
+        from source_clis import python_script_command
+        from source_registry import enabled_live_source_scripts, live_source_outputs
+
+        env = {**os.environ, "PYTHONIOENCODING": "utf-8", "PYTHONUTF8": "1"}
+        failures = []
+        for script in enabled_live_source_scripts(*self.source_names):
+            completed = subprocess.run(python_script_command(script), check=False, env=env)
+            if completed.returncode != 0:
+                failures.append({"script": script, "returncode": completed.returncode})
+
+        records = []
+        for output in live_source_outputs(*self.source_names):
+            output_path = WORKSPACE_ROOT / output
+            if not output_path.exists():
+                continue
+            for item in self.output_loader(output_path):
+                records.append(self.normalizer(item))
+
+        status = "ERROR" if failures and not records else "PARTIAL" if failures else "OK"
+        health = {"script_failures": failures} if failures else {}
+        return LaneRunResult(self.lane_name, records, status, health)
+
+
+def load_discovery_items(path: Path) -> list[dict[str, Any]]:
+    with path.open("r", encoding="utf-8") as f:
+        payload = json.load(f)
+    if isinstance(payload, list):
+        return payload
+    return payload.get("new_discoveries", [])
+
+
+def normalize_artifact_research_item(item: dict[str, Any]) -> dict[str, Any]:
+    return {
+        "headline": (
+            item.get("title")
+            or item.get("repo_name")
+            or item.get("model_id")
+            or item.get("release_name")
+            or "Artifact/research discovery"
+        ),
+        "summary": item.get("summary") or item.get("description") or "",
+        "source": item.get("source", "GitHub/arXiv"),
+        "url": item.get("url") or item.get("html_url") or item.get("source_url") or "",
+        "signal_type": "Artifact/Research Source",
+        "notes": "Collected through configured GitHub/Hugging Face/arXiv source lane",
+        "published_at": item.get("published_at") or item.get("created_at") or item.get("updated_at"),
+    }
+
+
+class ArtifactResearchLaneAdapter(ScriptOutputLaneAdapter):
+    """Lane E adapter for GitHub, Hugging Face, and arXiv outputs."""
+
+    def __init__(self) -> None:
+        super().__init__(
+            "artifact_research",
+            ("github", "huggingface", "arxiv"),
+            load_discovery_items,
+            normalize_artifact_research_item,
+        )
 
 
 class RSSCollectionAdapter(CollectionAdapter):

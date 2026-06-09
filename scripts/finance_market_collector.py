@@ -8,17 +8,23 @@ or macro conditions to the AI landscape.
 from __future__ import annotations
 
 import json
-import os
 import re
 import time
 from datetime import datetime, timedelta, timezone
-from email.utils import parsedate_to_datetime
 from pathlib import Path
 from typing import Any
 
-import feedparser
 import requests
-from bs4 import BeautifulSoup
+
+from source_lane_transport import (
+    clean_text,
+    collect_rss_source as collect_rss_transport,
+    create_session,
+    dedupe_by_source_identity,
+    parse_feed_datetime,
+    request_timeout,
+    write_collector_outputs,
+)
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -61,29 +67,6 @@ def load_config() -> dict[str, Any]:
     merged = DEFAULT_CONFIG | loaded
     merged["signal_rules"] = DEFAULT_CONFIG["signal_rules"] | loaded.get("signal_rules", {})
     return merged
-
-
-def clean_text(raw: str | None) -> str:
-    text = BeautifulSoup(raw or "", "html.parser").get_text(" ", strip=True)
-    return re.sub(r"\s+", " ", text).strip()
-
-
-def parse_feed_datetime(entry: Any) -> datetime | None:
-    parsed_struct = entry.get("published_parsed") or entry.get("updated_parsed")
-    if parsed_struct:
-        return datetime(*parsed_struct[:6], tzinfo=timezone.utc)
-    for field in ["published", "updated", "created"]:
-        value = entry.get(field)
-        if not value:
-            continue
-        try:
-            parsed = parsedate_to_datetime(value)
-            if parsed.tzinfo is None:
-                parsed = parsed.replace(tzinfo=timezone.utc)
-            return parsed.astimezone(timezone.utc)
-        except (TypeError, ValueError):
-            continue
-    return None
 
 
 def keyword_hits(text: str, keywords: list[str]) -> list[str]:
@@ -166,57 +149,27 @@ def stable_id(source: str, key: str) -> str:
 
 
 def collect_rss_source(session: requests.Session, source: dict[str, Any], config: dict[str, Any], cutoff: datetime) -> tuple[list[dict[str, Any]], dict[str, Any]]:
-    timeout = int(config.get("request_timeout_seconds", 20))
-    max_items = int(config.get("max_items_per_source", 25))
-    diagnostics = {
-        "source": source.get("name"),
-        "mode": "rss",
-        "endpoint": source.get("rss_url"),
-    }
-    try:
-        response = session.get(source["rss_url"], headers=HEADERS, timeout=timeout)
-        feed = feedparser.parse(response.content)
-    except Exception as exc:
-        diagnostics.update({"status": "ERROR", "error": str(exc), "items_seen": 0, "items_added": 0})
-        return [], diagnostics
-
-    items = []
-    entries = feed.entries[:max_items]
-    for entry in entries:
-        published_dt = parse_feed_datetime(entry)
-        if published_dt and published_dt < cutoff:
-            continue
-        title = clean_text(entry.get("title", "Untitled"))
-        url = entry.get("link", source.get("url", ""))
-        summary = clean_text(entry.get("summary", "") or entry.get("description", ""))
-        item = make_signal(
+    return collect_rss_transport(
+        session,
+        source,
+        config,
+        cutoff,
+        headers=HEADERS,
+        max_items_default=25,
+        item_builder=lambda source, title, url, published_at, summary, discovery_source: make_signal(
             source=source,
             title=title,
             url=url,
-            published_at=published_dt.isoformat() if published_dt else None,
+            published_at=published_at,
             summary=summary,
             discovery_method="rss",
-            discovery_source=source["rss_url"],
+            discovery_source=discovery_source,
             config=config,
-        )
-        if item:
-            items.append(item)
-
-    diagnostics.update(
-        {
-            "status": "OK" if response.status_code < 400 else "FAILED",
-            "http_status": response.status_code,
-            "feed_entries": len(feed.entries),
-            "items_seen": len(entries),
-            "items_added": len(items),
-            "parse_warning": bool(feed.bozo),
-        }
+        ),
     )
-    return items, diagnostics
 
 
 def collect_sec_company(session: requests.Session, company: dict[str, Any], config: dict[str, Any], cutoff: datetime) -> tuple[list[dict[str, Any]], dict[str, Any]]:
-    timeout = int(config.get("request_timeout_seconds", 20))
     cik = str(company["cik"]).zfill(10)
     url = SEC_BASE.format(cik=cik)
     source = {
@@ -231,7 +184,7 @@ def collect_sec_company(session: requests.Session, company: dict[str, Any], conf
         "endpoint": url,
     }
     try:
-        response = session.get(url, headers=HEADERS, timeout=timeout)
+        response = session.get(url, headers=HEADERS, timeout=request_timeout(config, 20))
         response.raise_for_status()
         payload = response.json()
     except Exception as exc:
@@ -295,48 +248,20 @@ def collect_sec_company(session: requests.Session, company: dict[str, Any], conf
     return items, diagnostics
 
 
-def dedupe_items(items: list[dict[str, Any]]) -> list[dict[str, Any]]:
-    deduped: dict[str, dict[str, Any]] = {}
-    for item in items:
-        key = item.get("url") or item.get("title")
-        current = deduped.get(key)
-        if current is None or item.get("relevance_score", 0) > current.get("relevance_score", 0):
-            deduped[key] = item
-    return sorted(
-        deduped.values(),
-        key=lambda item: (item.get("published_at") or "", item.get("relevance_score", 0)),
-        reverse=True,
-    )
-
-
 def write_outputs(items: list[dict[str, Any]], diagnostics: list[dict[str, Any]], cutoff: datetime) -> None:
-    OUTPUT_PATH.parent.mkdir(parents=True, exist_ok=True)
-    payload = {
-        "last_updated": datetime.now(timezone.utc).isoformat(),
-        "cutoff": cutoff.isoformat(),
-        "total_items": len(items),
-        "items": items,
-        "source_health": diagnostics,
-    }
-    with OUTPUT_PATH.open("w", encoding="utf-8") as file_handle:
-        json.dump(payload, file_handle, indent=2, ensure_ascii=False)
-    with SIGNALS_PATH.open("w", encoding="utf-8") as file_handle:
-        json.dump(
-            {
-                "last_updated": payload["last_updated"],
-                "signals": items,
-                "source_health": diagnostics,
-            },
-            file_handle,
-            indent=2,
-            ensure_ascii=False,
-        )
+    write_collector_outputs(
+        raw_path=OUTPUT_PATH,
+        signals_path=SIGNALS_PATH,
+        items=items,
+        diagnostics=diagnostics,
+        cutoff=cutoff,
+    )
 
 
 def main() -> int:
     config = load_config()
     cutoff = datetime.now(timezone.utc) - timedelta(hours=int(config.get("lookback_hours", 96)))
-    session = requests.Session()
+    session = create_session(HEADERS)
     items: list[dict[str, Any]] = []
     diagnostics: list[dict[str, Any]] = []
 
@@ -356,7 +281,7 @@ def main() -> int:
         print(f"  -> {health['status']}; {health.get('items_added', 0)} signals")
         time.sleep(0.2)
 
-    items = dedupe_items(items)
+    items = dedupe_by_source_identity(items)
     write_outputs(items, diagnostics, cutoff)
     print(f"Done. Saved {len(items)} finance signals to {OUTPUT_PATH} and {SIGNALS_PATH}")
     return 0

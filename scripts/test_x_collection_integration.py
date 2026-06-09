@@ -13,6 +13,7 @@ import master_poller
 import phase1_collect
 import x_radar_standalone
 import x_timeline_scraper_standalone
+from collection_adapter import ArtifactResearchLaneAdapter, LaneRunResult
 
 
 def x_result(status: str = "LIVE_OK", *, run_id: str = "run-123", tweets=None) -> dict:
@@ -136,7 +137,6 @@ class Phase1StatusPropagationTests(unittest.TestCase):
             "collect_rss_data",
             "collect_youtube_data",
             "collect_community_data",
-            "collect_artifact_research_data",
             "collect_finance_data",
             "collect_startup_funding_data",
             "collect_model_market_data",
@@ -153,6 +153,11 @@ class Phase1StatusPropagationTests(unittest.TestCase):
             try:
                 with (
                     patch.object(phase1_collect, "collect_x_data", return_value=([], metadata)),
+                    patch.object(
+                        phase1_collect.ArtifactResearchLaneAdapter,
+                        "run",
+                        return_value=LaneRunResult("artifact_research", []),
+                    ),
                     patch.object(phase1_collect, "replace_queue", return_value=({"total_items": 0}, 0)),
                     patch.object(phase1_collect, "filter_recent_items", return_value=[]),
                     patch.object(phase1_collect, "PHASE1_LANE_HEALTH_PATH", str(lane_health_path)),
@@ -179,6 +184,45 @@ class Phase1StatusPropagationTests(unittest.TestCase):
         x_lane = next(lane for lane in lane_health["lanes"] if lane["lane"] == "x")
         self.assertEqual(1, code)
         self.assertEqual("FAILED", x_lane["x_status"])
+
+
+class Phase1LaneAdapterTests(unittest.TestCase):
+    def test_artifact_research_adapter_hides_output_schema_from_runner(self):
+        with tempfile.TemporaryDirectory() as temp_dir:
+            output_path = Path(temp_dir) / "github_discoveries.json"
+            output_path.write_text(
+                json.dumps(
+                    {
+                        "new_discoveries": [
+                            {
+                                "repo_name": "openai-python",
+                                "description": "SDK release",
+                                "source": "GitHub",
+                                "html_url": "https://github.com/openai/openai-python",
+                                "updated_at": "2026-06-01T00:00:00Z",
+                            }
+                        ]
+                    }
+                ),
+                encoding="utf-8",
+            )
+
+            with (
+                patch("collection_adapter.WORKSPACE_ROOT", Path(temp_dir)),
+                patch("source_registry.enabled_live_source_scripts", return_value=["github_monitor_standalone.py"]),
+                patch("source_registry.live_source_outputs", return_value=["github_discoveries.json"]),
+                patch("source_clis.python_script_command", return_value=["py", "scripts/github_monitor_standalone.py"]),
+                patch("collection_adapter.subprocess.run") as run,
+            ):
+                run.return_value.returncode = 0
+                result = ArtifactResearchLaneAdapter().run()
+
+        self.assertEqual("artifact_research", result.lane)
+        self.assertEqual("OK", result.status)
+        self.assertEqual(1, len(result.records))
+        self.assertEqual("openai-python", result.records[0]["headline"])
+        self.assertEqual("Artifact/Research Source", result.records[0]["signal_type"])
+        self.assertEqual({"lane": "artifact_research", "status": "OK", "items": 1}, result.health_entry())
 
 
 if __name__ == "__main__":
