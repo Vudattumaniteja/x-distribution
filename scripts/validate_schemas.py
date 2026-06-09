@@ -387,6 +387,9 @@ class Validator:
 
     def validate_news_queue(self) -> None:
         rel_path = "data/news_queue.json"
+        if not (ROOT / rel_path).exists():
+            self.warn(rel_path, "active queue missing; create it with collection or queue maintenance")
+            return
         data = self.load_json(rel_path)
         if isinstance(data, list):
             self.warn(rel_path, "legacy list format; prefer object with items[]")

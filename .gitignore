@@ -20,6 +20,9 @@ logs/**
 !logs/**/.gitkeep
 scratch/
 tmp_hyper/
+data/**
+!data/**/
+!data/**/.gitkeep
 
 # OS and editor artifacts
 .DS_Store

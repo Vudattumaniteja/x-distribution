@@ -6,10 +6,14 @@ import subprocess
 from datetime import datetime, timezone
 from source_clis import (
     python_script_command,
-    yt_transcript_command,
     yt_transcript_python_script,
 )
 from source_registry import collection_runtime_policy
+from transcript_retrieval import (
+    is_valid_transcript,
+    retrieve_transcript,
+    video_id_from_url,
+)
 from x_collection_coordinator import collect_x_read_only
 
 # File Paths
@@ -20,15 +24,6 @@ CONFIG_X = 'config/followed_accounts.json'
 OUTPUT_POOL = 'data/raw_context_pool.json'
 DEFAULT_YOUTUBE_COUNT_PER_CHANNEL = 15
 UTF8_ENV = {**os.environ, "PYTHONIOENCODING": "utf-8", "PYTHONUTF8": "1"}
-INVALID_TRANSCRIPT_MARKERS = (
-    "Google Sorry",
-    "We're sorry",
-    "automated queries",
-    "unusual traffic from your computer network",
-    "To protect our users, we can't process your request right now",
-    "<!doctype html",
-    "<html",
-)
 LAST_X_COLLECTION = None
 
 def load_global_yt_cli():
@@ -41,26 +36,12 @@ def load_global_yt_cli():
     spec.loader.exec_module(module)
     return module
 
-def video_id_from_url(url):
-    if not url:
-        return ""
-    match = re.search(r"(?:v=|/shorts/|youtu\.be/)([A-Za-z0-9_-]{6,})", url)
-    if match:
-        return match.group(1)
-    return url.rstrip("/").split("/")[-1]
-
 def normalize_youtube_url(video):
     url = video.get("url") or ""
     video_id = video.get("id") or video_id_from_url(url)
     if not url.startswith("http"):
         url = f"https://www.youtube.com/watch?v={video_id or url}"
     return url
-
-def is_valid_transcript(content):
-    if not content or len(content.strip()) < 200:
-        return False
-    lowered = content.lower()
-    return not any(marker.lower() in lowered for marker in INVALID_TRANSCRIPT_MARKERS)
 
 def extract_json_array(text):
     if not text:
@@ -175,26 +156,26 @@ def fetch_transcript_via_cli(video_url):
         temp_path = f"cache/temp_trans_{video_id}.txt"
         os.makedirs("cache", exist_ok=True)
 
-        result = subprocess.run(
-            yt_transcript_command("get", video_url, "-o", temp_path),
-            capture_output=True,
-            text=True,
-            encoding='utf-8',
-            errors='replace',
+        result = retrieve_transcript(
+            video_url,
+            output_path=temp_path,
+            reuse_existing=False,
+            require_valid=True,
+            accept_output_on_nonzero=True,
             env=UTF8_ENV,
         )
-        
-        if os.path.exists(temp_path):
+
+        if result.get("status") == "OK" and os.path.exists(temp_path):
             with open(temp_path, 'r', encoding='utf-8') as f:
                 content = f.read()
             os.remove(temp_path)
             if is_valid_transcript(content):
                 return content
             print(f"    Invalid transcript content rejected for {video_url}.")
-            if result.stderr:
-                print(f"    CLI stderr: {result.stderr}")
+            if result.get("stderr_tail"):
+                print(f"    CLI stderr: {result.get('stderr_tail')}")
         else:
-            print(f"    CLI failed for {video_url}: {result.stderr}")
+            print(f"    Transcript retrieval {result.get('status')} for {video_url}: {result.get('reason', '')}")
         return None
     except Exception as e:
         print(f"    CLI Error: {e}")

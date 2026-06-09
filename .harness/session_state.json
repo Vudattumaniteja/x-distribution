@@ -1,11 +1,11 @@
 {
   "session_id": "2026-05-28-xdist-hardening",
   "started_at": "2026-05-28T00:00:00Z",
-  "project_path": "C:\\Users\\Manit\\.gemini\\x-distribution",
-  "active_feature": "F16.5",
+  "project_path": "C:\\Users\\Manit\\.codex\\worktrees\\6dbd\\x-distribution",
+  "active_feature": "Issues #26-#29",
   "context_usage": 0,
   "handoff_ready": true,
-  "last_verification": "Polymarket claim verification layer implemented and verified. All compilation, unit diagnostic assertions, schema validations, and master CLI verification checks passed successfully with 0 errors and 0 warnings.",
+  "last_verification": "Open issues #26, #27, #28, and #29 implemented. Full compile command passed; focused tests passed for intelligence_queue, post_generation, verification_engine, source_lane_transport, transcript_retrieval, xcli_slot_routing, x_collection_coordinator, and x_collection_integration; node --check passed for reddit_mcp_buddy_bridge.mjs; x_distribution.py validate passed with 0 errors and 25 generated-state warnings; x_distribution.py routes passed.",
   "decisions_made": [
     "Initialize harness around existing script workspace",
     "Treat source registry as the source-of-truth for live source lanes",
@@ -21,7 +21,10 @@
     "Prepare post drafting packets only for VERIFIED or LIKELY_TRUE items and keep publishing manual-copy only",
     "Route read-only X collection through dedicated home/watch slots and one shared coordinator with notified bounded fallback, fresh-cache policy, rotating JSONL notifications, and PID-aware single-run locking",
     "Compile interactive Sandoz light-themed intelligence dashboard directly embedding data payloads from news_queue.json and phase1_lane_health.json to prevent local CORS errors",
-    "Add Polymarket active market YES odds corroboration to VerificationEngine Check 2 and adjust confidence score calculation logic (+10 points for >70% YES, -15 points for <15% YES)"
+    "Add Polymarket active market YES odds corroboration to VerificationEngine Check 2 and adjust confidence score calculation logic (+10 points for >70% YES, -15 points for <15% YES)",
+    "Share RSS source-lane transport across finance and startup collectors while keeping lane-specific scoring local",
+    "Route transcript retrieval through one programmatic adapter around the pinned YT Transcript CLI",
+    "Verify atomic claims through a claim-shaped interface with reasoned verdict output"
   ],
   "files_modified": [
     "C:\\Users\\Manit\\Desktop\\x pipline version 2.0\\scripts\\yt_transcript_cli.py",
@@ -74,6 +77,15 @@
     "dashboard.html",
     "scripts/truth_oracle.py",
     "scripts/verification_engine.py",
-    "references/fact-checking.md"
+    "scripts/test_verification_engine.py",
+    "references/fact-checking.md",
+    "scripts/source_lane_transport.py",
+    "scripts/test_source_lane_transport.py",
+    "scripts/transcript_retrieval.py",
+    "scripts/test_transcript_retrieval.py",
+    "scripts/collection_adapter.py",
+    "scripts/test_x_collection_integration.py",
+    "scripts/master_poller.py",
+    "scripts/orchestrate_mass_pool.py"
   ]
 }

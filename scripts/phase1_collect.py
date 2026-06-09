@@ -4,6 +4,7 @@ import os
 import sys
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from datetime import datetime, timezone
+from collection_adapter import ArtifactResearchLaneAdapter, FunctionLaneAdapter
 from intelligence_queue import filter_recent_items, replace_queue
 from source_clis import python_script_command
 from source_registry import enabled_live_source_scripts, live_source_outputs, collection_runtime_policy
@@ -102,27 +103,7 @@ def collect_community_data():
 
 def collect_artifact_research_data():
     print("--- Lane E: Artifact + Research Sources (GitHub + Hugging Face + arXiv) ---")
-    for script in enabled_live_source_scripts("github", "huggingface", "arxiv"):
-        subprocess.run(python_script_command(script), check=False, env=UTF8_ENV)
-
-    items = []
-    for path in live_source_outputs("github", "huggingface", "arxiv"):
-        if not os.path.exists(path):
-            continue
-        with open(path, 'r', encoding='utf-8') as f:
-            payload = json.load(f)
-        discoveries = payload if isinstance(payload, list) else payload.get('new_discoveries', [])
-        for item in discoveries:
-            items.append({
-                "headline": item.get('title') or item.get('repo_name') or item.get('model_id') or item.get('release_name') or "Artifact/research discovery",
-                "summary": item.get('summary') or item.get('description') or "",
-                "source": item.get('source', 'GitHub/arXiv'),
-                "url": item.get('url') or item.get('html_url') or item.get('source_url') or "",
-                "signal_type": "Artifact/Research Source",
-                "notes": "Collected through configured GitHub/Hugging Face/arXiv source lane",
-                "published_at": item.get('published_at') or item.get('created_at') or item.get('updated_at'),
-            })
-    return items
+    return ArtifactResearchLaneAdapter().run().records
 
 def collect_finance_data():
     print("--- Lane F: Finance + Macro Intelligence ---")
@@ -337,46 +318,39 @@ def collect_prediction_market_data():
 def main():
     runtime = collection_runtime_policy()
     lane_workers = max(1, int(runtime.get("lane_workers", 5)))
-    lanes = {
-        "x": collect_x_data,
-        "rss": collect_rss_data,
-        "youtube": collect_youtube_data,
-        "community": collect_community_data,
-        "artifact_research": collect_artifact_research_data,
-        "finance": collect_finance_data,
-        "startup_funding": collect_startup_funding_data,
-        "model_market": collect_model_market_data,
-        "startup_collections": collect_startup_collection_data,
-        "science": collect_science_breakthrough_data,
-        "developer_sentiment": collect_developer_sentiment_data,
-        "prediction_market": collect_prediction_market_data,
-    }
-    lane_results = {name: [] for name in lanes}
+    lane_adapters = [
+        FunctionLaneAdapter("x", collect_x_data, x_metadata=True),
+        FunctionLaneAdapter("rss", collect_rss_data),
+        FunctionLaneAdapter("youtube", collect_youtube_data),
+        FunctionLaneAdapter("community", collect_community_data),
+        ArtifactResearchLaneAdapter(),
+        FunctionLaneAdapter("finance", collect_finance_data),
+        FunctionLaneAdapter("startup_funding", collect_startup_funding_data),
+        FunctionLaneAdapter("model_market", collect_model_market_data),
+        FunctionLaneAdapter("startup_collections", collect_startup_collection_data),
+        FunctionLaneAdapter("science", collect_science_breakthrough_data),
+        FunctionLaneAdapter("developer_sentiment", collect_developer_sentiment_data),
+        FunctionLaneAdapter("prediction_market", collect_prediction_market_data),
+    ]
+    lane_results = {adapter.lane_name: [] for adapter in lane_adapters}
     lane_health = []
     x_collection = None
 
-    with ThreadPoolExecutor(max_workers=min(lane_workers, len(lanes))) as executor:
-        futures = {executor.submit(fn): name for name, fn in lanes.items()}
+    with ThreadPoolExecutor(max_workers=min(lane_workers, len(lane_adapters))) as executor:
+        futures = {executor.submit(adapter.run): adapter.lane_name for adapter in lane_adapters}
         for future in as_completed(futures):
             name = futures[future]
             try:
-                value = future.result()
+                result = future.result()
                 if name == "x":
-                    lane_results[name], x_collection = value
-                    lane_health.append({
-                        "lane": name,
-                        "status": x_collection["status"],
-                        "x_status": x_collection["status"],
-                        "x_run_id": x_collection["run_id"],
-                        "items": len(lane_results[name]),
-                    })
+                    x_collection = {
+                        "status": result.status,
+                        "run_id": result.health.get("x_run_id"),
+                    }
+                lane_results[name] = result.records
+                lane_health.append(result.health_entry())
+                if name == "x":
                     continue
-                lane_results[name] = value or []
-                lane_health.append({
-                    "lane": name,
-                    "status": "OK",
-                    "items": len(lane_results[name]),
-                })
             except Exception as exc:
                 lane_results[name] = []
                 if name == "x":
