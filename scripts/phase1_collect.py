@@ -8,6 +8,7 @@ from intelligence_queue import filter_recent_items, replace_queue
 from source_clis import python_script_command
 from source_registry import enabled_live_source_scripts, live_source_outputs, collection_runtime_policy
 from x_collection_coordinator import collect_x_read_only
+import polymarket_collector
 
 UTF8_ENV = {**os.environ, "PYTHONIOENCODING": "utf-8", "PYTHONUTF8": "1"}
 PHASE1_LANE_HEALTH_PATH = "data/phase1_lane_health.json"
@@ -299,6 +300,40 @@ def collect_developer_sentiment_data():
             })
     return items
 
+def collect_prediction_market_data():
+    print("--- Lane M: Polymarket Prediction Market (Rumors) ---")
+    try:
+        polymarket_collector.main()
+    except Exception as exc:
+        print(f"Polymarket collection failed in-process: {exc}")
+
+    items = []
+    for path in signal_output_paths("prediction_market"):
+        if not os.path.exists(path):
+            continue
+        with open(path, 'r', encoding='utf-8') as f:
+            payload = json.load(f)
+        prediction_items = payload.get('signals') or payload.get('items') or []
+        for item in prediction_items:
+            items.append({
+                "id": item.get("id"),
+                "headline": item.get('title') or "Prediction market signal",
+                "summary": item.get('summary', ''),
+                "source": item.get('source', 'Polymarket'),
+                "source_name": item.get('source', 'Polymarket'),
+                "url": item.get('url', ''),
+                "source_url": item.get('url', ''),
+                "signal_type": item.get('signal_type', 'Prediction Market Signal'),
+                "notes": "Polymarket prediction odds/volatility signal",
+                "published_at": item.get('published_at'),
+                "score": item.get('relevance_score'),
+                "relevance_score": item.get('relevance_score'),
+                "source_region": item.get('source_region'),
+                "unique_fields": item.get('unique_fields', {}),
+                "source_type": item.get("source_type", "prediction_market")
+            })
+    return items
+
 def main():
     runtime = collection_runtime_policy()
     lane_workers = max(1, int(runtime.get("lane_workers", 5)))
@@ -314,6 +349,7 @@ def main():
         "startup_collections": collect_startup_collection_data,
         "science": collect_science_breakthrough_data,
         "developer_sentiment": collect_developer_sentiment_data,
+        "prediction_market": collect_prediction_market_data,
     }
     lane_results = {name: [] for name in lanes}
     lane_health = []
@@ -365,6 +401,7 @@ def main():
         + lane_results["startup_collections"]
         + lane_results["science"]
         + lane_results["developer_sentiment"]
+        + lane_results.get("prediction_market", [])
     )
     
     # Re-reading corporate announcements

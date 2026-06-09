@@ -4,6 +4,7 @@ import hashlib
 import time
 import re
 from datetime import datetime, timezone
+from typing import Any
 
 class TruthOracle:
     def __init__(self, cache_path='cache/timestamp_oracle.json'):
@@ -152,6 +153,60 @@ class TruthOracle:
         # For now, we'll return a stub to show the schema alignment.
         return None
 
+    def fetch_polymarket_corroboration(self, keywords: str) -> dict[str, Any] | None:
+        """Fetch closest active Polymarket question, URL, and YES odds for claim keywords."""
+        cache_key = f"polymarket:{keywords}"
+        if cache_key in self.cache['entries']:
+            return self.cache['entries'][cache_key]
+
+        url = "https://gamma-api.polymarket.com/public-search"
+        try:
+            response = requests.get(url, params={"q": keywords}, headers=self.headers, timeout=15)
+            if response.status_code == 200:
+                data = response.json()
+                events = data.get("events", [])
+                for event in events:
+                    for market in event.get("markets", []):
+                        # Check if market is active (active=True, closed=False)
+                        is_active = market.get("active") is True and market.get("closed") is False
+                        if not is_active:
+                            continue
+                        
+                        question = market.get("question")
+                        slug = market.get("slug")
+                        market_url = f"https://polymarket.com/event/{slug}" if slug else "https://polymarket.com"
+                        
+                        # Parse YES odds
+                        outcomes = market.get("outcomes", "[]")
+                        if isinstance(outcomes, str):
+                            outcomes = json.loads(outcomes or "[]")
+                        prices = market.get("outcomePrices", "[]")
+                        if isinstance(prices, str):
+                            prices = json.loads(prices or "[]")
+                        
+                        yes_odds = None
+                        if outcomes and prices and len(outcomes) == len(prices):
+                            for o, p in zip(outcomes, prices):
+                                if str(o).strip().lower() == "yes":
+                                    try:
+                                        yes_odds = float(p)
+                                        break
+                                    except (ValueError, TypeError):
+                                        pass
+                        
+                        entry = {
+                            "question": question,
+                            "url": market_url,
+                            "yes_odds": yes_odds,
+                            "fetched_at": datetime.now(timezone.utc).isoformat()
+                        }
+                        self.cache['entries'][cache_key] = entry
+                        self._save_cache()
+                        return entry
+        except Exception as e:
+            print(f"Polymarket Error: {e}")
+        return None
+
 # Test Diagnostic
 if __name__ == "__main__":
     oracle = TruthOracle()
@@ -161,3 +216,6 @@ if __name__ == "__main__":
     print(oracle.fetch_hf_lastmodified("gpt2")) # GPT-2 is public and non-gated
     print("\n--- Wayback Test ---")
     print(oracle.fetch_wayback_first_seen("https://openai.com/index/gpt-5-5-instant/"))
+    print("\n--- Polymarket Test ---")
+    print(oracle.fetch_polymarket_corroboration("OpenAI"))
+

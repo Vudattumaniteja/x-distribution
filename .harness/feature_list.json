@@ -183,6 +183,34 @@
         "83 Python scripts compiled; schema validation passed with 0 errors and 0 warnings; XCLI and YT Transcript CLI route checks passed; Node bridge syntax check passed.",
         "Issue #6 live trial and issue #7 final gate were intentionally not run."
       ]
+    },
+    {
+      "id": "F16",
+      "title": "Add prediction market source lane",
+      "state": "done",
+      "behavior": "Integrate Polymarket as a first-class local source lane using stateless API-native 24h ratio scoring, updating odds in news_queue.json.",
+      "verification": "python scripts/polymarket_collector.py, validate_schemas.py, and checking queue outcomes",
+      "evidence": [
+        "Imported polymarket_collector and invoked main() in-process inside phase1_collect.py.",
+        "Mapped Polymarket collector signals to canonical queue schema fields.",
+        "Implemented merge_duplicate override to overwrite headline, relevance_score, summary, and unique_fields from duplicate runs while preserving fact_check_status and provenance.",
+        "Added unit tests in test_intelligence_queue.py asserting odds update and flag preservation; all tests passed.",
+        "Polymarket collector successfully wrote data/prediction_market_raw.json and data/prediction_market_signals.json on collection run."
+      ]
+    },
+    {
+      "id": "F16.5",
+      "title": "Claim Verification and Corroboration via Polymarket",
+      "state": "done",
+      "behavior": "Integrate Polymarket active market YES odds corroboration into VerificationEngine Check 2 (Claim Verification) and adjust confidence score calculation logic (+10 points for >70% YES, -15 points for <15% YES).",
+      "verification": "python -m scripts.verification_engine and python scripts/x_distribution.py verify",
+      "evidence": [
+        "Added fetch_polymarket_corroboration to TruthOracle caching results under polymarket:{keywords}.",
+        "Hooked fetch_polymarket_corroboration into VerificationEngine class.",
+        "Implemented calculate_confidence_score inside VerificationEngine adjusting scores based on Yes odds (>70% YES: +10; <15% YES: -15).",
+        "Passed all verification_engine diagnostic tests and compilation checks.",
+        "Updated references/fact-checking.md system documentation."
+      ]
     }
   ]
 }

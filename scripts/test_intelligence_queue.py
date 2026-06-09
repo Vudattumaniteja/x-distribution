@@ -80,6 +80,39 @@ class IntelligenceQueueTests(unittest.TestCase):
             ["fresh", "undated"],
         )
 
+    def test_replace_queue_overwrites_prediction_market_dynamic_fields(self) -> None:
+        with tempfile.TemporaryDirectory() as temp_dir:
+            path = Path(temp_dir) / "news_queue.json"
+            document, duplicates = replace_queue(
+                [
+                    {
+                        "headline": "OpenAI Launch odds: 10.0%",
+                        "url": "https://polymarket.com/event/openai-launch",
+                        "source": "Polymarket",
+                        "source_type": "prediction_market",
+                        "score": 5.0,
+                        "unique_fields": {"volume": 10000, "odds": "10%"},
+                        "fact_check_status": "verified"
+                    },
+                    {
+                        "headline": "OpenAI Launch odds: 12.5%",
+                        "url": "https://polymarket.com/event/openai-launch",
+                        "source": "Polymarket",
+                        "source_type": "prediction_market",
+                        "score": 6.5,
+                        "unique_fields": {"volume": 15000, "odds": "12.5%"},
+                        "fact_check_status": "pending"
+                    },
+                ],
+                path=path,
+            )
+            self.assertEqual(duplicates, 1)
+            self.assertEqual(document["total_items"], 1)
+            self.assertEqual(document["items"][0]["headline"], "OpenAI Launch odds: 12.5%")
+            self.assertEqual(document["items"][0]["score"], 6.5)
+            self.assertEqual(document["items"][0]["unique_fields"]["volume"], 15000)
+            self.assertEqual(document["items"][0]["fact_check_status"], "verified")
+
 
 if __name__ == "__main__":
     unittest.main()

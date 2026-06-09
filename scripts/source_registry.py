@@ -154,6 +154,12 @@ DEFAULT_REGISTRY: dict[str, Any] = {
             "scripts": ["developer_sentiment_collector.py"],
             "outputs": ["data/developer_sentiment_raw.json", "data/developer_sentiment_signals.json"],
         },
+        "prediction_market": {
+            "enabled": True,
+            "description": "Polymarket prediction market lane for rumors and forward-looking speculation signals.",
+            "scripts": ["polymarket_collector.py"],
+            "outputs": ["data/prediction_market_raw.json", "data/prediction_market_signals.json"],
+        },
     },
     "collector_outputs": [
         "data/sitemap_discoveries.json",
@@ -178,6 +184,8 @@ DEFAULT_REGISTRY: dict[str, Any] = {
         "data/science_breakthrough_signals.json",
         "data/developer_sentiment_raw.json",
         "data/developer_sentiment_signals.json",
+        "data/prediction_market_raw.json",
+        "data/prediction_market_signals.json",
     ],
 }
 

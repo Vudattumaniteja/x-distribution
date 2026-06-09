@@ -4,7 +4,7 @@
 The complete local system that collects public AI and technology signals, preserves source evidence, builds an active intelligence queue, and prepares manual editorial work.
 
 ## Source lane
-A configured collection path for one evidence family, such as X, YouTube, community discussion, model-market signals, or startup funding.
+A configured collection path for one evidence family, such as X, YouTube, community discussion, model-market signals, startup funding, or prediction markets.
 
 ## Collector output
 A source-specific JSON artifact written by a source lane. Collector outputs preserve what the most recent source run observed.

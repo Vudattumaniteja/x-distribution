@@ -809,6 +809,78 @@
         "data/developer_sentiment_raw.json",
         "data/developer_sentiment_signals.json"
       ]
+    },
+    {
+      "name": "verify",
+      "timestamp": "2026-06-02T11:37:43.781864+00:00",
+      "status": "passed",
+      "checks": {
+        "routes": 0,
+        "schemas": 0
+      }
+    },
+    {
+      "name": "verify",
+      "timestamp": "2026-06-02T11:52:58.285959+00:00",
+      "status": "passed",
+      "checks": {
+        "routes": 0,
+        "schemas": 0
+      }
+    },
+    {
+      "name": "verify",
+      "timestamp": "2026-06-02T11:54:46.958792+00:00",
+      "status": "passed",
+      "checks": {
+        "routes": 0,
+        "schemas": 0
+      }
+    },
+    {
+      "name": "verify",
+      "timestamp": "2026-06-02T11:57:35.146796+00:00",
+      "status": "passed",
+      "checks": {
+        "routes": 0,
+        "schemas": 0
+      }
+    },
+    {
+      "name": "verify",
+      "timestamp": "2026-06-02T12:06:48.897238+00:00",
+      "status": "passed",
+      "checks": {
+        "routes": 0,
+        "schemas": 0
+      }
+    },
+    {
+      "name": "verify",
+      "timestamp": "2026-06-04T05:48:05.892956+00:00",
+      "status": "failed",
+      "checks": {
+        "routes": 0,
+        "schemas": 1
+      }
+    },
+    {
+      "name": "verify",
+      "timestamp": "2026-06-04T06:16:59.629269+00:00",
+      "status": "passed",
+      "checks": {
+        "routes": 0,
+        "schemas": 0
+      }
+    },
+    {
+      "name": "verify",
+      "timestamp": "2026-06-04T06:17:39.435853+00:00",
+      "status": "passed",
+      "checks": {
+        "routes": 0,
+        "schemas": 0
+      }
     }
   ]
 }

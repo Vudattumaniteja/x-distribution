@@ -29,7 +29,8 @@
 2. Search for each claim independently with 2+ source requirement
 3. Cross-reference numbers across sources — do they match?
 4. Check for primary data (benchmarks, financial reports, papers)
-5. Flag anything traceable to only one source
+5. Query Polymarket Gamma Search endpoint for active prediction markets to corroborate claims (fetch question, URL, and YES odds)
+6. Flag anything traceable to only one source
 
 **Search Templates:**
 ```
@@ -37,6 +38,7 @@ Data claims: "[number]" "[topic]" site:reuters.com OR site:bloomberg.com OR site
 Capability claims: "[tool/model]" "[capability]" benchmark OR test OR review
 Business claims: "[company]" "[event]" funding OR acquisition OR valuation
 Debunk check: "[claim]" debunked OR false OR misleading OR correction
+Prediction market corroboration: Gamma query "[keywords]"
 ```
 
 **Output:** Per-claim verification status (confirmed / unconfirmed / contradicted)
@@ -110,6 +112,7 @@ Bonuses:
   +10 if primary source is top-tier (Reuters, Bloomberg, official company blog)
   +5 if claim includes specific verifiable numbers
   +5 if official statement or press release exists
+  +10 if Polymarket YES odds are >70%
 
 Penalties:
   -15 if any source contradicts the claim
@@ -118,6 +121,7 @@ Penalties:
   -5 per significant context gap
   -5 if source has issued corrections recently
   -5 if date is ambiguous or disputed
+  -15 if Polymarket YES odds are <15%
 
 Range: 0-100
 ```

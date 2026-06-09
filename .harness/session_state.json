@@ -2,10 +2,10 @@
   "session_id": "2026-05-28-xdist-hardening",
   "started_at": "2026-05-28T00:00:00Z",
   "project_path": "C:\\Users\\Manit\\.gemini\\x-distribution",
-  "active_feature": "F15",
+  "active_feature": "F16.5",
   "context_usage": 0,
   "handoff_ready": true,
-  "last_verification": "Dashboard compilation and visual styling verified. All 7 development issues resolved, verified, and closed. Python script compiled without error; browser automation took UI screenshot matching light-themed Sandoz corporate palette. Collection completed successfully with 2,564 raw items normalized into 1,000 active queue items.",
+  "last_verification": "Polymarket claim verification layer implemented and verified. All compilation, unit diagnostic assertions, schema validations, and master CLI verification checks passed successfully with 0 errors and 0 warnings.",
   "decisions_made": [
     "Initialize harness around existing script workspace",
     "Treat source registry as the source-of-truth for live source lanes",
@@ -20,7 +20,8 @@
     "Route canonical and compatibility queue persistence through scripts/intelligence_queue.py so protected state uses atomic writes and one URL identity policy",
     "Prepare post drafting packets only for VERIFIED or LIKELY_TRUE items and keep publishing manual-copy only",
     "Route read-only X collection through dedicated home/watch slots and one shared coordinator with notified bounded fallback, fresh-cache policy, rotating JSONL notifications, and PID-aware single-run locking",
-    "Compile interactive Sandoz light-themed intelligence dashboard directly embedding data payloads from news_queue.json and phase1_lane_health.json to prevent local CORS errors"
+    "Compile interactive Sandoz light-themed intelligence dashboard directly embedding data payloads from news_queue.json and phase1_lane_health.json to prevent local CORS errors",
+    "Add Polymarket active market YES odds corroboration to VerificationEngine Check 2 and adjust confidence score calculation logic (+10 points for >70% YES, -15 points for <15% YES)"
   ],
   "files_modified": [
     "C:\\Users\\Manit\\Desktop\\x pipline version 2.0\\scripts\\yt_transcript_cli.py",
@@ -70,6 +71,9 @@
     "docs/x-distribution-architecture.html",
     "docs/adr/0001-protected-intelligence-queue-seam.md",
     "scripts/generate_dashboard.py",
-    "dashboard.html"
+    "dashboard.html",
+    "scripts/truth_oracle.py",
+    "scripts/verification_engine.py",
+    "references/fact-checking.md"
   ]
 }

@@ -31,7 +31,7 @@
     "rss_fallback": false
   },
   "collection_runtime": {
-    "lane_workers": 5,
+    "lane_workers": 15,
     "x_workers": 3,
     "x_timeline_days": 7,
     "x_tweets_per_account": 3
@@ -144,6 +144,12 @@
             "description": "Provider status, outage, latency, pricing, and developer pain/adoption signals for model platforms.",
             "scripts": ["developer_sentiment_collector.py"],
             "outputs": ["data/developer_sentiment_raw.json", "data/developer_sentiment_signals.json"]
+        },
+        "prediction_market": {
+            "enabled": true,
+            "description": "Polymarket prediction market lane for rumors and forward-looking speculation signals.",
+            "scripts": ["polymarket_collector.py"],
+            "outputs": ["data/prediction_market_raw.json", "data/prediction_market_signals.json"]
         }
     },
   "collector_outputs": [
@@ -168,7 +174,9 @@
     "data/science_breakthrough_raw.json",
     "data/science_breakthrough_signals.json",
     "data/developer_sentiment_raw.json",
-    "data/developer_sentiment_signals.json"
+    "data/developer_sentiment_signals.json",
+    "data/prediction_market_raw.json",
+    "data/prediction_market_signals.json"
   ],
   "stale_file_policy": {
     "archive_root": "cache/stale_archive",
