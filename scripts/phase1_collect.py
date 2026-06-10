@@ -335,6 +335,7 @@ def collect_prediction_market_data():
     return items
 
 def main():
+    skip_x = "--skip-x" in sys.argv
     runtime = collection_runtime_policy()
     lane_workers = max(1, int(runtime.get("lane_workers", 5)))
     lanes = {
@@ -351,8 +352,22 @@ def main():
         "developer_sentiment": collect_developer_sentiment_data,
         "prediction_market": collect_prediction_market_data,
     }
+    if skip_x:
+        print("Skipping Lane A (X / Twitter) collection per command line flag.")
+        lanes.pop("x", None)
+
     lane_results = {name: [] for name in lanes}
+    if skip_x:
+        lane_results["x"] = []
     lane_health = []
+    if skip_x:
+        lane_health.append({
+            "lane": "x",
+            "status": "SKIPPED",
+            "x_status": "SKIPPED",
+            "x_run_id": None,
+            "items": 0,
+        })
     x_collection = None
 
     with ThreadPoolExecutor(max_workers=min(lane_workers, len(lanes))) as executor:

@@ -157,7 +157,7 @@ class XCollectionCoordinator:
             for tweet in tweets
         ]
 
-    def _fresh_cache(self, path: Path, max_hours: float) -> tuple[list[dict], dict]:
+    def _fresh_cache(self, path: Path, max_hours: float, allow_stale: bool = False) -> tuple[list[dict], dict]:
         if not path.exists():
             return [], {"cache_status": "MISSING", "cache_path": str(path)}
         age_hours = max(0.0, (self.now().timestamp() - path.stat().st_mtime) / 3600)
@@ -166,7 +166,7 @@ class XCollectionCoordinator:
             "cache_timestamp": datetime.fromtimestamp(path.stat().st_mtime, tz=timezone.utc).isoformat(),
             "cache_age_hours": age_hours,
         }
-        if age_hours > max_hours:
+        if age_hours > max_hours and not allow_stale:
             return [], {**cache_meta, "cache_status": "STALE"}
         try:
             with path.open("r", encoding="utf-8") as file_handle:
@@ -175,6 +175,9 @@ class XCollectionCoordinator:
             return [], {**cache_meta, "cache_status": "INVALID"}
         if not isinstance(payload, list) or not payload:
             return [], {**cache_meta, "cache_status": "EMPTY"}
+        
+        if age_hours > max_hours:
+            return payload, {**cache_meta, "cache_status": "STALE_FALLBACK"}
         return payload, {**cache_meta, "cache_status": "FRESH"}
 
     def _attempt_home_live(self, count: int) -> tuple[list[dict], str | None]:
@@ -216,6 +219,8 @@ class XCollectionCoordinator:
             error = "live timeline returned no tweets"
 
         cached, cache_meta = self._fresh_cache(output_path, WATCHLIST_CACHE_MAX_HOURS)
+        if not cached and cache_meta.get("cache_status") == "STALE":
+            cached, cache_meta = self._fresh_cache(output_path, WATCHLIST_CACHE_MAX_HOURS, allow_stale=True)
         return {
             "handle": handle,
             "slot": slot,
@@ -272,16 +277,28 @@ class XCollectionCoordinator:
 
     def _record_failed_attempt(self, attempt: dict, notifier: XNotifier) -> None:
         if attempt.get("tweets"):
-            notifier.notify(
-                "WARN",
-                "watchlist_cache_used",
-                f"live timeline failed for @{attempt['handle']}; using fresh cache",
-                handle=attempt["handle"],
-                slot=attempt["slot"],
-                live_error=attempt.get("error"),
-                cache_timestamp=attempt.get("cache_timestamp"),
-                cache_age_hours=attempt.get("cache_age_hours"),
-            )
+            if attempt.get("cache_status") == "STALE_FALLBACK":
+                notifier.notify(
+                    "WARN",
+                    "stale_cache_fallback",
+                    f"live timeline failed for @{attempt['handle']}; using stale cache fallback",
+                    handle=attempt["handle"],
+                    slot=attempt["slot"],
+                    live_error=attempt.get("error"),
+                    cache_timestamp=attempt.get("cache_timestamp"),
+                    cache_age_hours=attempt.get("cache_age_hours"),
+                )
+            else:
+                notifier.notify(
+                    "WARN",
+                    "watchlist_cache_used",
+                    f"live timeline failed for @{attempt['handle']}; using fresh cache",
+                    handle=attempt["handle"],
+                    slot=attempt["slot"],
+                    live_error=attempt.get("error"),
+                    cache_timestamp=attempt.get("cache_timestamp"),
+                    cache_age_hours=attempt.get("cache_age_hours"),
+                )
         else:
             notifier.notify(
                 "ERROR",
@@ -453,17 +470,32 @@ class XCollectionCoordinator:
                 if retry_error:
                     home_error = retry_error
                     cached, home_cache_meta = self._fresh_cache(self._home_output_path(), HOME_CACHE_MAX_HOURS)
+                    is_stale_fallback = False
+                    if not cached and home_cache_meta.get("cache_status") == "STALE":
+                        cached, home_cache_meta = self._fresh_cache(self._home_output_path(), HOME_CACHE_MAX_HOURS, allow_stale=True)
+                        if cached:
+                            is_stale_fallback = True
                     if cached:
                         home_status = "CACHE"
                         all_tweets.extend(self._tag_tweets(cached, source="cache", scope="home"))
-                        notifier.notify(
-                            "WARN",
-                            "home_cache_used",
-                            "live home-feed retry failed; using fresh cache",
-                            live_error=retry_error,
-                            cache_timestamp=home_cache_meta.get("cache_timestamp"),
-                            cache_age_hours=home_cache_meta.get("cache_age_hours"),
-                        )
+                        if is_stale_fallback:
+                            notifier.notify(
+                                "WARN",
+                                "stale_cache_fallback",
+                                "live home-feed retry failed; using stale cache fallback",
+                                live_error=retry_error,
+                                cache_timestamp=home_cache_meta.get("cache_timestamp"),
+                                cache_age_hours=home_cache_meta.get("cache_age_hours"),
+                            )
+                        else:
+                            notifier.notify(
+                                "WARN",
+                                "home_cache_used",
+                                "live home-feed retry failed; using fresh cache",
+                                live_error=retry_error,
+                                cache_timestamp=home_cache_meta.get("cache_timestamp"),
+                                cache_age_hours=home_cache_meta.get("cache_age_hours"),
+                            )
                     else:
                         home_status = "MISSING"
                         notifier.notify(

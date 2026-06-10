@@ -131,7 +131,8 @@ def collect(args: argparse.Namespace) -> int:
             },
         )
         return 0
-    return run_script("phase1_collect.py").returncode
+    collect_args = ["--skip-x"] if args.skip_x else []
+    return run_script("phase1_collect.py", *collect_args).returncode
 
 
 def cleanup(args: argparse.Namespace) -> int:
@@ -159,6 +160,7 @@ def main() -> int:
 
     collect_parser = subparsers.add_parser("collect", help="Run Phase 1 collection")
     collect_parser.add_argument("--verify-only", action="store_true", help="Only print configured collectors and outputs")
+    collect_parser.add_argument("--skip-x", action="store_true", help="Skip X (Twitter) feed collection")
 
     subparsers.add_parser("validate", help="Validate critical schemas")
     subparsers.add_parser("routes", help="Check XCLI and YT Transcript CLI routes")

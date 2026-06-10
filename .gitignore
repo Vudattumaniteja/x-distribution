@@ -20,6 +20,12 @@ logs/**
 !logs/**/.gitkeep
 scratch/
 tmp_hyper/
+data/**
+!data/**/
+!data/**/.gitkeep
+graphify-out/
+" .agents"/
+ .agents/
 
 # OS and editor artifacts
 .DS_Store

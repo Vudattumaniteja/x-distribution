@@ -43,150 +43,14 @@ TRANSCRIPTS_DIR = PROJECT_ROOT / "data" / "transcripts"
 # Core: Transcript fetcher (from get_transcript.py — proven working)
 # ===========================================================================
 def fetch_transcript(youtube_url: str, output_file: str = None, quiet: bool = False) -> str | None:
-    """Fetch a YouTube transcript via NoteGPT. Returns transcript text or None."""
-    from playwright.sync_api import sync_playwright
+    # Add scripts directory to sys.path so we can import youtube_extractor
+    scripts_dir = str(Path(__file__).resolve().parent)
+    if scripts_dir not in sys.path:
+        sys.path.insert(0, scripts_dir)
 
-    def log(msg):
-        if not quiet:
-            print(msg)
+    import youtube_extractor
+    return youtube_extractor.fetch_transcript(youtube_url, output_file, quiet)
 
-    log(f"  URL: {youtube_url}")
-
-    with sync_playwright() as p:
-        browser = p.chromium.launch(headless=False)
-        context = browser.new_context(
-            viewport={"width": 1280, "height": 720},
-            permissions=["clipboard-read", "clipboard-write"],
-        )
-        page = context.new_page()
-
-        try:
-            # STEP 1: Load NoteGPT
-            log("  [1/5] Loading NoteGPT...")
-            page.goto(NOTEGPT, wait_until="networkidle", timeout=30_000)
-
-            # STEP 2: Fill URL
-            log("  [2/5] Filling YouTube URL...")
-            textbox = page.get_by_role("textbox", name="Paste the YouTube video link")
-            textbox.click()
-            page.wait_for_timeout(300)
-            textbox.fill(youtube_url)
-            page.wait_for_timeout(300)
-
-            # STEP 3: Click Generate → navigate to /detail?id=VIDEO_ID
-            log("  [3/5] Clicking Generate Transcript...")
-            page.get_by_role("button", name="Generate Transcript").click()
-
-            log("        Waiting for result page...")
-            page.wait_for_url(RESULT_URL_RE, wait_until="load", timeout=30_000)
-            page.wait_for_load_state("networkidle", timeout=60_000)
-
-            # STEP 4: Wait for the Copy button in the DOM, then click via JS
-            log("  [4/5] Waiting for transcript (up to 90s)...")
-
-            copy_selector = 'button[id^="reka-popover-trigger-"]'
-            page.wait_for_selector(copy_selector, state="attached", timeout=90_000)
-
-            # Poll until a Copy button with text="Copy" appears
-            for _ in range(20):
-                found = page.evaluate("""
-                    () => {
-                        const btns = document.querySelectorAll(
-                            'button[id^="reka-popover-trigger-"]'
-                        );
-                        for (const btn of btns) {
-                            if (btn.textContent.trim() === 'Copy') return true;
-                        }
-                        return false;
-                    }
-                """)
-                if found:
-                    break
-                page.wait_for_timeout(2000)
-            else:
-                log("  ERROR: Copy button never appeared in the DOM.")
-                return None
-
-            log("        Transcript ready. Clicking Copy via JS...")
-
-            # JS click the first Copy popover trigger (bypasses visibility)
-            page.evaluate("""
-                () => {
-                    const btns = document.querySelectorAll(
-                        'button[id^="reka-popover-trigger-"]'
-                    );
-                    for (const btn of btns) {
-                        if (btn.textContent.trim() === 'Copy') {
-                            btn.click();
-                            return;
-                        }
-                    }
-                }
-            """)
-            page.wait_for_timeout(1500)
-
-            # Click "Copy with timestamp"
-            menu_item = page.get_by_text("Copy with timestamp")
-            if menu_item.count() > 0:
-                try:
-                    menu_item.first.click(timeout=3000)
-                    log("        Clicked 'Copy with timestamp'.")
-                except Exception:
-                    page.evaluate("""
-                        () => {
-                            const items = document.querySelectorAll('*');
-                            for (const el of items) {
-                                if (el.textContent.trim() === 'Copy with timestamp') {
-                                    el.click(); return;
-                                }
-                            }
-                        }
-                    """)
-                    log("        Clicked 'Copy with timestamp' (JS fallback).")
-            else:
-                log("        'Copy with timestamp' not found, trying 'Copy Transcript'...")
-                page.evaluate("""
-                    () => {
-                        const btns = document.querySelectorAll(
-                            'button[id^="reka-popover-trigger-"]'
-                        );
-                        for (const btn of btns) {
-                            if (btn.textContent.trim() === 'Copy Transcript') {
-                                btn.click(); return;
-                            }
-                        }
-                    }
-                """)
-
-            page.wait_for_timeout(1500)
-
-            # STEP 5: Read clipboard
-            log("  [5/5] Reading clipboard...")
-            transcript = page.evaluate("navigator.clipboard.readText()")
-
-            if not transcript:
-                log("  ERROR: Clipboard was empty.")
-                return None
-
-            line_count = transcript.count("\n") + 1
-            char_count = len(transcript)
-            log(f"  SUCCESS: {line_count} lines, {char_count:,} chars")
-
-            if output_file:
-                Path(output_file).parent.mkdir(parents=True, exist_ok=True)
-                with open(output_file, "w", encoding="utf-8") as f:
-                    f.write(transcript)
-                log(f"  Saved: {output_file}")
-
-            return transcript
-
-        except Exception as e:
-            log(f"  ERROR: {e}")
-            return None
-
-        finally:
-            context.close()
-            browser.close()
 
 
 # ===========================================================================
@@ -214,7 +78,7 @@ def enrich_video_metadata(video: dict) -> dict:
 
     if video.get("published_at"):
         return video
-    ydl_opts = {"quiet": True, "no_warnings": True, "skip_download": True}
+    ydl_opts = {"quiet": True, "no_warnings": True, "skip_download": True, "socket_timeout": 15}
     with yt_dlp.YoutubeDL(ydl_opts) as ydl:
         try:
             info = ydl.extract_info(video["url"], download=False)
@@ -254,6 +118,7 @@ def get_latest_videos(
         "quiet": True,
         "no_warnings": True,
         "playlistend": playlist_end,
+        "socket_timeout": 15,
     }
 
     cutoff = None

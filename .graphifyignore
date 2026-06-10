@@ -1,0 +1,15 @@
+# Exclude version control and agent system configurations
+.git/
+.gemini/
+.harness/
+
+# Exclude caches, logs, and transient files
+cache/
+logs/
+tmp_hyper/
+__pycache__/
+*.pyc
+
+# Exclude dynamic data storage
+worked/
+scratch/
