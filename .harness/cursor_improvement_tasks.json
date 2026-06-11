@@ -1,0 +1,350 @@
+{
+  "plan_version": "1.0.0",
+  "branch": "cursor-improvement-plan",
+  "created": "2026-06-11",
+  "wip_limit": 1,
+  "total_subagent_invocations": 31,
+  "waves": 6,
+  "tasks": [
+    {
+      "id": "W0-E1",
+      "title": "Baseline paths and XCLI audit",
+      "phase": "W0",
+      "subagent_slot": "explore-1",
+      "subagent_type": "explore",
+      "model_tier": "composer-2.5-fast",
+      "depends_on": [],
+      "status": "pending",
+      "parallel_group": "wave0-recon"
+    },
+    {
+      "id": "W0-E2",
+      "title": "Runtime path drift map",
+      "phase": "W0",
+      "subagent_slot": "explore-2",
+      "subagent_type": "explore",
+      "model_tier": "composer-2.5-fast",
+      "depends_on": [],
+      "status": "pending",
+      "parallel_group": "wave0-recon"
+    },
+    {
+      "id": "W0-E3",
+      "title": "Queue-write bypass audit",
+      "phase": "W0",
+      "subagent_slot": "explore-3",
+      "subagent_type": "explore",
+      "model_tier": "composer-2.5-fast",
+      "depends_on": [],
+      "status": "pending",
+      "parallel_group": "wave0-recon"
+    },
+    {
+      "id": "W0-S1",
+      "title": "Baseline check attempt",
+      "phase": "W0",
+      "subagent_slot": "shell-1",
+      "subagent_type": "shell",
+      "model_tier": "composer-2.5-fast",
+      "depends_on": ["W0-E1", "W0-E2", "W0-E3"],
+      "status": "pending",
+      "parallel_group": null
+    },
+    {
+      "id": "P0-1",
+      "title": "Fix and document pinned XCLI path",
+      "phase": "P0",
+      "subagent_slot": "write-1",
+      "subagent_type": "generalPurpose",
+      "model_tier": "gpt-5.3-codex",
+      "depends_on": ["W0-S1"],
+      "status": "pending",
+      "issue_ref": 1
+    },
+    {
+      "id": "P0-2",
+      "title": "Unify runtime path configuration",
+      "phase": "P0",
+      "subagent_slot": "write-2",
+      "subagent_type": "generalPurpose",
+      "model_tier": "gpt-5.3-codex",
+      "depends_on": ["P0-1"],
+      "status": "pending",
+      "issue_ref": 2
+    },
+    {
+      "id": "P0-3",
+      "title": "Windows-native check.ps1 script",
+      "phase": "P0",
+      "subagent_slot": "write-3",
+      "subagent_type": "generalPurpose",
+      "model_tier": "gpt-5.3-codex",
+      "depends_on": ["P0-2"],
+      "status": "pending",
+      "issue_ref": 3
+    },
+    {
+      "id": "P0-GATE",
+      "title": "P0 verification gate",
+      "phase": "P0",
+      "subagent_slot": "shell-2",
+      "subagent_type": "shell",
+      "model_tier": "composer-2.5-fast",
+      "depends_on": ["P0-3"],
+      "status": "pending"
+    },
+    {
+      "id": "P1-E1",
+      "title": "Storage migration reader/writer inventory",
+      "phase": "P1",
+      "subagent_slot": "explore-4",
+      "subagent_type": "explore",
+      "model_tier": "composer-2.5-fast",
+      "depends_on": ["P0-GATE"],
+      "status": "pending",
+      "parallel_group": "wave2-recon"
+    },
+    {
+      "id": "P1-1",
+      "title": "Finish storage migration shims",
+      "phase": "P1",
+      "subagent_slot": "write-4",
+      "subagent_type": "generalPurpose",
+      "model_tier": "claude-4.6-sonnet-medium-thinking",
+      "depends_on": ["P1-E1"],
+      "status": "pending",
+      "issue_ref": 4
+    },
+    {
+      "id": "P1-2",
+      "title": "Wire verification into operator path",
+      "phase": "P1",
+      "subagent_slot": "write-5",
+      "subagent_type": "generalPurpose",
+      "model_tier": "gpt-5.3-codex",
+      "depends_on": ["P1-1"],
+      "status": "pending",
+      "issue_ref": 5
+    },
+    {
+      "id": "P1-3",
+      "title": "Incremental lane-scoped collection",
+      "phase": "P1",
+      "subagent_slot": "write-6",
+      "subagent_type": "generalPurpose",
+      "model_tier": "gpt-5.3-codex",
+      "depends_on": ["P1-2"],
+      "status": "pending",
+      "issue_ref": 6
+    },
+    {
+      "id": "P1-4",
+      "title": "Consolidate queue mutation entry points",
+      "phase": "P1",
+      "subagent_slot": "write-7",
+      "subagent_type": "generalPurpose",
+      "model_tier": "claude-4.6-sonnet-medium-thinking",
+      "depends_on": ["P1-3"],
+      "status": "pending",
+      "issue_ref": 7
+    },
+    {
+      "id": "P1-GATE",
+      "title": "P1 verification gate",
+      "phase": "P1",
+      "subagent_slot": "shell-3",
+      "subagent_type": "shell",
+      "model_tier": "composer-2.5-fast",
+      "depends_on": ["P1-4"],
+      "status": "pending"
+    },
+    {
+      "id": "P2-E1",
+      "title": "CI and test gap analysis",
+      "phase": "P2",
+      "subagent_slot": "explore-5",
+      "subagent_type": "explore",
+      "model_tier": "composer-2.5-fast",
+      "depends_on": ["P1-GATE"],
+      "status": "pending"
+    },
+    {
+      "id": "P2-1",
+      "title": "GitHub Actions CI workflow",
+      "phase": "P2",
+      "subagent_slot": "write-8",
+      "subagent_type": "generalPurpose",
+      "model_tier": "gpt-5.3-codex",
+      "depends_on": ["P2-E1"],
+      "status": "pending",
+      "issue_ref": 8
+    },
+    {
+      "id": "P2-2",
+      "title": "Expand collector and phase1 tests",
+      "phase": "P2",
+      "subagent_slot": "write-9",
+      "subagent_type": "generalPurpose",
+      "model_tier": "gpt-5.3-codex",
+      "depends_on": ["P2-1"],
+      "status": "pending",
+      "issue_ref": 9
+    },
+    {
+      "id": "P2-3",
+      "title": "Formal JSON Schema validation",
+      "phase": "P2",
+      "subagent_slot": "write-10",
+      "subagent_type": "generalPurpose",
+      "model_tier": "gpt-5.3-codex",
+      "depends_on": ["P2-2"],
+      "status": "pending",
+      "issue_ref": 10
+    },
+    {
+      "id": "P2-GATE",
+      "title": "P2 verification gate",
+      "phase": "P2",
+      "subagent_slot": "shell-4",
+      "subagent_type": "shell",
+      "model_tier": "composer-2.5-fast",
+      "depends_on": ["P2-3"],
+      "status": "pending"
+    },
+    {
+      "id": "P3-E1",
+      "title": "Legacy script usage scan",
+      "phase": "P3",
+      "subagent_slot": "explore-6",
+      "subagent_type": "explore",
+      "model_tier": "composer-2.5-fast",
+      "depends_on": ["P2-GATE"],
+      "status": "pending"
+    },
+    {
+      "id": "P3-1",
+      "title": "Archive quarantine legacy scripts",
+      "phase": "P3",
+      "subagent_slot": "write-11",
+      "subagent_type": "generalPurpose",
+      "model_tier": "gpt-5.3-codex",
+      "depends_on": ["P3-E1"],
+      "status": "pending",
+      "issue_ref": 11
+    },
+    {
+      "id": "P3-2",
+      "title": "Refresh harness metadata",
+      "phase": "P3",
+      "subagent_slot": "write-12",
+      "subagent_type": "generalPurpose",
+      "model_tier": "composer-2.5-fast",
+      "depends_on": ["P3-1"],
+      "status": "pending",
+      "issue_ref": 12
+    },
+    {
+      "id": "P3-3",
+      "title": "Single daily operator command",
+      "phase": "P3",
+      "subagent_slot": "write-13",
+      "subagent_type": "generalPurpose",
+      "model_tier": "gpt-5.3-codex",
+      "depends_on": ["P3-2"],
+      "status": "pending",
+      "issue_ref": 13
+    },
+    {
+      "id": "P3-4",
+      "title": "Lane health observability",
+      "phase": "P3",
+      "subagent_slot": "write-14",
+      "subagent_type": "generalPurpose",
+      "model_tier": "gpt-5.3-codex",
+      "depends_on": ["P3-3"],
+      "status": "pending",
+      "issue_ref": 14
+    },
+    {
+      "id": "P3-5",
+      "title": "Reddit RSS-first strategy",
+      "phase": "P3",
+      "subagent_slot": "write-15",
+      "subagent_type": "generalPurpose",
+      "model_tier": "gpt-5.3-codex",
+      "depends_on": ["P3-4"],
+      "status": "pending",
+      "issue_ref": 15
+    },
+    {
+      "id": "P3-GATE",
+      "title": "P3 verification gate",
+      "phase": "P3",
+      "subagent_slot": "shell-5",
+      "subagent_type": "shell",
+      "model_tier": "composer-2.5-fast",
+      "depends_on": ["P3-5"],
+      "status": "pending"
+    },
+    {
+      "id": "P4-E1",
+      "title": "Package layout options audit",
+      "phase": "P4",
+      "subagent_slot": "explore-7",
+      "subagent_type": "explore",
+      "model_tier": "composer-2.5-fast",
+      "depends_on": ["P3-GATE"],
+      "status": "pending",
+      "parallel_group": "wave5-recon"
+    },
+    {
+      "id": "P4-E2",
+      "title": "xdist-brain sync manifest audit",
+      "phase": "P4",
+      "subagent_slot": "explore-8",
+      "subagent_type": "explore",
+      "model_tier": "composer-2.5-fast",
+      "depends_on": ["P3-GATE"],
+      "status": "pending",
+      "parallel_group": "wave5-recon"
+    },
+    {
+      "id": "P4-1",
+      "title": "Python package layout",
+      "phase": "P4",
+      "subagent_slot": "write-16",
+      "subagent_type": "generalPurpose",
+      "model_tier": "claude-4.6-sonnet-medium-thinking",
+      "depends_on": ["P4-E1", "P4-E2"],
+      "status": "pending",
+      "issue_ref": 16
+    },
+    {
+      "id": "P4-2",
+      "title": "Data repo sync automation",
+      "phase": "P4",
+      "subagent_slot": "write-17",
+      "subagent_type": "generalPurpose",
+      "model_tier": "gpt-5.3-codex",
+      "depends_on": ["P4-1"],
+      "status": "pending",
+      "issue_ref": 17
+    },
+    {
+      "id": "P4-GATE",
+      "title": "P4 verification gate",
+      "phase": "P4",
+      "subagent_slot": "shell-6",
+      "subagent_type": "shell",
+      "model_tier": "composer-2.5-fast",
+      "depends_on": ["P4-2"],
+      "status": "pending"
+    }
+  ],
+  "subagent_summary": {
+    "explore": 8,
+    "generalPurpose_write": 17,
+    "shell_verify": 6,
+    "total": 31
+  }
+}
